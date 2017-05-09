@@ -10,24 +10,40 @@ I love python and c++.
 
 ## 1.b Algorithmic trading
 
-* [Animating alpha and beta](https://github.com/haltaro/animating-alpha-and-beta): Calculating $\\alpha$s and $\\beta$s of the biggest stocks with pandas and making an animation of them with matplotlib.
+* [Animating alpha and beta](https://github.com/haltaro/animating-alpha-and-beta): Calculating alphas and betas of the biggest stocks with pandas and making an animation of them with matplotlib.
 
 ## 1.c Machine learning
 
-* [Predicting comic end](https://github.com/haltaro/predicting-comic-end):
+* [Predicting comic end](https://github.com/haltaro/predicting-comic-end): Predict end of comic serialized in weekly Junp, one of the most popular comic magazines in Japan. I used tensorflow to configure a neural network and tensorbord to visualize the results.
 
 ## 1.d Shiba-inu
 
-Now preparing...
+Now preparing ...
 
 # 2. Schooling
 
-I'm taking the following two classes in [Udacity](https://www.udacity.com/) so far.
+I'm taking the following two classes in [Udacity](https://www.udacity.com/) so far. 
 
-## 2.a [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501)
+## 2.a [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501): 
 
+A free course includes three parts:
+1. Manipulating financial data in python
+2. Computational investing
+3. Machine learning algorithms for trading
 
-## 2.b [Deep learning nanodegree foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101)
+I'm now taking part.2 ...
+
+## 2.b [Deep learning nanodegree foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101): 
+
+A nanodegree course includes five projects:
+
+1. [Your first neural network](https://github.com/haltaro/udacity-deep-learning-project1): Build and train my own neural network from scratch to predict the number of bikeshare users.
+2. Image classification
+3. Generate TV scripts
+4. Translate a language
+5. Generate faces
+
+I'm now doing project.2 ...
 
 # 3. Contact
 
