@@ -48,4 +48,4 @@ I'm now coding for project.2 ...
 # 3. Contact
 
 * [Qiita](http:/qiita.com/haltaro)
-* Email: `mail.to.haltaro(at gmail dot com)`
+* E-mail: `mail.to.haltaro(at gmail dot com)`
