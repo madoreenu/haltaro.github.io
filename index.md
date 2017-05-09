@@ -26,7 +26,7 @@ I'm taking the following two classes in [Udacity](https://www.udacity.com/) so f
 
 ## 2.a [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501): 
 
-A free course includes three parts:
+A free course including three mini-couses:
 1. Manipulating financial data in python
 2. Computational investing
 3. Machine learning algorithms for trading
