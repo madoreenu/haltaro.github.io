@@ -9,13 +9,16 @@ My research interests include network engineering, mathematical modeling, machin
 
 ## Machine learning
 
+## Shiba-inu
+
 # Schooling
 
-I'm taking two classes in [Udacity](https://www.udacity.com/) so far.
+I'm taking the following two classes in [Udacity](https://www.udacity.com/) so far.
 
-## Machine learning for trading
+## [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501)
 
-## Deep learning nanodegree foundation
+
+## [Deep learning nanodegree foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101)
 
 # Contact
 
