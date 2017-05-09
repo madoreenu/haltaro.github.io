@@ -10,7 +10,7 @@ I love python and c++.
 
 ## 1.b Algorithmic trading
 
-* [Animating alpha and beta](https://github.com/haltaro/animating-alpha-and-beta): Calculating $\alpha$s and $\beta$s of the biggest stocks with pandas and making an animation of them with matplotlib.
+* [Animating alpha and beta](https://github.com/haltaro/animating-alpha-and-beta): Calculating $\\alpha$s and $\\beta$s of the biggest stocks with pandas and making an animation of them with matplotlib.
 
 ## 1.c Machine learning
 
