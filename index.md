@@ -43,7 +43,7 @@ A nanodegree course includes five projects:
 4. Translate a language
 5. Generate faces
 
-I'm now doing project.2 ...
+I'm now coding for project.2 ...
 
 # 3. Contact
 
