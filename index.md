@@ -6,7 +6,7 @@ I love python and c++.
 
 ## 1.a Network engineering
 
-* [Compareing TCP algorithms](https://github.com/haltaro/comparing-tcp-algorithms): Simulating 12 TCP congestion control algoriths with ns-3 simulator and visualizing with matplotlib.
+* [Compareing TCP algorithms](https://github.com/haltaro/comparing-tcp-algorithms): Simulating 12 TCP congestion control algoriths with ns-3 simulator and visualizing the results with matplotlib.
 
 ## 1.b Algorithmic trading
 
@@ -14,7 +14,7 @@ I love python and c++.
 
 ## 1.c Machine learning
 
-* [Predicting comic end](https://github.com/haltaro/predicting-comic-end): Predict end of comic serialized in weekly Junp, one of the most popular comic magazines in Japan. I used tensorflow to configure a neural network and tensorbord to visualize the results.
+* [Predicting comic end](https://github.com/haltaro/predicting-comic-end): Predicting the end of comic serialized in weekly shonen jump, one of the most popular comic magazines in Japan. I used tensorflow to configure a neural network and tensorbord to visualize the results.
 
 ## 1.d Shiba-inu
 
