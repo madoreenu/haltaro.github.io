@@ -31,7 +31,7 @@ A free course including three mini-couses:
 2. Computational investing
 3. Machine learning algorithms for trading
 
-I'm now taking part.2 ...
+I'm now taking mini-couse #2 ...
 
 ## 2.b [Deep learning nanodegree foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101): 
 
@@ -43,7 +43,7 @@ A nanodegree course includes five projects:
 4. Translate a language
 5. Generate faces
 
-I'm now coding for project.2 ...
+I'm now coding for project #2 ...
 
 # 3. Contact
 
