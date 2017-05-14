@@ -38,12 +38,12 @@ I'm now taking mini-couse #2 ...
 A nanodegree course includes five projects:
 
 1. [Your first neural network](https://github.com/haltaro/udacity-deep-learning-project1): Build and train my own neural network from scratch to predict the number of bikeshare users.
-2. Image classification
+2. [Image classification](https://github.com/haltaro/udacity-deep-learning-project2): Classify images from the CIFAR-10 dataset using a convolutional neural network.
 3. Generate TV scripts
 4. Translate a language
 5. Generate faces
 
-I'm now coding for project #2 ...
+I'm now coding for project #3 ...
 
 # 3. Contact
 
