@@ -14,7 +14,7 @@ I love python and c++.
 
 ## 1.c Machine learning
 
-* [Predicting comic end](https://github.com/haltaro/predicting-comic-end): Predicting the end of comic serialized in weekly shonen jump, one of the most popular comic magazines in Japan. I used tensorflow to configure a neural network and tensorbord to visualize the results.
+* [Predicting comic end](https://github.com/haltaro/predicting-comic-end): Predicting the end of comic serialized in weekly shonen jump, one of the most popular comic magazines in Japan. I used tensorflow to build a neural network.
 
 ## 1.d Shiba-inu
 
@@ -39,11 +39,11 @@ A nanodegree course includes five projects:
 
 1. [Your first neural network](https://github.com/haltaro/udacity-deep-learning-project1): Build and train my own neural network from scratch to predict the number of bikeshare users.
 2. [Image classification](https://github.com/haltaro/udacity-deep-learning-project2): Classify images from the CIFAR-10 dataset using a convolutional neural network.
-3. Generate TV scripts
+3. [Generate TV scripts](https://github.com/haltaro/udacity-deep-learning-project3): Use a recurrent neural network to generate new scripts for Simpsons.
 4. Translate a language
 5. Generate faces
 
-I'm now coding for project #3 ...
+I'm now coding for project #4 ...
 
 # 3. Contact
 
