@@ -35,7 +35,7 @@ I'm now taking mini-couse #2 ...
 
 ## 2.b [Deep learning nanodegree foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101): 
 
-A nanodegree course includes five projects:
+A nanodegree course including five projects:
 
 1. [Your first neural network](https://github.com/haltaro/udacity-deep-learning-project1): Build and train my own neural network from scratch to predict the number of bikeshare users.
 2. [Image classification](https://github.com/haltaro/udacity-deep-learning-project2): Classify images from the CIFAR-10 dataset using a convolutional neural network.
