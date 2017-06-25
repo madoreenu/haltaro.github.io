@@ -68,8 +68,8 @@ waylon_smithers: well...(to self) three beers, that's it.
 homer_simpson:(to moe, slightly concerned) do you care about all
 ```
 
-4. Translate a language
-5. Generate faces
+* Translate a language
+* Generate faces
 
 I'm now coding for project #4 ...
 
