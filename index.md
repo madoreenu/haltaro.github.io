@@ -12,7 +12,7 @@ I love python and c++.
 
 * [Animating alpha and beta](https://github.com/haltaro/animating-alpha-and-beta): Calculating alphas and betas of the biggest stocks with pandas and making an animation of them with matplotlib.
 
-![ab.gif](animating-alpha-and-beta/fig/ab.gif)
+![ab.gif](../animating-alpha-and-beta/fig/ab.gif)
 
 ## 1.c Machine learning
 
