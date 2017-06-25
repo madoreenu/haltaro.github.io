@@ -8,15 +8,19 @@ I love python and c++.
 
 * [Compareing TCP algorithms](https://github.com/haltaro/comparing-tcp-algorithms): Simulating 12 TCP congestion control algoriths with ns-3 simulator and visualizing the results with matplotlib.
 
+![tcp.png](fig/comparing-tcp-algorithms.png)
+
 ## 1.b Algorithmic trading
 
 * [Animating alpha and beta](https://github.com/haltaro/animating-alpha-and-beta): Calculating alphas and betas of the biggest stocks with pandas and making an animation of them with matplotlib.
 
-![ab.gif](https://github.com/haltaro/animating-alpha-and-beta/master/fig/ab.gif)
+![ab.gif](fig/animating-alpha-and-beta.gif)
 
 ## 1.c Machine learning
 
 * [Predicting comic end](https://github.com/haltaro/predicting-comic-end): Predicting the end of comic serialized in weekly shonen jump, one of the most popular comic magazines in Japan. I used tensorflow to build a neural network.
+
+![comic.png](fig/predicting-comic-end.png)
 
 ## 1.d Shiba-inu
 
