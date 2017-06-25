@@ -43,15 +43,15 @@ I'm now taking mini-couse #2 ...
 
 A nanodegree course including five projects:
 
-1. [Your first neural network](https://github.com/haltaro/udacity-deep-learning-project1): Build and train my own neural network from scratch to predict the number of bikeshare users.
+* [First neural network](https://github.com/haltaro/udacity-deep-learning-project1): Build and train my own neural network from scratch to predict the number of bikeshare users.
 
 ![dlnd1.png](fig/dlnd1.png)
 
-2. [Image classification](https://github.com/haltaro/udacity-deep-learning-project2): Classify images from the CIFAR-10 dataset using a convolutional neural network.
+* [Image classification](https://github.com/haltaro/udacity-deep-learning-project2): Classify images from the CIFAR-10 dataset using a convolutional neural network.
 
 ![dlnd2.png](fig/dlnd2.png)
 
-3. [Generate TV scripts](https://github.com/haltaro/udacity-deep-learning-project3): Use a recurrent neural network to generate new scripts for Simpsons.
+* [Generate TV scripts](https://github.com/haltaro/udacity-deep-learning-project3): Use a recurrent neural network to generate new scripts for Simpsons.
 
 ```
 homer_simpson:(upset) marge, you're making a complete fool of yourse...(belches)
