@@ -12,6 +12,8 @@ I love python and c++.
 
 * [Animating alpha and beta](https://github.com/haltaro/animating-alpha-and-beta): Calculating alphas and betas of the biggest stocks with pandas and making an animation of them with matplotlib.
 
+![ab.gif](animating-alpha-and-beta/fig/ab.gif)
+
 ## 1.c Machine learning
 
 * [Predicting comic end](https://github.com/haltaro/predicting-comic-end): Predicting the end of comic serialized in weekly shonen jump, one of the most popular comic magazines in Japan. I used tensorflow to build a neural network.
