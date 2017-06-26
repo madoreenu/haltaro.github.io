@@ -30,7 +30,7 @@ Now preparing ...
 
 I'm taking the following two classes in [Udacity](https://www.udacity.com/) so far. 
 
-## 2.a [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501): 
+## 2.a [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) 
 
 A free course including three mini-couses:
 1. Manipulating financial data in python
@@ -39,19 +39,19 @@ A free course including three mini-couses:
 
 I'm now taking mini-couse #2 ...
 
-## 2.b [Deep learning nanodegree foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101): 
+## 2.b [Deep learning nanodegree foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) 
 
 A nanodegree course including five projects:
 
-* [First neural network](https://github.com/haltaro/udacity-deep-learning-project1): Build and train my own neural network from scratch to predict the number of bikeshare users.
+* Project 1: [First neural network](https://github.com/haltaro/udacity-deep-learning-project1): Build and train my own neural network from scratch to predict the number of bikeshare users.
 
 ![dlnd1.png](fig/dlnd1.png)
 
-* [Image classification](https://github.com/haltaro/udacity-deep-learning-project2): Classify images from the CIFAR-10 dataset using a convolutional neural network.
+* Project 2: [Image classification](https://github.com/haltaro/udacity-deep-learning-project2): Classify images from the CIFAR-10 dataset using a convolutional neural network.
 
 ![dlnd2.png](fig/dlnd2.png)
 
-* [Generate TV scripts](https://github.com/haltaro/udacity-deep-learning-project3): Use a recurrent neural network to generate new scripts for Simpsons.
+* Project 3: [Generate TV scripts](https://github.com/haltaro/udacity-deep-learning-project3): Use a recurrent neural network to generate new scripts for Simpsons.
 
 ```
 homer_simpson:(upset) marge, you're making a complete fool of yourse...(belches)
@@ -59,13 +59,6 @@ homer_simpson:(moans) i wanna take a nap so i'm awake for the meteor shower.
 waylon_smithers: well...(to self) three beers, that's it.
 homer_simpson:(to moe, slightly concerned) do you care about all this?
 moe_szyslak:(to homer) hey, i don't need your sharity!(cries)
-homer_simpson:(moans) i wanna take a nap so i'm awake for the meteor shower.
-waylon_smithers: well...(to self) three beers, that's it.
-homer_simpson:(to moe, slightly concerned) do you care about all this?
-moe_szyslak:(to homer) hey, i don't need your sharity!(cries)
-homer_simpson:(moans) i wanna take a nap so i'm awake for the meteor shower.
-waylon_smithers: well...(to self) three beers, that's it.
-homer_simpson:(to moe, slightly concerned) do you care about all
 ```
 
 * Translate a language
