@@ -68,6 +68,7 @@ I'm now coding for project #4 ...
 
 # 3. Contact
 
+* Github: [haltaro](https://github.com/haltaro)
 * Qiita: [haltaro](http:/qiita.com/haltaro)
-* Kaggle: [haltaro]()
+* Kaggle: [haltaro](https://www.kaggle.com/haltaro)
 * E-mail: `mail.to.haltaro(at gmail dot com)`
