@@ -6,19 +6,19 @@ I love python and c++.
 
 ## 1.a Network engineering
 
-* [Compareing TCP algorithms](https://github.com/haltaro/comparing-tcp-algorithms): Simulating 12 TCP congestion control algoriths with ns-3 simulator and visualizing the results with matplotlib.
+* Compareing TCP algorithms ([Qiita](http://qiita.com/haltaro/items/d479538345357f08c595), [Github](https://github.com/haltaro/comparing-tcp-algorithms)): Simulating 12 TCP congestion control algoriths with ns-3 simulator and visualizing the results with matplotlib.
 
 ![tcp.png](fig/comparing-tcp-algorithms.png)
 
 ## 1.b Algorithmic trading
 
-* [Animating alpha and beta](https://github.com/haltaro/animating-alpha-and-beta): Calculating alphas and betas of the biggest stocks with pandas and making an animation of them with matplotlib.
+* Animating alpha and beta ([Qiita](http://qiita.com/haltaro/items/e3e29264079f6b90d6df), [Github](https://github.com/haltaro/animating-alpha-and-beta)): Calculating alphas and betas of the biggest stocks with pandas and making an animation of them with matplotlib.
 
 ![ab.gif](fig/animating-alpha-and-beta.gif)
 
 ## 1.c Machine learning
 
-* [Predicting comic end](https://github.com/haltaro/predicting-comic-end): Predicting the end of comic serialized in weekly shonen jump, one of the most popular comic magazines in Japan. I used tensorflow to build a neural network.
+* Predicting comic end ([Qiita part1](http://qiita.com/haltaro/items/c54fa1855767f1a1abd5), [Qiita part2](http://qiita.com/haltaro/items/62d49875ed658ac8a93f), [Github](https://github.com/haltaro/predicting-comic-end)): Predicting the end of comic serialized in weekly shonen jump, one of the most popular comic magazines in Japan. I used tensorflow to build a neural network.
 
 ![comic.png](fig/predicting-comic-end.png)
 
@@ -68,5 +68,6 @@ I'm now coding for project #4 ...
 
 # 3. Contact
 
-* [Qiita](http:/qiita.com/haltaro)
+* Qiita: [haltaro](http:/qiita.com/haltaro)
+* Kaggle: [haltaro]()
 * E-mail: `mail.to.haltaro(at gmail dot com)`
