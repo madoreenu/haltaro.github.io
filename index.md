@@ -43,15 +43,15 @@ I'm now taking mini-couse #2 ...
 
 A nanodegree course including five projects:
 
-* [Project 1 - First neural network](https://github.com/haltaro/udacity-deep-learning-project1/DLND your first neural network.ipynb): Build and train my own neural network from scratch to predict the number of bikeshare users. The following figure shows the prediction results.
+* [Project 1 - First neural network](https://github.com/haltaro/udacity-deep-learning-project1/blob/master/DLND%20Your%20first%20neural%20network.ipynb): Build and train my own neural network from scratch to predict the number of bikeshare users. The following figure shows the prediction results.
 
 ![dlnd1.png](fig/dlnd1.png)
 
-* [Project 2 - Image classification](https://github.com/haltaro/udacity-deep-learning-project2/dlnd_image_classification.ipynb): Classify images from the CIFAR-10 dataset using a convolutional neural network. The following figures show the prediction results.
+* [Project 2 - Image classification](https://github.com/haltaro/udacity-deep-learning-project2/blob/master/dlnd_image_classification.ipynb): Classify images from the CIFAR-10 dataset using a convolutional neural network. The following figures show the prediction results.
 
 ![dlnd2.png](fig/dlnd2.png)
 
-* [Project 3 - Generate TV scripts](https://github.com/haltaro/udacity-deep-learning-project3/dlnd_tv_script_generation.ipynb): Use a recurrent neural network to generate new scripts for Simpsons. The following scripts are automatically generated ONLY from the word `homer_simpson`.
+* [Project 3 - Generate TV scripts](https://github.com/haltaro/udacity-deep-learning-project3/blob/master/dlnd_tv_script_generation.ipynb): Use a recurrent neural network to generate new scripts for Simpsons. The following scripts are automatically generated ONLY from the word `homer_simpson`.
 
 ```
 homer_simpson:(upset) marge, you're making a complete fool of yourse...(belches)
@@ -61,7 +61,7 @@ homer_simpson:(to moe, slightly concerned) do you care about all this?
 moe_szyslak:(to homer) hey, i don't need your sharity!(cries)
 ```
 
-* [Project 4 - Translate a language](https://github.com/haltaro/udacity-deep-learning-project4/dlnd_language_translation.ipynb): Use a recurrent neural network to translate one language to another. The following French words are automatically translated from the English words.
+* [Project 4 - Translate a language](https://github.com/haltaro/udacity-deep-learning-project4/blob/master/dlnd_language_translation.ipynb): Use a recurrent neural network to translate one language to another. The following French words are automatically translated from the English words.
 
 ```
 Input
