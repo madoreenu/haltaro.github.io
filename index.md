@@ -61,7 +61,7 @@ homer_simpson:(to moe, slightly concerned) do you care about all this?
 moe_szyslak:(to homer) hey, i don't need your sharity!(cries)
 ```
 
-* [Project 4 - Translate a language](https://github.com/haltaro/udacity-deep-learning-project4): Use a recurrent neural network to translate one language to another. The following French sentence is automatically translated from the English text.
+* [Project 4 - Translate a language](https://github.com/haltaro/udacity-deep-learning-project4): Use a recurrent neural network to translate one language to another. The following French words are automatically translated from the English words.
 
 ```
 Input
