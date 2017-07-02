@@ -61,10 +61,22 @@ homer_simpson:(to moe, slightly concerned) do you care about all this?
 moe_szyslak:(to homer) hey, i don't need your sharity!(cries)
 ```
 
-* Project 4 - Translate a language
+* [Project 4 - Translate a language](https://github.com/haltaro/udacity-deep-learning-project4): Use a recurrent neural network to translate one language to another. The following French sentence is automatically translated from the English text.
+
+```
+Input
+  Word Ids:      [33, 146, 10, 75, 91, 24, 16]
+  English Words: ['he', 'saw', 'a', 'old', 'yellow', 'truck', '.']
+
+Prediction
+  Word Ids:      [188, 260, 34, 209, 248, 35, 234, 97, 1]
+  French Words: il a vu un vieux camion jaune . <EOS>
+```
+
+
 * Project 5 - Generate faces
 
-I'm now coding for project #4 ...
+I'm now coding for project #5 ...
 
 # 3. Contact
 
