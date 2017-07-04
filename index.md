@@ -1,4 +1,4 @@
-English | [日本語]()
+English | [日本語](https://haltaro.github.io/haltaro-japanese)
 
 I'm a researcher belonging to a telecom company. 
 My research interests include network engineering, algorithmic trading, machine learning, and shiba-inu :-).
