@@ -1,6 +1,6 @@
 English | [日本語](https://haltaro.github.io/haltaro)
 
-I'm a researcher belonging to a telecom company. 
+A researcher belonging to a telecom company. 
 My research interests include network engineering, algorithmic trading, machine learning, and shiba-inu :-).
 I love python and c++.
 
