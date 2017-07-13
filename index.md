@@ -24,7 +24,7 @@ I love python and c++.
 
 ![comic.png](fig/predicting-comic-end.png)
 
-* [Deep learning nanodegree in Japanise](https://haltaro.github.io/deep-learning-in-japanese) ([GitHub](https://github.com/haltaro/deep-learning-in-japanese)): Translating the notebooks provided by [Deep learning foundation nanodegree](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) into Japanese.
+* [Deep learning nanodegree in Japanese](https://haltaro.github.io/deep-learning-in-japanese) ([GitHub](https://github.com/haltaro/deep-learning-in-japanese)): Translating the notebooks provided by [Deep learning foundation nanodegree](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) into Japanese.
 
 
 ## 1.d Shiba-inu
