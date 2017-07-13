@@ -22,9 +22,9 @@ I love python and c++.
 
 * [Predicting comic end](https://haltaro.github.io/predicting-comic-end) ([Qiita part1](http://qiita.com/haltaro/items/c54fa1855767f1a1abd5), [Qiita part2](http://qiita.com/haltaro/items/62d49875ed658ac8a93f), [GitHub](https://github.com/haltaro/predicting-comic-end)): Predicting the end of comic serialized in weekly shonen jump, one of the most popular comic magazines in Japan. I used tensorflow to build a neural network.
 
-* [Deep learning nanodegree in Japanise](https://haltaro.github.io/deep-learning-in-japanese) ([GitHub](https://github.com/haltaro/deep-learning-in-japanese)): Translating the notebooks provided by [Deep learning foundation nanodegree](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) into Japanese.
-
 ![comic.png](fig/predicting-comic-end.png)
+
+* [Deep learning nanodegree in Japanise](https://haltaro.github.io/deep-learning-in-japanese) ([GitHub](https://github.com/haltaro/deep-learning-in-japanese)): Translating the notebooks provided by [Deep learning foundation nanodegree](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) into Japanese.
 
 
 ## 1.d Shiba-inu
