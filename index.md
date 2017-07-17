@@ -79,7 +79,7 @@ Prediction
 ```
 
 
-* [Project 5 - Generate faces](https://github.com/haltaro/udacity-deep-learning-project5/blob/master/dlnd_face_generation.html): Use a generative adversarial networks to generate realistic faces. The following images are automatically generated from [celabA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
+* [Project 5 - Generate faces](https://github.com/haltaro/udacity-deep-learning-project5/blob/master/dlnd_face_generation.html): Use a generative adversarial network to generate realistic faces. The following images are automatically generated from [celebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
 
 ![celeba.gif](fig/celeba.gif)
 
