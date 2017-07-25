@@ -26,6 +26,7 @@ I love python and c++.
 
 * [Deep learning nanodegree in Japanese](https://haltaro.github.io/deep-learning-in-japanese) ([GitHub](https://github.com/haltaro/deep-learning-in-japanese)): Translating the notebooks provided by [Deep learning foundation nanodegree](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) into Japanese.
 
+![dlnd](fig/dlnd.png)
 
 ## 1.d Shiba-inu
 
