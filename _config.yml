@@ -1,2 +1,40 @@
-theme: jekyll-theme-minimal
-title: haltaro 
+# Site settings
+title: Memotaro
+url: "http://haltaro.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
+#timezone: Asia/Chongqing
+description: >
+  研究メモとか，日記とか．
+  
+
+# Your information
+email: mail.to.haltaro@gmail.com 
+author: haltaro
+avatar: "//www.gravatar.com/avatar/546804f938d574fc5141fc1431066d29"
+profile: 通信会社の研究員．c++とpythonを使います． 
+#twitter_username: twitter_username
+github_username: haltaro
+qiita_username: haltaro
+kaggle_username: haltaro
+
+# Comment Service (Disqus or 多说)
+#  choose one and un-comment the line to active it
+#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+
+permalink: /archivers/:title
+gems:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
+
+# Build settings
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
