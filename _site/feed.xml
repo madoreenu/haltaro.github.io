@@ -2,13 +2,147 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Memotaro</title>
-    <description>研究メモとか，日記とか．
+    <description>研究メモとか
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Aug 2017 07:30:10 -0400</pubDate>
-    <lastBuildDate>Wed, 02 Aug 2017 07:30:10 -0400</lastBuildDate>
+    <pubDate>Wed, 02 Aug 2017 21:27:19 -0400</pubDate>
+    <lastBuildDate>Wed, 02 Aug 2017 21:27:19 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>多国籍企業の研究所で使う便利な英会話表現</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;作成中．随時追記する．&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;訳あって一年ほど，情報通信系の多国籍企業の研究所で働いている．世界各国から研究者が集まっており，公用語は英語．ほとんどネイティブスピーカーはいない&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．忘れないように，よく使われる/使う英語表現をまとめておく．&lt;/p&gt;
+
+&lt;p&gt;感覚的な日本語訳も載せるが，正確かどうかは不明．&lt;strong&gt;あくまでも自分用のメモ&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;1-会議編&quot;&gt;1. 会議編&lt;/h1&gt;
+
+&lt;p&gt;会議は，定型文さえ覚えていれば，なんとかなる気がする．それでも通じなかったら，数式や図を書けば良い．&lt;/p&gt;
+
+&lt;h2 id=&quot;1a-相槌を打ちたいとき&quot;&gt;1.a 相槌を打ちたいとき&lt;/h2&gt;
+
+&lt;p&gt;相手の説明を聞いているときによく使う．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;I see.&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Right.&lt;/code&gt;：それな．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;It makes sense.&lt;/code&gt;：なるほど．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sounds good !&lt;/code&gt;：いいね．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1b-再確認したいとき&quot;&gt;1.b 再確認したいとき&lt;/h2&gt;
+
+&lt;p&gt;正直，英語で説明されてもよくわからないことが多い．聞き逃したり，意味がわからなかった時は，すぐに聞く．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sorry ?&lt;/code&gt;：ん？&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;What do you mean ?&lt;/code&gt;：どゆこと？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;場合によっては，「こう理解したんだがあってるか？」と確認する．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Please let me make sure.&lt;/code&gt;：確認させてくれ．make sureというフレーズは非常に便利．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Do you mean that ... ?&lt;/code&gt;：…という意味？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1c-要点を強調したいとき&quot;&gt;1.c 要点を強調したいとき&lt;/h2&gt;
+
+&lt;p&gt;議論の核心を強調したいときに使う．海外ドラマとかでもよく聞く表現．こなれ感が出る（気がする）し，使いやすい．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;The point is ...&lt;/code&gt;：重要なのは，…&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;The problem is ...&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;The question is ...&lt;/code&gt;：問題なのは，…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1d-意見を聞きたいとき&quot;&gt;1.d 意見を聞きたいとき&lt;/h2&gt;
+
+&lt;p&gt;英語で議論していると，自分でも何言ってるかわかんなくなってくる．適当なタイミングで相手に意見を聞いて，突っ走り過ぎないようにする．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;How do you think about that ?&lt;/code&gt;：どう思う？&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Does it make sense ?&lt;/code&gt;：おかしくないかな？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1e-口頭だけじゃきついとき&quot;&gt;1.e 口頭だけじゃきついとき&lt;/h2&gt;
+
+&lt;p&gt;技術的に高度な話題になると，口頭だけだときつい．そういう時は，使えるものは全て使う．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Can I use a white board ?&lt;/code&gt;：ちょっとホワイトボード使っていい？&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Could you write it down ?&lt;/code&gt;：ちょっと書いてもらっていい？&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Could you send me an e-mail about that ?&lt;/code&gt;：メールで送ってもらっていい？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-雑談編&quot;&gt;2. 雑談編&lt;/h1&gt;
+
+&lt;p&gt;会議より雑談の方がずっと難しい（特に複数人のとき）．話題を特定できないせいだと思う．&lt;/p&gt;
+
+&lt;h2 id=&quot;2a-出会い頭&quot;&gt;2.a 出会い頭&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;How are you ?&lt;/code&gt;にはいろんな派生があるけど，違いはよくわからない．それっぽいことを聞かれたら，&lt;code class=&quot;highlighter-rouge&quot;&gt;Good ! How are you ?&lt;/code&gt;と返すようにしている．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;How are you ?&lt;/code&gt;：調子どう？&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Good.&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Fine.&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Not so bad.&lt;/code&gt;…：返事は気分で変える．特に違いはない．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2b-そこまで親しくない人と間が持たないとき&quot;&gt;2.b （そこまで親しくない人と）間が持たないとき&lt;/h2&gt;
+
+&lt;p&gt;ぼーっとしてると，わけのわからない話題になることが多い&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;．わかりやすい話題を先にふる．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Do you have any plan for the weekend ?&lt;/code&gt;：週末どうするの？よく聞かれるし，よく聞く．応用技として，「夏休みはどうするの？」がある．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;3-その他の便利な表現&quot;&gt;3. その他の便利な表現&lt;/h1&gt;
+
+&lt;h2 id=&quot;3a-修飾語&quot;&gt;3.a 修飾語&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;super&lt;/code&gt;：veryのこなれたバージョン．IT界隈では特に使われる気がする．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;really&lt;/code&gt;：これも，veryの代わりに使われることが多い．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hi-level&lt;/code&gt;：ざっくりとした．技術的なレベルが高いという意味ではなく，「経営層向け」の「抽象度の高い」的なニュアンスになる．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;state-of-the-art&lt;/code&gt;：最先端の．論文とかでよく使うし，日常会話でも使う．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3b-つなぎ言葉&quot;&gt;3.b つなぎ言葉&lt;/h2&gt;
+
+&lt;p&gt;よく使われる表現．感覚的には，一つの発言中に一回は出てくる．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;you know&lt;/code&gt;：えーと．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;like a&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;sort of&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;kind of&lt;/code&gt;：みたいな&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;だけどみんな驚くほど流暢．すごいなと思う．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;その都度聞けばいいが，聞くのもしんどいときがある．&amp;nbsp;&lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;私の耳には，&lt;code class=&quot;highlighter-rouge&quot;&gt;sort of&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;kind of&lt;/code&gt;は，&lt;code class=&quot;highlighter-rouge&quot;&gt;ソータ&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;カインダ&lt;/code&gt;と聞こえるので，最初は何がなんだかわからなかった．最近になって，無視して良い言葉だと気づいた．&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 02 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/archivers/english-phrases-in-international-labs</link>
+        <guid isPermaLink="true">http://localhost:4000/archivers/english-phrases-in-international-labs</guid>
+        
+        
+        <category>english</category>
+        
+        <category>draft</category>
+        
+      </item>
     
       <item>
         <title>環境構築が完了した</title>
