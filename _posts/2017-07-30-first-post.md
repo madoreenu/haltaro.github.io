@@ -6,7 +6,7 @@ categories:
  - blog
 ---
 
-[Qiita](http://qiita.com/)に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは[evernote](https://evernote.com/intl/jp/)を使ってきたが，数式やソースコードを書きづらい．[はてなブログ](http://hatenablog.com/)等で[Markdown](https://ja.wikipedia.org/wiki/Markdown)で書いても良いけど，`haltaro`ドメインが取れなかったし，手元にコンテンツが残らないのが嫌だ．ということで，[jekyll](https://jekyllrb-ja.github.io/)と[GitHub Pages](https://pages.github.com/)で，ウェブサイトを自作することにした．
+[Qiita](http://qiita.com/)に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは[evernote](https://evernote.com/intl/jp/)を使ってきたが，数式やソースコードを書きづらい．[はてなブログ](http://hatenablog.com/)等で[Markdown](https://ja.wikipedia.org/wiki/Markdown)を書いても良いけど，`haltaro`ドメインが取れなかったし，手元にコンテンツが残らないのが嫌だ．ということで，[jekyll](https://jekyllrb-ja.github.io/)と[GitHub Pages](https://pages.github.com/)で，ウェブサイトを自作することにした．
 
 # 参考
 
