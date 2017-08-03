@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>jekyll + GitHub Pagesでウェブサイトを立ち上げた « Memotaro</title>
+  <title>Jekyll + GitHub Pagesでウェブサイトを立ち上げた « Memotaro</title>
   <meta name="description" content="  作成中">
 
   <link rel="stylesheet" href="/css/main.css">
@@ -53,7 +53,7 @@
           <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">jekyll + GitHub Pagesでウェブサイトを立ち上げた</h1>
+    <h1 class="post-title">Jekyll + GitHub Pagesでウェブサイトを立ち上げた</h1>
     <p class="post-meta">Jul 30, 2017</p>
   </header>
 
@@ -62,7 +62,7 @@
   <p>作成中</p>
 </blockquote>
 
-<p><a href="http://qiita.com/">Qiita</a>に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは<a href="https://evernote.com/intl/jp/">evernote</a>を使ってきたが，数式やソースコードを書きづらい．<a href="http://hatenablog.com/">はてなブログ</a>等で<a href="https://ja.wikipedia.org/wiki/Markdown">Markdown</a>を書いても良いけど，手元にコンテンツが残らないのが嫌だったし，<code class="highlighter-rouge">haltaro</code>ドメインが取れなかった．ということで，<a href="https://jekyllrb-ja.github.io/">jekyll</a>と<a href="https://pages.github.com/">GitHub Pages</a>で，ウェブサイトを自作することにした．</p>
+<p><a href="http://qiita.com/">Qiita</a>に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは<a href="https://evernote.com/intl/jp/">evernote</a>を使ってきたが，数式やソースコードを書きづらい．<a href="http://hatenablog.com/">はてなブログ</a>等で<a href="https://ja.wikipedia.org/wiki/Markdown">Markdown</a>を書いても良いけど，手元にコンテンツが残らないのが嫌だったし，<code class="highlighter-rouge">haltaro</code>ドメインが取れなかった．ということで，<a href="https://jekyllrb-ja.github.io/">Jekyll</a>と<a href="https://pages.github.com/">GitHub Pages</a>で，ウェブサイトを自作することにした．</p>
 
 <h1 id="参考">参考</h1>
 
@@ -70,6 +70,8 @@
 
 <ul>
   <li><a href="https://jekyllrb-ja.github.io/docs/home/">jekyll公式ドキュメント</a></li>
+  <li>
+<a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>：<code class="highlighter-rouge">base-font-family</code>の指定について．</li>
 </ul>
 
 <h1 id="手順">手順</h1>
@@ -78,13 +80,57 @@
 
 <h2 id="2-githubioレポジトリ作成">2. github.ioレポジトリ作成</h2>
 
-<h2 id="3-jekyllインストール">3. jekyllインストール</h2>
+<h2 id="3-jekyllインストール">3. Jekyllインストール</h2>
 
-<h2 id="4-jekyllテーマ選定">4. jekyllテーマ選定</h2>
+<h2 id="4-jekyllテーマ選定">4. Jekyllテーマ選定</h2>
 
-<p><a href="http://jekyllthemes.org/">jekyll themes</a>から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，<a href="https://github.com/laobubu">laobubu</a>さんの<a href="http://jekyllthemes.org/themes/easybook/">EasyBook</a>を使わせてもらうことにした．</p>
+<p><a href="http://jekyllthemes.org/">Jekyll themes</a>から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，<a href="https://github.com/laobubu">laobubu</a>さんの<a href="http://jekyllthemes.org/themes/easybook/">EasyBook</a>を使わせてもらうことにした．</p>
 
 <h2 id="5-カスタマイズ">5. カスタマイズ</h2>
+
+<h3 id="51-フォントの変更">5.1 フォントの変更</h3>
+
+<p>デフォルトだと日本語フォントが気持ち悪いので，<code class="highlighter-rouge">/css/main.scss</code>を次のように変更する．流行りの<a href="http://www.jiyu-kobo.co.jp/library/ygf/">游ゴシック</a>なるものを使ってみる．</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$base-font-family: "Hiragino Maru Gothic W4 JIS2004", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-weight: 500;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$code-font-family:   Menlo, Monaco, Consolas, "DejaVu Sans Mono", "Liberation Mono", "Courier New", Courier, SimSun, monospace;
+$code-font-weight: 500; 
+$code-font-size:     15px;
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">$base-font</code>については，<a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>を参考にした．<code class="highlighter-rouge">$code-font</code>については，デフォルトのものから明らかに中国語と思われるものを削除し，<code class="highlighter-rouge">$code-font-weight: 500</code>を追加した．</p>
+
+<h3 id="52-連絡先の追加">5.2 連絡先の追加</h3>
+
+<p>連絡先に，<code class="highlighter-rouge">Qiita</code>と<code class="highlighter-rouge">Kaggle</code>を追加した．<code class="highlighter-rouge">grep</code>したところ，<code class="highlighter-rouge">_includes/sidebar.html</code>で設定できそうだったので，<code class="highlighter-rouge">Qiita</code>ボタンと<code class="highlighter-rouge">Kaggle</code>ボタンを追加した．</p>
+
+<script src="https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js"></script>
+
+<p>ちなみに，markdownにhtmlコードをそのまま書くと，ウェブサイトでは自動変換されてしまいソースコードが見られない．上記では，<a href="http://fukafuka295.jp/hp/hp_no9.html">HTMLやCSSのソースコードをそのままページに貼り付ける方法</a>を参考に，<a href="">Gist</a>を使って貼り付けた．</p>
+
+<h3 id="53-projectページの追加">5.3 Projectページの追加</h3>
+
+<p>Projectをまとめたページを作りたかったので，<code class="highlighter-rouge">/project.md</code>を追加した．フロントマターは，<code class="highlighter-rouge">/about.md</code>を参考に作った．</p>
+
+<div class="language-markdown highlighter-rouge">
+<pre class="highlight"><code><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">page</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s">Projects</span>
+<span class="s">permalink</span><span class="pi">:</span> <span class="s">/projects/</span>
+<span class="s">public</span><span class="pi">:</span> <span class="s">true</span>
+<span class="nn">---</span>
+
+</code></pre>
+</div>
+
+<h3 id="54-gradatarの取得">5.4 Gradatarの取得</h3>
 
 <h2 id="6-動作確認">6. 動作確認</h2>
 
@@ -99,7 +145,15 @@
 
 <h1 id="感想">感想</h1>
 
-<p>前から気になってはいたけど，rubyとかjavascriptとかわからんし，ハードルが高そうで敬遠していた．でも，出来ないことは無かった（結構ハマったが）．それらしい形になったので，満足している．</p>
+<p>rubyとかcssとか全然わからんが，出来ないことは無かった<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>結構ハマったけど． <a href="#fnref:1" class="reversefootnote">↩</a></p>
+    </li>
+  </ol>
+</div>
 
   </article>
   
@@ -142,7 +196,7 @@
     
       <li><a class="post-link" href="/archivers/english-phrases-in-international-labs">多国籍企業の研究所で使う便利な英会話表現</a></li>
     
-      <li><a class="post-link" href="/archivers/first-post">jekyll + GitHub Pagesでウェブサイトを立ち上げた</a></li>
+      <li><a class="post-link" href="/archivers/first-post">Jekyll + GitHub Pagesでウェブサイトを立ち上げた</a></li>
     
   </ul>
 </div>

@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Aug 2017 22:56:26 -0400</pubDate>
-    <lastBuildDate>Wed, 02 Aug 2017 22:56:26 -0400</lastBuildDate>
+    <pubDate>Thu, 03 Aug 2017 07:59:15 -0400</pubDate>
+    <lastBuildDate>Thu, 03 Aug 2017 07:59:15 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -194,12 +194,12 @@
       </item>
     
       <item>
-        <title>jekyll + GitHub Pagesでウェブサイトを立ち上げた</title>
+        <title>Jekyll + GitHub Pagesでウェブサイトを立ち上げた</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;作成中&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://qiita.com/&quot;&gt;Qiita&lt;/a&gt;に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは&lt;a href=&quot;https://evernote.com/intl/jp/&quot;&gt;evernote&lt;/a&gt;を使ってきたが，数式やソースコードを書きづらい．&lt;a href=&quot;http://hatenablog.com/&quot;&gt;はてなブログ&lt;/a&gt;等で&lt;a href=&quot;https://ja.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;を書いても良いけど，手元にコンテンツが残らないのが嫌だったし，&lt;code class=&quot;highlighter-rouge&quot;&gt;haltaro&lt;/code&gt;ドメインが取れなかった．ということで，&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;jekyll&lt;/a&gt;と&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;で，ウェブサイトを自作することにした．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://qiita.com/&quot;&gt;Qiita&lt;/a&gt;に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは&lt;a href=&quot;https://evernote.com/intl/jp/&quot;&gt;evernote&lt;/a&gt;を使ってきたが，数式やソースコードを書きづらい．&lt;a href=&quot;http://hatenablog.com/&quot;&gt;はてなブログ&lt;/a&gt;等で&lt;a href=&quot;https://ja.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;を書いても良いけど，手元にコンテンツが残らないのが嫌だったし，&lt;code class=&quot;highlighter-rouge&quot;&gt;haltaro&lt;/code&gt;ドメインが取れなかった．ということで，&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;と&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;で，ウェブサイトを自作することにした．&lt;/p&gt;
 
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
@@ -207,6 +207,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://jekyllrb-ja.github.io/docs/home/&quot;&gt;jekyll公式ドキュメント&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;base-font-family&lt;/code&gt;の指定について．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
@@ -215,13 +216,55 @@
 
 &lt;h2 id=&quot;2-githubioレポジトリ作成&quot;&gt;2. github.ioレポジトリ作成&lt;/h2&gt;
 
-&lt;h2 id=&quot;3-jekyllインストール&quot;&gt;3. jekyllインストール&lt;/h2&gt;
+&lt;h2 id=&quot;3-jekyllインストール&quot;&gt;3. Jekyllインストール&lt;/h2&gt;
 
-&lt;h2 id=&quot;4-jekyllテーマ選定&quot;&gt;4. jekyllテーマ選定&lt;/h2&gt;
+&lt;h2 id=&quot;4-jekyllテーマ選定&quot;&gt;4. Jekyllテーマ選定&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;jekyll themes&lt;/a&gt;から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，&lt;a href=&quot;https://github.com/laobubu&quot;&gt;laobubu&lt;/a&gt;さんの&lt;a href=&quot;http://jekyllthemes.org/themes/easybook/&quot;&gt;EasyBook&lt;/a&gt;を使わせてもらうことにした．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll themes&lt;/a&gt;から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，&lt;a href=&quot;https://github.com/laobubu&quot;&gt;laobubu&lt;/a&gt;さんの&lt;a href=&quot;http://jekyllthemes.org/themes/easybook/&quot;&gt;EasyBook&lt;/a&gt;を使わせてもらうことにした．&lt;/p&gt;
 
 &lt;h2 id=&quot;5-カスタマイズ&quot;&gt;5. カスタマイズ&lt;/h2&gt;
+
+&lt;h3 id=&quot;51-フォントの変更&quot;&gt;5.1 フォントの変更&lt;/h3&gt;
+
+&lt;p&gt;デフォルトだと日本語フォントが気持ち悪いので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/css/main.scss&lt;/code&gt;を次のように変更する．流行りの&lt;a href=&quot;http://www.jiyu-kobo.co.jp/library/ygf/&quot;&gt;游ゴシック&lt;/a&gt;なるものを使ってみる．&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$base-font-family: &quot;Hiragino Maru Gothic W4 JIS2004&quot;, &quot;游ゴシック&quot;, YuGothic, &quot;ヒラギノ角ゴ ProN W3&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;メイリオ&quot;, Meiryo, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+$base-font-weight: 500;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$code-font-family:   Menlo, Monaco, Consolas, &quot;DejaVu Sans Mono&quot;, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, Courier, SimSun, monospace;
+$code-font-weight: 500; 
+$code-font-size:     15px;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$base-font&lt;/code&gt;については，&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;を参考にした．&lt;code class=&quot;highlighter-rouge&quot;&gt;$code-font&lt;/code&gt;については，デフォルトのものから明らかに中国語と思われるものを削除し，&lt;code class=&quot;highlighter-rouge&quot;&gt;$code-font-weight: 500&lt;/code&gt;を追加した．&lt;/p&gt;
+
+&lt;h3 id=&quot;52-連絡先の追加&quot;&gt;5.2 連絡先の追加&lt;/h3&gt;
+
+&lt;p&gt;連絡先に，&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;を追加した．&lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt;したところ，&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/sidebar.html&lt;/code&gt;で設定できそうだったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;ボタンと&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;ボタンを追加した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;ちなみに，markdownにhtmlコードをそのまま書くと，ウェブサイトでは自動変換されてしまいソースコードが見られない．上記では，&lt;a href=&quot;http://fukafuka295.jp/hp/hp_no9.html&quot;&gt;HTMLやCSSのソースコードをそのままページに貼り付ける方法&lt;/a&gt;を参考に，&lt;a href=&quot;&quot;&gt;Gist&lt;/a&gt;を使って貼り付けた．&lt;/p&gt;
+
+&lt;h3 id=&quot;53-projectページの追加&quot;&gt;5.3 Projectページの追加&lt;/h3&gt;
+
+&lt;p&gt;Projectをまとめたページを作りたかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/project.md&lt;/code&gt;を追加した．フロントマターは，&lt;code class=&quot;highlighter-rouge&quot;&gt;/about.md&lt;/code&gt;を参考に作った．&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;page&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Projects&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/projects/&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;54-gradatarの取得&quot;&gt;5.4 Gradatarの取得&lt;/h3&gt;
 
 &lt;h2 id=&quot;6-動作確認&quot;&gt;6. 動作確認&lt;/h2&gt;
 
@@ -235,7 +278,15 @@
 
 &lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
-&lt;p&gt;前から気になってはいたけど，rubyとかjavascriptとかわからんし，ハードルが高そうで敬遠していた．でも，出来ないことは無かった（結構ハマったが）．それらしい形になったので，満足している．&lt;/p&gt;
+&lt;p&gt;rubyとかcssとか全然わからんが，出来ないことは無かった&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;結構ハマったけど．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sun, 30 Jul 2017 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/archivers/first-post</link>
