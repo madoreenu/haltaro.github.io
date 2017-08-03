@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jekyll + GitHub Pagesでウェブサイトを立ち上げた
+title: Jekyll + GitHub Pagesでウェブサイトを立ち上げた
 updated: 2017-07-30 12:00 
 categories:
  - blog
@@ -9,7 +9,7 @@ categories:
 
 > 作成中
 
-[Qiita](http://qiita.com/)に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは[evernote](https://evernote.com/intl/jp/)を使ってきたが，数式やソースコードを書きづらい．[はてなブログ](http://hatenablog.com/)等で[Markdown](https://ja.wikipedia.org/wiki/Markdown)を書いても良いけど，手元にコンテンツが残らないのが嫌だったし，`haltaro`ドメインが取れなかった．ということで，[jekyll](https://jekyllrb-ja.github.io/)と[GitHub Pages](https://pages.github.com/)で，ウェブサイトを自作することにした．
+[Qiita](http://qiita.com/)に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは[evernote](https://evernote.com/intl/jp/)を使ってきたが，数式やソースコードを書きづらい．[はてなブログ](http://hatenablog.com/)等で[Markdown](https://ja.wikipedia.org/wiki/Markdown)を書いても良いけど，手元にコンテンツが残らないのが嫌だったし，`haltaro`ドメインが取れなかった．ということで，[Jekyll](https://jekyllrb-ja.github.io/)と[GitHub Pages](https://pages.github.com/)で，ウェブサイトを自作することにした．
 
 # 参考
 
@@ -23,11 +23,11 @@ categories:
 
 ## 2. github.ioレポジトリ作成
 
-## 3. jekyllインストール
+## 3. Jekyllインストール
 
-## 4. jekyllテーマ選定
+## 4. Jekyllテーマ選定
 
-[jekyll themes](http://jekyllthemes.org/)から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，[laobubu](https://github.com/laobubu)さんの[EasyBook](http://jekyllthemes.org/themes/easybook/)を使わせてもらうことにした．
+[Jekyll themes](http://jekyllthemes.org/)から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，[laobubu](https://github.com/laobubu)さんの[EasyBook](http://jekyllthemes.org/themes/easybook/)を使わせてもらうことにした．
 
 ## 5. カスタマイズ
 
@@ -43,4 +43,4 @@ $ git push origin master
 
 # 感想
 
-前から気になってはいたけど，rubyとかjavascriptとかわからんし，ハードルが高そうで敬遠していた．でも，出来ないことは無かった（結構ハマったが）．それらしい形になったので，満足している．
+前から気になってはいたけど，rubyとかjavascriptとかhtmlとかわからんし，ハードルが高そうで敬遠していた．でも，出来ないことは無かった．ただし，日本語フォントが汚いので，今後解決策を検討する予定．
