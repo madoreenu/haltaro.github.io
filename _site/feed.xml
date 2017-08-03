@@ -6,56 +6,143 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Aug 2017 08:57:22 -0400</pubDate>
-    <lastBuildDate>Thu, 03 Aug 2017 08:57:22 -0400</lastBuildDate>
+    <pubDate>Thu, 03 Aug 2017 19:25:17 -0400</pubDate>
+    <lastBuildDate>Thu, 03 Aug 2017 19:25:17 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
-        <title>機械学習関連で今後やりたいこと</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;作成中&lt;/p&gt;
-&lt;/blockquote&gt;
+        <title>機械学習のプロジェクト予定</title>
+        <description>&lt;p&gt;くだらないものばかりだけど，今後やりたいことをメモしておく．&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt;の&lt;a href=&quot;&quot;&gt;Deep learning foundations nanodegree&lt;/a&gt;を修了して，基本はある程度押さえられたし，論文も読めるようになった．時間が取れたら，以下のようなことをやりたいと思う．&lt;/p&gt;
+&lt;h1 id=&quot;1-画像処理系&quot;&gt;1. 画像処理系&lt;/h1&gt;
 
-&lt;h1 id=&quot;a-本業に活かす&quot;&gt;a. 本業に活かす&lt;/h1&gt;
+&lt;h2 id=&quot;1a-君の名はの三葉の中身を顔画像から分類&quot;&gt;1.a 君の名は。の三葉の中身を顔画像から分類&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;できれば&lt;/strong&gt;．ただし，技術先行で問題を後付けするのは悪い癖なので，機械学習に執着せず，フラットに他の技術と比較するよう心がけたい．&lt;/p&gt;
+&lt;p&gt;組紐の有無とか眉毛の角度とかを学習してくれたら面白い．アニメ画像の顔検出は&lt;a href=&quot;http://opencv.org/&quot;&gt;OpenCV&lt;/a&gt;で自動化できるので，データの準備はそこまで大変じゃない．&lt;/p&gt;
 
-&lt;h1 id=&quot;b-新プロジェクトを立ち上げる&quot;&gt;b. 新プロジェクトを立ち上げる&lt;/h1&gt;
-
-&lt;p&gt;やってみたいことはいくらでも出てくる．時間が欲しい．&lt;/p&gt;
-
-&lt;h2 id=&quot;b1-顔画像から実子判定&quot;&gt;b.1 顔画像から実子判定&lt;/h2&gt;
-
-&lt;p&gt;一昔前，DNA鑑定が大流行したので，ニーズはあると思う．実子であれば，両親の面影が顔に顕れるはずだし，この種の特徴抽出はdeep learningの得意技の気がする．&lt;/p&gt;
-
-&lt;p&gt;問題は２つある．&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;実生活に波風が立つ&lt;/strong&gt;：なまじ新婚なので，不穏な空気になる．他意はないのに．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;倫理的にアレ&lt;/strong&gt;：センシティブな話題なので，慎重になったほうが良い．研究用途で画像セットを使うぶんには問題ないと思う．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ultraist.hatenablog.com/entry/20110718/1310965532&quot;&gt;OpenCVによるアニメ顔検出ならlbpcascade_animeface.xml&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;独身かつ学生時代にやればよかった．&lt;/p&gt;
+&lt;h2 id=&quot;1b-スラムダンクの赤木と高砂を顔画像から分類&quot;&gt;1.b スラムダンクの赤木と高砂を顔画像から分類&lt;/h2&gt;
 
-&lt;h2 id=&quot;b2-君の名はの三葉の中身を顔画像から推定&quot;&gt;b.2 君の名はの三葉の中身を顔画像から推定&lt;/h2&gt;
+&lt;p&gt;「桜木がAIなら湘北が勝ってた」あるいは「AIでも見間違うから桜木のミスはしょうがない」と，結果がどちらに転んでも面白い．課題は，画像データの準備と，ラベル数の偏り．&lt;/p&gt;
 
-&lt;p&gt;最近DVDが出たので．組紐とか眉毛の角度とかを学習してくれたら面白い．問題は，DVDを買う必要があることか．&lt;/p&gt;
+&lt;h2 id=&quot;1c-顔画像から実子判定&quot;&gt;1.c 顔画像から実子判定&lt;/h2&gt;
 
-&lt;h2 id=&quot;b3-スラムダンクの赤木と高砂を顔画像から推定&quot;&gt;b.3 スラムダンクの赤木と高砂を顔画像から推定&lt;/h2&gt;
+&lt;p&gt;数年前，DNA鑑定が大流行したので，ニーズはありそう．実子であれば，両親の面影が顔に顕れるはずだし，この類のタスクはdeep learningの得意技の気がする．&lt;/p&gt;
 
-&lt;p&gt;大好きなので．「桜木がAIなら湘北が勝ってた」あるいは「AIでも見間違うから桜木のミスはしょうがない」と，結果がどちらに転んでもオイシイ．問題は，画像データの収集がメンドクサイことと，ラベルに偏りがあることだ．&lt;/p&gt;
+&lt;p&gt;下記のキーワードで，盛んに研究が行われている．&lt;/p&gt;
 
-&lt;h1 id=&quot;c-学習をすすめる&quot;&gt;c. 学習をすすめる&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kinship identification&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kinship verification&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kinship recognition&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;また，非商用の研究用途に限れば，データセットは入手可能である．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www1.ece.neu.edu/~yunfu/research/Kinface/Kinface.htm&quot;&gt;UB KinFace Database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1d-cycleganで柴犬画像生成&quot;&gt;1.d CycleGANで柴犬画像生成&lt;/h2&gt;
+
+&lt;p&gt;UCバークレー発の&lt;a href=&quot;https://github.com/junyanz/CycleGAN&quot;&gt;CycleGAN&lt;/a&gt;を柴犬に適用する．以下の記事がわかりやすかった．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://qiita.com/TSY/items/18eb8e9b6342d368c445&quot;&gt;画像変換手法CycleGANでパンダ生成モデルを作った話&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-言語処理系&quot;&gt;2. 言語処理系&lt;/h1&gt;
+
+&lt;h2 id=&quot;2a-普通自動車免許の正誤問題&quot;&gt;2.a 普通自動車免許の正誤問題&lt;/h2&gt;
+
+&lt;p&gt;なんとなく，学習しやすそうと感じたため．いかに著作権上の問題を回避しつつデータを集めるかが問題．&lt;/p&gt;
+
+&lt;h1 id=&quot;3-強化学習系&quot;&gt;3. 強化学習系&lt;/h1&gt;
+&lt;h2 id=&quot;3a-カイジの限定ジャンケンを強化学習&quot;&gt;3.a カイジの限定ジャンケンを強化学習&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E8%B3%AD%E5%8D%9A%E9%BB%99%E7%A4%BA%E9%8C%B2%E3%82%AB%E3%82%A4%E3%82%B8#.E9.99.90.E5.AE.9A.E3.82.B8.E3.83.A3.E3.83.B3.E3.82.B1.E3.83.B3&quot;&gt;限定ジャンケン&lt;/a&gt;は，数学的にも面白い問題&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．カードや星の売買を考慮すると問題が複雑になりすぎる&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;ので，「全体の手数の総数を見て，次の自分の手を決定する問題」程度に単純化してモデル化する．&lt;/p&gt;
+
+&lt;h2 id=&quot;3b-確定拠出年金のスイッチング最適化&quot;&gt;3.b 確定拠出年金のスイッチング最適化&lt;/h2&gt;
+
+&lt;p&gt;確定拠出年金で，どの商品にどの程度の割合で投資すれば，最大の利益を得られるか学習する．いろいろ調べたが，そもそものデータ収集が難しそう．&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;1992年の東大入試では，じゃんけんグリコに関する問題が出されたらしい（&lt;a href=&quot;http://mathtrain.jp/grk&quot;&gt;じゃんけんグリコの最適戦略と東大の問題&lt;/a&gt;）．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;限定ジャンケンの本質はそこな気がするので，残念だけど．&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </description>
-        <pubDate>Wed, 02 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/archivers/future-work-of-deep-learning</link>
-        <guid isPermaLink="true">http://localhost:4000/archivers/future-work-of-deep-learning</guid>
+        <pubDate>Thu, 03 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/archivers/future-work-in-deep-learning</link>
+        <guid isPermaLink="true">http://localhost:4000/archivers/future-work-in-deep-learning</guid>
         
         
         <category>machine learning</category>
         
-        <category>draft</category>
+      </item>
+    
+      <item>
+        <title>機械学習の学習予定</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt;の&lt;a href=&quot;https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101&quot;&gt;Deep learning foundations nanodegree&lt;/a&gt;を修了して，基本はある程度押さえられたし，論文も読めるようになった．やりたいことをメモしておく．&lt;/p&gt;
+
+&lt;h1 id=&quot;udacityの公開教材を和訳&quot;&gt;Udacityの公開教材を和訳&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/deep-learning-in-japanese/&quot;&gt;こちら&lt;/a&gt;で地道に進める．&lt;/p&gt;
+
+&lt;h1 id=&quot;fastaiのmoocを受講&quot;&gt;fast.aiのMOOCを受講&lt;/h1&gt;
+
+&lt;p&gt;巷で評判の良い，&lt;a href=&quot;http://www.fast.ai/&quot;&gt;fast.ai&lt;/a&gt;のMOOCを受講する．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://course.fast.ai/&quot;&gt;Part 1 - Practical Deep Learning For Coders&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://course.fast.ai/part2.html&quot;&gt;Part 2 - Cutting Edge Deep Learning For Coders&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Part 1では，Kaggleの&lt;a href=&quot;https://www.kaggle.com/c/dogs-vs-cats&quot;&gt;犬猫分類コンペ&lt;/a&gt;で上位に食い込むためのテクニックを教えてくれるらしい．&lt;/p&gt;
+
+&lt;h1 id=&quot;kaggle&quot;&gt;Kaggle&lt;/h1&gt;
+
+&lt;p&gt;実データで修行する．以下のコンペは本業とも関連するので，トライしてみたい．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting&quot;&gt;Web Traffic Time Series Forecasting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;基礎知識の復習&quot;&gt;基礎知識の復習&lt;/h1&gt;
+
+&lt;p&gt;定番の教科書をもう一度復習する．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8A-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061224&quot;&gt;C.M.ビショップ，パターン認識と機械学習&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E7%B5%B1%E8%A8%88%E7%9A%84%E5%AD%A6%E7%BF%92%E3%81%AE%E5%9F%BA%E7%A4%8E-_%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9E%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%BB%E6%8E%A8%E8%AB%96%E3%83%BB%E4%BA%88%E6%B8%AC_-Trevor-Hastie/dp/432012362X/ref=pd_sim_14_4?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=C02E1B5MEZZ4W5K65EGD&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.deeplearningbook.org/&quot;&gt;Ian Goodfellow and Yoshua Bengio and Aaron Courville, Deep Learning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ianさんの本は無料公開されているけど，アメリカにいるうちにお布施して原本を入手しよう．&lt;/p&gt;
+
+&lt;h1 id=&quot;最新論文のフォロー&quot;&gt;最新論文のフォロー&lt;/h1&gt;
+
+&lt;p&gt;2016年ぶんなら，下記が参考になるかも．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://qiita.com/sakaiakira/items/9da1edda802c4884865c&quot;&gt;2016年のディープラーニング論文100選&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Wed, 02 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/archivers/future-study-in-deep-learning</link>
+        <guid isPermaLink="true">http://localhost:4000/archivers/future-study-in-deep-learning</guid>
+        
+        
+        <category>machine learning</category>
         
       </item>
     
@@ -65,13 +152,13 @@
   &lt;p&gt;作成中．随時追記する．&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;訳あって一年ほど，情報通信系の多国籍企業の研究所で働いている．世界各国から研究者が集まっており，公用語は英語．ほとんどネイティブスピーカーはいない&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．忘れないように，よく使われる/使う英語表現をまとめておく．&lt;/p&gt;
+&lt;p&gt;訳あって一年ほど，情報通信系の多国籍企業の研究所で働いている．世界各国から研究者が集まっており，公用語は英語だが．ほとんどネイティブスピーカーはいない&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．忘れないように，よく使われる/使う英語表現をまとめておく．&lt;/p&gt;
 
-&lt;p&gt;感覚的な日本語訳も載せるが，正確かどうかは不明．&lt;strong&gt;あくまでも自分用のメモ&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;日本語訳の正確さは不明．&lt;strong&gt;あくまでも自分用のメモ&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;1-会議編&quot;&gt;1. 会議編&lt;/h1&gt;
 
-&lt;p&gt;会議は，定型文さえ覚えていれば，なんとかなる気がする．それでも通じなかったら，数式や図を書けば良い．&lt;/p&gt;
+&lt;p&gt;会議は，定型文さえ覚えていれば，なんとかなる．最悪，数式や図を書けば良い．&lt;/p&gt;
 
 &lt;h2 id=&quot;1a-相槌を打ちたいとき&quot;&gt;1.a 相槌を打ちたいとき&lt;/h2&gt;
 
@@ -85,7 +172,7 @@
 
 &lt;h2 id=&quot;1b-再確認したいとき&quot;&gt;1.b 再確認したいとき&lt;/h2&gt;
 
-&lt;p&gt;正直，英語で説明されてもよくわからないことが多い．聞き逃したり，意味がわからなかった時は，すぐに聞く．&lt;/p&gt;
+&lt;p&gt;聞き逃したり，意味がわからなかった時は，すぐに聞く．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sorry ?&lt;/code&gt;：ん？&lt;/li&gt;
@@ -101,7 +188,7 @@
 
 &lt;h2 id=&quot;1c-要点を強調したいとき&quot;&gt;1.c 要点を強調したいとき&lt;/h2&gt;
 
-&lt;p&gt;議論の核心を強調したいときに使う．海外ドラマとかでもよく聞く表現．こなれ感が出る（気がする）し，使いやすい．&lt;/p&gt;
+&lt;p&gt;議論の要点を強調したいときに使う．海外ドラマとかでもよく聞く表現．使いやすい．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;The point is ...&lt;/code&gt;：重要なのは，…&lt;/li&gt;
@@ -119,7 +206,7 @@
 
 &lt;h2 id=&quot;1e-口頭だけじゃきついとき&quot;&gt;1.e 口頭だけじゃきついとき&lt;/h2&gt;
 
-&lt;p&gt;技術的に高度な話題になると，口頭だけだときつい．そういう時は，使えるものは全て使う．&lt;/p&gt;
+&lt;p&gt;高度な話題になると，口頭だけじゃきつい．そういう時は，道具を使う．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Can I use a white board ?&lt;/code&gt;：ちょっとホワイトボード使っていい？&lt;/li&gt;
@@ -140,7 +227,7 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Good.&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Fine.&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Not so bad.&lt;/code&gt;…：返事は気分で変える．特に違いはない．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;2b-そこまで親しくない人と間が持たないとき&quot;&gt;2.b （そこまで親しくない人と）間が持たないとき&lt;/h2&gt;
+&lt;h2 id=&quot;2b-間が保たないとき&quot;&gt;2.b 間が保たないとき&lt;/h2&gt;
 
 &lt;p&gt;ぼーっとしてると，わけのわからない話題になることが多い&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;．わかりやすい話題を先にふる．&lt;/p&gt;
 
@@ -153,19 +240,17 @@
 &lt;h2 id=&quot;3a-修飾語&quot;&gt;3.a 修飾語&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;super&lt;/code&gt;：veryのこなれたバージョン．IT界隈では特に使われる気がする．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;really&lt;/code&gt;：これも，veryの代わりに使われることが多い．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;super&lt;/code&gt;：とても．veryのこなれたバージョン．IT界隈では特に使われる気がする．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;really&lt;/code&gt;：とても．これも，veryの代わりに使われることが多い．&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hi-level&lt;/code&gt;：ざっくりとした．技術的なレベルが高いという意味ではなく，「経営層向け」の「抽象度の高い」的なニュアンスになる．&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;state-of-the-art&lt;/code&gt;：最先端の．論文とかでよく使うし，日常会話でも使う．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;3b-つなぎ言葉&quot;&gt;3.b つなぎ言葉&lt;/h2&gt;
 
-&lt;p&gt;よく使われる表現．感覚的には，一つの発言中に一回は出てくる．&lt;/p&gt;
-
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;you know&lt;/code&gt;：えーと．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;like a&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;sort of&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;kind of&lt;/code&gt;：みたいな&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;like a&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;sort of&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;kind of&lt;/code&gt;：みたいな．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
@@ -175,9 +260,6 @@
     &lt;/li&gt;
     &lt;li id=&quot;fn:3&quot;&gt;
       &lt;p&gt;その都度聞けばいいが，聞くのもしんどいときがある．&amp;nbsp;&lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;私の耳には，&lt;code class=&quot;highlighter-rouge&quot;&gt;sort of&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;kind of&lt;/code&gt;は，&lt;code class=&quot;highlighter-rouge&quot;&gt;ソータ&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;カインダ&lt;/code&gt;と聞こえるので，最初は何がなんだかわからなかった．最近になって，無視して良い言葉だと気づいた．&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -194,20 +276,20 @@
       </item>
     
       <item>
-        <title>Jekyll + GitHub Pagesでウェブサイトを立ち上げた</title>
+        <title>JekyllとGitHub Pagesでウェブサイトを立ち上げた</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;作成中&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://qiita.com/&quot;&gt;Qiita&lt;/a&gt;に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは&lt;a href=&quot;https://evernote.com/intl/jp/&quot;&gt;evernote&lt;/a&gt;を使ってきたが，数式やソースコードを書きづらい．&lt;a href=&quot;http://hatenablog.com/&quot;&gt;はてなブログ&lt;/a&gt;等で&lt;a href=&quot;https://ja.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;を書いても良いけど，手元にコンテンツが残らないのが嫌だったし，&lt;code class=&quot;highlighter-rouge&quot;&gt;haltaro&lt;/code&gt;ドメインが取れなかった．ということで，&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;と&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;で，ウェブサイトを自作することにした．&lt;/p&gt;
+&lt;p&gt;それなりに技術的なメモが溜まってきたが，&lt;a href=&quot;http://qiita.com/&quot;&gt;Qiita&lt;/a&gt;に投稿するほどではない．これまでは&lt;a href=&quot;https://evernote.com/intl/jp/&quot;&gt;evernote&lt;/a&gt;で管理していたが，数式やソースコードを書きづらい．&lt;a href=&quot;http://hatenablog.com/&quot;&gt;はてなブログ&lt;/a&gt;等で&lt;a href=&quot;https://ja.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;を書いても良いが，手元にコンテンツが残らないのが嫌だし，&lt;code class=&quot;highlighter-rouge&quot;&gt;haltaro&lt;/code&gt;ドメインが取れなかった．そこで，&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;と&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;で，ウェブサイトを立ち上げた．&lt;/p&gt;
 
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
-&lt;p&gt;ググればいくらでも記事が出て来る．特に，以下を参考にさせて頂いた:bow:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll github pages&lt;/code&gt;等でググると素晴らしい記事がたくさん出てきた．今回は，特に，以下を参考にした．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://jekyllrb-ja.github.io/docs/home/&quot;&gt;jekyll公式ドキュメント&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;base-font-family&lt;/code&gt;の指定について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;*-font-family&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;*-font-weight&lt;/code&gt;の設定について．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
@@ -220,7 +302,7 @@
 
 &lt;h2 id=&quot;4-jekyllテーマ選定&quot;&gt;4. Jekyllテーマ選定&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll themes&lt;/a&gt;から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，&lt;a href=&quot;https://github.com/laobubu&quot;&gt;laobubu&lt;/a&gt;さんの&lt;a href=&quot;http://jekyllthemes.org/themes/easybook/&quot;&gt;EasyBook&lt;/a&gt;を使わせてもらうことにした．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll themes&lt;/a&gt;から，テーマを選んだ．シンプルさと，カテゴリ分類機能という条件を満たす&lt;a href=&quot;https://github.com/laobubu&quot;&gt;laobubu&lt;/a&gt;さんの&lt;a href=&quot;http://jekyllthemes.org/themes/easybook/&quot;&gt;EasyBook&lt;/a&gt;を使わせてもらうことにした．&lt;/p&gt;
 
 &lt;h2 id=&quot;5-カスタマイズ&quot;&gt;5. カスタマイズ&lt;/h2&gt;
 
@@ -240,7 +322,7 @@ $code-font-size:     15px;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;流行りの&lt;a href=&quot;http://www.jiyu-kobo.co.jp/library/ygf/&quot;&gt;游ゴシック&lt;/a&gt;なるものを使ってみた．&lt;code class=&quot;highlighter-rouge&quot;&gt;$*-font-familiy&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;$*-font-weight&lt;/code&gt;については，&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;を参考にした．&lt;/p&gt;
+&lt;p&gt;流行りの&lt;a href=&quot;http://www.jiyu-kobo.co.jp/library/ygf/&quot;&gt;游ゴシック&lt;/a&gt;を使ってみた．&lt;code class=&quot;highlighter-rouge&quot;&gt;$*-font-familiy&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;$*-font-weight&lt;/code&gt;については，&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;を参考にした．&lt;/p&gt;
 
 &lt;h3 id=&quot;52-連絡先の追加&quot;&gt;5.2 連絡先の追加&lt;/h3&gt;
 
@@ -248,7 +330,7 @@ $code-font-size:     15px;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;ちなみに，markdownにhtmlコードを直に書くと，ウェブサイト上では，自動変換されてソースコードが表示されない．上記では，&lt;a href=&quot;http://fukafuka295.jp/hp/hp_no9.html&quot;&gt;HTMLやCSSのソースコードをそのままページに貼り付ける方法&lt;/a&gt;を参考に，&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;を使って貼り付けた．&lt;/p&gt;
+&lt;p&gt;ちなみに，markdownにhtmlコードを直打ちすると，自動変換されてソースコードが表示されない．上記では，&lt;a href=&quot;http://fukafuka295.jp/hp/hp_no9.html&quot;&gt;HTMLやCSSのソースコードをそのままページに貼り付ける方法&lt;/a&gt;を参考に，&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;を使って貼り付けた．&lt;/p&gt;
 
 &lt;p&gt;次に，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_config.yml&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;qitta_username&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle_username&lt;/code&gt;を追加した．&lt;/p&gt;
 
@@ -258,9 +340,9 @@ $code-font-size:     15px;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;53-projectページの追加&quot;&gt;5.3 Projectページの追加&lt;/h3&gt;
+&lt;h3 id=&quot;53-projectsページの追加&quot;&gt;5.3 Projectsページの追加&lt;/h3&gt;
 
-&lt;p&gt;Projectをまとめたページを作りたかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/project.md&lt;/code&gt;を追加した．フロントマターは，&lt;code class=&quot;highlighter-rouge&quot;&gt;/about.md&lt;/code&gt;を参考に作った．&lt;/p&gt;
+&lt;p&gt;業績をまとめたページを作りたかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/projects.md&lt;/code&gt;を追加した．フロントマターは，&lt;code class=&quot;highlighter-rouge&quot;&gt;/about.md&lt;/code&gt;を参考に作った．&lt;/p&gt;
 
 &lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;page&lt;/span&gt;
@@ -286,15 +368,8 @@ $code-font-size:     15px;
 
 &lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
-&lt;p&gt;rubyとかcssとか全然わからんが，出来ないことは無かった&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
+&lt;p&gt;htmlとかcssとか全然わからんが，なんとか形になった．今後は，&lt;a href=&quot;https://www.google.com/intl/ja/analytics/#?modal_active=none&quot;&gt;googleアナリティクス&lt;/a&gt;と連携させたい．&lt;/p&gt;
 
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;結構ハマったけど．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
 </description>
         <pubDate>Sun, 30 Jul 2017 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/archivers/first-post</link>

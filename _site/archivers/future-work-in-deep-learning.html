@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>機械学習のプロジェクト予定 « Memotaro</title>
+  <meta name="description" content="くだらないものばかりだけど，今後やりたいことをメモしておく．">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/archivers/future-work-in-deep-learning">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="header">
+  <div class="wrapper">
+    <a class="site-title" href="/">Memotaro</a>
+    <nav class="site-nav">
+      
+        
+      
+        
+        <a class="page-link" href="/about/">About</a>
+        
+      
+        
+        <a class="page-link" href="/category/">Category</a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <a class="page-link" href="/projects/">Projects</a>
+        
+      
+    </nav>
+  </div>
+</header>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="col-main">
+          <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">機械学習のプロジェクト予定</h1>
+    <p class="post-meta">Aug 3, 2017</p>
+  </header>
+
+  <article class="post-content">
+    <p>くだらないものばかりだけど，今後やりたいことをメモしておく．</p>
+
+<h1 id="1-画像処理系">1. 画像処理系</h1>
+
+<h2 id="1a-君の名はの三葉の中身を顔画像から分類">1.a 君の名は。の三葉の中身を顔画像から分類</h2>
+
+<p>組紐の有無とか眉毛の角度とかを学習してくれたら面白い．アニメ画像の顔検出は<a href="http://opencv.org/">OpenCV</a>で自動化できるので，データの準備はそこまで大変じゃない．</p>
+
+<ul>
+  <li><a href="http://ultraist.hatenablog.com/entry/20110718/1310965532">OpenCVによるアニメ顔検出ならlbpcascade_animeface.xml</a></li>
+</ul>
+
+<h2 id="1b-スラムダンクの赤木と高砂を顔画像から分類">1.b スラムダンクの赤木と高砂を顔画像から分類</h2>
+
+<p>「桜木がAIなら湘北が勝ってた」あるいは「AIでも見間違うから桜木のミスはしょうがない」と，結果がどちらに転んでも面白い．課題は，画像データの準備と，ラベル数の偏り．</p>
+
+<h2 id="1c-顔画像から実子判定">1.c 顔画像から実子判定</h2>
+
+<p>数年前，DNA鑑定が大流行したので，ニーズはありそう．実子であれば，両親の面影が顔に顕れるはずだし，この類のタスクはdeep learningの得意技の気がする．</p>
+
+<p>下記のキーワードで，盛んに研究が行われている．</p>
+
+<ul>
+  <li><code class="highlighter-rouge">kinship identification</code></li>
+  <li><code class="highlighter-rouge">kinship verification</code></li>
+  <li><code class="highlighter-rouge">kinship recognition</code></li>
+</ul>
+
+<p>また，非商用の研究用途に限れば，データセットは入手可能である．</p>
+
+<ul>
+  <li><a href="http://www1.ece.neu.edu/~yunfu/research/Kinface/Kinface.htm">UB KinFace Database</a></li>
+</ul>
+
+<h2 id="1d-cycleganで柴犬画像生成">1.d CycleGANで柴犬画像生成</h2>
+
+<p>UCバークレー発の<a href="https://github.com/junyanz/CycleGAN">CycleGAN</a>を柴犬に適用する．以下の記事がわかりやすかった．</p>
+
+<ul>
+  <li><a href="http://qiita.com/TSY/items/18eb8e9b6342d368c445">画像変換手法CycleGANでパンダ生成モデルを作った話</a></li>
+</ul>
+
+<h1 id="2-言語処理系">2. 言語処理系</h1>
+
+<h2 id="2a-普通自動車免許の正誤問題">2.a 普通自動車免許の正誤問題</h2>
+
+<p>なんとなく，学習しやすそうと感じたため．いかに著作権上の問題を回避しつつデータを集めるかが問題．</p>
+
+<h1 id="3-強化学習系">3. 強化学習系</h1>
+<h2 id="3a-カイジの限定ジャンケンを強化学習">3.a カイジの限定ジャンケンを強化学習</h2>
+
+<p><a href="https://ja.wikipedia.org/wiki/%E8%B3%AD%E5%8D%9A%E9%BB%99%E7%A4%BA%E9%8C%B2%E3%82%AB%E3%82%A4%E3%82%B8#.E9.99.90.E5.AE.9A.E3.82.B8.E3.83.A3.E3.83.B3.E3.82.B1.E3.83.B3">限定ジャンケン</a>は，数学的にも面白い問題<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．カードや星の売買を考慮すると問題が複雑になりすぎる<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>ので，「全体の手数の総数を見て，次の自分の手を決定する問題」程度に単純化してモデル化する．</p>
+
+<h2 id="3b-確定拠出年金のスイッチング最適化">3.b 確定拠出年金のスイッチング最適化</h2>
+
+<p>確定拠出年金で，どの商品にどの程度の割合で投資すれば，最大の利益を得られるか学習する．いろいろ調べたが，そもそものデータ収集が難しそう．</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>1992年の東大入試では，じゃんけんグリコに関する問題が出されたらしい（<a href="http://mathtrain.jp/grk">じゃんけんグリコの最適戦略と東大の問題</a>）．&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>限定ジャンケンの本質はそこな気がするので，残念だけど．&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </article>
+  
+  
+
+
+
+
+</div>
+
+        </div>
+        <div class="col-second">
+          <div class="col-box col-box-author">
+  <img class="avatar" src="//www.gravatar.com/avatar/546804f938d574fc5141fc1431066d29" alt="haltaro">
+  <div class="col-box-title name">haltaro</div>
+  <p>c++とpythonを使います</p>
+  <p class="contact">
+    
+    <a href="https://github.com/haltaro">GitHub</a>
+    
+    
+    
+		<a href="https://qiita.com/haltaro">Qiita</a>
+    
+    
+		<a href="https://kaggle.com/haltaro">Kaggle</a>
+    
+
+    
+    <a href="mailto:mail.to.haltaro@gmail.com">Email</a>
+    
+  </p>
+</div>
+
+<div class="col-box">
+  <div class="col-box-title">Newest Posts</div>
+  <ul class="post-list">
+    
+      <li><a class="post-link" href="/archivers/future-work-in-deep-learning">機械学習のプロジェクト予定</a></li>
+    
+      <li><a class="post-link" href="/archivers/future-study-in-deep-learning">機械学習の学習予定</a></li>
+    
+      <li><a class="post-link" href="/archivers/english-phrases-in-international-labs">多国籍企業の研究所で使う便利な英会話表現</a></li>
+    
+      <li><a class="post-link" href="/archivers/first-post">JekyllとGitHub Pagesでウェブサイトを立ち上げた</a></li>
+    
+  </ul>
+</div>
+
+<div class="col-box post-toc hide">
+  <div class="col-box-title">TOC</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+<div class="wrapper">
+&copy; 2016 haltaro
+</div>
+</footer>
+
+<script src="/js/easybook.js"></script>
+
+  </body>
+
+</html>

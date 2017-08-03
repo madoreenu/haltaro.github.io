@@ -2,17 +2,16 @@
 <html>
 
   <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Jekyll + GitHub Pagesでウェブサイトを立ち上げた « Memotaro</title>
+  <title>JekyllとGitHub Pagesでウェブサイトを立ち上げた « Memotaro</title>
   <meta name="description" content="  作成中">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/archivers/first-post">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -53,7 +52,7 @@
           <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Jekyll + GitHub Pagesでウェブサイトを立ち上げた</h1>
+    <h1 class="post-title">JekyllとGitHub Pagesでウェブサイトを立ち上げた</h1>
     <p class="post-meta">Jul 30, 2017</p>
   </header>
 
@@ -62,16 +61,15 @@
   <p>作成中</p>
 </blockquote>
 
-<p><a href="http://qiita.com/">Qiita</a>に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは<a href="https://evernote.com/intl/jp/">evernote</a>を使ってきたが，数式やソースコードを書きづらい．<a href="http://hatenablog.com/">はてなブログ</a>等で<a href="https://ja.wikipedia.org/wiki/Markdown">Markdown</a>を書いても良いけど，手元にコンテンツが残らないのが嫌だったし，<code class="highlighter-rouge">haltaro</code>ドメインが取れなかった．ということで，<a href="https://jekyllrb-ja.github.io/">Jekyll</a>と<a href="https://pages.github.com/">GitHub Pages</a>で，ウェブサイトを自作することにした．</p>
+<p>それなりに技術的なメモが溜まってきたが，<a href="http://qiita.com/">Qiita</a>に投稿するほどではない．これまでは<a href="https://evernote.com/intl/jp/">evernote</a>で管理していたが，数式やソースコードを書きづらい．<a href="http://hatenablog.com/">はてなブログ</a>等で<a href="https://ja.wikipedia.org/wiki/Markdown">Markdown</a>を書いても良いが，手元にコンテンツが残らないのが嫌だし，<code class="highlighter-rouge">haltaro</code>ドメインが取れなかった．そこで，<a href="https://jekyllrb-ja.github.io/">Jekyll</a>と<a href="https://pages.github.com/">GitHub Pages</a>で，ウェブサイトを立ち上げた．</p>
 
 <h1 id="参考">参考</h1>
 
-<p>ググればいくらでも記事が出て来る．特に，以下を参考にさせて頂いた<img class="emoji" title=":bow:" alt=":bow:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f647.png" height="20" width="20" align="absmiddle"></p>
+<p><code class="highlighter-rouge">jekyll github pages</code>等でググると素晴らしい記事がたくさん出てきた．今回は，特に，以下を参考にした．</p>
 
 <ul>
   <li><a href="https://jekyllrb-ja.github.io/docs/home/">jekyll公式ドキュメント</a></li>
-  <li>
-<a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>：<code class="highlighter-rouge">base-font-family</code>の指定について．</li>
+  <li><a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>：<code class="highlighter-rouge">*-font-family</code>および<code class="highlighter-rouge">*-font-weight</code>の設定について．</li>
 </ul>
 
 <h1 id="手順">手順</h1>
@@ -84,7 +82,7 @@
 
 <h2 id="4-jekyllテーマ選定">4. Jekyllテーマ選定</h2>
 
-<p><a href="http://jekyllthemes.org/">Jekyll themes</a>から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，<a href="https://github.com/laobubu">laobubu</a>さんの<a href="http://jekyllthemes.org/themes/easybook/">EasyBook</a>を使わせてもらうことにした．</p>
+<p><a href="http://jekyllthemes.org/">Jekyll themes</a>から，テーマを選んだ．シンプルさと，カテゴリ分類機能という条件を満たす<a href="https://github.com/laobubu">laobubu</a>さんの<a href="http://jekyllthemes.org/themes/easybook/">EasyBook</a>を使わせてもらうことにした．</p>
 
 <h2 id="5-カスタマイズ">5. カスタマイズ</h2>
 
@@ -92,8 +90,7 @@
 
 <p>デフォルトだと日本語フォントが気持ち悪いので，<code class="highlighter-rouge">/css/main.scss</code>を次のように変更した．</p>
 
-<div class="highlighter-rouge">
-<pre class="highlight"><code>$base-font-family: "Hiragino Maru Gothic W4 JIS2004", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+<div class="highlighter-rouge"><pre class="highlight"><code>$base-font-family: "Hiragino Maru Gothic W4 JIS2004", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-weight: 500;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -105,7 +102,7 @@ $code-font-size:     15px;
 </code></pre>
 </div>
 
-<p>流行りの<a href="http://www.jiyu-kobo.co.jp/library/ygf/">游ゴシック</a>なるものを使ってみた．<code class="highlighter-rouge">$*-font-familiy</code>および<code class="highlighter-rouge">$*-font-weight</code>については，<a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>を参考にした．</p>
+<p>流行りの<a href="http://www.jiyu-kobo.co.jp/library/ygf/">游ゴシック</a>を使ってみた．<code class="highlighter-rouge">$*-font-familiy</code>および<code class="highlighter-rouge">$*-font-weight</code>については，<a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>を参考にした．</p>
 
 <h3 id="52-連絡先の追加">5.2 連絡先の追加</h3>
 
@@ -113,23 +110,21 @@ $code-font-size:     15px;
 
 <script src="https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js"></script>
 
-<p>ちなみに，markdownにhtmlコードを直に書くと，ウェブサイト上では，自動変換されてソースコードが表示されない．上記では，<a href="http://fukafuka295.jp/hp/hp_no9.html">HTMLやCSSのソースコードをそのままページに貼り付ける方法</a>を参考に，<a href="https://gist.github.com/">Gist</a>を使って貼り付けた．</p>
+<p>ちなみに，markdownにhtmlコードを直打ちすると，自動変換されてソースコードが表示されない．上記では，<a href="http://fukafuka295.jp/hp/hp_no9.html">HTMLやCSSのソースコードをそのままページに貼り付ける方法</a>を参考に，<a href="https://gist.github.com/">Gist</a>を使って貼り付けた．</p>
 
 <p>次に，<code class="highlighter-rouge">/_config.yml</code>に<code class="highlighter-rouge">qitta_username</code>と<code class="highlighter-rouge">kaggle_username</code>を追加した．</p>
 
-<div class="language-yml highlighter-rouge">
-<pre class="highlight"><code><span class="s">github_username</span><span class="pi">:</span> <span class="s">haltaro</span>
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">github_username</span><span class="pi">:</span> <span class="s">haltaro</span>
 <span class="s">qiita_username</span><span class="pi">:</span> <span class="s">haltaro</span> <span class="c1">#追加</span>
 <span class="s">kaggle_username</span><span class="pi">:</span> <span class="s">haltaro</span> <span class="c1">#追加</span>
 </code></pre>
 </div>
 
-<h3 id="53-projectページの追加">5.3 Projectページの追加</h3>
+<h3 id="53-projectsページの追加">5.3 Projectsページの追加</h3>
 
-<p>Projectをまとめたページを作りたかったので，<code class="highlighter-rouge">/project.md</code>を追加した．フロントマターは，<code class="highlighter-rouge">/about.md</code>を参考に作った．</p>
+<p>業績をまとめたページを作りたかったので，<code class="highlighter-rouge">/projects.md</code>を追加した．フロントマターは，<code class="highlighter-rouge">/about.md</code>を参考に作った．</p>
 
-<div class="language-markdown highlighter-rouge">
-<pre class="highlight"><code><span class="nn">---</span>
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
 <span class="s">layout</span><span class="pi">:</span> <span class="s">page</span>
 <span class="s">title</span><span class="pi">:</span> <span class="s">Projects</span>
 <span class="s">permalink</span><span class="pi">:</span> <span class="s">/projects/</span>
@@ -145,8 +140,7 @@ $code-font-size:     15px;
 
 <h2 id="7-アップロード">7. アップロード</h2>
 
-<div class="language-bash highlighter-rouge">
-<pre class="highlight"><code><span class="gp">$ </span>git add . -A
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git add . -A
 <span class="gp">$ </span>git commit -m <span class="s2">"First commit"</span>
 <span class="gp">$ </span>git push origin master
 </code></pre>
@@ -154,15 +148,8 @@ $code-font-size:     15px;
 
 <h1 id="感想">感想</h1>
 
-<p>rubyとかcssとか全然わからんが，出来ないことは無かった<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．</p>
+<p>htmlとかcssとか全然わからんが，なんとか形になった．今後は，<a href="https://www.google.com/intl/ja/analytics/#?modal_active=none">googleアナリティクス</a>と連携させたい．</p>
 
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>結構ハマったけど． <a href="#fnref:1" class="reversefootnote">↩</a></p>
-    </li>
-  </ol>
-</div>
 
   </article>
   
@@ -201,11 +188,13 @@ $code-font-size:     15px;
   <div class="col-box-title">Newest Posts</div>
   <ul class="post-list">
     
-      <li><a class="post-link" href="/archivers/future-work-of-deep-learning">機械学習関連で今後やりたいこと</a></li>
+      <li><a class="post-link" href="/archivers/future-work-in-deep-learning">機械学習のプロジェクト予定</a></li>
+    
+      <li><a class="post-link" href="/archivers/future-study-in-deep-learning">機械学習の学習予定</a></li>
     
       <li><a class="post-link" href="/archivers/english-phrases-in-international-labs">多国籍企業の研究所で使う便利な英会話表現</a></li>
     
-      <li><a class="post-link" href="/archivers/first-post">Jekyll + GitHub Pagesでウェブサイトを立ち上げた</a></li>
+      <li><a class="post-link" href="/archivers/first-post">JekyllとGitHub Pagesでウェブサイトを立ち上げた</a></li>
     
   </ul>
 </div>
@@ -220,7 +209,7 @@ $code-font-size:     15px;
 
     <footer class="footer">
 <div class="wrapper">
-© 2016 haltaro
+&copy; 2016 haltaro
 </div>
 </footer>
 
