@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Aug 2017 07:59:15 -0400</pubDate>
-    <lastBuildDate>Thu, 03 Aug 2017 07:59:15 -0400</lastBuildDate>
+    <pubDate>Thu, 03 Aug 2017 08:57:22 -0400</pubDate>
+    <lastBuildDate>Thu, 03 Aug 2017 08:57:22 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -20,7 +20,7 @@
 
 &lt;h1 id=&quot;a-本業に活かす&quot;&gt;a. 本業に活かす&lt;/h1&gt;
 
-&lt;p&gt;できれば．技術先行で問題を後付けするのは悪い癖なので，機械学習に執着せず，フラットに他の技術と比較するよう心がけたい．&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;できれば&lt;/strong&gt;．ただし，技術先行で問題を後付けするのは悪い癖なので，機械学習に執着せず，フラットに他の技術と比較するよう心がけたい．&lt;/p&gt;
 
 &lt;h1 id=&quot;b-新プロジェクトを立ち上げる&quot;&gt;b. 新プロジェクトを立ち上げる&lt;/h1&gt;
 
@@ -28,12 +28,12 @@
 
 &lt;h2 id=&quot;b1-顔画像から実子判定&quot;&gt;b.1 顔画像から実子判定&lt;/h2&gt;
 
-&lt;p&gt;一昔前，DNA鑑定が大流行したので，ニーズはあると思う．実子であれば，両親の面影が顔に顕れるはずだし，この種の特徴抽出はdeep learningの得意技だ．&lt;/p&gt;
+&lt;p&gt;一昔前，DNA鑑定が大流行したので，ニーズはあると思う．実子であれば，両親の面影が顔に顕れるはずだし，この種の特徴抽出はdeep learningの得意技の気がする．&lt;/p&gt;
 
 &lt;p&gt;問題は２つある．&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;実生活に波風が立つ&lt;/strong&gt;：なまじ新婚なので，不穏な空気になる．他意はないのに．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;倫理的にアレ&lt;/strong&gt;：どうなんだろう．研究用途で画像セットを使うぶんには問題ないと思う．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;倫理的にアレ&lt;/strong&gt;：センシティブな話題なので，慎重になったほうが良い．研究用途で画像セットを使うぶんには問題ないと思う．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;独身かつ学生時代にやればよかった．&lt;/p&gt;
@@ -226,7 +226,7 @@
 
 &lt;h3 id=&quot;51-フォントの変更&quot;&gt;5.1 フォントの変更&lt;/h3&gt;
 
-&lt;p&gt;デフォルトだと日本語フォントが気持ち悪いので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/css/main.scss&lt;/code&gt;を次のように変更する．流行りの&lt;a href=&quot;http://www.jiyu-kobo.co.jp/library/ygf/&quot;&gt;游ゴシック&lt;/a&gt;なるものを使ってみる．&lt;/p&gt;
+&lt;p&gt;デフォルトだと日本語フォントが気持ち悪いので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/css/main.scss&lt;/code&gt;を次のように変更した．&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$base-font-family: &quot;Hiragino Maru Gothic W4 JIS2004&quot;, &quot;游ゴシック&quot;, YuGothic, &quot;ヒラギノ角ゴ ProN W3&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;メイリオ&quot;, Meiryo, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
 $base-font-weight: 500;
@@ -234,21 +234,29 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$code-font-family:   Menlo, Monaco, Consolas, &quot;DejaVu Sans Mono&quot;, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, Courier, SimSun, monospace;
+$code-font-family:   Menlo, Monaco, Consolas, &quot;DejaVu Sans Mono&quot;, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, &quot;Hiragino Maru Gothic W4 JIS2004&quot;, &quot;游ゴシック&quot;, YuGothic, &quot;ヒラギノ角ゴ ProN W3&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;メイリオ&quot;, Meiryo, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
 $code-font-weight: 500; 
 $code-font-size:     15px;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$base-font&lt;/code&gt;については，&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;を参考にした．&lt;code class=&quot;highlighter-rouge&quot;&gt;$code-font&lt;/code&gt;については，デフォルトのものから明らかに中国語と思われるものを削除し，&lt;code class=&quot;highlighter-rouge&quot;&gt;$code-font-weight: 500&lt;/code&gt;を追加した．&lt;/p&gt;
+&lt;p&gt;流行りの&lt;a href=&quot;http://www.jiyu-kobo.co.jp/library/ygf/&quot;&gt;游ゴシック&lt;/a&gt;なるものを使ってみた．&lt;code class=&quot;highlighter-rouge&quot;&gt;$*-font-familiy&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;$*-font-weight&lt;/code&gt;については，&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;を参考にした．&lt;/p&gt;
 
 &lt;h3 id=&quot;52-連絡先の追加&quot;&gt;5.2 連絡先の追加&lt;/h3&gt;
 
-&lt;p&gt;連絡先に，&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;を追加した．&lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt;したところ，&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/sidebar.html&lt;/code&gt;で設定できそうだったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;ボタンと&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;ボタンを追加した．&lt;/p&gt;
+&lt;p&gt;連絡先に，&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;を追加した．まず，&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/sidebar.html&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;ボタンと&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;ボタンの設定を追記．&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;ちなみに，markdownにhtmlコードをそのまま書くと，ウェブサイトでは自動変換されてしまいソースコードが見られない．上記では，&lt;a href=&quot;http://fukafuka295.jp/hp/hp_no9.html&quot;&gt;HTMLやCSSのソースコードをそのままページに貼り付ける方法&lt;/a&gt;を参考に，&lt;a href=&quot;&quot;&gt;Gist&lt;/a&gt;を使って貼り付けた．&lt;/p&gt;
+&lt;p&gt;ちなみに，markdownにhtmlコードを直に書くと，ウェブサイト上では，自動変換されてソースコードが表示されない．上記では，&lt;a href=&quot;http://fukafuka295.jp/hp/hp_no9.html&quot;&gt;HTMLやCSSのソースコードをそのままページに貼り付ける方法&lt;/a&gt;を参考に，&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;を使って貼り付けた．&lt;/p&gt;
+
+&lt;p&gt;次に，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_config.yml&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;qitta_username&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle_username&lt;/code&gt;を追加した．&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;github_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;haltaro&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;qiita_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;haltaro&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#追加&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;kaggle_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;haltaro&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#追加&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;53-projectページの追加&quot;&gt;5.3 Projectページの追加&lt;/h3&gt;
 

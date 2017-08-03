@@ -90,7 +90,7 @@
 
 <h3 id="51-フォントの変更">5.1 フォントの変更</h3>
 
-<p>デフォルトだと日本語フォントが気持ち悪いので，<code class="highlighter-rouge">/css/main.scss</code>を次のように変更する．流行りの<a href="http://www.jiyu-kobo.co.jp/library/ygf/">游ゴシック</a>なるものを使ってみる．</p>
+<p>デフォルトだと日本語フォントが気持ち悪いので，<code class="highlighter-rouge">/css/main.scss</code>を次のように変更した．</p>
 
 <div class="highlighter-rouge">
 <pre class="highlight"><code>$base-font-family: "Hiragino Maru Gothic W4 JIS2004", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -99,21 +99,30 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$code-font-family:   Menlo, Monaco, Consolas, "DejaVu Sans Mono", "Liberation Mono", "Courier New", Courier, SimSun, monospace;
+$code-font-family:   Menlo, Monaco, Consolas, "DejaVu Sans Mono", "Liberation Mono", "Courier New", "Hiragino Maru Gothic W4 JIS2004", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $code-font-weight: 500; 
 $code-font-size:     15px;
 </code></pre>
 </div>
 
-<p><code class="highlighter-rouge">$base-font</code>については，<a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>を参考にした．<code class="highlighter-rouge">$code-font</code>については，デフォルトのものから明らかに中国語と思われるものを削除し，<code class="highlighter-rouge">$code-font-weight: 500</code>を追加した．</p>
+<p>流行りの<a href="http://www.jiyu-kobo.co.jp/library/ygf/">游ゴシック</a>なるものを使ってみた．<code class="highlighter-rouge">$*-font-familiy</code>および<code class="highlighter-rouge">$*-font-weight</code>については，<a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>を参考にした．</p>
 
 <h3 id="52-連絡先の追加">5.2 連絡先の追加</h3>
 
-<p>連絡先に，<code class="highlighter-rouge">Qiita</code>と<code class="highlighter-rouge">Kaggle</code>を追加した．<code class="highlighter-rouge">grep</code>したところ，<code class="highlighter-rouge">_includes/sidebar.html</code>で設定できそうだったので，<code class="highlighter-rouge">Qiita</code>ボタンと<code class="highlighter-rouge">Kaggle</code>ボタンを追加した．</p>
+<p>連絡先に，<code class="highlighter-rouge">Qiita</code>と<code class="highlighter-rouge">Kaggle</code>を追加した．まず，<code class="highlighter-rouge">_includes/sidebar.html</code>に<code class="highlighter-rouge">Qiita</code>ボタンと<code class="highlighter-rouge">Kaggle</code>ボタンの設定を追記．</p>
 
 <script src="https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js"></script>
 
-<p>ちなみに，markdownにhtmlコードをそのまま書くと，ウェブサイトでは自動変換されてしまいソースコードが見られない．上記では，<a href="http://fukafuka295.jp/hp/hp_no9.html">HTMLやCSSのソースコードをそのままページに貼り付ける方法</a>を参考に，<a href="">Gist</a>を使って貼り付けた．</p>
+<p>ちなみに，markdownにhtmlコードを直に書くと，ウェブサイト上では，自動変換されてソースコードが表示されない．上記では，<a href="http://fukafuka295.jp/hp/hp_no9.html">HTMLやCSSのソースコードをそのままページに貼り付ける方法</a>を参考に，<a href="https://gist.github.com/">Gist</a>を使って貼り付けた．</p>
+
+<p>次に，<code class="highlighter-rouge">/_config.yml</code>に<code class="highlighter-rouge">qitta_username</code>と<code class="highlighter-rouge">kaggle_username</code>を追加した．</p>
+
+<div class="language-yml highlighter-rouge">
+<pre class="highlight"><code><span class="s">github_username</span><span class="pi">:</span> <span class="s">haltaro</span>
+<span class="s">qiita_username</span><span class="pi">:</span> <span class="s">haltaro</span> <span class="c1">#追加</span>
+<span class="s">kaggle_username</span><span class="pi">:</span> <span class="s">haltaro</span> <span class="c1">#追加</span>
+</code></pre>
+</div>
 
 <h3 id="53-projectページの追加">5.3 Projectページの追加</h3>
 

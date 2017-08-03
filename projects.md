@@ -67,7 +67,7 @@ moe_szyslak:(to homer) hey, i don't need your sharity!(cries)
 
 ## [Project 4 - Translate a language](https://github.com/haltaro/udacity-deep-learning-project4/blob/master/dlnd_language_translation.ipynb)
 
-TensorflowでSeq2Seqを実装し，機械翻訳に挑戦しました．下記のように英語をフランス語に変換できました（たぶんあってるはず）．
+TensorflowでSeq2Seqを実装し，機械翻訳に挑戦しました．下記のように英語をフランス語に変換できました[^1]．
 
 ```
 Input
@@ -78,6 +78,8 @@ Prediction
   Word Ids:      [188, 260, 34, 209, 248, 35, 234, 97, 1]
   French Words: il a vu un vieux camion jaune . <EOS>
 ```
+
+[^1]: 正しい英語は`an old yellow truck`ですが，今回は`a`と`an`を学習するほどデータが無かったため，あえて`a old yellow truck`を入力しました．
 
 ## [Project 5 - Generate faces](https://github.com/haltaro/udacity-deep-learning-project5/blob/master/dlnd_face_generation.ipynb)
 
