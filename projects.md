@@ -9,7 +9,7 @@ public: true
 
 ## 1.a [Compareing TCP algorithms](https://haltaro.github.io/comparing-tcp-algorithms) 
 
-ns-3で12種類のTCP輻輳制御アルゴリズムをシミュレートし，matplotlibで視覚化しました([Qiita](http://qiita.com/haltaro/items/d479538345357f08c595), [Github](https://github.com/haltaro/comparing-tcp-algorithms)): ．
+[ns-3](https://www.nsnam.org/)で12種類のTCP輻輳制御アルゴリズムをシミュレートし，[matplotlib](https://matplotlib.org/)で視覚化しました([Qiita](http://qiita.com/haltaro/items/d479538345357f08c595), [Github](https://github.com/haltaro/comparing-tcp-algorithms))．
 
 
 ![tcp.png]({{site.baseurl}}/images/comparing-tcp-algorithms.png)
@@ -18,7 +18,7 @@ ns-3で12種類のTCP輻輳制御アルゴリズムをシミュレートし，ma
 
 ## 2.a [Animating alpha and beta](https://haltaro.github.io/animating-alpha-and-beta) 
 
-pandasで世界株価時価総額トップ銘柄のアルファ値とベータ値を計算し，matplotlibでアニメ化しました([Qiita](http://qiita.com/haltaro/items/e3e29264079f6b90d6df), [Github](https://github.com/haltaro/animating-alpha-and-beta))．
+[Pandas](http://pandas.pydata.org/)で世界株価時価総額トップ銘柄のアルファ値とベータ値を計算し，[matplotlib](https://matplotlib.org/)でアニメ化しました([Qiita](http://qiita.com/haltaro/items/e3e29264079f6b90d6df), [Github](https://github.com/haltaro/animating-alpha-and-beta))．
 
 
 ![ab.gif]({{site.baseurl}}/images/animating-alpha-and-beta.gif)
@@ -27,7 +27,7 @@ pandasで世界株価時価総額トップ銘柄のアルファ値とベータ�
 
 ## 3.a [Predicting comic end](https://haltaro.github.io/predicting-comic-end) 
 
-週刊少年ジャンプの掲載順から，短命作品を予測しました．掲載順のデータは文化庁メディア芸術データベースのWeb APIから取得し，予測にはtensorflowで多層パーセプトロンを実装しました ([Qiita part1](http://qiita.com/haltaro/items/c54fa1855767f1a1abd5), [Qiita part2](http://qiita.com/haltaro/items/62d49875ed658ac8a93f), [Github](https://github.com/haltaro/predicting-comic-end))．下図は，短命作品と継続作品の相関関係の分析結果です．
+週刊少年ジャンプの掲載順から，短命作品を予測しました．掲載順のデータは[文化庁メディア芸術データベースのWeb API](https://mediaarts-db.bunka.go.jp/webapi_proto_documents.pdf)から取得し，予測には[TensorFlow](https://www.tensorflow.org/)で多層パーセプトロンを実装しました ([Qiita part1](http://qiita.com/haltaro/items/c54fa1855767f1a1abd5), [Qiita part2](http://qiita.com/haltaro/items/62d49875ed658ac8a93f), [Github](https://github.com/haltaro/predicting-comic-end))．下図は，短命作品と継続作品の相関関係の分析結果です．
 
 ![comic.png]({{site.baseurl}}/images/predicting-comic-end.png)
 
@@ -49,13 +49,13 @@ Udacityの[Deep learning foundation nanodegree](https://www.udacity.com/course/d
 
 ## [Project 2 - Image classification](https://github.com/haltaro/udacity-deep-learning-project2/blob/master/dlnd_image_classification.ipynb)
 
-TensorflowでConvolutional neural networkを実装して，[CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)の識別に挑戦しました．下図は予測結果です．
+[TensorFlow](https://www.tensorflow.org/)でConvolutional neural networkを実装して，[CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)の識別に挑戦しました．下図は予測結果です．
 
 ![dlnd2.png]({{site.baseurl}}/images/dlnd2.png)
 
 ## [Project 3 - Generate TV scripts](https://github.com/haltaro/udacity-deep-learning-project3/blob/master/dlnd_tv_script_generation.ipynb)
 
-TensorflowでRecurrent neural networkを実装して，文章を自動生成しました．シンプソンズのスクリプトをもとに学習したモデルに，`homer_simpson`を入力すると，下記のようにそれらしい会話文が生成されました．
+[TensorFlow](https://www.tensorflow.org/)でRecurrent neural networkを実装して，文章を自動生成しました．シンプソンズのスクリプトをもとに学習したモデルに，`homer_simpson`を入力すると，下記のようにそれらしい会話文が生成されました．
 
 ```
 homer_simpson:(upset) marge, you're making a complete fool of yourse...(belches)
@@ -67,7 +67,7 @@ moe_szyslak:(to homer) hey, i don't need your sharity!(cries)
 
 ## [Project 4 - Translate a language](https://github.com/haltaro/udacity-deep-learning-project4/blob/master/dlnd_language_translation.ipynb)
 
-TensorflowでSeq2Seqを実装し，機械翻訳に挑戦しました．下記のように英語をフランス語に変換できました[^1]．
+[TensorFlow](https://www.tensorflow.org/)でSeq2Seqを実装し，機械翻訳に挑戦しました．下記のように英語をフランス語に変換できました[^1]．
 
 ```
 Input
@@ -83,7 +83,7 @@ Prediction
 
 ## [Project 5 - Generate faces](https://github.com/haltaro/udacity-deep-learning-project5/blob/master/dlnd_face_generation.ipynb)
 
-TensorFlowでgenerative adversarial networkを実装し，顔画像の生成に挑戦しました．下図は，[celebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)データセットをもとに自動生成した顔画像です．
+[TensorFlow](https://www.tensorflow.org/)でgenerative adversarial networkを実装し，顔画像の生成に挑戦しました．下図は，[celebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)データセットをもとに自動生成した顔画像です．
 
 ![celeba.gif]({{site.baseurl}}/images/celeba.gif)
 
