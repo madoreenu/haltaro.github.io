@@ -94,6 +94,6 @@ $ git push origin master
 
 # 感想
 
-rubyとかcssとか全然わからんが，出来ないことは無かった[^1]．
+rubyとかcssとか全然わからんが，出来ないことは無かった[^1]．今後は，[googleアナリティクス](https://www.google.com/intl/ja/analytics/#?modal_active=none)と連携させてニヤニヤしたい．
 
 [^1]: 結構ハマったけど．
