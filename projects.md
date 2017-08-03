@@ -39,7 +39,7 @@ Udacityの[Deep learning foundation nanodegree](https://www.udacity.com/course/d
 
 # 4. Deep learning foundations nanodegree
 
-[Udacity](https://www.udacity.com/)で，[Deep learning nanodegree foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) を修了しました．
+[Udacity](https://www.udacity.com/)で，[Deep learning foundations nanodegree](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) を修了しました．
 
 ## [Project 1 - First neural network](https://github.com/haltaro/udacity-deep-learning-project1/blob/master/DLND%20Your%20first%20neural%20network.ipynb)
 
