@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Aug 2017 21:27:19 -0400</pubDate>
-    <lastBuildDate>Wed, 02 Aug 2017 21:27:19 -0400</lastBuildDate>
+    <pubDate>Wed, 02 Aug 2017 21:34:10 -0400</pubDate>
+    <lastBuildDate>Wed, 02 Aug 2017 21:34:10 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -145,9 +145,48 @@
       </item>
     
       <item>
-        <title>環境構築が完了した</title>
-        <description>&lt;p&gt;いろいろ苦労したけど，なんとかブログらしきものが書けるようになった．よかった．タグの実装とか，やりたいことはたくさんある．時間のあるときにやってみよう．&lt;/p&gt;
+        <title>jekyll + GitHub Pagesでウェブサイトを立ち上げた</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;作成中&lt;/p&gt;
+&lt;/blockquote&gt;
 
+&lt;p&gt;&lt;a href=&quot;http://qiita.com/&quot;&gt;Qiita&lt;/a&gt;に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは&lt;a href=&quot;https://evernote.com/intl/jp/&quot;&gt;evernote&lt;/a&gt;を使ってきたが，数式やソースコードを書きづらい．&lt;a href=&quot;http://hatenablog.com/&quot;&gt;はてなブログ&lt;/a&gt;等で&lt;a href=&quot;https://ja.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;を書いても良いけど，手元にコンテンツが残らないのが嫌だったし，&lt;code class=&quot;highlighter-rouge&quot;&gt;haltaro&lt;/code&gt;ドメインが取れなかった．ということで，&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;jekyll&lt;/a&gt;と&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;で，ウェブサイトを自作することにした．&lt;/p&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;p&gt;ググればいくらでも記事が出て来る．特に，以下を参考にさせて頂いた:bow:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb-ja.github.io/docs/home/&quot;&gt;jekyll公式ドキュメント&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;h2 id=&quot;1-githubアカウント取得&quot;&gt;1. GitHubアカウント取得&lt;/h2&gt;
+
+&lt;h2 id=&quot;2-githubioレポジトリ作成&quot;&gt;2. github.ioレポジトリ作成&lt;/h2&gt;
+
+&lt;h2 id=&quot;3-jekyllインストール&quot;&gt;3. jekyllインストール&lt;/h2&gt;
+
+&lt;h2 id=&quot;4-jekyllテーマ選定&quot;&gt;4. jekyllテーマ選定&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;jekyll themes&lt;/a&gt;から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，&lt;a href=&quot;https://github.com/laobubu&quot;&gt;laobubu&lt;/a&gt;さんの&lt;a href=&quot;http://jekyllthemes.org/themes/easybook/&quot;&gt;EasyBook&lt;/a&gt;を使わせてもらうことにした．&lt;/p&gt;
+
+&lt;h2 id=&quot;5-カスタマイズ&quot;&gt;5. カスタマイズ&lt;/h2&gt;
+
+&lt;h2 id=&quot;6-動作確認&quot;&gt;6. 動作確認&lt;/h2&gt;
+
+&lt;h2 id=&quot;7-アップロード&quot;&gt;7. アップロード&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git add . -A
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;First commit&quot;&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;前から気になってはいたけど，rubyとかjavascriptとかわからんし，ハードルが高そうで敬遠していた．でも，出来ないことは無かった（結構ハマったが）．それらしい形になったので，満足している．&lt;/p&gt;
 </description>
         <pubDate>Sun, 30 Jul 2017 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/archivers/first-post</link>
@@ -155,6 +194,8 @@
         
         
         <category>blog</category>
+        
+        <category>draft</category>
         
       </item>
     

@@ -4,7 +4,10 @@ title: jekyll + GitHub Pagesでウェブサイトを立ち上げた
 updated: 2017-07-30 12:00 
 categories:
  - blog
+ - draft
 ---
+
+> 作成中
 
 [Qiita](http://qiita.com/)に寄稿するほどではないけど，そこそこ技術的なメモが溜まってきた．これまでは[evernote](https://evernote.com/intl/jp/)を使ってきたが，数式やソースコードを書きづらい．[はてなブログ](http://hatenablog.com/)等で[Markdown](https://ja.wikipedia.org/wiki/Markdown)を書いても良いけど，手元にコンテンツが残らないのが嫌だったし，`haltaro`ドメインが取れなかった．ということで，[jekyll](https://jekyllrb-ja.github.io/)と[GitHub Pages](https://pages.github.com/)で，ウェブサイトを自作することにした．
 
@@ -24,7 +27,7 @@ categories:
 
 ## 4. jekyllテーマ選定
 
-[jekyll themes](http://jekyllthemes.org/)から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，[laobubu](https://github.com/laobubu)さんの[EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)を使わせてもらうことにした．
+[jekyll themes](http://jekyllthemes.org/)から，良さげなテーマを選ぶ．できるだけシンプルにしたかったことと，カテゴリ分類機能が欲しかったことから，[laobubu](https://github.com/laobubu)さんの[EasyBook](http://jekyllthemes.org/themes/easybook/)を使わせてもらうことにした．
 
 ## 5. カスタマイズ
 
