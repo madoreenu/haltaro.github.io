@@ -6,9 +6,58 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Aug 2017 21:34:10 -0400</pubDate>
-    <lastBuildDate>Wed, 02 Aug 2017 21:34:10 -0400</lastBuildDate>
+    <pubDate>Wed, 02 Aug 2017 22:56:26 -0400</pubDate>
+    <lastBuildDate>Wed, 02 Aug 2017 22:56:26 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>機械学習関連で今後やりたいこと</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;作成中&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt;の&lt;a href=&quot;&quot;&gt;Deep learning foundations nanodegree&lt;/a&gt;を修了して，基本はある程度押さえられたし，論文も読めるようになった．時間が取れたら，以下のようなことをやりたいと思う．&lt;/p&gt;
+
+&lt;h1 id=&quot;a-本業に活かす&quot;&gt;a. 本業に活かす&lt;/h1&gt;
+
+&lt;p&gt;できれば．技術先行で問題を後付けするのは悪い癖なので，機械学習に執着せず，フラットに他の技術と比較するよう心がけたい．&lt;/p&gt;
+
+&lt;h1 id=&quot;b-新プロジェクトを立ち上げる&quot;&gt;b. 新プロジェクトを立ち上げる&lt;/h1&gt;
+
+&lt;p&gt;やってみたいことはいくらでも出てくる．時間が欲しい．&lt;/p&gt;
+
+&lt;h2 id=&quot;b1-顔画像から実子判定&quot;&gt;b.1 顔画像から実子判定&lt;/h2&gt;
+
+&lt;p&gt;一昔前，DNA鑑定が大流行したので，ニーズはあると思う．実子であれば，両親の面影が顔に顕れるはずだし，この種の特徴抽出はdeep learningの得意技だ．&lt;/p&gt;
+
+&lt;p&gt;問題は２つある．&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;実生活に波風が立つ&lt;/strong&gt;：なまじ新婚なので，不穏な空気になる．他意はないのに．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;倫理的にアレ&lt;/strong&gt;：どうなんだろう．研究用途で画像セットを使うぶんには問題ないと思う．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;独身かつ学生時代にやればよかった．&lt;/p&gt;
+
+&lt;h2 id=&quot;b2-君の名はの三葉の中身を顔画像から推定&quot;&gt;b.2 君の名はの三葉の中身を顔画像から推定&lt;/h2&gt;
+
+&lt;p&gt;最近DVDが出たので．組紐とか眉毛の角度とかを学習してくれたら面白い．問題は，DVDを買う必要があることか．&lt;/p&gt;
+
+&lt;h2 id=&quot;b3-スラムダンクの赤木と高砂を顔画像から推定&quot;&gt;b.3 スラムダンクの赤木と高砂を顔画像から推定&lt;/h2&gt;
+
+&lt;p&gt;大好きなので．「桜木がAIなら湘北が勝ってた」あるいは「AIでも見間違うから桜木のミスはしょうがない」と，結果がどちらに転んでもオイシイ．問題は，画像データの収集がメンドクサイことと，ラベルに偏りがあることだ．&lt;/p&gt;
+
+&lt;h1 id=&quot;c-学習をすすめる&quot;&gt;c. 学習をすすめる&lt;/h1&gt;
+</description>
+        <pubDate>Wed, 02 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/archivers/future-work-of-deep-learning</link>
+        <guid isPermaLink="true">http://localhost:4000/archivers/future-work-of-deep-learning</guid>
+        
+        
+        <category>machine learning</category>
+        
+        <category>draft</category>
+        
+      </item>
     
       <item>
         <title>多国籍企業の研究所で使う便利な英会話表現</title>
