@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Aug 2017 20:55:21 -0400</pubDate>
-    <lastBuildDate>Thu, 03 Aug 2017 20:55:21 -0400</lastBuildDate>
+    <pubDate>Thu, 03 Aug 2017 21:01:27 -0400</pubDate>
+    <lastBuildDate>Thu, 03 Aug 2017 21:01:27 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -288,6 +288,7 @@
   &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04&quot;&gt;How to Set Up a Jekyll Development Site on Ubuntu 16.04&lt;/a&gt;：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;*-font-family&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;*-font-weight&lt;/code&gt;の設定について．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://fukafuka295.jp/hp/hp_no9.html&quot;&gt;HTMLやCSSのソースコードをそのままページに貼り付ける方法&lt;/a&gt;：Gistを使ってソースコードをページに埋め込む方法について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zaitaku-hukugyo-net.com/1132.html&quot;&gt;アバター画像を設定！Gravatar(グラバター)の登録方法と使い方&lt;/a&gt;：Gravatarの登録方法について．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;gitやGitHubの使い方は，もともと知っていたので割愛．&lt;/p&gt;
@@ -350,14 +351,7 @@
 
 &lt;p&gt;業績をまとめたページを作りたかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/projects.md&lt;/code&gt;を追加した．フロントマターは，&lt;code class=&quot;highlighter-rouge&quot;&gt;/about.md&lt;/code&gt;を参考に作った．&lt;/p&gt;
 
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;page&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Projects&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/projects/&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;script src=&quot;https://gist.github.com/haltaro/ace85ef28accfb567b00fc2ca3f80d81.js&quot;&gt;&lt;/script&gt;
 
 &lt;h3 id=&quot;54-grabatarの取得&quot;&gt;5.4 Grabatarの取得&lt;/h3&gt;
 

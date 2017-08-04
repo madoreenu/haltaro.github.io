@@ -17,6 +17,7 @@ categories:
 * [How to Set Up a Jekyll Development Site on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04)：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．
 * [Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？](https://www.cherrypieweb.com/weblog/technical/20160629025615.php)：`*-font-family`および`*-font-weight`の設定について．
 * [HTMLやCSSのソースコードをそのままページに貼り付ける方法](http://fukafuka295.jp/hp/hp_no9.html)：Gistを使ってソースコードをページに埋め込む方法について．
+* [アバター画像を設定！Gravatar(グラバター)の登録方法と使い方](http://zaitaku-hukugyo-net.com/1132.html)：Gravatarの登録方法について．
 
 gitやGitHubの使い方は，もともと知っていたので割愛．
 
@@ -79,14 +80,7 @@ $ cd haltaro.github.io
 
 業績をまとめたページを作りたかったので，`/projects.md`を追加した．フロントマターは，`/about.md`を参考に作った．
 
-```markdown
----
-layout: page
-title: Projects
-permalink: /projects/
-public: true
----
-```
+<script src="https://gist.github.com/haltaro/ace85ef28accfb567b00fc2ca3f80d81.js"></script>
 
 ### 5.4 Grabatarの取得
 
