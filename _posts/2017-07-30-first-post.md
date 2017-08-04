@@ -98,7 +98,7 @@ $ cd haltaro.github.io
 ```
 $ jekyll serve
 ```
-ブラウザで`localhost:4000`にアクセスすると，動作確認ができた．．
+ブラウザで`localhost:4000`にアクセスして，出来栄えを確認．
 
 ## 7. アップロード
 
