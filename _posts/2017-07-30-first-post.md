@@ -88,7 +88,7 @@ $ cd haltaro.github.io
 
 ### 5.5 アイコンの設定
 
-ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，`/_includes/head.html`に`icon`および`apple-touch-icon`設定を追記．アイコン自体は，[いらすとや](http://www.irasutoya.com/)さんから調達．
+ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，`/_includes/head.html`に`icon`および`apple-touch-icon`設定を追記．アイコン自体は，[いらすとや](http://www.irasutoya.com/)さんから調達し，`/images`に格納．
 
 <script src="https://gist.github.com/haltaro/368a39e2956695d01a9728fb87b0e33d.js"></script>
 
