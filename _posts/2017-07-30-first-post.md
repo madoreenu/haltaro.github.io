@@ -67,7 +67,7 @@ $ cd haltaro.github.io
 
 ### 5.2 連絡先の追加
 
-連絡先に，`Qiita`と`Kaggle`を追加した．まず，`_includes/sidebar.html`に`Qiita`ボタンと`Kaggle`ボタンの設定を追記．
+連絡先に，`Qiita`と`Kaggle`を追加した．まず，`/_includes/sidebar.html`に`Qiita`ボタンと`Kaggle`ボタンの設定を追記．
 
 <script src="https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js"></script>
 
@@ -84,7 +84,13 @@ $ cd haltaro.github.io
 
 ### 5.4 Grabatarの取得
 
-丸窓にアイコンを表示するためには，[Gravatar](https://en.gravatar.com/)を設定して，ハッシュ値を`_config.yml`に追記する必要がある．[アバター画像を設定！Gravatar(グラバター)の登録方法と使い方](http://zaitaku-hukugyo-net.com/1132.html)を参考にした．
+丸窓にアイコンを表示するためには，[Gravatar](https://en.gravatar.com/)を設定して，ハッシュ値を`/_config.yml`に追記する必要がある．[アバター画像を設定！Gravatar(グラバター)の登録方法と使い方](http://zaitaku-hukugyo-net.com/1132.html)を参考にした．
+
+### 5.5 アイコンの設定
+
+ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，`/_includes/head.html`に`icon`および`apple-touch-icon`設定を追記．アイコン自体は，[いらすとや](http://www.irasutoya.com/)さんから調達．
+
+<script src="https://gist.github.com/haltaro/368a39e2956695d01a9728fb87b0e33d.js"></script>
 
 ## 6. ローカルテスト
 

@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>JekyllとGitHub Pagesでウェブサイトを立ち上げた « Memotaro</title>
-  <meta name="description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub P...">
+	<meta name="description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub P...">
 
+  <link rel="icon" href="/images/h_icon.png">
+  <link rel="apple-touch-icon" href="/images/shiba-icon.png">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/archivers/first-post">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
@@ -119,7 +121,7 @@
 
 <h3 id="52-連絡先の追加">5.2 連絡先の追加</h3>
 
-<p>連絡先に，<code class="highlighter-rouge">Qiita</code>と<code class="highlighter-rouge">Kaggle</code>を追加した．まず，<code class="highlighter-rouge">_includes/sidebar.html</code>に<code class="highlighter-rouge">Qiita</code>ボタンと<code class="highlighter-rouge">Kaggle</code>ボタンの設定を追記．</p>
+<p>連絡先に，<code class="highlighter-rouge">Qiita</code>と<code class="highlighter-rouge">Kaggle</code>を追加した．まず，<code class="highlighter-rouge">/_includes/sidebar.html</code>に<code class="highlighter-rouge">Qiita</code>ボタンと<code class="highlighter-rouge">Kaggle</code>ボタンの設定を追記．</p>
 
 <script src="https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js"></script>
 
@@ -135,7 +137,13 @@
 
 <h3 id="54-grabatarの取得">5.4 Grabatarの取得</h3>
 
-<p>丸窓にアイコンを表示するためには，<a href="https://en.gravatar.com/">Gravatar</a>を設定して，ハッシュ値を<code class="highlighter-rouge">_config.yml</code>に追記する必要がある．<a href="http://zaitaku-hukugyo-net.com/1132.html">アバター画像を設定！Gravatar(グラバター)の登録方法と使い方</a>を参考にした．</p>
+<p>丸窓にアイコンを表示するためには，<a href="https://en.gravatar.com/">Gravatar</a>を設定して，ハッシュ値を<code class="highlighter-rouge">/_config.yml</code>に追記する必要がある．<a href="http://zaitaku-hukugyo-net.com/1132.html">アバター画像を設定！Gravatar(グラバター)の登録方法と使い方</a>を参考にした．</p>
+
+<h3 id="55-アイコンの設定">5.5 アイコンの設定</h3>
+
+<p>ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，<code class="highlighter-rouge">/_includes/head.html</code>に<code class="highlighter-rouge">icon</code>および<code class="highlighter-rouge">apple-touch-icon</code>設定を追記．アイコン自体は，<a href="http://www.irasutoya.com/">いらすとや</a>さんから調達．</p>
+
+<script src="https://gist.github.com/haltaro/368a39e2956695d01a9728fb87b0e33d.js"></script>
 
 <h2 id="6-ローカルテスト">6. ローカルテスト</h2>
 

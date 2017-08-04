@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Aug 2017 21:01:27 -0400</pubDate>
-    <lastBuildDate>Thu, 03 Aug 2017 21:01:27 -0400</lastBuildDate>
+    <pubDate>Fri, 04 Aug 2017 07:00:33 -0400</pubDate>
+    <lastBuildDate>Fri, 04 Aug 2017 07:00:33 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -148,11 +148,7 @@
     
       <item>
         <title>多国籍企業の研究所で使う便利な英会話表現</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;作成中．随時追記する．&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;訳あって一年ほど，情報通信系の多国籍企業の研究所で働いている．世界各国から研究者が集まっており，公用語は英語だが．ほとんどネイティブスピーカーはいない&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．忘れないように，よく使われる/使う英語表現をまとめておく．&lt;/p&gt;
+        <description>&lt;p&gt;縁あって一年ほど，情報通信系の多国籍企業の研究所で働いている．世界各国から研究者が集まっており，公用語は英語．ほとんどネイティブスピーカーはいない．忘れないように，よく使われる/使う英語表現をまとめておく．&lt;/p&gt;
 
 &lt;p&gt;日本語訳の正確さは不明．&lt;strong&gt;あくまでも自分用のメモ&lt;/strong&gt;.&lt;/p&gt;
 
@@ -229,7 +225,7 @@
 
 &lt;h2 id=&quot;2b-間が保たないとき&quot;&gt;2.b 間が保たないとき&lt;/h2&gt;
 
-&lt;p&gt;ぼーっとしてると，わけのわからない話題になることが多い&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;．わかりやすい話題を先にふる．&lt;/p&gt;
+&lt;p&gt;ぼーっとしてると，わけのわからない話題になることが多い&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．わかりやすい話題を先にふる．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Do you have any plan for the weekend ?&lt;/code&gt;：週末どうするの？よく聞かれるし，よく聞く．応用技として，「夏休みはどうするの？」がある．&lt;/li&gt;
@@ -255,9 +251,6 @@
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;だけどみんな驚くほど流暢．すごいなと思う．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
     &lt;li id=&quot;fn:3&quot;&gt;
       &lt;p&gt;その都度聞けばいいが，聞くのもしんどいときがある．&amp;nbsp;&lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
@@ -270,8 +263,6 @@
         
         
         <category>english</category>
-        
-        <category>draft</category>
         
       </item>
     
@@ -339,7 +330,7 @@
 
 &lt;h3 id=&quot;52-連絡先の追加&quot;&gt;5.2 連絡先の追加&lt;/h3&gt;
 
-&lt;p&gt;連絡先に，&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;を追加した．まず，&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/sidebar.html&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;ボタンと&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;ボタンの設定を追記．&lt;/p&gt;
+&lt;p&gt;連絡先に，&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;を追加した．まず，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/sidebar.html&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;ボタンと&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;ボタンの設定を追記．&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js&quot;&gt;&lt;/script&gt;
 
@@ -355,7 +346,13 @@
 
 &lt;h3 id=&quot;54-grabatarの取得&quot;&gt;5.4 Grabatarの取得&lt;/h3&gt;
 
-&lt;p&gt;丸窓にアイコンを表示するためには，&lt;a href=&quot;https://en.gravatar.com/&quot;&gt;Gravatar&lt;/a&gt;を設定して，ハッシュ値を&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;に追記する必要がある．&lt;a href=&quot;http://zaitaku-hukugyo-net.com/1132.html&quot;&gt;アバター画像を設定！Gravatar(グラバター)の登録方法と使い方&lt;/a&gt;を参考にした．&lt;/p&gt;
+&lt;p&gt;丸窓にアイコンを表示するためには，&lt;a href=&quot;https://en.gravatar.com/&quot;&gt;Gravatar&lt;/a&gt;を設定して，ハッシュ値を&lt;code class=&quot;highlighter-rouge&quot;&gt;/_config.yml&lt;/code&gt;に追記する必要がある．&lt;a href=&quot;http://zaitaku-hukugyo-net.com/1132.html&quot;&gt;アバター画像を設定！Gravatar(グラバター)の登録方法と使い方&lt;/a&gt;を参考にした．&lt;/p&gt;
+
+&lt;h3 id=&quot;55-アイコンの設定&quot;&gt;5.5 アイコンの設定&lt;/h3&gt;
+
+&lt;p&gt;ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/head.html&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;icon&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;apple-touch-icon&lt;/code&gt;設定を追記．アイコン自体は，&lt;a href=&quot;http://www.irasutoya.com/&quot;&gt;いらすとや&lt;/a&gt;さんから調達．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/368a39e2956695d01a9728fb87b0e33d.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;6-ローカルテスト&quot;&gt;6. ローカルテスト&lt;/h2&gt;
 
