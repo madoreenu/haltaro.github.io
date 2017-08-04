@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>JekyllとGitHub Pagesでウェブサイトを立ち上げた « Memotaro</title>
-  <meta name="description" content="  作成中">
+  <meta name="description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub P...">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/archivers/first-post">
@@ -57,11 +57,7 @@
   </header>
 
   <article class="post-content">
-    <blockquote>
-  <p>作成中</p>
-</blockquote>
-
-<p>それなりに技術的なメモが溜まってきたが，<a href="http://qiita.com/">Qiita</a>に投稿するほどではない．これまでは<a href="https://evernote.com/intl/jp/">evernote</a>で管理していたが，数式やソースコードを書きづらい．<a href="http://hatenablog.com/">はてなブログ</a>等で<a href="https://ja.wikipedia.org/wiki/Markdown">Markdown</a>を書いても良いが，手元にコンテンツが残らないのが嫌だし，<code class="highlighter-rouge">haltaro</code>ドメインが取れなかった．そこで，<a href="https://jekyllrb-ja.github.io/">Jekyll</a>と<a href="https://pages.github.com/">GitHub Pages</a>で，ウェブサイトを立ち上げた．</p>
+    <p>それなりに技術的なメモが溜まってきたが，<a href="http://qiita.com/">Qiita</a>に投稿するほどではない．これまでは<a href="https://evernote.com/intl/jp/">evernote</a>で管理していたが，数式やソースコードを書きづらい．<a href="http://hatenablog.com/">はてなブログ</a>等で<a href="https://ja.wikipedia.org/wiki/Markdown">Markdown</a>を書いても良いが，手元にコンテンツが残らないのが嫌だし，<code class="highlighter-rouge">haltaro</code>ドメインが取れなかった．そこで，<a href="https://jekyllrb-ja.github.io/">Jekyll</a>と<a href="https://pages.github.com/">GitHub Pages</a>で，ウェブサイトを立ち上げた．</p>
 
 <h1 id="参考">参考</h1>
 
@@ -69,20 +65,46 @@
 
 <ul>
   <li><a href="https://jekyllrb-ja.github.io/docs/home/">jekyll公式ドキュメント</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04">How to Set Up a Jekyll Development Site on Ubuntu 16.04</a>：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．</li>
   <li><a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>：<code class="highlighter-rouge">*-font-family</code>および<code class="highlighter-rouge">*-font-weight</code>の設定について．</li>
+  <li><a href="http://fukafuka295.jp/hp/hp_no9.html">HTMLやCSSのソースコードをそのままページに貼り付ける方法</a>：Gistを使ってソースコードをページに埋め込む方法について．</li>
 </ul>
+
+<p>gitやGitHubの使い方は，もともと知っていたので割愛．</p>
 
 <h1 id="手順">手順</h1>
 
+<p>なお，Ubuntu 16.04を想定する．</p>
+
 <h2 id="1-githubアカウント取得">1. GitHubアカウント取得</h2>
 
-<h2 id="2-githubioレポジトリ作成">2. github.ioレポジトリ作成</h2>
+<p><a href="https://github.com/">GitHub</a>に登録し，アカウントを取得．もともと持ってた．</p>
+
+<h2 id="2-haltarogithubioレポジトリ作成">2. haltaro.github.ioレポジトリ作成</h2>
+
+<p><code class="highlighter-rouge">&lt;アカウント名&gt;.github.io</code>レポジトリを作成．これも，もともと持ってた．</p>
 
 <h2 id="3-jekyllインストール">3. Jekyllインストール</h2>
+
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04">How to Set Up a Jekyll Development Site on Ubuntu 16.04</a>を参考に，以下のコマンドを実行．</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>sudo apt-get install ruby ruby-dev make gcc
+<span class="gp">$ </span>sudo gem install jekyll bundler
+</code></pre>
+</div>
+
+<p>ついでに，ローカル保存用のディレクトリを作成して移動．</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>mkdir haltaro.github.io
+<span class="gp">$ </span><span class="nb">cd </span>haltaro.github.io
+</code></pre>
+</div>
 
 <h2 id="4-jekyllテーマ選定">4. Jekyllテーマ選定</h2>
 
 <p><a href="http://jekyllthemes.org/">Jekyll themes</a>から，テーマを選んだ．シンプルさと，カテゴリ分類機能という条件を満たす<a href="https://github.com/laobubu">laobubu</a>さんの<a href="http://jekyllthemes.org/themes/easybook/">EasyBook</a>を使わせてもらうことにした．</p>
+
+<p>ダウンロードするなりクローンしたファイル一式を，先程のローカルディレクトリに保存．</p>
 
 <h2 id="5-カスタマイズ">5. カスタマイズ</h2>
 
@@ -90,17 +112,7 @@
 
 <p>デフォルトだと日本語フォントが気持ち悪いので，<code class="highlighter-rouge">/css/main.scss</code>を次のように変更した．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$base-font-family: "Hiragino Maru Gothic W4 JIS2004", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-weight: 500;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$code-font-family:   Menlo, Monaco, Consolas, "DejaVu Sans Mono", "Liberation Mono", "Courier New", "Hiragino Maru Gothic W4 JIS2004", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$code-font-weight: 500; 
-$code-font-size:     15px;
-</code></pre>
-</div>
+<script src="https://gist.github.com/haltaro/e33a9c4992e80ac8c0c1f8ae946efa57.js"></script>
 
 <p>流行りの<a href="http://www.jiyu-kobo.co.jp/library/ygf/">游ゴシック</a>を使ってみた．<code class="highlighter-rouge">$*-font-familiy</code>および<code class="highlighter-rouge">$*-font-weight</code>については，<a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>を参考にした．</p>
 
@@ -110,15 +122,9 @@ $code-font-size:     15px;
 
 <script src="https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js"></script>
 
-<p>ちなみに，markdownにhtmlコードを直打ちすると，自動変換されてソースコードが表示されない．上記では，<a href="http://fukafuka295.jp/hp/hp_no9.html">HTMLやCSSのソースコードをそのままページに貼り付ける方法</a>を参考に，<a href="https://gist.github.com/">Gist</a>を使って貼り付けた．</p>
-
 <p>次に，<code class="highlighter-rouge">/_config.yml</code>に<code class="highlighter-rouge">qitta_username</code>と<code class="highlighter-rouge">kaggle_username</code>を追加した．</p>
 
-<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">github_username</span><span class="pi">:</span> <span class="s">haltaro</span>
-<span class="s">qiita_username</span><span class="pi">:</span> <span class="s">haltaro</span> <span class="c1">#追加</span>
-<span class="s">kaggle_username</span><span class="pi">:</span> <span class="s">haltaro</span> <span class="c1">#追加</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/haltaro/dbbefa944f0072eda07c405e0fdb9762.js"></script>
 
 <h3 id="53-projectsページの追加">5.3 Projectsページの追加</h3>
 
@@ -130,21 +136,31 @@ $code-font-size:     15px;
 <span class="s">permalink</span><span class="pi">:</span> <span class="s">/projects/</span>
 <span class="s">public</span><span class="pi">:</span> <span class="s">true</span>
 <span class="nn">---</span>
-
 </code></pre>
 </div>
 
-<h3 id="54-gradatarの取得">5.4 Gradatarの取得</h3>
+<h3 id="54-grabatarの取得">5.4 Grabatarの取得</h3>
 
-<h2 id="6-動作確認">6. 動作確認</h2>
+<p>丸窓にアイコンを表示するためには，<a href="https://en.gravatar.com/">Gravatar</a>を設定して，ハッシュ値を<code class="highlighter-rouge">_config.yml</code>に追記する必要がある．<a href="http://zaitaku-hukugyo-net.com/1132.html">アバター画像を設定！Gravatar(グラバター)の登録方法と使い方</a>を参考にした．</p>
+
+<h2 id="6-ローカルテスト">6. ローカルテスト</h2>
+
+<p>下記コマンドで動作確認．いくつかエラーが出たので，その都度ググって解決した．</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ jekyll serve
+</code></pre>
+</div>
+<p>ブラウザで<code class="highlighter-rouge">localhost:4000</code>にアクセスすると，動作確認ができた．．</p>
 
 <h2 id="7-アップロード">7. アップロード</h2>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git add . -A
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git remote add origin git@github.com:haltaro/haltaro.github.io <span class="c"># アカウント名等は適宜変更のこと．</span>
+<span class="gp">$ </span>git add . -A
 <span class="gp">$ </span>git commit -m <span class="s2">"First commit"</span>
 <span class="gp">$ </span>git push origin master
 </code></pre>
 </div>
+
+<p>しばらく経ってから，<code class="highlighter-rouge">https://haltaro.github.io</code>にアクセスすると，サイトが出来上がっていた．</p>
 
 <h1 id="感想">感想</h1>
 

@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Aug 2017 19:25:17 -0400</pubDate>
-    <lastBuildDate>Thu, 03 Aug 2017 19:25:17 -0400</lastBuildDate>
+    <pubDate>Thu, 03 Aug 2017 20:55:21 -0400</pubDate>
+    <lastBuildDate>Thu, 03 Aug 2017 20:55:21 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -277,11 +277,7 @@
     
       <item>
         <title>JekyllとGitHub Pagesでウェブサイトを立ち上げた</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;作成中&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;それなりに技術的なメモが溜まってきたが，&lt;a href=&quot;http://qiita.com/&quot;&gt;Qiita&lt;/a&gt;に投稿するほどではない．これまでは&lt;a href=&quot;https://evernote.com/intl/jp/&quot;&gt;evernote&lt;/a&gt;で管理していたが，数式やソースコードを書きづらい．&lt;a href=&quot;http://hatenablog.com/&quot;&gt;はてなブログ&lt;/a&gt;等で&lt;a href=&quot;https://ja.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;を書いても良いが，手元にコンテンツが残らないのが嫌だし，&lt;code class=&quot;highlighter-rouge&quot;&gt;haltaro&lt;/code&gt;ドメインが取れなかった．そこで，&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;と&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;で，ウェブサイトを立ち上げた．&lt;/p&gt;
+        <description>&lt;p&gt;それなりに技術的なメモが溜まってきたが，&lt;a href=&quot;http://qiita.com/&quot;&gt;Qiita&lt;/a&gt;に投稿するほどではない．これまでは&lt;a href=&quot;https://evernote.com/intl/jp/&quot;&gt;evernote&lt;/a&gt;で管理していたが，数式やソースコードを書きづらい．&lt;a href=&quot;http://hatenablog.com/&quot;&gt;はてなブログ&lt;/a&gt;等で&lt;a href=&quot;https://ja.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;を書いても良いが，手元にコンテンツが残らないのが嫌だし，&lt;code class=&quot;highlighter-rouge&quot;&gt;haltaro&lt;/code&gt;ドメインが取れなかった．そこで，&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;と&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;で，ウェブサイトを立ち上げた．&lt;/p&gt;
 
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
@@ -289,20 +285,46 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://jekyllrb-ja.github.io/docs/home/&quot;&gt;jekyll公式ドキュメント&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04&quot;&gt;How to Set Up a Jekyll Development Site on Ubuntu 16.04&lt;/a&gt;：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;*-font-family&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;*-font-weight&lt;/code&gt;の設定について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://fukafuka295.jp/hp/hp_no9.html&quot;&gt;HTMLやCSSのソースコードをそのままページに貼り付ける方法&lt;/a&gt;：Gistを使ってソースコードをページに埋め込む方法について．&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;gitやGitHubの使い方は，もともと知っていたので割愛．&lt;/p&gt;
 
 &lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
 
+&lt;p&gt;なお，Ubuntu 16.04を想定する．&lt;/p&gt;
+
 &lt;h2 id=&quot;1-githubアカウント取得&quot;&gt;1. GitHubアカウント取得&lt;/h2&gt;
 
-&lt;h2 id=&quot;2-githubioレポジトリ作成&quot;&gt;2. github.ioレポジトリ作成&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;に登録し，アカウントを取得．もともと持ってた．&lt;/p&gt;
+
+&lt;h2 id=&quot;2-haltarogithubioレポジトリ作成&quot;&gt;2. haltaro.github.ioレポジトリ作成&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;アカウント名&amp;gt;.github.io&lt;/code&gt;レポジトリを作成．これも，もともと持ってた．&lt;/p&gt;
 
 &lt;h2 id=&quot;3-jekyllインストール&quot;&gt;3. Jekyllインストール&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04&quot;&gt;How to Set Up a Jekyll Development Site on Ubuntu 16.04&lt;/a&gt;を参考に，以下のコマンドを実行．&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get install ruby ruby-dev make gcc
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo gem install jekyll bundler
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ついでに，ローカル保存用のディレクトリを作成して移動．&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;mkdir haltaro.github.io
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;haltaro.github.io
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;4-jekyllテーマ選定&quot;&gt;4. Jekyllテーマ選定&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll themes&lt;/a&gt;から，テーマを選んだ．シンプルさと，カテゴリ分類機能という条件を満たす&lt;a href=&quot;https://github.com/laobubu&quot;&gt;laobubu&lt;/a&gt;さんの&lt;a href=&quot;http://jekyllthemes.org/themes/easybook/&quot;&gt;EasyBook&lt;/a&gt;を使わせてもらうことにした．&lt;/p&gt;
+
+&lt;p&gt;ダウンロードするなりクローンしたファイル一式を，先程のローカルディレクトリに保存．&lt;/p&gt;
 
 &lt;h2 id=&quot;5-カスタマイズ&quot;&gt;5. カスタマイズ&lt;/h2&gt;
 
@@ -310,17 +332,7 @@
 
 &lt;p&gt;デフォルトだと日本語フォントが気持ち悪いので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/css/main.scss&lt;/code&gt;を次のように変更した．&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$base-font-family: &quot;Hiragino Maru Gothic W4 JIS2004&quot;, &quot;游ゴシック&quot;, YuGothic, &quot;ヒラギノ角ゴ ProN W3&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;メイリオ&quot;, Meiryo, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
-$base-font-weight: 500;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$code-font-family:   Menlo, Monaco, Consolas, &quot;DejaVu Sans Mono&quot;, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, &quot;Hiragino Maru Gothic W4 JIS2004&quot;, &quot;游ゴシック&quot;, YuGothic, &quot;ヒラギノ角ゴ ProN W3&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;メイリオ&quot;, Meiryo, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
-$code-font-weight: 500; 
-$code-font-size:     15px;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;script src=&quot;https://gist.github.com/haltaro/e33a9c4992e80ac8c0c1f8ae946efa57.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;流行りの&lt;a href=&quot;http://www.jiyu-kobo.co.jp/library/ygf/&quot;&gt;游ゴシック&lt;/a&gt;を使ってみた．&lt;code class=&quot;highlighter-rouge&quot;&gt;$*-font-familiy&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;$*-font-weight&lt;/code&gt;については，&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;を参考にした．&lt;/p&gt;
 
@@ -330,15 +342,9 @@ $code-font-size:     15px;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;ちなみに，markdownにhtmlコードを直打ちすると，自動変換されてソースコードが表示されない．上記では，&lt;a href=&quot;http://fukafuka295.jp/hp/hp_no9.html&quot;&gt;HTMLやCSSのソースコードをそのままページに貼り付ける方法&lt;/a&gt;を参考に，&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;を使って貼り付けた．&lt;/p&gt;
-
 &lt;p&gt;次に，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_config.yml&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;qitta_username&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle_username&lt;/code&gt;を追加した．&lt;/p&gt;
 
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;github_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;haltaro&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;qiita_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;haltaro&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#追加&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;kaggle_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;haltaro&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#追加&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;script src=&quot;https://gist.github.com/haltaro/dbbefa944f0072eda07c405e0fdb9762.js&quot;&gt;&lt;/script&gt;
 
 &lt;h3 id=&quot;53-projectsページの追加&quot;&gt;5.3 Projectsページの追加&lt;/h3&gt;
 
@@ -350,21 +356,31 @@ $code-font-size:     15px;
 &lt;span class=&quot;s&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/projects/&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
 &lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;54-gradatarの取得&quot;&gt;5.4 Gradatarの取得&lt;/h3&gt;
+&lt;h3 id=&quot;54-grabatarの取得&quot;&gt;5.4 Grabatarの取得&lt;/h3&gt;
 
-&lt;h2 id=&quot;6-動作確認&quot;&gt;6. 動作確認&lt;/h2&gt;
+&lt;p&gt;丸窓にアイコンを表示するためには，&lt;a href=&quot;https://en.gravatar.com/&quot;&gt;Gravatar&lt;/a&gt;を設定して，ハッシュ値を&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;に追記する必要がある．&lt;a href=&quot;http://zaitaku-hukugyo-net.com/1132.html&quot;&gt;アバター画像を設定！Gravatar(グラバター)の登録方法と使い方&lt;/a&gt;を参考にした．&lt;/p&gt;
+
+&lt;h2 id=&quot;6-ローカルテスト&quot;&gt;6. ローカルテスト&lt;/h2&gt;
+
+&lt;p&gt;下記コマンドで動作確認．いくつかエラーが出たので，その都度ググって解決した．&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:4000&lt;/code&gt;にアクセスすると，動作確認ができた．．&lt;/p&gt;
 
 &lt;h2 id=&quot;7-アップロード&quot;&gt;7. アップロード&lt;/h2&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git add . -A
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git remote add origin git@github.com:haltaro/haltaro.github.io &lt;span class=&quot;c&quot;&gt;# アカウント名等は適宜変更のこと．&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git add . -A
 &lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;First commit&quot;&lt;/span&gt;
 &lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git push origin master
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;p&gt;しばらく経ってから，&lt;code class=&quot;highlighter-rouge&quot;&gt;https://haltaro.github.io&lt;/code&gt;にアクセスすると，サイトが出来上がっていた．&lt;/p&gt;
 
 &lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
@@ -377,8 +393,6 @@ $code-font-size:     15px;
         
         
         <category>blog</category>
-        
-        <category>draft</category>
         
       </item>
     
