@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 04 Aug 2017 23:08:37 -0400</pubDate>
-    <lastBuildDate>Fri, 04 Aug 2017 23:08:37 -0400</lastBuildDate>
+    <pubDate>Sat, 05 Aug 2017 08:24:59 -0400</pubDate>
+    <lastBuildDate>Sat, 05 Aug 2017 08:24:59 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -37,15 +37,17 @@
         <title>作成中）JekyllウェブサイトでGoogleアナリティクス</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/archivers/first-post&quot;&gt;JekyllとGitHub Pagesで立ち上げたウェブサイト&lt;/a&gt;に，&lt;a href=&quot;https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/&quot;&gt;Googleアナリティクス&lt;/a&gt;を導入した．&lt;/p&gt;
 
+&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sXyS1Dd0ULM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://michaelsoolee.com/google-analytics-jekyll/&quot;&gt;Google Analytics setup for Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://michaelsoolee.com/google-analytics-jekyll/&quot;&gt;Google Analytics setup for Jekyll&lt;/a&gt;：Jekyllにおける設定方法について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://techmemo.biz/web-cheat-sheet/%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AByoutube%E3%81%AE%E5%8B%95%E7%94%BB%E3%82%92%E5%9F%8B%E3%82%81%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95/&quot;&gt;ブログにYouTubeの動画を埋め込む方法&lt;/a&gt;：Youtube動画の埋め込みについて．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;進捗メモ&quot;&gt;進捗メモ&lt;/h1&gt;
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
-&lt;p&gt;上記に従って設定したが，全く計測されない．反映に最大24時間かかるという説もあるので，明日また確認してみよう．&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/archivers/set-google-analytics</link>
