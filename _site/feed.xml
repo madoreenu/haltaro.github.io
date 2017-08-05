@@ -6,9 +6,55 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 04 Aug 2017 07:00:33 -0400</pubDate>
-    <lastBuildDate>Fri, 04 Aug 2017 07:00:33 -0400</lastBuildDate>
+    <pubDate>Fri, 04 Aug 2017 23:08:37 -0400</pubDate>
+    <lastBuildDate>Fri, 04 Aug 2017 23:08:37 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>作成中）Support vector machineの原理とその威力</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=75MTQH13HRTSXQWGQARY&quot;&gt;パターン認識と機械学習&lt;/a&gt;でsupport vector machine（SVM）について復習したのでメモ．&lt;/p&gt;
+
+&lt;h1 id=&quot;原理&quot;&gt;原理&lt;/h1&gt;
+
+&lt;h2 id=&quot;サポートベクター&quot;&gt;サポートベクター&lt;/h2&gt;
+
+&lt;h2 id=&quot;カーネルトリック&quot;&gt;カーネルトリック&lt;/h2&gt;
+
+&lt;h1 id=&quot;実装&quot;&gt;実装&lt;/h1&gt;
+
+&lt;h1 id=&quot;実験&quot;&gt;実験&lt;/h1&gt;
+</description>
+        <pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/archivers/support-vector-machine</link>
+        <guid isPermaLink="true">http://localhost:4000/archivers/support-vector-machine</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
+    
+      <item>
+        <title>作成中）JekyllウェブサイトでGoogleアナリティクス</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/archivers/first-post&quot;&gt;JekyllとGitHub Pagesで立ち上げたウェブサイト&lt;/a&gt;に，&lt;a href=&quot;https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/&quot;&gt;Googleアナリティクス&lt;/a&gt;を導入した．&lt;/p&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://michaelsoolee.com/google-analytics-jekyll/&quot;&gt;Google Analytics setup for Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;進捗メモ&quot;&gt;進捗メモ&lt;/h1&gt;
+
+&lt;p&gt;上記に従って設定したが，全く計測されない．反映に最大24時間かかるという説もあるので，明日また確認してみよう．&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/archivers/set-google-analytics</link>
+        <guid isPermaLink="true">http://localhost:4000/archivers/set-google-analytics</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>機械学習のプロジェクト予定</title>
@@ -147,8 +193,8 @@
       </item>
     
       <item>
-        <title>多国籍企業の研究所で使う便利な英会話表現</title>
-        <description>&lt;p&gt;縁あって一年ほど，情報通信系の多国籍企業の研究所で働いている．世界各国から研究者が集まっており，公用語は英語．ほとんどネイティブスピーカーはいない．忘れないように，よく使われる/使う英語表現をまとめておく．&lt;/p&gt;
+        <title>外資系研究所で使う便利な英会話表現</title>
+        <description>&lt;p&gt;縁あって一年ほど，情報通信系の外資系研究所で働いている．世界各国から研究者が集まっており，公用語は英語．ほとんどネイティブスピーカーはいない．忘れないように，よく使われる/使う英語表現をまとめておく．&lt;/p&gt;
 
 &lt;p&gt;日本語訳の正確さは不明．&lt;strong&gt;あくまでも自分用のメモ&lt;/strong&gt;.&lt;/p&gt;
 
@@ -350,7 +396,7 @@
 
 &lt;h3 id=&quot;55-アイコンの設定&quot;&gt;5.5 アイコンの設定&lt;/h3&gt;
 
-&lt;p&gt;ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/head.html&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;icon&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;apple-touch-icon&lt;/code&gt;設定を追記．アイコン自体は，&lt;a href=&quot;http://www.irasutoya.com/&quot;&gt;いらすとや&lt;/a&gt;さんから調達．&lt;/p&gt;
+&lt;p&gt;ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/head.html&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;icon&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;apple-touch-icon&lt;/code&gt;設定を追記．アイコン自体は，&lt;a href=&quot;http://www.irasutoya.com/&quot;&gt;いらすとや&lt;/a&gt;さんから調達し，&lt;code class=&quot;highlighter-rouge&quot;&gt;/images&lt;/code&gt;に格納．&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/368a39e2956695d01a9728fb87b0e33d.js&quot;&gt;&lt;/script&gt;
 
@@ -360,7 +406,7 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jekyll serve
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:4000&lt;/code&gt;にアクセスすると，動作確認ができた．．&lt;/p&gt;
+&lt;p&gt;ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:4000&lt;/code&gt;にアクセスして，出来栄えを確認．&lt;/p&gt;
 
 &lt;h2 id=&quot;7-アップロード&quot;&gt;7. アップロード&lt;/h2&gt;
 

@@ -1,13 +1,12 @@
 ---
 layout: post
-title: （作成中）JekyllウェブサイトでGoogleアナリティクス
+title: 作成中）JekyllウェブサイトでGoogleアナリティクス
 updated: 2017-08-04 22:00 
 categories:
  - blog
- - draft 
 ---
 
-[JekyllとGitHub Pagesでウェブサイトを立ち上げた](https://haltaro.github.io/archivers/first-post)の応用編として，[Googleアナリティクス](https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/)を導入した．
+[JekyllとGitHub Pagesで立ち上げたウェブサイト](https://haltaro.github.io/archivers/first-post)に，[Googleアナリティクス](https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/)を導入した．
 
 # 参考
 
