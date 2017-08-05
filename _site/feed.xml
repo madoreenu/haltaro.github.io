@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Aug 2017 09:43:24 -0400</pubDate>
-    <lastBuildDate>Sat, 05 Aug 2017 09:43:24 -0400</lastBuildDate>
+    <pubDate>Sat, 05 Aug 2017 09:49:14 -0400</pubDate>
+    <lastBuildDate>Sat, 05 Aug 2017 09:49:14 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -37,7 +37,7 @@
         <title>作成中）JekyllウェブサイトでGoogle Analytics</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/archivers/first-post&quot;&gt;JekyllとGitHub Pagesで立ち上げたウェブサイト&lt;/a&gt;に，&lt;a href=&quot;https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/&quot;&gt;Google Analytics&lt;/a&gt;を導入した．&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sXyS1Dd0ULM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
