@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JekyllとGitHub PagesのウェブサイトにGoogleアナリティクスを連携させる
+title: JekyllウェブサイトにGoogleアナリティクス
 updated: 2017-08-04 22:00 
 categories:
  - blog
@@ -9,7 +9,7 @@ categories:
 
 > 作成中
 
-[JekyllとGitHub Pagesでウェブサイトを立ち上げた](https://haltaro.github.io/archivers/first-post)の応用編として，[Googleアナリティクス]()を連携させた．アクセス解析できるようになった．
+[JekyllとGitHub Pagesでウェブサイトを立ち上げた](https://haltaro.github.io/archivers/first-post)の応用編として，[Googleアナリティクス](https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/)を導入した．
 
 # 参考
 
