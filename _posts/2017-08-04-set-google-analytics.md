@@ -6,9 +6,11 @@ categories:
  - blog
 ---
 
-[JekyllとGitHub Pagesで立ち上げたウェブサイト](https://haltaro.github.io/archivers/first-post)に，[Google Analytics](https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/)を導入した．
+[JekyllとGitHub Pagesで立ち上げたウェブサイト](https://haltaro.github.io/archivers/first-post)に，[Google Analytics](https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/)でトラッキング機能を導入した．
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0" frameborder="0" allowfullscreen></iframe>
+
+おー．見えてる見えてる．
 
 # 参考
 
@@ -32,7 +34,7 @@ categories:
 
 ## 3. default.htmlの修正
 
-`/_layout`ディレクトリの`default.html`に，上記の`analytics.html`を追記．
+`/_layout`ディレクトリの`default.html`に，下記の`analytics.html`を追記．
 
 <script src="https://gist.github.com/haltaro/c9d454635b5304cdb2163c5f38490f3b.js"></script>
 
