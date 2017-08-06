@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 作成中）JekyllウェブサイトでGoogle Analytics
+title: JekyllウェブサイトでGoogle Analytics
 updated: 2017-08-04 22:00 
 categories:
  - blog
@@ -20,15 +20,23 @@ categories:
 
 ## 1. Google Analyticsの登録
 
-[Google Analytics](https://analytics.google.com)から登録する．趣味で使うぶんにはデフォルト設定で十分だし，あとで変更可能．
+[Google Analytics](https://analytics.google.com)にウェブサイト（`https://haltaro.github.io`）を登録．趣味で使うぶんにはデフォルト設定で十分だし，あとで変更可能．
 
-## 2. analytics.htmlの作成
+## 2. analytics.htmlの保存
 
-`管理 > プロパティ > トラッキング情報 > トラッキングコード`を選択．以下のようなJavaScriptスニペットをコピーし，`/_includes/analytics.html`として保存．ただし，`UA-*********-*`はトラッキングコード．
+`管理 > プロパティ > トラッキング情報 > トラッキングコード`を選択．以下のようなJavaScriptスニペットをコピーし，`analytics.html`として`/_includes/`ディレクトリに保存．
 
 <script src="https://gist.github.com/haltaro/45500c3c134f5c48b549408b02c312c3.js"></script>
 
+ただし，ウェブサイト固有の`UA-*********-*`はトラッキングコード．
+
 ## 3. default.htmlの修正
+
+`/_layout`ディレクトリの`default.html`に，上記の`analytics.html`を追記．
+
+<script src="https://gist.github.com/haltaro/c9d454635b5304cdb2163c5f38490f3b.js"></script>
+
+ここで，`jekyll.environment == 'production'`は，ローカル環境での動作テスト（`$ jekyll serve`）をトラッキング対象から除外するためのもの．
 
 ## 4. 待機
 
@@ -36,4 +44,4 @@ categories:
 
 # 感想
 
-手順に従えば，問題なくできた．Youtube動画も埋め込めたので満足．
+指示通り設定すれば，問題なく動作した．Youtube動画も埋め込めたので満足．
