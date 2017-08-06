@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JekyllウェブサイトでGoogle Analytics
+title: JekyllサイトでGoogle Analytics
 updated: 2017-08-04 22:00 
 categories:
  - blog
