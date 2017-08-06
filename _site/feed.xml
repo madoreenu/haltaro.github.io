@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Aug 2017 09:27:10 -0400</pubDate>
-    <lastBuildDate>Sun, 06 Aug 2017 09:27:10 -0400</lastBuildDate>
+    <pubDate>Sun, 06 Aug 2017 09:50:56 -0400</pubDate>
+    <lastBuildDate>Sun, 06 Aug 2017 09:50:56 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -355,7 +355,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://jekyllrb-ja.github.io/docs/home/&quot;&gt;Jekyll公式ドキュメント&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04&quot;&gt;How to Set Up a Jekyll Development Site on Ubuntu 16.04&lt;/a&gt;：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;*-font-family&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;*-font-weight&lt;/code&gt;の設定について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://unitopi.com/font-family-css/&quot;&gt;もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;*-font-family&lt;/code&gt;の設定について．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://fukafuka295.jp/hp/hp_no9.html&quot;&gt;HTMLやCSSのソースコードをそのままページに貼り付ける方法&lt;/a&gt;：Gistを使ってソースコードをページに埋め込む方法について．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://zaitaku-hukugyo-net.com/1132.html&quot;&gt;アバター画像を設定！Gravatar(グラバター)の登録方法と使い方&lt;/a&gt;：Gravatarの登録方法について．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://jekyllrb-ja.github.io/docs/permalinks/&quot;&gt;Jekyll - パーマリンク&lt;/a&gt;：パーマリンクの設定方法について．&lt;/li&gt;
@@ -405,7 +405,7 @@
 
 &lt;script src=&quot;https://gist.github.com/haltaro/e33a9c4992e80ac8c0c1f8ae946efa57.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;流行りの&lt;a href=&quot;http://www.jiyu-kobo.co.jp/library/ygf/&quot;&gt;游ゴシック&lt;/a&gt;を使ってみた．&lt;code class=&quot;highlighter-rouge&quot;&gt;$*-font-familiy&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;$*-font-weight&lt;/code&gt;については，&lt;a href=&quot;https://www.cherrypieweb.com/weblog/technical/20160629025615.php&quot;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？&lt;/a&gt;を参考にした．&lt;/p&gt;
+&lt;p&gt;流行りの&lt;a href=&quot;http://www.jiyu-kobo.co.jp/library/ygf/&quot;&gt;游ゴシック&lt;/a&gt;を使おうとしたが，windowsで線が細くなる問題の闇が深そうだったので，&lt;a href=&quot;http://unitopi.com/font-family-css/&quot;&gt;もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。&lt;/a&gt;を参考に無難に設定した．&lt;/p&gt;
 
 &lt;h3 id=&quot;52-連絡先の追加&quot;&gt;5.2 連絡先の追加&lt;/h3&gt;
 

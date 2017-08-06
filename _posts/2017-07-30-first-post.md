@@ -15,7 +15,7 @@ categories:
 
 * [Jekyll公式ドキュメント](https://jekyllrb-ja.github.io/docs/home/)
 * [How to Set Up a Jekyll Development Site on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04)：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．
-* [Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？](https://www.cherrypieweb.com/weblog/technical/20160629025615.php)：`*-font-family`および`*-font-weight`の設定について．
+* [もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。](http://unitopi.com/font-family-css/)：`*-font-family`の設定について．
 * [HTMLやCSSのソースコードをそのままページに貼り付ける方法](http://fukafuka295.jp/hp/hp_no9.html)：Gistを使ってソースコードをページに埋め込む方法について．
 * [アバター画像を設定！Gravatar(グラバター)の登録方法と使い方](http://zaitaku-hukugyo-net.com/1132.html)：Gravatarの登録方法について．
 * [Jekyll - パーマリンク](http://jekyllrb-ja.github.io/docs/permalinks/)：パーマリンクの設定方法について．
@@ -64,7 +64,7 @@ $ cd haltaro.github.io
 
 <script src="https://gist.github.com/haltaro/e33a9c4992e80ac8c0c1f8ae946efa57.js"></script>
 
-流行りの[游ゴシック](http://www.jiyu-kobo.co.jp/library/ygf/)を使ってみた．`$*-font-familiy`および`$*-font-weight`については，[Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？](https://www.cherrypieweb.com/weblog/technical/20160629025615.php)を参考にした．
+流行りの[游ゴシック](http://www.jiyu-kobo.co.jp/library/ygf/)を使おうとしたが，windowsで線が細くなる問題の闇が深そうだったので，[もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。](http://unitopi.com/font-family-css/)を参考に無難に設定した．
 
 ### 5.2 連絡先の追加
 
