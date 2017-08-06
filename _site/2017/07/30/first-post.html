@@ -12,9 +12,25 @@
   <link rel="icon" href="/images/h_icon.png">
   <link rel="apple-touch-icon" href="/images/h_icon.png">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/archivers/first-post">
+  <link rel="canonical" href="http://localhost:4000/2017/07/30/first-post">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
+
+  <!-- Begin Jekyll SEO tag v2.2.3 -->
+<title>JekyllとGitHub Pagesでウェブサイトを立ち上げた | Memotaro</title>
+<meta property="og:title" content="JekyllとGitHub Pagesでウェブサイトを立ち上げた" />
+<meta name="author" content="haltaro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub Pagesで，ウェブサイトを立ち上げた．" />
+<meta property="og:description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub Pagesで，ウェブサイトを立ち上げた．" />
+<link rel="canonical" href="http://localhost:4000/2017/07/30/first-post" />
+<meta property="og:url" content="http://localhost:4000/2017/07/30/first-post" />
+<meta property="og:site_name" content="Memotaro" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-30T00:00:00-04:00" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"BlogPosting","headline":"JekyllとGitHub Pagesでウェブサイトを立ち上げた","author":{"@type":"Person","name":"haltaro"},"datePublished":"2017-07-30T00:00:00-04:00","dateModified":"2017-07-30T00:00:00-04:00","description":"それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub Pagesで，ウェブサイトを立ち上げた．","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/07/30/first-post"},"url":"http://localhost:4000/2017/07/30/first-post"}</script>
+<!-- End Jekyll SEO tag -->
 
 
   <body>
@@ -68,11 +84,12 @@
 <p><code class="highlighter-rouge">jekyll github pages</code>等でググると素晴らしい記事がたくさん出てきた．今回は，特に，以下を参考にした．</p>
 
 <ul>
-  <li><a href="https://jekyllrb-ja.github.io/docs/home/">jekyll公式ドキュメント</a></li>
+  <li><a href="https://jekyllrb-ja.github.io/docs/home/">Jekyll公式ドキュメント</a></li>
   <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04">How to Set Up a Jekyll Development Site on Ubuntu 16.04</a>：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．</li>
   <li><a href="https://www.cherrypieweb.com/weblog/technical/20160629025615.php">Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？</a>：<code class="highlighter-rouge">*-font-family</code>および<code class="highlighter-rouge">*-font-weight</code>の設定について．</li>
   <li><a href="http://fukafuka295.jp/hp/hp_no9.html">HTMLやCSSのソースコードをそのままページに貼り付ける方法</a>：Gistを使ってソースコードをページに埋め込む方法について．</li>
   <li><a href="http://zaitaku-hukugyo-net.com/1132.html">アバター画像を設定！Gravatar(グラバター)の登録方法と使い方</a>：Gravatarの登録方法について．</li>
+  <li><a href="http://jekyllrb-ja.github.io/docs/permalinks/">Jekyll - パーマリンク</a>：パーマリンクの設定方法について．</li>
 </ul>
 
 <p>gitやGitHubの使い方は，もともと知っていたので割愛．</p>
@@ -137,7 +154,7 @@
 
 <script src="https://gist.github.com/haltaro/ace85ef28accfb567b00fc2ca3f80d81.js"></script>
 
-<h3 id="54-grabatarの取得">5.4 Grabatarの取得</h3>
+<h3 id="54-gravatarの取得">5.4 Gravatarの取得</h3>
 
 <p>丸窓にアイコンを表示するためには，<a href="https://en.gravatar.com/">Gravatar</a>を設定して，ハッシュ値を<code class="highlighter-rouge">/_config.yml</code>に追記する必要がある．<a href="http://zaitaku-hukugyo-net.com/1132.html">アバター画像を設定！Gravatar(グラバター)の登録方法と使い方</a>を参考にした．</p>
 
@@ -146,6 +163,14 @@
 <p>ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，<code class="highlighter-rouge">/_includes/head.html</code>に<code class="highlighter-rouge">icon</code>および<code class="highlighter-rouge">apple-touch-icon</code>設定を追記．アイコン自体は，<a href="http://www.irasutoya.com/">いらすとや</a>さんから調達し，<code class="highlighter-rouge">/images</code>に格納．</p>
 
 <script src="https://gist.github.com/haltaro/368a39e2956695d01a9728fb87b0e33d.js"></script>
+
+<h3 id="56-パーマリンクの設定">5.6 パーマリンクの設定</h3>
+
+<p>デフォルトだと，<code class="highlighter-rouge">/archives/:title</code>形式だったので，<code class="highlighter-rouge">:title</code>の重複を避ける必要があり，大変．そこで，<code class="highlighter-rouge">/:year/:month/:day/:title</code>形式に変更した．</p>
+
+<script src="https://gist.github.com/haltaro/6d4bb9c829a7198826cd400a70f9e67b.js"></script>
+
+<p>なお，組み込みパーマリンクスタイル<code class="highlighter-rouge">date</code>を指定すれば簡単に<code class="highlighter-rouge">/:categories/:year/:month/:day/:title.html</code>形式になるが，<code class="highlighter-rouge">:categories</code>に空白文字が入ると嫌なので使わなかった．</p>
 
 <h2 id="6-ローカルテスト">6. ローカルテスト</h2>
 
@@ -168,7 +193,7 @@
 
 <h1 id="感想">感想</h1>
 
-<p>htmlとかcssとか全然わからんが，なんとか形になった．今後は，<a href="https://www.google.com/intl/ja/analytics/#?modal_active=none">googleアナリティクス</a>と連携させたい．</p>
+<p>htmlとかcssとか全然わからんが，なんとか形になった．次回は，<a href="https://haltaro.github.io/2017/08/04/set-google-analytics">Google Analyticsでトラッキング機能を実装</a>する．</p>
 
 
   </article>
@@ -208,15 +233,15 @@
   <div class="col-box-title">Newest Posts</div>
   <ul class="post-list">
     
-      <li><a class="post-link" href="/archivers/support-vector-machine">作成中）Support vector machineの原理とその威力</a></li>
+      <li><a class="post-link" href="/2017/08/04/support-vector-machine">作成中）Support vector machineの原理とその威力</a></li>
     
-      <li><a class="post-link" href="/archivers/set-google-analytics">作成中）JekyllウェブサイトでGoogle Analytics</a></li>
+      <li><a class="post-link" href="/2017/08/04/set-google-analytics">JekyllサイトでGoogle Analytics</a></li>
     
-      <li><a class="post-link" href="/archivers/future-work-in-deep-learning">機械学習のプロジェクト予定</a></li>
+      <li><a class="post-link" href="/2017/08/03/future-work-in-deep-learning">機械学習のプロジェクト計画</a></li>
     
-      <li><a class="post-link" href="/archivers/future-study-in-deep-learning">機械学習の学習予定</a></li>
+      <li><a class="post-link" href="/2017/08/02/future-study-in-deep-learning">機械学習の学習計画</a></li>
     
-      <li><a class="post-link" href="/archivers/english-phrases-in-international-labs">外資系研究所で使う便利な英会話表現</a></li>
+      <li><a class="post-link" href="/2017/08/02/english-phrases-in-international-labs">外資系研究所で使う便利な英会話表現</a></li>
     
   </ul>
 </div>
@@ -231,11 +256,12 @@
 
     <footer class="footer">
 <div class="wrapper">
-&copy; 2016 haltaro
+&copy; 2017 haltaro
 </div>
 </footer>
 
 <script src="/js/easybook.js"></script>
+
     
 
 

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>JekyllサイトでGoogle Analytics « Memotaro</title>
+	<meta name="description" content="JekyllとGitHub Pagesで立ち上げたウェブサイトに，Google Analyticsでトラッキング機能を導入した．">
+
+  <link rel="icon" href="/images/h_icon.png">
+  <link rel="apple-touch-icon" href="/images/h_icon.png">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/2017/08/04/set-google-analytics">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
+</head>
+
+  <!-- Begin Jekyll SEO tag v2.2.3 -->
+<title>JekyllサイトでGoogle Analytics | Memotaro</title>
+<meta property="og:title" content="JekyllサイトでGoogle Analytics" />
+<meta name="author" content="haltaro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="JekyllとGitHub Pagesで立ち上げたウェブサイトに，Google Analyticsでトラッキング機能を導入した．" />
+<meta property="og:description" content="JekyllとGitHub Pagesで立ち上げたウェブサイトに，Google Analyticsでトラッキング機能を導入した．" />
+<link rel="canonical" href="http://localhost:4000/2017/08/04/set-google-analytics" />
+<meta property="og:url" content="http://localhost:4000/2017/08/04/set-google-analytics" />
+<meta property="og:site_name" content="Memotaro" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-08-04T00:00:00-04:00" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"BlogPosting","headline":"JekyllサイトでGoogle Analytics","author":{"@type":"Person","name":"haltaro"},"datePublished":"2017-08-04T00:00:00-04:00","dateModified":"2017-08-04T00:00:00-04:00","description":"JekyllとGitHub Pagesで立ち上げたウェブサイトに，Google Analyticsでトラッキング機能を導入した．","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/08/04/set-google-analytics"},"url":"http://localhost:4000/2017/08/04/set-google-analytics"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <body>
+
+    <header class="header">
+  <div class="wrapper">
+    <a class="site-title" href="/">Memotaro</a>
+    <nav class="site-nav">
+      
+        
+      
+        
+        <a class="page-link" href="/about/">About</a>
+        
+      
+        
+        <a class="page-link" href="/category/">Category</a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <a class="page-link" href="/projects/">Projects</a>
+        
+      
+        
+      
+    </nav>
+  </div>
+</header>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="col-main">
+          <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">JekyllサイトでGoogle Analytics</h1>
+    <p class="post-meta">Aug 4, 2017</p>
+  </header>
+
+  <article class="post-content">
+    <p><a href="https://haltaro.github.io/2017/07/30/first-post">JekyllとGitHub Pagesで立ち上げたウェブサイト</a>に，<a href="https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/">Google Analytics</a>でトラッキング機能を導入した．</p>
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0" frameborder="0" allowfullscreen=""></iframe>
+
+<p>おー．見えてる見えてる．</p>
+
+<h1 id="参考">参考</h1>
+
+<ul>
+  <li><a href="https://support.google.com/analytics/answer/1008080?visit_id=1-636375329556963699-2710489376&amp;rd=1">Google アナリティクス トラッキングを設定する</a>：本家ヘルプ．</li>
+  <li><a href="https://michaelsoolee.com/google-analytics-jekyll/">Google Analytics setup for Jekyll</a>：Jekyllにおける設定方法について．</li>
+  <li><a href="http://techmemo.biz/web-cheat-sheet/%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AByoutube%E3%81%AE%E5%8B%95%E7%94%BB%E3%82%92%E5%9F%8B%E3%82%81%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95/">ブログにYouTubeの動画を埋め込む方法</a>：Youtube動画の埋め込みについて．</li>
+</ul>
+
+<h1 id="手順">手順</h1>
+
+<h2 id="1-google-analyticsの登録">1. Google Analyticsの登録</h2>
+
+<p><a href="https://analytics.google.com">Google Analytics</a>にウェブサイト（<code class="highlighter-rouge">https://haltaro.github.io</code>）を登録．趣味で使うぶんにはデフォルト設定で十分だし，あとで変更可能．</p>
+
+<h2 id="2-analyticshtmlの保存">2. analytics.htmlの保存</h2>
+
+<p><code class="highlighter-rouge">管理 &gt; プロパティ &gt; トラッキング情報 &gt; トラッキングコード</code>を選択．以下のようなJavaScriptスニペットをコピーし，<code class="highlighter-rouge">analytics.html</code>として<code class="highlighter-rouge">/_includes/</code>ディレクトリに保存．</p>
+
+<script src="https://gist.github.com/haltaro/45500c3c134f5c48b549408b02c312c3.js"></script>
+
+<p>ただし，<code class="highlighter-rouge">UA-*********-*</code>はウェブサイト固有のトラッキングコード．</p>
+
+<h2 id="3-defaulthtmlの修正">3. default.htmlの修正</h2>
+
+<p><code class="highlighter-rouge">/_layout</code>ディレクトリの<code class="highlighter-rouge">default.html</code>に，下記の<code class="highlighter-rouge">analytics.html</code>を追記．</p>
+
+<script src="https://gist.github.com/haltaro/c9d454635b5304cdb2163c5f38490f3b.js"></script>
+
+<p>ここで，<code class="highlighter-rouge">jekyll.environment == 'production'</code>は，ローカル環境での動作テスト（<code class="highlighter-rouge">$ jekyll serve</code>）をトラッキング対象から除外するためのもの．</p>
+
+<h2 id="4-待機">4. 待機</h2>
+
+<p>設定が反映されるまで，30分ほどかかった．</p>
+
+<h1 id="感想">感想</h1>
+
+<p>指示通り設定すれば，問題なく動作した．Youtube動画も埋め込めたので満足．</p>
+
+  </article>
+  
+  
+
+
+
+
+</div>
+
+        </div>
+        <div class="col-second">
+          <div class="col-box col-box-author">
+  <img class="avatar" src="//www.gravatar.com/avatar/546804f938d574fc5141fc1431066d29" alt="haltaro">
+  <div class="col-box-title name">haltaro</div>
+  <p>c++とpythonを使います</p>
+  <p class="contact">
+    
+    <a href="https://github.com/haltaro">GitHub</a>
+    
+    
+    
+		<a href="https://qiita.com/haltaro">Qiita</a>
+    
+    
+		<a href="https://kaggle.com/haltaro">Kaggle</a>
+    
+
+    
+    <a href="mailto:mail.to.haltaro@gmail.com">Email</a>
+    
+  </p>
+</div>
+
+<div class="col-box">
+  <div class="col-box-title">Newest Posts</div>
+  <ul class="post-list">
+    
+      <li><a class="post-link" href="/2017/08/04/support-vector-machine">作成中）Support vector machineの原理とその威力</a></li>
+    
+      <li><a class="post-link" href="/2017/08/04/set-google-analytics">JekyllサイトでGoogle Analytics</a></li>
+    
+      <li><a class="post-link" href="/2017/08/03/future-work-in-deep-learning">機械学習のプロジェクト計画</a></li>
+    
+      <li><a class="post-link" href="/2017/08/02/future-study-in-deep-learning">機械学習の学習計画</a></li>
+    
+      <li><a class="post-link" href="/2017/08/02/english-phrases-in-international-labs">外資系研究所で使う便利な英会話表現</a></li>
+    
+  </ul>
+</div>
+
+<div class="col-box post-toc hide">
+  <div class="col-box-title">TOC</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+<div class="wrapper">
+&copy; 2017 haltaro
+</div>
+</footer>
+
+<script src="/js/easybook.js"></script>
+
+    
+
+
+  </body>
+
+</html>

@@ -4,7 +4,7 @@ url: "http://haltaro.github.io"    # the protocol and hostname of your site, eg.
 baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
 #timezone: Asia/Chongqing
 description: >
-  研究メモとか
+  外資系企業で働く研究員です．network engineering，algorithmic trading，machine learningに関する技術メモを書きます．
   
 
 # Your information
@@ -22,7 +22,7 @@ kaggle_username: haltaro
 #disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
 #duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
 
-permalink: /archivers/:title
+permalink: /:year/:month/:day/:title
 gems:
  - jekyll-paginate
  - jekyll-gist

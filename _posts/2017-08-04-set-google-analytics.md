@@ -3,10 +3,10 @@ layout: post
 title: JekyllサイトでGoogle Analytics
 updated: 2017-08-04 22:00 
 categories:
- - blog
+ - jekyll
 ---
 
-[JekyllとGitHub Pagesで立ち上げたウェブサイト](https://haltaro.github.io/archivers/first-post)に，[Google Analytics](https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/)でトラッキング機能を導入した．
+[JekyllとGitHub Pagesで立ち上げたウェブサイト](https://haltaro.github.io/2017/07/30/first-post)に，[Google Analytics](https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/)でトラッキング機能を導入した．
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0" frameborder="0" allowfullscreen></iframe>
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: JekyllとGitHub Pagesでウェブサイトを立ち上げた
-updated: 2017-07-30 12:00 
+updated: 2017-08-06 10:00 
 categories:
- - blog
+ - jekyll
 ---
 
 
@@ -13,11 +13,12 @@ categories:
 
 `jekyll github pages`等でググると素晴らしい記事がたくさん出てきた．今回は，特に，以下を参考にした．
 
-* [jekyll公式ドキュメント](https://jekyllrb-ja.github.io/docs/home/)
+* [Jekyll公式ドキュメント](https://jekyllrb-ja.github.io/docs/home/)
 * [How to Set Up a Jekyll Development Site on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04)：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．
 * [Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？](https://www.cherrypieweb.com/weblog/technical/20160629025615.php)：`*-font-family`および`*-font-weight`の設定について．
 * [HTMLやCSSのソースコードをそのままページに貼り付ける方法](http://fukafuka295.jp/hp/hp_no9.html)：Gistを使ってソースコードをページに埋め込む方法について．
 * [アバター画像を設定！Gravatar(グラバター)の登録方法と使い方](http://zaitaku-hukugyo-net.com/1132.html)：Gravatarの登録方法について．
+* [Jekyll - パーマリンク](http://jekyllrb-ja.github.io/docs/permalinks/)：パーマリンクの設定方法について．
 
 gitやGitHubの使い方は，もともと知っていたので割愛．
 
@@ -82,7 +83,7 @@ $ cd haltaro.github.io
 
 <script src="https://gist.github.com/haltaro/ace85ef28accfb567b00fc2ca3f80d81.js"></script>
 
-### 5.4 Grabatarの取得
+### 5.4 Gravatarの取得
 
 丸窓にアイコンを表示するためには，[Gravatar](https://en.gravatar.com/)を設定して，ハッシュ値を`/_config.yml`に追記する必要がある．[アバター画像を設定！Gravatar(グラバター)の登録方法と使い方](http://zaitaku-hukugyo-net.com/1132.html)を参考にした．
 
@@ -91,6 +92,14 @@ $ cd haltaro.github.io
 ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，`/_includes/head.html`に`icon`および`apple-touch-icon`設定を追記．アイコン自体は，[いらすとや](http://www.irasutoya.com/)さんから調達し，`/images`に格納．
 
 <script src="https://gist.github.com/haltaro/368a39e2956695d01a9728fb87b0e33d.js"></script>
+
+### 5.6 パーマリンクの設定
+
+デフォルトだと，`/archives/:title`形式だったので，`:title`の重複を避ける必要があり，大変．そこで，`/:year/:month/:day/:title`形式に変更した．
+
+<script src="https://gist.github.com/haltaro/6d4bb9c829a7198826cd400a70f9e67b.js"></script>
+
+なお，組み込みパーマリンクスタイル`date`を指定すれば簡単に`/:categories/:year/:month/:day/:title.html`形式になるが，`:categories`に空白文字が入ると嫌なので使わなかった．
 
 ## 6. ローカルテスト
 
@@ -113,5 +122,5 @@ $ git push origin master
 
 # 感想
 
-htmlとかcssとか全然わからんが，なんとか形になった．次回は，[Google Analyticsでトラッキング機能を実装](https://haltaro.github.io/archivers/set-google-analytics)する．
+htmlとかcssとか全然わからんが，なんとか形になった．次回は，[Google Analyticsでトラッキング機能を実装](https://haltaro.github.io/2017/08/04/set-google-analytics)する．
 
