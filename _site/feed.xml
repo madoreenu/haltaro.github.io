@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Aug 2017 09:57:59 -0400</pubDate>
-    <lastBuildDate>Sat, 05 Aug 2017 09:57:59 -0400</lastBuildDate>
+    <pubDate>Sat, 05 Aug 2017 20:53:54 -0400</pubDate>
+    <lastBuildDate>Sat, 05 Aug 2017 20:53:54 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -42,7 +42,7 @@
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://support.google.com/analytics/answer/1008080?visit_id=1-636375329556963699-2710489376&amp;amp;rd=1&quot;&gt;Google アナリティクス トラッキングを設定する&lt;/a&gt;：本家ヘルプ&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.google.com/analytics/answer/1008080?visit_id=1-636375329556963699-2710489376&amp;amp;rd=1&quot;&gt;Google アナリティクス トラッキングを設定する&lt;/a&gt;：本家ヘルプ．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://michaelsoolee.com/google-analytics-jekyll/&quot;&gt;Google Analytics setup for Jekyll&lt;/a&gt;：Jekyllにおける設定方法について．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://techmemo.biz/web-cheat-sheet/%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AByoutube%E3%81%AE%E5%8B%95%E7%94%BB%E3%82%92%E5%9F%8B%E3%82%81%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95/&quot;&gt;ブログにYouTubeの動画を埋め込む方法&lt;/a&gt;：Youtube動画の埋め込みについて．&lt;/li&gt;
 &lt;/ul&gt;
@@ -51,19 +51,23 @@
 
 &lt;h2 id=&quot;1-google-analyticsの登録&quot;&gt;1. Google Analyticsの登録&lt;/h2&gt;
 
-&lt;h2 id=&quot;2-トラッキングレコードの取得&quot;&gt;2. トラッキングレコードの取得&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://analytics.google.com&quot;&gt;Google Analytics&lt;/a&gt;から登録する．趣味で使うぶんにはデフォルト設定で十分だし，あとで変更可能．&lt;/p&gt;
 
-&lt;h2 id=&quot;3-analyticshtmlの作成&quot;&gt;3. analytics.htmlの作成&lt;/h2&gt;
+&lt;h2 id=&quot;2-analyticshtmlの作成&quot;&gt;2. analytics.htmlの作成&lt;/h2&gt;
 
-&lt;h2 id=&quot;4-defaulthtmlの修正&quot;&gt;4. default.htmlの修正&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;管理 &amp;gt; プロパティ &amp;gt; トラッキング情報 &amp;gt; トラッキングコード&lt;/code&gt;を選択．以下のようなJavaScriptスニペットをコピーし，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/analytics.html&lt;/code&gt;として保存．ただし，&lt;code class=&quot;highlighter-rouge&quot;&gt;UA-*********-*&lt;/code&gt;はトラッキングコード．&lt;/p&gt;
 
-&lt;h2 id=&quot;5-待機&quot;&gt;5. 待機&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/haltaro/45500c3c134f5c48b549408b02c312c3.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;3-defaulthtmlの修正&quot;&gt;3. default.htmlの修正&lt;/h2&gt;
+
+&lt;h2 id=&quot;4-待機&quot;&gt;4. 待機&lt;/h2&gt;
 
 &lt;p&gt;設定が反映されるまで，30分ほどかかった．&lt;/p&gt;
 
 &lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
-&lt;p&gt;手順に従えば，問題なくできた．Youtube動画も問題なく埋め込めたので満足．&lt;/p&gt;
+&lt;p&gt;手順に従えば，問題なくできた．Youtube動画も埋め込めたので満足．&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/archivers/set-google-analytics</link>
