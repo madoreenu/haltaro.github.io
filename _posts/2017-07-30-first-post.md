@@ -18,7 +18,8 @@ categories:
 * [もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。](http://unitopi.com/font-family-css/)：`*-font-family`の設定について．
 * [HTMLやCSSのソースコードをそのままページに貼り付ける方法](http://fukafuka295.jp/hp/hp_no9.html)：Gistを使ってソースコードをページに埋め込む方法について．
 * [アバター画像を設定！Gravatar(グラバター)の登録方法と使い方](http://zaitaku-hukugyo-net.com/1132.html)：Gravatarの登録方法について．
-* [Jekyll - パーマリンク](http://jekyllrb-ja.github.io/docs/permalinks/)：パーマリンクの設定方法について．
+* [Jekyll -パーマリンク](http://jekyllrb-ja.github.io/docs/permalinks/)：パーマリンクの設定方法について．
+* [Nestaでkramdownを使って数式を表示してみる](http://blog.skktmlab.info/blog/2015_02_13_2)：MathJaxの設定について．
 
 gitやGitHubの使い方は，もともと知っていたので割愛．
 
@@ -100,6 +101,12 @@ $ cd haltaro.github.io
 <script src="https://gist.github.com/haltaro/6d4bb9c829a7198826cd400a70f9e67b.js"></script>
 
 なお，組み込みパーマリンクスタイル`date`を指定すれば簡単に`/:categories/:year/:month/:day/:title.html`形式になるが，`:categories`に空白文字が入ると嫌なので使わなかった．
+
+### 5.7 MathJaxの設定
+
+[MathJax](https://www.mathjax.org/)を使った数式表示を設定．`_includes/head.html`に以下を追記．
+
+<script src="https://gist.github.com/haltaro/ab0a07373a387bd1b83966d1db9e0a07.js"></script>
 
 ## 6. ローカルテスト
 

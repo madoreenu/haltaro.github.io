@@ -6,30 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>作成中）Support vector machineの原理とその威力 « Memotaro</title>
-	<meta name="description" content="パターン認識と機械学習でsupport vector machine（SVM）について復習したのでメモ．">
+  <title>作成中）Support vector machineの理論と実装 « Memotaro</title>
+	<meta name="description" content="パターン認識と機械学習でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類，回帰などの分野でよく使われる．モデル学習が二次計画問題に帰着するため，局所解=最適解という良い性質を持つ．">
 
   <link rel="icon" href="/images/h_icon.png">
   <link rel="apple-touch-icon" href="/images/h_icon.png">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/2017/08/04/support-vector-machine">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
+
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
   <!-- Begin Jekyll SEO tag v2.2.3 -->
-<title>作成中）Support vector machineの原理とその威力 | Memotaro</title>
-<meta property="og:title" content="作成中）Support vector machineの原理とその威力" />
+<title>作成中）Support vector machineの理論と実装 | Memotaro</title>
+<meta property="og:title" content="作成中）Support vector machineの理論と実装" />
 <meta name="author" content="haltaro" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="パターン認識と機械学習でsupport vector machine（SVM）について復習したのでメモ．" />
-<meta property="og:description" content="パターン認識と機械学習でsupport vector machine（SVM）について復習したのでメモ．" />
+<meta name="description" content="パターン認識と機械学習でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類，回帰などの分野でよく使われる．モデル学習が二次計画問題に帰着するため，局所解=最適解という良い性質を持つ．" />
+<meta property="og:description" content="パターン認識と機械学習でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類，回帰などの分野でよく使われる．モデル学習が二次計画問題に帰着するため，局所解=最適解という良い性質を持つ．" />
 <link rel="canonical" href="http://localhost:4000/2017/08/04/support-vector-machine" />
 <meta property="og:url" content="http://localhost:4000/2017/08/04/support-vector-machine" />
 <meta property="og:site_name" content="Memotaro" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-08-04T00:00:00-04:00" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"BlogPosting","headline":"作成中）Support vector machineの原理とその威力","author":{"@type":"Person","name":"haltaro"},"datePublished":"2017-08-04T00:00:00-04:00","dateModified":"2017-08-04T00:00:00-04:00","description":"パターン認識と機械学習でsupport vector machine（SVM）について復習したのでメモ．","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/08/04/support-vector-machine"},"url":"http://localhost:4000/2017/08/04/support-vector-machine"}</script>
+{"@context":"http://schema.org","@type":"BlogPosting","headline":"作成中）Support vector machineの理論と実装","author":{"@type":"Person","name":"haltaro"},"datePublished":"2017-08-04T00:00:00-04:00","dateModified":"2017-08-04T00:00:00-04:00","description":"パターン認識と機械学習でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類，回帰などの分野でよく使われる．モデル学習が二次計画問題に帰着するため，局所解=最適解という良い性質を持つ．","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/08/04/support-vector-machine"},"url":"http://localhost:4000/2017/08/04/support-vector-machine"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -72,22 +74,40 @@
           <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">作成中）Support vector machineの原理とその威力</h1>
+    <h1 class="post-title">作成中）Support vector machineの理論と実装</h1>
     <p class="post-meta">Aug 4, 2017</p>
   </header>
 
   <article class="post-content">
-    <p><a href="https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;psc=1&amp;refRID=75MTQH13HRTSXQWGQARY">パターン認識と機械学習</a>でsupport vector machine（SVM）について復習したのでメモ．</p>
+    <p><a href="https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;psc=1&amp;refRID=75MTQH13HRTSXQWGQARY">パターン認識と機械学習</a>でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類，回帰などの分野でよく使われる．モデル学習が二次計画問題に帰着するため，局所解=最適解という良い性質を持つ．</p>
 
-<h1 id="原理">原理</h1>
+<h1 id="1-理論">1. 理論</h1>
 
-<h2 id="サポートベクター">サポートベクター</h2>
+<h2 id="1a-コンセプト">1.a コンセプト</h2>
 
-<h2 id="カーネルトリック">カーネルトリック</h2>
+<h2 id="1b-最大マージン分類器">1.b 最大マージン分類器</h2>
 
-<h1 id="実装">実装</h1>
+<script type="math/tex; mode=display">\begin{align*} 
+y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{1}
+\end{align*}</script>
 
-<h1 id="実験">実験</h1>
+<h2 id="1c-ラグランジュ乗数法">1.c ラグランジュ乗数法</h2>
+
+<h2 id="1d-カーネルトリック">1.d カーネルトリック</h2>
+
+<h1 id="2-実装">2. 実装</h1>
+
+<p>学習目的であれば，上記の二次計画問題を<a href="http://cvxopt.org/">CVXOPT</a>等のソルバで解けば理解が深まりそう．ただし，実用上は，<a href="http://scikit-learn.org/stable/index.html">scikit-learn</a>の<a href="http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm"><code class="highlighter-rouge">sklearn.svm</code></a>モジュールを何も考えずに使えば良いと思う．</p>
+
+<h1 id="3-実験">3. 実験</h1>
+
+<h1 id="参考文献">参考文献</h1>
+
+<ul>
+  <li><a href="https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_lpo_sbs_14_img_2?_encoding=UTF8&amp;psc=1&amp;refRID=2J0S7A4J37ASEZ0JMGQW">C.M.ビショップ，パターン認識と機械学習 下</a>：SVMが登場するのは下巻．ただし，ラグランジュ乗数法の詳細は上巻の付録にある．</li>
+  <li><a href="http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm"><code class="highlighter-rouge">sklearn.svm</code>: Support Vector Machines</a>：便利すぎるSVMモジュール．</li>
+</ul>
+
 
   </article>
   
@@ -126,7 +146,7 @@
   <div class="col-box-title">Newest Posts</div>
   <ul class="post-list">
     
-      <li><a class="post-link" href="/2017/08/04/support-vector-machine">作成中）Support vector machineの原理とその威力</a></li>
+      <li><a class="post-link" href="/2017/08/04/support-vector-machine">作成中）Support vector machineの理論と実装</a></li>
     
       <li><a class="post-link" href="/2017/08/04/set-google-analytics">JekyllサイトでGoogle Analytics</a></li>
     

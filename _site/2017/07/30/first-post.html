@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/2017/07/30/first-post">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
+
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
   <!-- Begin Jekyll SEO tag v2.2.3 -->
@@ -89,7 +91,8 @@
   <li><a href="http://unitopi.com/font-family-css/">もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。</a>：<code class="highlighter-rouge">*-font-family</code>の設定について．</li>
   <li><a href="http://fukafuka295.jp/hp/hp_no9.html">HTMLやCSSのソースコードをそのままページに貼り付ける方法</a>：Gistを使ってソースコードをページに埋め込む方法について．</li>
   <li><a href="http://zaitaku-hukugyo-net.com/1132.html">アバター画像を設定！Gravatar(グラバター)の登録方法と使い方</a>：Gravatarの登録方法について．</li>
-  <li><a href="http://jekyllrb-ja.github.io/docs/permalinks/">Jekyll - パーマリンク</a>：パーマリンクの設定方法について．</li>
+  <li><a href="http://jekyllrb-ja.github.io/docs/permalinks/">Jekyll -パーマリンク</a>：パーマリンクの設定方法について．</li>
+  <li><a href="http://blog.skktmlab.info/blog/2015_02_13_2">Nestaでkramdownを使って数式を表示してみる</a>：MathJaxの設定について．</li>
 </ul>
 
 <p>gitやGitHubの使い方は，もともと知っていたので割愛．</p>
@@ -136,7 +139,7 @@
 
 <script src="https://gist.github.com/haltaro/e33a9c4992e80ac8c0c1f8ae946efa57.js"></script>
 
-<p>流行りの<a href="http://www.jiyu-kobo.co.jp/library/ygf/">游ゴシック</a>を使おうとしたが，windowsで線が細くなる問題の闇が深そうだったので，<a href="http://unitopi.com/font-family-css/">もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。</a>を参考に無難に設定した．</p>
+<p>流行りの<a href="http://www.jiyu-kobo.co.jp/library/ygf/">游ゴシック</a>を使おうとしたが，<a href="http://mandel59.hateblo.jp/entry/2016/11/11/012654">windowsで線が細くなる問題</a>の闇が深く，初心者の手に負えない．<a href="http://unitopi.com/font-family-css/">もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。</a>を参考に，無難に設定した．</p>
 
 <h3 id="52-連絡先の追加">5.2 連絡先の追加</h3>
 
@@ -171,6 +174,12 @@
 <script src="https://gist.github.com/haltaro/6d4bb9c829a7198826cd400a70f9e67b.js"></script>
 
 <p>なお，組み込みパーマリンクスタイル<code class="highlighter-rouge">date</code>を指定すれば簡単に<code class="highlighter-rouge">/:categories/:year/:month/:day/:title.html</code>形式になるが，<code class="highlighter-rouge">:categories</code>に空白文字が入ると嫌なので使わなかった．</p>
+
+<h3 id="57-mathjaxの設定">5.7 MathJaxの設定</h3>
+
+<p><a href="https://www.mathjax.org/">MathJax</a>を使った数式表示を設定．<code class="highlighter-rouge">_includes/head.html</code>に以下を追記．</p>
+
+<script src="https://gist.github.com/haltaro/ab0a07373a387bd1b83966d1db9e0a07.js"></script>
 
 <h2 id="6-ローカルテスト">6. ローカルテスト</h2>
 
@@ -233,7 +242,7 @@
   <div class="col-box-title">Newest Posts</div>
   <ul class="post-list">
     
-      <li><a class="post-link" href="/2017/08/04/support-vector-machine">作成中）Support vector machineの原理とその威力</a></li>
+      <li><a class="post-link" href="/2017/08/04/support-vector-machine">作成中）Support vector machineの理論と実装</a></li>
     
       <li><a class="post-link" href="/2017/08/04/set-google-analytics">JekyllサイトでGoogle Analytics</a></li>
     
