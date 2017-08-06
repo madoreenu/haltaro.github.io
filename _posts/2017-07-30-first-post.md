@@ -64,7 +64,7 @@ $ cd haltaro.github.io
 
 <script src="https://gist.github.com/haltaro/e33a9c4992e80ac8c0c1f8ae946efa57.js"></script>
 
-流行りの[游ゴシック](http://www.jiyu-kobo.co.jp/library/ygf/)を使おうとしたが，windowsで線が細くなる問題の闇が深そうだったので，[もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。](http://unitopi.com/font-family-css/)を参考に無難に設定した．
+流行りの[游ゴシック](http://www.jiyu-kobo.co.jp/library/ygf/)を使おうとしたが，[windowsで線が細くなる問題](http://mandel59.hateblo.jp/entry/2016/11/11/012654)の闇が深く，初心者の手に負えない．[もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。](http://unitopi.com/font-family-css/)を参考に，無難に設定した．
 
 ### 5.2 連絡先の追加
 
