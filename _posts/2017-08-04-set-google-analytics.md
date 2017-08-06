@@ -30,7 +30,7 @@ categories:
 
 <script src="https://gist.github.com/haltaro/45500c3c134f5c48b549408b02c312c3.js"></script>
 
-ただし，ウェブサイト固有の`UA-*********-*`はトラッキングコード．
+ただし，`UA-*********-*`はウェブサイト固有のトラッキングコード．
 
 ## 3. default.htmlの修正
 
