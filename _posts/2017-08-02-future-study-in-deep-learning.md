@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 機械学習の学習予定
+title: 機械学習の学習計画
 updated: 2017-08-03 18:00 
 categories:
  - machine learning 

@@ -113,5 +113,5 @@ $ git push origin master
 
 # 感想
 
-htmlとかcssとか全然わからんが，なんとか形になった．今後は，[googleアナリティクス](https://www.google.com/intl/ja/analytics/#?modal_active=none)と連携させたい．
+htmlとかcssとか全然わからんが，なんとか形になった．次回は，[Google Analyticsでトラッキング機能を実装](https://haltaro.github.io/archivers/set-google-analytics)する．
 

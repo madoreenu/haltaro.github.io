@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 機械学習のプロジェクト予定
+title: 機械学習のプロジェクト計画
 updated: 2017-08-02 22:00 
 categories:
  - machine learning 
