@@ -28,13 +28,13 @@ $$
 
 学習目的であれば，ソルバで二次計画法を解いても良さそう．実務目的であれば，無難にライブラリを使ったほうが良さそう．
 
-## 2.a ソルバで二次計画法を解く
+## 2.a 二次計画法ソルバ
 
-Pythonの二次計画法ライブラリとしては，[CVXOPT](http://cvxopt.org/)が人気．
+Pythonの二次計画法ソルバとしては，[CVXOPT](http://cvxopt.org/)が人気．実装するとしたら，以下のようになる．
 
-## 2.b ライブラリで実装
+## 2.b SVMライブラリ
 
-[scikit-learn](http://scikit-learn.org/stable/index.html)の[`sklearn.svm`](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm)モジュールはとても便利．
+SVMライブラリとしては，[scikit-learn](http://scikit-learn.org/stable/index.html)の[`sklearn.svm`](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm)モジュールが人気．上記と同じ機能を実装するとしたら，以下のようになる．
 
 # 3. 実験
 
