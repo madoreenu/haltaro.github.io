@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KaggleのZillow Prizeを調べてみた
+title: KaggleのZillow Prizeに関する調査
 updated: 2017-08-07 18:00 
 categories:
  - machine learning
@@ -8,23 +8,23 @@ categories:
 
 [KaggleのZillow Prize](https://www.kaggle.com/c/zillow-prize-1)は，[Zillow](https://www.zillow.com/)が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．
 
-誤訳があるかもしれない．以下はあくまでも個人用のメモ．
+誤訳があるかもしれないのでご注意．
 
 # 1. 背景
 
 ## 1.a Kaggle
 
-[Kaggle](https://www.kaggle.com/)とは，データサイエンティストのプラットフォームである．様々なコンペティションが開催されており，データサイエンティストの腕試しの場として広く認知されている．Kaggleへの参加方法については，[Kaggle事始め](http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7)が詳しい．
+[Kaggle](https://www.kaggle.com/)は，データサイエンティストのプラットフォームである．様々なコンペティションを開催しており，データサイエンティストの腕試しの場として広く認知されている．Kaggleへの参加方法については，[Kaggle事始め](http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7)が詳しい．
 
 ## 1.b Zillow
 
-[Zillow](https://www.zillow.com/)とは，オンライン不動産データベースを運営するアメリカの企業．アメリカ全土の1億件以上の物件情報を有し，Zestimateと呼ばれる価格見積もりサービスを持つ．
+[Zillow](https://www.zillow.com/)は，オンライン不動産データベースを運営するアメリカの企業である．アメリカ全土の1億件以上の物件情報を有し，Zestimateと呼ばれる価格見積もりサービスを持つ．
 
 # 2. Zillow Prize
 
 ## 2.a 概要
 
-[Zillow Prize](https://www.kaggle.com/c/zillow-prize-1)は，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，qualifying roundとprivate roundからなる．private roundは，qualifying roundの上位100チームのみに対し2018年1月1日から実施される．
+[Zillow Prize](https://www.kaggle.com/c/zillow-prize-1)は，Zillowが2017年5月に開始したコンペティションである．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，Qualifying round（第1ラウンド）とPrivate round（第2ラウンド）からなる．Private roundは，Qualifying roundの上位100チームのみに対し2018年1月1日から実施される．
 
 [Data](https://www.kaggle.com/c/zillow-prize-1/data)や[Rules](https://www.kaggle.com/c/zillow-prize-1/rules)等の詳細は以下．
 
@@ -76,11 +76,15 @@ $$
     * 1位：$1,000,000
     * 2位：$100,000
     * 3位：$50,000
-* 第1ラウンドでは，Kernelでソースコードを公開することができる．
-* 第2ラウンドでは，いかなる形でもソースコードを公開してはならない．
+* 第1ラウンドでは，Kernel上でのみ，ソースコードを公開できる[^1]．これは，MITライセンスのもとでの譲渡とみなされる．
+* 第2ラウンドでは，いかなる形でもソースコードを公開できない
 
 # 参考
 
 * [Zillow Prize](https://www.kaggle.com/c/zillow-prize-1)
-* [Kaggle事始め](http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7)：とても丁寧なKaggle入門記事．
+* [Kaggle事始め](http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7)：丁寧なKaggle入門記事．
+* [Kaggleのコンペティションリスト](http://qiita.com/TomHortons/items/54b2121a4c5eb0908920)：Kaggleのコンペティションを，データのタイプで分類．
+* [Real estate tech news](http://realestatetechnews.com/)：不動産関連xテクノロジーに関するニュースサイト．
 * [No Free Hunch](http://blog.kaggle.com/)：Kaggle公式ブログ．コンテスト優勝者のモデルが公開されている．
+
+[^1]: ここで検討過程を公開しようと思っていたが，どうやらルール違反っぽい．一旦Kernelで公開したものを，日本語訳して自分のサイトで公開するのはOKか？
