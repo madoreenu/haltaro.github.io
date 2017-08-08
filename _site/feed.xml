@@ -6,13 +6,115 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Aug 2017 15:16:34 -0400</pubDate>
-    <lastBuildDate>Sun, 06 Aug 2017 15:16:34 -0400</lastBuildDate>
+    <pubDate>Mon, 07 Aug 2017 20:04:29 -0400</pubDate>
+    <lastBuildDate>Mon, 07 Aug 2017 20:04:29 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
+        <title>作成中）KaggleのZillow Prizeに挑戦</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;KaggleのZillow Prize&lt;/a&gt;に挑戦する．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．&lt;/p&gt;
+
+&lt;h1 id=&quot;1-背景&quot;&gt;1. 背景&lt;/h1&gt;
+
+&lt;h2 id=&quot;1a-kaggle&quot;&gt;1.a Kaggle&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/&quot;&gt;Kaggle&lt;/a&gt;とは，データサイエンティストのプラットフォームである．様々なコンペティションが開催されており，データサイエンティストの腕試しの場として広く認知されている．Kaggleへの参加方法については，&lt;a href=&quot;http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7&quot;&gt;Kaggle事始め&lt;/a&gt;が詳しい．&lt;/p&gt;
+
+&lt;h2 id=&quot;1b-zillow&quot;&gt;1.b Zillow&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt;とは，オンライン不動産データベースを運営するアメリカの企業．アメリカ全土の1億件以上の物件情報を有し，Zestimateと呼ばれる価格見積もりサービスを持つ．&lt;/p&gt;
+
+&lt;h2 id=&quot;1c-zillow-prize&quot;&gt;1.c Zillow Prize&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;Zillow Prize&lt;/a&gt;は，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，qualifying roundとprivate roundからなる．private roundは，qualifying roundの上位100チームのみに対し2018年1月1日から実施される．&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/data&quot;&gt;Data&lt;/a&gt;や&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/rules&quot;&gt;Rules&lt;/a&gt;の詳細は以下．&lt;/p&gt;
+
+&lt;h3 id=&quot;data&quot;&gt;Data&lt;/h3&gt;
+
+&lt;p&gt;本コンペティションの目的は，Zestimateと実際の売値（&lt;script type=&quot;math/tex&quot;&gt;SalePrice&lt;/script&gt;）の対数誤差を予測すること．対数誤差は以下で定義される．&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+logerror = log(Zestimate) - log(SalePrice) \tag{1}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;具体的には，2017年秋における&lt;script type=&quot;math/tex&quot;&gt;logerror&lt;/script&gt;を予測する．不動産価格は公開情報なので，取引が始まる前に，モデルの提出を打ち切る．&lt;/p&gt;
+
+&lt;p&gt;訓練データとして，2016年の三箇所（Los Angeles，Orange and Ventura，California）の全ての不動産データが提供される．訓練データは2016年10月15日以前の全ての取引と，それ以降のいくつかの取引を含む．public leaderboardのテストデータは，2016年10月15日から同年12月31日までのものである．private leader boardのテストデータは，2017年10月15日から同年12月15日まで（この期間をsales tracking periodと呼ぶ）のものである．つまり，参加者は次の６時点における全ての不動産に対して予測を行う必要がある．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;October 2016 (201610)&lt;/li&gt;
+  &lt;li&gt;November 2016 (201611)&lt;/li&gt;
+  &lt;li&gt;December 2016 (201612)&lt;/li&gt;
+  &lt;li&gt;October 2017 (201710)&lt;/li&gt;
+  &lt;li&gt;November 2017 (201711)&lt;/li&gt;
+  &lt;li&gt;December 2017 (201712)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;当該期間において取引が行われなかった不動産は，scoreの計算に利用されない．31日間のうち，複数回の取引があった場合は，最初の適切な取引をscoreの計算に用いる．&lt;/p&gt;
+
+&lt;p&gt;以下は各ファイルの概要．&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;properties_2016.csv&lt;/code&gt;：2016年の全ての不動産情報．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;properties_2017.csv&lt;/code&gt;：2017年の全ての不動産情報．2017年10月2日に公開予定．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;train_2016.csv&lt;/code&gt;：2016年1月1日から2016年12月31日までの取引情報．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;train_2017.csv&lt;/code&gt;：2017年1月1日から2017年9月15日までの取引情報．2017年10月2日に公開予定．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sample_submission.csv&lt;/code&gt;：提出用のサンプルファイル．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rules&quot;&gt;Rules&lt;/h3&gt;
+
+&lt;p&gt;重要そうなものだけ抜粋．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;チーム外に，コードを共有してはならない．ただし，全参加者に共有するのはOK．&lt;/li&gt;
+  &lt;li&gt;1チーム最大3人まで．&lt;/li&gt;
+  &lt;li&gt;1日5回まで提出可能．最終的に，最大2つの予測結果を投稿可能．&lt;/li&gt;
+  &lt;li&gt;賞金総額：$1,200,000
+    &lt;ul&gt;
+      &lt;li&gt;第1ラウンド総額：$50,000
+        &lt;ul&gt;
+          &lt;li&gt;1位：$25,000&lt;/li&gt;
+          &lt;li&gt;2位：$15,000&lt;/li&gt;
+          &lt;li&gt;3位：$10,000&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;第2ラウンド総額：$1,150,000
+        &lt;ul&gt;
+          &lt;li&gt;1位：$1,000,000&lt;/li&gt;
+          &lt;li&gt;2位：$100,000&lt;/li&gt;
+          &lt;li&gt;3位：$50,000&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-情報収集&quot;&gt;2. 情報収集&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/kernels&quot;&gt;Kernel&lt;/a&gt;で情報収集．&lt;/p&gt;
+
+&lt;h1 id=&quot;3-実装&quot;&gt;3. 実装&lt;/h1&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7&quot;&gt;Kaggle事始め&lt;/a&gt;：とても丁寧なKaggle入門．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.kaggle.com/&quot;&gt;No Free Hunch&lt;/a&gt;：Kaggle公式ブログ．コンペ優勝者のモデルが公開されている．&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 07 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2017/08/07/zillow-conpetition</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/07/zillow-conpetition</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
+    
+      <item>
         <title>作成中）Support vector machineの理論と実装</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=75MTQH13HRTSXQWGQARY&quot;&gt;パターン認識と機械学習&lt;/a&gt;でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類，回帰などの分野でよく使われる．モデル学習が二次計画問題に帰着するため，局所解=最適解という良い性質を持つ．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=75MTQH13HRTSXQWGQARY&quot;&gt;パターン認識と機械学習&lt;/a&gt;でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．&lt;/p&gt;
 
 &lt;h1 id=&quot;1-理論&quot;&gt;1. 理論&lt;/h1&gt;
 
@@ -30,7 +132,15 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
 
 &lt;h1 id=&quot;2-実装&quot;&gt;2. 実装&lt;/h1&gt;
 
-&lt;p&gt;学習目的であれば，上記の二次計画問題を&lt;a href=&quot;http://cvxopt.org/&quot;&gt;CVXOPT&lt;/a&gt;等のソルバで解けば理解が深まりそう．ただし，実用上は，&lt;a href=&quot;http://scikit-learn.org/stable/index.html&quot;&gt;scikit-learn&lt;/a&gt;の&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;&lt;/a&gt;モジュールを何も考えずに使えば良いと思う．&lt;/p&gt;
+&lt;p&gt;学習目的であれば，ソルバで二次計画法を解いても良さそう．実務目的であれば，無難にライブラリを使ったほうが良さそう．&lt;/p&gt;
+
+&lt;h2 id=&quot;2a-二次計画法ソルバ&quot;&gt;2.a 二次計画法ソルバ&lt;/h2&gt;
+
+&lt;p&gt;Pythonの二次計画法ソルバとしては，&lt;a href=&quot;http://cvxopt.org/&quot;&gt;CVXOPT&lt;/a&gt;が人気．実装するとしたら，以下のようになる．&lt;/p&gt;
+
+&lt;h2 id=&quot;2b-svmライブラリ&quot;&gt;2.b SVMライブラリ&lt;/h2&gt;
+
+&lt;p&gt;SVMライブラリとしては，&lt;a href=&quot;http://scikit-learn.org/stable/index.html&quot;&gt;scikit-learn&lt;/a&gt;の&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;&lt;/a&gt;モジュールが人気．上記と同じ機能を実装するとしたら，以下のようになる．&lt;/p&gt;
 
 &lt;h1 id=&quot;3-実験&quot;&gt;3. 実験&lt;/h1&gt;
 
@@ -40,7 +150,6 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
   &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_lpo_sbs_14_img_2?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=2J0S7A4J37ASEZ0JMGQW&quot;&gt;C.M.ビショップ，パターン認識と機械学習 下&lt;/a&gt;：SVMが登場するのは下巻．ただし，ラグランジュ乗数法の詳細は上巻の付録にある．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;: Support Vector Machines&lt;/a&gt;：便利すぎるSVMモジュール．&lt;/li&gt;
 &lt;/ul&gt;
-
 </description>
         <pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/2017/08/04/support-vector-machine</link>
