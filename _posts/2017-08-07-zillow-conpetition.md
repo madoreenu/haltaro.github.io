@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KaggleのZillow Prizeを調査
+title: KaggleのZillow Prizeを調べてみた
 updated: 2017-08-07 18:00 
 categories:
  - machine learning
@@ -8,7 +8,7 @@ categories:
 
 [KaggleのZillow Prize](https://www.kaggle.com/c/zillow-prize-1)は，[Zillow](https://www.zillow.com/)が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．
 
-誤訳があるかもしれない．下記はあくまでも個人用のメモ．
+誤訳があるかもしれない．以下はあくまでも個人用のメモ．
 
 # 1. 背景
 
@@ -62,7 +62,7 @@ $$
 * `sample_submission.csv`：提出用のサンプルファイル．
 
 ## 2.c Rules
-重要そうなものだけ抜粋．あくまでも個人用のメモなので，誤りがあるかも．
+重要そうなものだけ抜粋．
 
 * チーム外に，コードを共有してはならない．ただし，全参加者に共有するのはOK．
 * 1チーム最大3人まで．
@@ -82,5 +82,5 @@ $$
 # 参考
 
 * [Zillow Prize](https://www.kaggle.com/c/zillow-prize-1)
-* [Kaggle事始め](http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7)：とても丁寧なKaggle入門．
-* [No Free Hunch](http://blog.kaggle.com/)：Kaggle公式ブログ．コンペ優勝者のモデルが公開されている．
+* [Kaggle事始め](http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7)：とても丁寧なKaggle入門記事．
+* [No Free Hunch](http://blog.kaggle.com/)：Kaggle公式ブログ．コンテスト優勝者のモデルが公開されている．
