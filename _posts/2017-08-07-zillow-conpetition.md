@@ -1,12 +1,14 @@
 ---
 layout: post
-title: 作成中）KaggleのZillow Prizeに挑戦
+title: KaggleのZillow Prizeを調査
 updated: 2017-08-07 18:00 
 categories:
  - machine learning
 ---
 
-[KaggleのZillow Prize](https://www.kaggle.com/c/zillow-prize-1)に挑戦する．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．
+[KaggleのZillow Prize](https://www.kaggle.com/c/zillow-prize-1)は，[Zillow](https://www.zillow.com/)が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．
+
+誤訳があるかもしれない．下記はあくまでも個人用のメモ．
 
 # 1. 背景
 
@@ -18,19 +20,23 @@ categories:
 
 [Zillow](https://www.zillow.com/)とは，オンライン不動産データベースを運営するアメリカの企業．アメリカ全土の1億件以上の物件情報を有し，Zestimateと呼ばれる価格見積もりサービスを持つ．
 
-## 1.c Zillow Prize
+# 2. Zillow Prize
+
+## 2.a 概要
 
 [Zillow Prize](https://www.kaggle.com/c/zillow-prize-1)は，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，qualifying roundとprivate roundからなる．private roundは，qualifying roundの上位100チームのみに対し2018年1月1日から実施される．
 
 [Data](https://www.kaggle.com/c/zillow-prize-1/data)や[Rules](https://www.kaggle.com/c/zillow-prize-1/rules)の詳細は以下．
 
-### Data
 
-本コンペティションの目的は，Zestimateと実際の売値（$$SalePrice$$）の対数誤差を予測すること．対数誤差は以下で定義される．
+##　2.b Data
+
+本コンペティションの目的は，Zestimate（$$z$$）と実際の売値（$$s$$）の対数誤差を予測すること．対数誤差は以下で定義される．
+
 
 $$
 \begin{align*}
-logerror = log(Zestimate) - log(SalePrice) \tag{1}
+logerror = log(z) - log(s) \tag{1}
 \end{align*}
 $$
 
@@ -48,15 +54,16 @@ $$
 当該期間において取引が行われなかった不動産は，scoreの計算に利用されない．31日間のうち，複数回の取引があった場合は，最初の適切な取引をscoreの計算に用いる．
 
 以下は各ファイルの概要．
+
 * `properties_2016.csv`：2016年の全ての不動産情報．
 * `properties_2017.csv`：2017年の全ての不動産情報．2017年10月2日に公開予定．
 * `train_2016.csv`：2016年1月1日から2016年12月31日までの取引情報．
 * `train_2017.csv`：2017年1月1日から2017年9月15日までの取引情報．2017年10月2日に公開予定．
 * `sample_submission.csv`：提出用のサンプルファイル．
 
-### Rules
+## 2.c Rules
 
-重要そうなものだけ抜粋．
+重要そうなものだけ抜粋．あくまでも個人用のメモなので，誤りがあるかも．
 
 * チーム外に，コードを共有してはならない．ただし，全参加者に共有するのはOK．
 * 1チーム最大3人まで．
@@ -70,14 +77,11 @@ $$
     * 1位：$1,000,000
     * 2位：$100,000
     * 3位：$50,000
-
-# 2. 情報収集
-
-[Kernel](https://www.kaggle.com/c/zillow-prize-1/kernels)で情報収集．
-
-# 3. 実装
+* 第1ラウンドでは，Kernelでソースコードを公開することができる．
+* 第2ラウンドでは，いかなる形でもソースコードを公開してはならない．
 
 # 参考
 
+* [Zillow Prize](https://www.kaggle.com/c/zillow-prize-1)
 * [Kaggle事始め](http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7)：とても丁寧なKaggle入門．
 * [No Free Hunch](http://blog.kaggle.com/)：Kaggle公式ブログ．コンペ優勝者のモデルが公開されている．

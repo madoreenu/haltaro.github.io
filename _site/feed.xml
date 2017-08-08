@@ -6,13 +6,15 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Aug 2017 20:04:29 -0400</pubDate>
-    <lastBuildDate>Mon, 07 Aug 2017 20:04:29 -0400</lastBuildDate>
+    <pubDate>Mon, 07 Aug 2017 20:23:36 -0400</pubDate>
+    <lastBuildDate>Mon, 07 Aug 2017 20:23:36 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
-        <title>作成中）KaggleのZillow Prizeに挑戦</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;KaggleのZillow Prize&lt;/a&gt;に挑戦する．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．&lt;/p&gt;
+        <title>KaggleのZillow Prizeを調査</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;KaggleのZillow Prize&lt;/a&gt;は，&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt;が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．&lt;/p&gt;
+
+&lt;p&gt;誤訳があるかもしれない．下記はあくまでも個人用のメモ．&lt;/p&gt;
 
 &lt;h1 id=&quot;1-背景&quot;&gt;1. 背景&lt;/h1&gt;
 
@@ -24,18 +26,20 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt;とは，オンライン不動産データベースを運営するアメリカの企業．アメリカ全土の1億件以上の物件情報を有し，Zestimateと呼ばれる価格見積もりサービスを持つ．&lt;/p&gt;
 
-&lt;h2 id=&quot;1c-zillow-prize&quot;&gt;1.c Zillow Prize&lt;/h2&gt;
+&lt;h1 id=&quot;2-zillow-prize&quot;&gt;2. Zillow Prize&lt;/h1&gt;
+
+&lt;h2 id=&quot;2a-概要&quot;&gt;2.a 概要&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;Zillow Prize&lt;/a&gt;は，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，qualifying roundとprivate roundからなる．private roundは，qualifying roundの上位100チームのみに対し2018年1月1日から実施される．&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/data&quot;&gt;Data&lt;/a&gt;や&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/rules&quot;&gt;Rules&lt;/a&gt;の詳細は以下．&lt;/p&gt;
 
-&lt;h3 id=&quot;data&quot;&gt;Data&lt;/h3&gt;
+&lt;p&gt;##　2.b Data&lt;/p&gt;
 
-&lt;p&gt;本コンペティションの目的は，Zestimateと実際の売値（&lt;script type=&quot;math/tex&quot;&gt;SalePrice&lt;/script&gt;）の対数誤差を予測すること．対数誤差は以下で定義される．&lt;/p&gt;
+&lt;p&gt;本コンペティションの目的は，Zestimate（&lt;script type=&quot;math/tex&quot;&gt;z&lt;/script&gt;）と実際の売値（&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;）の対数誤差を予測すること．対数誤差は以下で定義される．&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
-logerror = log(Zestimate) - log(SalePrice) \tag{1}
+logerror = log(z) - log(s) \tag{1}
 \end{align*}&lt;/script&gt;
 
 &lt;p&gt;具体的には，2017年秋における&lt;script type=&quot;math/tex&quot;&gt;logerror&lt;/script&gt;を予測する．不動産価格は公開情報なので，取引が始まる前に，モデルの提出を打ち切る．&lt;/p&gt;
@@ -54,6 +58,7 @@ logerror = log(Zestimate) - log(SalePrice) \tag{1}
 &lt;p&gt;当該期間において取引が行われなかった不動産は，scoreの計算に利用されない．31日間のうち，複数回の取引があった場合は，最初の適切な取引をscoreの計算に用いる．&lt;/p&gt;
 
 &lt;p&gt;以下は各ファイルの概要．&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;properties_2016.csv&lt;/code&gt;：2016年の全ての不動産情報．&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;properties_2017.csv&lt;/code&gt;：2017年の全ての不動産情報．2017年10月2日に公開予定．&lt;/li&gt;
@@ -62,9 +67,9 @@ logerror = log(Zestimate) - log(SalePrice) \tag{1}
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sample_submission.csv&lt;/code&gt;：提出用のサンプルファイル．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;rules&quot;&gt;Rules&lt;/h3&gt;
+&lt;h2 id=&quot;2c-rules&quot;&gt;2.c Rules&lt;/h2&gt;
 
-&lt;p&gt;重要そうなものだけ抜粋．&lt;/p&gt;
+&lt;p&gt;重要そうなものだけ抜粋．あくまでも個人用のメモなので，誤りがあるかも．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;チーム外に，コードを共有してはならない．ただし，全参加者に共有するのはOK．&lt;/li&gt;
@@ -88,17 +93,14 @@ logerror = log(Zestimate) - log(SalePrice) \tag{1}
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;第1ラウンドでは，Kernelでソースコードを公開することができる．&lt;/li&gt;
+  &lt;li&gt;第2ラウンドでは，いかなる形でもソースコードを公開してはならない．&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h1 id=&quot;2-情報収集&quot;&gt;2. 情報収集&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/kernels&quot;&gt;Kernel&lt;/a&gt;で情報収集．&lt;/p&gt;
-
-&lt;h1 id=&quot;3-実装&quot;&gt;3. 実装&lt;/h1&gt;
 
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;Zillow Prize&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7&quot;&gt;Kaggle事始め&lt;/a&gt;：とても丁寧なKaggle入門．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://blog.kaggle.com/&quot;&gt;No Free Hunch&lt;/a&gt;：Kaggle公式ブログ．コンペ優勝者のモデルが公開されている．&lt;/li&gt;
 &lt;/ul&gt;
