@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KaggleのZillow Prizeに関する調査
+title: Kaggle - Zillow Prize概要
 updated: 2017-08-07 18:00 
 categories:
  - machine learning

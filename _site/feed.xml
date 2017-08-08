@@ -6,12 +6,12 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Aug 2017 22:46:45 -0400</pubDate>
-    <lastBuildDate>Mon, 07 Aug 2017 22:46:45 -0400</lastBuildDate>
+    <pubDate>Mon, 07 Aug 2017 22:52:23 -0400</pubDate>
+    <lastBuildDate>Mon, 07 Aug 2017 22:52:23 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
-        <title>KaggleのZillow Prizeに関する調査</title>
+        <title>Kaggle - Zillow Prize概要</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;KaggleのZillow Prize&lt;/a&gt;は，&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt;が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．&lt;/p&gt;
 
 &lt;p&gt;誤訳があるかもしれないのでご注意．&lt;/p&gt;
