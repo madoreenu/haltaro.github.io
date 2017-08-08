@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Aug 2017 20:23:36 -0400</pubDate>
-    <lastBuildDate>Mon, 07 Aug 2017 20:23:36 -0400</lastBuildDate>
+    <pubDate>Mon, 07 Aug 2017 20:27:29 -0400</pubDate>
+    <lastBuildDate>Mon, 07 Aug 2017 20:27:29 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -32,9 +32,9 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;Zillow Prize&lt;/a&gt;は，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，qualifying roundとprivate roundからなる．private roundは，qualifying roundの上位100チームのみに対し2018年1月1日から実施される．&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/data&quot;&gt;Data&lt;/a&gt;や&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/rules&quot;&gt;Rules&lt;/a&gt;の詳細は以下．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/data&quot;&gt;Data&lt;/a&gt;や&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/rules&quot;&gt;Rules&lt;/a&gt;等の詳細は以下．&lt;/p&gt;
 
-&lt;p&gt;##　2.b Data&lt;/p&gt;
+&lt;h2 id=&quot;2b-data&quot;&gt;2.b Data&lt;/h2&gt;
 
 &lt;p&gt;本コンペティションの目的は，Zestimate（&lt;script type=&quot;math/tex&quot;&gt;z&lt;/script&gt;）と実際の売値（&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;）の対数誤差を予測すること．対数誤差は以下で定義される．&lt;/p&gt;
 
@@ -68,7 +68,6 @@ logerror = log(z) - log(s) \tag{1}
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;2c-rules&quot;&gt;2.c Rules&lt;/h2&gt;
-
 &lt;p&gt;重要そうなものだけ抜粋．あくまでも個人用のメモなので，誤りがあるかも．&lt;/p&gt;
 
 &lt;ul&gt;

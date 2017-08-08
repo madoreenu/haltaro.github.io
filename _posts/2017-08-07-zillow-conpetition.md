@@ -26,10 +26,10 @@ categories:
 
 [Zillow Prize](https://www.kaggle.com/c/zillow-prize-1)は，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，qualifying roundとprivate roundからなる．private roundは，qualifying roundの上位100チームのみに対し2018年1月1日から実施される．
 
-[Data](https://www.kaggle.com/c/zillow-prize-1/data)や[Rules](https://www.kaggle.com/c/zillow-prize-1/rules)の詳細は以下．
+[Data](https://www.kaggle.com/c/zillow-prize-1/data)や[Rules](https://www.kaggle.com/c/zillow-prize-1/rules)等の詳細は以下．
 
 
-##　2.b Data
+## 2.b Data
 
 本コンペティションの目的は，Zestimate（$$z$$）と実際の売値（$$s$$）の対数誤差を予測すること．対数誤差は以下で定義される．
 
@@ -62,7 +62,6 @@ $$
 * `sample_submission.csv`：提出用のサンプルファイル．
 
 ## 2.c Rules
-
 重要そうなものだけ抜粋．あくまでも個人用のメモなので，誤りがあるかも．
 
 * チーム外に，コードを共有してはならない．ただし，全参加者に共有するのはOK．
