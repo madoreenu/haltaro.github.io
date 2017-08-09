@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 作成中）アドテク概要
+title: 作成中）アドテク入門
 updated: 2017-08-07 18:00 
 categories:
  - machine learning
