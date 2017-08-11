@@ -21,21 +21,18 @@ categories:
 
 * SQLのtypeとして，`text`，`integer`，`date`などがある．`text`および`date`は，`'2017-08-10'`のようにシングルクォートで囲む．主なSQLのtypeは以下．
 * Text and string types
-  * `text`：長さに制限のない文字列．Pythonの`str`に相当．
-  * `char(n)`：長さが`n`の文字列．
-  * `varchar(n)`：長さが最大`n`の文字列．
-  
+    * `text`：長さに制限のない文字列．Pythonの`str`に相当．
+    * `char(n)`：長さが`n`の文字列．
+    * `varchar(n)`：長さが最大`n`の文字列．
 * Numeric types
-  * `integer`：整数型．Pythonの`int`に相当．
-  * `real`：浮動小数点型．Pythonの`float`に相当．精度は小数第6位．
-  * `double precision`：倍精度小数点．精度は小数第15位．
-  * `decimal`：正確な小数型（？）．
-  
+    * `integer`：整数型．Pythonの`int`に相当．
+    * `real`：浮動小数点型．Pythonの`float`に相当．精度は小数第6位．
+    * `double precision`：倍精度小数点．精度は小数第15位．
+    * `decimal`：正確な小数型（？）．
 * Date and time types
-  * `date`：日付型．年，月，日．
-  * `time`：時刻型．
-  * `timestamp`：`date`および`time`．
-  
+    * `date`：日付型．年，月，日．
+    * `time`：時刻型．
+    * `timestamp`：`date`および`time`．
 * **select** *columns* **from** *tables* **where** *condition*; 
 
 # 3. Python DB-API
