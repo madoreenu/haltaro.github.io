@@ -6,12 +6,45 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Aug 2017 18:57:59 -0400</pubDate>
-    <lastBuildDate>Tue, 08 Aug 2017 18:57:59 -0400</lastBuildDate>
+    <pubDate>Thu, 10 Aug 2017 20:50:45 -0400</pubDate>
+    <lastBuildDate>Thu, 10 Aug 2017 20:50:45 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
-        <title>作成中）アドテク概要</title>
+        <title>作成中）Udacity, Introduction to relational databases受講メモ</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Introduction to relational databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
+
+&lt;h1 id=&quot;1-data-and-tables&quot;&gt;1. Data and Tables&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Databaseは，同時に複数の人が編集可能．これが，普通のファイルと異なる点．&lt;/li&gt;
+  &lt;li&gt;Tableは，headerとbodyからなる．headerは，table nameと，column nameと，column typeからなる．bodyは，rowsとcolumnsからなる．&lt;/li&gt;
+  &lt;li&gt;複数の行に跨る演算をaggregationと呼ぶ．SQLで使えるaggregationの代表的なものとして，count，avg，max，min，sumなどがある．&lt;/li&gt;
+  &lt;li&gt;codeからdatabaseに&lt;code class=&quot;highlighter-rouge&quot;&gt;query&lt;/code&gt;を出すと，&lt;code class=&quot;highlighter-rouge&quot;&gt;result&lt;/code&gt;を返される．&lt;code class=&quot;highlighter-rouge&quot;&gt;result&lt;/code&gt;は，原則的にTable形式．&lt;/li&gt;
+  &lt;li&gt;Database中でデータの唯一性を担保するために，idを与えることがある．このように識別に用いられるcolumnを&lt;code class=&quot;highlighter-rouge&quot;&gt;primary key&lt;/code&gt;と呼ぶ．&lt;/li&gt;
+  &lt;li&gt;複数の情報を持つオブジェクトを定義するよりは，複数のTableで管理したほうが効率的．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-elements-of-sql&quot;&gt;2. Elements of SQL&lt;/h1&gt;
+
+&lt;h1 id=&quot;3-python-db-api&quot;&gt;3. Python DB-API&lt;/h1&gt;
+
+&lt;h1 id=&quot;4-deeper-into-sql&quot;&gt;4. Deeper into SQL&lt;/h1&gt;
+
+&lt;h1 id=&quot;5-tournament-database&quot;&gt;5. Tournament Database&lt;/h1&gt;
+
+</description>
+        <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2017/08/10/udacity-rdb</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/10/udacity-rdb</guid>
+        
+        
+        <category>data science</category>
+        
+      </item>
+    
+      <item>
+        <title>作成中）アドテク入門</title>
         <description>&lt;p&gt;今更ながら，アドテクについて調べてみた．アドテクとは，Advertising Technologyの略で，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）を幸せにすること．Real time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．&lt;/p&gt;
 
 &lt;h1 id=&quot;1-目的&quot;&gt;1. 目的&lt;/h1&gt;
@@ -84,7 +117,7 @@
       </item>
     
       <item>
-        <title>Kaggle - Zillow Prize概要</title>
+        <title>Kaggle，Zillow Prize概要</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;KaggleのZillow Prize&lt;/a&gt;は，&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt;が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．&lt;/p&gt;
 
 &lt;p&gt;誤訳があるかもしれないのでご注意．&lt;/p&gt;
