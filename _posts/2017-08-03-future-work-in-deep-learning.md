@@ -8,6 +8,8 @@ categories:
 
 くだらないものばかりだけど，今後やりたいことをメモしておく．
 
+![project]({{site.baseurl}}/images/2017-08-02-projects.jpg)
+
 
 # 1. 画像処理系
 

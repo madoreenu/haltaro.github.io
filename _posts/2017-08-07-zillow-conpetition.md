@@ -8,6 +8,8 @@ categories:
 
 [KaggleのZillow Prize](https://www.kaggle.com/c/zillow-prize-1)は，[Zillow](https://www.zillow.com/)が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．
 
+![retech]({{site.baseurl}}/images/2017-08-07-retech.jpg)
+
 誤訳があるかもしれないのでご注意．
 
 # 1. 背景

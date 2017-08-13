@@ -83,6 +83,8 @@
   <article class="post-content">
     <p>今更ながら，アドテクについて調べてみた．アドテクとは，Advertising Technologyの略で，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）を幸せにすること．Real time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．</p>
 
+<p><img src="/images/2017-08-07-ad.jpg" alt="ad" /></p>
+
 <h1 id="1-目的">1. 目的</h1>
 
 <p><a href="https://www.cyberagent.co.jp/ir/personal/adtech/">CyberAgent，日本一やさしいアドテク教室</a>より抜粋．</p>
@@ -101,9 +103,17 @@
 <p>広告効果が大きい広告をいかに選択するか，という技術．</p>
 
 <ul>
-  <li>Ad Network：</li>
-  <li>Ad Exchange：</li>
-  <li>SSP：</li>
+  <li><a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF">Ad Network</a>：Webやアプリメディアなどの広告配信可能な媒体を多数束ねて広告を配信するネットワーク．</li>
+  <li><a href="https://satori.marketing/marketing-blog/ad-technology/ad-exchange/">Ad Exchange</a>：広告枠を１インプレッション単位で売買するプラットフォーム．各媒体やAd Networkが持つ広告掲載枠を交換できる仕組み．<strong>Ad Networkより大きな仕組み</strong>．Ad Exchangeでは，広告出稿数と広告枠のバランスで，リアルタイムで広告枠の入札単価が変動する．Ad Exchangeには，様々なプラットフォームがある．
+    <ul>
+      <li>Double Click AdExchange：Googleが運営．世界最大のAd Exchange．2009年からサービス開始．</li>
+      <li>Open X Market Japan：Open X Japanとcciが提携して運営．2009年からサービス開始．</li>
+      <li>Microsoft Advertixing Exchange：Microsoftが運営．2013年からサービス開始．配信枠はMSNとSkype．</li>
+      <li>Facebook AdExchange：Facebookが運営．</li>
+      <li>Yild One：プラットフォーム・ワンが運営するSSPプラットフォーム．厳密にはAd Exchangeと異なるが，Ad Exchange的に利用することも可能．</li>
+    </ul>
+  </li>
+  <li><a href="https://smmlab.jp/?p=30268">SSP</a>：Supply Side Platformの略．オンライン広告において，広告枠を提供しているメディアの広告枠販売や広告収益最大化などを支援するツール．具体的な提供内容はサービスによって異なるが，主に，Ad NetworkやAd Exchangeの管理，リアルタイム入札（RTB）への対応などがある．</li>
 </ul>
 
 <h2 id="2b-広告主の広告表現最適化">2.b 広告主の広告表現最適化</h2>
@@ -111,7 +121,7 @@
 <p>消費者一人ひとりにあった広告表現をいかに実現するか，という技術．</p>
 
 <ul>
-  <li>DSP：</li>
+  <li>DSP：DSPを使うことで，複数のアドネットワーク，アドエクスチェンジ，SSPを管理可能になる．</li>
   <li>RTB：</li>
   <li>Retargeting：</li>
   <li>Dynamic retargeting：</li>
@@ -137,9 +147,11 @@
 <h1 id="参考">参考</h1>
 
 <ul>
-  <li><a href="https://www.cyberagent.co.jp/ir/personal/adtech/">CyberAgent，日本一やさしいアドテク教室</a>：用語もまとまっており，とてもわかりやすい．</li>
+  <li><a href="https://www.cyberagent.co.jp/ir/personal/adtech/">CyberAgent，日本一やさしいアドテク教室</a>：用語まとめもある．</li>
+  <li>[SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します]：Ad Networkについて．</li>
+  <li>[SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します]：Ad Exchangeについて．</li>
   <li><a href="http://qiita.com/fukkyy/items/b2d37b4797516d72225a">Qiita，広告と機械学習</a>：2013年の記事だが，わかりやすい．</li>
-  <li><a href="https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn">舘野啓，アドテクにおける機械学習技術</a>：数式がしっくりくる．</li>
+  <li><a href="https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn">舘野啓，アドテクにおける機械学習技術</a>：数式がわかりやすい．</li>
   <li><a href="https://techcrunch.com/advertising-tech/">TechCrunch，Advertising Tech</a>：アドテク関連の最新ニュース．</li>
 </ul>
 

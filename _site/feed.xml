@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Aug 2017 15:56:23 -0400</pubDate>
-    <lastBuildDate>Sun, 13 Aug 2017 15:56:23 -0400</lastBuildDate>
+    <pubDate>Sun, 13 Aug 2017 16:31:49 -0400</pubDate>
+    <lastBuildDate>Sun, 13 Aug 2017 16:31:49 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -145,6 +145,8 @@
         <title>作成中）アドテク入門</title>
         <description>&lt;p&gt;今更ながら，アドテクについて調べてみた．アドテクとは，Advertising Technologyの略で，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）を幸せにすること．Real time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/2017-08-07-ad.jpg&quot; alt=&quot;ad&quot; /&gt;&lt;/p&gt;
+
 &lt;h1 id=&quot;1-目的&quot;&gt;1. 目的&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.cyberagent.co.jp/ir/personal/adtech/&quot;&gt;CyberAgent，日本一やさしいアドテク教室&lt;/a&gt;より抜粋．&lt;/p&gt;
@@ -163,9 +165,17 @@
 &lt;p&gt;広告効果が大きい広告をいかに選択するか，という技術．&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Ad Network：&lt;/li&gt;
-  &lt;li&gt;Ad Exchange：&lt;/li&gt;
-  &lt;li&gt;SSP：&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF&quot;&gt;Ad Network&lt;/a&gt;：Webやアプリメディアなどの広告配信可能な媒体を多数束ねて広告を配信するネットワーク．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-exchange/&quot;&gt;Ad Exchange&lt;/a&gt;：広告枠を１インプレッション単位で売買するプラットフォーム．各媒体やAd Networkが持つ広告掲載枠を交換できる仕組み．&lt;strong&gt;Ad Networkより大きな仕組み&lt;/strong&gt;．Ad Exchangeでは，広告出稿数と広告枠のバランスで，リアルタイムで広告枠の入札単価が変動する．Ad Exchangeには，様々なプラットフォームがある．
+    &lt;ul&gt;
+      &lt;li&gt;Double Click AdExchange：Googleが運営．世界最大のAd Exchange．2009年からサービス開始．&lt;/li&gt;
+      &lt;li&gt;Open X Market Japan：Open X Japanとcciが提携して運営．2009年からサービス開始．&lt;/li&gt;
+      &lt;li&gt;Microsoft Advertixing Exchange：Microsoftが運営．2013年からサービス開始．配信枠はMSNとSkype．&lt;/li&gt;
+      &lt;li&gt;Facebook AdExchange：Facebookが運営．&lt;/li&gt;
+      &lt;li&gt;Yild One：プラットフォーム・ワンが運営するSSPプラットフォーム．厳密にはAd Exchangeと異なるが，Ad Exchange的に利用することも可能．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://smmlab.jp/?p=30268&quot;&gt;SSP&lt;/a&gt;：Supply Side Platformの略．オンライン広告において，広告枠を提供しているメディアの広告枠販売や広告収益最大化などを支援するツール．具体的な提供内容はサービスによって異なるが，主に，Ad NetworkやAd Exchangeの管理，リアルタイム入札（RTB）への対応などがある．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;2b-広告主の広告表現最適化&quot;&gt;2.b 広告主の広告表現最適化&lt;/h2&gt;
@@ -173,7 +183,7 @@
 &lt;p&gt;消費者一人ひとりにあった広告表現をいかに実現するか，という技術．&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;DSP：&lt;/li&gt;
+  &lt;li&gt;DSP：DSPを使うことで，複数のアドネットワーク，アドエクスチェンジ，SSPを管理可能になる．&lt;/li&gt;
   &lt;li&gt;RTB：&lt;/li&gt;
   &lt;li&gt;Retargeting：&lt;/li&gt;
   &lt;li&gt;Dynamic retargeting：&lt;/li&gt;
@@ -199,9 +209,11 @@
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cyberagent.co.jp/ir/personal/adtech/&quot;&gt;CyberAgent，日本一やさしいアドテク教室&lt;/a&gt;：用語もまとまっており，とてもわかりやすい．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cyberagent.co.jp/ir/personal/adtech/&quot;&gt;CyberAgent，日本一やさしいアドテク教室&lt;/a&gt;：用語まとめもある．&lt;/li&gt;
+  &lt;li&gt;[SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します]：Ad Networkについて．&lt;/li&gt;
+  &lt;li&gt;[SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します]：Ad Exchangeについて．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://qiita.com/fukkyy/items/b2d37b4797516d72225a&quot;&gt;Qiita，広告と機械学習&lt;/a&gt;：2013年の記事だが，わかりやすい．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot;&gt;舘野啓，アドテクにおける機械学習技術&lt;/a&gt;：数式がしっくりくる．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot;&gt;舘野啓，アドテクにおける機械学習技術&lt;/a&gt;：数式がわかりやすい．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://techcrunch.com/advertising-tech/&quot;&gt;TechCrunch，Advertising Tech&lt;/a&gt;：アドテク関連の最新ニュース．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -217,6 +229,8 @@
       <item>
         <title>Kaggle，Zillow Prize概要</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;KaggleのZillow Prize&lt;/a&gt;は，&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt;が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2017-08-07-retech.jpg&quot; alt=&quot;retech&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;誤訳があるかもしれないのでご注意．&lt;/p&gt;
 
@@ -434,6 +448,8 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
         <title>機械学習のプロジェクト計画</title>
         <description>&lt;p&gt;くだらないものばかりだけど，今後やりたいことをメモしておく．&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/2017-08-02-projects.jpg&quot; alt=&quot;project&quot; /&gt;&lt;/p&gt;
+
 &lt;h1 id=&quot;1-画像処理系&quot;&gt;1. 画像処理系&lt;/h1&gt;
 
 &lt;h2 id=&quot;1a-君の名はの三葉の中身を顔画像から分類&quot;&gt;1.a 君の名は。の三葉の中身を顔画像から分類&lt;/h2&gt;
@@ -512,6 +528,8 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
       <item>
         <title>機械学習の学習計画</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt;の&lt;a href=&quot;https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101&quot;&gt;Deep learning foundations nanodegree&lt;/a&gt;を修了して，基本はある程度押さえられたし，論文も読めるようになった．やりたいことをメモしておく．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2017-08-03-study.jpg&quot; alt=&quot;study&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;udacityの公開教材を和訳&quot;&gt;Udacityの公開教材を和訳&lt;/h1&gt;
 
