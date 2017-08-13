@@ -6,15 +6,46 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Aug 2017 15:17:59 -0400</pubDate>
-    <lastBuildDate>Sun, 13 Aug 2017 15:17:59 -0400</lastBuildDate>
+    <pubDate>Sun, 13 Aug 2017 15:56:23 -0400</pubDate>
+    <lastBuildDate>Sun, 13 Aug 2017 15:56:23 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
-        <title>作成中）Udacity, Introduction to relational databases受講メモ</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Introduction to relational databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
+        <title>作成中）Udacity, Intro to Hadoop and MapReduce受講メモ</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．8部構成の無料講座．&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/2017-08-10-bigdata.png&quot; alt=&quot;bigdata&quot; /&gt;&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/DEQNknALf_8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;1-big-data&quot;&gt;1. Big Data&lt;/h1&gt;
+
+&lt;h1 id=&quot;2-problem-set&quot;&gt;2. Problem Set&lt;/h1&gt;
+
+&lt;h1 id=&quot;3-hdfs-and-mapreduce&quot;&gt;3. HDFS and MapReduce&lt;/h1&gt;
+
+&lt;h1 id=&quot;4-problem-set&quot;&gt;4. Problem Set&lt;/h1&gt;
+
+&lt;h1 id=&quot;5-mapreduce-code&quot;&gt;5. MapReduce Code&lt;/h1&gt;
+
+&lt;h1 id=&quot;6-project&quot;&gt;6. Project&lt;/h1&gt;
+
+&lt;h1 id=&quot;7-mapreduce-design-patterns&quot;&gt;7. MapReduce Design Patterns&lt;/h1&gt;
+
+&lt;h1 id=&quot;8-project-prep&quot;&gt;8. Project Prep&lt;/h1&gt;
+</description>
+        <pubDate>Sun, 13 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2017/08/13/udacity-hadoop</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/13/udacity-hadoop</guid>
+        
+        
+        <category>data science</category>
+        
+      </item>
+    
+      <item>
+        <title>作成中）Udacity, Intro to Relational Databases受講メモ</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Intro to Relational Databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/jyju2P-7hPA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h1 id=&quot;1-data-and-tables&quot;&gt;1. Data and Tables&lt;/h1&gt;
 
@@ -652,143 +683,6 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
         
         
         <category>english</category>
-        
-      </item>
-    
-      <item>
-        <title>JekyllとGitHub Pagesでウェブサイトを立ち上げた</title>
-        <description>&lt;p&gt;それなりに技術的なメモが溜まってきたが，&lt;a href=&quot;http://qiita.com/&quot;&gt;Qiita&lt;/a&gt;に投稿するほどではない．これまでは&lt;a href=&quot;https://evernote.com/intl/jp/&quot;&gt;evernote&lt;/a&gt;で管理していたが，数式やソースコードを書きづらい．&lt;a href=&quot;http://hatenablog.com/&quot;&gt;はてなブログ&lt;/a&gt;等で&lt;a href=&quot;https://ja.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;を書いても良いが，手元にコンテンツが残らないのが嫌だし，&lt;code class=&quot;highlighter-rouge&quot;&gt;haltaro&lt;/code&gt;ドメインが取れなかった．そこで，&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;と&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;で，ウェブサイトを立ち上げた．&lt;/p&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll github pages&lt;/code&gt;等でググると素晴らしい記事がたくさん出てきた．今回は，特に，以下を参考にした．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jekyllrb-ja.github.io/docs/home/&quot;&gt;Jekyll公式ドキュメント&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04&quot;&gt;How to Set Up a Jekyll Development Site on Ubuntu 16.04&lt;/a&gt;：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://unitopi.com/font-family-css/&quot;&gt;もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;*-font-family&lt;/code&gt;の設定について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://fukafuka295.jp/hp/hp_no9.html&quot;&gt;HTMLやCSSのソースコードをそのままページに貼り付ける方法&lt;/a&gt;：Gistを使ってソースコードをページに埋め込む方法について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://zaitaku-hukugyo-net.com/1132.html&quot;&gt;アバター画像を設定！Gravatar(グラバター)の登録方法と使い方&lt;/a&gt;：Gravatarの登録方法について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://jekyllrb-ja.github.io/docs/permalinks/&quot;&gt;Jekyll -パーマリンク&lt;/a&gt;：パーマリンクの設定方法について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.skktmlab.info/blog/2015_02_13_2&quot;&gt;Nestaでkramdownを使って数式を表示してみる&lt;/a&gt;：MathJaxの設定について．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;gitやGitHubの使い方は，もともと知っていたので割愛．&lt;/p&gt;
-
-&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
-
-&lt;p&gt;なお，Ubuntu 16.04を想定する．&lt;/p&gt;
-
-&lt;h2 id=&quot;1-githubアカウント取得&quot;&gt;1. GitHubアカウント取得&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;に登録し，アカウントを取得．もともと持ってた．&lt;/p&gt;
-
-&lt;h2 id=&quot;2-haltarogithubioレポジトリ作成&quot;&gt;2. haltaro.github.ioレポジトリ作成&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;アカウント名&amp;gt;.github.io&lt;/code&gt;レポジトリを作成．これも，もともと持ってた．&lt;/p&gt;
-
-&lt;h2 id=&quot;3-jekyllインストール&quot;&gt;3. Jekyllインストール&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04&quot;&gt;How to Set Up a Jekyll Development Site on Ubuntu 16.04&lt;/a&gt;を参考に，以下のコマンドを実行．&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get install ruby ruby-dev make gcc
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo gem install jekyll bundler
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;ついでに，ローカル保存用のディレクトリを作成して移動．&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;mkdir haltaro.github.io
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;haltaro.github.io
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;4-jekyllテーマ選定&quot;&gt;4. Jekyllテーマ選定&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll themes&lt;/a&gt;から，テーマを選んだ．シンプルさと，カテゴリ分類機能という条件を満たす&lt;a href=&quot;https://github.com/laobubu&quot;&gt;laobubu&lt;/a&gt;さんの&lt;a href=&quot;http://jekyllthemes.org/themes/easybook/&quot;&gt;EasyBook&lt;/a&gt;を使わせてもらうことにした．&lt;/p&gt;
-
-&lt;p&gt;ダウンロードするなりクローンしたファイル一式を，先程のローカルディレクトリに保存．&lt;/p&gt;
-
-&lt;h2 id=&quot;5-カスタマイズ&quot;&gt;5. カスタマイズ&lt;/h2&gt;
-
-&lt;h3 id=&quot;51-フォントの変更&quot;&gt;5.1 フォントの変更&lt;/h3&gt;
-
-&lt;p&gt;デフォルトだと日本語フォントが気持ち悪いので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/css/main.scss&lt;/code&gt;を次のように変更した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/e33a9c4992e80ac8c0c1f8ae946efa57.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;流行りの&lt;a href=&quot;http://www.jiyu-kobo.co.jp/library/ygf/&quot;&gt;游ゴシック&lt;/a&gt;を使おうとしたが，&lt;a href=&quot;http://mandel59.hateblo.jp/entry/2016/11/11/012654&quot;&gt;windowsで線が細くなる問題&lt;/a&gt;の闇が深く，初心者の手に負えない．&lt;a href=&quot;http://unitopi.com/font-family-css/&quot;&gt;もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。&lt;/a&gt;を参考に，無難に設定した．&lt;/p&gt;
-
-&lt;h3 id=&quot;52-連絡先の追加&quot;&gt;5.2 連絡先の追加&lt;/h3&gt;
-
-&lt;p&gt;連絡先に，&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;を追加した．まず，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/sidebar.html&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;ボタンと&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;ボタンの設定を追記．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/acaa8d617ea4fb598f6781ed1a8b916b.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;次に，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_config.yml&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;qitta_username&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle_username&lt;/code&gt;を追加した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/dbbefa944f0072eda07c405e0fdb9762.js&quot;&gt;&lt;/script&gt;
-
-&lt;h3 id=&quot;53-projectsページの追加&quot;&gt;5.3 Projectsページの追加&lt;/h3&gt;
-
-&lt;p&gt;業績をまとめたページを作りたかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/projects.md&lt;/code&gt;を追加した．フロントマターは，&lt;code class=&quot;highlighter-rouge&quot;&gt;/about.md&lt;/code&gt;を参考に作った．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/ace85ef28accfb567b00fc2ca3f80d81.js&quot;&gt;&lt;/script&gt;
-
-&lt;h3 id=&quot;54-gravatarの取得&quot;&gt;5.4 Gravatarの取得&lt;/h3&gt;
-
-&lt;p&gt;丸窓にアイコンを表示するためには，&lt;a href=&quot;https://en.gravatar.com/&quot;&gt;Gravatar&lt;/a&gt;を設定して，ハッシュ値を&lt;code class=&quot;highlighter-rouge&quot;&gt;/_config.yml&lt;/code&gt;に追記する必要がある．&lt;a href=&quot;http://zaitaku-hukugyo-net.com/1132.html&quot;&gt;アバター画像を設定！Gravatar(グラバター)の登録方法と使い方&lt;/a&gt;を参考にした．&lt;/p&gt;
-
-&lt;h3 id=&quot;55-アイコンの設定&quot;&gt;5.5 アイコンの設定&lt;/h3&gt;
-
-&lt;p&gt;ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/head.html&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;icon&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;apple-touch-icon&lt;/code&gt;設定を追記．アイコン自体は，&lt;a href=&quot;http://www.irasutoya.com/&quot;&gt;いらすとや&lt;/a&gt;さんから調達し，&lt;code class=&quot;highlighter-rouge&quot;&gt;/images&lt;/code&gt;に格納．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/368a39e2956695d01a9728fb87b0e33d.js&quot;&gt;&lt;/script&gt;
-
-&lt;h3 id=&quot;56-パーマリンクの設定&quot;&gt;5.6 パーマリンクの設定&lt;/h3&gt;
-
-&lt;p&gt;デフォルトだと，&lt;code class=&quot;highlighter-rouge&quot;&gt;/archives/:title&lt;/code&gt;形式だったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;:title&lt;/code&gt;の重複を避ける必要があり，大変．そこで，&lt;code class=&quot;highlighter-rouge&quot;&gt;/:year/:month/:day/:title&lt;/code&gt;形式に変更した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/6d4bb9c829a7198826cd400a70f9e67b.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;なお，組み込みパーマリンクスタイル&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;を指定すれば簡単に&lt;code class=&quot;highlighter-rouge&quot;&gt;/:categories/:year/:month/:day/:title.html&lt;/code&gt;形式になるが，&lt;code class=&quot;highlighter-rouge&quot;&gt;:categories&lt;/code&gt;に空白文字が入ると嫌なので使わなかった．&lt;/p&gt;
-
-&lt;h3 id=&quot;57-mathjaxの設定&quot;&gt;5.7 MathJaxの設定&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.mathjax.org/&quot;&gt;MathJax&lt;/a&gt;を使った数式表示を設定．&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;に以下を追記．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/ab0a07373a387bd1b83966d1db9e0a07.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;6-ローカルテスト&quot;&gt;6. ローカルテスト&lt;/h2&gt;
-
-&lt;p&gt;下記コマンドで動作確認．いくつかエラーが出たので，その都度ググって解決した．&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jekyll serve
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:4000&lt;/code&gt;にアクセスして，出来栄えを確認．&lt;/p&gt;
-
-&lt;h2 id=&quot;7-アップロード&quot;&gt;7. アップロード&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git remote add origin git@github.com:haltaro/haltaro.github.io &lt;span class=&quot;c&quot;&gt;# アカウント名等は適宜変更のこと．&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git add . -A
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;First commit&quot;&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git push origin master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;しばらく経ってから，&lt;code class=&quot;highlighter-rouge&quot;&gt;https://haltaro.github.io&lt;/code&gt;にアクセスすると，サイトが出来上がっていた．&lt;/p&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;htmlとかcssとか全然わからんが，なんとか形になった．次回は，&lt;a href=&quot;https://haltaro.github.io/2017/08/04/set-google-analytics&quot;&gt;Google Analyticsでトラッキング機能を実装&lt;/a&gt;する．&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 30 Jul 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2017/07/30/first-post</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/07/30/first-post</guid>
-        
-        
-        <category>jekyll</category>
         
       </item>
     

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 作成中）Udacity, Introduction to relational databases受講メモ
+title: 作成中）Udacity, Intro to Relational Databases受講メモ
 updated: 2017-08-10 18:00 
 categories:
  - data science
 ---
 
-[Udacity, Introduction to relational databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)の受講メモ．5部構成の無料講座．
+[Udacity, Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)の受講メモ．5部構成の無料講座．
 
-![bigdata]({{site.baseurl}}/images/2017-08-10-bigdata.png)
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/jyju2P-7hPA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 # 1. Data and Tables
 
