@@ -81,6 +81,8 @@
   <article class="post-content">
     <p><a href="https://www.udacity.com/course/intro-to-relational-databases--ud197">Udacity, Introduction to relational databases</a>の受講メモ．5部構成の無料講座．</p>
 
+<p><img src="/images/2017-08-10-bigdata.png" alt="bigdata" /></p>
+
 <h1 id="1-data-and-tables">1. Data and Tables</h1>
 
 <ul>
@@ -93,6 +95,50 @@
 </ul>
 
 <h1 id="2-elements-of-sql">2. Elements of SQL</h1>
+
+<ul>
+  <li>SQLのtypeとして，<code class="highlighter-rouge">text</code>，<code class="highlighter-rouge">integer</code>，<code class="highlighter-rouge">date</code>などがある．<code class="highlighter-rouge">text</code>および<code class="highlighter-rouge">date</code>は，<code class="highlighter-rouge">'2017-08-10'</code>のようにシングルクォートで囲む．主なSQLのtypeは以下．</li>
+  <li>Text and string types
+    <ul>
+      <li><code class="highlighter-rouge">text</code>：長さに制限のない文字列．Pythonの<code class="highlighter-rouge">str</code>に相当．</li>
+      <li><code class="highlighter-rouge">char(n)</code>：長さが<code class="highlighter-rouge">n</code>の文字列．</li>
+      <li><code class="highlighter-rouge">varchar(n)</code>：長さが最大<code class="highlighter-rouge">n</code>の文字列．</li>
+    </ul>
+  </li>
+  <li>Numeric types
+    <ul>
+      <li><code class="highlighter-rouge">integer</code>：整数型．Pythonの<code class="highlighter-rouge">int</code>に相当．</li>
+      <li><code class="highlighter-rouge">real</code>：浮動小数点型．Pythonの<code class="highlighter-rouge">float</code>に相当．精度は小数第6位．</li>
+      <li><code class="highlighter-rouge">double precision</code>：倍精度小数点．精度は小数第15位．</li>
+      <li><code class="highlighter-rouge">decimal</code>：正確な小数型（？）．</li>
+    </ul>
+  </li>
+  <li>Date and time types
+    <ul>
+      <li><code class="highlighter-rouge">date</code>：日付型．年，月，日．</li>
+      <li><code class="highlighter-rouge">time</code>：時刻型．</li>
+      <li><code class="highlighter-rouge">timestamp</code>：<code class="highlighter-rouge">date</code>および<code class="highlighter-rouge">time</code>．</li>
+    </ul>
+  </li>
+  <li>基本構文：<strong>select</strong> <em>columns</em> <strong>from</strong> <em>tables</em> <strong>where</strong> <em>condition</em>;</li>
+  <li>出力数に制限を設けるとき：<strong>limit</strong> <em>count</em> [<strong>offset</strong> <em>skip</em>]</li>
+  <li>並び替えるとき：<strong>order by</strong> <em>columns</em> [<strong>desc</strong>]</li>
+  <li>結果をまとめるとき：<strong>group by</strong> <em>columns</em>
+    <ul>
+      <li>例えば，同じ名前の動物の数を数えるとき：<code class="highlighter-rouge">select name, count(*) as num from animals group by name;</code></li>
+    </ul>
+  </li>
+  <li>Pythonでも同様のことはできる．違いはスピードとメモリ．Databaseは格段に高速に，かつメモリ消費を抑えて実行できる．</li>
+  <li>新たに要素を追加するとき：<strong>insert into</strong> <em>table</em> <strong>values (</strong> <em>val1, val2, …</em> <strong>)</strong>;</li>
+  <li>ただし，特定の列を指定して追加するときは：<strong>insert into</strong> <em>table</em>(<em>column1, column2, …</em>) <strong>values (</strong> <em>val1, val2, …</em> <strong>)</strong>;</li>
+  <li>Databaseを結合するとき：<em>T</em> <strong>join</strong> <em>S</em> <strong>on</strong> <em>T.color = S.paint</em>
+    <ul>
+      <li>例えば，<code class="highlighter-rouge">fish</code>を食べる動物の名前を抽出したとき：<code class="highlighter-rouge">select name from animals join diet on animals.species=diet.species where food='fish';</code></li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">where</code>は<code class="highlighter-rouge">group by</code>の前に適用されるが，<code class="highlighter-rouge">having</code>は<code class="highlighter-rouge">group by</code>の後に適用される．</li>
+  <li>Lesson 3に向けて，Virtual machineでDatabaseサーバを構築する．</li>
+</ul>
 
 <h1 id="3-python-db-api">3. Python DB-API</h1>
 
@@ -140,13 +186,13 @@
     
       <li><a class="post-link" href="/2017/08/10/udacity-rdb">作成中）Udacity, Introduction to relational databases受講メモ</a></li>
     
+      <li><a class="post-link" href="/2017/08/10/mysql">作成中）一週間で身につくMySQL受講メモ</a></li>
+    
       <li><a class="post-link" href="/2017/08/08/introduction-to-ad-tech">作成中）アドテク入門</a></li>
     
       <li><a class="post-link" href="/2017/08/07/zillow-conpetition">Kaggle，Zillow Prize概要</a></li>
     
       <li><a class="post-link" href="/2017/08/04/support-vector-machine">作成中）Support vector machineの理論と実装</a></li>
-    
-      <li><a class="post-link" href="/2017/08/04/set-google-analytics">JekyllサイトでGoogle Analytics</a></li>
     
   </ul>
 </div>

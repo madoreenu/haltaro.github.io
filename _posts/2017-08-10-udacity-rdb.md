@@ -8,6 +8,8 @@ categories:
 
 [Udacity, Introduction to relational databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)の受講メモ．5部構成の無料講座．
 
+![bigdata]({{site.baseurl}}/images/2017-08-10-bigdata.png)
+
 # 1. Data and Tables
 
 * Databaseは，同時に複数の人が編集可能．これが，普通のファイルと異なる点．
@@ -33,7 +35,19 @@ categories:
     * `date`：日付型．年，月，日．
     * `time`：時刻型．
     * `timestamp`：`date`および`time`．
-* **select** *columns* **from** *tables* **where** *condition*; 
+* 基本構文：**select** *columns* **from** *tables* **where** *condition*; 
+* 出力数に制限を設けるとき：**limit** *count* [**offset** *skip*]
+* 並び替えるとき：**order by** *columns* [**desc**]
+* 結果をまとめるとき：**group by** *columns*
+    * 例えば，同じ名前の動物の数を数えるとき：`select name, count(*) as num from animals group by name;`
+* Pythonでも同様のことはできる．違いはスピードとメモリ．Databaseは格段に高速に，かつメモリ消費を抑えて実行できる．
+* 新たに要素を追加するとき：**insert into** *table* **values (** *val1, val2, ...* **)**;
+* ただし，特定の列を指定して追加するときは：**insert into** *table*(*column1, column2, ...*) **values (** *val1, val2, ...* **)**;
+* Databaseを結合するとき：*T* **join** *S* **on** *T.color = S.paint*
+    * 例えば，`fish`を食べる動物の名前を抽出したとき：`select name from animals join diet on animals.species=diet.species where food='fish';`
+* `where`は`group by`の前に適用されるが，`having`は`group by`の後に適用される．
+* Lesson 3に向けて，Virtual machineでDatabaseサーバを構築する．
+
 
 # 3. Python DB-API
 

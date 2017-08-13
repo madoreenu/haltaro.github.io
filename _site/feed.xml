@@ -6,13 +6,15 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 Aug 2017 20:50:45 -0400</pubDate>
-    <lastBuildDate>Thu, 10 Aug 2017 20:50:45 -0400</lastBuildDate>
+    <pubDate>Sun, 13 Aug 2017 15:17:59 -0400</pubDate>
+    <lastBuildDate>Sun, 13 Aug 2017 15:17:59 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
         <title>作成中）Udacity, Introduction to relational databases受講メモ</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Introduction to relational databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2017-08-10-bigdata.png&quot; alt=&quot;bigdata&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;1-data-and-tables&quot;&gt;1. Data and Tables&lt;/h1&gt;
 
@@ -27,6 +29,50 @@
 
 &lt;h1 id=&quot;2-elements-of-sql&quot;&gt;2. Elements of SQL&lt;/h1&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;SQLのtypeとして，&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;integer&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;などがある．&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;は，&lt;code class=&quot;highlighter-rouge&quot;&gt;'2017-08-10'&lt;/code&gt;のようにシングルクォートで囲む．主なSQLのtypeは以下．&lt;/li&gt;
+  &lt;li&gt;Text and string types
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;：長さに制限のない文字列．Pythonの&lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;に相当．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;char(n)&lt;/code&gt;：長さが&lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;の文字列．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;varchar(n)&lt;/code&gt;：長さが最大&lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;の文字列．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Numeric types
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;integer&lt;/code&gt;：整数型．Pythonの&lt;code class=&quot;highlighter-rouge&quot;&gt;int&lt;/code&gt;に相当．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;real&lt;/code&gt;：浮動小数点型．Pythonの&lt;code class=&quot;highlighter-rouge&quot;&gt;float&lt;/code&gt;に相当．精度は小数第6位．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;double precision&lt;/code&gt;：倍精度小数点．精度は小数第15位．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;decimal&lt;/code&gt;：正確な小数型（？）．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Date and time types
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;：日付型．年，月，日．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt;：時刻型．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;timestamp&lt;/code&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt;．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;基本構文：&lt;strong&gt;select&lt;/strong&gt; &lt;em&gt;columns&lt;/em&gt; &lt;strong&gt;from&lt;/strong&gt; &lt;em&gt;tables&lt;/em&gt; &lt;strong&gt;where&lt;/strong&gt; &lt;em&gt;condition&lt;/em&gt;;&lt;/li&gt;
+  &lt;li&gt;出力数に制限を設けるとき：&lt;strong&gt;limit&lt;/strong&gt; &lt;em&gt;count&lt;/em&gt; [&lt;strong&gt;offset&lt;/strong&gt; &lt;em&gt;skip&lt;/em&gt;]&lt;/li&gt;
+  &lt;li&gt;並び替えるとき：&lt;strong&gt;order by&lt;/strong&gt; &lt;em&gt;columns&lt;/em&gt; [&lt;strong&gt;desc&lt;/strong&gt;]&lt;/li&gt;
+  &lt;li&gt;結果をまとめるとき：&lt;strong&gt;group by&lt;/strong&gt; &lt;em&gt;columns&lt;/em&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例えば，同じ名前の動物の数を数えるとき：&lt;code class=&quot;highlighter-rouge&quot;&gt;select name, count(*) as num from animals group by name;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Pythonでも同様のことはできる．違いはスピードとメモリ．Databaseは格段に高速に，かつメモリ消費を抑えて実行できる．&lt;/li&gt;
+  &lt;li&gt;新たに要素を追加するとき：&lt;strong&gt;insert into&lt;/strong&gt; &lt;em&gt;table&lt;/em&gt; &lt;strong&gt;values (&lt;/strong&gt; &lt;em&gt;val1, val2, …&lt;/em&gt; &lt;strong&gt;)&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;ただし，特定の列を指定して追加するときは：&lt;strong&gt;insert into&lt;/strong&gt; &lt;em&gt;table&lt;/em&gt;(&lt;em&gt;column1, column2, …&lt;/em&gt;) &lt;strong&gt;values (&lt;/strong&gt; &lt;em&gt;val1, val2, …&lt;/em&gt; &lt;strong&gt;)&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;Databaseを結合するとき：&lt;em&gt;T&lt;/em&gt; &lt;strong&gt;join&lt;/strong&gt; &lt;em&gt;S&lt;/em&gt; &lt;strong&gt;on&lt;/strong&gt; &lt;em&gt;T.color = S.paint&lt;/em&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例えば，&lt;code class=&quot;highlighter-rouge&quot;&gt;fish&lt;/code&gt;を食べる動物の名前を抽出したとき：&lt;code class=&quot;highlighter-rouge&quot;&gt;select name from animals join diet on animals.species=diet.species where food='fish';&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;where&lt;/code&gt;は&lt;code class=&quot;highlighter-rouge&quot;&gt;group by&lt;/code&gt;の前に適用されるが，&lt;code class=&quot;highlighter-rouge&quot;&gt;having&lt;/code&gt;は&lt;code class=&quot;highlighter-rouge&quot;&gt;group by&lt;/code&gt;の後に適用される．&lt;/li&gt;
+  &lt;li&gt;Lesson 3に向けて，Virtual machineでDatabaseサーバを構築する．&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;3-python-db-api&quot;&gt;3. Python DB-API&lt;/h1&gt;
 
 &lt;h1 id=&quot;4-deeper-into-sql&quot;&gt;4. Deeper into SQL&lt;/h1&gt;
@@ -37,6 +83,27 @@
         <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/2017/08/10/udacity-rdb</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/10/udacity-rdb</guid>
+        
+        
+        <category>data science</category>
+        
+      </item>
+    
+      <item>
+        <title>作成中）一週間で身につくMySQL受講メモ</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://web.sevendays-study.com/mysql/index.html&quot;&gt;一週間で身につくMySQL&lt;/a&gt;受講メモ．&lt;/p&gt;
+
+&lt;h1 id=&quot;環境構築&quot;&gt;環境構築&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://web.sevendays-study.com/mysql/index.html&quot;&gt;一週間で身につくMySQL&lt;/a&gt;では&lt;a href=&quot;https://eclipse.org/&quot;&gt;eclipse&lt;/a&gt;を想定しているようだが，あまりいい思い出がないので使いたくない．下記を参考に，CUIでMySQLを使ってみる．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://umatomakun.hatenablog.com/entry/2014/04/25/223240&quot;&gt;UbuntuにMySQLをインストール&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2017/08/10/mysql</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/10/mysql</guid>
         
         
         <category>data science</category>
@@ -112,7 +179,7 @@
         <guid isPermaLink="true">http://localhost:4000/2017/08/08/introduction-to-ad-tech</guid>
         
         
-        <category>machine learning</category>
+        <category>x-tech</category>
         
       </item>
     
@@ -225,7 +292,7 @@ logerror = log(z) - log(s) \tag{1}
         <guid isPermaLink="true">http://localhost:4000/2017/08/07/zillow-conpetition</guid>
         
         
-        <category>machine learning</category>
+        <category>x-tech</category>
         
       </item>
     

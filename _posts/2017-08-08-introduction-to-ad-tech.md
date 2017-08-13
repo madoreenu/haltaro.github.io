@@ -3,7 +3,7 @@ layout: post
 title: 作成中）アドテク入門
 updated: 2017-08-07 18:00 
 categories:
- - machine learning
+ - x-tech
 ---
 
 今更ながら，アドテクについて調べてみた．アドテクとは，Advertising Technologyの略で，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）を幸せにすること．Real time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．

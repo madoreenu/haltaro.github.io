@@ -3,7 +3,7 @@ layout: post
 title: Kaggle，Zillow Prize概要
 updated: 2017-08-07 18:00 
 categories:
- - machine learning
+ - x-tech
 ---
 
 [KaggleのZillow Prize](https://www.kaggle.com/c/zillow-prize-1)は，[Zillow](https://www.zillow.com/)が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．
