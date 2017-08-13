@@ -61,8 +61,8 @@ categories:
 # 参考
 
 * [CyberAgent，日本一やさしいアドテク教室](https://www.cyberagent.co.jp/ir/personal/adtech/)：用語まとめもある．
-* [SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します]：Ad Networkについて．
-* [SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します]：Ad Exchangeについて．
+* [SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します](https://satori.marketing/marketing-blog/ad-technology/ad-network/)：Ad Networkについて．
+* [SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します](https://satori.marketing/marketing-blog/ad-technology/ad-exchange/)：Ad Exchangeについて．
 * [Qiita，広告と機械学習](http://qiita.com/fukkyy/items/b2d37b4797516d72225a)：2013年の記事だが，わかりやすい．
 * [舘野啓，アドテクにおける機械学習技術](https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn)：数式がわかりやすい．
 * [TechCrunch，Advertising Tech](https://techcrunch.com/advertising-tech/)：アドテク関連の最新ニュース．
