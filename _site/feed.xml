@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Aug 2017 16:31:49 -0400</pubDate>
-    <lastBuildDate>Sun, 13 Aug 2017 16:31:49 -0400</lastBuildDate>
+    <pubDate>Sun, 13 Aug 2017 23:11:08 -0400</pubDate>
+    <lastBuildDate>Sun, 13 Aug 2017 23:11:08 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -17,6 +17,43 @@
 &lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/DEQNknALf_8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h1 id=&quot;1-big-data&quot;&gt;1. Big Data&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Big Dataとは，一つのマシンでは処理しきれないほど大量のデータである．&lt;/li&gt;
+  &lt;li&gt;Big Dataにおける課題は主に以下の２つ：
+    &lt;ul&gt;
+      &lt;li&gt;データが高速に生成されること．&lt;/li&gt;
+      &lt;li&gt;データが異なるソースから多様なフォーマットで生成されること．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;データの性質を表現する三つのV：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Volume&lt;/strong&gt;（量）：データを保存するだけではなく，処理することも考える必要がある．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Variety&lt;/strong&gt;（多様性）：非構造データや半構造データが増加しており，従来のデータベースへは保管が難しい．もし非構造データをそのまま保存できれば，後で活用できるかもしれない．&lt;code class=&quot;highlighter-rouge&quot;&gt;Hadoop&lt;/code&gt;では，データフォーマットによらず，そのまま保存できる．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Velocity&lt;/strong&gt;（速度）：処理速度が速ければ速いほど，より多くのビジネスチャンスが生まれる．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hadoopの由来は，製作者の子供のおもちゃ．&lt;/li&gt;
+  &lt;li&gt;Hadoopの技術的コアは２つ：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;HDFS&lt;/strong&gt;（Hadoop distributed file system）による分散ファイル保存．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;MapReduce&lt;/strong&gt;によるデータ処理．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hadoopでは，データの保存及び処理が，クラスタ毎に行われる．&lt;/li&gt;
+  &lt;li&gt;Hadoop ecosystem：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Pig&lt;/strong&gt;，&lt;strong&gt;Hive&lt;/strong&gt;：MapReduceのハイレベルインターフェース．SQLチックに使える．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Impala&lt;/strong&gt;：HDFSへの低レベルインターフェース．PigやHiveより高速．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Sqoop&lt;/strong&gt;，&lt;strong&gt;Flume&lt;/strong&gt;：他のデータベース上のデータを，クラスタとして保存できる．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;HBase&lt;/strong&gt;：HDFS上のリアルタイムデータベース．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Hue&lt;/strong&gt;：GUI．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Oozie&lt;/strong&gt;：ワークフロー管理ツール．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Mahout&lt;/strong&gt;：機械学習ライブラリ．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Cloudera&lt;/strong&gt;：環境構築ツール．上記のソフトウェアをまとめてインストールできる．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;2-problem-set&quot;&gt;2. Problem Set&lt;/h1&gt;
 
@@ -210,8 +247,8 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.cyberagent.co.jp/ir/personal/adtech/&quot;&gt;CyberAgent，日本一やさしいアドテク教室&lt;/a&gt;：用語まとめもある．&lt;/li&gt;
-  &lt;li&gt;[SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します]：Ad Networkについて．&lt;/li&gt;
-  &lt;li&gt;[SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します]：Ad Exchangeについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-network/&quot;&gt;SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：Ad Networkについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-exchange/&quot;&gt;SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：Ad Exchangeについて．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://qiita.com/fukkyy/items/b2d37b4797516d72225a&quot;&gt;Qiita，広告と機械学習&lt;/a&gt;：2013年の記事だが，わかりやすい．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot;&gt;舘野啓，アドテクにおける機械学習技術&lt;/a&gt;：数式がわかりやすい．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://techcrunch.com/advertising-tech/&quot;&gt;TechCrunch，Advertising Tech&lt;/a&gt;：アドテク関連の最新ニュース．&lt;/li&gt;

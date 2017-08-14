@@ -87,6 +87,43 @@
 
 <h1 id="1-big-data">1. Big Data</h1>
 
+<ul>
+  <li>Big Dataとは，一つのマシンでは処理しきれないほど大量のデータである．</li>
+  <li>Big Dataにおける課題は主に以下の２つ：
+    <ul>
+      <li>データが高速に生成されること．</li>
+      <li>データが異なるソースから多様なフォーマットで生成されること．</li>
+    </ul>
+  </li>
+  <li>データの性質を表現する三つのV：
+    <ul>
+      <li><strong>Volume</strong>（量）：データを保存するだけではなく，処理することも考える必要がある．</li>
+      <li><strong>Variety</strong>（多様性）：非構造データや半構造データが増加しており，従来のデータベースへは保管が難しい．もし非構造データをそのまま保存できれば，後で活用できるかもしれない．<code class="highlighter-rouge">Hadoop</code>では，データフォーマットによらず，そのまま保存できる．</li>
+      <li><strong>Velocity</strong>（速度）：処理速度が速ければ速いほど，より多くのビジネスチャンスが生まれる．</li>
+    </ul>
+  </li>
+  <li>Hadoopの由来は，製作者の子供のおもちゃ．</li>
+  <li>Hadoopの技術的コアは２つ：
+    <ul>
+      <li><strong>HDFS</strong>（Hadoop distributed file system）による分散ファイル保存．</li>
+      <li><strong>MapReduce</strong>によるデータ処理．</li>
+    </ul>
+  </li>
+  <li>Hadoopでは，データの保存及び処理が，クラスタ毎に行われる．</li>
+  <li>Hadoop ecosystem：
+    <ul>
+      <li><strong>Pig</strong>，<strong>Hive</strong>：MapReduceのハイレベルインターフェース．SQLチックに使える．</li>
+      <li><strong>Impala</strong>：HDFSへの低レベルインターフェース．PigやHiveより高速．</li>
+      <li><strong>Sqoop</strong>，<strong>Flume</strong>：他のデータベース上のデータを，クラスタとして保存できる．</li>
+      <li><strong>HBase</strong>：HDFS上のリアルタイムデータベース．</li>
+      <li><strong>Hue</strong>：GUI．</li>
+      <li><strong>Oozie</strong>：ワークフロー管理ツール．</li>
+      <li><strong>Mahout</strong>：機械学習ライブラリ．</li>
+      <li><strong>Cloudera</strong>：環境構築ツール．上記のソフトウェアをまとめてインストールできる．</li>
+    </ul>
+  </li>
+</ul>
+
 <h1 id="2-problem-set">2. Problem Set</h1>
 
 <h1 id="3-hdfs-and-mapreduce">3. HDFS and MapReduce</h1>
