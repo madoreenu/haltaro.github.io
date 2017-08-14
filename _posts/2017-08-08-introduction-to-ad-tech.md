@@ -27,11 +27,11 @@ categories:
 
 * [**Ad Network**](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF)：Webやアプリメディアなどの広告配信可能な媒体を多数束ねて広告を配信するネットワーク．
 * [**Ad Exchange**](https://satori.marketing/marketing-blog/ad-technology/ad-exchange/)：広告枠を１インプレッション単位で売買するプラットフォーム．各媒体やAd Networkが持つ広告掲載枠を交換できる仕組み．**Ad Networkより大きな仕組み**．Ad Exchangeでは，広告出稿数と広告枠のバランスで，リアルタイムで広告枠の入札単価が変動する．Ad Exchangeには，様々なプラットフォームがある．
-    * Double Click AdExchange：Googleが運営．世界最大のAd Exchange．2009年からサービス開始．
-    * Open X Market Japan：Open X Japanとcciが提携して運営．2009年からサービス開始．
-    * Microsoft Advertixing Exchange：Microsoftが運営．2013年からサービス開始．配信枠はMSNとSkype．
-    * Facebook AdExchange：Facebookが運営．
-    * Yild One：プラットフォーム・ワンが運営するSSPプラットフォーム．厳密にはAd Exchangeと異なるが，Ad Exchange的に利用することも可能．
+    * **Double Click AdExchange**：Googleが運営．世界最大のAd Exchange．2009年からサービス開始．
+    * **Open X Market Japan**：Open X Japanとcciが提携して運営．2009年からサービス開始．
+    * **Microsoft Advertixing Exchange**：Microsoftが運営．2013年からサービス開始．配信枠はMSNとSkype．
+    * **Facebook AdExchange**：Facebookが運営．
+    * **Yild One**：プラットフォーム・ワンが運営するSSPプラットフォーム．厳密にはAd Exchangeと異なるが，Ad Exchange的に利用することも可能．
 * [**SSP**](https://smmlab.jp/?p=30268)：Supply Side Platformの略．オンライン広告において，広告枠を提供しているメディアの広告枠販売や広告収益最大化などを支援するツール．具体的な提供内容はサービスによって異なるが，主に，Ad NetworkやAd Exchangeの管理，リアルタイム入札（RTB）への対応などがある．
 
 ## 2.b 広告主の広告表現最適化
@@ -41,7 +41,7 @@ categories:
 * **DSP**：DSPを使うことで，複数のアドネットワーク，アドエクスチェンジ，SSPを管理可能になる．
 * **RTB**：
 * **Retargeting**：
-* Dynamic retargeting：
+* **Dynamic retargeting**：
 
 ## 2.c ターゲット分析
 
