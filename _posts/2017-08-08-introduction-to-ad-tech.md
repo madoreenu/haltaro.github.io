@@ -6,7 +6,7 @@ categories:
  - x-tech
 ---
 
-今更ながら，アドテクについて調べてみた．アドテクとは，Advertising Technologyの略で，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）を幸せにすること．Real time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．
+今更ながら，アドテクについて調べてみた．アドテクとは，Advertising Technologyの略で，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）をwin-winの関係にすること．Real time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．
 
 ![ad]({{site.baseurl}}/images/2017-08-07-ad.jpg)
 
@@ -25,36 +25,38 @@ categories:
 
 広告効果が大きい広告をいかに選択するか，という技術．
 
-* [Ad Network](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF)：Webやアプリメディアなどの広告配信可能な媒体を多数束ねて広告を配信するネットワーク．
-* [Ad Exchange](https://satori.marketing/marketing-blog/ad-technology/ad-exchange/)：広告枠を１インプレッション単位で売買するプラットフォーム．各媒体やAd Networkが持つ広告掲載枠を交換できる仕組み．**Ad Networkより大きな仕組み**．Ad Exchangeでは，広告出稿数と広告枠のバランスで，リアルタイムで広告枠の入札単価が変動する．Ad Exchangeには，様々なプラットフォームがある．
+* [**Ad Network**](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF)：Webやアプリメディアなどの広告配信可能な媒体を多数束ねて広告を配信するネットワーク．
+* [**Ad Exchange**](https://satori.marketing/marketing-blog/ad-technology/ad-exchange/)：広告枠を１インプレッション単位で売買するプラットフォーム．各媒体やAd Networkが持つ広告掲載枠を交換できる仕組み．**Ad Networkより大きな仕組み**．Ad Exchangeでは，広告出稿数と広告枠のバランスで，リアルタイムで広告枠の入札単価が変動する．Ad Exchangeには，様々なプラットフォームがある．
     * Double Click AdExchange：Googleが運営．世界最大のAd Exchange．2009年からサービス開始．
     * Open X Market Japan：Open X Japanとcciが提携して運営．2009年からサービス開始．
     * Microsoft Advertixing Exchange：Microsoftが運営．2013年からサービス開始．配信枠はMSNとSkype．
     * Facebook AdExchange：Facebookが運営．
     * Yild One：プラットフォーム・ワンが運営するSSPプラットフォーム．厳密にはAd Exchangeと異なるが，Ad Exchange的に利用することも可能．
-* [SSP](https://smmlab.jp/?p=30268)：Supply Side Platformの略．オンライン広告において，広告枠を提供しているメディアの広告枠販売や広告収益最大化などを支援するツール．具体的な提供内容はサービスによって異なるが，主に，Ad NetworkやAd Exchangeの管理，リアルタイム入札（RTB）への対応などがある．
+* [**SSP**](https://smmlab.jp/?p=30268)：Supply Side Platformの略．オンライン広告において，広告枠を提供しているメディアの広告枠販売や広告収益最大化などを支援するツール．具体的な提供内容はサービスによって異なるが，主に，Ad NetworkやAd Exchangeの管理，リアルタイム入札（RTB）への対応などがある．
 
 ## 2.b 広告主の広告表現最適化
 
 消費者一人ひとりにあった広告表現をいかに実現するか，という技術．
 
-* DSP：DSPを使うことで，複数のアドネットワーク，アドエクスチェンジ，SSPを管理可能になる．
-* RTB：
-* Retargeting：
+* **DSP**：DSPを使うことで，複数のアドネットワーク，アドエクスチェンジ，SSPを管理可能になる．
+* **RTB**：
+* **Retargeting**：
 * Dynamic retargeting：
 
 ## 2.c ターゲット分析
 
 広告に対するユーザの行動等のデータを，いかにマーケティングに活かすか，という技術．
 
-* 広告効果計測ツール：
-* Tracking：
-* DMP：
-* SDK：
+* **広告効果計測ツール**：
+* **Tracking**：
+* **DMP**：
+* **SDK**：
 
 # 3. 具体例
 
 ## 3.a RTBの入札価格決定
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/K2EnIQpqVgHKCh" width="100%" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ttpooh/tokyo-data-night-tokyodn" title="アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn" target="_blank">アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn</a> </strong> from <strong><a href="https://www.slideshare.net/ttpooh" target="_blank">Kei Tateno</a></strong> </div>
 
 ## 3.b 
 
