@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Aug 2017 23:06:15 -0400</pubDate>
-    <lastBuildDate>Mon, 14 Aug 2017 23:06:15 -0400</lastBuildDate>
+    <pubDate>Tue, 15 Aug 2017 08:12:38 -0400</pubDate>
+    <lastBuildDate>Tue, 15 Aug 2017 08:12:38 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -61,6 +61,36 @@
   &lt;li&gt;HDFSでは，データを64Mbyteの&lt;strong&gt;ブロック&lt;/strong&gt;に分割し，それぞれ別のマシンに保存する．&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;ネームノード&lt;/strong&gt;は，どのブロックがどのマシンに保存されているかという&lt;strong&gt;メタデータ&lt;/strong&gt;を管理する．&lt;/li&gt;
   &lt;li&gt;冗長性のため，Hadoopはブロックを三回複製する．またネームノードの複製も用意する．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -ls&lt;/code&gt;などで，HDFSにアクセスできる．&lt;code class=&quot;highlighter-rouge&quot;&gt;-ls&lt;/code&gt;の部分は，UNIXのファイルシステムコマンドを利用可能．&lt;/li&gt;
+  &lt;li&gt;ハッシュテーブルは，Big Data適用時に，処理時間とメモリ消費という課題があった．&lt;/li&gt;
+  &lt;li&gt;MapReduceのまとめ：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Map&lt;/strong&gt;：小さく分割されたデータを，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key, value&amp;gt;&lt;/code&gt;形式で保存し，同一&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;でまとめる．Mapperの出力を中間レコード（Intermediate records）と呼ぶ．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Shuffle and sort&lt;/strong&gt;：中間レコードをReduceに渡し，&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;でソートする．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Reduce&lt;/strong&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;毎に処理し，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key, values&amp;gt;&lt;/code&gt;リストを作成する．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;最終結果をソートするためには，単独のReducerを使うか，別途処理を行うか．&lt;/li&gt;
+  &lt;li&gt;各Reducerが受け取る&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;の数は，事前にはわからない．等分されるとは限らない．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Job tracker&lt;/strong&gt;が，MapperとReducerにジョブを割り当てる．&lt;/li&gt;
+  &lt;li&gt;各デーモンは，&lt;strong&gt;Task tracker&lt;/strong&gt;を持つ．&lt;/li&gt;
+  &lt;li&gt;HadoopではJavaが使われるが，Pythonを使うこともできる．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hs {mapper script} {reducer script} {input_file} {output directory}&lt;/code&gt;で実行できる．ただし，&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;directory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;が既に存在する場合，エラーが返されるので注意．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -put&lt;/code&gt;でデータをHDFSに保存し，&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -get&lt;/code&gt;で取り出す．&lt;/li&gt;
+  &lt;li&gt;仮想マシンで実際にHadoopを動かす．以下，参考：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/pub&quot;&gt;インストールと初期設定&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub&quot;&gt;ファイル共有&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/l0I_2nyPNZM?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/d5TZ_2I7dwE?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;技術的な詳細は，&lt;a href=&quot;http://go.cloudera.com/udacity-lesson-2&quot;&gt;Chapter 6 of Tom White’s essential text, Hadoop: The Definitive Guide&lt;/a&gt;を参照．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;3-mapreduce-code&quot;&gt;3. MapReduce Code&lt;/h1&gt;

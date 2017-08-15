@@ -41,6 +41,28 @@ categories:
 * HDFSでは，データを64Mbyteの**ブロック**に分割し，それぞれ別のマシンに保存する．
 * **ネームノード**は，どのブロックがどのマシンに保存されているかという**メタデータ**を管理する．
 * 冗長性のため，Hadoopはブロックを三回複製する．またネームノードの複製も用意する．
+* `hadoop fs -ls`などで，HDFSにアクセスできる．`-ls`の部分は，UNIXのファイルシステムコマンドを利用可能．
+* ハッシュテーブルは，Big Data適用時に，処理時間とメモリ消費という課題があった．
+* MapReduceのまとめ：
+    * **Map**：小さく分割されたデータを，`<key, value>`形式で保存し，同一`key`でまとめる．Mapperの出力を中間レコード（Intermediate records）と呼ぶ．
+    * **Shuffle and sort**：中間レコードをReduceに渡し，`key`でソートする．
+    * **Reduce**：`key`毎に処理し，`<key, values>`リストを作成する．
+* 最終結果をソートするためには，単独のReducerを使うか，別途処理を行うか．
+* 各Reducerが受け取る`key`の数は，事前にはわからない．等分されるとは限らない．
+* **Job tracker**が，MapperとReducerにジョブを割り当てる．
+* 各デーモンは，**Task tracker**を持つ．
+* HadoopではJavaが使われるが，Pythonを使うこともできる．
+* `hs {mapper script} {reducer script} {input_file} {output directory}`で実行できる．ただし，`{output directory}`が既に存在する場合，エラーが返されるので注意．
+* `hadoop fs -put`でデータをHDFSに保存し，`hadoop fs -get`で取り出す．
+* 仮想マシンで実際にHadoopを動かす．以下，参考：
+    * [インストールと初期設定](https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/pub)
+    * [ファイル共有](https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub)
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/l0I_2nyPNZM?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/d5TZ_2I7dwE?rel=0" frameborder="0" allowfullscreen></iframe>
+
+* 技術的な詳細は，[Chapter 6 of Tom White’s essential text, Hadoop: The Definitive Guide](http://go.cloudera.com/udacity-lesson-2)を参照．
 
 # 3. MapReduce Code
 

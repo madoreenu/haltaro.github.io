@@ -130,6 +130,36 @@
   <li>HDFSでは，データを64Mbyteの<strong>ブロック</strong>に分割し，それぞれ別のマシンに保存する．</li>
   <li><strong>ネームノード</strong>は，どのブロックがどのマシンに保存されているかという<strong>メタデータ</strong>を管理する．</li>
   <li>冗長性のため，Hadoopはブロックを三回複製する．またネームノードの複製も用意する．</li>
+  <li><code class="highlighter-rouge">hadoop fs -ls</code>などで，HDFSにアクセスできる．<code class="highlighter-rouge">-ls</code>の部分は，UNIXのファイルシステムコマンドを利用可能．</li>
+  <li>ハッシュテーブルは，Big Data適用時に，処理時間とメモリ消費という課題があった．</li>
+  <li>MapReduceのまとめ：
+    <ul>
+      <li><strong>Map</strong>：小さく分割されたデータを，<code class="highlighter-rouge">&lt;key, value&gt;</code>形式で保存し，同一<code class="highlighter-rouge">key</code>でまとめる．Mapperの出力を中間レコード（Intermediate records）と呼ぶ．</li>
+      <li><strong>Shuffle and sort</strong>：中間レコードをReduceに渡し，<code class="highlighter-rouge">key</code>でソートする．</li>
+      <li><strong>Reduce</strong>：<code class="highlighter-rouge">key</code>毎に処理し，<code class="highlighter-rouge">&lt;key, values&gt;</code>リストを作成する．</li>
+    </ul>
+  </li>
+  <li>最終結果をソートするためには，単独のReducerを使うか，別途処理を行うか．</li>
+  <li>各Reducerが受け取る<code class="highlighter-rouge">key</code>の数は，事前にはわからない．等分されるとは限らない．</li>
+  <li><strong>Job tracker</strong>が，MapperとReducerにジョブを割り当てる．</li>
+  <li>各デーモンは，<strong>Task tracker</strong>を持つ．</li>
+  <li>HadoopではJavaが使われるが，Pythonを使うこともできる．</li>
+  <li><code class="highlighter-rouge">hs {mapper script} {reducer script} {input_file} {output directory}</code>で実行できる．ただし，<code class="highlighter-rouge"><span class="p">{</span><span class="err">output</span><span class="w"> </span><span class="err">directory</span><span class="p">}</span></code>が既に存在する場合，エラーが返されるので注意．</li>
+  <li><code class="highlighter-rouge">hadoop fs -put</code>でデータをHDFSに保存し，<code class="highlighter-rouge">hadoop fs -get</code>で取り出す．</li>
+  <li>仮想マシンで実際にHadoopを動かす．以下，参考：
+    <ul>
+      <li><a href="https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/pub">インストールと初期設定</a></li>
+      <li><a href="https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub">ファイル共有</a></li>
+    </ul>
+  </li>
+</ul>
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/l0I_2nyPNZM?rel=0" frameborder="0" allowfullscreen=""></iframe>
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/d5TZ_2I7dwE?rel=0" frameborder="0" allowfullscreen=""></iframe>
+
+<ul>
+  <li>技術的な詳細は，<a href="http://go.cloudera.com/udacity-lesson-2">Chapter 6 of Tom White’s essential text, Hadoop: The Definitive Guide</a>を参照．</li>
 </ul>
 
 <h1 id="3-mapreduce-code">3. MapReduce Code</h1>
