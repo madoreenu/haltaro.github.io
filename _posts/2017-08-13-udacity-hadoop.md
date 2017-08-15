@@ -6,7 +6,7 @@ categories:
  - data science
 ---
 
-[Udacity, Intro to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)の受講メモ．8部構成の無料講座．
+[Udacity, Intro to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)の受講メモ．6部構成の無料講座．
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/DEQNknALf_8?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -35,16 +35,17 @@ categories:
     * **Mahout**：機械学習ライブラリ．
     * **Cloudera**：環境構築ツール．上記のソフトウェアをまとめてインストールできる．
 
-# 2. Problem Set
 
-# 3. HDFS and MapReduce
+# 2. HDFS and MapReduce
 
-# 4. Problem Set
+* HDFSでは，データを64Mbyteの**ブロック**に分割し，それぞれ別のマシンに保存する．
+* **ネームノード**は，どのブロックがどのマシンに保存されているかという**メタデータ**を管理する．
+* 冗長性のため，Hadoopはブロックを三回複製する．またネームノードの複製も用意する．
 
-# 5. MapReduce Code
+# 3. MapReduce Code
 
-# 6. Project
+# 4. Project
 
-# 7. MapReduce Design Patterns
+# 5. MapReduce Design Patterns
 
-# 8. Project Prep
+# 6. Project Prep

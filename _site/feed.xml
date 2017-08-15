@@ -6,13 +6,13 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Aug 2017 23:11:08 -0400</pubDate>
-    <lastBuildDate>Sun, 13 Aug 2017 23:11:08 -0400</lastBuildDate>
+    <pubDate>Mon, 14 Aug 2017 23:06:15 -0400</pubDate>
+    <lastBuildDate>Mon, 14 Aug 2017 23:06:15 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
         <title>作成中）Udacity, Intro to Hadoop and MapReduce受講メモ</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．8部構成の無料講座．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．6部構成の無料講座．&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/DEQNknALf_8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -55,19 +55,21 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;2-problem-set&quot;&gt;2. Problem Set&lt;/h1&gt;
+&lt;h1 id=&quot;2-hdfs-and-mapreduce&quot;&gt;2. HDFS and MapReduce&lt;/h1&gt;
 
-&lt;h1 id=&quot;3-hdfs-and-mapreduce&quot;&gt;3. HDFS and MapReduce&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;HDFSでは，データを64Mbyteの&lt;strong&gt;ブロック&lt;/strong&gt;に分割し，それぞれ別のマシンに保存する．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ネームノード&lt;/strong&gt;は，どのブロックがどのマシンに保存されているかという&lt;strong&gt;メタデータ&lt;/strong&gt;を管理する．&lt;/li&gt;
+  &lt;li&gt;冗長性のため，Hadoopはブロックを三回複製する．またネームノードの複製も用意する．&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;4-problem-set&quot;&gt;4. Problem Set&lt;/h1&gt;
+&lt;h1 id=&quot;3-mapreduce-code&quot;&gt;3. MapReduce Code&lt;/h1&gt;
 
-&lt;h1 id=&quot;5-mapreduce-code&quot;&gt;5. MapReduce Code&lt;/h1&gt;
+&lt;h1 id=&quot;4-project&quot;&gt;4. Project&lt;/h1&gt;
 
-&lt;h1 id=&quot;6-project&quot;&gt;6. Project&lt;/h1&gt;
+&lt;h1 id=&quot;5-mapreduce-design-patterns&quot;&gt;5. MapReduce Design Patterns&lt;/h1&gt;
 
-&lt;h1 id=&quot;7-mapreduce-design-patterns&quot;&gt;7. MapReduce Design Patterns&lt;/h1&gt;
-
-&lt;h1 id=&quot;8-project-prep&quot;&gt;8. Project Prep&lt;/h1&gt;
+&lt;h1 id=&quot;6-project-prep&quot;&gt;6. Project Prep&lt;/h1&gt;
 </description>
         <pubDate>Sun, 13 Aug 2017 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/2017/08/13/udacity-hadoop</link>
@@ -180,7 +182,7 @@
     
       <item>
         <title>作成中）アドテク入門</title>
-        <description>&lt;p&gt;今更ながら，アドテクについて調べてみた．アドテクとは，Advertising Technologyの略で，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）を幸せにすること．Real time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．&lt;/p&gt;
+        <description>&lt;p&gt;今更ながら，アドテクについて調べてみた．アドテクとは，Advertising Technologyの略で，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）をwin-winの関係にすること．Real time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2017-08-07-ad.jpg&quot; alt=&quot;ad&quot; /&gt;&lt;/p&gt;
 
@@ -202,17 +204,17 @@
 &lt;p&gt;広告効果が大きい広告をいかに選択するか，という技術．&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF&quot;&gt;Ad Network&lt;/a&gt;：Webやアプリメディアなどの広告配信可能な媒体を多数束ねて広告を配信するネットワーク．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-exchange/&quot;&gt;Ad Exchange&lt;/a&gt;：広告枠を１インプレッション単位で売買するプラットフォーム．各媒体やAd Networkが持つ広告掲載枠を交換できる仕組み．&lt;strong&gt;Ad Networkより大きな仕組み&lt;/strong&gt;．Ad Exchangeでは，広告出稿数と広告枠のバランスで，リアルタイムで広告枠の入札単価が変動する．Ad Exchangeには，様々なプラットフォームがある．
+  &lt;li&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF&quot;&gt;&lt;strong&gt;Ad Network&lt;/strong&gt;&lt;/a&gt;：Webやアプリメディアなどの広告配信可能な媒体を多数束ねて広告を配信するネットワーク．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-exchange/&quot;&gt;&lt;strong&gt;Ad Exchange&lt;/strong&gt;&lt;/a&gt;：広告枠を１インプレッション単位で売買するプラットフォーム．各媒体やAd Networkが持つ広告掲載枠を交換できる仕組み．&lt;strong&gt;Ad Networkより大きな仕組み&lt;/strong&gt;．Ad Exchangeでは，広告出稿数と広告枠のバランスで，リアルタイムで広告枠の入札単価が変動する．Ad Exchangeには，様々なプラットフォームがある．
     &lt;ul&gt;
-      &lt;li&gt;Double Click AdExchange：Googleが運営．世界最大のAd Exchange．2009年からサービス開始．&lt;/li&gt;
-      &lt;li&gt;Open X Market Japan：Open X Japanとcciが提携して運営．2009年からサービス開始．&lt;/li&gt;
-      &lt;li&gt;Microsoft Advertixing Exchange：Microsoftが運営．2013年からサービス開始．配信枠はMSNとSkype．&lt;/li&gt;
-      &lt;li&gt;Facebook AdExchange：Facebookが運営．&lt;/li&gt;
-      &lt;li&gt;Yild One：プラットフォーム・ワンが運営するSSPプラットフォーム．厳密にはAd Exchangeと異なるが，Ad Exchange的に利用することも可能．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Double Click AdExchange&lt;/strong&gt;：Googleが運営．世界最大のAd Exchange．2009年からサービス開始．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Open X Market Japan&lt;/strong&gt;：Open X Japanとcciが提携して運営．2009年からサービス開始．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Microsoft Advertixing Exchange&lt;/strong&gt;：Microsoftが運営．2013年からサービス開始．配信枠はMSNとSkype．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Facebook AdExchange&lt;/strong&gt;：Facebookが運営．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Yild One&lt;/strong&gt;：プラットフォーム・ワンが運営するSSPプラットフォーム．厳密にはAd Exchangeと異なるが，Ad Exchange的に利用することも可能．&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://smmlab.jp/?p=30268&quot;&gt;SSP&lt;/a&gt;：Supply Side Platformの略．オンライン広告において，広告枠を提供しているメディアの広告枠販売や広告収益最大化などを支援するツール．具体的な提供内容はサービスによって異なるが，主に，Ad NetworkやAd Exchangeの管理，リアルタイム入札（RTB）への対応などがある．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://smmlab.jp/?p=30268&quot;&gt;&lt;strong&gt;SSP&lt;/strong&gt;&lt;/a&gt;：Supply Side Platformの略．オンライン広告において，広告枠を提供しているメディアの広告枠販売や広告収益最大化などを支援するツール．具体的な提供内容はサービスによって異なるが，主に，Ad NetworkやAd Exchangeの管理，リアルタイム入札（RTB）への対応などがある．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;2b-広告主の広告表現最適化&quot;&gt;2.b 広告主の広告表現最適化&lt;/h2&gt;
@@ -220,10 +222,10 @@
 &lt;p&gt;消費者一人ひとりにあった広告表現をいかに実現するか，という技術．&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;DSP：DSPを使うことで，複数のアドネットワーク，アドエクスチェンジ，SSPを管理可能になる．&lt;/li&gt;
-  &lt;li&gt;RTB：&lt;/li&gt;
-  &lt;li&gt;Retargeting：&lt;/li&gt;
-  &lt;li&gt;Dynamic retargeting：&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;DSP&lt;/strong&gt;：DSPを使うことで，複数のアドネットワーク，アドエクスチェンジ，SSPを管理可能になる．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;RTB&lt;/strong&gt;：&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Retargeting&lt;/strong&gt;：&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dynamic retargeting&lt;/strong&gt;：&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;2c-ターゲット分析&quot;&gt;2.c ターゲット分析&lt;/h2&gt;
@@ -231,15 +233,18 @@
 &lt;p&gt;広告に対するユーザの行動等のデータを，いかにマーケティングに活かすか，という技術．&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;広告効果計測ツール：&lt;/li&gt;
-  &lt;li&gt;Tracking：&lt;/li&gt;
-  &lt;li&gt;DMP：&lt;/li&gt;
-  &lt;li&gt;SDK：&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;広告効果計測ツール&lt;/strong&gt;：&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tracking&lt;/strong&gt;：&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;DMP&lt;/strong&gt;：&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SDK&lt;/strong&gt;：&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;3-具体例&quot;&gt;3. 具体例&lt;/h1&gt;
 
 &lt;h2 id=&quot;3a-rtbの入札価格決定&quot;&gt;3.a RTBの入札価格決定&lt;/h2&gt;
+
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/K2EnIQpqVgHKCh&quot; width=&quot;100%&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot; title=&quot;アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn&quot; target=&quot;_blank&quot;&gt;アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh&quot; target=&quot;_blank&quot;&gt;Kei Tateno&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
 
 &lt;h2 id=&quot;3b&quot;&gt;3.b&lt;/h2&gt;
 
