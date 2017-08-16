@@ -55,8 +55,8 @@ categories:
 * `hs {mapper script} {reducer script} {input_file} {output directory}`で実行できる．ただし，`{output directory}`が既に存在する場合，エラーが返されるので注意．
 * `hadoop fs -put`でデータをHDFSに保存し，`hadoop fs -get`で取り出す．
 * 仮想マシンで実際にHadoopを動かす．以下，参考：
-    * [インストールと初期設定](https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/pub)
-    * [ファイル共有](https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub)
+    * [インストールと初期設定](https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/pub)：ダブルクリックで`.zip`を解凍したらうまくいかなかった．コマンドラインで`unzip`で解凍した．
+    * [ファイル共有](https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub)：うちの環境では`192.168.0.9`だった．
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/l0I_2nyPNZM?rel=0" frameborder="0" allowfullscreen></iframe>
 

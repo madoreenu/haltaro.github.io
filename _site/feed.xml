@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Aug 2017 08:12:38 -0400</pubDate>
-    <lastBuildDate>Tue, 15 Aug 2017 08:12:38 -0400</lastBuildDate>
+    <pubDate>Tue, 15 Aug 2017 23:06:44 -0400</pubDate>
+    <lastBuildDate>Tue, 15 Aug 2017 23:06:44 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -79,8 +79,8 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -put&lt;/code&gt;でデータをHDFSに保存し，&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -get&lt;/code&gt;で取り出す．&lt;/li&gt;
   &lt;li&gt;仮想マシンで実際にHadoopを動かす．以下，参考：
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/pub&quot;&gt;インストールと初期設定&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub&quot;&gt;ファイル共有&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/pub&quot;&gt;インストールと初期設定&lt;/a&gt;：ダブルクリックで&lt;code class=&quot;highlighter-rouge&quot;&gt;.zip&lt;/code&gt;を解凍したらうまくいかなかった．コマンドラインで&lt;code class=&quot;highlighter-rouge&quot;&gt;unzip&lt;/code&gt;で解凍した．&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub&quot;&gt;ファイル共有&lt;/a&gt;：うちの環境では&lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.0.9&lt;/code&gt;だった．&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
