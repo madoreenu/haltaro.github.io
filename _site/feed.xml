@@ -6,9 +6,48 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Aug 2017 23:06:44 -0400</pubDate>
-    <lastBuildDate>Tue, 15 Aug 2017 23:06:44 -0400</lastBuildDate>
+    <pubDate>Wed, 16 Aug 2017 20:12:57 -0400</pubDate>
+    <lastBuildDate>Wed, 16 Aug 2017 20:12:57 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>作成中）時系列分析技術まとめ</title>
+        <description>&lt;p&gt;時系列分析（Time series prediction）技術をまとめる．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2017-08-16-time.jpg&quot; alt=&quot;time&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;時系列分析とは&quot;&gt;時系列分析とは&lt;/h1&gt;
+
+&lt;h1 id=&quot;1-計量時系列分析&quot;&gt;1. 計量時系列分析&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tjo.hatenablog.com/entry/2013/07/12/184704&quot;&gt;六本木で働くデータサイエンティストのブログ，Rで計量時系列分析：AR, MA, ARMA, ARIMAモデル, 予測&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-状態空間モデル&quot;&gt;2. 状態空間モデル&lt;/h1&gt;
+
+&lt;h1 id=&quot;3-neural-network-not-deep&quot;&gt;3. Neural Network (Not deep)&lt;/h1&gt;
+
+&lt;h1 id=&quot;4-deep-neural-network&quot;&gt;4. Deep Neural Network&lt;/h1&gt;
+
+&lt;h2 id=&quot;41-lstm&quot;&gt;4.1 LSTM&lt;/h2&gt;
+
+&lt;h2 id=&quot;42-qrnn&quot;&gt;4.2 QRNN&lt;/h2&gt;
+
+&lt;h1 id=&quot;参考一覧&quot;&gt;参考一覧&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tjo.hatenablog.com/entry/2013/07/12/184704&quot;&gt;六本木で働くデータサイエンティストのブログ，Rで計量時系列分析：AR, MA, ARMA, ARIMAモデル, 予測&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 16 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2017/08/16/time-series</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/16/time-series</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
     
       <item>
         <title>作成中）Udacity, Intro to Hadoop and MapReduce受講メモ</title>
@@ -183,27 +222,6 @@
         <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/2017/08/10/udacity-rdb</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/10/udacity-rdb</guid>
-        
-        
-        <category>data science</category>
-        
-      </item>
-    
-      <item>
-        <title>作成中）一週間で身につくMySQL受講メモ</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://web.sevendays-study.com/mysql/index.html&quot;&gt;一週間で身につくMySQL&lt;/a&gt;受講メモ．&lt;/p&gt;
-
-&lt;h1 id=&quot;環境構築&quot;&gt;環境構築&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://web.sevendays-study.com/mysql/index.html&quot;&gt;一週間で身につくMySQL&lt;/a&gt;では&lt;a href=&quot;https://eclipse.org/&quot;&gt;eclipse&lt;/a&gt;を想定しているようだが，あまりいい思い出がないので使いたくない．下記を参考に，CUIでMySQLを使ってみる．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://umatomakun.hatenablog.com/entry/2014/04/25/223240&quot;&gt;UbuntuにMySQLをインストール&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2017/08/10/mysql</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/10/mysql</guid>
         
         
         <category>data science</category>
