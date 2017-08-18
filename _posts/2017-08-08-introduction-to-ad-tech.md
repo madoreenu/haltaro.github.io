@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 作成中）アドテク入門
+title: アドテク入門
 updated: 2017-08-07 18:00 
 categories:
  - x-tech
@@ -50,36 +50,60 @@ categories:
     8. SSPは，勝者DSPに広告リクエストを送信．
     9. 勝者DSPは，クリエイティブ情報を送信．
     10. 媒体は広告を表示．
-* **Retargeting**：DSPが提供することもある．
-* **Dynamic retargeting**：
+* [**(Static) Retargeting**](https://webkikaku.co.jp/blog/ppc/retargeting/)：特定のWebサイトに訪問したユーザを追跡し，広告を表示する仕組み．DSPが提供することもある．
+* [**Dynamic Retargeting**](https://blog.nex8.net/full-description-of-dynamic-retargeting/)：ユーザが見た商品に合わせて，動的に広告を表示するRetargeting手法．特に，アパレルEC，旅行，人材，不動産商材に強いと言われている．
 
 ## 2.c ターゲット分析
 
 広告に対するユーザの行動等のデータを，いかにマーケティングに活かすか，という技術．
 
-* **広告効果計測ツール**：
-* **Tracking**：
+* [**広告効果計測ツール**](http://liskul.com/measure-advertising6-14994)：Web広告やSEO施策を総合的に測定，評価するツール．[Google Analytics](https://analytics.google.com/analytics/)等のアクセス解析ツールと異なり，広告効果の分析を補助する機能を備えている．
+* [**Tracking**](http://www.okuramkt.com/dic/mkt/tracking.html)：特定のユーザのサイト内での行動を追跡・分析すること．
 * [**DMP**](https://dmlab.jp/adtech/dmp.html)：Data Management Platform．インターネットに蓄積された情報を管理し，分析結果を広告配信に利用するためのプラットフォーム．現実的には，データの蓄積は進んでいるが，データの活用については敷居が高い模様．下記の二種類がある．
     * Open DMP：データ提供会社が保有している行動履歴や属性情報．
     * Private DMP：自社独自で保有している購買履歴，興味関心情報．
-* **SDK**：
+* [**SDK**](https://www.ever-rise.co.jp/adtech-blog/how-to-use-ad-sdk.html)：Software Development Toolkit．アドテクの文脈では，スマホアプリに組み込んで使う，広告配信に必要な機能をひとまとめにしたツールキットを指す．
 
-# 3. 具体例
+# 3. 略語
 
-## 3.a RTBの入札価格決定
+[広告と機械学習](http://qiita.com/fukkyy/items/b2d37b4797516d72225a)を参考にさせて頂いた．
+
+* **CPM**：Cost Per Mile．1000PVあたりの単価．
+* **CPC**：Cost Per Click．1クリックあたりの単価．
+* **CPI**：Cost Per Install．1インストールあたりの単価．
+* **LTV**：Life Time Value．1ユーザがもたらす収益．
+* **CTR**：Click Through Rate．クリック率．
+* **CVR**：ConVersion Rate．コンバージョン率．ちなみにコンバージョンとは，Webサイトにおける目標の達成を指す．
+
+# 4. アドテクと機械学習
+
+機械学習関連だと，DSPの入札戦略最適化がホットな模様．
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/K2EnIQpqVgHKCh" width="100%" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ttpooh/tokyo-data-night-tokyodn" title="アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn" target="_blank">アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn</a> </strong> from <strong><a href="https://www.slideshare.net/ttpooh" target="_blank">Kei Tateno</a></strong> </div>
 
-## 3.b 
+上記は，ユーザ（$$user$$）の行動モデル$$P\left(act \mid user, ad, context \right)$$を学習し，入札戦略を決定する．
+
+
+<script async class="speakerdeck-embed" data-id="188589d1de6e4650a857d4f3c02070eb" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+上記も同様に，CTRを予測して賢く入札しようというもの．三年前に，[Kaggle, Display Advertising Challenge](https://www.kaggle.com/c/criteo-display-ad-challenge)でCTR予測コンペティションが開催されている．
+
 
 # 参考
 
-* [CyberAgent，日本一やさしいアドテク教室](https://www.cyberagent.co.jp/ir/personal/adtech/)：用語まとめもある．
+* [CyberAgent，日本一やさしいアドテク教室](https://www.cyberagent.co.jp/ir/personal/adtech/)：アドテク入門にうってつけ．用語まとめもある．
 * [SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します](https://satori.marketing/marketing-blog/ad-technology/ad-network/)：Ad Networkについて．
 * [SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します](https://satori.marketing/marketing-blog/ad-technology/ad-exchange/)：Ad Exchangeについて．
 * [ウェブ部，【2017年6月更新】5分で完璧に理解できる！DSPの仕組みと新しい手法](https://webbu.jp/dsp_mechanism-276)：DSPについて．
 * [SATORI，RTB（Real-Time Bidding）とは？を初心者にも分かりやすく解説します](https://satori.marketing/marketing-blog/ad-technology/rtb/)：RTBについて．
+* [WEB企画LABO，初心者でもわかるリターゲティング広告の永久保存版！初期設定から活用まで全て紹介](https://webkikaku.co.jp/blog/ppc/retargeting/)：(Static) Retargetingについて．
+* [nex8ブログ，「よくぞ出してくれた！」と思わず言ってしまう広告とは！？ダイナミックリターゲティング完全解説決定版！](https://blog.nex8.net/full-description-of-dynamic-retargeting/)：Dynamic Retargetingについて．
+* [LISKUL，広告効果測定ツールの選び方とは？プロが選ぶおすすめツール8種比較](http://liskul.com/measure-advertising6-14994)：広告効果計測ツールについて．
+* [OKURA，トラッキング](http://www.okuramkt.com/dic/mkt/tracking.html)：Trackingについて．
 * [Digital Marketing Lab，DMP（データマネジメントプラットフォーム）の仕組みと特徴](https://dmlab.jp/adtech/dmp.html)：DMPについて．
+* [EVERRISEアドテクブログ，アプリの挙動と連携が可能！広告配信SDKの使い方](https://www.ever-rise.co.jp/adtech-blog/how-to-use-ad-sdk.html)：広告配信SDKについて．
 * [Qiita，広告と機械学習](http://qiita.com/fukkyy/items/b2d37b4797516d72225a)：2013年の記事だが，わかりやすい．
-* [舘野啓，アドテクにおける機械学習技術](https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn)：数式がわかりやすい．
+* [舘野啓，アドテクにおける機械学習技術](https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn)：機械学習を用いたRTB入札最適化について．
+* [Takayuki Sakai，アドテク企業の本番環境からTD使ってみた](https://speakerdeck.com/kaky0922/treasure-data-tech-talk-20160425)：機械学習を用いたCTR予測について．
+* [Kaggle, Display Advertising Challenge](https://www.kaggle.com/c/criteo-display-ad-challenge)：三年前に開催された，CTR予測コンペティション．
 * [TechCrunch，Advertising Tech](https://techcrunch.com/advertising-tech/)：アドテク関連の最新ニュース．

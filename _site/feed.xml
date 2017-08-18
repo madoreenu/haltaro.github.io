@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Aug 2017 22:59:02 -0400</pubDate>
-    <lastBuildDate>Thu, 17 Aug 2017 22:59:02 -0400</lastBuildDate>
+    <pubDate>Fri, 18 Aug 2017 19:13:21 -0400</pubDate>
+    <lastBuildDate>Fri, 18 Aug 2017 19:13:21 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -252,7 +252,7 @@
       </item>
     
       <item>
-        <title>作成中）アドテク入門</title>
+        <title>アドテク入門</title>
         <description>&lt;p&gt;アドテク（Advertising Technology）とは，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）をwin-winの関係にすること．特にReal time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2017-08-07-ad.jpg&quot; alt=&quot;ad&quot; /&gt;&lt;/p&gt;
@@ -308,8 +308,8 @@
       &lt;li&gt;媒体は広告を表示．&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Retargeting&lt;/strong&gt;：DSPが提供することもある．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Dynamic retargeting&lt;/strong&gt;：&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://webkikaku.co.jp/blog/ppc/retargeting/&quot;&gt;&lt;strong&gt;(Static) Retargeting&lt;/strong&gt;&lt;/a&gt;：特定のWebサイトに訪問したユーザを追跡し，広告を表示する仕組み．DSPが提供することもある．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.nex8.net/full-description-of-dynamic-retargeting/&quot;&gt;&lt;strong&gt;Dynamic Retargeting&lt;/strong&gt;&lt;/a&gt;：ユーザが見た商品に合わせて，動的に広告を表示するRetargeting手法．特に，アパレルEC，旅行，人材，不動産商材に強いと言われている．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;2c-ターゲット分析&quot;&gt;2.c ターゲット分析&lt;/h2&gt;
@@ -317,37 +317,61 @@
 &lt;p&gt;広告に対するユーザの行動等のデータを，いかにマーケティングに活かすか，という技術．&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;広告効果計測ツール&lt;/strong&gt;：&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Tracking&lt;/strong&gt;：&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://liskul.com/measure-advertising6-14994&quot;&gt;&lt;strong&gt;広告効果計測ツール&lt;/strong&gt;&lt;/a&gt;：Web広告やSEO施策を総合的に測定，評価するツール．&lt;a href=&quot;https://analytics.google.com/analytics/&quot;&gt;Google Analytics&lt;/a&gt;等のアクセス解析ツールと異なり，広告効果の分析を補助する機能を備えている．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.okuramkt.com/dic/mkt/tracking.html&quot;&gt;&lt;strong&gt;Tracking&lt;/strong&gt;&lt;/a&gt;：特定のユーザのサイト内での行動を追跡・分析すること．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://dmlab.jp/adtech/dmp.html&quot;&gt;&lt;strong&gt;DMP&lt;/strong&gt;&lt;/a&gt;：Data Management Platform．インターネットに蓄積された情報を管理し，分析結果を広告配信に利用するためのプラットフォーム．現実的には，データの蓄積は進んでいるが，データの活用については敷居が高い模様．下記の二種類がある．
     &lt;ul&gt;
       &lt;li&gt;Open DMP：データ提供会社が保有している行動履歴や属性情報．&lt;/li&gt;
       &lt;li&gt;Private DMP：自社独自で保有している購買履歴，興味関心情報．&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;SDK&lt;/strong&gt;：&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ever-rise.co.jp/adtech-blog/how-to-use-ad-sdk.html&quot;&gt;&lt;strong&gt;SDK&lt;/strong&gt;&lt;/a&gt;：Software Development Toolkit．アドテクの文脈では，スマホアプリに組み込んで使う，広告配信に必要な機能をひとまとめにしたツールキットを指す．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;3-具体例&quot;&gt;3. 具体例&lt;/h1&gt;
+&lt;h1 id=&quot;3-略語&quot;&gt;3. 略語&lt;/h1&gt;
 
-&lt;h2 id=&quot;3a-rtbの入札価格決定&quot;&gt;3.a RTBの入札価格決定&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://qiita.com/fukkyy/items/b2d37b4797516d72225a&quot;&gt;広告と機械学習&lt;/a&gt;を参考にさせて頂いた．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;CPM&lt;/strong&gt;：Cost Per Mile．1000PVあたりの単価．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CPC&lt;/strong&gt;：Cost Per Click．1クリックあたりの単価．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CPI&lt;/strong&gt;：Cost Per Install．1インストールあたりの単価．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;LTV&lt;/strong&gt;：Life Time Value．1ユーザがもたらす収益．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CTR&lt;/strong&gt;：Click Through Rate．クリック率．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CVR&lt;/strong&gt;：ConVersion Rate．コンバージョン率．ちなみにコンバージョンとは，Webサイトにおける目標の達成を指す．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;4-アドテクと機械学習&quot;&gt;4. アドテクと機械学習&lt;/h1&gt;
+
+&lt;p&gt;機械学習関連だと，DSPの入札戦略最適化がホットな模様．&lt;/p&gt;
 
 &lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/K2EnIQpqVgHKCh&quot; width=&quot;100%&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
 &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot; title=&quot;アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn&quot; target=&quot;_blank&quot;&gt;アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh&quot; target=&quot;_blank&quot;&gt;Kei Tateno&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
 
-&lt;h2 id=&quot;3b&quot;&gt;3.b&lt;/h2&gt;
+&lt;p&gt;上記は，ユーザ（&lt;script type=&quot;math/tex&quot;&gt;user&lt;/script&gt;）の行動モデル&lt;script type=&quot;math/tex&quot;&gt;P\left(act \mid user, ad, context \right)&lt;/script&gt;を学習し，入札戦略を決定する．&lt;/p&gt;
+
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;188589d1de6e4650a857d4f3c02070eb&quot; data-ratio=&quot;1.33333333333333&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;上記も同様に，CTRを予測して賢く入札しようというもの．三年前に，&lt;a href=&quot;https://www.kaggle.com/c/criteo-display-ad-challenge&quot;&gt;Kaggle, Display Advertising Challenge&lt;/a&gt;でCTR予測コンペティションが開催されている．&lt;/p&gt;
 
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cyberagent.co.jp/ir/personal/adtech/&quot;&gt;CyberAgent，日本一やさしいアドテク教室&lt;/a&gt;：用語まとめもある．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cyberagent.co.jp/ir/personal/adtech/&quot;&gt;CyberAgent，日本一やさしいアドテク教室&lt;/a&gt;：アドテク入門にうってつけ．用語まとめもある．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-network/&quot;&gt;SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：Ad Networkについて．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-exchange/&quot;&gt;SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：Ad Exchangeについて．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://webbu.jp/dsp_mechanism-276&quot;&gt;ウェブ部，【2017年6月更新】5分で完璧に理解できる！DSPの仕組みと新しい手法&lt;/a&gt;：DSPについて．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/rtb/&quot;&gt;SATORI，RTB（Real-Time Bidding）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：RTBについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://webkikaku.co.jp/blog/ppc/retargeting/&quot;&gt;WEB企画LABO，初心者でもわかるリターゲティング広告の永久保存版！初期設定から活用まで全て紹介&lt;/a&gt;：(Static) Retargetingについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.nex8.net/full-description-of-dynamic-retargeting/&quot;&gt;nex8ブログ，「よくぞ出してくれた！」と思わず言ってしまう広告とは！？ダイナミックリターゲティング完全解説決定版！&lt;/a&gt;：Dynamic Retargetingについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://liskul.com/measure-advertising6-14994&quot;&gt;LISKUL，広告効果測定ツールの選び方とは？プロが選ぶおすすめツール8種比較&lt;/a&gt;：広告効果計測ツールについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.okuramkt.com/dic/mkt/tracking.html&quot;&gt;OKURA，トラッキング&lt;/a&gt;：Trackingについて．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://dmlab.jp/adtech/dmp.html&quot;&gt;Digital Marketing Lab，DMP（データマネジメントプラットフォーム）の仕組みと特徴&lt;/a&gt;：DMPについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ever-rise.co.jp/adtech-blog/how-to-use-ad-sdk.html&quot;&gt;EVERRISEアドテクブログ，アプリの挙動と連携が可能！広告配信SDKの使い方&lt;/a&gt;：広告配信SDKについて．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://qiita.com/fukkyy/items/b2d37b4797516d72225a&quot;&gt;Qiita，広告と機械学習&lt;/a&gt;：2013年の記事だが，わかりやすい．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot;&gt;舘野啓，アドテクにおける機械学習技術&lt;/a&gt;：数式がわかりやすい．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot;&gt;舘野啓，アドテクにおける機械学習技術&lt;/a&gt;：機械学習を用いたRTB入札最適化について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://speakerdeck.com/kaky0922/treasure-data-tech-talk-20160425&quot;&gt;Takayuki Sakai，アドテク企業の本番環境からTD使ってみた&lt;/a&gt;：機械学習を用いたCTR予測について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/criteo-display-ad-challenge&quot;&gt;Kaggle, Display Advertising Challenge&lt;/a&gt;：三年前に開催された，CTR予測コンペティション．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://techcrunch.com/advertising-tech/&quot;&gt;TechCrunch，Advertising Tech&lt;/a&gt;：アドテク関連の最新ニュース．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
