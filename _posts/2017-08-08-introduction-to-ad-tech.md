@@ -6,7 +6,7 @@ categories:
  - x-tech
 ---
 
-今更ながら，アドテクについて調べてみた．アドテクとは，Advertising Technologyの略で，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）をwin-winの関係にすること．Real time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．
+アドテク（Advertising Technology）とは，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）をwin-winの関係にすること．特にReal time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．
 
 ![ad]({{site.baseurl}}/images/2017-08-07-ad.jpg)
 
@@ -38,8 +38,18 @@ categories:
 
 消費者一人ひとりにあった広告表現をいかに実現するか，という技術．
 
-* [**DSP**](https://webbu.jp/dsp_mechanism-276)：Demand Side Platform．広告主はターゲットや予算を設定し，バナーを入稿するだけで，DSPが自動で最適な広告配信を行う．DSPを使うことで，複数のアドネットワーク，アドエクスチェンジ，SSPを管理可能になる．SSPのリクエストに応じて，どのような広告をいくらで入札するか決定する．つまり，広告枠のオークションが行われる．
-* **RTB**：
+* [**DSP**](https://webbu.jp/dsp_mechanism-276)：Demand Side Platform．広告主はターゲットや予算を設定し，バナーを入稿するだけで，DSPが自動で最適な広告配信を行う．DSPを使うことで，複数のAd Network，Ad Exchange，SSPを管理可能になる．SSPのリクエストに応じて，どのような広告をいくらで入札するか決定する．つまり，広告枠のオークションが行われる．
+* [**RTB**](https://satori.marketing/marketing-blog/ad-technology/rtb/)：１インプレッションに対してリアルタイムで入札を行う仕組み．広告主はDSPを，媒体はSSPを使って広告枠を取引する．RTBにおける広告掲載の流れは以下のようになる．
+    1. ターゲットユーザが媒体ページを訪問．
+    2. 媒体はインプレッション発生情報をSSPに発信．
+    3. SSPは媒体情報やオーディエンス情報をデータ化．
+    4. SSPは接続先DSPにビットリクエストを送信．
+    5. DSPはビットリクエストを受信し，解析．
+    6. DSPは，DSP内での入札勝者情報をSSPに返信．
+    7. SSPは複数DSPからの返答を解析し，一番入札価格が高いDSPの広告タグを媒体に送信．
+    8. SSPは，勝者DSPに広告リクエストを送信．
+    9. 勝者DSPは，クリエイティブ情報を送信．
+    10. 媒体は広告を表示．
 * **Retargeting**：DSPが提供することもある．
 * **Dynamic retargeting**：
 
@@ -67,7 +77,8 @@ categories:
 * [CyberAgent，日本一やさしいアドテク教室](https://www.cyberagent.co.jp/ir/personal/adtech/)：用語まとめもある．
 * [SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します](https://satori.marketing/marketing-blog/ad-technology/ad-network/)：Ad Networkについて．
 * [SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します](https://satori.marketing/marketing-blog/ad-technology/ad-exchange/)：Ad Exchangeについて．
-* [ウェブ部，【2017年6月更新】5分で完璧に理解できる！DSPの仕組みと新しい手法](【2017年6月更新】5分で完璧に理解できる！DSPの仕組みと新しい手法)：DSPについて．
+* [ウェブ部，【2017年6月更新】5分で完璧に理解できる！DSPの仕組みと新しい手法](https://webbu.jp/dsp_mechanism-276)：DSPについて．
+* [SATORI，RTB（Real-Time Bidding）とは？を初心者にも分かりやすく解説します](https://satori.marketing/marketing-blog/ad-technology/rtb/)：RTBについて．
 * [Digital Marketing Lab，DMP（データマネジメントプラットフォーム）の仕組みと特徴](https://dmlab.jp/adtech/dmp.html)：DMPについて．
 * [Qiita，広告と機械学習](http://qiita.com/fukkyy/items/b2d37b4797516d72225a)：2013年の記事だが，わかりやすい．
 * [舘野啓，アドテクにおける機械学習技術](https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn)：数式がわかりやすい．
