@@ -6,7 +6,7 @@ categories:
  - data science
 ---
 
-[Udacity, Intro to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)の受講メモ．6部構成の無料講座．
+[Udacity, Intro to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/DEQNknALf_8?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -66,7 +66,24 @@ categories:
 
 # 3. MapReduce Code
 
+* **Hadoop streaming**により，どんな言語でも処理を書くことができる．
+* MapperおよびReducerには，`sys.stdin`形式でデータを入力する．`for line in sys.stdin:`以下に処理を書く．
+* MapperおよびReducerは，処理結果を`print`で標準出力する．
+* シェルで`$ ./mapper.py`で実行すれば，Hadoop外でMapperの動作を検証できる．Reducerについても同様．さらに，以下のコマンドで全ての処理を検証可能．
+
+```
+$ cat testfile | ./mapper.py | sort | ./reducer.py
+
+```
+
+* 詳細は，以下の動画がとてもわかりやすい．
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/MYo8EZwDRUA?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
 # 4. Project
+
+* 実際にHadoopで問題を解く．
 
 # 5. MapReduce Design Patterns
 

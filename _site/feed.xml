@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Aug 2017 08:35:31 -0400</pubDate>
-    <lastBuildDate>Thu, 17 Aug 2017 08:35:31 -0400</lastBuildDate>
+    <pubDate>Thu, 17 Aug 2017 20:47:02 -0400</pubDate>
+    <lastBuildDate>Thu, 17 Aug 2017 20:47:02 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -52,7 +52,7 @@
     
       <item>
         <title>作成中）Udacity, Intro to Hadoop and MapReduce受講メモ</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．6部構成の無料講座．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/DEQNknALf_8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -135,7 +135,29 @@
 
 &lt;h1 id=&quot;3-mapreduce-code&quot;&gt;3. MapReduce Code&lt;/h1&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Hadoop streaming&lt;/strong&gt;により，どんな言語でも処理を書くことができる．&lt;/li&gt;
+  &lt;li&gt;MapperおよびReducerには，&lt;code class=&quot;highlighter-rouge&quot;&gt;sys.stdin&lt;/code&gt;形式でデータを入力する．&lt;code class=&quot;highlighter-rouge&quot;&gt;for line in sys.stdin:&lt;/code&gt;以下に処理を書く．&lt;/li&gt;
+  &lt;li&gt;MapperおよびReducerは，処理結果を&lt;code class=&quot;highlighter-rouge&quot;&gt;print&lt;/code&gt;で標準出力する．&lt;/li&gt;
+  &lt;li&gt;シェルで&lt;code class=&quot;highlighter-rouge&quot;&gt;$ ./mapper.py&lt;/code&gt;で実行すれば，Hadoop外でMapperの動作を検証できる．Reducerについても同様．さらに，以下のコマンドで全ての処理を検証可能．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat testfile | ./mapper.py | sort | ./reducer.py
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;詳細は，以下の動画がとてもわかりやすい．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/MYo8EZwDRUA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
 &lt;h1 id=&quot;4-project&quot;&gt;4. Project&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;実際にHadoopで問題を解く．&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;5-mapreduce-design-patterns&quot;&gt;5. MapReduce Design Patterns&lt;/h1&gt;
 
