@@ -83,7 +83,12 @@ $ cat testfile | ./mapper.py | sort | ./reducer.py
 
 # 4. Project
 
-* 実際にHadoopで問題を解く．
+* 1-1. 全店舗におけるカテゴリー毎の売上額を求めよ．
+* 1-2.
+* 1-3.
+* 2-1.
+* 2-2.
+* 2-2.
 
 # 5. MapReduce Design Patterns
 
