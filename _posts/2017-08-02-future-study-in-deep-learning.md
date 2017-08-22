@@ -8,7 +8,7 @@ categories:
 
 [Udacity](https://www.udacity.com/)の[Deep learning foundations nanodegree](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101)を修了して，基本はある程度押さえられたし，論文も読めるようになった．やりたいことをメモしておく．
 
-![study]({{site.baseurl}}/images/2017-08-03-study.jpg)
+![study]({{site.baseurl}}/images/dlnd.png)
 
 # Udacityの公開教材を和訳
 
