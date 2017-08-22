@@ -139,7 +139,21 @@
     </ul>
   </li>
   <li><code class="highlighter-rouge">where</code>は<code class="highlighter-rouge">group by</code>の前に適用されるが，<code class="highlighter-rouge">having</code>は<code class="highlighter-rouge">group by</code>の後に適用される．</li>
-  <li>Lesson 3に向けて，Virtual machineでDatabaseサーバを構築する．</li>
+  <li>Lesson 3に向けて，<a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>と<a href="https://www.vagrantup.com/">Vagrant</a>で環境を構築．Vagrantってこんな便利だったのか．
+    <ul>
+      <li>仮想環境構築：<code class="highlighter-rouge">$ vagrant up</code></li>
+      <li>ログイン：<code class="highlighter-rouge">$ vagrant ssh</code></li>
+      <li>PostgreSQLの起動：<code class="highlighter-rouge">$ psql</code></li>
+      <li>ログアウト：<code class="highlighter-rouge">$ exit</code>あるいは<code class="highlighter-rouge">Ctrl-D</code></li>
+    </ul>
+  </li>
+  <li>VM内にファイル共有用の<code class="highlighter-rouge">/vagrant</code>ディレクトリが無かった．とりあえずこのまま進んで，問題があるようだったら調査してみよう．</li>
+  <li>VagrantとDockerの違いについては，以下が参考になった．
+    <ul>
+      <li><a href="http://qiita.com/hidekuro/items/fc12344d36d996198e96">VagrantとDockerについて名前しか知らなかったので試した</a></li>
+      <li><a href="http://acchi-muite-hoi.hatenablog.com/entry/2016/05/30/041618">dockerとvagrantの違い言える？新人エンジニアでも分かった気になれる俺流まとめ</a></li>
+    </ul>
+  </li>
 </ul>
 
 <h1 id="3-python-db-api">3. Python DB-API</h1>

@@ -75,18 +75,43 @@ categories:
 * **CTR**：Click Through Rate．クリック率．
 * **CVR**：ConVersion Rate．コンバージョン率．ちなみにコンバージョンとは，Webサイトにおける目標の達成を指す．
 
-# 4. アドテクと機械学習
+# 4. 研究動向
 
-機械学習関連だと，DSPの入札戦略最適化がホットな模様．
+最近はRTB関連がホットトピックらしい．[Paper Collection of Real-Time Bidding](https://github.com/wnzhang/rtb-papers)を参考に分類した．また，DSPについては[人工知能学会誌 Vol.32 No.4](https://www.ai-gakkai.or.jp/vol32_no4/)を参考にした．
+
+## 4.a DSP Techniques
+
+最も盛んに研究されている分野．
+
+* **CTR/CVR Estimation**：CTRあるいはCVRを予測する．端的に言えば，広告をクリックするか否かを予測する二値識別問題．最も基本的な手法はロジスティック回帰．
+* **Bid Landscape**：RTBに参加している広告主が，他の参加者の入札状況を予測する．既存研究は主にヒューリスティックな手法に集中している．
+* **Bidding Strategies**：CTR/CVR Estimationから得られたインプレッション期待利得とBid Landscapeから得られた落札可能額をもとにオンラインナップサック問題を解く．インプレッションが到着する度に入札するか否かを決めなければならず，決定は覆せないという特徴から，オンラインと呼ばれる．オフラインナップサック問題ですらNP困難であり，近似解法が必要．オンラインナップサック問題に至っては入力（インプレッション）に仮定を行わなければ近似アルゴリズムすら設計できない．
+* **Budget Pacing & Frequency/Recency Capping**：広告主が設定した任意の予算をもとに，任意の期間中まんべんなく広告を配信するための戦略．
+* **Fraud Detection**：広告詐欺（Ad Fraud）検知．例えば，金銭的な報酬を受け取ったユーザによる意図的なクリック，マルウェア，ボットなどを検知する．
+* **Market Segmentation**：顧客集団分類．
+
+また，日本語の資料として以下のようなものを見つけた．二つとも，CTR/CVR Estimationに大別される．
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/K2EnIQpqVgHKCh" width="100%" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ttpooh/tokyo-data-night-tokyodn" title="アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn" target="_blank">アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn</a> </strong> from <strong><a href="https://www.slideshare.net/ttpooh" target="_blank">Kei Tateno</a></strong> </div>
 
-上記は，ユーザ（$$user$$）の行動モデル$$P\left(act \mid user, ad, context \right)$$を学習し，入札戦略を決定する．
-
-
 <script async class="speakerdeck-embed" data-id="188589d1de6e4650a857d4f3c02070eb" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
-上記も同様に，CTRを予測して賢く入札しようというもの．三年前に，[Kaggle, Display Advertising Challenge](https://www.kaggle.com/c/criteo-display-ad-challenge)でCTR予測コンペティションが開催されている．
+
+## 4.b SSP Techniques
+
+主に，Second-Price Auctionのパラメータ設定最適化．
+
+## 4.c DMP Techniques
+
+LinkedInにおけるAudience Expansionなど．
+
+## 4.d Conversion Attribution
+
+コンバージョンに対する要因分析を如何に行うか．
+
+# 5. コンペティション
+
+* [Kaggle, Display Advertising Challenge](https://www.kaggle.com/c/criteo-display-ad-challenge)でCTR予測コンペティションが開催された模様．
 
 
 # 参考
@@ -102,6 +127,9 @@ categories:
 * [OKURA，トラッキング](http://www.okuramkt.com/dic/mkt/tracking.html)：Trackingについて．
 * [Digital Marketing Lab，DMP（データマネジメントプラットフォーム）の仕組みと特徴](https://dmlab.jp/adtech/dmp.html)：DMPについて．
 * [EVERRISEアドテクブログ，アプリの挙動と連携が可能！広告配信SDKの使い方](https://www.ever-rise.co.jp/adtech-blog/how-to-use-ad-sdk.html)：広告配信SDKについて．
+* [wnzhang, Paper Collection of Real-Time Bidding](https://github.com/wnzhang/rtb-papers)：RTB関連論文まとめ．
+* [人工知能学会，人工知能学会誌 Vol.32 No.4](https://www.ai-gakkai.or.jp/vol32_no4/)：DSP関連の最新技術動向について．
+* [GlobalAdtech，日本にも上陸間近？米国で白熱するAd Fraud（広告詐欺）対策状況を見てみよう](http://global-adtech.jp/blog/1066)：広告詐欺について．
 * [Qiita，広告と機械学習](http://qiita.com/fukkyy/items/b2d37b4797516d72225a)：2013年の記事だが，わかりやすい．
 * [舘野啓，アドテクにおける機械学習技術](https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn)：機械学習を用いたRTB入札最適化について．
 * [Takayuki Sakai，アドテク企業の本番環境からTD使ってみた](https://speakerdeck.com/kaky0922/treasure-data-tech-talk-20160425)：機械学習を用いたCTR予測について．

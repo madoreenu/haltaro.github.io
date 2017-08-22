@@ -46,7 +46,15 @@ categories:
 * Databaseを結合するとき：*T* **join** *S* **on** *T.color = S.paint*
     * 例えば，`fish`を食べる動物の名前を抽出したとき：`select name from animals join diet on animals.species=diet.species where food='fish';`
 * `where`は`group by`の前に適用されるが，`having`は`group by`の後に適用される．
-* Lesson 3に向けて，Virtual machineでDatabaseサーバを構築する．
+* Lesson 3に向けて，[VirtualBox](https://www.virtualbox.org/wiki/Downloads)と[Vagrant](https://www.vagrantup.com/)で環境を構築．Vagrantってこんな便利だったのか．
+    * 仮想環境構築：`$ vagrant up`
+    * ログイン：`$ vagrant ssh`
+    * PostgreSQLの起動：`$ psql`
+    * ログアウト：`$ exit`あるいは`Ctrl-D`
+* VM内にファイル共有用の`/vagrant`ディレクトリが無かった．とりあえずこのまま進んで，問題があるようだったら調査してみよう．
+* VagrantとDockerの違いについては，以下が参考になった．
+    * [VagrantとDockerについて名前しか知らなかったので試した](http://qiita.com/hidekuro/items/fc12344d36d996198e96)
+    * [dockerとvagrantの違い言える？新人エンジニアでも分かった気になれる俺流まとめ](http://acchi-muite-hoi.hatenablog.com/entry/2016/05/30/041618)
 
 
 # 3. Python DB-API
