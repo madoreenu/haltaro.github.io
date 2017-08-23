@@ -6,17 +6,19 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Aug 2017 22:26:49 -0400</pubDate>
-    <lastBuildDate>Mon, 21 Aug 2017 22:26:49 -0400</lastBuildDate>
+    <pubDate>Wed, 23 Aug 2017 19:01:32 -0400</pubDate>
+    <lastBuildDate>Wed, 23 Aug 2017 19:01:32 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
         <title>作成中）時系列分析技術まとめ</title>
-        <description>&lt;p&gt;時系列分析（Time series analysis）技術をまとめる．&lt;/p&gt;
+        <description>&lt;p&gt;時系列分析（解析）技術をまとめる．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2017-08-16-time.jpg&quot; alt=&quot;time&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;時系列分析とは&quot;&gt;時系列分析とは&lt;/h1&gt;
+
+&lt;p&gt;時系列解析と呼ばれることもあるが，本記事では時系列分析で統一する．時系列分析とは，時間軸に沿って変化している現象を分析すること．&lt;/p&gt;
 
 &lt;h1 id=&quot;1-計量時系列分析&quot;&gt;1. 計量時系列分析&lt;/h1&gt;
 
@@ -24,7 +26,28 @@
   &lt;li&gt;&lt;a href=&quot;http://tjo.hatenablog.com/entry/2013/07/12/184704&quot;&gt;六本木で働くデータサイエンティストのブログ，Rで計量時系列分析：AR, MA, ARMA, ARIMAモデル, 予測&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&quot;1a-ar&quot;&gt;1.a AR&lt;/h2&gt;
+
+&lt;h2 id=&quot;1b-ma&quot;&gt;1.b MA&lt;/h2&gt;
+
+&lt;h2 id=&quot;1c-arma&quot;&gt;1.c ARMA&lt;/h2&gt;
+
+&lt;h2 id=&quot;1d-arima&quot;&gt;1.d ARIMA&lt;/h2&gt;
+
 &lt;h1 id=&quot;2-状態空間モデル&quot;&gt;2. 状態空間モデル&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mathwords.net/zyotaikukan&quot;&gt;具体例で学ぶ数学，状態空間モデルの意味と4つの分類（線形性、正規性、時変性、連続性）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.asia/aGb1uXY&quot;&gt;C.M.ビショップ，パターン認識と機械学習&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2a-隠れマルコフモデル&quot;&gt;2.a 隠れマルコフモデル&lt;/h2&gt;
+
+&lt;h2 id=&quot;2b-線形動的システム&quot;&gt;2.b 線形動的システム&lt;/h2&gt;
+
+&lt;h2 id=&quot;2c-非線形動的システム&quot;&gt;2.c 非線形動的システム&lt;/h2&gt;
+
+&lt;h2 id=&quot;2d-カルマンフィルタ&quot;&gt;2.d カルマンフィルタ&lt;/h2&gt;
 
 &lt;h1 id=&quot;3-neural-network-not-deep&quot;&gt;3. Neural Network (Not deep)&lt;/h1&gt;
 
@@ -37,8 +60,10 @@
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://tjo.hatenablog.com/entry/2013/07/12/184704&quot;&gt;六本木で働くデータサイエンティストのブログ，Rで計量時系列分析：AR, MA, ARMA, ARIMAモデル, 予測&lt;/a&gt;：計量時系列分析について&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0031320305001305&quot;&gt;T. Warren Liao, Clustering of time series data—a survey, Pattern Recognition, Volume 38, Issue 11, 2005, Pages 1857-1874, ISSN 0031-3203&lt;/a&gt;：時系列データのクラスタリングについて&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tjo.hatenablog.com/entry/2013/07/12/184704&quot;&gt;六本木で働くデータサイエンティストのブログ，Rで計量時系列分析：AR, MA, ARMA, ARIMAモデル, 予測&lt;/a&gt;：計量時系列分析について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mathwords.net/zyotaikukan&quot;&gt;具体例で学ぶ数学，状態空間モデルの意味と4つの分類（線形性、正規性、時変性、連続性）&lt;/a&gt;：状態空間モデルについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.asia/aGb1uXY&quot;&gt;C.M.ビショップ，パターン認識と機械学習&lt;/a&gt;：隠れマルコフモデル，線形動的システムについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0031320305001305&quot;&gt;T. Warren Liao, Clustering of time series data—a survey, Pattern Recognition, Volume 38, Issue 11, 2005, Pages 1857-1874, ISSN 0031-3203&lt;/a&gt;：時系列データのクラスタリングについて．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 16 Aug 2017 00:00:00 -0400</pubDate>
@@ -657,7 +682,7 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
         <title>機械学習のプロジェクト計画</title>
         <description>&lt;p&gt;くだらないものばかりだけど，今後やりたいことをメモしておく．&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/2017-08-02-projects.jpg&quot; alt=&quot;project&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/dlnd.png&quot; alt=&quot;project&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;1-画像処理系&quot;&gt;1. 画像処理系&lt;/h1&gt;
 
@@ -738,7 +763,7 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
         <title>機械学習の学習計画</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt;の&lt;a href=&quot;https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101&quot;&gt;Deep learning foundations nanodegree&lt;/a&gt;を修了して，基本はある程度押さえられたし，論文も読めるようになった．やりたいことをメモしておく．&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/2017-08-03-study.jpg&quot; alt=&quot;study&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/dlnd.png&quot; alt=&quot;study&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;udacityの公開教材を和訳&quot;&gt;Udacityの公開教材を和訳&lt;/h1&gt;
 
