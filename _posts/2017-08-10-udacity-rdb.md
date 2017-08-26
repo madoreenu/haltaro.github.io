@@ -49,15 +49,20 @@ categories:
 * Lesson 3に向けて，[VirtualBox](https://www.virtualbox.org/wiki/Downloads)と[Vagrant](https://www.vagrantup.com/)で環境を構築．Vagrantってこんな便利だったのか．
     * 仮想環境構築：`$ vagrant up`
     * ログイン：`$ vagrant ssh`
+    * ファイル共有は`/vagrant`ディレクトリ．
     * PostgreSQLの起動：`$ psql`
     * ログアウト：`$ exit`あるいは`Ctrl-D`
-* VM内にファイル共有用の`/vagrant`ディレクトリが無かった．とりあえずこのまま進んで，問題があるようだったら調査してみよう．
 * VagrantとDockerの違いについては，以下が参考になった．
     * [VagrantとDockerについて名前しか知らなかったので試した](http://qiita.com/hidekuro/items/fc12344d36d996198e96)
     * [dockerとvagrantの違い言える？新人エンジニアでも分かった気になれる俺流まとめ](http://acchi-muite-hoi.hatenablog.com/entry/2016/05/30/041618)
 
 
 # 3. Python DB-API
+
+* PythonからDatabaseを叩く際，DB-APIを用いる．DB-APIはPythonの組み込みモジュール．Databaseに応じて，DB-APIモジュールは異なる：SQLiteは`sqlite3`，PostgreSQLは`psycopg2`，ODBCは`pyodbc`，MySQLは`mysql.connector`など．
+* 例えば，次のようなPythonコードを書く．
+
+<script src="https://gist.github.com/haltaro/92a4506f6b0f3461b217934860490173.js"></script>
 
 # 4. Deeper into SQL
 

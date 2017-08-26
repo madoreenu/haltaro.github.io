@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Aug 2017 19:01:32 -0400</pubDate>
-    <lastBuildDate>Wed, 23 Aug 2017 19:01:32 -0400</lastBuildDate>
+    <pubDate>Fri, 25 Aug 2017 20:11:08 -0400</pubDate>
+    <lastBuildDate>Fri, 25 Aug 2017 20:11:08 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -266,11 +266,11 @@
     &lt;ul&gt;
       &lt;li&gt;仮想環境構築：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant up&lt;/code&gt;&lt;/li&gt;
       &lt;li&gt;ログイン：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant ssh&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;ファイル共有は&lt;code class=&quot;highlighter-rouge&quot;&gt;/vagrant&lt;/code&gt;ディレクトリ．&lt;/li&gt;
       &lt;li&gt;PostgreSQLの起動：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ psql&lt;/code&gt;&lt;/li&gt;
       &lt;li&gt;ログアウト：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ exit&lt;/code&gt;あるいは&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-D&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;VM内にファイル共有用の&lt;code class=&quot;highlighter-rouge&quot;&gt;/vagrant&lt;/code&gt;ディレクトリが無かった．とりあえずこのまま進んで，問題があるようだったら調査してみよう．&lt;/li&gt;
   &lt;li&gt;VagrantとDockerの違いについては，以下が参考になった．
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;http://qiita.com/hidekuro/items/fc12344d36d996198e96&quot;&gt;VagrantとDockerについて名前しか知らなかったので試した&lt;/a&gt;&lt;/li&gt;
@@ -280,6 +280,13 @@
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;3-python-db-api&quot;&gt;3. Python DB-API&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PythonからDatabaseを叩く際，DB-APIを用いる．DB-APIはPythonの組み込みモジュール．Databaseに応じて，DB-APIモジュールは異なる：SQLiteは&lt;code class=&quot;highlighter-rouge&quot;&gt;sqlite3&lt;/code&gt;，PostgreSQLは&lt;code class=&quot;highlighter-rouge&quot;&gt;psycopg2&lt;/code&gt;，ODBCは&lt;code class=&quot;highlighter-rouge&quot;&gt;pyodbc&lt;/code&gt;，MySQLは&lt;code class=&quot;highlighter-rouge&quot;&gt;mysql.connector&lt;/code&gt;など．&lt;/li&gt;
+  &lt;li&gt;例えば，次のようなPythonコードを書く．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/92a4506f6b0f3461b217934860490173.js&quot;&gt;&lt;/script&gt;
 
 &lt;h1 id=&quot;4-deeper-into-sql&quot;&gt;4. Deeper into SQL&lt;/h1&gt;
 
