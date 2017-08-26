@@ -6,9 +6,84 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Aug 2017 20:11:08 -0400</pubDate>
-    <lastBuildDate>Fri, 25 Aug 2017 20:11:08 -0400</lastBuildDate>
+    <pubDate>Sat, 26 Aug 2017 17:48:53 -0400</pubDate>
+    <lastBuildDate>Sat, 26 Aug 2017 17:48:53 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>作成中）統計的学習の基礎</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;を読んで，基礎知識を復習する．1，2，3，4，および7章が必読とのことなので，これらを中心にメモを残す．量が多いので，各章毎に記事を分けることにした．&lt;/p&gt;
+
+&lt;h1 id=&quot;1-序章&quot;&gt;1. 序章&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ウェブサイトは：&lt;a href=&quot;https://web.stanford.edu/~hastie/ElemStatLearn/&quot;&gt;https://web.stanford.edu/~hastie/ElemStatLearn/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-教師あり学習の概要&quot;&gt;2. 教師あり学習の概要&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/8/26/section2&quot;&gt;こちら&lt;/a&gt;で作成中．&lt;/p&gt;
+
+&lt;h1 id=&quot;3-回帰のための線形手法&quot;&gt;3. 回帰のための線形手法&lt;/h1&gt;
+
+&lt;h1 id=&quot;4-分類のための線形手法&quot;&gt;4. 分類のための線形手法&lt;/h1&gt;
+
+&lt;h1 id=&quot;7-モデルの評価と選択&quot;&gt;7. モデルの評価と選択&lt;/h1&gt;
+
+</description>
+        <pubDate>Sat, 26 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2017/08/26/the-elements-of-statistical-learning</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/26/the-elements-of-statistical-learning</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
+    
+      <item>
+        <title>作成中）統計的学習の基礎 第2章まとめ</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;第2章の学習メモ．&lt;/p&gt;
+
+&lt;h1 id=&quot;2-教師あり学習の概要&quot;&gt;2. 教師あり学習の概要&lt;/h1&gt;
+
+&lt;h2 id=&quot;21-導入&quot;&gt;2.1 導入&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;入力は，統計学では&lt;strong&gt;予測変数&lt;/strong&gt;（predictor）や&lt;strong&gt;独立変数&lt;/strong&gt;（independent variable）と，パターン認識では&lt;strong&gt;特徴&lt;/strong&gt;（feature）と呼ばれる．&lt;/li&gt;
+  &lt;li&gt;出力は，&lt;strong&gt;応答変数&lt;/strong&gt;（response variable）や&lt;strong&gt;従属変数&lt;/strong&gt;（dependent variable）と呼ばれる．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;22-変数の種類と用語&quot;&gt;2.2 変数の種類と用語&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;量的変数&lt;/strong&gt;（quantitative variable）と&lt;strong&gt;質的変数&lt;/strong&gt;（qualitative variable）がある．質的変数は，&lt;strong&gt;カテゴリ型変数&lt;/strong&gt;（categorical variable），&lt;strong&gt;離散変数&lt;/strong&gt;（discrete variable），あるいは&lt;strong&gt;因子&lt;/strong&gt;（factor）と呼ばれることがある．&lt;/li&gt;
+  &lt;li&gt;３つめの変数として，&lt;strong&gt;順序付きカテゴリ型変数&lt;/strong&gt;（ordered categorical variable）がある．これは，値の順序にのみ意味があり，計量としての意味はない．&lt;/li&gt;
+  &lt;li&gt;本書では，入力変数を&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;，量的な出力変数を&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;，質的な出力変数を&lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt;と表す．&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;番目の観測値は，ベクトルでもスカラーでも，イタリック体で&lt;script type=&quot;math/tex&quot;&gt;x_i&lt;/script&gt;と表す．一方で，全てのベクトル&lt;script type=&quot;math/tex&quot;&gt;x_i&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;j&lt;/script&gt;番目の要素をまとめたベクトルは，立体で&lt;script type=&quot;math/tex&quot;&gt;\mathrm{x}_j&lt;/script&gt;と表す．&lt;/li&gt;
+  &lt;li&gt;学習とは，入力ベクトル&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;が与えられたとき，出力&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;の良い予測値&lt;script type=&quot;math/tex&quot;&gt;\hat{Y}&lt;/script&gt;を求めること．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;23-予測のための二つの簡単なアプローチ最小二乗法と最近傍法&quot;&gt;2.3 予測のための二つの簡単なアプローチ：最小二乗法と最近傍法&lt;/h2&gt;
+
+&lt;h2 id=&quot;24-統計的決定理論&quot;&gt;2.4 統計的決定理論&lt;/h2&gt;
+
+&lt;h2 id=&quot;25-校時元での局所的手法&quot;&gt;2.5 校時元での局所的手法&lt;/h2&gt;
+
+&lt;h2 id=&quot;26-統計モデル教師あり学習関数近似&quot;&gt;2.6 統計モデル，教師あり学習，関数近似&lt;/h2&gt;
+
+&lt;h2 id=&quot;27-構造化回帰モデル&quot;&gt;2.7 構造化回帰モデル&lt;/h2&gt;
+
+&lt;h2 id=&quot;28-制限付き推定法&quot;&gt;2.8 制限付き推定法&lt;/h2&gt;
+
+&lt;h2 id=&quot;29-モデルの選択とバイアスと分散のトレードオフ&quot;&gt;2.9 モデルの選択と，バイアスと分散のトレードオフ&lt;/h2&gt;
+</description>
+        <pubDate>Sat, 26 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2017/08/26/section2</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/26/section2</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
     
       <item>
         <title>作成中）時系列分析技術まとめ</title>
@@ -763,185 +838,6 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
         
         
         <category>machine learning</category>
-        
-      </item>
-    
-      <item>
-        <title>機械学習の学習計画</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt;の&lt;a href=&quot;https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101&quot;&gt;Deep learning foundations nanodegree&lt;/a&gt;を修了して，基本はある程度押さえられたし，論文も読めるようになった．やりたいことをメモしておく．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/dlnd.png&quot; alt=&quot;study&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;udacityの公開教材を和訳&quot;&gt;Udacityの公開教材を和訳&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/deep-learning-in-japanese/&quot;&gt;こちら&lt;/a&gt;で地道に進める．&lt;/p&gt;
-
-&lt;h1 id=&quot;fastaiのmoocを受講&quot;&gt;fast.aiのMOOCを受講&lt;/h1&gt;
-
-&lt;p&gt;巷で評判の良い，&lt;a href=&quot;http://www.fast.ai/&quot;&gt;fast.ai&lt;/a&gt;のMOOCを受講する．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://course.fast.ai/&quot;&gt;Part 1 - Practical Deep Learning For Coders&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://course.fast.ai/part2.html&quot;&gt;Part 2 - Cutting Edge Deep Learning For Coders&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Part 1では，Kaggleの&lt;a href=&quot;https://www.kaggle.com/c/dogs-vs-cats&quot;&gt;犬猫分類コンペ&lt;/a&gt;で上位に食い込むためのテクニックを教えてくれるらしい．&lt;/p&gt;
-
-&lt;h1 id=&quot;kaggle&quot;&gt;Kaggle&lt;/h1&gt;
-
-&lt;p&gt;実データで修行する．以下のコンペは本業とも関連するので，トライしてみたい．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting&quot;&gt;Web Traffic Time Series Forecasting&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;基礎知識の復習&quot;&gt;基礎知識の復習&lt;/h1&gt;
-
-&lt;p&gt;定番の教科書をもう一度復習する．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8A-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061224&quot;&gt;C.M.ビショップ，パターン認識と機械学習&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E7%B5%B1%E8%A8%88%E7%9A%84%E5%AD%A6%E7%BF%92%E3%81%AE%E5%9F%BA%E7%A4%8E-_%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9E%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%BB%E6%8E%A8%E8%AB%96%E3%83%BB%E4%BA%88%E6%B8%AC_-Trevor-Hastie/dp/432012362X/ref=pd_sim_14_4?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=C02E1B5MEZZ4W5K65EGD&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.deeplearningbook.org/&quot;&gt;Ian Goodfellow and Yoshua Bengio and Aaron Courville, Deep Learning&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ianさんの本は無料公開されているけど，アメリカにいるうちにお布施して原本を入手しよう．&lt;/p&gt;
-
-&lt;h1 id=&quot;最新論文のフォロー&quot;&gt;最新論文のフォロー&lt;/h1&gt;
-
-&lt;p&gt;2016年ぶんなら，下記が参考になるかも．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://qiita.com/sakaiakira/items/9da1edda802c4884865c&quot;&gt;2016年のディープラーニング論文100選&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Wed, 02 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2017/08/02/future-study-in-deep-learning</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/02/future-study-in-deep-learning</guid>
-        
-        
-        <category>machine learning</category>
-        
-      </item>
-    
-      <item>
-        <title>外資系研究所で使う便利な英会話表現</title>
-        <description>&lt;p&gt;縁あって一年ほど，情報通信系の外資系研究所で働いている．世界各国から研究者が集まっており，公用語は英語．ほとんどネイティブスピーカーはいない．忘れないように，よく使われる/使う英語表現をまとめておく．&lt;/p&gt;
-
-&lt;p&gt;日本語訳の正確さは不明．&lt;strong&gt;あくまでも自分用のメモ&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;1-会議編&quot;&gt;1. 会議編&lt;/h1&gt;
-
-&lt;p&gt;会議は，定型文さえ覚えていれば，なんとかなる．最悪，数式や図を書けば良い．&lt;/p&gt;
-
-&lt;h2 id=&quot;1a-相槌を打ちたいとき&quot;&gt;1.a 相槌を打ちたいとき&lt;/h2&gt;
-
-&lt;p&gt;相手の説明を聞いているときによく使う．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;I see.&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Right.&lt;/code&gt;：それな．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;It makes sense.&lt;/code&gt;：なるほど．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sounds good !&lt;/code&gt;：いいね．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1b-再確認したいとき&quot;&gt;1.b 再確認したいとき&lt;/h2&gt;
-
-&lt;p&gt;聞き逃したり，意味がわからなかった時は，すぐに聞く．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sorry ?&lt;/code&gt;：ん？&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;What do you mean ?&lt;/code&gt;：どゆこと？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;場合によっては，「こう理解したんだがあってるか？」と確認する．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Please let me make sure.&lt;/code&gt;：確認させてくれ．make sureというフレーズは非常に便利．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Do you mean that ... ?&lt;/code&gt;：…という意味？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1c-要点を強調したいとき&quot;&gt;1.c 要点を強調したいとき&lt;/h2&gt;
-
-&lt;p&gt;議論の要点を強調したいときに使う．海外ドラマとかでもよく聞く表現．使いやすい．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;The point is ...&lt;/code&gt;：重要なのは，…&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;The problem is ...&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;The question is ...&lt;/code&gt;：問題なのは，…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1d-意見を聞きたいとき&quot;&gt;1.d 意見を聞きたいとき&lt;/h2&gt;
-
-&lt;p&gt;英語で議論していると，自分でも何言ってるかわかんなくなってくる．適当なタイミングで相手に意見を聞いて，突っ走り過ぎないようにする．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;How do you think about that ?&lt;/code&gt;：どう思う？&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Does it make sense ?&lt;/code&gt;：おかしくないかな？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1e-口頭だけじゃきついとき&quot;&gt;1.e 口頭だけじゃきついとき&lt;/h2&gt;
-
-&lt;p&gt;高度な話題になると，口頭だけじゃきつい．そういう時は，道具を使う．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Can I use a white board ?&lt;/code&gt;：ちょっとホワイトボード使っていい？&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Could you write it down ?&lt;/code&gt;：ちょっと書いてもらっていい？&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Could you send me an e-mail about that ?&lt;/code&gt;：メールで送ってもらっていい？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;2-雑談編&quot;&gt;2. 雑談編&lt;/h1&gt;
-
-&lt;p&gt;会議より雑談の方がずっと難しい（特に複数人のとき）．話題を特定できないせいだと思う．&lt;/p&gt;
-
-&lt;h2 id=&quot;2a-出会い頭&quot;&gt;2.a 出会い頭&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;How are you ?&lt;/code&gt;にはいろんな派生があるけど，違いはよくわからない．それっぽいことを聞かれたら，&lt;code class=&quot;highlighter-rouge&quot;&gt;Good ! How are you ?&lt;/code&gt;と返すようにしている．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;How are you ?&lt;/code&gt;：調子どう？&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Good.&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Fine.&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Not so bad.&lt;/code&gt;…：返事は気分で変える．特に違いはない．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2b-間が保たないとき&quot;&gt;2.b 間が保たないとき&lt;/h2&gt;
-
-&lt;p&gt;ぼーっとしてると，わけのわからない話題になることが多い&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．わかりやすい話題を先にふる．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Do you have any plan for the weekend ?&lt;/code&gt;：週末どうするの？よく聞かれるし，よく聞く．応用技として，「夏休みはどうするの？」がある．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;3-その他の便利な表現&quot;&gt;3. その他の便利な表現&lt;/h1&gt;
-
-&lt;h2 id=&quot;3a-修飾語&quot;&gt;3.a 修飾語&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;super&lt;/code&gt;：とても．veryのこなれたバージョン．IT界隈では特に使われる気がする．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;really&lt;/code&gt;：とても．これも，veryの代わりに使われることが多い．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hi-level&lt;/code&gt;：ざっくりとした．技術的なレベルが高いという意味ではなく，「経営層向け」の「抽象度の高い」的なニュアンスになる．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;state-of-the-art&lt;/code&gt;：最先端の．論文とかでよく使うし，日常会話でも使う．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;3b-つなぎ言葉&quot;&gt;3.b つなぎ言葉&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;you know&lt;/code&gt;：えーと．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;like a&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;sort of&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;kind of&lt;/code&gt;：みたいな．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:3&quot;&gt;
-      &lt;p&gt;その都度聞けばいいが，聞くのもしんどいときがある．&amp;nbsp;&lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 02 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2017/08/02/english-phrases-in-international-labs</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/02/english-phrases-in-international-labs</guid>
-        
-        
-        <category>english</category>
         
       </item>
     
