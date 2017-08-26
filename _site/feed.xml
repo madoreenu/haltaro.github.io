@@ -6,23 +6,26 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Aug 2017 18:13:19 -0400</pubDate>
-    <lastBuildDate>Sat, 26 Aug 2017 18:13:19 -0400</lastBuildDate>
+    <pubDate>Sat, 26 Aug 2017 18:30:37 -0400</pubDate>
+    <lastBuildDate>Sat, 26 Aug 2017 18:30:37 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
-        <title>作成中）統計的学習の基礎</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;を読んで，基礎知識を復習する．1，2，3，4，および7章が必読とのことなので，これらを中心にメモを残す．量が多いので，各章毎に記事を分けることにした．&lt;/p&gt;
+        <title>作成中）統計的学習の基礎まとめ</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;を読んで，基礎知識を復習する．1，2，3，4，および7章が必読とのことなので，これらを中心にメモを残す．量が多いので，章毎に記事を分ける．&lt;/p&gt;
 
 &lt;h1 id=&quot;1-序章&quot;&gt;1. 序章&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;ウェブサイトは：&lt;a href=&quot;https://web.stanford.edu/~hastie/ElemStatLearn/&quot;&gt;https://web.stanford.edu/~hastie/ElemStatLearn/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;本書の公式ウェブサイトは&lt;a href=&quot;https://web.stanford.edu/~hastie/ElemStatLearn/&quot;&gt;こちら&lt;/a&gt;．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;2-教師あり学習の概要&quot;&gt;2. 教師あり学習の概要&lt;/h1&gt;
+&lt;h1 id=&quot;2-教師あり学習の概要&quot;&gt;2. &lt;a href=&quot;https://haltaro.github.io/2017/08/26/section2&quot;&gt;教師あり学習の概要&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/8/26/section2&quot;&gt;こちら&lt;/a&gt;で作成中．&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;2.1 導入&lt;/strong&gt;では，入力および出力に関する用語を定義する．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;2.2 変数の種類と用語の解説&lt;/strong&gt;では，変数に関する用語と記号を定義する．&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;3-回帰のための線形手法&quot;&gt;3. 回帰のための線形手法&lt;/h1&gt;
 
@@ -42,7 +45,7 @@
     
       <item>
         <title>作成中）統計的学習の基礎 第2章まとめ</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;第2章の学習メモ．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;の第2章についてメモする．本書のメモ一覧は&lt;a href=&quot;https://haltaro.github.io/2017/08/26/the-elements-of-statistical-learning&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
 
 &lt;h1 id=&quot;2-教師あり学習の概要&quot;&gt;2. 教師あり学習の概要&lt;/h1&gt;
 
