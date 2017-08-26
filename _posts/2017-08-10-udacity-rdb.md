@@ -64,6 +64,14 @@ categories:
 
 <script src="https://gist.github.com/haltaro/92a4506f6b0f3461b217934860490173.js"></script>
 
+* Databaseにおける追加や削除を行った後は，必ず`Connection.commit()`する．
+* PostgreSQLを使って，簡易なForumサイトを作成する．実験環境を確認．
+    * `$ vagrant up`で仮想環境を立ち上げ．
+    * `$ vagrant ssh`で仮想環境にログイン．
+    * `$ cd /vagrant/forum`で当該ディレクトリに移動．
+    * `$ python form.py`でForumサーバを起動．ブラウザで`http://localhost:8000`にアクセス．適当にMessageを投稿してみる．
+    * `Ctrl+C`と`$ python form.py`で再起動すると，先ほど投稿したMessageが消えていることがわかる．以降では，Messageを保存する機能をPostgreSQLで実装する．
+
 # 4. Deeper into SQL
 
 # 5. Tournament Database

@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Aug 2017 17:48:53 -0400</pubDate>
-    <lastBuildDate>Sat, 26 Aug 2017 17:48:53 -0400</lastBuildDate>
+    <pubDate>Sat, 26 Aug 2017 18:13:19 -0400</pubDate>
+    <lastBuildDate>Sat, 26 Aug 2017 18:13:19 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -362,6 +362,19 @@
 &lt;/ul&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/92a4506f6b0f3461b217934860490173.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Databaseにおける追加や削除を行った後は，必ず&lt;code class=&quot;highlighter-rouge&quot;&gt;Connection.commit()&lt;/code&gt;する．&lt;/li&gt;
+  &lt;li&gt;PostgreSQLを使って，簡易なForumサイトを作成する．実験環境を確認．
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant up&lt;/code&gt;で仮想環境を立ち上げ．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant ssh&lt;/code&gt;で仮想環境にログイン．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ cd /vagrant/forum&lt;/code&gt;で当該ディレクトリに移動．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ python form.py&lt;/code&gt;でForumサーバを起動．ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8000&lt;/code&gt;にアクセス．適当にMessageを投稿してみる．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+C&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;$ python form.py&lt;/code&gt;で再起動すると，先ほど投稿したMessageが消えていることがわかる．以降では，Messageを保存する機能をPostgreSQLで実装する．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;4-deeper-into-sql&quot;&gt;4. Deeper into SQL&lt;/h1&gt;
 

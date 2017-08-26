@@ -165,6 +165,19 @@
 
 <script src="https://gist.github.com/haltaro/92a4506f6b0f3461b217934860490173.js"></script>
 
+<ul>
+  <li>Databaseにおける追加や削除を行った後は，必ず<code class="highlighter-rouge">Connection.commit()</code>する．</li>
+  <li>PostgreSQLを使って，簡易なForumサイトを作成する．実験環境を確認．
+    <ul>
+      <li><code class="highlighter-rouge">$ vagrant up</code>で仮想環境を立ち上げ．</li>
+      <li><code class="highlighter-rouge">$ vagrant ssh</code>で仮想環境にログイン．</li>
+      <li><code class="highlighter-rouge">$ cd /vagrant/forum</code>で当該ディレクトリに移動．</li>
+      <li><code class="highlighter-rouge">$ python form.py</code>でForumサーバを起動．ブラウザで<code class="highlighter-rouge">http://localhost:8000</code>にアクセス．適当にMessageを投稿してみる．</li>
+      <li><code class="highlighter-rouge">Ctrl+C</code>と<code class="highlighter-rouge">$ python form.py</code>で再起動すると，先ほど投稿したMessageが消えていることがわかる．以降では，Messageを保存する機能をPostgreSQLで実装する．</li>
+    </ul>
+  </li>
+</ul>
+
 <h1 id="4-deeper-into-sql">4. Deeper into SQL</h1>
 
 <h1 id="5-tournament-database">5. Tournament Database</h1>
