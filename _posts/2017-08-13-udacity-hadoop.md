@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 作成中）Udacity, Intro to Hadoop and MapReduce受講メモ
+title: 作成中）Udacity, Intro to Hadoop and MapReduceまとめ
 updated: 2017-08-12 16:00 
 categories:
  - data science

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 作成中）Udacity, Intro to Relational Databases受講メモ
+title: 作成中）Udacity, Intro to Relational Databasesまとめ
 updated: 2017-08-10 18:00 
 categories:
  - data science
