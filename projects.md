@@ -7,7 +7,7 @@ public: true
 
 # 1. Network engineering
 
-## 1.a [Compareing TCP algorithms](https://haltaro.github.io/comparing-tcp-algorithms) 
+## 1.a [Comparing TCP algorithms](https://haltaro.github.io/comparing-tcp-algorithms) 
 
 [ns-3](https://www.nsnam.org/)で12種類のTCP輻輳制御アルゴリズムをシミュレートし，[matplotlib](https://matplotlib.org/)で視覚化しました([Qiita](http://qiita.com/haltaro/items/d479538345357f08c595), [Github](https://github.com/haltaro/comparing-tcp-algorithms))．
 

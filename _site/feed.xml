@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Sep 2017 10:40:04 -0400</pubDate>
-    <lastBuildDate>Sat, 02 Sep 2017 10:40:04 -0400</lastBuildDate>
+    <pubDate>Wed, 06 Sep 2017 18:51:44 -0400</pubDate>
+    <lastBuildDate>Wed, 06 Sep 2017 18:51:44 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -69,7 +69,7 @@
 
 &lt;h2 id=&quot;24-統計的決定理論&quot;&gt;2.4 統計的決定理論&lt;/h2&gt;
 
-&lt;h2 id=&quot;25-校時元での局所的手法&quot;&gt;2.5 校時元での局所的手法&lt;/h2&gt;
+&lt;h2 id=&quot;25-高次元での局所的手法&quot;&gt;2.5 高次元での局所的手法&lt;/h2&gt;
 
 &lt;h2 id=&quot;26-統計モデル教師あり学習関数近似&quot;&gt;2.6 統計モデル，教師あり学習，関数近似&lt;/h2&gt;
 
@@ -154,7 +154,7 @@
       </item>
     
       <item>
-        <title>作成中）Udacity, Intro to Hadoop and MapReduce受講メモ</title>
+        <title>作成中）Udacity, Intro to Hadoop and MapReduceまとめ</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/DEQNknALf_8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -281,7 +281,7 @@
       </item>
     
       <item>
-        <title>作成中）Udacity, Intro to Relational Databases受講メモ</title>
+        <title>作成中）Udacity, Intro to Relational Databasesまとめ</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Intro to Relational Databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/jyju2P-7hPA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
