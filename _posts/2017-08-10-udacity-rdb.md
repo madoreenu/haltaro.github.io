@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 作成中）Udacity, Intro to Relational Databasesまとめ
-updated: 2017-08-10 18:00 
+title: Udacity, Intro to Relational Databases
+updated: 2017-08-10 18:00
 categories:
  - data science
 ---
 
-[Udacity, Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)の受講メモ．5部構成の無料講座．
+（作成中）[Udacity, Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)の受講メモ．5部構成の無料講座．
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/jyju2P-7hPA?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -35,7 +35,7 @@ categories:
     * `date`：日付型．年，月，日．
     * `time`：時刻型．
     * `timestamp`：`date`および`time`．
-* 基本構文：**select** *columns* **from** *tables* **where** *condition*; 
+* 基本構文：**select** *columns* **from** *tables* **where** *condition*;
 * 出力数に制限を設けるとき：**limit** *count* [**offset** *skip*]
 * 並び替えるとき：**order by** *columns* [**desc**]
 * 結果をまとめるとき：**group by** *columns*
@@ -75,5 +75,3 @@ categories:
 # 4. Deeper into SQL
 
 # 5. Tournament Database
-
-

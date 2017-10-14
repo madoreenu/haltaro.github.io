@@ -6,12 +6,12 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Oct 2017 22:38:17 +0900</pubDate>
-    <lastBuildDate>Sat, 14 Oct 2017 22:38:17 +0900</lastBuildDate>
+    <pubDate>Sat, 14 Oct 2017 22:49:08 +0900</pubDate>
+    <lastBuildDate>Sat, 14 Oct 2017 22:49:08 +0900</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
-        <title>武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略</title>
+        <title>武井由紀子，ユーザ中心ウェブビジネス戦略</title>
         <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/0sBIq3B&quot;&gt;武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略&lt;/a&gt;を読んだ．ウェブビジネスにおけるユーザ理解の重要性とその方法を理解した．&lt;/p&gt;
 
 &lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
@@ -52,8 +52,8 @@
       </item>
     
       <item>
-        <title>作成中）統計的学習の基礎まとめ</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;を読んで，基礎知識を復習する．1，2，3，4，および7章が必読とのことなので，これらを中心にメモを残す．量が多いので，章毎に記事を分ける．&lt;/p&gt;
+        <title>Trevor Hastie，統計的学習の基礎：まとめ</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;を読んで，基礎知識を復習する．1，2，3，4，および7章が必読とのことなので，これらを中心にメモを残す．量が多いので，章毎に記事を分ける．&lt;/p&gt;
 
 &lt;h1 id=&quot;1-序章&quot;&gt;1. 序章&lt;/h1&gt;
 
@@ -84,8 +84,8 @@
       </item>
     
       <item>
-        <title>作成中）統計的学習の基礎 第2章まとめ</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;の第2章についてメモする．本書のメモ一覧は&lt;a href=&quot;https://haltaro.github.io/2017/08/26/the-elements-of-statistical-learning&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
+        <title>Trevor Hastie，統計的学習の基礎：第2章</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;の第2章についてメモする．本書のメモ一覧は&lt;a href=&quot;https://haltaro.github.io/2017/08/26/the-elements-of-statistical-learning&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
 
 &lt;h1 id=&quot;2-教師あり学習の概要&quot;&gt;2. 教師あり学習の概要&lt;/h1&gt;
 
@@ -164,8 +164,8 @@
       </item>
     
       <item>
-        <title>作成中）時系列分析技術まとめ</title>
-        <description>&lt;p&gt;時系列分析技術をまとめる．時系列解析と呼ばれることもあるが，本記事では時系列分析で統一する．時系列分析とは，時間軸に沿って変化している現象を分析すること．計量経済学や制御工学等，多様な学術領域で研究が進められている．&lt;/p&gt;
+        <title>時系列分析技術まとめ</title>
+        <description>&lt;p&gt;（作成中）時系列分析技術をまとめる．時系列解析と呼ばれることもあるが，本記事では時系列分析で統一する．時系列分析とは，時間軸に沿って変化している現象を分析すること．計量経済学や制御工学等，多様な学術領域で研究が進められている．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2017-08-16-time.jpg&quot; alt=&quot;time&quot; /&gt;&lt;/p&gt;
 
@@ -225,8 +225,8 @@
       </item>
     
       <item>
-        <title>作成中）Udacity, Intro to Hadoop and MapReduceまとめ</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．&lt;/p&gt;
+        <title>Udacity, Intro to Hadoop and MapReduce</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/DEQNknALf_8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -352,8 +352,8 @@
       </item>
     
       <item>
-        <title>作成中）Udacity, Intro to Relational Databasesまとめ</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Intro to Relational Databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
+        <title>Udacity, Intro to Relational Databases</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Intro to Relational Databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/jyju2P-7hPA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -453,7 +453,6 @@
 &lt;h1 id=&quot;4-deeper-into-sql&quot;&gt;4. Deeper into SQL&lt;/h1&gt;
 
 &lt;h1 id=&quot;5-tournament-database&quot;&gt;5. Tournament Database&lt;/h1&gt;
-
 </description>
         <pubDate>Thu, 10 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/10/udacity-rdb</link>
@@ -745,8 +744,8 @@ logerror = log(z) - log(s) \tag{1}
       </item>
     
       <item>
-        <title>作成中）Support vector machineの理論と実装</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=75MTQH13HRTSXQWGQARY&quot;&gt;パターン認識と機械学習&lt;/a&gt;でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．&lt;/p&gt;
+        <title>Support vector machineの理論と実装</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=75MTQH13HRTSXQWGQARY&quot;&gt;パターン認識と機械学習&lt;/a&gt;でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．&lt;/p&gt;
 
 &lt;h1 id=&quot;1-理論&quot;&gt;1. 理論&lt;/h1&gt;
 
@@ -754,7 +753,7 @@ logerror = log(z) - log(s) \tag{1}
 
 &lt;h2 id=&quot;1b-最大マージン分類器&quot;&gt;1.b 最大マージン分類器&lt;/h2&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*} 
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
 y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{1}
 \end{align*}&lt;/script&gt;
 

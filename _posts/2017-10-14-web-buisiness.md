@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略
+title: 武井由紀子，ユーザ中心ウェブビジネス戦略
 updated: 2017-10-14 16:00
 categories:
  - marketing
