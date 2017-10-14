@@ -4,11 +4,11 @@ url: "http://haltaro.github.io"    # the protocol and hostname of your site, eg.
 baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
 #timezone: Asia/Chongqing
 description: >
-  外資系企業で働く研究員です．network engineering，algorithmic trading，machine learningに関する技術メモを書きます．
-  
+  network engineering，algorithmic trading，machine learningに関する技術メモを書きます．
+
 
 # Your information
-email: mail.to.haltaro@gmail.com 
+email: mail.to.haltaro@gmail.com
 author: haltaro
 avatar: "//www.gravatar.com/avatar/546804f938d574fc5141fc1431066d29"
 profile: c++とpythonと柴犬が好きです
