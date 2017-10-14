@@ -6,9 +6,50 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Sep 2017 18:51:44 -0400</pubDate>
-    <lastBuildDate>Wed, 06 Sep 2017 18:51:44 -0400</lastBuildDate>
+    <pubDate>Sat, 14 Oct 2017 16:59:15 +0900</pubDate>
+    <lastBuildDate>Sat, 14 Oct 2017 16:59:15 +0900</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/0sBIq3B&quot;&gt;武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略&lt;/a&gt;を読んだ．&lt;/p&gt;
+
+&lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
+
+&lt;p&gt;インターネットはユーザが能動的に情報を取捨選択可能なメディアであるため，ウェブビジネスにおいては，ターゲットユーザを徹底的に理解する必要がある．ユーザ理解のためのツールとして，ユーザ行動パターン検証ツール（アクセスログ解析等）と，ユーザ行動理由検証ツール（ユーザ行動観察調査等）がある．両者の特徴を理解して，使い分けることが重要である．&lt;/p&gt;
+
+&lt;h1 id=&quot;メモ&quot;&gt;メモ&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;p10&lt;/strong&gt;：いかなる製品やサービスも，まずは事業の目的や市場，ターゲット顧客，収益性といった観点から検討が始まる．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p12&lt;/strong&gt;：本書は二部構成．一部は理論編，二部は実践編．二部は主にウェブマスター向けの話なので，一部を中心に読む．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p19&lt;/strong&gt;：ウェブビジネス成功事例の共通点として，下記4点があるが，もっとも重要なのは1である：
+    &lt;ol&gt;
+      &lt;li&gt;サイトの顧客（ユーザ）を徹底的に知っている．&lt;/li&gt;
+      &lt;li&gt;ユーザを知った上でサイト上でのコミュニケーションを設計している．&lt;/li&gt;
+      &lt;li&gt;事前に仮説検証をしている．&lt;/li&gt;
+      &lt;li&gt;事後に仮説検証をしている．&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p25&lt;/strong&gt;：インターネットによりメディアの民主化が起こった．企業から発信される情報の信頼性が低下する一方で，個人から発信される情報の信頼性が増大した．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p32&lt;/strong&gt;：論理武装した消費者に対応するためには，ユーザの期待に応えているか，が最も重要．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p37&lt;/strong&gt;：ユーザ利用時のインターネットの特性として，以下の5つがある：前のめり，斜め読み，新鮮，遠慮不要，比較可能．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p45&lt;/strong&gt;：ユーザ中心設計のプロセス：サイトの目的と目標，ターゲットユーザ，コミュニケーションシナリオ，ユーザ視点の検証作業．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p51&lt;/strong&gt;：ウォーターフォール型ではなく，スパイラル型でサイト設計を行う．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p55&lt;/strong&gt;：ユーザの過去の経験やサイト内外での体験まで想定して，コミュニケーションシナリオを構築する．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p65&lt;/strong&gt;：ウェブサイトによるプロモーションと相性が良いのは，比較に耐えるサービスか，そもそも比較できないサービス．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p81&lt;/strong&gt;：ユーザ行動パターン検証ツールと，ユーザ行動理由検証ツールを使い分ける必要がある．前者は，例えばアクセスログ解析．後者は，例えばユーザ行動観察調査．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p85&lt;/strong&gt;：ユーザの意見ではなく，行動を重視する．往々にして，ユーザの意見は正確でない．&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 14 Oct 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/10/14/web-buisiness</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/14/web-buisiness</guid>
+        
+        
+        <category>marketing</category>
+        
+      </item>
     
       <item>
         <title>作成中）統計的学習の基礎まとめ</title>
@@ -32,9 +73,8 @@
 &lt;h1 id=&quot;4-分類のための線形手法&quot;&gt;4. 分類のための線形手法&lt;/h1&gt;
 
 &lt;h1 id=&quot;7-モデルの評価と選択&quot;&gt;7. モデルの評価と選択&lt;/h1&gt;
-
 </description>
-        <pubDate>Sat, 26 Aug 2017 00:00:00 -0400</pubDate>
+        <pubDate>Sat, 26 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/26/the-elements-of-statistical-learning</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/26/the-elements-of-statistical-learning</guid>
         
@@ -67,7 +107,42 @@
 
 &lt;h2 id=&quot;23-予測のための二つの簡単なアプローチ最小二乗法と最近傍法&quot;&gt;2.3 予測のための二つの簡単なアプローチ：最小二乗法と最近傍法&lt;/h2&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;線形モデル&lt;/strong&gt;は，入力ベクトル&lt;script type=&quot;math/tex&quot;&gt;X^{T}=\left(X_1, X_2, ..., X_p\right)&lt;/script&gt;に対し，出力&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;を&lt;script type=&quot;math/tex&quot;&gt;\hat{Y}=X^{T}\hat{\beta}&lt;/script&gt;で予測するモデルである．&lt;/li&gt;
+  &lt;li&gt;線形モデルにおける訓練データの当てはめには，&lt;strong&gt;最小二乗法&lt;/strong&gt;が用いられる．最小二乗法では，残差二乗和&lt;script type=&quot;math/tex&quot;&gt;\mathrm{RSS}(\beta)=\left(\mathbf{y} - \mathbf{X} \beta \right)^{T}\left(\mathbf{y} - \mathbf{X} \beta \right)&lt;/script&gt;を最小化する&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;を求める．ここで，&lt;script type=&quot;math/tex&quot;&gt;\mathbf{X}&lt;/script&gt;は各行が入力ベクトル&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;である&lt;script type=&quot;math/tex&quot;&gt;N \times p&lt;/script&gt;行列，&lt;script type=&quot;math/tex&quot;&gt;\mathbf{y}&lt;/script&gt;は各行が出力&lt;script type=&quot;math/tex&quot;&gt;y&lt;/script&gt;である&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;次元ベクトルである．&lt;/li&gt;
+  &lt;li&gt;上式を&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;について偏微分して導出される&lt;script type=&quot;math/tex&quot;&gt;\mathbf{X}^{T}\left(\mathbf{y}-\mathbf{X}\beta\right)=0&lt;/script&gt;を&lt;strong&gt;正規方程式&lt;/strong&gt;と呼ぶ．これを解くと，&lt;script type=&quot;math/tex&quot;&gt;\hat{\beta} = \left( \mathbf{X}^{T} \mathbf{X} \right)^{-1} \mathbf{X}^{T} \mathbf{y}&lt;/script&gt;を得る．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;最近傍法&lt;/strong&gt;は，入力&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;に対し，出力&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;を&lt;script type=&quot;math/tex&quot;&gt;\hat{Y}=\frac{1}{k}\sum_{x_{i} \in N_{k}(x)}y_{i}&lt;/script&gt;で予測するモデルである．ここで，&lt;script type=&quot;math/tex&quot;&gt;N_{k}(x)&lt;/script&gt;は訓練データのうち&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;に近い&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;個の点&lt;script type=&quot;math/tex&quot;&gt;x_{i}&lt;/script&gt;によって定義される近傍集合．分類問題に&lt;script type=&quot;math/tex&quot;&gt;k=1&lt;/script&gt;の最近傍法を用いると，訓練データの&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9C%E3%83%AD%E3%83%8E%E3%82%A4%E5%9B%B3&quot;&gt;&lt;strong&gt;ボロノイ分割&lt;/strong&gt;&lt;/a&gt;が得られる．&lt;/li&gt;
+  &lt;li&gt;最近傍法のパラメータ&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;を最小二乗法で求めることはできない．&lt;/li&gt;
+  &lt;li&gt;線形モデルは分散が小さく，バイアスが大きい．一方で最近傍法は，分散が大きく，バイアスが小さい．&lt;/li&gt;
+  &lt;li&gt;線形モデルおよび最近傍法の拡張：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;カーネル平滑化&lt;/strong&gt;：最近傍法では重みが0か1かの離散値だったが，カーネル平滑化では連続値に拡張する．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;局所線形モデル&lt;/strong&gt;：最近傍法では局所領域&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;が定数モデルだったが，局所線形モデルでは線形モデルに拡張する．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;基底展開&lt;/strong&gt;：入力モデルを基底展開することで，線形モデルを拡張する．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;射影追跡法&lt;/strong&gt;や&lt;strong&gt;ニューラルネットワーク&lt;/strong&gt;は，非線形返還と線形モデルを結合したものと考えられる．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&quot;24-統計的決定理論&quot;&gt;2.4 統計的決定理論&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;確率入力ベクトル&lt;script type=&quot;math/tex&quot;&gt;X \in \mathbb{R}^{p}&lt;/script&gt;と確率出力変数&lt;script type=&quot;math/tex&quot;&gt;Y \in \mathbb{R}&lt;/script&gt;が同時確率分布&lt;script type=&quot;math/tex&quot;&gt;\mathrm{Pr}(X,Y)&lt;/script&gt;に従うと仮定する．目的は，入力&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;に対して出力&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;を予測する関数&lt;script type=&quot;math/tex&quot;&gt;f(X)&lt;/script&gt;を見つけること．&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;L\left(Y,f(X)\right)&lt;/script&gt;を&lt;strong&gt;損失関数&lt;/strong&gt;（Loss function）とする．最も頻繁に利用されるのは，&lt;strong&gt;二乗誤差損失&lt;/strong&gt;（Least square loss）&lt;script type=&quot;math/tex&quot;&gt;L\left(Y,f(X)\right)=\left(Y-f(X)\right)^2&lt;/script&gt;．&lt;/li&gt;
+  &lt;li&gt;期待（二乗）予測誤差（expected prediction error）&lt;script type=&quot;math/tex&quot;&gt;\mathrm{EPE}(f)=\mathrm{E}\left(Y-f(X)\right)&lt;/script&gt;を最小化する&lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;は条件付き期待値&lt;script type=&quot;math/tex&quot;&gt;\mathrm{E}(Y\mid X=x)&lt;/script&gt;であり，これは&lt;strong&gt;回帰関数&lt;/strong&gt;とも呼ばれる．&lt;/li&gt;
+  &lt;li&gt;最近傍法は，訓練データを用いて条件付き期待値を直接推定する方法と解釈できる．具体的には，&lt;script type=&quot;math/tex&quot;&gt;\hat{f}(x)=\mathrm{Ave}\left(y_i \mid x_i \in N_k(x) \right)&lt;/script&gt;．ここでは，以下の近似が行われていることに注意すべき：
+    &lt;ul&gt;
+      &lt;li&gt;期待値を標本データの平均で近似している．&lt;/li&gt;
+      &lt;li&gt;点&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;に対する条件付けではなく，それを緩和した近傍&lt;script type=&quot;math/tex&quot;&gt;N_k(x)&lt;/script&gt;で条件付けしている．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;訓練データ数&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;および近傍数&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;を十分大きくすれば，&lt;script type=&quot;math/tex&quot;&gt;\hat{f}(x)&lt;/script&gt;は条件付き期待値に収束する．しかし，次元数&lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt;が大きいとき，十分な数のデータを得ることが困難になるし，収束も遅くなる．&lt;/li&gt;
+  &lt;li&gt;一方，線形モデル&lt;script type=&quot;math/tex&quot;&gt;f(x)=x^{T}\beta&lt;/script&gt;のとき，解&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;は解析的に求められる：&lt;script type=&quot;math/tex&quot;&gt;\beta=[\mathrm{E}(XX^{T})]^{-1}\mathrm{E}(XY)&lt;/script&gt;．&lt;/li&gt;
+  &lt;li&gt;最近傍法も最小二乗法も，条件付き期待値の近似である．最近合法では&lt;script type=&quot;math/tex&quot;&gt;f(x)&lt;/script&gt;を局所的な定数関数で近似し，最小二乗法では&lt;script type=&quot;math/tex&quot;&gt;f(x)&lt;/script&gt;を大域的な線形関数で近似している．&lt;/li&gt;
+  &lt;li&gt;ちなみに，&lt;script type=&quot;math/tex&quot;&gt;L_2&lt;/script&gt;損失関数を&lt;script type=&quot;math/tex&quot;&gt;L_1&lt;/script&gt;損失関数に変更すると，解は条件付き中央値&lt;script type=&quot;math/tex&quot;&gt;\hat{f}(x)=\mathrm{median}(Y \mid X=x)&lt;/script&gt;となる．&lt;/li&gt;
+  &lt;li&gt;出力がカテゴリ型変数&lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt;の場合，損失関数は&lt;script type=&quot;math/tex&quot;&gt;K \times K&lt;/script&gt;行列&lt;script type=&quot;math/tex&quot;&gt;\mathbf{L}&lt;/script&gt;となる．損失行列&lt;script type=&quot;math/tex&quot;&gt;\mathbf{L}&lt;/script&gt;の要素&lt;script type=&quot;math/tex&quot;&gt;(k,l)&lt;/script&gt;は，クラス&lt;script type=&quot;math/tex&quot;&gt;\mathcal{G}_k&lt;/script&gt;を&lt;script type=&quot;math/tex&quot;&gt;\mathcal{G}_l&lt;/script&gt;に分類した際のペナルティを表す．損失行列&lt;script type=&quot;math/tex&quot;&gt;\mathbf{L}&lt;/script&gt;が&lt;script type=&quot;math/tex&quot;&gt;\{0, 1\}&lt;/script&gt;のとき，&lt;script type=&quot;math/tex&quot;&gt;0/1&lt;/script&gt;損失関数と呼ばれる．&lt;/li&gt;
+  &lt;li&gt;期待予測誤差は&lt;script type=&quot;math/tex&quot;&gt;\mathrm{EPE}&lt;/script&gt;&lt;script type=&quot;math/tex&quot;&gt;=\mathrm{E}\left[L\left(G, \hat{G}\right)\right]&lt;/script&gt;&lt;script type=&quot;math/tex&quot;&gt;=\mathrm{E}_{X}\sum_{k=1}^{K}L\left(\mathcal{G}_k, \hat{G}(X)\right)\mathrm{Pr}(\mathcal{G}_k\mid X)&lt;/script&gt;となるので，&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;25-高次元での局所的手法&quot;&gt;2.5 高次元での局所的手法&lt;/h2&gt;
 
@@ -79,7 +154,7 @@
 
 &lt;h2 id=&quot;29-モデルの選択とバイアスと分散のトレードオフ&quot;&gt;2.9 モデルの選択と，バイアスと分散のトレードオフ&lt;/h2&gt;
 </description>
-        <pubDate>Sat, 26 Aug 2017 00:00:00 -0400</pubDate>
+        <pubDate>Sat, 26 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/26/section2</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/26/section2</guid>
         
@@ -90,13 +165,9 @@
     
       <item>
         <title>作成中）時系列分析技術まとめ</title>
-        <description>&lt;p&gt;時系列分析（解析）技術をまとめる．&lt;/p&gt;
+        <description>&lt;p&gt;時系列分析技術をまとめる．時系列解析と呼ばれることもあるが，本記事では時系列分析で統一する．時系列分析とは，時間軸に沿って変化している現象を分析すること．計量経済学や制御工学等，多様な学術領域で研究が進められている．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2017-08-16-time.jpg&quot; alt=&quot;time&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;時系列分析とは&quot;&gt;時系列分析とは&lt;/h1&gt;
-
-&lt;p&gt;時系列解析と呼ばれることもあるが，本記事では時系列分析で統一する．時系列分析とは，時間軸に沿って変化している現象を分析すること．&lt;/p&gt;
 
 &lt;h1 id=&quot;1-計量時系列分析&quot;&gt;1. 計量時系列分析&lt;/h1&gt;
 
@@ -144,7 +215,7 @@
   &lt;li&gt;&lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0031320305001305&quot;&gt;T. Warren Liao, Clustering of time series data—a survey, Pattern Recognition, Volume 38, Issue 11, 2005, Pages 1857-1874, ISSN 0031-3203&lt;/a&gt;：時系列データのクラスタリングについて．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 16 Aug 2017 00:00:00 -0400</pubDate>
+        <pubDate>Wed, 16 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/16/time-series</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/16/time-series</guid>
         
@@ -271,7 +342,7 @@
 
 &lt;h1 id=&quot;6-project-prep&quot;&gt;6. Project Prep&lt;/h1&gt;
 </description>
-        <pubDate>Sun, 13 Aug 2017 00:00:00 -0400</pubDate>
+        <pubDate>Sun, 13 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/13/udacity-hadoop</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/13/udacity-hadoop</guid>
         
@@ -384,7 +455,7 @@
 &lt;h1 id=&quot;5-tournament-database&quot;&gt;5. Tournament Database&lt;/h1&gt;
 
 </description>
-        <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 10 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/10/udacity-rdb</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/10/udacity-rdb</guid>
         
@@ -549,7 +620,7 @@
   &lt;li&gt;&lt;a href=&quot;https://techcrunch.com/advertising-tech/&quot;&gt;TechCrunch，Advertising Tech&lt;/a&gt;：アドテク関連の最新ニュース．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Tue, 08 Aug 2017 00:00:00 -0400</pubDate>
+        <pubDate>Tue, 08 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/08/introduction-to-ad-tech</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/08/introduction-to-ad-tech</guid>
         
@@ -664,7 +735,7 @@ logerror = log(z) - log(s) \tag{1}
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 07 Aug 2017 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 07 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/07/zillow-conpetition</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/07/zillow-conpetition</guid>
         
@@ -712,7 +783,7 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
   &lt;li&gt;&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;: Support Vector Machines&lt;/a&gt;：便利すぎるSVMモジュール．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate>
+        <pubDate>Fri, 04 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/04/support-vector-machine</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/04/support-vector-machine</guid>
         
@@ -767,93 +838,12 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
 
 &lt;p&gt;指示通り設定すれば，問題なく動作した．Youtube動画も埋め込めたので満足．&lt;/p&gt;
 </description>
-        <pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate>
+        <pubDate>Fri, 04 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/04/set-google-analytics</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/04/set-google-analytics</guid>
         
         
         <category>jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>機械学習のプロジェクト計画</title>
-        <description>&lt;p&gt;くだらないものばかりだけど，今後やりたいことをメモしておく．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/dlnd.png&quot; alt=&quot;project&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;1-画像処理系&quot;&gt;1. 画像処理系&lt;/h1&gt;
-
-&lt;h2 id=&quot;1a-君の名はの三葉の中身を顔画像から分類&quot;&gt;1.a 君の名は。の三葉の中身を顔画像から分類&lt;/h2&gt;
-
-&lt;p&gt;組紐の有無とか眉毛の角度とかを学習してくれたら面白い．アニメ画像の顔検出は&lt;a href=&quot;http://opencv.org/&quot;&gt;OpenCV&lt;/a&gt;で自動化できるので，データの準備はそこまで大変じゃない．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ultraist.hatenablog.com/entry/20110718/1310965532&quot;&gt;OpenCVによるアニメ顔検出ならlbpcascade_animeface.xml&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1b-スラムダンクの赤木と高砂を顔画像から分類&quot;&gt;1.b スラムダンクの赤木と高砂を顔画像から分類&lt;/h2&gt;
-
-&lt;p&gt;「桜木がAIなら湘北が勝ってた」あるいは「AIでも見間違うから桜木のミスはしょうがない」と，結果がどちらに転んでも面白い．課題は，画像データの準備と，ラベル数の偏り．&lt;/p&gt;
-
-&lt;h2 id=&quot;1c-顔画像から実子判定&quot;&gt;1.c 顔画像から実子判定&lt;/h2&gt;
-
-&lt;p&gt;数年前，DNA鑑定が大流行したので，ニーズはありそう．実子であれば，両親の面影が顔に顕れるはずだし，この類のタスクはdeep learningの得意技の気がする．&lt;/p&gt;
-
-&lt;p&gt;下記のキーワードで，盛んに研究が行われている．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kinship identification&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kinship verification&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kinship recognition&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;また，非商用の研究用途に限れば，データセットは入手可能である．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www1.ece.neu.edu/~yunfu/research/Kinface/Kinface.htm&quot;&gt;UB KinFace Database&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1d-cycleganで柴犬画像生成&quot;&gt;1.d CycleGANで柴犬画像生成&lt;/h2&gt;
-
-&lt;p&gt;UCバークレー発の&lt;a href=&quot;https://github.com/junyanz/CycleGAN&quot;&gt;CycleGAN&lt;/a&gt;を柴犬に適用する．以下の記事がわかりやすかった．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://qiita.com/TSY/items/18eb8e9b6342d368c445&quot;&gt;画像変換手法CycleGANでパンダ生成モデルを作った話&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;2-言語処理系&quot;&gt;2. 言語処理系&lt;/h1&gt;
-
-&lt;h2 id=&quot;2a-普通自動車免許の正誤問題&quot;&gt;2.a 普通自動車免許の正誤問題&lt;/h2&gt;
-
-&lt;p&gt;なんとなく，学習しやすそうと感じたため．いかに著作権上の問題を回避しつつデータを集めるかが問題．&lt;/p&gt;
-
-&lt;h1 id=&quot;3-強化学習系&quot;&gt;3. 強化学習系&lt;/h1&gt;
-&lt;h2 id=&quot;3a-カイジの限定ジャンケンを強化学習&quot;&gt;3.a カイジの限定ジャンケンを強化学習&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E8%B3%AD%E5%8D%9A%E9%BB%99%E7%A4%BA%E9%8C%B2%E3%82%AB%E3%82%A4%E3%82%B8#.E9.99.90.E5.AE.9A.E3.82.B8.E3.83.A3.E3.83.B3.E3.82.B1.E3.83.B3&quot;&gt;限定ジャンケン&lt;/a&gt;は，数学的にも面白い問題&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．カードや星の売買を考慮すると問題が複雑になりすぎる&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;ので，「全体の手数の総数を見て，次の自分の手を決定する問題」程度に単純化してモデル化する．&lt;/p&gt;
-
-&lt;h2 id=&quot;3b-確定拠出年金のスイッチング最適化&quot;&gt;3.b 確定拠出年金のスイッチング最適化&lt;/h2&gt;
-
-&lt;p&gt;確定拠出年金で，どの商品にどの程度の割合で投資すれば，最大の利益を得られるか学習する．いろいろ調べたが，そもそものデータ収集が難しそう．&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;1992年の東大入試では，じゃんけんグリコに関する問題が出されたらしい（&lt;a href=&quot;http://mathtrain.jp/grk&quot;&gt;じゃんけんグリコの最適戦略と東大の問題&lt;/a&gt;）．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;限定ジャンケンの本質はそこな気がするので，残念だけど．&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 03 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2017/08/03/future-work-in-deep-learning</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/03/future-work-in-deep-learning</guid>
-        
-        
-        <category>machine learning</category>
         
       </item>
     

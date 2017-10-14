@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 作成中）統計的学習の基礎まとめ
-updated: 2017-08-26 17:30 
+updated: 2017-08-26 17:30
 categories:
  - machine learning
 ---
@@ -22,4 +22,3 @@ categories:
 # 4. 分類のための線形手法
 
 # 7. モデルの評価と選択
-
