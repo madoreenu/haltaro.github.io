@@ -6,13 +6,13 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Oct 2017 17:04:05 +0900</pubDate>
-    <lastBuildDate>Sat, 14 Oct 2017 17:04:05 +0900</lastBuildDate>
+    <pubDate>Sat, 14 Oct 2017 17:16:30 +0900</pubDate>
+    <lastBuildDate>Sat, 14 Oct 2017 17:16:30 +0900</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
         <title>武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/0sBIq3B&quot;&gt;武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略&lt;/a&gt;を読んだ．ウェブビジネスにおけるユーザ理解の重要性とその方法を学んだ．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/0sBIq3B&quot;&gt;武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略&lt;/a&gt;を読んだ．ウェブビジネスにおけるユーザ理解の重要性とその方法が述べられていた．&lt;/p&gt;
 
 &lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
 
@@ -730,7 +730,7 @@ logerror = log(z) - log(s) \tag{1}
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;ここで検討過程を公開しようと思っていたが，どうやらルール違反っぽい．一旦Kernelで公開したものを，日本語訳して自分のサイトで公開するのはOKか？&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;ここで検討過程を公開しようと思っていたが，どうやらルール違反っぽい．一旦Kernelで公開したものを，日本語訳して自分のサイトで公開するのはOKか？ &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
