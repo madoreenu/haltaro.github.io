@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 武井由紀子，ユーザ中心ウェブビジネス戦略
-updated: 2017-10-14 16:00
+updated: 2017-10-15 16:00
 categories:
  - marketing
 ---
