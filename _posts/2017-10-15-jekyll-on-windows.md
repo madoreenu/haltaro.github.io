@@ -4,10 +4,10 @@ title: Windows7でJekyll+GitHub Pages
 updated: 2017-10-15 17:00
 categories:
  - jekyll
-outline: 船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）にJekyll+GitHub Pages環境を構築した．
+outline: （作成中）船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）にJekyll+GitHub Pages環境を構築した．
 ---
 
-船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）に[Jekyll](https://jekyllrb-ja.github.io/)+[GitHub Pages](https://pages.github.com/)環境を構築した．
+（作成中）船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）に[Jekyll](https://jekyllrb-ja.github.io/)+[GitHub Pages](https://pages.github.com/)環境を構築した．
 
 ![env]({{site.baseurl}}/images/2017-10-15-env.png)
 
