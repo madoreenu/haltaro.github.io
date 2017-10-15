@@ -13,8 +13,6 @@ outline: 船便でアメリカから送ったため，2ヶ月ほどLinuxが使�
 
 # 参考
 
-以下を参考にさせて頂いた．
-
 * [OPC Diary，私家版Git For Windowsのインストール手順](http://opcdiary.net/?page_id=27065)：WindowsにおけるGit環境構築．
 * [Git for Windows](https://git-for-windows.github.io/)：Windows用Git環境．
 * [posh-git](https://github.com/dahlbyk/posh-git)：PowerShellでgitコマンド補完を可能にするツール．
