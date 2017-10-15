@@ -9,6 +9,6 @@ public: true
 
 ![river]({{site.baseurl}}/images/river.jpg)
 
-上の写真は，アメリカ駐在時によく散歩したハドソン川です．
+写真は，アメリカ駐在時によく散歩したハドソン川です．
 
 なお，本ウェブサイトは，[laobubu](https://github.com/laobubu)さんの[EasyBook](http://jekyllthemes.org/themes/easybook/)をベースにカスタマイズしたものです．

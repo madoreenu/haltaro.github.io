@@ -92,27 +92,127 @@
 <p>以下を参考にさせて頂いた．</p>
 
 <ul>
-  <li><a href="http://opcdiary.net/?page_id=27065">OPC Diary，私家版Git For Windowsのインストール手順</a>：WindowsにおけるGit環境構築について．</li>
-  <li><a href="https://www.kaoriya.net/blog/2016/02/07/">KaoriYa，Windowsでjekyll 3.0（github-pages）を使う</a>：WindowsにおけるJekyll環境構築方法について．</li>
-  <li><a href="https://rubyinstaller.org/downloads/">RubyInstaller</a>：RubyおよびDevKitのインストールについて．</li>
-  <li>[]</li>
+  <li><a href="http://opcdiary.net/?page_id=27065">OPC Diary，私家版Git For Windowsのインストール手順</a>：WindowsにおけるGit環境構築．</li>
+  <li><a href="https://git-for-windows.github.io/">Git for Windows</a>：Windows用Git環境．</li>
+  <li><a href="https://github.com/dahlbyk/posh-git">posh-git</a>：PowerShellでgitコマンド補完を可能にするツール．</li>
+  <li><a href="https://www.kaoriya.net/blog/2016/02/07/">KaoriYa，Windowsでjekyll 3.0（github-pages）を使う</a>：WindowsにおけるJekyll環境構築方法．</li>
+  <li><a href="https://rubyinstaller.org/downloads/">RubyInstaller</a>：RubyおよびDevKitのインストール．</li>
+  <li><a href="https://atom.io/">ATOM</a>：GitHubが開発したテキストエディタ．</li>
 </ul>
 
 <h1 id="手順">手順</h1>
 
-<h2 id="1-git-for-windowsインストール">1. Git for Windowsインストール</h2>
+<h2 id="1-gitのインストール">1. Gitのインストール</h2>
 
-<h2 id="2-rubyインストール">2. Rubyインストール</h2>
+<p><a href="http://opcdiary.net/?page_id=27065">OPC Diary，私家版Git For Windowsのインストール手順</a>を参考にさせて頂いた．まず，<a href="https://git-for-windows.github.io/">Git for Windows</a>をダウンロードした．インストーラを起動し，基本的にデフォルト設定を選択した．ただし，改行設定（<code class="highlighter-rouge">Configuring the line ending conversions</code>）では，上記サイトのおすすめに従い，<code class="highlighter-rouge">Checkout as-is, commit as-is</code>を選択した．</p>
 
-<h2 id="3-devkitインストール">3. DevKitインストール</h2>
+<h2 id="2-gitのグローバル設定">2. Gitのグローバル設定</h2>
 
-<h2 id="4-atomインストール">4. ATOMインストール</h2>
-<p>マークダウンエディタが欲しかったので，</p>
+<p><code class="highlighter-rouge">Git bash</code>を起動し，上記サイトを参考にグローバル設定した．</p>
 
-<h2 id="5-トップページに記事全文出ちゃう問題">5. トップページに記事全文出ちゃう問題</h2>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git config --global user.name <span class="s2">"haltaro"</span>
+<span class="gp">$ </span>git config --global user.email <span class="s2">"***@gmail.com"</span>
+<span class="gp">$ </span>git config --global core quotepath <span class="nb">false</span>
+</code></pre>
+</div>
+
+<h2 id="3-gitのsshキー作成">3. GitのSSHキー作成</h2>
+
+<p>引き続き上記サイトを参考に，SSHキーを作成した．</p>
+
+<ol>
+  <li>スタートメニューから<code class="highlighter-rouge">Git GUI</code>を起動．</li>
+  <li><code class="highlighter-rouge">Help &gt; Show SSH Key</code>を選択．</li>
+  <li><code class="highlighter-rouge">Generate Key</code>をクリックし，適当にpassphraseを入力．</li>
+  <li>公開鍵をコピーして，<code class="highlighter-rouge">GitHub</code>のアカウントに登録．</li>
+</ol>
+
+<h2 id="4-posh-gitのインストール">4. posh-gitのインストール</h2>
+
+<p><a href="https://github.com/dahlbyk/posh-git">posh-git</a>を使うと，PowerShellでgitコマンド補完してくれて便利．インストールする． <a href="http://opcdiary.net/?page_id=27065">OPC Diary，私家版Git For Windowsのインストール手順</a>のPsGetを使った方法だと上手くいかなかったので，<a href="https://github.com/dahlbyk/posh-git">公式GitHub</a>から直接クローンした．以下はその詳細である．</p>
+
+<p>まずは，PowerShellで以下のコマンドを打ち，<a href="https://github.com/dahlbyk/posh-git">公式GitHub</a>からクローンする．ディレクトリはどこでも良い．</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">&gt; </span>git clone git@github.dahlbyk/posh-git.git
+</code></pre>
+</div>
+
+<p>PowerShellのセキュリティ設定を変更した．</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt; Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
+</code></pre>
+</div>
+
+<p>上記ディレクトリに移動して，<code class="highlighter-rouge">install.ps1</code>を実行した．</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt; .\install.ps1
+</code></pre>
+</div>
+
+<h2 id="5-rubyのインストール">5. Rubyのインストール</h2>
+
+<p><a href="https://rubyinstaller.org/downloads/">RubyInstaller</a>から2017年10月15日現在の最新版である<code class="highlighter-rouge">Ruby 2.4.2-2(x64)</code>をダウンロードした．</p>
+
+<h2 id="6-devkitのインストール">6. DevKitのインストール</h2>
+
+<p>Rubyのパッケージ管理システム<code class="highlighter-rouge">RubyGems</code>のインストールに必要な<code class="highlighter-rouge">DevKit</code>をインストールした．以下はその詳細である．</p>
+
+<p>まず，<a href="https://rubyinstaller.org/downloads/">RubyInstaller</a>から，<code class="highlighter-rouge">DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe</code>をダウンロードした．以下では<code class="highlighter-rouge">C:\DevKit</code>に解凍したと想定する．</p>
+
+<p>次に，PowerShellから以下のコマンドを実行した．</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt; cd C:\DevKit
+&gt; ruby dk.rb init
+&gt; ruby dk.rb install
+</code></pre>
+</div>
+
+<h2 id="7-関連パッケージのインストール">7. 関連パッケージのインストール</h2>
+
+<p><code class="highlighter-rouge">RubyGems</code>を使い，<code class="highlighter-rouge">github-pages</code>と<code class="highlighter-rouge">wdm</code>をインストールした．</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">&gt; </span>gem install github-pages wdm
+</code></pre>
+</div>
+
+<h2 id="8-atomインストール">8. ATOMインストール</h2>
+<p>マークダウンエディタが欲しかったので，<a href="https://atom.io/">ATOM</a>をインストールした．<a href="https://atom.io/">公式ページ</a>からインストーラをダウンロードすれば簡単にできた．</p>
+
+<h2 id="9-まとめ">9. まとめ</h2>
+
+<p>下図のような環境が完成した．</p>
+
+<p><img src="/images/2017-10-15-env.png" alt="env" /></p>
+
+<p>PowerShellで<code class="highlighter-rouge">jekyll serve</code>して，ブラウザで<code class="highlighter-rouge">http://127.0.0.1:4000</code>から出来栄えを確認しながら，ATOMでマークダウンを編集できる．</p>
+
+<h1 id="easybook特有の問題">EasyBook特有の問題</h1>
+
+<p>本サイトは，<a href="https://github.com/laobubu">laobubu</a>さんの<a href="http://jekyllthemes.org/themes/easybook/">EasyBook</a>をベースにカスタマイズしたものである．Windows上でJekyllを実行すると，Linuxとは違った問題が発生した．</p>
+
+<h2 id="サマリに記事全文表示">サマリに記事全文表示</h2>
+
+<p><img src="/images/2017-10-15-outline.png" alt="outline" /></p>
+
+<p>これまでは，各記事の先頭行を自動抽出し，サマリとして表示していた．しかし，本環境で作成した<a href="https://haltaro.github.io/2017/10/14/web-buisiness">武井由紀子，ユーザ中心ウェブビジネス戦略</a>に関しては，なぜか記事全文が表示された．</p>
+
+<p>いろいろと調べてみたが，原因がよくわからなかった<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．そこで苦肉の策として，<code class="highlighter-rouge">post.outline</code>という変数を新たに追加し，各記事でサマリを直接編集できるようにした．</p>
+
+<script src="https://gist.github.com/haltaro/4e89092ad36d14c6f5a50639452e0137.js"></script>
+
+<p><a href="https://haltaro.github.io/2017/10/14/web-buisiness">武井由紀子，ユーザ中心ウェブビジネス戦略</a>のフロントマターでは，次のようにoutlineを指定した．</p>
+
+<script src="https://gist.github.com/haltaro/8254c80f168f8a06bde0591551a8d49b.js"></script>
 
 <h1 id="感想">感想</h1>
-<p>html力が足りないため，根本的な問題解決はできなかった．あと，ATOM便利．Linuxが届いたらインストールしよう．</p>
+<p>ATOMは本当に便利．Linuxが届いたらインストールしようと思う．サマリ問題については，根本的な問題を解決できなかったのが残念．</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>ちゃんとソースコード読めばわかると思うが，時間切れ．&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
   </article>
   
