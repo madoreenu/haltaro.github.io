@@ -1,7 +1,7 @@
 ---
 layout: post
-title: JekyllとGitHub Pagesでウェブサイトを立ち上げた
-updated: 2017-08-06 10:00 
+title: JekyllとGitHub Pagesでウェブサイト自作
+updated: 2017-08-06 10:00
 categories:
  - jekyll
 ---
@@ -130,4 +130,3 @@ $ git push origin master
 # 感想
 
 htmlとかcssとか全然わからんが，なんとか形になった．次回は，[Google Analyticsでトラッキング機能を実装](https://haltaro.github.io/2017/08/04/set-google-analytics)する．
-
