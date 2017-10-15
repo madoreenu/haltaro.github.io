@@ -6,9 +6,26 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Oct 2017 21:58:45 +0900</pubDate>
-    <lastBuildDate>Sun, 15 Oct 2017 21:58:45 +0900</lastBuildDate>
+    <pubDate>Sun, 15 Oct 2017 22:10:40 +0900</pubDate>
+    <lastBuildDate>Sun, 15 Oct 2017 22:10:40 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>コトラー，アームストロング，恩藏のマーケティング原理</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;http://amzn.asia/eGcRMag&quot;&gt;コトラー，アームストロング，恩藏のマーケティング原理&lt;/a&gt;を読んだ．&lt;/p&gt;
+
+&lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
+
+&lt;h1 id=&quot;メモ&quot;&gt;メモ&lt;/h1&gt;
+</description>
+        <pubDate>Sun, 15 Oct 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/10/15/marketing</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/15/marketing</guid>
+        
+        
+        <category>marketing</category>
+        
+      </item>
     
       <item>
         <title>Windows7でJekyll+GitHub Pages</title>
@@ -17,8 +34,6 @@
 &lt;p&gt;&lt;img src=&quot;/images/2017-10-15-env.png&quot; alt=&quot;env&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;p&gt;以下を参考にさせて頂いた．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;：WindowsにおけるGit環境構築．&lt;/li&gt;
@@ -882,54 +897,6 @@ logerror = log(z) - log(s) \tag{1}
         
         
         <category>x-tech</category>
-        
-      </item>
-    
-      <item>
-        <title>Support vector machineの理論と実装</title>
-        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=75MTQH13HRTSXQWGQARY&quot;&gt;パターン認識と機械学習&lt;/a&gt;でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．&lt;/p&gt;
-
-&lt;h1 id=&quot;1-理論&quot;&gt;1. 理論&lt;/h1&gt;
-
-&lt;h2 id=&quot;1a-コンセプト&quot;&gt;1.a コンセプト&lt;/h2&gt;
-
-&lt;h2 id=&quot;1b-最大マージン分類器&quot;&gt;1.b 最大マージン分類器&lt;/h2&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
-y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{1}
-\end{align*}&lt;/script&gt;
-
-&lt;h2 id=&quot;1c-ラグランジュ乗数法&quot;&gt;1.c ラグランジュ乗数法&lt;/h2&gt;
-
-&lt;h2 id=&quot;1d-カーネルトリック&quot;&gt;1.d カーネルトリック&lt;/h2&gt;
-
-&lt;h1 id=&quot;2-実装&quot;&gt;2. 実装&lt;/h1&gt;
-
-&lt;p&gt;学習目的であれば，ソルバで二次計画法を解いても良さそう．実務目的であれば，無難にライブラリを使ったほうが良さそう．&lt;/p&gt;
-
-&lt;h2 id=&quot;2a-二次計画法ソルバ&quot;&gt;2.a 二次計画法ソルバ&lt;/h2&gt;
-
-&lt;p&gt;Pythonの二次計画法ソルバとしては，&lt;a href=&quot;http://cvxopt.org/&quot;&gt;CVXOPT&lt;/a&gt;が人気．実装するとしたら，以下のようになる．&lt;/p&gt;
-
-&lt;h2 id=&quot;2b-svmライブラリ&quot;&gt;2.b SVMライブラリ&lt;/h2&gt;
-
-&lt;p&gt;SVMライブラリとしては，&lt;a href=&quot;http://scikit-learn.org/stable/index.html&quot;&gt;scikit-learn&lt;/a&gt;の&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;&lt;/a&gt;モジュールが人気．上記と同じ機能を実装するとしたら，以下のようになる．&lt;/p&gt;
-
-&lt;h1 id=&quot;3-実験&quot;&gt;3. 実験&lt;/h1&gt;
-
-&lt;h1 id=&quot;参考文献&quot;&gt;参考文献&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_lpo_sbs_14_img_2?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=2J0S7A4J37ASEZ0JMGQW&quot;&gt;C.M.ビショップ，パターン認識と機械学習 下&lt;/a&gt;：SVMが登場するのは下巻．ただし，ラグランジュ乗数法の詳細は上巻の付録にある．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;: Support Vector Machines&lt;/a&gt;：便利すぎるSVMモジュール．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 04 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/04/support-vector-machine</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/04/support-vector-machine</guid>
-        
-        
-        <category>machine learning</category>
         
       </item>
     
