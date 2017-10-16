@@ -24,7 +24,9 @@ outline: 船便でアメリカから送ったため，2ヶ月ほどLinuxが使�
 
 ## 1. Gitのインストール
 
- [OPC Diary，私家版Git For Windowsのインストール手順](http://opcdiary.net/?page_id=27065)を参考にさせて頂いた．まず，[Git for Windows](https://git-for-windows.github.io/)をダウンロードした．インストーラを起動し，基本的にデフォルト設定を選択した．ただし，改行設定（`Configuring the line ending conversions`）では，上記サイトのおすすめに従い，`Checkout as-is, commit as-is`を選択した．
+ [OPC Diary，私家版Git For Windowsのインストール手順](http://opcdiary.net/?page_id=27065)を参考にした．
+ 1. [Git for Windows](https://git-for-windows.github.io/)をダウンロード．
+ 2. インストーラを起動し，基本的にデフォルト設定を選択．ただし，改行設定（`Configuring the line ending conversions`）では，上記サイトのおすすめに従い，`Checkout as-is, commit as-is`を選択．
 
 ## 2. Gitのグローバル設定
 
@@ -47,7 +49,7 @@ $ git config --global core quotepath false
 
 ## 4. posh-gitのインストール
 
-[posh-git](https://github.com/dahlbyk/posh-git)を使うと，PowerShellでgitコマンド補完してくれて便利．インストールする． [OPC Diary，私家版Git For Windowsのインストール手順](http://opcdiary.net/?page_id=27065)のPsGetを使った方法だと上手くいかなかったので，[公式GitHub](https://github.com/dahlbyk/posh-git)から直接クローンした．以下はその詳細である．
+[posh-git](https://github.com/dahlbyk/posh-git)を使うと，PowerShellでgitコマンド補完してくれて便利なので，インストールした． [OPC Diary，私家版Git For Windowsのインストール手順](http://opcdiary.net/?page_id=27065)のPsGetを使った方法だと上手くいかなかったので，[公式GitHub](https://github.com/dahlbyk/posh-git)から直接クローンした．以下はその詳細である．
 
 まずは，PowerShellで以下のコマンドを打ち，[公式GitHub](https://github.com/dahlbyk/posh-git)からクローンする．ディレクトリはどこでも良い．
 
@@ -93,7 +95,7 @@ Rubyのパッケージ管理システム`RubyGems`のインストールに必要
 > gem install github-pages wdm
 ```
 
-## 8. ATOMインストール
+## 8. ATOMのインストール
 マークダウンエディタが欲しかったので，[ATOM](https://atom.io/)をインストールした．[公式ページ](https://atom.io/)からインストーラをダウンロードすれば簡単にできた．
 
 ## 9. まとめ

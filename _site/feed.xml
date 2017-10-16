@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Oct 2017 22:10:40 +0900</pubDate>
-    <lastBuildDate>Sun, 15 Oct 2017 22:10:40 +0900</lastBuildDate>
+    <pubDate>Mon, 16 Oct 2017 14:36:16 +0900</pubDate>
+    <lastBuildDate>Mon, 16 Oct 2017 14:36:16 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -48,7 +48,11 @@
 
 &lt;h2 id=&quot;1-gitのインストール&quot;&gt;1. Gitのインストール&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;を参考にさせて頂いた．まず，&lt;a href=&quot;https://git-for-windows.github.io/&quot;&gt;Git for Windows&lt;/a&gt;をダウンロードした．インストーラを起動し，基本的にデフォルト設定を選択した．ただし，改行設定（&lt;code class=&quot;highlighter-rouge&quot;&gt;Configuring the line ending conversions&lt;/code&gt;）では，上記サイトのおすすめに従い，&lt;code class=&quot;highlighter-rouge&quot;&gt;Checkout as-is, commit as-is&lt;/code&gt;を選択した．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;を参考にした．&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-for-windows.github.io/&quot;&gt;Git for Windows&lt;/a&gt;をダウンロード．&lt;/li&gt;
+  &lt;li&gt;インストーラを起動し，基本的にデフォルト設定を選択．ただし，改行設定（&lt;code class=&quot;highlighter-rouge&quot;&gt;Configuring the line ending conversions&lt;/code&gt;）では，上記サイトのおすすめに従い，&lt;code class=&quot;highlighter-rouge&quot;&gt;Checkout as-is, commit as-is&lt;/code&gt;を選択．&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&quot;2-gitのグローバル設定&quot;&gt;2. Gitのグローバル設定&lt;/h2&gt;
 
@@ -73,7 +77,7 @@
 
 &lt;h2 id=&quot;4-posh-gitのインストール&quot;&gt;4. posh-gitのインストール&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;posh-git&lt;/a&gt;を使うと，PowerShellでgitコマンド補完してくれて便利．インストールする． &lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;のPsGetを使った方法だと上手くいかなかったので，&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;公式GitHub&lt;/a&gt;から直接クローンした．以下はその詳細である．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;posh-git&lt;/a&gt;を使うと，PowerShellでgitコマンド補完してくれて便利なので，インストールした． &lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;のPsGetを使った方法だと上手くいかなかったので，&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;公式GitHub&lt;/a&gt;から直接クローンした．以下はその詳細である．&lt;/p&gt;
 
 &lt;p&gt;まずは，PowerShellで以下のコマンドを打ち，&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;公式GitHub&lt;/a&gt;からクローンする．ディレクトリはどこでも良い．&lt;/p&gt;
 
@@ -119,7 +123,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;8-atomインストール&quot;&gt;8. ATOMインストール&lt;/h2&gt;
+&lt;h2 id=&quot;8-atomのインストール&quot;&gt;8. ATOMのインストール&lt;/h2&gt;
 &lt;p&gt;マークダウンエディタが欲しかったので，&lt;a href=&quot;https://atom.io/&quot;&gt;ATOM&lt;/a&gt;をインストールした．&lt;a href=&quot;https://atom.io/&quot;&gt;公式ページ&lt;/a&gt;からインストーラをダウンロードすれば簡単にできた．&lt;/p&gt;
 
 &lt;h2 id=&quot;9-まとめ&quot;&gt;9. まとめ&lt;/h2&gt;
