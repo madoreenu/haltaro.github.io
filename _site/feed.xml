@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Oct 2017 14:36:16 +0900</pubDate>
-    <lastBuildDate>Mon, 16 Oct 2017 14:36:16 +0900</lastBuildDate>
+    <pubDate>Tue, 17 Oct 2017 22:24:17 +0900</pubDate>
+    <lastBuildDate>Tue, 17 Oct 2017 22:24:17 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -17,6 +17,31 @@
 &lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
 
 &lt;h1 id=&quot;メモ&quot;&gt;メモ&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;p.xiv&lt;/strong&gt;：マーケティングの5ステップ．
+    &lt;ol&gt;
+      &lt;li&gt;顧客ニーズの理解．&lt;/li&gt;
+      &lt;li&gt;顧客主導マーケティング戦略の設定．&lt;/li&gt;
+      &lt;li&gt;マーケティング・プログラムの策定．&lt;/li&gt;
+      &lt;li&gt;顧客リレーションシップの構築．&lt;/li&gt;
+      &lt;li&gt;顧客からの価値獲得．&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.6&lt;/strong&gt;：マーケティングの究極の目的は，セリング（売り込み）を不要とすること．顧客と有益な価値交換ができる関係を築くこと．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.7&lt;/strong&gt;：ニーズとは，人間が本質的に備える性質であり，何かが欠乏している状態．ウォンツとは，ニーズが文化的背景や個人の特徴を通して具現化されたもの．需要とは，ウォンツが購買力を伴ったもの．マーケターが把握すべきなのは，ニーズ．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.10&lt;/strong&gt;：マーケティング・マネジメントとは，ターゲットとなる市場を選定し，その市場との間に収益性の高い関係を構築する技術および科学．マネジメント設計には5つの志向がある：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;生産志向&lt;/strong&gt;：顧客は価格と手に入り易さを重視するので，経営者は生産と流通の効率化に集中すべき，という考え方．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;製品志向&lt;/strong&gt;：顧客は品質と性能を重視するので，経営者は継続的な性能改善に集中すべき，という考え方．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;販売志向&lt;/strong&gt;：顧客は商品の必要性に気づきにくいため，経営者は大々的な販売活動を行うべき，という考え方．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;マーケティング志向&lt;/strong&gt;：顧客満足を提供することが重要なので，経営者は市場のニーズを的確に把握すべき，という考え方．マーケティングの方式として，顧客主導型マーケティングと，顧客誘導型マーケティングがある．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;ソサイエタル・マーケティング志向&lt;/strong&gt;： 顧客の短期的な満足だけでなく，長期的な幸福も考慮すべき，という考え方．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.13&lt;/strong&gt;：マーケティング・ミックスとは，製品（Product），価格（Price），流通（Place），およびプロモーション（Promotion）などのマーケティング実践のために用いる枠組み．4Pとも呼ばれる．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.23&lt;/strong&gt;：短期的な売上だけでなく，将来的な売上も考慮すべき．カスタマー・エクイティとは，企業が抱える全顧客の生涯価値の総計である．&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sun, 15 Oct 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/10/15/marketing</link>
