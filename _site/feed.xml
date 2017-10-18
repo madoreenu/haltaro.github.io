@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Oct 2017 22:24:17 +0900</pubDate>
-    <lastBuildDate>Tue, 17 Oct 2017 22:24:17 +0900</lastBuildDate>
+    <pubDate>Wed, 18 Oct 2017 08:47:09 +0900</pubDate>
+    <lastBuildDate>Wed, 18 Oct 2017 08:47:09 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -207,9 +207,9 @@
 &lt;h1 id=&quot;メモ&quot;&gt;メモ&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;p10&lt;/strong&gt;：いかなる製品やサービスも，まずは事業の目的や市場，ターゲット顧客，収益性といった観点から検討が始まる．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p12&lt;/strong&gt;：本書は二部構成．一部は理論編，二部は実践編．二部は主にウェブマスター向けの話なので，一部を中心に読む．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p19&lt;/strong&gt;：ウェブビジネス成功事例の共通点として，下記4点があるが，もっとも重要なのは1である：
+  &lt;li&gt;&lt;strong&gt;p.10&lt;/strong&gt;：いかなる製品やサービスも，まずは事業の目的や市場，ターゲット顧客，収益性といった観点から検討が始まる．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.12&lt;/strong&gt;：本書は二部構成．一部は理論編，二部は実践編．二部は主にウェブマスター向けの話なので，一部を中心に読む．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.19&lt;/strong&gt;：ウェブビジネス成功事例の共通点として，下記4点があるが，もっとも重要なのは1である：
     &lt;ol&gt;
       &lt;li&gt;サイトの顧客（ユーザ）を徹底的に知っている．&lt;/li&gt;
       &lt;li&gt;ユーザを知った上でサイト上でのコミュニケーションを設計している．&lt;/li&gt;
@@ -217,15 +217,15 @@
       &lt;li&gt;事後に仮説検証をしている．&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p25&lt;/strong&gt;：インターネットによりメディアの民主化が起こった．企業から発信される情報の信頼性が低下する一方で，個人から発信される情報の信頼性が増大した．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p32&lt;/strong&gt;：論理武装した消費者に対応するためには，ユーザの期待に応えているか，が最も重要．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p37&lt;/strong&gt;：ユーザ利用時のインターネットの特性として，以下の5つがある：前のめり，斜め読み，新鮮，遠慮不要，比較可能．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p45&lt;/strong&gt;：ユーザ中心設計のプロセス：サイトの目的と目標，ターゲットユーザ，コミュニケーションシナリオ，ユーザ視点の検証作業．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p51&lt;/strong&gt;：ウォーターフォール型ではなく，スパイラル型でサイト設計を行う．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p55&lt;/strong&gt;：ユーザの過去の経験やサイト内外での体験まで想定して，コミュニケーションシナリオを構築する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p65&lt;/strong&gt;：ウェブサイトによるプロモーションと相性が良いのは，比較に耐えるサービスか，そもそも比較できないサービス．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p81&lt;/strong&gt;：ユーザ行動パターン検証ツールと，ユーザ行動理由検証ツールを使い分ける必要がある．前者は，例えばアクセスログ解析．後者は，例えばユーザ行動観察調査．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p85&lt;/strong&gt;：ユーザの意見ではなく，行動を重視する．往々にして，ユーザの意見は正確でない．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.25&lt;/strong&gt;：インターネットによりメディアの民主化が起こった．企業から発信される情報の信頼性が低下する一方で，個人から発信される情報の信頼性が増大した．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.32&lt;/strong&gt;：論理武装した消費者に対応するためには，ユーザの期待に応えているか，が最も重要．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.37&lt;/strong&gt;：ユーザ利用時のインターネットの特性として，以下の5つがある：前のめり，斜め読み，新鮮，遠慮不要，比較可能．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.45&lt;/strong&gt;：ユーザ中心設計のプロセス：サイトの目的と目標，ターゲットユーザ，コミュニケーションシナリオ，ユーザ視点の検証作業．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.51&lt;/strong&gt;：ウォーターフォール型ではなく，スパイラル型でサイト設計を行う．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.55&lt;/strong&gt;：ユーザの過去の経験やサイト内外での体験まで想定して，コミュニケーションシナリオを構築する．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.65&lt;/strong&gt;：ウェブサイトによるプロモーションと相性が良いのは，比較に耐えるサービスか，そもそも比較できないサービス．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.81&lt;/strong&gt;：ユーザ行動パターン検証ツールと，ユーザ行動理由検証ツールを使い分ける必要がある．前者は，例えばアクセスログ解析．後者は，例えばユーザ行動観察調査．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.85&lt;/strong&gt;：ユーザの意見ではなく，行動を重視する．往々にして，ユーザの意見は正確でない．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 14 Oct 2017 00:00:00 +0900</pubDate>
@@ -234,118 +234,6 @@
         
         
         <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>Trevor Hastie，統計的学習の基礎：まとめ</title>
-        <description>&lt;p&gt;（作成中）&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;を読んで，基礎知識を復習する．1，2，3，4，および7章が必読とのことなので，これらを中心にメモを残す．量が多いので，章毎に記事を分ける．&lt;/p&gt;
-
-&lt;h1 id=&quot;1-序章&quot;&gt;1. 序章&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;本書の公式ウェブサイトは&lt;a href=&quot;https://web.stanford.edu/~hastie/ElemStatLearn/&quot;&gt;こちら&lt;/a&gt;．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;2-教師あり学習の概要&quot;&gt;2. &lt;a href=&quot;https://haltaro.github.io/2017/08/26/section2&quot;&gt;教師あり学習の概要&lt;/a&gt;&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;2.1 導入&lt;/strong&gt;では，入力および出力に関する用語を定義する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;2.2 変数の種類と用語の解説&lt;/strong&gt;では，変数に関する用語と記号を定義する．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;3-回帰のための線形手法&quot;&gt;3. 回帰のための線形手法&lt;/h1&gt;
-
-&lt;h1 id=&quot;4-分類のための線形手法&quot;&gt;4. 分類のための線形手法&lt;/h1&gt;
-
-&lt;h1 id=&quot;7-モデルの評価と選択&quot;&gt;7. モデルの評価と選択&lt;/h1&gt;
-</description>
-        <pubDate>Sat, 26 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/26/the-elements-of-statistical-learning</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/26/the-elements-of-statistical-learning</guid>
-        
-        
-        <category>machine learning</category>
-        
-      </item>
-    
-      <item>
-        <title>Trevor Hastie，統計的学習の基礎：第2章</title>
-        <description>&lt;p&gt;（作成中）&lt;a href=&quot;http://www.kyoritsu-pub.co.jp/bookdetail/9784320123625&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;の第2章についてメモする．本書のメモ一覧は&lt;a href=&quot;https://haltaro.github.io/2017/08/26/the-elements-of-statistical-learning&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
-
-&lt;h1 id=&quot;2-教師あり学習の概要&quot;&gt;2. 教師あり学習の概要&lt;/h1&gt;
-
-&lt;h2 id=&quot;21-導入&quot;&gt;2.1 導入&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;入力は，統計学では&lt;strong&gt;予測変数&lt;/strong&gt;（predictor）や&lt;strong&gt;独立変数&lt;/strong&gt;（independent variable）と，パターン認識では&lt;strong&gt;特徴&lt;/strong&gt;（feature）と呼ばれる．&lt;/li&gt;
-  &lt;li&gt;出力は，&lt;strong&gt;応答変数&lt;/strong&gt;（response variable）や&lt;strong&gt;従属変数&lt;/strong&gt;（dependent variable）と呼ばれる．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;22-変数の種類と用語&quot;&gt;2.2 変数の種類と用語&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;量的変数&lt;/strong&gt;（quantitative variable）と&lt;strong&gt;質的変数&lt;/strong&gt;（qualitative variable）がある．質的変数は，&lt;strong&gt;カテゴリ型変数&lt;/strong&gt;（categorical variable），&lt;strong&gt;離散変数&lt;/strong&gt;（discrete variable），あるいは&lt;strong&gt;因子&lt;/strong&gt;（factor）と呼ばれることがある．&lt;/li&gt;
-  &lt;li&gt;３つめの変数として，&lt;strong&gt;順序付きカテゴリ型変数&lt;/strong&gt;（ordered categorical variable）がある．これは，値の順序にのみ意味があり，計量としての意味はない．&lt;/li&gt;
-  &lt;li&gt;本書では，入力変数を&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;，量的な出力変数を&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;，質的な出力変数を&lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt;と表す．&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;番目の観測値は，ベクトルでもスカラーでも，イタリック体で&lt;script type=&quot;math/tex&quot;&gt;x_i&lt;/script&gt;と表す．一方で，全てのベクトル&lt;script type=&quot;math/tex&quot;&gt;x_i&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;j&lt;/script&gt;番目の要素をまとめたベクトルは，立体で&lt;script type=&quot;math/tex&quot;&gt;\mathrm{x}_j&lt;/script&gt;と表す．&lt;/li&gt;
-  &lt;li&gt;学習とは，入力ベクトル&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;が与えられたとき，出力&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;の良い予測値&lt;script type=&quot;math/tex&quot;&gt;\hat{Y}&lt;/script&gt;を求めること．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;23-予測のための二つの簡単なアプローチ最小二乗法と最近傍法&quot;&gt;2.3 予測のための二つの簡単なアプローチ：最小二乗法と最近傍法&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;線形モデル&lt;/strong&gt;は，入力ベクトル&lt;script type=&quot;math/tex&quot;&gt;X^{T}=\left(X_1, X_2, ..., X_p\right)&lt;/script&gt;に対し，出力&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;を&lt;script type=&quot;math/tex&quot;&gt;\hat{Y}=X^{T}\hat{\beta}&lt;/script&gt;で予測するモデルである．&lt;/li&gt;
-  &lt;li&gt;線形モデルにおける訓練データの当てはめには，&lt;strong&gt;最小二乗法&lt;/strong&gt;が用いられる．最小二乗法では，残差二乗和&lt;script type=&quot;math/tex&quot;&gt;\mathrm{RSS}(\beta)=\left(\mathbf{y} - \mathbf{X} \beta \right)^{T}\left(\mathbf{y} - \mathbf{X} \beta \right)&lt;/script&gt;を最小化する&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;を求める．ここで，&lt;script type=&quot;math/tex&quot;&gt;\mathbf{X}&lt;/script&gt;は各行が入力ベクトル&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;である&lt;script type=&quot;math/tex&quot;&gt;N \times p&lt;/script&gt;行列，&lt;script type=&quot;math/tex&quot;&gt;\mathbf{y}&lt;/script&gt;は各行が出力&lt;script type=&quot;math/tex&quot;&gt;y&lt;/script&gt;である&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;次元ベクトルである．&lt;/li&gt;
-  &lt;li&gt;上式を&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;について偏微分して導出される&lt;script type=&quot;math/tex&quot;&gt;\mathbf{X}^{T}\left(\mathbf{y}-\mathbf{X}\beta\right)=0&lt;/script&gt;を&lt;strong&gt;正規方程式&lt;/strong&gt;と呼ぶ．これを解くと，&lt;script type=&quot;math/tex&quot;&gt;\hat{\beta} = \left( \mathbf{X}^{T} \mathbf{X} \right)^{-1} \mathbf{X}^{T} \mathbf{y}&lt;/script&gt;を得る．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;最近傍法&lt;/strong&gt;は，入力&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;に対し，出力&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;を&lt;script type=&quot;math/tex&quot;&gt;\hat{Y}=\frac{1}{k}\sum_{x_{i} \in N_{k}(x)}y_{i}&lt;/script&gt;で予測するモデルである．ここで，&lt;script type=&quot;math/tex&quot;&gt;N_{k}(x)&lt;/script&gt;は訓練データのうち&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;に近い&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;個の点&lt;script type=&quot;math/tex&quot;&gt;x_{i}&lt;/script&gt;によって定義される近傍集合．分類問題に&lt;script type=&quot;math/tex&quot;&gt;k=1&lt;/script&gt;の最近傍法を用いると，訓練データの&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9C%E3%83%AD%E3%83%8E%E3%82%A4%E5%9B%B3&quot;&gt;&lt;strong&gt;ボロノイ分割&lt;/strong&gt;&lt;/a&gt;が得られる．&lt;/li&gt;
-  &lt;li&gt;最近傍法のパラメータ&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;を最小二乗法で求めることはできない．&lt;/li&gt;
-  &lt;li&gt;線形モデルは分散が小さく，バイアスが大きい．一方で最近傍法は，分散が大きく，バイアスが小さい．&lt;/li&gt;
-  &lt;li&gt;線形モデルおよび最近傍法の拡張：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;カーネル平滑化&lt;/strong&gt;：最近傍法では重みが0か1かの離散値だったが，カーネル平滑化では連続値に拡張する．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;局所線形モデル&lt;/strong&gt;：最近傍法では局所領域&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;が定数モデルだったが，局所線形モデルでは線形モデルに拡張する．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;基底展開&lt;/strong&gt;：入力モデルを基底展開することで，線形モデルを拡張する．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;射影追跡法&lt;/strong&gt;や&lt;strong&gt;ニューラルネットワーク&lt;/strong&gt;は，非線形返還と線形モデルを結合したものと考えられる．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;24-統計的決定理論&quot;&gt;2.4 統計的決定理論&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;確率入力ベクトル&lt;script type=&quot;math/tex&quot;&gt;X \in \mathbb{R}^{p}&lt;/script&gt;と確率出力変数&lt;script type=&quot;math/tex&quot;&gt;Y \in \mathbb{R}&lt;/script&gt;が同時確率分布&lt;script type=&quot;math/tex&quot;&gt;\mathrm{Pr}(X,Y)&lt;/script&gt;に従うと仮定する．目的は，入力&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;に対して出力&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;を予測する関数&lt;script type=&quot;math/tex&quot;&gt;f(X)&lt;/script&gt;を見つけること．&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;L\left(Y,f(X)\right)&lt;/script&gt;を&lt;strong&gt;損失関数&lt;/strong&gt;（Loss function）とする．最も頻繁に利用されるのは，&lt;strong&gt;二乗誤差損失&lt;/strong&gt;（Least square loss）&lt;script type=&quot;math/tex&quot;&gt;L\left(Y,f(X)\right)=\left(Y-f(X)\right)^2&lt;/script&gt;．&lt;/li&gt;
-  &lt;li&gt;期待（二乗）予測誤差（expected prediction error）&lt;script type=&quot;math/tex&quot;&gt;\mathrm{EPE}(f)=\mathrm{E}\left(Y-f(X)\right)&lt;/script&gt;を最小化する&lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;は条件付き期待値&lt;script type=&quot;math/tex&quot;&gt;\mathrm{E}(Y\mid X=x)&lt;/script&gt;であり，これは&lt;strong&gt;回帰関数&lt;/strong&gt;とも呼ばれる．&lt;/li&gt;
-  &lt;li&gt;最近傍法は，訓練データを用いて条件付き期待値を直接推定する方法と解釈できる．具体的には，&lt;script type=&quot;math/tex&quot;&gt;\hat{f}(x)=\mathrm{Ave}\left(y_i \mid x_i \in N_k(x) \right)&lt;/script&gt;．ここでは，以下の近似が行われていることに注意すべき：
-    &lt;ul&gt;
-      &lt;li&gt;期待値を標本データの平均で近似している．&lt;/li&gt;
-      &lt;li&gt;点&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;に対する条件付けではなく，それを緩和した近傍&lt;script type=&quot;math/tex&quot;&gt;N_k(x)&lt;/script&gt;で条件付けしている．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;訓練データ数&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;および近傍数&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;を十分大きくすれば，&lt;script type=&quot;math/tex&quot;&gt;\hat{f}(x)&lt;/script&gt;は条件付き期待値に収束する．しかし，次元数&lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt;が大きいとき，十分な数のデータを得ることが困難になるし，収束も遅くなる．&lt;/li&gt;
-  &lt;li&gt;一方，線形モデル&lt;script type=&quot;math/tex&quot;&gt;f(x)=x^{T}\beta&lt;/script&gt;のとき，解&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;は解析的に求められる：&lt;script type=&quot;math/tex&quot;&gt;\beta=[\mathrm{E}(XX^{T})]^{-1}\mathrm{E}(XY)&lt;/script&gt;．&lt;/li&gt;
-  &lt;li&gt;最近傍法も最小二乗法も，条件付き期待値の近似である．最近合法では&lt;script type=&quot;math/tex&quot;&gt;f(x)&lt;/script&gt;を局所的な定数関数で近似し，最小二乗法では&lt;script type=&quot;math/tex&quot;&gt;f(x)&lt;/script&gt;を大域的な線形関数で近似している．&lt;/li&gt;
-  &lt;li&gt;ちなみに，&lt;script type=&quot;math/tex&quot;&gt;L_2&lt;/script&gt;損失関数を&lt;script type=&quot;math/tex&quot;&gt;L_1&lt;/script&gt;損失関数に変更すると，解は条件付き中央値&lt;script type=&quot;math/tex&quot;&gt;\hat{f}(x)=\mathrm{median}(Y \mid X=x)&lt;/script&gt;となる．&lt;/li&gt;
-  &lt;li&gt;出力がカテゴリ型変数&lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt;の場合，損失関数は&lt;script type=&quot;math/tex&quot;&gt;K \times K&lt;/script&gt;行列&lt;script type=&quot;math/tex&quot;&gt;\mathbf{L}&lt;/script&gt;となる．損失行列&lt;script type=&quot;math/tex&quot;&gt;\mathbf{L}&lt;/script&gt;の要素&lt;script type=&quot;math/tex&quot;&gt;(k,l)&lt;/script&gt;は，クラス&lt;script type=&quot;math/tex&quot;&gt;\mathcal{G}_k&lt;/script&gt;を&lt;script type=&quot;math/tex&quot;&gt;\mathcal{G}_l&lt;/script&gt;に分類した際のペナルティを表す．損失行列&lt;script type=&quot;math/tex&quot;&gt;\mathbf{L}&lt;/script&gt;が&lt;script type=&quot;math/tex&quot;&gt;\{0, 1\}&lt;/script&gt;のとき，&lt;script type=&quot;math/tex&quot;&gt;0/1&lt;/script&gt;損失関数と呼ばれる．&lt;/li&gt;
-  &lt;li&gt;期待予測誤差は&lt;script type=&quot;math/tex&quot;&gt;\mathrm{EPE}&lt;/script&gt;&lt;script type=&quot;math/tex&quot;&gt;=\mathrm{E}\left[L\left(G, \hat{G}\right)\right]&lt;/script&gt;&lt;script type=&quot;math/tex&quot;&gt;=\mathrm{E}_{X}\sum_{k=1}^{K}L\left(\mathcal{G}_k, \hat{G}(X)\right)\mathrm{Pr}(\mathcal{G}_k\mid X)&lt;/script&gt;となるので，&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;25-高次元での局所的手法&quot;&gt;2.5 高次元での局所的手法&lt;/h2&gt;
-
-&lt;h2 id=&quot;26-統計モデル教師あり学習関数近似&quot;&gt;2.6 統計モデル，教師あり学習，関数近似&lt;/h2&gt;
-
-&lt;h2 id=&quot;27-構造化回帰モデル&quot;&gt;2.7 構造化回帰モデル&lt;/h2&gt;
-
-&lt;h2 id=&quot;28-制限付き推定法&quot;&gt;2.8 制限付き推定法&lt;/h2&gt;
-
-&lt;h2 id=&quot;29-モデルの選択とバイアスと分散のトレードオフ&quot;&gt;2.9 モデルの選択と，バイアスと分散のトレードオフ&lt;/h2&gt;
-</description>
-        <pubDate>Sat, 26 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/26/section2</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/26/section2</guid>
-        
-        
-        <category>machine learning</category>
         
       </item>
     
@@ -926,6 +814,109 @@ logerror = log(z) - log(s) \tag{1}
         
         
         <category>x-tech</category>
+        
+      </item>
+    
+      <item>
+        <title>Support vector machineの理論と実装</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=75MTQH13HRTSXQWGQARY&quot;&gt;パターン認識と機械学習&lt;/a&gt;でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．&lt;/p&gt;
+
+&lt;h1 id=&quot;1-理論&quot;&gt;1. 理論&lt;/h1&gt;
+
+&lt;h2 id=&quot;1a-コンセプト&quot;&gt;1.a コンセプト&lt;/h2&gt;
+
+&lt;h2 id=&quot;1b-最大マージン分類器&quot;&gt;1.b 最大マージン分類器&lt;/h2&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{1}
+\end{align*}&lt;/script&gt;
+
+&lt;h2 id=&quot;1c-ラグランジュ乗数法&quot;&gt;1.c ラグランジュ乗数法&lt;/h2&gt;
+
+&lt;h2 id=&quot;1d-カーネルトリック&quot;&gt;1.d カーネルトリック&lt;/h2&gt;
+
+&lt;h1 id=&quot;2-実装&quot;&gt;2. 実装&lt;/h1&gt;
+
+&lt;p&gt;学習目的であれば，ソルバで二次計画法を解いても良さそう．実務目的であれば，無難にライブラリを使ったほうが良さそう．&lt;/p&gt;
+
+&lt;h2 id=&quot;2a-二次計画法ソルバ&quot;&gt;2.a 二次計画法ソルバ&lt;/h2&gt;
+
+&lt;p&gt;Pythonの二次計画法ソルバとしては，&lt;a href=&quot;http://cvxopt.org/&quot;&gt;CVXOPT&lt;/a&gt;が人気．実装するとしたら，以下のようになる．&lt;/p&gt;
+
+&lt;h2 id=&quot;2b-svmライブラリ&quot;&gt;2.b SVMライブラリ&lt;/h2&gt;
+
+&lt;p&gt;SVMライブラリとしては，&lt;a href=&quot;http://scikit-learn.org/stable/index.html&quot;&gt;scikit-learn&lt;/a&gt;の&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;&lt;/a&gt;モジュールが人気．上記と同じ機能を実装するとしたら，以下のようになる．&lt;/p&gt;
+
+&lt;h1 id=&quot;3-実験&quot;&gt;3. 実験&lt;/h1&gt;
+
+&lt;h1 id=&quot;参考文献&quot;&gt;参考文献&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_lpo_sbs_14_img_2?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=2J0S7A4J37ASEZ0JMGQW&quot;&gt;C.M.ビショップ，パターン認識と機械学習 下&lt;/a&gt;：SVMが登場するのは下巻．ただし，ラグランジュ乗数法の詳細は上巻の付録にある．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;: Support Vector Machines&lt;/a&gt;：便利すぎるSVMモジュール．&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 04 Aug 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/08/04/support-vector-machine</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/04/support-vector-machine</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
+    
+      <item>
+        <title>JekyllサイトでGoogle Analytics</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/07/30/first-post&quot;&gt;JekyllとGitHub Pagesで立ち上げたウェブサイト&lt;/a&gt;に，&lt;a href=&quot;https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/&quot;&gt;Google Analytics&lt;/a&gt;でトラッキング機能を導入した．&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;おー．見えてる見えてる．&lt;/p&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.google.com/analytics/answer/1008080?visit_id=1-636375329556963699-2710489376&amp;amp;rd=1&quot;&gt;Google アナリティクス トラッキングを設定する&lt;/a&gt;：本家ヘルプ．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://michaelsoolee.com/google-analytics-jekyll/&quot;&gt;Google Analytics setup for Jekyll&lt;/a&gt;：Jekyllにおける設定方法について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://techmemo.biz/web-cheat-sheet/%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AByoutube%E3%81%AE%E5%8B%95%E7%94%BB%E3%82%92%E5%9F%8B%E3%82%81%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95/&quot;&gt;ブログにYouTubeの動画を埋め込む方法&lt;/a&gt;：Youtube動画の埋め込みについて．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;h2 id=&quot;1-google-analyticsの登録&quot;&gt;1. Google Analyticsの登録&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://analytics.google.com&quot;&gt;Google Analytics&lt;/a&gt;にウェブサイト（&lt;code class=&quot;highlighter-rouge&quot;&gt;https://haltaro.github.io&lt;/code&gt;）を登録．趣味で使うぶんにはデフォルト設定で十分だし，あとで変更可能．&lt;/p&gt;
+
+&lt;h2 id=&quot;2-analyticshtmlの保存&quot;&gt;2. analytics.htmlの保存&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;管理 &amp;gt; プロパティ &amp;gt; トラッキング情報 &amp;gt; トラッキングコード&lt;/code&gt;を選択．以下のようなJavaScriptスニペットをコピーし，&lt;code class=&quot;highlighter-rouge&quot;&gt;analytics.html&lt;/code&gt;として&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/&lt;/code&gt;ディレクトリに保存．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/45500c3c134f5c48b549408b02c312c3.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;ただし，&lt;code class=&quot;highlighter-rouge&quot;&gt;UA-*********-*&lt;/code&gt;はウェブサイト固有のトラッキングコード．&lt;/p&gt;
+
+&lt;h2 id=&quot;3-defaulthtmlの修正&quot;&gt;3. default.htmlの修正&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/_layout&lt;/code&gt;ディレクトリの&lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;に，下記の&lt;code class=&quot;highlighter-rouge&quot;&gt;analytics.html&lt;/code&gt;を追記．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/c9d454635b5304cdb2163c5f38490f3b.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll.environment == 'production'&lt;/code&gt;は，ローカル環境での動作テスト（&lt;code class=&quot;highlighter-rouge&quot;&gt;$ jekyll serve&lt;/code&gt;）をトラッキング対象から除外するためのもの．&lt;/p&gt;
+
+&lt;h2 id=&quot;4-待機&quot;&gt;4. 待機&lt;/h2&gt;
+
+&lt;p&gt;設定が反映されるまで，30分ほどかかった．&lt;/p&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;指示通り設定すれば，問題なく動作した．Youtube動画も埋め込めたので満足．&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Aug 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/08/04/set-google-analytics</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/04/set-google-analytics</guid>
+        
+        
+        <category>jekyll</category>
         
       </item>
     
