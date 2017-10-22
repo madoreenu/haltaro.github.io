@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Oct 2017 22:01:35 +0900</pubDate>
-    <lastBuildDate>Sun, 22 Oct 2017 22:01:35 +0900</lastBuildDate>
+    <pubDate>Sun, 22 Oct 2017 22:08:41 +0900</pubDate>
+    <lastBuildDate>Sun, 22 Oct 2017 22:08:41 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -36,7 +36,7 @@
 
 &lt;p&gt;PowerShellから設定ファイルを作成．&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;jupyter notebook --generate-config
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; jupyter notebook --generate-config
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -153,7 +153,7 @@
 
 &lt;p&gt;まずは，PowerShellで以下のコマンドを打ち，&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;公式GitHub&lt;/a&gt;からクローンする．ディレクトリはどこでも良い．&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;git clone git@github.dahlbyk/posh-git.git
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; git clone git@github.dahlbyk/posh-git.git
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -191,7 +191,7 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;RubyGems&lt;/code&gt;を使い，&lt;code class=&quot;highlighter-rouge&quot;&gt;github-pages&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;wdm&lt;/code&gt;をインストールした．&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;gem install github-pages wdm
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; gem install github-pages wdm
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 

@@ -29,7 +29,7 @@ outline: Windows 7にAnaconda 5.0.0環境を構築した．仮想環境のactiva
 
 PowerShellから設定ファイルを作成．
 
-```bash
+```
 > jupyter notebook --generate-config
 ```
 

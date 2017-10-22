@@ -53,7 +53,7 @@ $ git config --global core quotepath false
 
 まずは，PowerShellで以下のコマンドを打ち，[公式GitHub](https://github.com/dahlbyk/posh-git)からクローンする．ディレクトリはどこでも良い．
 
-```bash
+```
 > git clone git@github.dahlbyk/posh-git.git
 ```
 
@@ -91,7 +91,7 @@ Rubyのパッケージ管理システム`RubyGems`のインストールに必要
 
 `RubyGems`を使い，`github-pages`と`wdm`をインストールした．
 
-```bash
+```
 > gem install github-pages wdm
 ```
 
