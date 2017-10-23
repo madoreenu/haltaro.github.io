@@ -22,7 +22,7 @@ categories:
 
 ## 2. 環境変数の設定
 
-[Qiita - Anaconda4.4.0 最初の設定 for Windows](https://qiita.com/dddmm/items/2ccfe13d04ba30238bf3)を参考に，環境変数`Path`にAnacondaのパスを追加．自分の場合は，`C:\Users\haltaro\Anaconda3\Scripts`だった．
+[Qiita，Anaconda4.4.0 最初の設定 for Windows](https://qiita.com/dddmm/items/2ccfe13d04ba30238bf3)を参考に，環境変数`Path`にAnacondaのパスを追加．自分の場合は，`C:\Users\haltaro\Anaconda3\Scripts`だった．
 
 ## 3. 設定ファイルの作成
 

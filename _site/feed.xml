@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 Oct 2017 12:06:24 +0900</pubDate>
-    <lastBuildDate>Mon, 23 Oct 2017 12:06:24 +0900</lastBuildDate>
+    <pubDate>Mon, 23 Oct 2017 12:09:39 +0900</pubDate>
+    <lastBuildDate>Mon, 23 Oct 2017 12:09:39 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -30,7 +30,7 @@
 
 &lt;h2 id=&quot;2-環境変数の設定&quot;&gt;2. 環境変数の設定&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://qiita.com/dddmm/items/2ccfe13d04ba30238bf3&quot;&gt;Qiita - Anaconda4.4.0 最初の設定 for Windows&lt;/a&gt;を参考に，環境変数&lt;code class=&quot;highlighter-rouge&quot;&gt;Path&lt;/code&gt;にAnacondaのパスを追加．自分の場合は，&lt;code class=&quot;highlighter-rouge&quot;&gt;C:\Users\haltaro\Anaconda3\Scripts&lt;/code&gt;だった．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://qiita.com/dddmm/items/2ccfe13d04ba30238bf3&quot;&gt;Qiita，Anaconda4.4.0 最初の設定 for Windows&lt;/a&gt;を参考に，環境変数&lt;code class=&quot;highlighter-rouge&quot;&gt;Path&lt;/code&gt;にAnacondaのパスを追加．自分の場合は，&lt;code class=&quot;highlighter-rouge&quot;&gt;C:\Users\haltaro\Anaconda3\Scripts&lt;/code&gt;だった．&lt;/p&gt;
 
 &lt;h2 id=&quot;3-設定ファイルの作成&quot;&gt;3. 設定ファイルの作成&lt;/h2&gt;
 
@@ -96,8 +96,8 @@
   &lt;li&gt;&lt;strong&gt;p.87&lt;/strong&gt;：顧客主導型マーケティング戦略の設計ステップとして，市場細分化，ターゲティング，差別化，およびポジショニングがある．&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;p.98&lt;/strong&gt;：究極のマイクロマーケティングは，個人マーケティング．以下参考．
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://jp.techcrunch.com/2015/08/16/20150814the-future-of-consumer-marketing-is-personal-2/&quot;&gt;TechCrunch - 個人ユーザー単位でマーケティングできる未来が来る&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://markezine.jp/article/detail/24150&quot;&gt;MarketZine - 個人単位のマーケティングを実現し、顧客体験中心のビジネスを／Adobe Summit 2016開催&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://jp.techcrunch.com/2015/08/16/20150814the-future-of-consumer-marketing-is-personal-2/&quot;&gt;TechCrunch，個人ユーザー単位でマーケティングできる未来が来る&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://markezine.jp/article/detail/24150&quot;&gt;MarketZine，個人単位のマーケティングを実現し、顧客体験中心のビジネスを／Adobe Summit 2016開催&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
