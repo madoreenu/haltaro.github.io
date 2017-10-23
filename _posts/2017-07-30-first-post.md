@@ -13,13 +13,13 @@ categories:
 
 `jekyll github pages`等でググると素晴らしい記事がたくさん出てきた．今回は，特に，以下を参考にした．
 
-* [Jekyll公式ドキュメント](https://jekyllrb-ja.github.io/docs/home/)
-* [How to Set Up a Jekyll Development Site on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04)：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．
-* [もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。](http://unitopi.com/font-family-css/)：`*-font-family`の設定について．
-* [HTMLやCSSのソースコードをそのままページに貼り付ける方法](http://fukafuka295.jp/hp/hp_no9.html)：Gistを使ってソースコードをページに埋め込む方法について．
-* [アバター画像を設定！Gravatar(グラバター)の登録方法と使い方](http://zaitaku-hukugyo-net.com/1132.html)：Gravatarの登録方法について．
-* [Jekyll -パーマリンク](http://jekyllrb-ja.github.io/docs/permalinks/)：パーマリンクの設定方法について．
-* [Nestaでkramdownを使って数式を表示してみる](http://blog.skktmlab.info/blog/2015_02_13_2)：MathJaxの設定について．
+* [Jekyll](https://jekyllrb-ja.github.io/docs/home/)：公式ドキュメント．
+* [DigitalOcean，How to Set Up a Jekyll Development Site on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04)：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について．
+* [unitopi，もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。](http://unitopi.com/font-family-css/)：`*-font-family`の設定について．
+* [FukkaFuka TRADING POST，HTMLやCSSのソースコードをそのままページに貼り付ける方法](http://fukafuka295.jp/hp/hp_no9.html)：Gistを使ってソースコードをページに埋め込む方法について．
+* [joism，アバター画像を設定！Gravatar(グラバター)の登録方法と使い方](http://zaitaku-hukugyo-net.com/1132.html)：Gravatarの登録方法について．
+* [Jekyll，パーマリンク](http://jekyllrb-ja.github.io/docs/permalinks/)：パーマリンクの設定方法について．
+* [SKKTM Lab Blog，Nestaでkramdownを使って数式を表示してみる](http://blog.skktmlab.info/blog/2015_02_13_2)：MathJaxの設定について．
 
 gitやGitHubの使い方は，もともと知っていたので割愛．
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kaggle，Zillow Prize概要
-updated: 2017-08-07 18:00 
+updated: 2017-08-07 18:00
 categories:
  - x-tech
 ---
@@ -83,9 +83,9 @@ $$
 
 # 参考
 
-* [Zillow Prize](https://www.kaggle.com/c/zillow-prize-1)
-* [Kaggle事始め](http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7)：丁寧なKaggle入門記事．
-* [Kaggleのコンペティションリスト](http://qiita.com/TomHortons/items/54b2121a4c5eb0908920)：Kaggleのコンペティションを，データのタイプで分類．
+* [Kaggle，Zillow Prize](https://www.kaggle.com/c/zillow-prize-1)
+* [Qiita，Kaggle事始め](http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7)：丁寧なKaggle入門記事．
+* [Qiita，Kaggleのコンペティションリスト](http://qiita.com/TomHortons/items/54b2121a4c5eb0908920)：Kaggleのコンペティションを，データのタイプで分類．
 * [Real estate tech news](http://realestatetechnews.com/)：不動産関連xテクノロジーに関するニュースサイト．
 * [No Free Hunch](http://blog.kaggle.com/)：Kaggle公式ブログ．コンテスト優勝者のモデルが公開されている．
 

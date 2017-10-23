@@ -6,13 +6,13 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 Oct 2017 12:09:39 +0900</pubDate>
-    <lastBuildDate>Mon, 23 Oct 2017 12:09:39 +0900</lastBuildDate>
+    <pubDate>Mon, 23 Oct 2017 16:13:54 +0900</pubDate>
+    <lastBuildDate>Mon, 23 Oct 2017 16:13:54 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
         <title>Windows 7でAnaconda 5.0.0</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://anaconda.org/&quot;&gt;Anaconda 5.0.0&lt;/a&gt;とは，&lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt;のライブラリパッケージである．普段はUbuntuでコーディングしているが，&lt;a href=&quot;https://haltaro.github.io/2017/10/15/jekyll-windows&quot;&gt;以前の記事&lt;/a&gt;で述べたように，しばらくWindowsで作業する必要が出てきた．そこで，Windows 7に&lt;a href=&quot;https://anaconda.org/&quot;&gt;Anaconda 5.0.0&lt;/a&gt;環境を構築した．仮想環境のactivateにハマったのでメモしておく．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://anaconda.org/&quot;&gt;Anaconda&lt;/a&gt;とは，&lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt;のライブラリパッケージである．普段はUbuntuでコーディングしているが，&lt;a href=&quot;https://haltaro.github.io/2017/10/15/jekyll-windows&quot;&gt;以前の記事&lt;/a&gt;で述べたように，しばらくWindowsで作業する必要が出てきた．そこで，Windows 7に&lt;a href=&quot;https://anaconda.org/&quot;&gt;Anaconda 5.0.0&lt;/a&gt;環境を構築した．仮想環境のactivateにハマったのでメモしておく．&lt;/p&gt;
 
 &lt;h1 id=&quot;前提&quot;&gt;前提&lt;/h1&gt;
 
@@ -856,9 +856,9 @@ logerror = log(z) - log(s) \tag{1}
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;Zillow Prize&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7&quot;&gt;Kaggle事始め&lt;/a&gt;：丁寧なKaggle入門記事．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://qiita.com/TomHortons/items/54b2121a4c5eb0908920&quot;&gt;Kaggleのコンペティションリスト&lt;/a&gt;：Kaggleのコンペティションを，データのタイプで分類．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;Kaggle，Zillow Prize&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7&quot;&gt;Qiita，Kaggle事始め&lt;/a&gt;：丁寧なKaggle入門記事．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://qiita.com/TomHortons/items/54b2121a4c5eb0908920&quot;&gt;Qiita，Kaggleのコンペティションリスト&lt;/a&gt;：Kaggleのコンペティションを，データのタイプで分類．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://realestatetechnews.com/&quot;&gt;Real estate tech news&lt;/a&gt;：不動産関連xテクノロジーに関するニュースサイト．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://blog.kaggle.com/&quot;&gt;No Free Hunch&lt;/a&gt;：Kaggle公式ブログ．コンテスト優勝者のモデルが公開されている．&lt;/li&gt;
 &lt;/ul&gt;
