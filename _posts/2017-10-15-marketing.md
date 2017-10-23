@@ -7,7 +7,7 @@ categories:
 outline: （作成中）コトラー，アームストロング，恩藏のマーケティング原理の読書メモ．
 ---
 
-（作成中）[コトラー，アームストロング，恩藏のマーケティング原理](http://amzn.asia/eGcRMag)を読んだ．
+（作成中）[コトラー，アームストロング，恩藏のマーケティング原理](http://amzn.asia/eGcRMag)の読書メモ．
 
 # まとめ
 
@@ -35,4 +35,6 @@ outline: （作成中）コトラー，アームストロング，恩藏のマ�
 * **p.57**：[マーケティングROI](https://www.leadplus.net/blog/marketing-roi.html)とは，マーケティング投資に対する，マーケティング効果の比率．マーケティングROIの算出は難しい．最近では，マーケティング効果としてカスタマー・エクイティを用いることが増えている．
 * **p.70**：競合他社への[競争戦略](http://www.marketingbank.jp/special/cat07/129.php)として，次の三つがある：コスト・リーダーシップ戦略，差別化戦略，そして集中戦略．
 * **p.87**：顧客主導型マーケティング戦略の設計ステップとして，市場細分化，ターゲティング，差別化，およびポジショニングがある．
-* **p.98**：究極のマイクロマーケティングは，個人マーケティング．[TechCrunch - 個人ユーザー単位でマーケティングできる未来が来る](http://jp.techcrunch.com/2015/08/16/20150814the-future-of-consumer-marketing-is-personal-2/)や[MarketZine - 個人単位のマーケティングを実現し、顧客体験中心のビジネスを／Adobe Summit 2016開催](https://markezine.jp/article/detail/24150)では，その詳細が述べられている．
+* **p.98**：究極のマイクロマーケティングは，個人マーケティング．以下参考．
+  * [TechCrunch - 個人ユーザー単位でマーケティングできる未来が来る](http://jp.techcrunch.com/2015/08/16/20150814the-future-of-consumer-marketing-is-personal-2/)
+  * [MarketZine - 個人単位のマーケティングを実現し、顧客体験中心のビジネスを／Adobe Summit 2016開催](https://markezine.jp/article/detail/24150)
