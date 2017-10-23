@@ -4,12 +4,17 @@ title: Windows7でJekyll+GitHub Pages
 updated: 2017-10-15 17:00
 categories:
  - jekyll
-outline: 船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）にJekyll+GitHub Pages環境を構築した．
 ---
 
 船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）に[Jekyll](https://jekyllrb-ja.github.io/)+[GitHub Pages](https://pages.github.com/)環境を構築した．
 
 ![env]({{site.baseurl}}/images/2017-10-15-env.png)
+
+# 環境
+
+* Windows 7 Professional, Serice Pack 1, 64 bit
+* PowerShell 5.0.10586.117
+* ATOM 1.21.1
 
 # 参考
 
@@ -19,6 +24,8 @@ outline: 船便でアメリカから送ったため，2ヶ月ほどLinuxが使�
 * [KaoriYa，Windowsでjekyll 3.0（github-pages）を使う](https://www.kaoriya.net/blog/2016/02/07/)：WindowsにおけるJekyll環境構築方法．
 * [RubyInstaller](https://rubyinstaller.org/downloads/)：RubyおよびDevKitのインストール．
 * [ATOM](https://atom.io/)：GitHubが開発したテキストエディタ．
+* [ATOM，Line ending converter](https://atom.io/packages/line-ending-converter)：ATOMの改行コードを一括変換するパッケージ．
+* [Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）](https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf)：ATOMのデフォルト改行コード設定方法．
 
 # 手順
 
@@ -96,9 +103,26 @@ Rubyのパッケージ管理システム`RubyGems`のインストールに必要
 ```
 
 ## 8. ATOMのインストール
-マークダウンエディタが欲しかったので，[ATOM](https://atom.io/)をインストールした．[公式ページ](https://atom.io/)からインストーラをダウンロードすれば簡単にできた．
+マークダウンエディタが欲しかったので，[ATOM](https://atom.io/)をインストールした．[公式ページ](https://atom.io/)からインストーラをダウンロードすれば簡単にできた．しかし…
 
-## 9. まとめ
+![outline]({{site.baseurl}}/images/2017-10-15-outline.png)
+
+サマリ部分に全文表示されてしまう問題が発生した．これはUnixの改行コード（`LF`）とWindowsの改行コード（`CRLF`）が混在していることが原因らしい．
+
+## 9. line-ending-converterで改行コードを一括変換
+
+ATOMの設定画面から，`line-ending-converter`をインストール．`Packages`>`Convert Line Endings To`で，`Unix Format`を選択すると，現在選択中のファイルの改行コードが一括変換される．
+
+詳細は[こちら](https://atom.io/packages/line-ending-converter)．
+
+## 10. line-ending-selectorで改行コード設定
+
+[Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）](https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf)を参考に，デフォルト設定を変更．
+1. ATOMの設定画面から`line-ending-selector`を検索．
+2. `line-ending-selector`の`Setting`ボタンを押下．
+3. `Default line ending`から，`LF`を選択．
+
+## 11. まとめ
 
 下図のような環境が完成した．
 
@@ -106,25 +130,5 @@ Rubyのパッケージ管理システム`RubyGems`のインストールに必要
 
 PowerShellで`jekyll serve`して，ブラウザで`http://127.0.0.1:4000`から出来栄えを確認しながら，ATOMでマークダウンを編集できる．
 
-# EasyBook特有の問題
-
-本サイトは，[laobubu](https://github.com/laobubu)さんの[EasyBook](http://jekyllthemes.org/themes/easybook/)をベースにカスタマイズしたものである．Windows上でJekyllを実行すると，Linuxとは違った問題が発生した．
-
-## サマリに記事全文表示
-
-![outline]({{site.baseurl}}/images/2017-10-15-outline.png)
-
-これまでは，各記事の先頭行を自動抽出し，サマリとして表示していた．しかし，本環境で作成した[武井由紀子，ユーザ中心ウェブビジネス戦略](https://haltaro.github.io/2017/10/14/web-buisiness)に関しては，なぜか記事全文が表示された．
-
-いろいろと調べてみたが，原因がよくわからなかった[^1]．そこで苦肉の策として，`post.outline`という変数を新たに追加し，各記事でサマリを直接編集できるようにした．
-
-<script src="https://gist.github.com/haltaro/4e89092ad36d14c6f5a50639452e0137.js"></script>
-
-[武井由紀子，ユーザ中心ウェブビジネス戦略](https://haltaro.github.io/2017/10/14/web-buisiness)のフロントマターでは，次のようにoutlineを指定した．
-
-<script src="https://gist.github.com/haltaro/8254c80f168f8a06bde0591551a8d49b.js"></script>
-
-[^1]: ちゃんとソースコード読めばわかると思うが，時間切れ．
-
 # 感想
-ATOMは本当に便利．Linuxが届いたらインストールしようと思う．サマリ問題については，根本的な問題を解決できなかったのが残念．
+ATOMは本当に便利．Linuxが届いたらインストールしようと思う．

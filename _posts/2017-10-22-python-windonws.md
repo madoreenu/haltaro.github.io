@@ -4,7 +4,6 @@ title: Windows 7でAnaconda 5.0.0
 updated: 2017-10-22 21:30
 categories:
  - python
-outline: Windows 7にAnaconda 5.0.0環境を構築した．仮想環境のactivateにハマったのでメモ．
 ---
 
 [Anaconda 5.0.0](https://anaconda.org/)とは，[Python](https://www.python.org/)のライブラリパッケージである．普段はUbuntuでコーディングしているが，[以前の記事](https://haltaro.github.io/2017/10/15/jekyll-windows)で述べたように，しばらくWindowsで作業する必要が出てきた．そこで，Windows 7に[Anaconda 5.0.0](https://anaconda.org/)環境を構築した．仮想環境のactivateにハマったのでメモしておく．

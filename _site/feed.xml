@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 Oct 2017 11:48:45 +0900</pubDate>
-    <lastBuildDate>Mon, 23 Oct 2017 11:48:45 +0900</lastBuildDate>
+    <pubDate>Mon, 23 Oct 2017 12:06:24 +0900</pubDate>
+    <lastBuildDate>Mon, 23 Oct 2017 12:06:24 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -117,6 +117,14 @@
 
 &lt;p&gt;&lt;img src=&quot;/images/2017-10-15-env.png&quot; alt=&quot;env&quot; /&gt;&lt;/p&gt;
 
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Windows 7 Professional, Serice Pack 1, 64 bit&lt;/li&gt;
+  &lt;li&gt;PowerShell 5.0.10586.117&lt;/li&gt;
+  &lt;li&gt;ATOM 1.21.1&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
@@ -126,6 +134,8 @@
   &lt;li&gt;&lt;a href=&quot;https://www.kaoriya.net/blog/2016/02/07/&quot;&gt;KaoriYa，Windowsでjekyll 3.0（github-pages）を使う&lt;/a&gt;：WindowsにおけるJekyll環境構築方法．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;RubyInstaller&lt;/a&gt;：RubyおよびDevKitのインストール．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://atom.io/&quot;&gt;ATOM&lt;/a&gt;：GitHubが開発したテキストエディタ．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://atom.io/packages/line-ending-converter&quot;&gt;ATOM，Line ending converter&lt;/a&gt;：ATOMの改行コードを一括変換するパッケージ．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf&quot;&gt;Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）&lt;/a&gt;：ATOMのデフォルト改行コード設定方法．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
@@ -208,9 +218,28 @@
 &lt;/div&gt;
 
 &lt;h2 id=&quot;8-atomのインストール&quot;&gt;8. ATOMのインストール&lt;/h2&gt;
-&lt;p&gt;マークダウンエディタが欲しかったので，&lt;a href=&quot;https://atom.io/&quot;&gt;ATOM&lt;/a&gt;をインストールした．&lt;a href=&quot;https://atom.io/&quot;&gt;公式ページ&lt;/a&gt;からインストーラをダウンロードすれば簡単にできた．&lt;/p&gt;
+&lt;p&gt;マークダウンエディタが欲しかったので，&lt;a href=&quot;https://atom.io/&quot;&gt;ATOM&lt;/a&gt;をインストールした．&lt;a href=&quot;https://atom.io/&quot;&gt;公式ページ&lt;/a&gt;からインストーラをダウンロードすれば簡単にできた．しかし…&lt;/p&gt;
 
-&lt;h2 id=&quot;9-まとめ&quot;&gt;9. まとめ&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2017-10-15-outline.png&quot; alt=&quot;outline&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;サマリ部分に全文表示されてしまう問題が発生した．これはUnixの改行コード（&lt;code class=&quot;highlighter-rouge&quot;&gt;LF&lt;/code&gt;）とWindowsの改行コード（&lt;code class=&quot;highlighter-rouge&quot;&gt;CRLF&lt;/code&gt;）が混在していることが原因らしい．&lt;/p&gt;
+
+&lt;h2 id=&quot;9-line-ending-converterで改行コードを一括変換&quot;&gt;9. line-ending-converterで改行コードを一括変換&lt;/h2&gt;
+
+&lt;p&gt;ATOMの設定画面から，&lt;code class=&quot;highlighter-rouge&quot;&gt;line-ending-converter&lt;/code&gt;をインストール．&lt;code class=&quot;highlighter-rouge&quot;&gt;Packages&lt;/code&gt;&amp;gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Convert Line Endings To&lt;/code&gt;で，&lt;code class=&quot;highlighter-rouge&quot;&gt;Unix Format&lt;/code&gt;を選択すると，現在選択中のファイルの改行コードが一括変換される．&lt;/p&gt;
+
+&lt;p&gt;詳細は&lt;a href=&quot;https://atom.io/packages/line-ending-converter&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
+
+&lt;h2 id=&quot;10-line-ending-selectorで改行コード設定&quot;&gt;10. line-ending-selectorで改行コード設定&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf&quot;&gt;Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）&lt;/a&gt;を参考に，デフォルト設定を変更．&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;ATOMの設定画面から&lt;code class=&quot;highlighter-rouge&quot;&gt;line-ending-selector&lt;/code&gt;を検索．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;line-ending-selector&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;Setting&lt;/code&gt;ボタンを押下．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Default line ending&lt;/code&gt;から，&lt;code class=&quot;highlighter-rouge&quot;&gt;LF&lt;/code&gt;を選択．&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;11-まとめ&quot;&gt;11. まとめ&lt;/h2&gt;
 
 &lt;p&gt;下図のような環境が完成した．&lt;/p&gt;
 
@@ -218,33 +247,8 @@
 
 &lt;p&gt;PowerShellで&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;して，ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:4000&lt;/code&gt;から出来栄えを確認しながら，ATOMでマークダウンを編集できる．&lt;/p&gt;
 
-&lt;h1 id=&quot;easybook特有の問題&quot;&gt;EasyBook特有の問題&lt;/h1&gt;
-
-&lt;p&gt;本サイトは，&lt;a href=&quot;https://github.com/laobubu&quot;&gt;laobubu&lt;/a&gt;さんの&lt;a href=&quot;http://jekyllthemes.org/themes/easybook/&quot;&gt;EasyBook&lt;/a&gt;をベースにカスタマイズしたものである．Windows上でJekyllを実行すると，Linuxとは違った問題が発生した．&lt;/p&gt;
-
-&lt;h2 id=&quot;サマリに記事全文表示&quot;&gt;サマリに記事全文表示&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-10-15-outline.png&quot; alt=&quot;outline&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;これまでは，各記事の先頭行を自動抽出し，サマリとして表示していた．しかし，本環境で作成した&lt;a href=&quot;https://haltaro.github.io/2017/10/14/web-buisiness&quot;&gt;武井由紀子，ユーザ中心ウェブビジネス戦略&lt;/a&gt;に関しては，なぜか記事全文が表示された．&lt;/p&gt;
-
-&lt;p&gt;いろいろと調べてみたが，原因がよくわからなかった&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．そこで苦肉の策として，&lt;code class=&quot;highlighter-rouge&quot;&gt;post.outline&lt;/code&gt;という変数を新たに追加し，各記事でサマリを直接編集できるようにした．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/4e89092ad36d14c6f5a50639452e0137.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/10/14/web-buisiness&quot;&gt;武井由紀子，ユーザ中心ウェブビジネス戦略&lt;/a&gt;のフロントマターでは，次のようにoutlineを指定した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/8254c80f168f8a06bde0591551a8d49b.js&quot;&gt;&lt;/script&gt;
-
 &lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-&lt;p&gt;ATOMは本当に便利．Linuxが届いたらインストールしようと思う．サマリ問題については，根本的な問題を解決できなかったのが残念．&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;ちゃんとソースコード読めばわかると思うが，時間切れ．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
+&lt;p&gt;ATOMは本当に便利．Linuxが届いたらインストールしようと思う．&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Oct 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/10/15/jekyll-windows</link>

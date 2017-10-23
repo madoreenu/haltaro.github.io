@@ -91,6 +91,14 @@
 
 <p><img src="/images/2017-10-15-env.png" alt="env" /></p>
 
+<h1 id="環境">環境</h1>
+
+<ul>
+  <li>Windows 7 Professional, Serice Pack 1, 64 bit</li>
+  <li>PowerShell 5.0.10586.117</li>
+  <li>ATOM 1.21.1</li>
+</ul>
+
 <h1 id="参考">参考</h1>
 
 <ul>
@@ -100,6 +108,8 @@
   <li><a href="https://www.kaoriya.net/blog/2016/02/07/">KaoriYa，Windowsでjekyll 3.0（github-pages）を使う</a>：WindowsにおけるJekyll環境構築方法．</li>
   <li><a href="https://rubyinstaller.org/downloads/">RubyInstaller</a>：RubyおよびDevKitのインストール．</li>
   <li><a href="https://atom.io/">ATOM</a>：GitHubが開発したテキストエディタ．</li>
+  <li><a href="https://atom.io/packages/line-ending-converter">ATOM，Line ending converter</a>：ATOMの改行コードを一括変換するパッケージ．</li>
+  <li><a href="https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf">Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）</a>：ATOMのデフォルト改行コード設定方法．</li>
 </ul>
 
 <h1 id="手順">手順</h1>
@@ -182,9 +192,28 @@
 </div>
 
 <h2 id="8-atomのインストール">8. ATOMのインストール</h2>
-<p>マークダウンエディタが欲しかったので，<a href="https://atom.io/">ATOM</a>をインストールした．<a href="https://atom.io/">公式ページ</a>からインストーラをダウンロードすれば簡単にできた．</p>
+<p>マークダウンエディタが欲しかったので，<a href="https://atom.io/">ATOM</a>をインストールした．<a href="https://atom.io/">公式ページ</a>からインストーラをダウンロードすれば簡単にできた．しかし…</p>
 
-<h2 id="9-まとめ">9. まとめ</h2>
+<p><img src="/images/2017-10-15-outline.png" alt="outline" /></p>
+
+<p>サマリ部分に全文表示されてしまう問題が発生した．これはUnixの改行コード（<code class="highlighter-rouge">LF</code>）とWindowsの改行コード（<code class="highlighter-rouge">CRLF</code>）が混在していることが原因らしい．</p>
+
+<h2 id="9-line-ending-converterで改行コードを一括変換">9. line-ending-converterで改行コードを一括変換</h2>
+
+<p>ATOMの設定画面から，<code class="highlighter-rouge">line-ending-converter</code>をインストール．<code class="highlighter-rouge">Packages</code>&gt;<code class="highlighter-rouge">Convert Line Endings To</code>で，<code class="highlighter-rouge">Unix Format</code>を選択すると，現在選択中のファイルの改行コードが一括変換される．</p>
+
+<p>詳細は<a href="https://atom.io/packages/line-ending-converter">こちら</a>．</p>
+
+<h2 id="10-line-ending-selectorで改行コード設定">10. line-ending-selectorで改行コード設定</h2>
+
+<p><a href="https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf">Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）</a>を参考に，デフォルト設定を変更．</p>
+<ol>
+  <li>ATOMの設定画面から<code class="highlighter-rouge">line-ending-selector</code>を検索．</li>
+  <li><code class="highlighter-rouge">line-ending-selector</code>の<code class="highlighter-rouge">Setting</code>ボタンを押下．</li>
+  <li><code class="highlighter-rouge">Default line ending</code>から，<code class="highlighter-rouge">LF</code>を選択．</li>
+</ol>
+
+<h2 id="11-まとめ">11. まとめ</h2>
 
 <p>下図のような環境が完成した．</p>
 
@@ -192,33 +221,8 @@
 
 <p>PowerShellで<code class="highlighter-rouge">jekyll serve</code>して，ブラウザで<code class="highlighter-rouge">http://127.0.0.1:4000</code>から出来栄えを確認しながら，ATOMでマークダウンを編集できる．</p>
 
-<h1 id="easybook特有の問題">EasyBook特有の問題</h1>
-
-<p>本サイトは，<a href="https://github.com/laobubu">laobubu</a>さんの<a href="http://jekyllthemes.org/themes/easybook/">EasyBook</a>をベースにカスタマイズしたものである．Windows上でJekyllを実行すると，Linuxとは違った問題が発生した．</p>
-
-<h2 id="サマリに記事全文表示">サマリに記事全文表示</h2>
-
-<p><img src="/images/2017-10-15-outline.png" alt="outline" /></p>
-
-<p>これまでは，各記事の先頭行を自動抽出し，サマリとして表示していた．しかし，本環境で作成した<a href="https://haltaro.github.io/2017/10/14/web-buisiness">武井由紀子，ユーザ中心ウェブビジネス戦略</a>に関しては，なぜか記事全文が表示された．</p>
-
-<p>いろいろと調べてみたが，原因がよくわからなかった<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．そこで苦肉の策として，<code class="highlighter-rouge">post.outline</code>という変数を新たに追加し，各記事でサマリを直接編集できるようにした．</p>
-
-<script src="https://gist.github.com/haltaro/4e89092ad36d14c6f5a50639452e0137.js"></script>
-
-<p><a href="https://haltaro.github.io/2017/10/14/web-buisiness">武井由紀子，ユーザ中心ウェブビジネス戦略</a>のフロントマターでは，次のようにoutlineを指定した．</p>
-
-<script src="https://gist.github.com/haltaro/8254c80f168f8a06bde0591551a8d49b.js"></script>
-
 <h1 id="感想">感想</h1>
-<p>ATOMは本当に便利．Linuxが届いたらインストールしようと思う．サマリ問題については，根本的な問題を解決できなかったのが残念．</p>
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>ちゃんとソースコード読めばわかると思うが，時間切れ．&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p>ATOMは本当に便利．Linuxが届いたらインストールしようと思う．</p>
 
   </article>
   
