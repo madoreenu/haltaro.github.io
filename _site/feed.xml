@@ -6,9 +6,41 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Oct 2017 22:13:19 +0900</pubDate>
-    <lastBuildDate>Tue, 24 Oct 2017 22:13:19 +0900</lastBuildDate>
+    <pubDate>Tue, 24 Oct 2017 22:14:59 +0900</pubDate>
+    <lastBuildDate>Tue, 24 Oct 2017 22:14:59 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>What3Wordsを日本語化</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://what3words.com/&quot;&gt;What3Words&lt;/a&gt;とは，新しい住所定義サービスである．本サービスで定義された住所は，従来より詳細（3m四方のグリッド単位！）で，かつ覚えやすい（わずか三単語！）．&lt;a href=&quot;https://docs.what3words.com/api/v2/&quot;&gt;API&lt;/a&gt;を公開しているが，2017年10月24日時点で日本語未対応っぽい．そこで，本記事ではWhat3Wordsを日本語化して遊ぶ．&lt;/p&gt;
+
+&lt;div style=&quot;max-width:854px&quot;&gt;&lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://embed.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth&quot; width=&quot;854&quot; height=&quot;480&quot; style=&quot;position:absolute;left:0;top:0;width:100%;height:100%&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;上のビデオは，このサービスを知るきっかけになった&lt;a href=&quot;https://www.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth?utm_campaign=tedspread--a&amp;amp;utm_medium=referral&amp;amp;utm_source=tedcomshare&quot;&gt;TED talk&lt;/a&gt;．&lt;/p&gt;
+
+&lt;h1 id=&quot;1-what3words&quot;&gt;1. What3Words&lt;/h1&gt;
+
+&lt;h1 id=&quot;2-api&quot;&gt;2. API&lt;/h1&gt;
+
+&lt;h1 id=&quot;3-日本語化&quot;&gt;3. 日本語化&lt;/h1&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://what3words.com/&quot;&gt;What3Words&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth?utm_campaign=tedspread--a&amp;amp;utm_medium=referral&amp;amp;utm_source=tedcomshare&quot;&gt;TED，A precise, three-word address for every place on earth&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gigazine.net/news/20160626-mongolia-three-word-address&quot;&gt;Gigazine，全ての住所を単語3つの組み合わせだけで表現する「What3Words」がモンゴルで導入へ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/hfu/items/895141107aa4eb693f66&quot;&gt;Qiita，覚えやすい位置表現（what3words）による行動支援の可能性 / Possibilities of the what3words for disaster response&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 24 Oct 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/10/24/what3words-jp</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/24/what3words-jp</guid>
+        
+        
+        <category>geo</category>
+        
+      </item>
     
       <item>
         <title>Windows 7でAnaconda 5.0.0</title>
@@ -877,54 +909,6 @@ logerror = log(z) - log(s) \tag{1}
         
         
         <category>x-tech</category>
-        
-      </item>
-    
-      <item>
-        <title>Support vector machineの理論と実装</title>
-        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=75MTQH13HRTSXQWGQARY&quot;&gt;パターン認識と機械学習&lt;/a&gt;でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．&lt;/p&gt;
-
-&lt;h1 id=&quot;1-理論&quot;&gt;1. 理論&lt;/h1&gt;
-
-&lt;h2 id=&quot;1a-コンセプト&quot;&gt;1.a コンセプト&lt;/h2&gt;
-
-&lt;h2 id=&quot;1b-最大マージン分類器&quot;&gt;1.b 最大マージン分類器&lt;/h2&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
-y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{1}
-\end{align*}&lt;/script&gt;
-
-&lt;h2 id=&quot;1c-ラグランジュ乗数法&quot;&gt;1.c ラグランジュ乗数法&lt;/h2&gt;
-
-&lt;h2 id=&quot;1d-カーネルトリック&quot;&gt;1.d カーネルトリック&lt;/h2&gt;
-
-&lt;h1 id=&quot;2-実装&quot;&gt;2. 実装&lt;/h1&gt;
-
-&lt;p&gt;学習目的であれば，ソルバで二次計画法を解いても良さそう．実務目的であれば，無難にライブラリを使ったほうが良さそう．&lt;/p&gt;
-
-&lt;h2 id=&quot;2a-二次計画法ソルバ&quot;&gt;2.a 二次計画法ソルバ&lt;/h2&gt;
-
-&lt;p&gt;Pythonの二次計画法ソルバとしては，&lt;a href=&quot;http://cvxopt.org/&quot;&gt;CVXOPT&lt;/a&gt;が人気．実装するとしたら，以下のようになる．&lt;/p&gt;
-
-&lt;h2 id=&quot;2b-svmライブラリ&quot;&gt;2.b SVMライブラリ&lt;/h2&gt;
-
-&lt;p&gt;SVMライブラリとしては，&lt;a href=&quot;http://scikit-learn.org/stable/index.html&quot;&gt;scikit-learn&lt;/a&gt;の&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;&lt;/a&gt;モジュールが人気．上記と同じ機能を実装するとしたら，以下のようになる．&lt;/p&gt;
-
-&lt;h1 id=&quot;3-実験&quot;&gt;3. 実験&lt;/h1&gt;
-
-&lt;h1 id=&quot;参考文献&quot;&gt;参考文献&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_lpo_sbs_14_img_2?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=2J0S7A4J37ASEZ0JMGQW&quot;&gt;C.M.ビショップ，パターン認識と機械学習 下&lt;/a&gt;：SVMが登場するのは下巻．ただし，ラグランジュ乗数法の詳細は上巻の付録にある．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;: Support Vector Machines&lt;/a&gt;：便利すぎるSVMモジュール．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 04 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/04/support-vector-machine</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/04/support-vector-machine</guid>
-        
-        
-        <category>machine learning</category>
         
       </item>
     
