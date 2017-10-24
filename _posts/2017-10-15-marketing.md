@@ -6,7 +6,7 @@ categories:
  - marketing
 ---
 
-（作成中）[コトラー，アームストロング，恩藏のマーケティング原理](http://amzn.asia/eGcRMag)の読書メモ．
+（随時更新）[コトラー，アームストロング，恩藏のマーケティング原理](http://amzn.asia/eGcRMag)の読書メモ．
 
 # まとめ
 

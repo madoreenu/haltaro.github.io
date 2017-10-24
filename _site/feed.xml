@@ -6,41 +6,9 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Oct 2017 22:14:59 +0900</pubDate>
-    <lastBuildDate>Tue, 24 Oct 2017 22:14:59 +0900</lastBuildDate>
+    <pubDate>Wed, 25 Oct 2017 08:08:26 +0900</pubDate>
+    <lastBuildDate>Wed, 25 Oct 2017 08:08:26 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
-    
-      <item>
-        <title>What3Wordsを日本語化</title>
-        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://what3words.com/&quot;&gt;What3Words&lt;/a&gt;とは，新しい住所定義サービスである．本サービスで定義された住所は，従来より詳細（3m四方のグリッド単位！）で，かつ覚えやすい（わずか三単語！）．&lt;a href=&quot;https://docs.what3words.com/api/v2/&quot;&gt;API&lt;/a&gt;を公開しているが，2017年10月24日時点で日本語未対応っぽい．そこで，本記事ではWhat3Wordsを日本語化して遊ぶ．&lt;/p&gt;
-
-&lt;div style=&quot;max-width:854px&quot;&gt;&lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://embed.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth&quot; width=&quot;854&quot; height=&quot;480&quot; style=&quot;position:absolute;left:0;top:0;width:100%;height:100%&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;上のビデオは，このサービスを知るきっかけになった&lt;a href=&quot;https://www.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth?utm_campaign=tedspread--a&amp;amp;utm_medium=referral&amp;amp;utm_source=tedcomshare&quot;&gt;TED talk&lt;/a&gt;．&lt;/p&gt;
-
-&lt;h1 id=&quot;1-what3words&quot;&gt;1. What3Words&lt;/h1&gt;
-
-&lt;h1 id=&quot;2-api&quot;&gt;2. API&lt;/h1&gt;
-
-&lt;h1 id=&quot;3-日本語化&quot;&gt;3. 日本語化&lt;/h1&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://what3words.com/&quot;&gt;What3Words&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth?utm_campaign=tedspread--a&amp;amp;utm_medium=referral&amp;amp;utm_source=tedcomshare&quot;&gt;TED，A precise, three-word address for every place on earth&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://gigazine.net/news/20160626-mongolia-three-word-address&quot;&gt;Gigazine，全ての住所を単語3つの組み合わせだけで表現する「What3Words」がモンゴルで導入へ&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://qiita.com/hfu/items/895141107aa4eb693f66&quot;&gt;Qiita，覚えやすい位置表現（what3words）による行動支援の可能性 / Possibilities of the what3words for disaster response&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 24 Oct 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/10/24/what3words-jp</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/24/what3words-jp</guid>
-        
-        
-        <category>geo</category>
-        
-      </item>
     
       <item>
         <title>Windows 7でAnaconda 5.0.0</title>
@@ -909,6 +877,61 @@ logerror = log(z) - log(s) \tag{1}
         
         
         <category>x-tech</category>
+        
+      </item>
+    
+      <item>
+        <title>JekyllサイトでGoogle Analytics</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/07/30/first-post&quot;&gt;JekyllとGitHub Pagesで立ち上げたウェブサイト&lt;/a&gt;に，&lt;a href=&quot;https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/&quot;&gt;Google Analytics&lt;/a&gt;でトラッキング機能を導入した．&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;おー．見えてる見えてる．&lt;/p&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.google.com/analytics/answer/1008080?visit_id=1-636375329556963699-2710489376&amp;amp;rd=1&quot;&gt;Google アナリティクス トラッキングを設定する&lt;/a&gt;：本家ヘルプ．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://michaelsoolee.com/google-analytics-jekyll/&quot;&gt;Google Analytics setup for Jekyll&lt;/a&gt;：Jekyllにおける設定方法について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://techmemo.biz/web-cheat-sheet/%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AByoutube%E3%81%AE%E5%8B%95%E7%94%BB%E3%82%92%E5%9F%8B%E3%82%81%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95/&quot;&gt;ブログにYouTubeの動画を埋め込む方法&lt;/a&gt;：Youtube動画の埋め込みについて．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;h2 id=&quot;1-google-analyticsの登録&quot;&gt;1. Google Analyticsの登録&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://analytics.google.com&quot;&gt;Google Analytics&lt;/a&gt;にウェブサイト（&lt;code class=&quot;highlighter-rouge&quot;&gt;https://haltaro.github.io&lt;/code&gt;）を登録．趣味で使うぶんにはデフォルト設定で十分だし，あとで変更可能．&lt;/p&gt;
+
+&lt;h2 id=&quot;2-analyticshtmlの保存&quot;&gt;2. analytics.htmlの保存&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;管理 &amp;gt; プロパティ &amp;gt; トラッキング情報 &amp;gt; トラッキングコード&lt;/code&gt;を選択．以下のようなJavaScriptスニペットをコピーし，&lt;code class=&quot;highlighter-rouge&quot;&gt;analytics.html&lt;/code&gt;として&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/&lt;/code&gt;ディレクトリに保存．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/45500c3c134f5c48b549408b02c312c3.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;ただし，&lt;code class=&quot;highlighter-rouge&quot;&gt;UA-*********-*&lt;/code&gt;はウェブサイト固有のトラッキングコード．&lt;/p&gt;
+
+&lt;h2 id=&quot;3-defaulthtmlの修正&quot;&gt;3. default.htmlの修正&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/_layout&lt;/code&gt;ディレクトリの&lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;に，下記の&lt;code class=&quot;highlighter-rouge&quot;&gt;analytics.html&lt;/code&gt;を追記．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/c9d454635b5304cdb2163c5f38490f3b.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll.environment == 'production'&lt;/code&gt;は，ローカル環境での動作テスト（&lt;code class=&quot;highlighter-rouge&quot;&gt;$ jekyll serve&lt;/code&gt;）をトラッキング対象から除外するためのもの．&lt;/p&gt;
+
+&lt;h2 id=&quot;4-待機&quot;&gt;4. 待機&lt;/h2&gt;
+
+&lt;p&gt;設定が反映されるまで，30分ほどかかった．&lt;/p&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;指示通り設定すれば，問題なく動作した．Youtube動画も埋め込めたので満足．&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Aug 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/08/04/set-google-analytics</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/04/set-google-analytics</guid>
+        
+        
+        <category>jekyll</category>
         
       </item>
     
