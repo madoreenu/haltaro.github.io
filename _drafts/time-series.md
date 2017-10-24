@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 時系列分析技術まとめ
-updated: 2017-08-16 20:00
+updated: 2017-10-25 20:00
 categories:
  - machine learning
 ---

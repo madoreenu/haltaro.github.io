@@ -11,4 +11,4 @@ public: true
 
 写真は，アメリカ駐在時によく散歩したハドソン川です．
 
-なお，本ウェブサイトは，[laobubu](https://github.com/laobubu)さんの[EasyBook](http://jekyllthemes.org/themes/easybook/)をベースにカスタマイズしたものです．
+なお，本ウェブサイトは，[laobubu](https://github.com/laobubu)さんの[EasyBook](http://jekyllthemes.org/themes/easybook/)をベースにカスタマイズしたものです．また，本ウェブサイトの内容は，予告なく変更・削除する場合がございます．何卒ご理解のほど，よろしくお願い致します．

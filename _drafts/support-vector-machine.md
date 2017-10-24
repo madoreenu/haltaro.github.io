@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Support vector machineの理論と実装
-updated: 2017-08-04 22:00
+updated: 2017-10-25 22:00
 categories:
  - machine learning
 ---
