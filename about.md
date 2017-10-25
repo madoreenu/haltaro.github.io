@@ -11,4 +11,6 @@ public: true
 
 写真は，アメリカ駐在時によく散歩したハドソン川です．
 
-なお，本ウェブサイトは，[laobubu](https://github.com/laobubu)さんの[EasyBook](http://jekyllthemes.org/themes/easybook/)をベースにカスタマイズしたものです．また，本ウェブサイトの内容は，予告なく変更・削除する場合がございます．何卒ご理解のほど，よろしくお願い致します．
+なお，本ウェブサイトは，[laobubu](https://github.com/laobubu)さんの[EasyBook](http://jekyllthemes.org/themes/easybook/)をベースにカスタマイズしたものです．また，本ウェブサイトの内容を，予告なく変更・削除する場合[^1]がございます．何卒ご理解のほど，よろしくお願い致します．
+
+[^1]: 例えば，急に[Jekyllのdrafts機能を使ってみる](https://haltaro.github.io/2017/10/25/jekyll-drafts)など．
