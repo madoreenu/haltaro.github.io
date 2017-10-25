@@ -31,7 +31,7 @@ categories:
 未完成の読書メモや受講メモは，栞として役に立つ．`随時更新`と注意書きをつけて公開することにした．
 
 * [Udacity, Intro to Relational Databases](https://haltaro.github.io/2017/08/10/udacity-rdb)
-* [Udacity, Intro to Hadoop and MapReduce](https://haltaro.github.io/2017/08/10/udacity-hadoop)
+* [Udacity, Intro to Hadoop and MapReduce](https://haltaro.github.io/2017/08/13/udacity-hadoop)
 * [コトラー，アームストロング，恩藏のマーケティング原理](https://haltaro.github.io/2017/10/15/marketing)
 
 ## \_draftsに退避した記事
