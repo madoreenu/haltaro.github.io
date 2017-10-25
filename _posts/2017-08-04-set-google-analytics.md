@@ -1,7 +1,7 @@
 ---
 layout: post
-title: JekyllサイトでGoogle Analytics
-updated: 2017-08-04 22:00 
+title: JekyllでGoogle Analytics
+updated: 2017-08-04 22:00
 categories:
  - jekyll
 ---
