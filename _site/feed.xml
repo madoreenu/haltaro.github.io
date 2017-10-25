@@ -6,36 +6,49 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Oct 2017 08:32:56 +0900</pubDate>
-    <lastBuildDate>Wed, 25 Oct 2017 08:32:56 +0900</lastBuildDate>
+    <pubDate>Wed, 25 Oct 2017 11:39:31 +0900</pubDate>
+    <lastBuildDate>Wed, 25 Oct 2017 11:39:31 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
         <title>Jekyllで下書き記事管理</title>
-        <description>&lt;p&gt;これまで下書き記事は，本文中に&lt;code class=&quot;highlighter-rouge&quot;&gt;（作成中）&lt;/code&gt;として公開していたが，流石に見苦しいので，&lt;a href=&quot;http://jekyllrb-ja.github.io/docs/drafts/&quot;&gt;Jekyllのdrafts機能&lt;/a&gt;を使い一旦非公開&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;にすることにした．ただし，途中経過を公開する意味がありそうな読書メモや受講メモはそのまま残す．&lt;/p&gt;
+        <description>&lt;p&gt;これまでは下書き記事を，&lt;code class=&quot;highlighter-rouge&quot;&gt;（作成中）&lt;/code&gt;と注意書きして公開していたが，見苦しいので，&lt;a href=&quot;http://jekyllrb-ja.github.io/docs/drafts/&quot;&gt;Jekyllのdrafts機能&lt;/a&gt;で一旦非公開&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;にすることにした．ただし，途中経過を公開する意味がありそうな，読書メモや受講メモはそのまま残す．&lt;/p&gt;
 
 &lt;h1 id=&quot;jekyllのdrafts機能&quot;&gt;Jekyllのdrafts機能&lt;/h1&gt;
 
-&lt;h1 id=&quot;draftsに対比した記事&quot;&gt;draftsに対比した記事&lt;/h1&gt;
+&lt;h1 id=&quot;公開のままにした記事&quot;&gt;公開のままにした記事&lt;/h1&gt;
 
-&lt;h1 id=&quot;そのまま公開する記事&quot;&gt;そのまま公開する記事&lt;/h1&gt;
+&lt;p&gt;未完成の読書メモや受講メモは，栞として役に立つ．&lt;code class=&quot;highlighter-rouge&quot;&gt;（随時更新）&lt;/code&gt;と注意書きをつけて公開することにした．&lt;/p&gt;
 
-&lt;h1 id=&quot;諸事情で非公開にした記事&quot;&gt;諸事情で非公開にした記事&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/08/10/udacity-rdb&quot;&gt;Udacity, Intro to Relational Databases&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/08/10/udacity-hadoop&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/10/15/marketing&quot;&gt;コトラー，アームストロング，恩藏のマーケティング原理&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;_draftsに退避した記事&quot;&gt;_draftsに退避した記事&lt;/h1&gt;
+
+&lt;p&gt;その他の下書き記事は一旦&lt;code class=&quot;highlighter-rouge&quot;&gt;_drafts&lt;/code&gt;に対比した．完成し次第，再度公開する．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Support vector machineの理論と実装&lt;/li&gt;
+  &lt;li&gt;時系列分析技術まとめ&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;お礼とお詫び&quot;&gt;お礼とお詫び&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;&quot;&gt;Google analyticsでアクセス解析&lt;/a&gt;してみると，ごくわずかですが，本ウェブサイトを訪問してくださる方がいるみたいです．ありがとうございます．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/08/04/set-google-analytics&quot;&gt;Google analyticsでアクセス解析&lt;/a&gt;してみると，ごくわずかですが，本ウェブサイトを訪問してくださる方がいるみたいです．感謝です．&lt;/p&gt;
 
-&lt;p&gt;今回のように，当方の勝手な都合で記事を削除させていただく場合もございます．何卒ご理解よろしくお願い致します．これに懲りず，また来てくださると嬉しいです．&lt;/p&gt;
+&lt;p&gt;今回のように，当方の勝手な都合で記事を削除させていただく場合もございます．何卒ご理解よろしくお願い致します．これに懲りず，たまに覗きに来ていただけると嬉しいです．&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;もし万が一リンクを保存していた方がいたらごめんなさい．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;万が一リンクを保存していた方がいたらごめんなさい．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Wed, 25 Oct 2017 08:32:56 +0900</pubDate>
+        <pubDate>Wed, 25 Oct 2017 11:38:13 +0900</pubDate>
         <link>http://localhost:4000/2017/10/25/jekyll-drafts</link>
         <guid isPermaLink="true">http://localhost:4000/2017/10/25/jekyll-drafts</guid>
         
@@ -234,7 +247,7 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
     
       <item>
         <title>コトラー，アームストロング，恩藏のマーケティング原理</title>
-        <description>&lt;p&gt;（随時更新）&lt;a href=&quot;http://amzn.asia/eGcRMag&quot;&gt;コトラー，アームストロング，恩藏のマーケティング原理&lt;/a&gt;の読書メモ．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/eGcRMag&quot;&gt;コトラー，アームストロング，恩藏のマーケティング原理&lt;/a&gt;の読書メモ．&lt;/p&gt;
 
 &lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
 
@@ -477,7 +490,7 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
     
       <item>
         <title>Udacity, Intro to Hadoop and MapReduce</title>
-        <description>&lt;p&gt;（随時更新）&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/DEQNknALf_8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -604,7 +617,7 @@ y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{
     
       <item>
         <title>Udacity, Intro to Relational Databases</title>
-        <description>&lt;p&gt;（随時更新）&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Intro to Relational Databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Intro to Relational Databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/jyju2P-7hPA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 

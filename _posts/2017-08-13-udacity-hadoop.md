@@ -6,7 +6,7 @@ categories:
  - data science
 ---
 
-（随時更新）[Udacity, Intro to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．
+**随時更新**：[Udacity, Intro to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/DEQNknALf_8?rel=0" frameborder="0" allowfullscreen></iframe>
 

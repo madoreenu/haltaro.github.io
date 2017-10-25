@@ -6,7 +6,7 @@ categories:
  - data science
 ---
 
-（随時更新）[Udacity, Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)の受講メモ．5部構成の無料講座．
+**随時更新**：[Udacity, Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)の受講メモ．5部構成の無料講座．
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/jyju2P-7hPA?rel=0" frameborder="0" allowfullscreen></iframe>
 
