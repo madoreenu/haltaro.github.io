@@ -6,9 +6,180 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Oct 2017 23:29:59 +0900</pubDate>
-    <lastBuildDate>Thu, 26 Oct 2017 23:29:59 +0900</lastBuildDate>
+    <pubDate>Fri, 27 Oct 2017 07:05:36 +0900</pubDate>
+    <lastBuildDate>Fri, 27 Oct 2017 07:05:36 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>深層学習で女子アナの所属推定①スクレイピング</title>
+        <description>&lt;p&gt;深層学習で，女子アナの所属局の分類&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;問題に挑戦する．最終的には，顔画像から適切な放送局を助言するサービスを作り，アナウンサーを志す大学生の就活を支援したい．&lt;/p&gt;
+
+&lt;p&gt;その第一歩として，本記事では女子アナ画像をWebスクレイピングする．&lt;/p&gt;
+
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;根拠は一切ないが，NHKは分類しやすそう．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 27 Oct 2017 07:05:36 +0900</pubDate>
+        <link>http://localhost:4000/2017/10/27/announcer-scraping</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/27/announcer-scraping</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
+    
+      <item>
+        <title>What3Wordsを日本語化</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://what3words.com/&quot;&gt;What3Words&lt;/a&gt;とは，新しい住所定義サービスである．本サービスで定義された住所は，従来より詳細（3m四方のグリッド単位！）で，かつ覚えやすい（わずか三単語！）．&lt;a href=&quot;https://docs.what3words.com/api/v2/&quot;&gt;API&lt;/a&gt;を公開しているが，2017年10月24日時点で日本語未対応っぽい．そこで，本記事ではWhat3Wordsを日本語化して遊ぶ．&lt;/p&gt;
+
+&lt;div style=&quot;max-width:854px&quot;&gt;&lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://embed.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth&quot; width=&quot;854&quot; height=&quot;480&quot; style=&quot;position:absolute;left:0;top:0;width:100%;height:100%&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;上のビデオは，このサービスを知るきっかけになった&lt;a href=&quot;https://www.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth?utm_campaign=tedspread--a&amp;amp;utm_medium=referral&amp;amp;utm_source=tedcomshare&quot;&gt;TED talk&lt;/a&gt;．&lt;/p&gt;
+
+&lt;h1 id=&quot;1-what3words&quot;&gt;1. What3Words&lt;/h1&gt;
+
+&lt;h1 id=&quot;2-api&quot;&gt;2. API&lt;/h1&gt;
+
+&lt;h1 id=&quot;3-日本語化&quot;&gt;3. 日本語化&lt;/h1&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://what3words.com/&quot;&gt;What3Words&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth?utm_campaign=tedspread--a&amp;amp;utm_medium=referral&amp;amp;utm_source=tedcomshare&quot;&gt;TED，A precise, three-word address for every place on earth&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gigazine.net/news/20160626-mongolia-three-word-address&quot;&gt;Gigazine，全ての住所を単語3つの組み合わせだけで表現する「What3Words」がモンゴルで導入へ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/hfu/items/895141107aa4eb693f66&quot;&gt;Qiita，覚えやすい位置表現（what3words）による行動支援の可能性 / Possibilities of the what3words for disaster response&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 25 Oct 2017 17:56:20 +0900</pubDate>
+        <link>http://localhost:4000/2017/10/25/what3words-jp</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/25/what3words-jp</guid>
+        
+        
+        <category>geo</category>
+        
+      </item>
+    
+      <item>
+        <title>時系列分析技術まとめ</title>
+        <description>&lt;p&gt;（作成中）時系列分析技術をまとめる．時系列解析と呼ばれることもあるが，本記事では時系列分析で統一する．時系列分析とは，時間軸に沿って変化している現象を分析すること．計量経済学や制御工学等，多様な学術領域で研究が進められている．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2017-08-16-time.jpg&quot; alt=&quot;time&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-計量時系列分析&quot;&gt;1. 計量時系列分析&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tjo.hatenablog.com/entry/2013/07/12/184704&quot;&gt;六本木で働くデータサイエンティストのブログ，Rで計量時系列分析：AR, MA, ARMA, ARIMAモデル, 予測&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1a-ar&quot;&gt;1.a AR&lt;/h2&gt;
+
+&lt;h2 id=&quot;1b-ma&quot;&gt;1.b MA&lt;/h2&gt;
+
+&lt;h2 id=&quot;1c-arma&quot;&gt;1.c ARMA&lt;/h2&gt;
+
+&lt;h2 id=&quot;1d-arima&quot;&gt;1.d ARIMA&lt;/h2&gt;
+
+&lt;h1 id=&quot;2-状態空間モデル&quot;&gt;2. 状態空間モデル&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mathwords.net/zyotaikukan&quot;&gt;具体例で学ぶ数学，状態空間モデルの意味と4つの分類（線形性、正規性、時変性、連続性）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.asia/aGb1uXY&quot;&gt;C.M.ビショップ，パターン認識と機械学習&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2a-隠れマルコフモデル&quot;&gt;2.a 隠れマルコフモデル&lt;/h2&gt;
+
+&lt;h2 id=&quot;2b-線形動的システム&quot;&gt;2.b 線形動的システム&lt;/h2&gt;
+
+&lt;h2 id=&quot;2c-非線形動的システム&quot;&gt;2.c 非線形動的システム&lt;/h2&gt;
+
+&lt;h2 id=&quot;2d-カルマンフィルタ&quot;&gt;2.d カルマンフィルタ&lt;/h2&gt;
+
+&lt;h1 id=&quot;3-neural-network-not-deep&quot;&gt;3. Neural Network (Not deep)&lt;/h1&gt;
+
+&lt;h1 id=&quot;4-deep-neural-network&quot;&gt;4. Deep Neural Network&lt;/h1&gt;
+
+&lt;h2 id=&quot;41-lstm&quot;&gt;4.1 LSTM&lt;/h2&gt;
+
+&lt;h2 id=&quot;42-qrnn&quot;&gt;4.2 QRNN&lt;/h2&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tjo.hatenablog.com/entry/2013/07/12/184704&quot;&gt;六本木で働くデータサイエンティストのブログ，Rで計量時系列分析：AR, MA, ARMA, ARIMAモデル, 予測&lt;/a&gt;：計量時系列分析について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mathwords.net/zyotaikukan&quot;&gt;具体例で学ぶ数学，状態空間モデルの意味と4つの分類（線形性、正規性、時変性、連続性）&lt;/a&gt;：状態空間モデルについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.asia/aGb1uXY&quot;&gt;C.M.ビショップ，パターン認識と機械学習&lt;/a&gt;：隠れマルコフモデル，線形動的システムについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0031320305001305&quot;&gt;T. Warren Liao, Clustering of time series data—a survey, Pattern Recognition, Volume 38, Issue 11, 2005, Pages 1857-1874, ISSN 0031-3203&lt;/a&gt;：時系列データのクラスタリングについて．&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 25 Oct 2017 17:56:20 +0900</pubDate>
+        <link>http://localhost:4000/2017/10/25/time-series</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/25/time-series</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
+    
+      <item>
+        <title>Support vector machineの理論と実装</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=75MTQH13HRTSXQWGQARY&quot;&gt;パターン認識と機械学習&lt;/a&gt;でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．&lt;/p&gt;
+
+&lt;h1 id=&quot;1-理論&quot;&gt;1. 理論&lt;/h1&gt;
+
+&lt;h2 id=&quot;1a-コンセプト&quot;&gt;1.a コンセプト&lt;/h2&gt;
+
+&lt;h2 id=&quot;1b-最大マージン分類器&quot;&gt;1.b 最大マージン分類器&lt;/h2&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{1}
+\end{align*}&lt;/script&gt;
+
+&lt;h2 id=&quot;1c-ラグランジュ乗数法&quot;&gt;1.c ラグランジュ乗数法&lt;/h2&gt;
+
+&lt;h2 id=&quot;1d-カーネルトリック&quot;&gt;1.d カーネルトリック&lt;/h2&gt;
+
+&lt;h1 id=&quot;2-実装&quot;&gt;2. 実装&lt;/h1&gt;
+
+&lt;p&gt;学習目的であれば，ソルバで二次計画法を解いても良さそう．実務目的であれば，無難にライブラリを使ったほうが良さそう．&lt;/p&gt;
+
+&lt;h2 id=&quot;2a-二次計画法ソルバ&quot;&gt;2.a 二次計画法ソルバ&lt;/h2&gt;
+
+&lt;p&gt;Pythonの二次計画法ソルバとしては，&lt;a href=&quot;http://cvxopt.org/&quot;&gt;CVXOPT&lt;/a&gt;が人気．実装するとしたら，以下のようになる．&lt;/p&gt;
+
+&lt;h2 id=&quot;2b-svmライブラリ&quot;&gt;2.b SVMライブラリ&lt;/h2&gt;
+
+&lt;p&gt;SVMライブラリとしては，&lt;a href=&quot;http://scikit-learn.org/stable/index.html&quot;&gt;scikit-learn&lt;/a&gt;の&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;&lt;/a&gt;モジュールが人気．上記と同じ機能を実装するとしたら，以下のようになる．&lt;/p&gt;
+
+&lt;h1 id=&quot;3-実験&quot;&gt;3. 実験&lt;/h1&gt;
+
+&lt;h1 id=&quot;参考文献&quot;&gt;参考文献&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_lpo_sbs_14_img_2?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=2J0S7A4J37ASEZ0JMGQW&quot;&gt;C.M.ビショップ，パターン認識と機械学習 下&lt;/a&gt;：SVMが登場するのは下巻．ただし，ラグランジュ乗数法の詳細は上巻の付録にある．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.svm&lt;/code&gt;: Support Vector Machines&lt;/a&gt;：便利すぎるSVMモジュール．&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 25 Oct 2017 17:56:20 +0900</pubDate>
+        <link>http://localhost:4000/2017/10/25/support-vector-machine</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/25/support-vector-machine</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
     
       <item>
         <title>Jekyllで下書き記事管理</title>
@@ -490,453 +661,6 @@
         
         
         <category>data science</category>
-        
-      </item>
-    
-      <item>
-        <title>Udacity, Intro to Relational Databases</title>
-        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Intro to Relational Databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/jyju2P-7hPA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&quot;1-data-and-tables&quot;&gt;1. Data and Tables&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Databaseは，同時に複数の人が編集可能．これが，普通のファイルと異なる点．&lt;/li&gt;
-  &lt;li&gt;Tableは，headerとbodyからなる．headerは，table nameと，column nameと，column typeからなる．bodyは，rowsとcolumnsからなる．&lt;/li&gt;
-  &lt;li&gt;複数の行に跨る演算をaggregationと呼ぶ．SQLで使えるaggregationの代表的なものとして，count，avg，max，min，sumなどがある．&lt;/li&gt;
-  &lt;li&gt;codeからdatabaseに&lt;code class=&quot;highlighter-rouge&quot;&gt;query&lt;/code&gt;を出すと，&lt;code class=&quot;highlighter-rouge&quot;&gt;result&lt;/code&gt;を返される．&lt;code class=&quot;highlighter-rouge&quot;&gt;result&lt;/code&gt;は，原則的にTable形式．&lt;/li&gt;
-  &lt;li&gt;Database中でデータの唯一性を担保するために，idを与えることがある．このように識別に用いられるcolumnを&lt;code class=&quot;highlighter-rouge&quot;&gt;primary key&lt;/code&gt;と呼ぶ．&lt;/li&gt;
-  &lt;li&gt;複数の情報を持つオブジェクトを定義するよりは，複数のTableで管理したほうが効率的．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;2-elements-of-sql&quot;&gt;2. Elements of SQL&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;SQLのtypeとして，&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;integer&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;などがある．&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;は，&lt;code class=&quot;highlighter-rouge&quot;&gt;'2017-08-10'&lt;/code&gt;のようにシングルクォートで囲む．主なSQLのtypeは以下．&lt;/li&gt;
-  &lt;li&gt;Text and string types
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;：長さに制限のない文字列．Pythonの&lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;に相当．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;char(n)&lt;/code&gt;：長さが&lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;の文字列．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;varchar(n)&lt;/code&gt;：長さが最大&lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;の文字列．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Numeric types
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;integer&lt;/code&gt;：整数型．Pythonの&lt;code class=&quot;highlighter-rouge&quot;&gt;int&lt;/code&gt;に相当．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;real&lt;/code&gt;：浮動小数点型．Pythonの&lt;code class=&quot;highlighter-rouge&quot;&gt;float&lt;/code&gt;に相当．精度は小数第6位．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;double precision&lt;/code&gt;：倍精度小数点．精度は小数第15位．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;decimal&lt;/code&gt;：正確な小数型（？）．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Date and time types
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;：日付型．年，月，日．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt;：時刻型．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;timestamp&lt;/code&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt;．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;基本構文：&lt;strong&gt;select&lt;/strong&gt; &lt;em&gt;columns&lt;/em&gt; &lt;strong&gt;from&lt;/strong&gt; &lt;em&gt;tables&lt;/em&gt; &lt;strong&gt;where&lt;/strong&gt; &lt;em&gt;condition&lt;/em&gt;;&lt;/li&gt;
-  &lt;li&gt;出力数に制限を設けるとき：&lt;strong&gt;limit&lt;/strong&gt; &lt;em&gt;count&lt;/em&gt; [&lt;strong&gt;offset&lt;/strong&gt; &lt;em&gt;skip&lt;/em&gt;]&lt;/li&gt;
-  &lt;li&gt;並び替えるとき：&lt;strong&gt;order by&lt;/strong&gt; &lt;em&gt;columns&lt;/em&gt; [&lt;strong&gt;desc&lt;/strong&gt;]&lt;/li&gt;
-  &lt;li&gt;結果をまとめるとき：&lt;strong&gt;group by&lt;/strong&gt; &lt;em&gt;columns&lt;/em&gt;
-    &lt;ul&gt;
-      &lt;li&gt;例えば，同じ名前の動物の数を数えるとき：&lt;code class=&quot;highlighter-rouge&quot;&gt;select name, count(*) as num from animals group by name;&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Pythonでも同様のことはできる．違いはスピードとメモリ．Databaseは格段に高速に，かつメモリ消費を抑えて実行できる．&lt;/li&gt;
-  &lt;li&gt;新たに要素を追加するとき：&lt;strong&gt;insert into&lt;/strong&gt; &lt;em&gt;table&lt;/em&gt; &lt;strong&gt;values (&lt;/strong&gt; &lt;em&gt;val1, val2, …&lt;/em&gt; &lt;strong&gt;)&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;ただし，特定の列を指定して追加するときは：&lt;strong&gt;insert into&lt;/strong&gt; &lt;em&gt;table&lt;/em&gt;(&lt;em&gt;column1, column2, …&lt;/em&gt;) &lt;strong&gt;values (&lt;/strong&gt; &lt;em&gt;val1, val2, …&lt;/em&gt; &lt;strong&gt;)&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;Databaseを結合するとき：&lt;em&gt;T&lt;/em&gt; &lt;strong&gt;join&lt;/strong&gt; &lt;em&gt;S&lt;/em&gt; &lt;strong&gt;on&lt;/strong&gt; &lt;em&gt;T.color = S.paint&lt;/em&gt;
-    &lt;ul&gt;
-      &lt;li&gt;例えば，&lt;code class=&quot;highlighter-rouge&quot;&gt;fish&lt;/code&gt;を食べる動物の名前を抽出したとき：&lt;code class=&quot;highlighter-rouge&quot;&gt;select name from animals join diet on animals.species=diet.species where food='fish';&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;where&lt;/code&gt;は&lt;code class=&quot;highlighter-rouge&quot;&gt;group by&lt;/code&gt;の前に適用されるが，&lt;code class=&quot;highlighter-rouge&quot;&gt;having&lt;/code&gt;は&lt;code class=&quot;highlighter-rouge&quot;&gt;group by&lt;/code&gt;の後に適用される．&lt;/li&gt;
-  &lt;li&gt;Lesson 3に向けて，&lt;a href=&quot;https://www.virtualbox.org/wiki/Downloads&quot;&gt;VirtualBox&lt;/a&gt;と&lt;a href=&quot;https://www.vagrantup.com/&quot;&gt;Vagrant&lt;/a&gt;で環境を構築．Vagrantってこんな便利だったのか．
-    &lt;ul&gt;
-      &lt;li&gt;仮想環境構築：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant up&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;ログイン：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant ssh&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;ファイル共有は&lt;code class=&quot;highlighter-rouge&quot;&gt;/vagrant&lt;/code&gt;ディレクトリ．&lt;/li&gt;
-      &lt;li&gt;PostgreSQLの起動：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ psql&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;ログアウト：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ exit&lt;/code&gt;あるいは&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-D&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;VagrantとDockerの違いについては，以下が参考になった．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://qiita.com/hidekuro/items/fc12344d36d996198e96&quot;&gt;VagrantとDockerについて名前しか知らなかったので試した&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://acchi-muite-hoi.hatenablog.com/entry/2016/05/30/041618&quot;&gt;dockerとvagrantの違い言える？新人エンジニアでも分かった気になれる俺流まとめ&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;3-python-db-api&quot;&gt;3. Python DB-API&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;PythonからDatabaseを叩く際，DB-APIを用いる．DB-APIはPythonの組み込みモジュール．Databaseに応じて，DB-APIモジュールは異なる：SQLiteは&lt;code class=&quot;highlighter-rouge&quot;&gt;sqlite3&lt;/code&gt;，PostgreSQLは&lt;code class=&quot;highlighter-rouge&quot;&gt;psycopg2&lt;/code&gt;，ODBCは&lt;code class=&quot;highlighter-rouge&quot;&gt;pyodbc&lt;/code&gt;，MySQLは&lt;code class=&quot;highlighter-rouge&quot;&gt;mysql.connector&lt;/code&gt;など．&lt;/li&gt;
-  &lt;li&gt;例えば，次のようなPythonコードを書く．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/92a4506f6b0f3461b217934860490173.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Databaseにおける追加や削除を行った後は，必ず&lt;code class=&quot;highlighter-rouge&quot;&gt;Connection.commit()&lt;/code&gt;する．&lt;/li&gt;
-  &lt;li&gt;PostgreSQLを使って，簡易なForumサイトを作成する．実験環境を確認．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant up&lt;/code&gt;で仮想環境を立ち上げ．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant ssh&lt;/code&gt;で仮想環境にログイン．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ cd /vagrant/forum&lt;/code&gt;で当該ディレクトリに移動．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ python form.py&lt;/code&gt;でForumサーバを起動．ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8000&lt;/code&gt;にアクセス．適当にMessageを投稿してみる．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+C&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;$ python form.py&lt;/code&gt;で再起動すると，先ほど投稿したMessageが消えていることがわかる．以降では，Messageを保存する機能をPostgreSQLで実装する．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;4-deeper-into-sql&quot;&gt;4. Deeper into SQL&lt;/h1&gt;
-
-&lt;h1 id=&quot;5-tournament-database&quot;&gt;5. Tournament Database&lt;/h1&gt;
-</description>
-        <pubDate>Thu, 10 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/10/udacity-rdb</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/10/udacity-rdb</guid>
-        
-        
-        <category>data science</category>
-        
-      </item>
-    
-      <item>
-        <title>アドテク入門</title>
-        <description>&lt;p&gt;アドテク（Advertising Technology）とは，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）をwin-winの関係にすること．特にReal time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-08-07-ad.jpg&quot; alt=&quot;ad&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;1-目的&quot;&gt;1. 目的&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.cyberagent.co.jp/ir/personal/adtech/&quot;&gt;CyberAgent，日本一やさしいアドテク教室&lt;/a&gt;より抜粋．&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;1：広告主が求める高い広告効果を出すために，より適切な場所／人に広告を出すこと &lt;br /&gt;
-2：メディアの広告枠販売や広告配信の効率化を実現し，収益最大化の支援をすること&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;2-種類&quot;&gt;2. 種類&lt;/h1&gt;
-
-&lt;p&gt;対象や目的に応じて，三種類に分類できる．&lt;/p&gt;
-
-&lt;h2 id=&quot;2a-メディアの広告選択最適化&quot;&gt;2.a メディアの広告選択最適化&lt;/h2&gt;
-
-&lt;p&gt;広告効果が大きい広告をいかに選択するか，という技術．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF&quot;&gt;&lt;strong&gt;Ad Network&lt;/strong&gt;&lt;/a&gt;：Webやアプリメディアなどの広告配信可能な媒体を多数束ねて広告を配信するネットワーク．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-exchange/&quot;&gt;&lt;strong&gt;Ad Exchange&lt;/strong&gt;&lt;/a&gt;：広告枠を１インプレッション単位で売買するプラットフォーム．各媒体やAd Networkが持つ広告掲載枠を交換できる仕組み．&lt;strong&gt;Ad Networkより大きな仕組み&lt;/strong&gt;．Ad Exchangeでは，広告出稿数と広告枠のバランスで，リアルタイムで広告枠の入札単価が変動する．Ad Exchangeには，様々なプラットフォームがある．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Double Click AdExchange&lt;/strong&gt;：Googleが運営．世界最大のAd Exchange．2009年からサービス開始．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Open X Market Japan&lt;/strong&gt;：Open X Japanとcciが提携して運営．2009年からサービス開始．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Microsoft Advertixing Exchange&lt;/strong&gt;：Microsoftが運営．2013年からサービス開始．配信枠はMSNとSkype．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Facebook AdExchange&lt;/strong&gt;：Facebookが運営．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Yild One&lt;/strong&gt;：プラットフォーム・ワンが運営するSSPプラットフォーム．厳密にはAd Exchangeと異なるが，Ad Exchange的に利用することも可能．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://smmlab.jp/?p=30268&quot;&gt;&lt;strong&gt;SSP&lt;/strong&gt;&lt;/a&gt;：Supply Side Platform．オンライン広告において，広告枠を提供しているメディアの広告枠販売や広告収益最大化などを支援するツール．具体的な提供内容はサービスによって異なるが，主に，Ad NetworkやAd Exchangeの管理，リアルタイム入札（RTB）への対応などがある．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2b-広告主の広告表現最適化&quot;&gt;2.b 広告主の広告表現最適化&lt;/h2&gt;
-
-&lt;p&gt;消費者一人ひとりにあった広告表現をいかに実現するか，という技術．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://webbu.jp/dsp_mechanism-276&quot;&gt;&lt;strong&gt;DSP&lt;/strong&gt;&lt;/a&gt;：Demand Side Platform．広告主はターゲットや予算を設定し，バナーを入稿するだけで，DSPが自動で最適な広告配信を行う．DSPを使うことで，複数のAd Network，Ad Exchange，SSPを管理可能になる．SSPのリクエストに応じて，どのような広告をいくらで入札するか決定する．つまり，広告枠のオークションが行われる．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/rtb/&quot;&gt;&lt;strong&gt;RTB&lt;/strong&gt;&lt;/a&gt;：１インプレッションに対してリアルタイムで入札を行う仕組み．広告主はDSPを，媒体はSSPを使って広告枠を取引する．RTBにおける広告掲載の流れは以下のようになる．
-    &lt;ol&gt;
-      &lt;li&gt;ターゲットユーザが媒体ページを訪問．&lt;/li&gt;
-      &lt;li&gt;媒体はインプレッション発生情報をSSPに発信．&lt;/li&gt;
-      &lt;li&gt;SSPは媒体情報やオーディエンス情報をデータ化．&lt;/li&gt;
-      &lt;li&gt;SSPは接続先DSPにビットリクエストを送信．&lt;/li&gt;
-      &lt;li&gt;DSPはビットリクエストを受信し，解析．&lt;/li&gt;
-      &lt;li&gt;DSPは，DSP内での入札勝者情報をSSPに返信．&lt;/li&gt;
-      &lt;li&gt;SSPは複数DSPからの返答を解析し，一番入札価格が高いDSPの広告タグを媒体に送信．&lt;/li&gt;
-      &lt;li&gt;SSPは，勝者DSPに広告リクエストを送信．&lt;/li&gt;
-      &lt;li&gt;勝者DSPは，クリエイティブ情報を送信．&lt;/li&gt;
-      &lt;li&gt;媒体は広告を表示．&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://webkikaku.co.jp/blog/ppc/retargeting/&quot;&gt;&lt;strong&gt;(Static) Retargeting&lt;/strong&gt;&lt;/a&gt;：特定のWebサイトに訪問したユーザを追跡し，広告を表示する仕組み．DSPが提供することもある．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.nex8.net/full-description-of-dynamic-retargeting/&quot;&gt;&lt;strong&gt;Dynamic Retargeting&lt;/strong&gt;&lt;/a&gt;：ユーザが見た商品に合わせて，動的に広告を表示するRetargeting手法．特に，アパレルEC，旅行，人材，不動産商材に強いと言われている．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2c-ターゲット分析&quot;&gt;2.c ターゲット分析&lt;/h2&gt;
-
-&lt;p&gt;広告に対するユーザの行動等のデータを，いかにマーケティングに活かすか，という技術．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://liskul.com/measure-advertising6-14994&quot;&gt;&lt;strong&gt;広告効果計測ツール&lt;/strong&gt;&lt;/a&gt;：Web広告やSEO施策を総合的に測定，評価するツール．&lt;a href=&quot;https://analytics.google.com/analytics/&quot;&gt;Google Analytics&lt;/a&gt;等のアクセス解析ツールと異なり，広告効果の分析を補助する機能を備えている．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.okuramkt.com/dic/mkt/tracking.html&quot;&gt;&lt;strong&gt;Tracking&lt;/strong&gt;&lt;/a&gt;：特定のユーザのサイト内での行動を追跡・分析すること．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dmlab.jp/adtech/dmp.html&quot;&gt;&lt;strong&gt;DMP&lt;/strong&gt;&lt;/a&gt;：Data Management Platform．インターネットに蓄積された情報を管理し，分析結果を広告配信に利用するためのプラットフォーム．現実的には，データの蓄積は進んでいるが，データの活用については敷居が高い模様．下記の二種類がある．
-    &lt;ul&gt;
-      &lt;li&gt;Open DMP：データ提供会社が保有している行動履歴や属性情報．&lt;/li&gt;
-      &lt;li&gt;Private DMP：自社独自で保有している購買履歴，興味関心情報．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ever-rise.co.jp/adtech-blog/how-to-use-ad-sdk.html&quot;&gt;&lt;strong&gt;SDK&lt;/strong&gt;&lt;/a&gt;：Software Development Toolkit．アドテクの文脈では，スマホアプリに組み込んで使う，広告配信に必要な機能をひとまとめにしたツールキットを指す．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;3-略語&quot;&gt;3. 略語&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://qiita.com/fukkyy/items/b2d37b4797516d72225a&quot;&gt;広告と機械学習&lt;/a&gt;を参考にさせて頂いた．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;CPM&lt;/strong&gt;：Cost Per Mile．1000PVあたりの単価．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CPC&lt;/strong&gt;：Cost Per Click．1クリックあたりの単価．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CPI&lt;/strong&gt;：Cost Per Install．1インストールあたりの単価．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;LTV&lt;/strong&gt;：Life Time Value．1ユーザがもたらす収益．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CTR&lt;/strong&gt;：Click Through Rate．クリック率．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CVR&lt;/strong&gt;：ConVersion Rate．コンバージョン率．ちなみにコンバージョンとは，Webサイトにおける目標の達成を指す．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;4-研究動向&quot;&gt;4. 研究動向&lt;/h1&gt;
-
-&lt;p&gt;最近はRTB関連がホットトピックらしい．&lt;a href=&quot;https://github.com/wnzhang/rtb-papers&quot;&gt;Paper Collection of Real-Time Bidding&lt;/a&gt;を参考に分類した．また，DSPについては&lt;a href=&quot;https://www.ai-gakkai.or.jp/vol32_no4/&quot;&gt;人工知能学会誌 Vol.32 No.4&lt;/a&gt;を参考にした．&lt;/p&gt;
-
-&lt;h2 id=&quot;4a-dsp-techniques&quot;&gt;4.a DSP Techniques&lt;/h2&gt;
-
-&lt;p&gt;最も盛んに研究されている分野．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;CTR/CVR Estimation&lt;/strong&gt;：CTRあるいはCVRを予測する．端的に言えば，広告をクリックするか否かを予測する二値識別問題．最も基本的な手法はロジスティック回帰．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Bid Landscape&lt;/strong&gt;：RTBに参加している広告主が，他の参加者の入札状況を予測する．既存研究は主にヒューリスティックな手法に集中している．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Bidding Strategies&lt;/strong&gt;：CTR/CVR Estimationから得られたインプレッション期待利得とBid Landscapeから得られた落札可能額をもとにオンラインナップサック問題を解く．インプレッションが到着する度に入札するか否かを決めなければならず，決定は覆せないという特徴から，オンラインと呼ばれる．オフラインナップサック問題ですらNP困難であり，近似解法が必要．オンラインナップサック問題に至っては入力（インプレッション）に仮定を行わなければ近似アルゴリズムすら設計できない．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Budget Pacing &amp;amp; Frequency/Recency Capping&lt;/strong&gt;：広告主が設定した任意の予算をもとに，任意の期間中まんべんなく広告を配信するための戦略．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Fraud Detection&lt;/strong&gt;：広告詐欺（Ad Fraud）検知．例えば，金銭的な報酬を受け取ったユーザによる意図的なクリック，マルウェア，ボットなどを検知する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Market Segmentation&lt;/strong&gt;：顧客集団分類．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;また，日本語の資料として以下のようなものを見つけた．二つとも，CTR/CVR Estimationに大別される．&lt;/p&gt;
-
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/K2EnIQpqVgHKCh&quot; width=&quot;100%&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
-&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot; title=&quot;アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn&quot; target=&quot;_blank&quot;&gt;アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh&quot; target=&quot;_blank&quot;&gt;Kei Tateno&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;188589d1de6e4650a857d4f3c02070eb&quot; data-ratio=&quot;1.33333333333333&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;4b-ssp-techniques&quot;&gt;4.b SSP Techniques&lt;/h2&gt;
-
-&lt;p&gt;主に，Second-Price Auctionのパラメータ設定最適化．&lt;/p&gt;
-
-&lt;h2 id=&quot;4c-dmp-techniques&quot;&gt;4.c DMP Techniques&lt;/h2&gt;
-
-&lt;p&gt;LinkedInにおけるAudience Expansionなど．&lt;/p&gt;
-
-&lt;h2 id=&quot;4d-conversion-attribution&quot;&gt;4.d Conversion Attribution&lt;/h2&gt;
-
-&lt;p&gt;コンバージョンに対する要因分析を如何に行うか．&lt;/p&gt;
-
-&lt;h1 id=&quot;5-コンペティション&quot;&gt;5. コンペティション&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/criteo-display-ad-challenge&quot;&gt;Kaggle, Display Advertising Challenge&lt;/a&gt;でCTR予測コンペティションが開催された模様．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cyberagent.co.jp/ir/personal/adtech/&quot;&gt;CyberAgent，日本一やさしいアドテク教室&lt;/a&gt;：アドテク入門にうってつけ．用語まとめもある．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-network/&quot;&gt;SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：Ad Networkについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-exchange/&quot;&gt;SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：Ad Exchangeについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://webbu.jp/dsp_mechanism-276&quot;&gt;ウェブ部，【2017年6月更新】5分で完璧に理解できる！DSPの仕組みと新しい手法&lt;/a&gt;：DSPについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/rtb/&quot;&gt;SATORI，RTB（Real-Time Bidding）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：RTBについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://webkikaku.co.jp/blog/ppc/retargeting/&quot;&gt;WEB企画LABO，初心者でもわかるリターゲティング広告の永久保存版！初期設定から活用まで全て紹介&lt;/a&gt;：(Static) Retargetingについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.nex8.net/full-description-of-dynamic-retargeting/&quot;&gt;nex8ブログ，「よくぞ出してくれた！」と思わず言ってしまう広告とは！？ダイナミックリターゲティング完全解説決定版！&lt;/a&gt;：Dynamic Retargetingについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://liskul.com/measure-advertising6-14994&quot;&gt;LISKUL，広告効果測定ツールの選び方とは？プロが選ぶおすすめツール8種比較&lt;/a&gt;：広告効果計測ツールについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.okuramkt.com/dic/mkt/tracking.html&quot;&gt;OKURA，トラッキング&lt;/a&gt;：Trackingについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dmlab.jp/adtech/dmp.html&quot;&gt;Digital Marketing Lab，DMP（データマネジメントプラットフォーム）の仕組みと特徴&lt;/a&gt;：DMPについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ever-rise.co.jp/adtech-blog/how-to-use-ad-sdk.html&quot;&gt;EVERRISEアドテクブログ，アプリの挙動と連携が可能！広告配信SDKの使い方&lt;/a&gt;：広告配信SDKについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/wnzhang/rtb-papers&quot;&gt;wnzhang, Paper Collection of Real-Time Bidding&lt;/a&gt;：RTB関連論文まとめ．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ai-gakkai.or.jp/vol32_no4/&quot;&gt;人工知能学会，人工知能学会誌 Vol.32 No.4&lt;/a&gt;：DSP関連の最新技術動向について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://global-adtech.jp/blog/1066&quot;&gt;GlobalAdtech，日本にも上陸間近？米国で白熱するAd Fraud（広告詐欺）対策状況を見てみよう&lt;/a&gt;：広告詐欺について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://qiita.com/fukkyy/items/b2d37b4797516d72225a&quot;&gt;Qiita，広告と機械学習&lt;/a&gt;：2013年の記事だが，わかりやすい．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot;&gt;舘野啓，アドテクにおける機械学習技術&lt;/a&gt;：機械学習を用いたRTB入札最適化について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://speakerdeck.com/kaky0922/treasure-data-tech-talk-20160425&quot;&gt;Takayuki Sakai，アドテク企業の本番環境からTD使ってみた&lt;/a&gt;：機械学習を用いたCTR予測について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/criteo-display-ad-challenge&quot;&gt;Kaggle, Display Advertising Challenge&lt;/a&gt;：三年前に開催された，CTR予測コンペティション．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://techcrunch.com/advertising-tech/&quot;&gt;TechCrunch，Advertising Tech&lt;/a&gt;：アドテク関連の最新ニュース．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 08 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/08/introduction-to-ad-tech</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/08/introduction-to-ad-tech</guid>
-        
-        
-        <category>x-tech</category>
-        
-      </item>
-    
-      <item>
-        <title>Kaggle，Zillow Prize概要</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;KaggleのZillow Prize&lt;/a&gt;は，&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt;が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-08-07-retech.jpg&quot; alt=&quot;retech&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;誤訳があるかもしれないのでご注意．&lt;/p&gt;
-
-&lt;h1 id=&quot;1-背景&quot;&gt;1. 背景&lt;/h1&gt;
-
-&lt;h2 id=&quot;1a-kaggle&quot;&gt;1.a Kaggle&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/&quot;&gt;Kaggle&lt;/a&gt;は，データサイエンティストのプラットフォームである．様々なコンペティションを開催しており，データサイエンティストの腕試しの場として広く認知されている．Kaggleへの参加方法については，&lt;a href=&quot;http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7&quot;&gt;Kaggle事始め&lt;/a&gt;が詳しい．&lt;/p&gt;
-
-&lt;h2 id=&quot;1b-zillow&quot;&gt;1.b Zillow&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt;は，オンライン不動産データベースを運営するアメリカの企業である．アメリカ全土の1億件以上の物件情報を有し，Zestimateと呼ばれる価格見積もりサービスを持つ．&lt;/p&gt;
-
-&lt;h1 id=&quot;2-zillow-prize&quot;&gt;2. Zillow Prize&lt;/h1&gt;
-
-&lt;h2 id=&quot;2a-概要&quot;&gt;2.a 概要&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;Zillow Prize&lt;/a&gt;は，Zillowが2017年5月に開始したコンペティションである．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，Qualifying round（第1ラウンド）とPrivate round（第2ラウンド）からなる．Private roundは，Qualifying roundの上位100チームのみに対し2018年1月1日から実施される．&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/data&quot;&gt;Data&lt;/a&gt;や&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/rules&quot;&gt;Rules&lt;/a&gt;等の詳細は以下．&lt;/p&gt;
-
-&lt;h2 id=&quot;2b-data&quot;&gt;2.b Data&lt;/h2&gt;
-
-&lt;p&gt;本コンペティションの目的は，Zestimate（&lt;script type=&quot;math/tex&quot;&gt;z&lt;/script&gt;）と実際の売値（&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;）の対数誤差を予測すること．対数誤差は以下で定義される．&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
-logerror = log(z) - log(s) \tag{1}
-\end{align*}&lt;/script&gt;
-
-&lt;p&gt;具体的には，2017年秋における&lt;script type=&quot;math/tex&quot;&gt;logerror&lt;/script&gt;を予測する．不動産価格は公開情報なので，取引が始まる前に，モデルの提出を打ち切る．&lt;/p&gt;
-
-&lt;p&gt;訓練データとして，2016年の三箇所（Los Angeles，Orange and Ventura，California）の全ての不動産データが提供される．訓練データは2016年10月15日以前の全ての取引と，それ以降のいくつかの取引を含む．public leaderboardのテストデータは，2016年10月15日から同年12月31日までのものである．private leader boardのテストデータは，2017年10月15日から同年12月15日まで（この期間をsales tracking periodと呼ぶ）のものである．つまり，参加者は次の６時点における全ての不動産に対して予測を行う必要がある．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;October 2016 (201610)&lt;/li&gt;
-  &lt;li&gt;November 2016 (201611)&lt;/li&gt;
-  &lt;li&gt;December 2016 (201612)&lt;/li&gt;
-  &lt;li&gt;October 2017 (201710)&lt;/li&gt;
-  &lt;li&gt;November 2017 (201711)&lt;/li&gt;
-  &lt;li&gt;December 2017 (201712)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;当該期間において取引が行われなかった不動産は，scoreの計算に利用されない．31日間のうち，複数回の取引があった場合は，最初の適切な取引をscoreの計算に用いる．&lt;/p&gt;
-
-&lt;p&gt;以下は各ファイルの概要．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;properties_2016.csv&lt;/code&gt;：2016年の全ての不動産情報．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;properties_2017.csv&lt;/code&gt;：2017年の全ての不動産情報．2017年10月2日に公開予定．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;train_2016.csv&lt;/code&gt;：2016年1月1日から2016年12月31日までの取引情報．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;train_2017.csv&lt;/code&gt;：2017年1月1日から2017年9月15日までの取引情報．2017年10月2日に公開予定．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sample_submission.csv&lt;/code&gt;：提出用のサンプルファイル．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2c-rules&quot;&gt;2.c Rules&lt;/h2&gt;
-&lt;p&gt;重要そうなものだけ抜粋．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;チーム外に，コードを共有してはならない．ただし，全参加者に共有するのはOK．&lt;/li&gt;
-  &lt;li&gt;1チーム最大3人まで．&lt;/li&gt;
-  &lt;li&gt;1日5回まで提出可能．最終的に，最大2つの予測結果を投稿可能．&lt;/li&gt;
-  &lt;li&gt;賞金総額：$1,200,000
-    &lt;ul&gt;
-      &lt;li&gt;第1ラウンド総額：$50,000
-        &lt;ul&gt;
-          &lt;li&gt;1位：$25,000&lt;/li&gt;
-          &lt;li&gt;2位：$15,000&lt;/li&gt;
-          &lt;li&gt;3位：$10,000&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;第2ラウンド総額：$1,150,000
-        &lt;ul&gt;
-          &lt;li&gt;1位：$1,000,000&lt;/li&gt;
-          &lt;li&gt;2位：$100,000&lt;/li&gt;
-          &lt;li&gt;3位：$50,000&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;第1ラウンドでは，Kernel上でのみ，ソースコードを公開できる&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．これは，MITライセンスのもとでの譲渡とみなされる．&lt;/li&gt;
-  &lt;li&gt;第2ラウンドでは，いかなる形でもソースコードを公開できない&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;Kaggle，Zillow Prize&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7&quot;&gt;Qiita，Kaggle事始め&lt;/a&gt;：丁寧なKaggle入門記事．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://qiita.com/TomHortons/items/54b2121a4c5eb0908920&quot;&gt;Qiita，Kaggleのコンペティションリスト&lt;/a&gt;：Kaggleのコンペティションを，データのタイプで分類．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://realestatetechnews.com/&quot;&gt;Real estate tech news&lt;/a&gt;：不動産関連xテクノロジーに関するニュースサイト．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.kaggle.com/&quot;&gt;No Free Hunch&lt;/a&gt;：Kaggle公式ブログ．コンテスト優勝者のモデルが公開されている．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;ここで検討過程を公開しようと思っていたが，どうやらルール違反っぽい．一旦Kernelで公開したものを，日本語訳して自分のサイトで公開するのはOKか？&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 07 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/07/zillow-conpetition</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/07/zillow-conpetition</guid>
-        
-        
-        <category>x-tech</category>
-        
-      </item>
-    
-      <item>
-        <title>JekyllでGoogle Analytics</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/07/30/first-post&quot;&gt;JekyllとGitHub Pagesで立ち上げたウェブサイト&lt;/a&gt;に，&lt;a href=&quot;https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/&quot;&gt;Google Analytics&lt;/a&gt;でトラッキング機能を導入した．&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;おー．見えてる見えてる．&lt;/p&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://support.google.com/analytics/answer/1008080?visit_id=1-636375329556963699-2710489376&amp;amp;rd=1&quot;&gt;Google アナリティクス トラッキングを設定する&lt;/a&gt;：本家ヘルプ．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://michaelsoolee.com/google-analytics-jekyll/&quot;&gt;Google Analytics setup for Jekyll&lt;/a&gt;：Jekyllにおける設定方法について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://techmemo.biz/web-cheat-sheet/%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AByoutube%E3%81%AE%E5%8B%95%E7%94%BB%E3%82%92%E5%9F%8B%E3%82%81%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95/&quot;&gt;ブログにYouTubeの動画を埋め込む方法&lt;/a&gt;：Youtube動画の埋め込みについて．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
-
-&lt;h2 id=&quot;1-google-analyticsの登録&quot;&gt;1. Google Analyticsの登録&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://analytics.google.com&quot;&gt;Google Analytics&lt;/a&gt;にウェブサイト（&lt;code class=&quot;highlighter-rouge&quot;&gt;https://haltaro.github.io&lt;/code&gt;）を登録．趣味で使うぶんにはデフォルト設定で十分だし，あとで変更可能．&lt;/p&gt;
-
-&lt;h2 id=&quot;2-analyticshtmlの保存&quot;&gt;2. analytics.htmlの保存&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;管理 &amp;gt; プロパティ &amp;gt; トラッキング情報 &amp;gt; トラッキングコード&lt;/code&gt;を選択．以下のようなJavaScriptスニペットをコピーし，&lt;code class=&quot;highlighter-rouge&quot;&gt;analytics.html&lt;/code&gt;として&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/&lt;/code&gt;ディレクトリに保存．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/45500c3c134f5c48b549408b02c312c3.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;ただし，&lt;code class=&quot;highlighter-rouge&quot;&gt;UA-*********-*&lt;/code&gt;はウェブサイト固有のトラッキングコード．&lt;/p&gt;
-
-&lt;h2 id=&quot;3-defaulthtmlの修正&quot;&gt;3. default.htmlの修正&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/_layout&lt;/code&gt;ディレクトリの&lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;に，下記の&lt;code class=&quot;highlighter-rouge&quot;&gt;analytics.html&lt;/code&gt;を追記．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/c9d454635b5304cdb2163c5f38490f3b.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll.environment == 'production'&lt;/code&gt;は，ローカル環境での動作テスト（&lt;code class=&quot;highlighter-rouge&quot;&gt;$ jekyll serve&lt;/code&gt;）をトラッキング対象から除外するためのもの．&lt;/p&gt;
-
-&lt;h2 id=&quot;4-待機&quot;&gt;4. 待機&lt;/h2&gt;
-
-&lt;p&gt;設定が反映されるまで，30分ほどかかった．&lt;/p&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;指示通り設定すれば，問題なく動作した．Youtube動画も埋め込めたので満足．&lt;/p&gt;
-</description>
-        <pubDate>Fri, 04 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/04/set-google-analytics</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/04/set-google-analytics</guid>
-        
-        
-        <category>jekyll</category>
         
       </item>
     

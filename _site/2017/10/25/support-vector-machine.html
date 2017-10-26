@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Support vector machineの理論と実装 « Memotaro</title>
+	<meta name="description" content="（作成中）パターン認識と機械学習でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．">
+
+  <link rel="icon" href="/images/h_icon.png">
+  <link rel="apple-touch-icon" href="/images/h_icon.png">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/2017/10/25/support-vector-machine">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
+
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Support vector machineの理論と実装 | Memotaro</title>
+<meta property="og:title" content="Support vector machineの理論と実装" />
+<meta name="author" content="haltaro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="（作成中）パターン認識と機械学習でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．" />
+<meta property="og:description" content="（作成中）パターン認識と機械学習でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．" />
+<link rel="canonical" href="http://localhost:4000/2017/10/25/support-vector-machine" />
+<meta property="og:url" content="http://localhost:4000/2017/10/25/support-vector-machine" />
+<meta property="og:site_name" content="Memotaro" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-10-25T17:56:20+09:00" />
+<script type="application/ld+json">
+{"name":null,"description":"（作成中）パターン認識と機械学習でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．","author":{"@type":"Person","name":"haltaro"},"@type":"BlogPosting","url":"http://localhost:4000/2017/10/25/support-vector-machine","publisher":null,"image":null,"headline":"Support vector machineの理論と実装","dateModified":"2017-10-25T17:56:20+09:00","datePublished":"2017-10-25T17:56:20+09:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/10/25/support-vector-machine"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <body>
+
+    <header class="header">
+  <div class="wrapper">
+    <a class="site-title" href="/">Memotaro</a>
+    <nav class="site-nav">
+      
+        
+      
+        
+      
+        
+      
+        
+        <a class="page-link" href="/about/">About</a>
+        
+      
+        
+        <a class="page-link" href="/category/">Category</a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <a class="page-link" href="/projects/">Projects</a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </nav>
+  </div>
+</header>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="col-main">
+          <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Support vector machineの理論と実装</h1>
+    <p class="post-meta">Oct 25, 2017</p>
+  </header>
+
+  <article class="post-content">
+    <p>（作成中）<a href="https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_sim_14_1?_encoding=UTF8&amp;psc=1&amp;refRID=75MTQH13HRTSXQWGQARY">パターン認識と機械学習</a>でsupport vector machine（SVM）について復習した．SVMは疎な解を持つ識別関数の一種であり，クラス分類や回帰など，様々な応用が可能．モデル学習が二次計画問題に帰着するため，局所解=最適解という扱いやすい性質を持つ．</p>
+
+<h1 id="1-理論">1. 理論</h1>
+
+<h2 id="1a-コンセプト">1.a コンセプト</h2>
+
+<h2 id="1b-最大マージン分類器">1.b 最大マージン分類器</h2>
+
+<script type="math/tex; mode=display">\begin{align*}
+y \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{1}
+\end{align*}</script>
+
+<h2 id="1c-ラグランジュ乗数法">1.c ラグランジュ乗数法</h2>
+
+<h2 id="1d-カーネルトリック">1.d カーネルトリック</h2>
+
+<h1 id="2-実装">2. 実装</h1>
+
+<p>学習目的であれば，ソルバで二次計画法を解いても良さそう．実務目的であれば，無難にライブラリを使ったほうが良さそう．</p>
+
+<h2 id="2a-二次計画法ソルバ">2.a 二次計画法ソルバ</h2>
+
+<p>Pythonの二次計画法ソルバとしては，<a href="http://cvxopt.org/">CVXOPT</a>が人気．実装するとしたら，以下のようになる．</p>
+
+<h2 id="2b-svmライブラリ">2.b SVMライブラリ</h2>
+
+<p>SVMライブラリとしては，<a href="http://scikit-learn.org/stable/index.html">scikit-learn</a>の<a href="http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm"><code class="highlighter-rouge">sklearn.svm</code></a>モジュールが人気．上記と同じ機能を実装するとしたら，以下のようになる．</p>
+
+<h1 id="3-実験">3. 実験</h1>
+
+<h1 id="参考文献">参考文献</h1>
+
+<ul>
+  <li><a href="https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_lpo_sbs_14_img_2?_encoding=UTF8&amp;psc=1&amp;refRID=2J0S7A4J37ASEZ0JMGQW">C.M.ビショップ，パターン認識と機械学習 下</a>：SVMが登場するのは下巻．ただし，ラグランジュ乗数法の詳細は上巻の付録にある．</li>
+  <li><a href="http://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm"><code class="highlighter-rouge">sklearn.svm</code>: Support Vector Machines</a>：便利すぎるSVMモジュール．</li>
+</ul>
+
+  </article>
+  
+  
+
+
+
+
+</div>
+
+        </div>
+        <div class="col-second">
+          <div class="col-box col-box-author">
+  <img class="avatar" src="//www.gravatar.com/avatar/546804f938d574fc5141fc1431066d29" alt="haltaro">
+  <div class="col-box-title name">haltaro</div>
+  <p>c++とpythonと柴犬が好きです</p>
+  <p class="contact">
+    
+    <a href="https://github.com/haltaro">GitHub</a>
+    
+    
+    
+		<a href="https://qiita.com/haltaro">Qiita</a>
+    
+    
+		<a href="https://kaggle.com/haltaro">Kaggle</a>
+    
+
+    
+    <a href="mailto:mail.to.haltaro@gmail.com">Email</a>
+    
+  </p>
+</div>
+
+<div class="col-box">
+  <div class="col-box-title">Newest Posts</div>
+  <ul class="post-list">
+    
+      <li><a class="post-link" href="/2017/10/27/announcer-scraping">深層学習で女子アナの所属推定①スクレイピング</a></li>
+    
+      <li><a class="post-link" href="/2017/10/25/what3words-jp">What3Wordsを日本語化</a></li>
+    
+      <li><a class="post-link" href="/2017/10/25/time-series">時系列分析技術まとめ</a></li>
+    
+      <li><a class="post-link" href="/2017/10/25/support-vector-machine">Support vector machineの理論と実装</a></li>
+    
+      <li><a class="post-link" href="/2017/10/25/jekyll-drafts">Jekyllで下書き記事管理</a></li>
+    
+  </ul>
+</div>
+
+<div class="col-box post-toc hide">
+  <div class="col-box-title">TOC</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+<div class="wrapper">
+&copy; 2017 haltaro
+</div>
+</footer>
+
+<script src="/js/easybook.js"></script>
+
+    
+
+
+  </body>
+
+</html>
