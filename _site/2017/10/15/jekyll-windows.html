@@ -106,7 +106,8 @@
   <li><a href="https://git-for-windows.github.io/">Git for Windows</a>：Windows用Git環境．</li>
   <li><a href="https://github.com/dahlbyk/posh-git">posh-git</a>：PowerShellでgitコマンド補完を可能にするツール．</li>
   <li><a href="https://www.kaoriya.net/blog/2016/02/07/">KaoriYa，Windowsでjekyll 3.0（github-pages）を使う</a>：WindowsにおけるJekyll環境構築方法．</li>
-  <li><a href="https://rubyinstaller.org/downloads/">RubyInstaller</a>：RubyおよびDevKitのインストール．</li>
+  <li><a href="https://rubyinstaller.org/downloads/">RubyInstaller</a>：RubyおよびDevKitのインストール．
+<a href="https://qiita.com/windhorn/items/0f58866291f8273f18fb">Qiita，bundle execとかdb:createとかが何をしているのか</a>：<code class="highlighter-rouge">bundle exec</code>の使い方について．</li>
   <li><a href="https://atom.io/">ATOM</a>：GitHubが開発したテキストエディタ．</li>
   <li><a href="https://atom.io/packages/line-ending-converter">ATOM，Line ending converter</a>：ATOMの改行コードを一括変換するパッケージ．</li>
   <li><a href="https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf">Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）</a>：ATOMのデフォルト改行コード設定方法．</li>
@@ -191,6 +192,31 @@
 </code></pre>
 </div>
 
+<p><code class="highlighter-rouge">&gt; jekyll serve</code>したらと，次のようなエラーが出た．</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>WARN: Unresolved specs during Gem::Specification.reset:
+      rouge (&lt; 3, &gt;= 1.7)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:315:in `check_for_activated_spec!': Y
+ou have already activated public_suffix 3.0.0, but your Gemfile requires public_suffix 2.0.5. Prepending `bundle exec` t
+o your command may solve this. (Gem::LoadError)
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:33:in `block in setup'
+        from C:/Ruby24-x64/lib/ruby/2.4.0/forwardable.rb:229:in `each'
+        from C:/Ruby24-x64/lib/ruby/2.4.0/forwardable.rb:229:in `each'
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:28:in `map'
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:28:in `setup'
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler.rb:107:in `setup'
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/lib/jekyll/plugin_manager.rb:50:in `require_from_bundle
+r'
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/exe/jekyll:11:in `&lt;top (required)&gt;'
+        from C:/Ruby24-x64/bin/jekyll:23:in `load'
+        from C:/Ruby24-x64/bin/jekyll:23:in `&lt;main&gt;'
+</code></pre>
+</div>
+
+<p>指示通り，<code class="highlighter-rouge">&gt; bundle exec jekyll serve</code>とコマンドを打ったらうまく行った．<a href="https://qiita.com/windhorn/items/0f58866291f8273f18fb">Qiita，bundle execとかdb:createとかが何をしているのか</a>によると，<code class="highlighter-rouge">bundle exec</code>を頭につけると，当該プロジェクトの<code class="highlighter-rouge">Gemfile</code>で指定された環境でコマンドを実行するらしい．</p>
+
 <h2 id="8-atomのインストール">8. ATOMのインストール</h2>
 <p>マークダウンエディタが欲しかったので，<a href="https://atom.io/">ATOM</a>をインストールした．<a href="https://atom.io/">公式ページ</a>からインストーラをダウンロードすれば簡単にできた．しかし…</p>
 
@@ -219,7 +245,7 @@
 
 <p><img src="/images/2017-10-15-env.png" alt="env" /></p>
 
-<p>PowerShellで<code class="highlighter-rouge">jekyll serve</code>して，ブラウザで<code class="highlighter-rouge">http://127.0.0.1:4000</code>から出来栄えを確認しながら，ATOMでマークダウンを編集できる．</p>
+<p>PowerShellで<code class="highlighter-rouge">&gt; bundle exec jekyll serve</code>して，ブラウザで<code class="highlighter-rouge">http://127.0.0.1:4000</code>から出来栄えを確認しながら，ATOMでマークダウンを編集できる．</p>
 
 <h1 id="感想">感想</h1>
 <p>ATOMは本当に便利．Linuxが届いたらインストールしようと思う．</p>

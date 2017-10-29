@@ -23,6 +23,7 @@ categories:
 * [posh-git](https://github.com/dahlbyk/posh-git)：PowerShellでgitコマンド補完を可能にするツール．
 * [KaoriYa，Windowsでjekyll 3.0（github-pages）を使う](https://www.kaoriya.net/blog/2016/02/07/)：WindowsにおけるJekyll環境構築方法．
 * [RubyInstaller](https://rubyinstaller.org/downloads/)：RubyおよびDevKitのインストール．
+[Qiita，bundle execとかdb:createとかが何をしているのか](https://qiita.com/windhorn/items/0f58866291f8273f18fb)：`bundle exec`の使い方について．
 * [ATOM](https://atom.io/)：GitHubが開発したテキストエディタ．
 * [ATOM，Line ending converter](https://atom.io/packages/line-ending-converter)：ATOMの改行コードを一括変換するパッケージ．
 * [Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）](https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf)：ATOMのデフォルト改行コード設定方法．
@@ -102,6 +103,31 @@ Rubyのパッケージ管理システム`RubyGems`のインストールに必要
 > gem install github-pages wdm
 ```
 
+`> jekyll serve`したらと，次のようなエラーが出た．
+
+```
+WARN: Unresolved specs during Gem::Specification.reset:
+      rouge (< 3, >= 1.7)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:315:in `check_for_activated_spec!': Y
+ou have already activated public_suffix 3.0.0, but your Gemfile requires public_suffix 2.0.5. Prepending `bundle exec` t
+o your command may solve this. (Gem::LoadError)
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:33:in `block in setup'
+        from C:/Ruby24-x64/lib/ruby/2.4.0/forwardable.rb:229:in `each'
+        from C:/Ruby24-x64/lib/ruby/2.4.0/forwardable.rb:229:in `each'
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:28:in `map'
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:28:in `setup'
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler.rb:107:in `setup'
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/lib/jekyll/plugin_manager.rb:50:in `require_from_bundle
+r'
+        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/exe/jekyll:11:in `<top (required)>'
+        from C:/Ruby24-x64/bin/jekyll:23:in `load'
+        from C:/Ruby24-x64/bin/jekyll:23:in `<main>'
+```
+
+指示通り，`> bundle exec jekyll serve`とコマンドを打ったらうまく行った．[Qiita，bundle execとかdb:createとかが何をしているのか](https://qiita.com/windhorn/items/0f58866291f8273f18fb)によると，`bundle exec`を頭につけると，当該プロジェクトの`Gemfile`で指定された環境でコマンドを実行するらしい．
+
 ## 8. ATOMのインストール
 マークダウンエディタが欲しかったので，[ATOM](https://atom.io/)をインストールした．[公式ページ](https://atom.io/)からインストーラをダウンロードすれば簡単にできた．しかし…
 
@@ -128,7 +154,7 @@ ATOMの設定画面から，`line-ending-converter`をインストール．`Pack
 
 ![env]({{site.baseurl}}/images/2017-10-15-env.png)
 
-PowerShellで`jekyll serve`して，ブラウザで`http://127.0.0.1:4000`から出来栄えを確認しながら，ATOMでマークダウンを編集できる．
+PowerShellで`> bundle exec jekyll serve`して，ブラウザで`http://127.0.0.1:4000`から出来栄えを確認しながら，ATOMでマークダウンを編集できる．
 
 # 感想
 ATOMは本当に便利．Linuxが届いたらインストールしようと思う．
