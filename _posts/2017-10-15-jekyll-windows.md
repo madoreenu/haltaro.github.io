@@ -42,7 +42,7 @@ categories:
 ```bash
 $ git config --global user.name "haltaro"
 $ git config --global user.email "***@gmail.com"
-$ git config --global core quotepath false
+$ git config --global core.quotepath false
 ```
 
 ## 3. GitのSSHキー作成
@@ -61,7 +61,7 @@ $ git config --global core quotepath false
 まずは，PowerShellで以下のコマンドを打ち，[公式GitHub](https://github.com/dahlbyk/posh-git)からクローンする．ディレクトリはどこでも良い．
 
 ```
-> git clone git@github.dahlbyk/posh-git.git
+> git clone git@github.com:dahlbyk/posh-git.git
 ```
 
 PowerShellのセキュリティ設定を変更した．
@@ -84,7 +84,7 @@ PowerShellのセキュリティ設定を変更した．
 
 Rubyのパッケージ管理システム`RubyGems`のインストールに必要な`DevKit`をインストールした．以下はその詳細である．
 
-まず，[RubyInstaller](https://rubyinstaller.org/downloads/)から，`DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe`をダウンロードした．以下では`C:\DevKit`に解凍したと想定する．
+まず，[RubyInstaller](https://rubyinstaller.org/downloads/)から，`DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exee`をダウンロードした．以下では`C:\DevKit`に解凍したと想定する．
 
 次に，PowerShellから以下のコマンドを実行した．
 
