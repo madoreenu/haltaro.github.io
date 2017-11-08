@@ -6,9 +6,52 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Nov 2017 23:31:07 +0900</pubDate>
-    <lastBuildDate>Sat, 04 Nov 2017 23:31:07 +0900</lastBuildDate>
+    <pubDate>Wed, 08 Nov 2017 23:33:22 +0900</pubDate>
+    <lastBuildDate>Wed, 08 Nov 2017 23:33:22 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>Courcera，Marketing in a digital world：1. Product</title>
+        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る&lt;a href=&quot;https://www.coursera.org/specializations/digital-marketing&quot;&gt;Digital marketing specialization&lt;/a&gt;の一つ．四週かけて，デジタル時代の&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&quot;&gt;マーケティング・ミックス&lt;/a&gt;について学ぶ．第一週では，本講座の概要と，Productを取り扱う．&lt;/p&gt;
+
+&lt;h1 id=&quot;about-the-course&quot;&gt;About the course&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;インターネット，スマートフォン，3Dプリンターに代表される技術革新により，市場のパワーバランスは，企業側から消費者側に傾きつつある．&lt;/li&gt;
+  &lt;li&gt;本講座では，このような激動の時代におけるマーケティング手法を，実例や演習を交えて学習する．&lt;/li&gt;
+  &lt;li&gt;本講座では，教材として&lt;a href=&quot;https://hbr.org/&quot;&gt;Harvard Business Review&lt;/a&gt;や&lt;a href=&quot;https://subscribe.sloanreview.mit.edu/ecom/SMR/app/live/subscriptions?&amp;amp;org=SMR&amp;amp;publ=SM&amp;amp;key_code=OSABC76&amp;amp;type=S&quot;&gt;MIT Sloan Management Review&lt;/a&gt;を用いる．また，補助教材として&lt;a href=&quot;https://books.google.co.jp/books?id=veuhAwAAQBAJ&amp;amp;source=gbs_book_other_versions&amp;amp;redir_esc=y&quot;&gt;Understanding Digital Marketing: Marketing Strategies for Engaging the Digital Generation&lt;/a&gt;が手元にあれば望ましいが，必須ではない．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;module-1-overview&quot;&gt;Module 1 overview&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Module 1では，productの観点から，最新のマーケティング手法を学ぶ．例えば，customer co-creationやdoppelgänger brandsなど．&lt;/li&gt;
+  &lt;li&gt;Module 1では，7時間程度の勉強が必要．&lt;/li&gt;
+  &lt;li&gt;Lakhani, K. R. (2013). &lt;a href=&quot;https://hbr.org/2013/04/using-the-crowd-as-an-innovation-partner&quot;&gt;Using the crowd as an innovation partner&lt;/a&gt;. &lt;em&gt;Harvard Business Review&lt;/em&gt;, 91(4). 60–69.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;basic-concept-product&quot;&gt;Basic concept: product&lt;/h1&gt;
+
+&lt;h1 id=&quot;digital-concept-customer-co-creation&quot;&gt;Digital concept: customer co-creation&lt;/h1&gt;
+
+&lt;h1 id=&quot;case-study-local-motors&quot;&gt;Case study: local motors&lt;/h1&gt;
+
+&lt;h1 id=&quot;digital-concept-doppelgänger-brands&quot;&gt;Digital concept: Doppelgänger brands&lt;/h1&gt;
+
+&lt;h1 id=&quot;exersice-ideaslegocom&quot;&gt;Exersice: Ideas.Lego.com&lt;/h1&gt;
+
+&lt;h1 id=&quot;campus-spotlight&quot;&gt;Campus spotlight&lt;/h1&gt;
+
+&lt;h1 id=&quot;module-1-review-quiz&quot;&gt;Module 1 review quiz&lt;/h1&gt;
+</description>
+        <pubDate>Wed, 08 Nov 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/11/08/digital-marketing-1</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/08/digital-marketing-1</guid>
+        
+        
+        <category>marketing</category>
+        
+      </item>
     
       <item>
         <title>Jekyllで下書き記事管理</title>
@@ -933,61 +976,6 @@ logerror = log(z) - log(s) \tag{1}
         
         
         <category>x-tech</category>
-        
-      </item>
-    
-      <item>
-        <title>JekyllでGoogle Analytics</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/07/30/first-post&quot;&gt;JekyllとGitHub Pagesで立ち上げたウェブサイト&lt;/a&gt;に，&lt;a href=&quot;https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/&quot;&gt;Google Analytics&lt;/a&gt;でトラッキング機能を導入した．&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;おー．見えてる見えてる．&lt;/p&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://support.google.com/analytics/answer/1008080?visit_id=1-636375329556963699-2710489376&amp;amp;rd=1&quot;&gt;Google アナリティクス トラッキングを設定する&lt;/a&gt;：本家ヘルプ．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://michaelsoolee.com/google-analytics-jekyll/&quot;&gt;Google Analytics setup for Jekyll&lt;/a&gt;：Jekyllにおける設定方法について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://techmemo.biz/web-cheat-sheet/%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AByoutube%E3%81%AE%E5%8B%95%E7%94%BB%E3%82%92%E5%9F%8B%E3%82%81%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95/&quot;&gt;ブログにYouTubeの動画を埋め込む方法&lt;/a&gt;：Youtube動画の埋め込みについて．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
-
-&lt;h2 id=&quot;1-google-analyticsの登録&quot;&gt;1. Google Analyticsの登録&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://analytics.google.com&quot;&gt;Google Analytics&lt;/a&gt;にウェブサイト（&lt;code class=&quot;highlighter-rouge&quot;&gt;https://haltaro.github.io&lt;/code&gt;）を登録．趣味で使うぶんにはデフォルト設定で十分だし，あとで変更可能．&lt;/p&gt;
-
-&lt;h2 id=&quot;2-analyticshtmlの保存&quot;&gt;2. analytics.htmlの保存&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;管理 &amp;gt; プロパティ &amp;gt; トラッキング情報 &amp;gt; トラッキングコード&lt;/code&gt;を選択．以下のようなJavaScriptスニペットをコピーし，&lt;code class=&quot;highlighter-rouge&quot;&gt;analytics.html&lt;/code&gt;として&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes/&lt;/code&gt;ディレクトリに保存．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/45500c3c134f5c48b549408b02c312c3.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;ただし，&lt;code class=&quot;highlighter-rouge&quot;&gt;UA-*********-*&lt;/code&gt;はウェブサイト固有のトラッキングコード．&lt;/p&gt;
-
-&lt;h2 id=&quot;3-defaulthtmlの修正&quot;&gt;3. default.htmlの修正&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/_layout&lt;/code&gt;ディレクトリの&lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;に，下記の&lt;code class=&quot;highlighter-rouge&quot;&gt;analytics.html&lt;/code&gt;を追記．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/c9d454635b5304cdb2163c5f38490f3b.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll.environment == 'production'&lt;/code&gt;は，ローカル環境での動作テスト（&lt;code class=&quot;highlighter-rouge&quot;&gt;$ jekyll serve&lt;/code&gt;）をトラッキング対象から除外するためのもの．&lt;/p&gt;
-
-&lt;h2 id=&quot;4-待機&quot;&gt;4. 待機&lt;/h2&gt;
-
-&lt;p&gt;設定が反映されるまで，30分ほどかかった．&lt;/p&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;指示通り設定すれば，問題なく動作した．Youtube動画も埋め込めたので満足．&lt;/p&gt;
-</description>
-        <pubDate>Fri, 04 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/04/set-google-analytics</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/04/set-google-analytics</guid>
-        
-        
-        <category>jekyll</category>
         
       </item>
     
