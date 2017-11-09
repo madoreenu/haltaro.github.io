@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Nov 2017 23:33:22 +0900</pubDate>
-    <lastBuildDate>Wed, 08 Nov 2017 23:33:22 +0900</lastBuildDate>
+    <pubDate>Thu, 09 Nov 2017 20:55:13 +0900</pubDate>
+    <lastBuildDate>Thu, 09 Nov 2017 20:55:13 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -27,7 +27,14 @@
 &lt;ul&gt;
   &lt;li&gt;Module 1では，productの観点から，最新のマーケティング手法を学ぶ．例えば，customer co-creationやdoppelgänger brandsなど．&lt;/li&gt;
   &lt;li&gt;Module 1では，7時間程度の勉強が必要．&lt;/li&gt;
-  &lt;li&gt;Lakhani, K. R. (2013). &lt;a href=&quot;https://hbr.org/2013/04/using-the-crowd-as-an-innovation-partner&quot;&gt;Using the crowd as an innovation partner&lt;/a&gt;. &lt;em&gt;Harvard Business Review&lt;/em&gt;, 91(4). 60–69.&lt;/li&gt;
+  &lt;li&gt;Lakhani, K. R. (2013). &lt;a href=&quot;https://hbr.org/2013/04/using-the-crowd-as-an-innovation-partner&quot;&gt;Using the crowd as an innovation partner&lt;/a&gt;. &lt;em&gt;Harvard Business Review&lt;/em&gt;, 91(4). 60–69.
+    &lt;ul&gt;
+      &lt;li&gt;クラウドソーシングをうまく活用できている企業は少ない．これは，どのようなケースにおいてクラウドソーシングがうまく生きるか，確固とした理論が存在しないためである．本記事では，クラウドソーシングのガイドラインを提供する．&lt;/li&gt;
+      &lt;li&gt;クラウドソーシングのメリットは，スケールしやすさ，多様性，コストの低さ，モチベーションの高さ，である．クラウドソーシング自体は昔から存在していたが，近年ツールが劇的に進化した．&lt;/li&gt;
+      &lt;li&gt;クラウドソーシングには，&lt;strong&gt;Contest&lt;/strong&gt;，&lt;strong&gt;Collaborative community&lt;/strong&gt;，&lt;strong&gt;Complementor&lt;/strong&gt;，および&lt;strong&gt;Labor market&lt;/strong&gt;の4種類がある．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Contest&lt;/strong&gt;は，どんな手法が有効かすらわからない，多様な実験的試行を必要とするタスクに有効である．&lt;a href=&quot;https://www.topcoder.com/&quot;&gt;TopCoder&lt;/a&gt;，&lt;a href=&quot;https://www.kaggle.com/&quot;&gt;Kaggle&lt;/a&gt;，&lt;a href=&quot;https://www.innocentive.com/&quot;&gt;InnoCentive&lt;/a&gt;などがこれに該当する．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;basic-concept-product&quot;&gt;Basic concept: product&lt;/h1&gt;

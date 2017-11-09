@@ -19,6 +19,11 @@ categories:
 * Module 1では，productの観点から，最新のマーケティング手法を学ぶ．例えば，customer co-creationやdoppelgänger brandsなど．
 * Module 1では，7時間程度の勉強が必要．
 * Lakhani, K. R. (2013). [Using the crowd as an innovation partner](https://hbr.org/2013/04/using-the-crowd-as-an-innovation-partner). *Harvard Business Review*, 91(4). 60–69.
+  * クラウドソーシングをうまく活用できている企業は少ない．これは，どのようなケースにおいてクラウドソーシングがうまく生きるか，確固とした理論が存在しないためである．本記事では，クラウドソーシングのガイドラインを提供する．
+  * クラウドソーシングのメリットは，スケールしやすさ，多様性，コストの低さ，モチベーションの高さ，である．クラウドソーシング自体は昔から存在していたが，近年ツールが劇的に進化した．
+  * クラウドソーシングには，**Contest**，**Collaborative community**，**Complementor**，および**Labor market**の4種類がある．
+  * **Contest**は，どんな手法が有効かすらわからない，多様な実験的試行を必要とするタスクに有効である．[TopCoder](https://www.topcoder.com/)，[Kaggle](https://www.kaggle.com/)，[InnoCentive](https://www.innocentive.com/)などがこれに該当する．
+
 
 # Basic concept: product
 
