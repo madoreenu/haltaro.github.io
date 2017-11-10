@@ -27,10 +27,22 @@ categories:
   * Complementorは，Apple storeのように，複数のタスクを実行可能な形態である．Complementorを利用する際は，まず，プラットフォームのアクセス方法を整備する必要がある．
   * Labor marketは，従来より短期の雇用契約を仲介する形態である．例えば，[Elance](https://www.elance.com/php/landing/main/login.php?redirect=)，[oDesk](https://www.upwork.com/)，Guru，[Clickworker](https://www.clickworker.com/)，[ShortTask](http://www.shorttask.com/)，[Samasource](https://www.samasource.org/)，[Freelancer](https://www.freelancer.com/?utm_expid=294858-553.v56tHEK5QEmWFNtoUUBcgw.0)，CloudCrowdなどがある．Labor marketの成功の鍵は，プラットフォームの整備である．Labor marketは，タスクや解決策や必要なスキルが明確なとき，有効な形態である．Labor marketは，長期雇用契約に適さないような，知的な反復作業のアウトソーシングに適している．
 * Giesler, M. (2012). [How doppelgänger brand images influence the market creation process: Longitudinal insights from the rise of Botox cosmetic.](https://archive.ama.org/archive/AboutAMA/Pages/AMA%20Publications/AMA%20Journals/Journal%20of%20Marketing/TOCs/SUM_2012.6/doppelganger-brand-images.aspx) *Journal of Marketing*, 76(6), 55–68.
+  * Doppelgänger brand image（DBI）とは，特定のブランドを貶めるイメージやストーリーの一つであり，緩やかに組織されたコミュニティで拡散される．
+  * 人気のあるブランドだけでなく，新たな機械，技術，薬等に対してもDBIが形成されることがある．
+  * DBIに打ち勝つためには，4つのステップが有効である．Problematization，Interessement，Enrollment，そしてMobilization．
 
 # Basic concept: product
+* 本講座では，特に，Product developmentとBrand managementに着目する．
+* 製品開発では，[ステージゲート法](https://keikakuhiroba-mfi.com/archives/10836)が有効である．ステージゲート法では，アイデアの発想から商品化に至る工程を複数のステージに分割し，一つのステージから次のステージに移行する間に評価を行うゲートを設けて，効率的にアイデアを絞る．
+* 近年の技術革新により，製品開発およびブランド管理の比重が，企業側から消費者側に移行しつつある．
 
 # Digital concept: customer co-creation
+
+* Co-creationには，二つのステップがある．ContributionとSelectionである．Contributionにおいては，いかに消費者から協力を得るか，Selectionにおいては，いかに消費者の印象を悪くすることなくアイデアを選定するかが課題である．
+* Contributionにおいて消費者の協力を得る際に重要なのは，Social recognitionとFinancial rewardsである．
+* Contributionの方法（1.Fix，2.Open）と，Selectionの方法（a.Firm-led，b.Crawd-led）によって，Co-creationを四種類に分類できる．1.a.Submitting，1.b.Co-designing，2.a.Tinkering，2.b.Collaboration．
+* Tinkeringがいまいちよくわからん．
+* The rule of 1．消費者から集められたアイデアのうち，1%しか使い物にならない．
 
 # Case study: local motors
 
