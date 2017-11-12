@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Nov 2017 23:10:17 +0900</pubDate>
-    <lastBuildDate>Fri, 10 Nov 2017 23:10:17 +0900</lastBuildDate>
+    <pubDate>Sun, 12 Nov 2017 16:31:43 +0900</pubDate>
+    <lastBuildDate>Sun, 12 Nov 2017 16:31:43 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -59,12 +59,109 @@
 &lt;ul&gt;
   &lt;li&gt;Co-creationには，二つのステップがある．ContributionとSelectionである．Contributionにおいては，いかに消費者から協力を得るか，Selectionにおいては，いかに消費者の印象を悪くすることなくアイデアを選定するかが課題である．&lt;/li&gt;
   &lt;li&gt;Contributionにおいて消費者の協力を得る際に重要なのは，Social recognitionとFinancial rewardsである．&lt;/li&gt;
-  &lt;li&gt;Contributionの方法（1.Fix，2.Open）と，Selectionの方法（a.Firm-led，b.Crawd-led）によって，Co-creationを四種類に分類できる．1.a.Submitting，1.b.Co-designing，2.a.Tinkering，2.b.Collaboration．&lt;/li&gt;
+  &lt;li&gt;Contributionの方法（1.Fix，2.Open）と，Selectionの方法（a.Firm-led，b.Crowd-led）によって，Co-creationを四種類に分類できる．1.a.Submitting，1.b.Co-designing，2.a.Tinkering，2.b.Collaboration．&lt;/li&gt;
   &lt;li&gt;Tinkeringがいまいちよくわからん．&lt;/li&gt;
   &lt;li&gt;The rule of 1．消費者から集められたアイデアのうち，1%しか使い物にならない．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;case-study-local-motors&quot;&gt;Case study: local motors&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://edition.cnn.com/2013/03/12/tech/web/crowdsourced-car-sxsw/&quot;&gt;CNN，How the Internet built a $100,000 race car&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://rallyfighter.com/&quot;&gt;Rally Fighter&lt;/a&gt;は，おそらく世界で初めて，Crowdsourcingで設計された車である．Rally Fighterを製造したのは，アリゾナ州のLocal Motors社である．&lt;/li&gt;
+      &lt;li&gt;ユーザはインターネットを介して，車両のデザインおよび投票に参加した．&lt;/li&gt;
+      &lt;li&gt;Rally Fighterの製作期間は18ヶ月である，従来の五分の一の長さである．製作費は三百万ドルで，従来より大幅に小さい．Local Motersは，車の設計を根本から見直すことで，これを成し遂げた．例えば，六百万ドルかけてエアバックを製造する代わりに，十ドルかけて五点シートベルトを設計した．&lt;/li&gt;
+      &lt;li&gt;購入後，オーナーは自らRally Fighterを組み立てる．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OetiD8rL1KU&quot;&gt;YouTube，Local Motors Rally Fighter - Jay Leno’s Garage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;digital-concept-doppelgänger-brands&quot;&gt;Digital concept: Doppelgänger brands&lt;/h1&gt;
+
+&lt;h1 id=&quot;exersice-ideaslegocom&quot;&gt;Exersice: Ideas.Lego.com&lt;/h1&gt;
+
+&lt;h1 id=&quot;campus-spotlight&quot;&gt;Campus spotlight&lt;/h1&gt;
+
+&lt;h1 id=&quot;module-1-review-quiz&quot;&gt;Module 1 review quiz&lt;/h1&gt;
+</description>
+        <pubDate>Sun, 12 Nov 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/11/12/marketing-science</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/12/marketing-science</guid>
+        
+        
+        <category>marketing</category>
+        
+      </item>
+    
+      <item>
+        <title>Courcera，Marketing in a digital world：1. Product</title>
+        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る&lt;a href=&quot;https://www.coursera.org/specializations/digital-marketing&quot;&gt;Digital marketing specialization&lt;/a&gt;の一つ．四週かけて，デジタル時代の&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&quot;&gt;マーケティング・ミックス&lt;/a&gt;について学ぶ．第一週では，本講座の概要と，Productを取り扱う．&lt;/p&gt;
+
+&lt;h1 id=&quot;about-the-course&quot;&gt;About the course&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;インターネット，スマートフォン，3Dプリンターに代表される技術革新により，市場のパワーバランスは，企業側から消費者側に傾きつつある．&lt;/li&gt;
+  &lt;li&gt;本講座では，このような激動の時代におけるマーケティング手法を，実例や演習を交えて学習する．&lt;/li&gt;
+  &lt;li&gt;本講座では，教材として&lt;a href=&quot;https://hbr.org/&quot;&gt;Harvard Business Review&lt;/a&gt;や&lt;a href=&quot;https://subscribe.sloanreview.mit.edu/ecom/SMR/app/live/subscriptions?&amp;amp;org=SMR&amp;amp;publ=SM&amp;amp;key_code=OSABC76&amp;amp;type=S&quot;&gt;MIT Sloan Management Review&lt;/a&gt;を用いる．また，補助教材として&lt;a href=&quot;https://books.google.co.jp/books?id=veuhAwAAQBAJ&amp;amp;source=gbs_book_other_versions&amp;amp;redir_esc=y&quot;&gt;Understanding Digital Marketing: Marketing Strategies for Engaging the Digital Generation&lt;/a&gt;が手元にあれば望ましいが，必須ではない．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;module-1-overview&quot;&gt;Module 1 overview&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Module 1では，productの観点から，最新のマーケティング手法を学ぶ．例えば，customer co-creationやdoppelgänger brandsなど．&lt;/li&gt;
+  &lt;li&gt;Module 1では，7時間程度の勉強が必要．&lt;/li&gt;
+  &lt;li&gt;Lakhani, K. R. (2013). &lt;a href=&quot;https://hbr.org/2013/04/using-the-crowd-as-an-innovation-partner&quot;&gt;Using the crowd as an innovation partner&lt;/a&gt;. &lt;em&gt;Harvard Business Review&lt;/em&gt;, 91(4). 60–69.
+    &lt;ul&gt;
+      &lt;li&gt;クラウドソーシングをうまく活用できている企業は少ない．これは，どのようなケースにおいてクラウドソーシングがうまく生きるか，確固とした理論が存在しないためである．本記事では，クラウドソーシングのガイドラインを提供する．&lt;/li&gt;
+      &lt;li&gt;クラウドソーシングのメリットは，スケールしやすさ，多様性，コストの低さ，モチベーションの高さ，である．クラウドソーシング自体は昔から存在していたが，近年ツールが劇的に進化した．&lt;/li&gt;
+      &lt;li&gt;クラウドソーシングには，&lt;strong&gt;Contest&lt;/strong&gt;，&lt;strong&gt;Collaborative community&lt;/strong&gt;，&lt;strong&gt;Complementor&lt;/strong&gt;，および&lt;strong&gt;Labor market&lt;/strong&gt;の4種類がある．&lt;/li&gt;
+      &lt;li&gt;Contestは，どんな手法が有効かすらわからない，多様な実験的試行を必要とするタスクに有効である．&lt;a href=&quot;https://www.topcoder.com/&quot;&gt;TopCoder&lt;/a&gt;，&lt;a href=&quot;https://www.kaggle.com/&quot;&gt;Kaggle&lt;/a&gt;，&lt;a href=&quot;https://www.innocentive.com/&quot;&gt;InnoCentive&lt;/a&gt;などがこれに該当する．&lt;/li&gt;
+      &lt;li&gt;Collaborative communitiesの例としては，IBMが自社でのWebサーバー開発を終了し，Apacheへのコントリビュートを開始したことが挙げられる．Collaborative communityは，Contestと違い，各人の貢献が最終的に一つの成果物となる．Collaborative communityが最もよく機能するのは，各人が自由に意見を交換し，情報を共有するときである．つまり，知的財産の保護はほとんど不可能である．&lt;/li&gt;
+      &lt;li&gt;Complementorは，Apple storeのように，複数のタスクを実行可能な形態である．Complementorを利用する際は，まず，プラットフォームのアクセス方法を整備する必要がある．&lt;/li&gt;
+      &lt;li&gt;Labor marketは，従来より短期の雇用契約を仲介する形態である．例えば，&lt;a href=&quot;https://www.elance.com/php/landing/main/login.php?redirect=&quot;&gt;Elance&lt;/a&gt;，&lt;a href=&quot;https://www.upwork.com/&quot;&gt;oDesk&lt;/a&gt;，Guru，&lt;a href=&quot;https://www.clickworker.com/&quot;&gt;Clickworker&lt;/a&gt;，&lt;a href=&quot;http://www.shorttask.com/&quot;&gt;ShortTask&lt;/a&gt;，&lt;a href=&quot;https://www.samasource.org/&quot;&gt;Samasource&lt;/a&gt;，&lt;a href=&quot;https://www.freelancer.com/?utm_expid=294858-553.v56tHEK5QEmWFNtoUUBcgw.0&quot;&gt;Freelancer&lt;/a&gt;，CloudCrowdなどがある．Labor marketの成功の鍵は，プラットフォームの整備である．Labor marketは，タスクや解決策や必要なスキルが明確なとき，有効な形態である．Labor marketは，長期雇用契約に適さないような，知的な反復作業のアウトソーシングに適している．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Giesler, M. (2012). &lt;a href=&quot;https://archive.ama.org/archive/AboutAMA/Pages/AMA%20Publications/AMA%20Journals/Journal%20of%20Marketing/TOCs/SUM_2012.6/doppelganger-brand-images.aspx&quot;&gt;How doppelgänger brand images influence the market creation process: Longitudinal insights from the rise of Botox cosmetic.&lt;/a&gt; &lt;em&gt;Journal of Marketing&lt;/em&gt;, 76(6), 55–68.
+    &lt;ul&gt;
+      &lt;li&gt;Doppelgänger brand image（DBI）とは，特定のブランドを貶めるイメージやストーリーの一つであり，緩やかに組織されたコミュニティで拡散される．&lt;/li&gt;
+      &lt;li&gt;人気のあるブランドだけでなく，新たな機械，技術，薬等に対してもDBIが形成されることがある．&lt;/li&gt;
+      &lt;li&gt;DBIに打ち勝つためには，4つのステップが有効である．Problematization，Interessement，Enrollment，そしてMobilization．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;basic-concept-product&quot;&gt;Basic concept: product&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;本講座では，特に，Product developmentとBrand managementに着目する．&lt;/li&gt;
+  &lt;li&gt;製品開発では，&lt;a href=&quot;https://keikakuhiroba-mfi.com/archives/10836&quot;&gt;ステージゲート法&lt;/a&gt;が有効である．ステージゲート法では，アイデアの発想から商品化に至る工程を複数のステージに分割し，一つのステージから次のステージに移行する間に評価を行うゲートを設けて，効率的にアイデアを絞る．&lt;/li&gt;
+  &lt;li&gt;近年の技術革新により，製品開発およびブランド管理の比重が，企業側から消費者側に移行しつつある．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;digital-concept-customer-co-creation&quot;&gt;Digital concept: customer co-creation&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Co-creationには，二つのステップがある．ContributionとSelectionである．Contributionにおいては，いかに消費者から協力を得るか，Selectionにおいては，いかに消費者の印象を悪くすることなくアイデアを選定するかが課題である．&lt;/li&gt;
+  &lt;li&gt;Contributionにおいて消費者の協力を得る際に重要なのは，Social recognitionとFinancial rewardsである．&lt;/li&gt;
+  &lt;li&gt;Contributionの方法（1.Fix，2.Open）と，Selectionの方法（a.Firm-led，b.Crowd-led）によって，Co-creationを四種類に分類できる．1.a.Submitting，1.b.Co-designing，2.a.Tinkering，2.b.Collaboration．&lt;/li&gt;
+  &lt;li&gt;Tinkeringがいまいちよくわからん．&lt;/li&gt;
+  &lt;li&gt;The rule of 1．消費者から集められたアイデアのうち，1%しか使い物にならない．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;case-study-local-motors&quot;&gt;Case study: local motors&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://edition.cnn.com/2013/03/12/tech/web/crowdsourced-car-sxsw/&quot;&gt;CNN，How the Internet built a $100,000 race car&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://rallyfighter.com/&quot;&gt;Rally Fighter&lt;/a&gt;は，おそらく世界で初めて，Crowdsourcingで設計された車である．Rally Fighterを製造したのは，アリゾナ州のLocal Motors社である．&lt;/li&gt;
+      &lt;li&gt;ユーザはインターネットを介して，車両のデザインおよび投票に参加した．&lt;/li&gt;
+      &lt;li&gt;Rally Fighterの製作期間は18ヶ月である，従来の五分の一の長さである．製作費は三百万ドルで，従来より大幅に小さい．Local Motersは，車の設計を根本から見直すことで，これを成し遂げた．例えば，六百万ドルかけてエアバックを製造する代わりに，十ドルかけて五点シートベルトを設計した．&lt;/li&gt;
+      &lt;li&gt;購入後，オーナーは自らRally Fighterを組み立てる．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OetiD8rL1KU&quot;&gt;YouTube，Local Motors Rally Fighter - Jay Leno’s Garage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;digital-concept-doppelgänger-brands&quot;&gt;Digital concept: Doppelgänger brands&lt;/h1&gt;
 
@@ -888,121 +985,6 @@ r'
         <pubDate>Tue, 08 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/08/introduction-to-ad-tech</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/08/introduction-to-ad-tech</guid>
-        
-        
-        <category>x-tech</category>
-        
-      </item>
-    
-      <item>
-        <title>Kaggle，Zillow Prize概要</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;KaggleのZillow Prize&lt;/a&gt;は，&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt;が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-08-07-retech.jpg&quot; alt=&quot;retech&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;誤訳があるかもしれないのでご注意．&lt;/p&gt;
-
-&lt;h1 id=&quot;1-背景&quot;&gt;1. 背景&lt;/h1&gt;
-
-&lt;h2 id=&quot;1a-kaggle&quot;&gt;1.a Kaggle&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/&quot;&gt;Kaggle&lt;/a&gt;は，データサイエンティストのプラットフォームである．様々なコンペティションを開催しており，データサイエンティストの腕試しの場として広く認知されている．Kaggleへの参加方法については，&lt;a href=&quot;http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7&quot;&gt;Kaggle事始め&lt;/a&gt;が詳しい．&lt;/p&gt;
-
-&lt;h2 id=&quot;1b-zillow&quot;&gt;1.b Zillow&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt;は，オンライン不動産データベースを運営するアメリカの企業である．アメリカ全土の1億件以上の物件情報を有し，Zestimateと呼ばれる価格見積もりサービスを持つ．&lt;/p&gt;
-
-&lt;h1 id=&quot;2-zillow-prize&quot;&gt;2. Zillow Prize&lt;/h1&gt;
-
-&lt;h2 id=&quot;2a-概要&quot;&gt;2.a 概要&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;Zillow Prize&lt;/a&gt;は，Zillowが2017年5月に開始したコンペティションである．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，Qualifying round（第1ラウンド）とPrivate round（第2ラウンド）からなる．Private roundは，Qualifying roundの上位100チームのみに対し2018年1月1日から実施される．&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/data&quot;&gt;Data&lt;/a&gt;や&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1/rules&quot;&gt;Rules&lt;/a&gt;等の詳細は以下．&lt;/p&gt;
-
-&lt;h2 id=&quot;2b-data&quot;&gt;2.b Data&lt;/h2&gt;
-
-&lt;p&gt;本コンペティションの目的は，Zestimate（&lt;script type=&quot;math/tex&quot;&gt;z&lt;/script&gt;）と実際の売値（&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;）の対数誤差を予測すること．対数誤差は以下で定義される．&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
-logerror = log(z) - log(s) \tag{1}
-\end{align*}&lt;/script&gt;
-
-&lt;p&gt;具体的には，2017年秋における&lt;script type=&quot;math/tex&quot;&gt;logerror&lt;/script&gt;を予測する．不動産価格は公開情報なので，取引が始まる前に，モデルの提出を打ち切る．&lt;/p&gt;
-
-&lt;p&gt;訓練データとして，2016年の三箇所（Los Angeles，Orange and Ventura，California）の全ての不動産データが提供される．訓練データは2016年10月15日以前の全ての取引と，それ以降のいくつかの取引を含む．public leaderboardのテストデータは，2016年10月15日から同年12月31日までのものである．private leader boardのテストデータは，2017年10月15日から同年12月15日まで（この期間をsales tracking periodと呼ぶ）のものである．つまり，参加者は次の６時点における全ての不動産に対して予測を行う必要がある．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;October 2016 (201610)&lt;/li&gt;
-  &lt;li&gt;November 2016 (201611)&lt;/li&gt;
-  &lt;li&gt;December 2016 (201612)&lt;/li&gt;
-  &lt;li&gt;October 2017 (201710)&lt;/li&gt;
-  &lt;li&gt;November 2017 (201711)&lt;/li&gt;
-  &lt;li&gt;December 2017 (201712)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;当該期間において取引が行われなかった不動産は，scoreの計算に利用されない．31日間のうち，複数回の取引があった場合は，最初の適切な取引をscoreの計算に用いる．&lt;/p&gt;
-
-&lt;p&gt;以下は各ファイルの概要．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;properties_2016.csv&lt;/code&gt;：2016年の全ての不動産情報．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;properties_2017.csv&lt;/code&gt;：2017年の全ての不動産情報．2017年10月2日に公開予定．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;train_2016.csv&lt;/code&gt;：2016年1月1日から2016年12月31日までの取引情報．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;train_2017.csv&lt;/code&gt;：2017年1月1日から2017年9月15日までの取引情報．2017年10月2日に公開予定．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sample_submission.csv&lt;/code&gt;：提出用のサンプルファイル．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2c-rules&quot;&gt;2.c Rules&lt;/h2&gt;
-&lt;p&gt;重要そうなものだけ抜粋．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;チーム外に，コードを共有してはならない．ただし，全参加者に共有するのはOK．&lt;/li&gt;
-  &lt;li&gt;1チーム最大3人まで．&lt;/li&gt;
-  &lt;li&gt;1日5回まで提出可能．最終的に，最大2つの予測結果を投稿可能．&lt;/li&gt;
-  &lt;li&gt;賞金総額：$1,200,000
-    &lt;ul&gt;
-      &lt;li&gt;第1ラウンド総額：$50,000
-        &lt;ul&gt;
-          &lt;li&gt;1位：$25,000&lt;/li&gt;
-          &lt;li&gt;2位：$15,000&lt;/li&gt;
-          &lt;li&gt;3位：$10,000&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;第2ラウンド総額：$1,150,000
-        &lt;ul&gt;
-          &lt;li&gt;1位：$1,000,000&lt;/li&gt;
-          &lt;li&gt;2位：$100,000&lt;/li&gt;
-          &lt;li&gt;3位：$50,000&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;第1ラウンドでは，Kernel上でのみ，ソースコードを公開できる&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．これは，MITライセンスのもとでの譲渡とみなされる．&lt;/li&gt;
-  &lt;li&gt;第2ラウンドでは，いかなる形でもソースコードを公開できない&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/zillow-prize-1&quot;&gt;Kaggle，Zillow Prize&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7&quot;&gt;Qiita，Kaggle事始め&lt;/a&gt;：丁寧なKaggle入門記事．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://qiita.com/TomHortons/items/54b2121a4c5eb0908920&quot;&gt;Qiita，Kaggleのコンペティションリスト&lt;/a&gt;：Kaggleのコンペティションを，データのタイプで分類．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://realestatetechnews.com/&quot;&gt;Real estate tech news&lt;/a&gt;：不動産関連xテクノロジーに関するニュースサイト．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.kaggle.com/&quot;&gt;No Free Hunch&lt;/a&gt;：Kaggle公式ブログ．コンテスト優勝者のモデルが公開されている．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;ここで検討過程を公開しようと思っていたが，どうやらルール違反っぽい．一旦Kernelで公開したものを，日本語訳して自分のサイトで公開するのはOKか？&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 07 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/07/zillow-conpetition</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/07/zillow-conpetition</guid>
         
         
         <category>x-tech</category>

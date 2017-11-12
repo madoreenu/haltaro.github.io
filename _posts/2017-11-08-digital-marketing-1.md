@@ -40,11 +40,18 @@ categories:
 
 * Co-creationには，二つのステップがある．ContributionとSelectionである．Contributionにおいては，いかに消費者から協力を得るか，Selectionにおいては，いかに消費者の印象を悪くすることなくアイデアを選定するかが課題である．
 * Contributionにおいて消費者の協力を得る際に重要なのは，Social recognitionとFinancial rewardsである．
-* Contributionの方法（1.Fix，2.Open）と，Selectionの方法（a.Firm-led，b.Crawd-led）によって，Co-creationを四種類に分類できる．1.a.Submitting，1.b.Co-designing，2.a.Tinkering，2.b.Collaboration．
+* Contributionの方法（1.Fix，2.Open）と，Selectionの方法（a.Firm-led，b.Crowd-led）によって，Co-creationを四種類に分類できる．1.a.Submitting，1.b.Co-designing，2.a.Tinkering，2.b.Collaboration．
 * Tinkeringがいまいちよくわからん．
 * The rule of 1．消費者から集められたアイデアのうち，1%しか使い物にならない．
 
 # Case study: local motors
+
+* [CNN，How the Internet built a $100,000 race car](http://edition.cnn.com/2013/03/12/tech/web/crowdsourced-car-sxsw/)
+  * [Rally Fighter](http://rallyfighter.com/)は，おそらく世界で初めて，Crowdsourcingで設計された車である．Rally Fighterを製造したのは，アリゾナ州のLocal Motors社である．
+  * ユーザはインターネットを介して，車両のデザインおよび投票に参加した．
+  * Rally Fighterの製作期間は18ヶ月である，従来の五分の一の長さである．製作費は三百万ドルで，従来より大幅に小さい．Local Motersは，車の設計を根本から見直すことで，これを成し遂げた．例えば，六百万ドルかけてエアバックを製造する代わりに，十ドルかけて五点シートベルトを設計した．
+  * 購入後，オーナーは自らRally Fighterを組み立てる．
+* [YouTube，Local Motors Rally Fighter - Jay Leno's Garage](https://www.youtube.com/watch?v=OetiD8rL1KU)
 
 # Digital concept: Doppelgänger brands
 
