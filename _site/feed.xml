@@ -6,85 +6,80 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Nov 2017 16:31:43 +0900</pubDate>
-    <lastBuildDate>Sun, 12 Nov 2017 16:31:43 +0900</lastBuildDate>
+    <pubDate>Mon, 13 Nov 2017 21:57:53 +0900</pubDate>
+    <lastBuildDate>Mon, 13 Nov 2017 21:57:53 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
-        <title>Courcera，Marketing in a digital world：1. Product</title>
-        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る&lt;a href=&quot;https://www.coursera.org/specializations/digital-marketing&quot;&gt;Digital marketing specialization&lt;/a&gt;の一つ．四週かけて，デジタル時代の&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&quot;&gt;マーケティング・ミックス&lt;/a&gt;について学ぶ．第一週では，本講座の概要と，Productを取り扱う．&lt;/p&gt;
+        <title>Reajob，South Australia to improve wind farm with world’s largest battery</title>
+        <description>&lt;p&gt;帰国してから英語力が下がりまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，出国前まで続けていた&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の&lt;a href=&quot;https://www.rarejob.com/dna&quot;&gt;Article discussion&lt;/a&gt;．以下はその受講メモ．&lt;/p&gt;
 
-&lt;h1 id=&quot;about-the-course&quot;&gt;About the course&lt;/h1&gt;
+&lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
 
+&lt;p&gt;&lt;a href=&quot;https://www.rarejob.com/dna/2017/11/13/south-australia-to-improve-wind-farm-with-worlds-largest-battery/&quot;&gt;Daily news article&lt;/a&gt;のページで：&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;インターネット，スマートフォン，3Dプリンターに代表される技術革新により，市場のパワーバランスは，企業側から消費者側に傾きつつある．&lt;/li&gt;
-  &lt;li&gt;本講座では，このような激動の時代におけるマーケティング手法を，実例や演習を交えて学習する．&lt;/li&gt;
-  &lt;li&gt;本講座では，教材として&lt;a href=&quot;https://hbr.org/&quot;&gt;Harvard Business Review&lt;/a&gt;や&lt;a href=&quot;https://subscribe.sloanreview.mit.edu/ecom/SMR/app/live/subscriptions?&amp;amp;org=SMR&amp;amp;publ=SM&amp;amp;key_code=OSABC76&amp;amp;type=S&quot;&gt;MIT Sloan Management Review&lt;/a&gt;を用いる．また，補助教材として&lt;a href=&quot;https://books.google.co.jp/books?id=veuhAwAAQBAJ&amp;amp;source=gbs_book_other_versions&amp;amp;redir_esc=y&quot;&gt;Understanding Digital Marketing: Marketing Strategies for Engaging the Digital Generation&lt;/a&gt;が手元にあれば望ましいが，必須ではない．&lt;/li&gt;
+  &lt;li&gt;文章を見ずにリスニング１回&lt;/li&gt;
+  &lt;li&gt;文章を見ながらシャドウイング6回&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;module-1-overview&quot;&gt;Module 1 overview&lt;/h1&gt;
+&lt;h1 id=&quot;講義内容&quot;&gt;講義内容&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Module 1では，productの観点から，最新のマーケティング手法を学ぶ．例えば，customer co-creationやdoppelgänger brandsなど．&lt;/li&gt;
-  &lt;li&gt;Module 1では，7時間程度の勉強が必要．&lt;/li&gt;
-  &lt;li&gt;Lakhani, K. R. (2013). &lt;a href=&quot;https://hbr.org/2013/04/using-the-crowd-as-an-innovation-partner&quot;&gt;Using the crowd as an innovation partner&lt;/a&gt;. &lt;em&gt;Harvard Business Review&lt;/em&gt;, 91(4). 60–69.
+  &lt;li&gt;自己紹介．沖縄に行ったことがあるそうなので少し盛り上がる．&lt;/li&gt;
+  &lt;li&gt;タイトルを読んだあと，停電に関する質疑応答．
     &lt;ul&gt;
-      &lt;li&gt;クラウドソーシングをうまく活用できている企業は少ない．これは，どのようなケースにおいてクラウドソーシングがうまく生きるか，確固とした理論が存在しないためである．本記事では，クラウドソーシングのガイドラインを提供する．&lt;/li&gt;
-      &lt;li&gt;クラウドソーシングのメリットは，スケールしやすさ，多様性，コストの低さ，モチベーションの高さ，である．クラウドソーシング自体は昔から存在していたが，近年ツールが劇的に進化した．&lt;/li&gt;
-      &lt;li&gt;クラウドソーシングには，&lt;strong&gt;Contest&lt;/strong&gt;，&lt;strong&gt;Collaborative community&lt;/strong&gt;，&lt;strong&gt;Complementor&lt;/strong&gt;，および&lt;strong&gt;Labor market&lt;/strong&gt;の4種類がある．&lt;/li&gt;
-      &lt;li&gt;Contestは，どんな手法が有効かすらわからない，多様な実験的試行を必要とするタスクに有効である．&lt;a href=&quot;https://www.topcoder.com/&quot;&gt;TopCoder&lt;/a&gt;，&lt;a href=&quot;https://www.kaggle.com/&quot;&gt;Kaggle&lt;/a&gt;，&lt;a href=&quot;https://www.innocentive.com/&quot;&gt;InnoCentive&lt;/a&gt;などがこれに該当する．&lt;/li&gt;
-      &lt;li&gt;Collaborative communitiesの例としては，IBMが自社でのWebサーバー開発を終了し，Apacheへのコントリビュートを開始したことが挙げられる．Collaborative communityは，Contestと違い，各人の貢献が最終的に一つの成果物となる．Collaborative communityが最もよく機能するのは，各人が自由に意見を交換し，情報を共有するときである．つまり，知的財産の保護はほとんど不可能である．&lt;/li&gt;
-      &lt;li&gt;Complementorは，Apple storeのように，複数のタスクを実行可能な形態である．Complementorを利用する際は，まず，プラットフォームのアクセス方法を整備する必要がある．&lt;/li&gt;
-      &lt;li&gt;Labor marketは，従来より短期の雇用契約を仲介する形態である．例えば，&lt;a href=&quot;https://www.elance.com/php/landing/main/login.php?redirect=&quot;&gt;Elance&lt;/a&gt;，&lt;a href=&quot;https://www.upwork.com/&quot;&gt;oDesk&lt;/a&gt;，Guru，&lt;a href=&quot;https://www.clickworker.com/&quot;&gt;Clickworker&lt;/a&gt;，&lt;a href=&quot;http://www.shorttask.com/&quot;&gt;ShortTask&lt;/a&gt;，&lt;a href=&quot;https://www.samasource.org/&quot;&gt;Samasource&lt;/a&gt;，&lt;a href=&quot;https://www.freelancer.com/?utm_expid=294858-553.v56tHEK5QEmWFNtoUUBcgw.0&quot;&gt;Freelancer&lt;/a&gt;，CloudCrowdなどがある．Labor marketの成功の鍵は，プラットフォームの整備である．Labor marketは，タスクや解決策や必要なスキルが明確なとき，有効な形態である．Labor marketは，長期雇用契約に適さないような，知的な反復作業のアウトソーシングに適している．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;大規模な停電を経験したことがあるか？&lt;/strong&gt;：ある．2013年の大震災のとき．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;どのくらいの間停電したか？&lt;/strong&gt;：一日中（うろ覚え）．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;停電時，どのような活動に影響がでたか？&lt;/strong&gt;：家電が止まって大変だった．（今思えば，電車が止まって帰宅難民が出たとか言えばよかった）&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Giesler, M. (2012). &lt;a href=&quot;https://archive.ama.org/archive/AboutAMA/Pages/AMA%20Publications/AMA%20Journals/Journal%20of%20Marketing/TOCs/SUM_2012.6/doppelganger-brand-images.aspx&quot;&gt;How doppelgänger brand images influence the market creation process: Longitudinal insights from the rise of Botox cosmetic.&lt;/a&gt; &lt;em&gt;Journal of Marketing&lt;/em&gt;, 76(6), 55–68.
+  &lt;li&gt;New wordsを音読．&lt;/li&gt;
+  &lt;li&gt;Articleを音読．途中で３つほど質問に答える．&lt;/li&gt;
+  &lt;li&gt;Articleの即興サマライズ．&lt;/li&gt;
+  &lt;li&gt;Viewpoint discussion．&lt;/li&gt;
+  &lt;li&gt;少し時間が余ったので逆質問．
     &lt;ul&gt;
-      &lt;li&gt;Doppelgänger brand image（DBI）とは，特定のブランドを貶めるイメージやストーリーの一つであり，緩やかに組織されたコミュニティで拡散される．&lt;/li&gt;
-      &lt;li&gt;人気のあるブランドだけでなく，新たな機械，技術，薬等に対してもDBIが形成されることがある．&lt;/li&gt;
-      &lt;li&gt;DBIに打ち勝つためには，4つのステップが有効である．Problematization，Interessement，Enrollment，そしてMobilization．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;サマライズが難しかった．何かコツがあったら教えてほしい&lt;/strong&gt;：記事全体を眺めて，重要そうな部分を抜き出せば良いよ．&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;basic-concept-product&quot;&gt;Basic concept: product&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;本講座では，特に，Product developmentとBrand managementに着目する．&lt;/li&gt;
-  &lt;li&gt;製品開発では，&lt;a href=&quot;https://keikakuhiroba-mfi.com/archives/10836&quot;&gt;ステージゲート法&lt;/a&gt;が有効である．ステージゲート法では，アイデアの発想から商品化に至る工程を複数のステージに分割し，一つのステージから次のステージに移行する間に評価を行うゲートを設けて，効率的にアイデアを絞る．&lt;/li&gt;
-  &lt;li&gt;近年の技術革新により，製品開発およびブランド管理の比重が，企業側から消費者側に移行しつつある．&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id=&quot;先生からのフィードバック&quot;&gt;先生からのフィードバック&lt;/h1&gt;
 
-&lt;h1 id=&quot;digital-concept-customer-co-creation&quot;&gt;Digital concept: customer co-creation&lt;/h1&gt;
+&lt;p&gt;特になし．&lt;/p&gt;
+
+&lt;h1 id=&quot;学んだこと&quot;&gt;学んだこと&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Co-creationには，二つのステップがある．ContributionとSelectionである．Contributionにおいては，いかに消費者から協力を得るか，Selectionにおいては，いかに消費者の印象を悪くすることなくアイデアを選定するかが課題である．&lt;/li&gt;
-  &lt;li&gt;Contributionにおいて消費者の協力を得る際に重要なのは，Social recognitionとFinancial rewardsである．&lt;/li&gt;
-  &lt;li&gt;Contributionの方法（1.Fix，2.Open）と，Selectionの方法（a.Firm-led，b.Crowd-led）によって，Co-creationを四種類に分類できる．1.a.Submitting，1.b.Co-designing，2.a.Tinkering，2.b.Collaboration．&lt;/li&gt;
-  &lt;li&gt;Tinkeringがいまいちよくわからん．&lt;/li&gt;
-  &lt;li&gt;The rule of 1．消費者から集められたアイデアのうち，1%しか使い物にならない．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/intermittent&quot;&gt;&lt;em&gt;intermittent&lt;/em&gt;&lt;/a&gt;：時々とぎれる，断続する，間欠性の．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ejje.weblio.jp/content/forestall&quot;&gt;&lt;em&gt;forestall&lt;/em&gt;&lt;/a&gt;：先んずる，機先を制する，出し抜く，買い占める．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/operational&quot;&gt;&lt;em&gt;operational&lt;/em&gt;&lt;/a&gt;：操作上の，経営上の；使用できる，運転可能な；作戦上の．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;case-study-local-motors&quot;&gt;Case study: local motors&lt;/h1&gt;
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://edition.cnn.com/2013/03/12/tech/web/crowdsourced-car-sxsw/&quot;&gt;CNN，How the Internet built a $100,000 race car&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://rallyfighter.com/&quot;&gt;Rally Fighter&lt;/a&gt;は，おそらく世界で初めて，Crowdsourcingで設計された車である．Rally Fighterを製造したのは，アリゾナ州のLocal Motors社である．&lt;/li&gt;
-      &lt;li&gt;ユーザはインターネットを介して，車両のデザインおよび投票に参加した．&lt;/li&gt;
-      &lt;li&gt;Rally Fighterの製作期間は18ヶ月である，従来の五分の一の長さである．製作費は三百万ドルで，従来より大幅に小さい．Local Motersは，車の設計を根本から見直すことで，これを成し遂げた．例えば，六百万ドルかけてエアバックを製造する代わりに，十ドルかけて五点シートベルトを設計した．&lt;/li&gt;
-      &lt;li&gt;購入後，オーナーは自らRally Fighterを組み立てる．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OetiD8rL1KU&quot;&gt;YouTube，Local Motors Rally Fighter - Jay Leno’s Garage&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;サマライズはやっぱり難しい．とりあえず話す習慣をつけることが大事だと思った．&lt;/p&gt;
 
-&lt;h1 id=&quot;digital-concept-doppelgänger-brands&quot;&gt;Digital concept: Doppelgänger brands&lt;/h1&gt;
+&lt;p&gt;レアジョブはリーズナブルで安定しているが，できればネイティブスピーカーの先生に習いたい．もっといろいろ探してみる．&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Nov 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/11/13/reajob</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/13/reajob</guid>
+        
+        
+        <category>english</category>
+        
+      </item>
+    
+      <item>
+        <title>古川一郎，マーケティング・サイエンス入門</title>
+        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/1QZt1OR&quot;&gt;古川一郎，他，マーケティング・サイエンス入門－市場対応の科学的マネジメント&lt;/a&gt;の読書メモ．&lt;/p&gt;
 
-&lt;h1 id=&quot;exersice-ideaslegocom&quot;&gt;Exersice: Ideas.Lego.com&lt;/h1&gt;
+&lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
 
-&lt;h1 id=&quot;campus-spotlight&quot;&gt;Campus spotlight&lt;/h1&gt;
+&lt;h1 id=&quot;メモ&quot;&gt;メモ&lt;/h1&gt;
 
-&lt;h1 id=&quot;module-1-review-quiz&quot;&gt;Module 1 review quiz&lt;/h1&gt;
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 </description>
         <pubDate>Sun, 12 Nov 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/11/12/marketing-science</link>
@@ -823,171 +818,6 @@ r'
         
         
         <category>data science</category>
-        
-      </item>
-    
-      <item>
-        <title>アドテク入門</title>
-        <description>&lt;p&gt;アドテク（Advertising Technology）とは，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）をwin-winの関係にすること．特にReal time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-08-07-ad.jpg&quot; alt=&quot;ad&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;1-目的&quot;&gt;1. 目的&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.cyberagent.co.jp/ir/personal/adtech/&quot;&gt;CyberAgent，日本一やさしいアドテク教室&lt;/a&gt;より抜粋．&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;1：広告主が求める高い広告効果を出すために，より適切な場所／人に広告を出すこと &lt;br /&gt;
-2：メディアの広告枠販売や広告配信の効率化を実現し，収益最大化の支援をすること&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;2-種類&quot;&gt;2. 種類&lt;/h1&gt;
-
-&lt;p&gt;対象や目的に応じて，三種類に分類できる．&lt;/p&gt;
-
-&lt;h2 id=&quot;2a-メディアの広告選択最適化&quot;&gt;2.a メディアの広告選択最適化&lt;/h2&gt;
-
-&lt;p&gt;広告効果が大きい広告をいかに選択するか，という技術．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF&quot;&gt;&lt;strong&gt;Ad Network&lt;/strong&gt;&lt;/a&gt;：Webやアプリメディアなどの広告配信可能な媒体を多数束ねて広告を配信するネットワーク．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-exchange/&quot;&gt;&lt;strong&gt;Ad Exchange&lt;/strong&gt;&lt;/a&gt;：広告枠を１インプレッション単位で売買するプラットフォーム．各媒体やAd Networkが持つ広告掲載枠を交換できる仕組み．&lt;strong&gt;Ad Networkより大きな仕組み&lt;/strong&gt;．Ad Exchangeでは，広告出稿数と広告枠のバランスで，リアルタイムで広告枠の入札単価が変動する．Ad Exchangeには，様々なプラットフォームがある．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Double Click AdExchange&lt;/strong&gt;：Googleが運営．世界最大のAd Exchange．2009年からサービス開始．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Open X Market Japan&lt;/strong&gt;：Open X Japanとcciが提携して運営．2009年からサービス開始．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Microsoft Advertixing Exchange&lt;/strong&gt;：Microsoftが運営．2013年からサービス開始．配信枠はMSNとSkype．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Facebook AdExchange&lt;/strong&gt;：Facebookが運営．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Yild One&lt;/strong&gt;：プラットフォーム・ワンが運営するSSPプラットフォーム．厳密にはAd Exchangeと異なるが，Ad Exchange的に利用することも可能．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://smmlab.jp/?p=30268&quot;&gt;&lt;strong&gt;SSP&lt;/strong&gt;&lt;/a&gt;：Supply Side Platform．オンライン広告において，広告枠を提供しているメディアの広告枠販売や広告収益最大化などを支援するツール．具体的な提供内容はサービスによって異なるが，主に，Ad NetworkやAd Exchangeの管理，リアルタイム入札（RTB）への対応などがある．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2b-広告主の広告表現最適化&quot;&gt;2.b 広告主の広告表現最適化&lt;/h2&gt;
-
-&lt;p&gt;消費者一人ひとりにあった広告表現をいかに実現するか，という技術．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://webbu.jp/dsp_mechanism-276&quot;&gt;&lt;strong&gt;DSP&lt;/strong&gt;&lt;/a&gt;：Demand Side Platform．広告主はターゲットや予算を設定し，バナーを入稿するだけで，DSPが自動で最適な広告配信を行う．DSPを使うことで，複数のAd Network，Ad Exchange，SSPを管理可能になる．SSPのリクエストに応じて，どのような広告をいくらで入札するか決定する．つまり，広告枠のオークションが行われる．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/rtb/&quot;&gt;&lt;strong&gt;RTB&lt;/strong&gt;&lt;/a&gt;：１インプレッションに対してリアルタイムで入札を行う仕組み．広告主はDSPを，媒体はSSPを使って広告枠を取引する．RTBにおける広告掲載の流れは以下のようになる．
-    &lt;ol&gt;
-      &lt;li&gt;ターゲットユーザが媒体ページを訪問．&lt;/li&gt;
-      &lt;li&gt;媒体はインプレッション発生情報をSSPに発信．&lt;/li&gt;
-      &lt;li&gt;SSPは媒体情報やオーディエンス情報をデータ化．&lt;/li&gt;
-      &lt;li&gt;SSPは接続先DSPにビットリクエストを送信．&lt;/li&gt;
-      &lt;li&gt;DSPはビットリクエストを受信し，解析．&lt;/li&gt;
-      &lt;li&gt;DSPは，DSP内での入札勝者情報をSSPに返信．&lt;/li&gt;
-      &lt;li&gt;SSPは複数DSPからの返答を解析し，一番入札価格が高いDSPの広告タグを媒体に送信．&lt;/li&gt;
-      &lt;li&gt;SSPは，勝者DSPに広告リクエストを送信．&lt;/li&gt;
-      &lt;li&gt;勝者DSPは，クリエイティブ情報を送信．&lt;/li&gt;
-      &lt;li&gt;媒体は広告を表示．&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://webkikaku.co.jp/blog/ppc/retargeting/&quot;&gt;&lt;strong&gt;(Static) Retargeting&lt;/strong&gt;&lt;/a&gt;：特定のWebサイトに訪問したユーザを追跡し，広告を表示する仕組み．DSPが提供することもある．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.nex8.net/full-description-of-dynamic-retargeting/&quot;&gt;&lt;strong&gt;Dynamic Retargeting&lt;/strong&gt;&lt;/a&gt;：ユーザが見た商品に合わせて，動的に広告を表示するRetargeting手法．特に，アパレルEC，旅行，人材，不動産商材に強いと言われている．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2c-ターゲット分析&quot;&gt;2.c ターゲット分析&lt;/h2&gt;
-
-&lt;p&gt;広告に対するユーザの行動等のデータを，いかにマーケティングに活かすか，という技術．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://liskul.com/measure-advertising6-14994&quot;&gt;&lt;strong&gt;広告効果計測ツール&lt;/strong&gt;&lt;/a&gt;：Web広告やSEO施策を総合的に測定，評価するツール．&lt;a href=&quot;https://analytics.google.com/analytics/&quot;&gt;Google Analytics&lt;/a&gt;等のアクセス解析ツールと異なり，広告効果の分析を補助する機能を備えている．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.okuramkt.com/dic/mkt/tracking.html&quot;&gt;&lt;strong&gt;Tracking&lt;/strong&gt;&lt;/a&gt;：特定のユーザのサイト内での行動を追跡・分析すること．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dmlab.jp/adtech/dmp.html&quot;&gt;&lt;strong&gt;DMP&lt;/strong&gt;&lt;/a&gt;：Data Management Platform．インターネットに蓄積された情報を管理し，分析結果を広告配信に利用するためのプラットフォーム．現実的には，データの蓄積は進んでいるが，データの活用については敷居が高い模様．下記の二種類がある．
-    &lt;ul&gt;
-      &lt;li&gt;Open DMP：データ提供会社が保有している行動履歴や属性情報．&lt;/li&gt;
-      &lt;li&gt;Private DMP：自社独自で保有している購買履歴，興味関心情報．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ever-rise.co.jp/adtech-blog/how-to-use-ad-sdk.html&quot;&gt;&lt;strong&gt;SDK&lt;/strong&gt;&lt;/a&gt;：Software Development Toolkit．アドテクの文脈では，スマホアプリに組み込んで使う，広告配信に必要な機能をひとまとめにしたツールキットを指す．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;3-略語&quot;&gt;3. 略語&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://qiita.com/fukkyy/items/b2d37b4797516d72225a&quot;&gt;広告と機械学習&lt;/a&gt;を参考にさせて頂いた．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;CPM&lt;/strong&gt;：Cost Per Mile．1000PVあたりの単価．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CPC&lt;/strong&gt;：Cost Per Click．1クリックあたりの単価．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CPI&lt;/strong&gt;：Cost Per Install．1インストールあたりの単価．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;LTV&lt;/strong&gt;：Life Time Value．1ユーザがもたらす収益．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CTR&lt;/strong&gt;：Click Through Rate．クリック率．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CVR&lt;/strong&gt;：ConVersion Rate．コンバージョン率．ちなみにコンバージョンとは，Webサイトにおける目標の達成を指す．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;4-研究動向&quot;&gt;4. 研究動向&lt;/h1&gt;
-
-&lt;p&gt;最近はRTB関連がホットトピックらしい．&lt;a href=&quot;https://github.com/wnzhang/rtb-papers&quot;&gt;Paper Collection of Real-Time Bidding&lt;/a&gt;を参考に分類した．また，DSPについては&lt;a href=&quot;https://www.ai-gakkai.or.jp/vol32_no4/&quot;&gt;人工知能学会誌 Vol.32 No.4&lt;/a&gt;を参考にした．&lt;/p&gt;
-
-&lt;h2 id=&quot;4a-dsp-techniques&quot;&gt;4.a DSP Techniques&lt;/h2&gt;
-
-&lt;p&gt;最も盛んに研究されている分野．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;CTR/CVR Estimation&lt;/strong&gt;：CTRあるいはCVRを予測する．端的に言えば，広告をクリックするか否かを予測する二値識別問題．最も基本的な手法はロジスティック回帰．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Bid Landscape&lt;/strong&gt;：RTBに参加している広告主が，他の参加者の入札状況を予測する．既存研究は主にヒューリスティックな手法に集中している．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Bidding Strategies&lt;/strong&gt;：CTR/CVR Estimationから得られたインプレッション期待利得とBid Landscapeから得られた落札可能額をもとにオンラインナップサック問題を解く．インプレッションが到着する度に入札するか否かを決めなければならず，決定は覆せないという特徴から，オンラインと呼ばれる．オフラインナップサック問題ですらNP困難であり，近似解法が必要．オンラインナップサック問題に至っては入力（インプレッション）に仮定を行わなければ近似アルゴリズムすら設計できない．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Budget Pacing &amp;amp; Frequency/Recency Capping&lt;/strong&gt;：広告主が設定した任意の予算をもとに，任意の期間中まんべんなく広告を配信するための戦略．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Fraud Detection&lt;/strong&gt;：広告詐欺（Ad Fraud）検知．例えば，金銭的な報酬を受け取ったユーザによる意図的なクリック，マルウェア，ボットなどを検知する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Market Segmentation&lt;/strong&gt;：顧客集団分類．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;また，日本語の資料として以下のようなものを見つけた．二つとも，CTR/CVR Estimationに大別される．&lt;/p&gt;
-
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/K2EnIQpqVgHKCh&quot; width=&quot;100%&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
-&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot; title=&quot;アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn&quot; target=&quot;_blank&quot;&gt;アドテクにおける機械学習技術 @Tokyo Data Night #tokyodn&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh&quot; target=&quot;_blank&quot;&gt;Kei Tateno&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;188589d1de6e4650a857d4f3c02070eb&quot; data-ratio=&quot;1.33333333333333&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;4b-ssp-techniques&quot;&gt;4.b SSP Techniques&lt;/h2&gt;
-
-&lt;p&gt;主に，Second-Price Auctionのパラメータ設定最適化．&lt;/p&gt;
-
-&lt;h2 id=&quot;4c-dmp-techniques&quot;&gt;4.c DMP Techniques&lt;/h2&gt;
-
-&lt;p&gt;LinkedInにおけるAudience Expansionなど．&lt;/p&gt;
-
-&lt;h2 id=&quot;4d-conversion-attribution&quot;&gt;4.d Conversion Attribution&lt;/h2&gt;
-
-&lt;p&gt;コンバージョンに対する要因分析を如何に行うか．&lt;/p&gt;
-
-&lt;h1 id=&quot;5-コンペティション&quot;&gt;5. コンペティション&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/criteo-display-ad-challenge&quot;&gt;Kaggle, Display Advertising Challenge&lt;/a&gt;でCTR予測コンペティションが開催された模様．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cyberagent.co.jp/ir/personal/adtech/&quot;&gt;CyberAgent，日本一やさしいアドテク教室&lt;/a&gt;：アドテク入門にうってつけ．用語まとめもある．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-network/&quot;&gt;SATORI, Ad Network（アドネットワーク）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：Ad Networkについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/ad-exchange/&quot;&gt;SATORI，Ad Exchange（アドエクスチェンジ）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：Ad Exchangeについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://webbu.jp/dsp_mechanism-276&quot;&gt;ウェブ部，【2017年6月更新】5分で完璧に理解できる！DSPの仕組みと新しい手法&lt;/a&gt;：DSPについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://satori.marketing/marketing-blog/ad-technology/rtb/&quot;&gt;SATORI，RTB（Real-Time Bidding）とは？を初心者にも分かりやすく解説します&lt;/a&gt;：RTBについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://webkikaku.co.jp/blog/ppc/retargeting/&quot;&gt;WEB企画LABO，初心者でもわかるリターゲティング広告の永久保存版！初期設定から活用まで全て紹介&lt;/a&gt;：(Static) Retargetingについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.nex8.net/full-description-of-dynamic-retargeting/&quot;&gt;nex8ブログ，「よくぞ出してくれた！」と思わず言ってしまう広告とは！？ダイナミックリターゲティング完全解説決定版！&lt;/a&gt;：Dynamic Retargetingについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://liskul.com/measure-advertising6-14994&quot;&gt;LISKUL，広告効果測定ツールの選び方とは？プロが選ぶおすすめツール8種比較&lt;/a&gt;：広告効果計測ツールについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.okuramkt.com/dic/mkt/tracking.html&quot;&gt;OKURA，トラッキング&lt;/a&gt;：Trackingについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dmlab.jp/adtech/dmp.html&quot;&gt;Digital Marketing Lab，DMP（データマネジメントプラットフォーム）の仕組みと特徴&lt;/a&gt;：DMPについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ever-rise.co.jp/adtech-blog/how-to-use-ad-sdk.html&quot;&gt;EVERRISEアドテクブログ，アプリの挙動と連携が可能！広告配信SDKの使い方&lt;/a&gt;：広告配信SDKについて．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/wnzhang/rtb-papers&quot;&gt;wnzhang, Paper Collection of Real-Time Bidding&lt;/a&gt;：RTB関連論文まとめ．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ai-gakkai.or.jp/vol32_no4/&quot;&gt;人工知能学会，人工知能学会誌 Vol.32 No.4&lt;/a&gt;：DSP関連の最新技術動向について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://global-adtech.jp/blog/1066&quot;&gt;GlobalAdtech，日本にも上陸間近？米国で白熱するAd Fraud（広告詐欺）対策状況を見てみよう&lt;/a&gt;：広告詐欺について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://qiita.com/fukkyy/items/b2d37b4797516d72225a&quot;&gt;Qiita，広告と機械学習&lt;/a&gt;：2013年の記事だが，わかりやすい．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/ttpooh/tokyo-data-night-tokyodn&quot;&gt;舘野啓，アドテクにおける機械学習技術&lt;/a&gt;：機械学習を用いたRTB入札最適化について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://speakerdeck.com/kaky0922/treasure-data-tech-talk-20160425&quot;&gt;Takayuki Sakai，アドテク企業の本番環境からTD使ってみた&lt;/a&gt;：機械学習を用いたCTR予測について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/criteo-display-ad-challenge&quot;&gt;Kaggle, Display Advertising Challenge&lt;/a&gt;：三年前に開催された，CTR予測コンペティション．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://techcrunch.com/advertising-tech/&quot;&gt;TechCrunch，Advertising Tech&lt;/a&gt;：アドテク関連の最新ニュース．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 08 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/08/introduction-to-ad-tech</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/08/introduction-to-ad-tech</guid>
-        
-        
-        <category>x-tech</category>
         
       </item>
     
