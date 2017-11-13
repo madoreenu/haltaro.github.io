@@ -8,6 +8,8 @@ categories:
 
 **随時更新**：[Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る[Digital marketing specialization](https://www.coursera.org/specializations/digital-marketing)の一つ．四週かけて，デジタル時代の[マーケティング・ミックス](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9)について学ぶ．第一週では，本講座の概要と，Productを取り扱う．
 
+![marketing]({{site.baseurl}}/images/2017-11-08-marketing.jpg)
+
 # About the course
 
 * インターネット，スマートフォン，3Dプリンターに代表される技術革新により，市場のパワーバランスは，企業側から消費者側に傾きつつある．
