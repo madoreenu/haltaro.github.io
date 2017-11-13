@@ -12,4 +12,11 @@ categories:
 
 # メモ
 
+* **p.5**：マーケティング・マネジメント・プロセス：
+  * 新規事業の発見：*Research*．
+  * マーケティング戦略：*Segmentation*，*Targeting*，*Positioning*．
+  * マーケティング戦術：*Marketing mix*．
+  * 実行：*Inplementation*．
+  * 制御：*Control*．
+
 # 感想
