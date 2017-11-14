@@ -6,13 +6,13 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Nov 2017 22:09:11 +0900</pubDate>
-    <lastBuildDate>Mon, 13 Nov 2017 22:09:11 +0900</lastBuildDate>
+    <pubDate>Tue, 14 Nov 2017 23:02:47 +0900</pubDate>
+    <lastBuildDate>Tue, 14 Nov 2017 23:02:47 +0900</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
         <title>Reajob，South Australia to improve wind farm with world’s largest battery</title>
-        <description>&lt;p&gt;帰国してから英語力が下がりまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，出国前まで続けていた&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の&lt;a href=&quot;https://www.rarejob.com/dna&quot;&gt;Article discussion&lt;/a&gt;．以下はその受講メモ．&lt;/p&gt;
+        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，出国前まで続けていた&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の&lt;a href=&quot;https://www.rarejob.com/dna&quot;&gt;Article discussion&lt;/a&gt;．以下はその受講メモ．&lt;/p&gt;
 
 &lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
 
@@ -78,6 +78,78 @@
 &lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
 
 &lt;h1 id=&quot;メモ&quot;&gt;メモ&lt;/h1&gt;
+
+&lt;h2 id=&quot;0マーケティングサイエンスのすすめ&quot;&gt;0．マーケティング・サイエンスのすすめ&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;p.5&lt;/strong&gt;：マーケティング・マネジメント・プロセス：
+    &lt;ul&gt;
+      &lt;li&gt;新規事業の発見：&lt;em&gt;Research&lt;/em&gt;．&lt;/li&gt;
+      &lt;li&gt;マーケティング戦略：&lt;em&gt;Segmentation&lt;/em&gt;，&lt;em&gt;Targeting&lt;/em&gt;，&lt;em&gt;Positioning&lt;/em&gt;．&lt;/li&gt;
+      &lt;li&gt;マーケティング戦術：&lt;em&gt;Marketing mix&lt;/em&gt;．&lt;/li&gt;
+      &lt;li&gt;実行：&lt;em&gt;Inplementation&lt;/em&gt;．&lt;/li&gt;
+      &lt;li&gt;制御：&lt;em&gt;Control&lt;/em&gt;．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-ビジネスチャンスの発見&quot;&gt;1. ビジネス・チャンスの発見&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;p.26&lt;/strong&gt;：プロデジー・モデルとは，顧客の購買行動から競争市場構造を把握する手法の一つ．ある製品を強制的に顧客の選択対象から除外したときに，顧客はどの他のブランドを選択するかを測定することで，競争構造を分析する．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.27&lt;/strong&gt;：無構造市場仮説とは，既存の製品シェアに比例してシェア変動が起こるという仮説．プロデジー・モデルでは，検定者が想定する構造仮説と，無構造市場仮説を比較する．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.33&lt;/strong&gt;：バス・モデルとは，イノベーションの普及モデル．自発的に購入するイノベーターと，すでに購入者消費者を模倣して購入するイミテーターを想定する．&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;期の売上&lt;script type=&quot;math/tex&quot;&gt;n(t)&lt;/script&gt;は，&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;期までの普及割合&lt;script type=&quot;math/tex&quot;&gt;F(t)&lt;/script&gt;，市場規模&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;，イノベータ係数&lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt;，およびイミテーター係数&lt;script type=&quot;math/tex&quot;&gt;q&lt;/script&gt;を使って，下式で表現できる．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+n(t)=[p + q F(t)][1 - F(t)]N
+\end{align*}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;p.35&lt;/strong&gt;：理論的には，3期以上のデータがあれば，回帰分析で&lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;q&lt;/script&gt;，および&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;を推定可能．データ数が足りない場合は，類似製品の値を事前情報として用いたベイズ推定なども提案されている．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.38&lt;/strong&gt;：&lt;a href=&quot;http://iit.kke.co.jp/marketingscience/exercise/WebExercise/exercise01.html&quot;&gt;Webエクササイズ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-消費者行動&quot;&gt;2. 消費者行動&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;p.44&lt;/strong&gt;：知覚マップ（perception map）あるいはプロダクトマップ（product map）とは，様々なブランドに関する消費者の図示したもの．&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E5%A4%9A%E6%AC%A1%E5%85%83%E5%B0%BA%E5%BA%A6%E6%A7%8B%E6%88%90%E6%B3%95&quot;&gt;多次元尺度構成法&lt;/a&gt;（multi dimensional scaling; MDS）と&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E5%9B%A0%E5%AD%90%E5%88%86%E6%9E%90&quot;&gt;因子分析&lt;/a&gt;（factor analysis）がよく用いられる．&lt;/li&gt;
+  &lt;li&gt;因子分析と&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90&quot;&gt;主成分分析&lt;/a&gt;は異なるらしい．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.45&lt;/strong&gt;：MDSで計算した知覚マップからは，軸の直感的な解釈は得られない．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.48&lt;/strong&gt;：購買履歴データを用いてマップを作成する場合は，消費者の知覚を直接測定したわけではないので，プロダクトマップと呼ばれる．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.51&lt;/strong&gt;：消費者による製品の評価方法として，補償型と非補償型の２つがある．補償型の評価方法として，以下に示す加算式がある．製品&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;の評価&lt;script type=&quot;math/tex&quot;&gt;A_i&lt;/script&gt;は，その製品の属性&lt;script type=&quot;math/tex&quot;&gt;j&lt;/script&gt;に対する評価&lt;script type=&quot;math/tex&quot;&gt;b_{ij}&lt;/script&gt;と，その属性の重要度&lt;script type=&quot;math/tex&quot;&gt;h_j&lt;/script&gt;によって次のように表現できる．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+A_i = \sum_j h_j b_{ij}
+\end{align*}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;p.52&lt;/strong&gt;：非補償型の評価方法として，連結型，分散型，辞書編纂型がある．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.54&lt;/strong&gt;：ブランド選択モデルとして，補償型の評価方法を仮定することが多い．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;p.55&lt;/strong&gt;：消費者がブランド集合&lt;script type=&quot;math/tex&quot;&gt;C&lt;/script&gt;から特定のブランド&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;を選択する確率&lt;script type=&quot;math/tex&quot;&gt;P(i \mid C)&lt;/script&gt;は，そのブランドの効用&lt;script type=&quot;math/tex&quot;&gt;U_i&lt;/script&gt;を用いて次のように表現できる．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+P(i \mid C) = \mathrm{Pr}[U_i &gt; U_j] \mathrm{~for~all~}
+j \in C,~ j \neq i
+\end{align*}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;p.55&lt;/strong&gt;：ここで，&lt;script type=&quot;math/tex&quot;&gt;U_i&lt;/script&gt;は，確定的部分&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;，および確率的部分&lt;script type=&quot;math/tex&quot;&gt;\epsilon_i&lt;/script&gt;を用いて，次のように表現できる．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+U_i = V_i + \epsilon_i
+\end{align*}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;p.55&lt;/strong&gt;：ここで，&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;は，ブランド&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;固有の魅力を表すパラメータ&lt;script type=&quot;math/tex&quot;&gt;\alpha_i&lt;/script&gt;と，マーケティング変数&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;の影響を表すパラメータ&lt;script type=&quot;math/tex&quot;&gt;\beta_k&lt;/script&gt;と，そのマーケティング変数におけるブランド&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;の値&lt;script type=&quot;math/tex&quot;&gt;X_{ik}&lt;/script&gt;を用いて，次のように表現できる．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+V_i = \alpha_i + \sum_k \beta_k X_{ik}
+\end{align*}&lt;/script&gt;
 
 &lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 </description>
