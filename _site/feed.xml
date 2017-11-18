@@ -6,9 +6,9 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 14 Nov 2017 23:02:47 +0900</pubDate>
-    <lastBuildDate>Tue, 14 Nov 2017 23:02:47 +0900</lastBuildDate>
-    <generator>Jekyll v3.5.2</generator>
+    <pubDate>Sat, 18 Nov 2017 22:27:44 +0900</pubDate>
+    <lastBuildDate>Sat, 18 Nov 2017 22:27:44 +0900</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>Reajob，South Australia to improve wind farm with world’s largest battery</title>
@@ -79,7 +79,7 @@
 
 &lt;h1 id=&quot;メモ&quot;&gt;メモ&lt;/h1&gt;
 
-&lt;h2 id=&quot;0マーケティングサイエンスのすすめ&quot;&gt;0．マーケティング・サイエンスのすすめ&lt;/h2&gt;
+&lt;h2 id=&quot;序章マーケティングサイエンスのすすめ&quot;&gt;序章．マーケティング・サイエンスのすすめ&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;p.5&lt;/strong&gt;：マーケティング・マネジメント・プロセス：
@@ -93,7 +93,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;1-ビジネスチャンスの発見&quot;&gt;1. ビジネス・チャンスの発見&lt;/h2&gt;
+&lt;h2 id=&quot;1章ビジネスチャンスの発見&quot;&gt;1章．ビジネス・チャンスの発見&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;p.26&lt;/strong&gt;：プロデジー・モデルとは，顧客の購買行動から競争市場構造を把握する手法の一つ．ある製品を強制的に顧客の選択対象から除外したときに，顧客はどの他のブランドを選択するかを測定することで，競争構造を分析する．&lt;/li&gt;
@@ -110,7 +110,7 @@ n(t)=[p + q F(t)][1 - F(t)]N
   &lt;li&gt;&lt;strong&gt;p.38&lt;/strong&gt;：&lt;a href=&quot;http://iit.kke.co.jp/marketingscience/exercise/WebExercise/exercise01.html&quot;&gt;Webエクササイズ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;2-消費者行動&quot;&gt;2. 消費者行動&lt;/h2&gt;
+&lt;h2 id=&quot;2章消費者行動&quot;&gt;2章．消費者行動&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;p.44&lt;/strong&gt;：知覚マップ（perception map）あるいはプロダクトマップ（product map）とは，様々なブランドに関する消費者の図示したもの．&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E5%A4%9A%E6%AC%A1%E5%85%83%E5%B0%BA%E5%BA%A6%E6%A7%8B%E6%88%90%E6%B3%95&quot;&gt;多次元尺度構成法&lt;/a&gt;（multi dimensional scaling; MDS）と&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E5%9B%A0%E5%AD%90%E5%88%86%E6%9E%90&quot;&gt;因子分析&lt;/a&gt;（factor analysis）がよく用いられる．&lt;/li&gt;
@@ -136,7 +136,7 @@ j \in C,~ j \neq i
 \end{align*}&lt;/script&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;p.55&lt;/strong&gt;：ここで，&lt;script type=&quot;math/tex&quot;&gt;U_i&lt;/script&gt;は，確定的部分&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;，および確率的部分&lt;script type=&quot;math/tex&quot;&gt;\epsilon_i&lt;/script&gt;を用いて，次のように表現できる．&lt;/li&gt;
+  &lt;li&gt;ここで，&lt;script type=&quot;math/tex&quot;&gt;U_i&lt;/script&gt;は，確定的部分&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;，および確率的部分&lt;script type=&quot;math/tex&quot;&gt;\epsilon_i&lt;/script&gt;を用いて，次のように表現できる．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
@@ -144,14 +144,12 @@ U_i = V_i + \epsilon_i
 \end{align*}&lt;/script&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;p.55&lt;/strong&gt;：ここで，&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;は，ブランド&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;固有の魅力を表すパラメータ&lt;script type=&quot;math/tex&quot;&gt;\alpha_i&lt;/script&gt;と，マーケティング変数&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;の影響を表すパラメータ&lt;script type=&quot;math/tex&quot;&gt;\beta_k&lt;/script&gt;と，そのマーケティング変数におけるブランド&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;の値&lt;script type=&quot;math/tex&quot;&gt;X_{ik}&lt;/script&gt;を用いて，次のように表現できる．&lt;/li&gt;
+  &lt;li&gt;ここで，&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;は，ブランド&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;固有の魅力を表すパラメータ&lt;script type=&quot;math/tex&quot;&gt;\alpha_i&lt;/script&gt;と，マーケティング変数&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;の影響を表すパラメータ&lt;script type=&quot;math/tex&quot;&gt;\beta_k&lt;/script&gt;と，そのマーケティング変数におけるブランド&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;の値&lt;script type=&quot;math/tex&quot;&gt;X_{ik}&lt;/script&gt;を用いて，次のように表現できる．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
 V_i = \alpha_i + \sum_k \beta_k X_{ik}
 \end{align*}&lt;/script&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 </description>
         <pubDate>Sun, 12 Nov 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/11/12/marketing-science</link>
@@ -341,9 +339,8 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
 
 &lt;p&gt;PowerShellから設定ファイルを作成．&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; jupyter notebook --generate-config
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; jupyter notebook --generate-config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;4-activatedeactivateパッチ&quot;&gt;4. activate，deactivateパッチ&lt;/h2&gt;
 
@@ -483,11 +480,10 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Git bash&lt;/code&gt;を起動し，上記サイトを参考にグローバル設定した．&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git config --global user.name &lt;span class=&quot;s2&quot;&gt;&quot;haltaro&quot;&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git config --global user.email &lt;span class=&quot;s2&quot;&gt;&quot;***@gmail.com&quot;&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git config --global core.quotepath &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;haltaro&quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;***@gmail.com&quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; core.quotepath &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;3-gitのsshキー作成&quot;&gt;3. GitのSSHキー作成&lt;/h2&gt;
 
@@ -506,21 +502,18 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
 
 &lt;p&gt;まずは，PowerShellで以下のコマンドを打ち，&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;公式GitHub&lt;/a&gt;からクローンする．ディレクトリはどこでも良い．&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; git clone git@github.com:dahlbyk/posh-git.git
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; git clone git@github.com:dahlbyk/posh-git.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;PowerShellのセキュリティ設定を変更した．&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;上記ディレクトリに移動して，&lt;code class=&quot;highlighter-rouge&quot;&gt;install.ps1&lt;/code&gt;を実行した．&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; .\install.ps1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; .\install.ps1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;5-rubyのインストール&quot;&gt;5. Rubyのインストール&lt;/h2&gt;
 
@@ -534,23 +527,21 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
 
 &lt;p&gt;次に，PowerShellから以下のコマンドを実行した．&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; cd C:\DevKit
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; cd C:\DevKit
 &amp;gt; ruby dk.rb init
 &amp;gt; ruby dk.rb install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;7-関連パッケージのインストール&quot;&gt;7. 関連パッケージのインストール&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;RubyGems&lt;/code&gt;を使い，&lt;code class=&quot;highlighter-rouge&quot;&gt;github-pages&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;wdm&lt;/code&gt;をインストールした．&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; gem install github-pages wdm
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; gem install github-pages wdm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; jekyll serve&lt;/code&gt;したらと，次のようなエラーが出た．&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;WARN: Unresolved specs during Gem::Specification.reset:
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;WARN: Unresolved specs during Gem::Specification.reset:
       rouge (&amp;lt; 3, &amp;gt;= 1.7)
 WARN: Clearing out unresolved specs.
 Please report a bug if this causes problems.
@@ -568,8 +559,7 @@ r'
         from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/exe/jekyll:11:in `&amp;lt;top (required)&amp;gt;'
         from C:/Ruby24-x64/bin/jekyll:23:in `load'
         from C:/Ruby24-x64/bin/jekyll:23:in `&amp;lt;main&amp;gt;'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;指示通り，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; bundle exec jekyll serve&lt;/code&gt;とコマンドを打ったらうまく行った．&lt;a href=&quot;https://qiita.com/windhorn/items/0f58866291f8273f18fb&quot;&gt;Qiita，bundle execとかdb:createとかが何をしているのか&lt;/a&gt;によると，&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec&lt;/code&gt;を頭につけると，当該プロジェクトの&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;で指定された環境でコマンドを実行するらしい．&lt;/p&gt;
 
@@ -721,7 +711,7 @@ r'
   &lt;li&gt;&lt;strong&gt;Job tracker&lt;/strong&gt;が，MapperとReducerにジョブを割り当てる．&lt;/li&gt;
   &lt;li&gt;各デーモンは，&lt;strong&gt;Task tracker&lt;/strong&gt;を持つ．&lt;/li&gt;
   &lt;li&gt;HadoopではJavaが使われるが，Pythonを使うこともできる．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hs {mapper script} {reducer script} {input_file} {output directory}&lt;/code&gt;で実行できる．ただし，&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;directory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;が既に存在する場合，エラーが返されるので注意．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hs {mapper script} {reducer script} {input_file} {output directory}&lt;/code&gt;で実行できる．ただし，&lt;code class=&quot;highlighter-rouge&quot;&gt;{output directory}&lt;/code&gt;が既に存在する場合，エラーが返されるので注意．&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -put&lt;/code&gt;でデータをHDFSに保存し，&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -get&lt;/code&gt;で取り出す．&lt;/li&gt;
   &lt;li&gt;仮想マシンで実際にHadoopを動かす．以下，参考：
     &lt;ul&gt;
@@ -748,10 +738,9 @@ r'
   &lt;li&gt;シェルで&lt;code class=&quot;highlighter-rouge&quot;&gt;$ ./mapper.py&lt;/code&gt;で実行すれば，Hadoop外でMapperの動作を検証できる．Reducerについても同様．さらに，以下のコマンドで全ての処理を検証可能．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat testfile | ./mapper.py | sort | ./reducer.py
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat testfile | ./mapper.py | sort | ./reducer.py
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;詳細は，以下の動画がとてもわかりやすい．&lt;/li&gt;

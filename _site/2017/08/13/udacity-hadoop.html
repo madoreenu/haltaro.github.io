@@ -152,7 +152,7 @@
   <li><strong>Job tracker</strong>が，MapperとReducerにジョブを割り当てる．</li>
   <li>各デーモンは，<strong>Task tracker</strong>を持つ．</li>
   <li>HadoopではJavaが使われるが，Pythonを使うこともできる．</li>
-  <li><code class="highlighter-rouge">hs {mapper script} {reducer script} {input_file} {output directory}</code>で実行できる．ただし，<code class="highlighter-rouge"><span class="p">{</span><span class="err">output</span><span class="w"> </span><span class="err">directory</span><span class="p">}</span></code>が既に存在する場合，エラーが返されるので注意．</li>
+  <li><code class="highlighter-rouge">hs {mapper script} {reducer script} {input_file} {output directory}</code>で実行できる．ただし，<code class="highlighter-rouge">{output directory}</code>が既に存在する場合，エラーが返されるので注意．</li>
   <li><code class="highlighter-rouge">hadoop fs -put</code>でデータをHDFSに保存し，<code class="highlighter-rouge">hadoop fs -get</code>で取り出す．</li>
   <li>仮想マシンで実際にHadoopを動かす．以下，参考：
     <ul>
@@ -179,10 +179,9 @@
   <li>シェルで<code class="highlighter-rouge">$ ./mapper.py</code>で実行すれば，Hadoop外でMapperの動作を検証できる．Reducerについても同様．さらに，以下のコマンドで全ての処理を検証可能．</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ cat testfile | ./mapper.py | sort | ./reducer.py
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat testfile | ./mapper.py | sort | ./reducer.py
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ul>
   <li>詳細は，以下の動画がとてもわかりやすい．</li>

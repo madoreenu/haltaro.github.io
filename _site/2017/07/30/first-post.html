@@ -123,17 +123,15 @@
 
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04">How to Set Up a Jekyll Development Site on Ubuntu 16.04</a>を参考に，以下のコマンドを実行．</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>sudo apt-get install ruby ruby-dev make gcc
-<span class="gp">$ </span>sudo gem install jekyll bundler
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get install ruby ruby-dev make gcc
+<span class="nv">$ </span><span class="nb">sudo </span>gem install jekyll bundler
+</code></pre></div></div>
 
 <p>ついでに，ローカル保存用のディレクトリを作成して移動．</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>mkdir haltaro.github.io
-<span class="gp">$ </span><span class="nb">cd </span>haltaro.github.io
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mkdir haltaro.github.io
+<span class="nv">$ </span><span class="nb">cd </span>haltaro.github.io
+</code></pre></div></div>
 
 <h2 id="4-jekyllテーマ選定">4. Jekyllテーマ選定</h2>
 
@@ -194,19 +192,17 @@
 <h2 id="6-ローカルテスト">6. ローカルテスト</h2>
 
 <p>下記コマンドで動作確認．いくつかエラーが出たので，その都度ググって解決した．</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>$ jekyll serve
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ jekyll serve
+</code></pre></div></div>
 <p>ブラウザで<code class="highlighter-rouge">localhost:4000</code>にアクセスして，出来栄えを確認．</p>
 
 <h2 id="7-アップロード">7. アップロード</h2>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git remote add origin git@github.com:haltaro/haltaro.github.io <span class="c"># アカウント名等は適宜変更のこと．</span>
-<span class="gp">$ </span>git add . -A
-<span class="gp">$ </span>git commit -m <span class="s2">"First commit"</span>
-<span class="gp">$ </span>git push origin master
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote add origin git@github.com:haltaro/haltaro.github.io <span class="c"># アカウント名等は適宜変更のこと．</span>
+<span class="nv">$ </span>git add <span class="nb">.</span> <span class="nt">-A</span>
+<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"First commit"</span>
+<span class="nv">$ </span>git push origin master
+</code></pre></div></div>
 
 <p>しばらく経ってから，<code class="highlighter-rouge">https://haltaro.github.io</code>にアクセスすると，サイトが出来上がっていた．</p>
 

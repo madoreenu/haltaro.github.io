@@ -129,11 +129,10 @@
 
 <p><code class="highlighter-rouge">Git bash</code>を起動し，上記サイトを参考にグローバル設定した．</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git config --global user.name <span class="s2">"haltaro"</span>
-<span class="gp">$ </span>git config --global user.email <span class="s2">"***@gmail.com"</span>
-<span class="gp">$ </span>git config --global core.quotepath <span class="nb">false</span>
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--global</span> user.name <span class="s2">"haltaro"</span>
+<span class="nv">$ </span>git config <span class="nt">--global</span> user.email <span class="s2">"***@gmail.com"</span>
+<span class="nv">$ </span>git config <span class="nt">--global</span> core.quotepath <span class="nb">false</span>
+</code></pre></div></div>
 
 <h2 id="3-gitのsshキー作成">3. GitのSSHキー作成</h2>
 
@@ -152,21 +151,18 @@
 
 <p>まずは，PowerShellで以下のコマンドを打ち，<a href="https://github.com/dahlbyk/posh-git">公式GitHub</a>からクローンする．ディレクトリはどこでも良い．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; git clone git@github.com:dahlbyk/posh-git.git
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; git clone git@github.com:dahlbyk/posh-git.git
+</code></pre></div></div>
 
 <p>PowerShellのセキュリティ設定を変更した．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
+</code></pre></div></div>
 
 <p>上記ディレクトリに移動して，<code class="highlighter-rouge">install.ps1</code>を実行した．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; .\install.ps1
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; .\install.ps1
+</code></pre></div></div>
 
 <h2 id="5-rubyのインストール">5. Rubyのインストール</h2>
 
@@ -180,23 +176,21 @@
 
 <p>次に，PowerShellから以下のコマンドを実行した．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; cd C:\DevKit
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; cd C:\DevKit
 &gt; ruby dk.rb init
 &gt; ruby dk.rb install
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="7-関連パッケージのインストール">7. 関連パッケージのインストール</h2>
 
 <p><code class="highlighter-rouge">RubyGems</code>を使い，<code class="highlighter-rouge">github-pages</code>と<code class="highlighter-rouge">wdm</code>をインストールした．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; gem install github-pages wdm
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; gem install github-pages wdm
+</code></pre></div></div>
 
 <p><code class="highlighter-rouge">&gt; jekyll serve</code>したらと，次のようなエラーが出た．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>WARN: Unresolved specs during Gem::Specification.reset:
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WARN: Unresolved specs during Gem::Specification.reset:
       rouge (&lt; 3, &gt;= 1.7)
 WARN: Clearing out unresolved specs.
 Please report a bug if this causes problems.
@@ -214,8 +208,7 @@ r'
         from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/exe/jekyll:11:in `&lt;top (required)&gt;'
         from C:/Ruby24-x64/bin/jekyll:23:in `load'
         from C:/Ruby24-x64/bin/jekyll:23:in `&lt;main&gt;'
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>指示通り，<code class="highlighter-rouge">&gt; bundle exec jekyll serve</code>とコマンドを打ったらうまく行った．<a href="https://qiita.com/windhorn/items/0f58866291f8273f18fb">Qiita，bundle execとかdb:createとかが何をしているのか</a>によると，<code class="highlighter-rouge">bundle exec</code>を頭につけると，当該プロジェクトの<code class="highlighter-rouge">Gemfile</code>で指定された環境でコマンドを実行するらしい．</p>
 

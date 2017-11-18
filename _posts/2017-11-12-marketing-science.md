@@ -76,5 +76,3 @@ $$
 V_i = \alpha_i + \sum_k \beta_k X_{ik}
 \end{align*}
 $$
-
-# 感想
