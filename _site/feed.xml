@@ -6,9 +6,52 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 18 Nov 2017 22:27:44 +0900</pubDate>
-    <lastBuildDate>Sat, 18 Nov 2017 22:27:44 +0900</lastBuildDate>
+    <pubDate>Sun, 19 Nov 2017 00:59:10 +0900</pubDate>
+    <lastBuildDate>Sun, 19 Nov 2017 00:59:10 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション</title>
+        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/2saLJcb&quot;&gt;Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション&lt;/a&gt;の読書メモ．&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/JavaScript&quot;&gt;JavaScript&lt;/a&gt;習得の取っ掛かりにしたい．&lt;/p&gt;
+
+&lt;p&gt;なお，演習ではUbuntu16.04を用いた．&lt;/p&gt;
+
+&lt;h1 id=&quot;1章開発環境の準備&quot;&gt;1章．開発環境の準備&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;本書で扱うコードは&lt;a href=&quot;https://github.com/Kyrand/dataviz-with-python-and-js&quot;&gt;著者のGitHubレポジトリ&lt;/a&gt;で公開されている．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt;の開発環境を構築．&lt;code class=&quot;highlighter-rouge&quot;&gt;$ conda create --name pyjsviz anaconda&lt;/code&gt;．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sqlite.org/&quot;&gt;SQLite&lt;/a&gt;をインストール．&lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo apt-get install sqlite3&lt;/code&gt;．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/&quot;&gt;MongoDB，Install MongoDB Community Edition on Ubuntu&lt;/a&gt;を参考に，&lt;a href=&quot;https://www.mongodb.com/?_ga=2.209021842.1022727536.1511017438-1207852474.1511017438&quot;&gt;MongoDB&lt;/a&gt;をインストール．&lt;/li&gt;
+  &lt;li&gt;MongoDB用に，ルートディレクトリに&lt;code class=&quot;highlighter-rouge&quot;&gt;/data&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;/data/db&lt;/code&gt;ディレクトリを作成．&lt;/li&gt;
+  &lt;li&gt;上記ディレクトリの所有者を自分に設定．&lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo chown 'haltaro' /data/db&lt;/code&gt;．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2章pythonとjavascript間の言語学習の橋渡し&quot;&gt;2章．PythonとJavaScript間の言語学習の橋渡し&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pythonは学習済みなので，JavaScriptを中心にメモを残す．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.co.jp/chrome/browser/desktop/index.html&quot;&gt;Chrome&lt;/a&gt;のショートカット&lt;code class=&quot;highlighter-rouge&quot;&gt;[Ctrl] + [Shift] + [J]&lt;/code&gt;で，JavaScriptのコンソールが利用できる．&lt;/li&gt;
+  &lt;li&gt;JavaScriptでは，関数やモジュールの先頭で&lt;code class=&quot;highlighter-rouge&quot;&gt;'use strict'&lt;/code&gt;を記述することで，厳格なスタイルガイドを利用できる．&lt;/li&gt;
+  &lt;li&gt;JavaScriptでは，変数名に&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%A1%E3%83%AB%E3%82%B1%E3%83%BC%E3%82%B9&quot;&gt;キャメルケース&lt;/a&gt;を用いることが多い&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．&lt;/li&gt;
+  &lt;li&gt;続きはp.16から．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;諸説ある．&lt;a href=&quot;https://qiita.com/takayukishmz@github/items/f833744f43958a3a9ea9&quot;&gt;Qiita，React(Javascript)でファイルの命名規則をどうするかという問題&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 18 Nov 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/11/18/python-js</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/18/python-js</guid>
+        
+        
+        <category>javascript</category>
+        
+      </item>
     
       <item>
         <title>Reajob，South Australia to improve wind farm with world’s largest battery</title>
@@ -75,11 +118,7 @@
         <title>古川一郎，マーケティング・サイエンス入門</title>
         <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/1QZt1OR&quot;&gt;古川一郎，他，マーケティング・サイエンス入門－市場対応の科学的マネジメント&lt;/a&gt;の読書メモ．&lt;/p&gt;
 
-&lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
-
-&lt;h1 id=&quot;メモ&quot;&gt;メモ&lt;/h1&gt;
-
-&lt;h2 id=&quot;序章マーケティングサイエンスのすすめ&quot;&gt;序章．マーケティング・サイエンスのすすめ&lt;/h2&gt;
+&lt;h1 id=&quot;序章マーケティングサイエンスのすすめ&quot;&gt;序章．マーケティング・サイエンスのすすめ&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;p.5&lt;/strong&gt;：マーケティング・マネジメント・プロセス：
@@ -93,7 +132,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;1章ビジネスチャンスの発見&quot;&gt;1章．ビジネス・チャンスの発見&lt;/h2&gt;
+&lt;h1 id=&quot;1章ビジネスチャンスの発見&quot;&gt;1章．ビジネス・チャンスの発見&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;p.26&lt;/strong&gt;：プロデジー・モデルとは，顧客の購買行動から競争市場構造を把握する手法の一つ．ある製品を強制的に顧客の選択対象から除外したときに，顧客はどの他のブランドを選択するかを測定することで，競争構造を分析する．&lt;/li&gt;
@@ -110,7 +149,7 @@ n(t)=[p + q F(t)][1 - F(t)]N
   &lt;li&gt;&lt;strong&gt;p.38&lt;/strong&gt;：&lt;a href=&quot;http://iit.kke.co.jp/marketingscience/exercise/WebExercise/exercise01.html&quot;&gt;Webエクササイズ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;2章消費者行動&quot;&gt;2章．消費者行動&lt;/h2&gt;
+&lt;h1 id=&quot;2章消費者行動&quot;&gt;2章．消費者行動&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;p.44&lt;/strong&gt;：知覚マップ（perception map）あるいはプロダクトマップ（product map）とは，様々なブランドに関する消費者の図示したもの．&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E5%A4%9A%E6%AC%A1%E5%85%83%E5%B0%BA%E5%BA%A6%E6%A7%8B%E6%88%90%E6%B3%95&quot;&gt;多次元尺度構成法&lt;/a&gt;（multi dimensional scaling; MDS）と&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E5%9B%A0%E5%AD%90%E5%88%86%E6%9E%90&quot;&gt;因子分析&lt;/a&gt;（factor analysis）がよく用いられる．&lt;/li&gt;
@@ -361,13 +400,7 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
     
       <item>
         <title>コトラー，アームストロング，恩藏のマーケティング原理</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/eGcRMag&quot;&gt;コトラー，アームストロング，恩藏のマーケティング原理&lt;/a&gt;の読書メモ．マーケティングの基本を，実例付きでわかりやすく解説してくれる名著．&lt;/p&gt;
-
-&lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
-
-&lt;p&gt;マーケティングとは，意図的に，顧客と良好な関係を築くための手法である．顧客の意識の有り様は，時代の流れに大きく左右されるため，マーケティング理論を常にアップデートし続ける必要がある．&lt;/p&gt;
-
-&lt;h1 id=&quot;メモ&quot;&gt;メモ&lt;/h1&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/eGcRMag&quot;&gt;コトラー，アームストロング，恩藏のマーケティング原理&lt;/a&gt;の読書メモ．マーケティングの基本を，実例付きでわかりやすく解説してくれる名著．マーケティングとは，意図的に，顧客と良好な関係を築くための手法である．顧客の意識の有り様は，時代の流れに大きく左右されるため，マーケティング理論を常にアップデートし続ける必要がある．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;p.xiv&lt;/strong&gt;：マーケティングの5ステップ．
@@ -607,13 +640,7 @@ r'
     
       <item>
         <title>武井由紀子，ユーザ中心ウェブビジネス戦略</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/0sBIq3B&quot;&gt;武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略&lt;/a&gt;を読んだ．ウェブビジネスにおけるユーザ理解の重要性とその方法を学んだ．&lt;/p&gt;
-
-&lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
-
-&lt;p&gt;インターネットはユーザが能動的に情報を取捨選択可能なメディアであるため，ウェブビジネスにおいては，ターゲットユーザを徹底的に理解する必要がある．ユーザ理解のためのツールとして，ユーザ行動パターン検証ツール（アクセスログ解析等）と，ユーザ行動理由検証ツール（ユーザ行動観察調査等）がある．両者の特徴を理解して，使い分けることが重要である．&lt;/p&gt;
-
-&lt;h1 id=&quot;メモ&quot;&gt;メモ&lt;/h1&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/0sBIq3B&quot;&gt;武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略&lt;/a&gt;を読んだ．インターネットはユーザが能動的に情報を取捨選択可能なメディアであるため，ウェブビジネスにおいては，ターゲットユーザを徹底的に理解する必要がある．ユーザ理解のためのツールとして，ユーザ行動パターン検証ツール（アクセスログ解析等）と，ユーザ行動理由検証ツール（ユーザ行動観察調査等）がある．両者の特徴を理解して，使い分けることが重要である．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;p.10&lt;/strong&gt;：いかなる製品やサービスも，まずは事業の目的や市場，ターゲット顧客，収益性といった観点から検討が始まる．&lt;/li&gt;
@@ -766,118 +793,6 @@ r'
         <pubDate>Sun, 13 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/13/udacity-hadoop</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/13/udacity-hadoop</guid>
-        
-        
-        <category>data science</category>
-        
-      </item>
-    
-      <item>
-        <title>Udacity, Intro to Relational Databases</title>
-        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;https://www.udacity.com/course/intro-to-relational-databases--ud197&quot;&gt;Udacity, Intro to Relational Databases&lt;/a&gt;の受講メモ．5部構成の無料講座．&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/jyju2P-7hPA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&quot;1-data-and-tables&quot;&gt;1. Data and Tables&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Databaseは，同時に複数の人が編集可能．これが，普通のファイルと異なる点．&lt;/li&gt;
-  &lt;li&gt;Tableは，headerとbodyからなる．headerは，table nameと，column nameと，column typeからなる．bodyは，rowsとcolumnsからなる．&lt;/li&gt;
-  &lt;li&gt;複数の行に跨る演算をaggregationと呼ぶ．SQLで使えるaggregationの代表的なものとして，count，avg，max，min，sumなどがある．&lt;/li&gt;
-  &lt;li&gt;codeからdatabaseに&lt;code class=&quot;highlighter-rouge&quot;&gt;query&lt;/code&gt;を出すと，&lt;code class=&quot;highlighter-rouge&quot;&gt;result&lt;/code&gt;を返される．&lt;code class=&quot;highlighter-rouge&quot;&gt;result&lt;/code&gt;は，原則的にTable形式．&lt;/li&gt;
-  &lt;li&gt;Database中でデータの唯一性を担保するために，idを与えることがある．このように識別に用いられるcolumnを&lt;code class=&quot;highlighter-rouge&quot;&gt;primary key&lt;/code&gt;と呼ぶ．&lt;/li&gt;
-  &lt;li&gt;複数の情報を持つオブジェクトを定義するよりは，複数のTableで管理したほうが効率的．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;2-elements-of-sql&quot;&gt;2. Elements of SQL&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;SQLのtypeとして，&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;integer&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;などがある．&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;は，&lt;code class=&quot;highlighter-rouge&quot;&gt;'2017-08-10'&lt;/code&gt;のようにシングルクォートで囲む．主なSQLのtypeは以下．&lt;/li&gt;
-  &lt;li&gt;Text and string types
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;：長さに制限のない文字列．Pythonの&lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;に相当．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;char(n)&lt;/code&gt;：長さが&lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;の文字列．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;varchar(n)&lt;/code&gt;：長さが最大&lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;の文字列．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Numeric types
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;integer&lt;/code&gt;：整数型．Pythonの&lt;code class=&quot;highlighter-rouge&quot;&gt;int&lt;/code&gt;に相当．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;real&lt;/code&gt;：浮動小数点型．Pythonの&lt;code class=&quot;highlighter-rouge&quot;&gt;float&lt;/code&gt;に相当．精度は小数第6位．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;double precision&lt;/code&gt;：倍精度小数点．精度は小数第15位．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;decimal&lt;/code&gt;：正確な小数型（？）．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Date and time types
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;：日付型．年，月，日．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt;：時刻型．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;timestamp&lt;/code&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt;．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;基本構文：&lt;strong&gt;select&lt;/strong&gt; &lt;em&gt;columns&lt;/em&gt; &lt;strong&gt;from&lt;/strong&gt; &lt;em&gt;tables&lt;/em&gt; &lt;strong&gt;where&lt;/strong&gt; &lt;em&gt;condition&lt;/em&gt;;&lt;/li&gt;
-  &lt;li&gt;出力数に制限を設けるとき：&lt;strong&gt;limit&lt;/strong&gt; &lt;em&gt;count&lt;/em&gt; [&lt;strong&gt;offset&lt;/strong&gt; &lt;em&gt;skip&lt;/em&gt;]&lt;/li&gt;
-  &lt;li&gt;並び替えるとき：&lt;strong&gt;order by&lt;/strong&gt; &lt;em&gt;columns&lt;/em&gt; [&lt;strong&gt;desc&lt;/strong&gt;]&lt;/li&gt;
-  &lt;li&gt;結果をまとめるとき：&lt;strong&gt;group by&lt;/strong&gt; &lt;em&gt;columns&lt;/em&gt;
-    &lt;ul&gt;
-      &lt;li&gt;例えば，同じ名前の動物の数を数えるとき：&lt;code class=&quot;highlighter-rouge&quot;&gt;select name, count(*) as num from animals group by name;&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Pythonでも同様のことはできる．違いはスピードとメモリ．Databaseは格段に高速に，かつメモリ消費を抑えて実行できる．&lt;/li&gt;
-  &lt;li&gt;新たに要素を追加するとき：&lt;strong&gt;insert into&lt;/strong&gt; &lt;em&gt;table&lt;/em&gt; &lt;strong&gt;values (&lt;/strong&gt; &lt;em&gt;val1, val2, …&lt;/em&gt; &lt;strong&gt;)&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;ただし，特定の列を指定して追加するときは：&lt;strong&gt;insert into&lt;/strong&gt; &lt;em&gt;table&lt;/em&gt;(&lt;em&gt;column1, column2, …&lt;/em&gt;) &lt;strong&gt;values (&lt;/strong&gt; &lt;em&gt;val1, val2, …&lt;/em&gt; &lt;strong&gt;)&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;Databaseを結合するとき：&lt;em&gt;T&lt;/em&gt; &lt;strong&gt;join&lt;/strong&gt; &lt;em&gt;S&lt;/em&gt; &lt;strong&gt;on&lt;/strong&gt; &lt;em&gt;T.color = S.paint&lt;/em&gt;
-    &lt;ul&gt;
-      &lt;li&gt;例えば，&lt;code class=&quot;highlighter-rouge&quot;&gt;fish&lt;/code&gt;を食べる動物の名前を抽出したとき：&lt;code class=&quot;highlighter-rouge&quot;&gt;select name from animals join diet on animals.species=diet.species where food='fish';&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;where&lt;/code&gt;は&lt;code class=&quot;highlighter-rouge&quot;&gt;group by&lt;/code&gt;の前に適用されるが，&lt;code class=&quot;highlighter-rouge&quot;&gt;having&lt;/code&gt;は&lt;code class=&quot;highlighter-rouge&quot;&gt;group by&lt;/code&gt;の後に適用される．&lt;/li&gt;
-  &lt;li&gt;Lesson 3に向けて，&lt;a href=&quot;https://www.virtualbox.org/wiki/Downloads&quot;&gt;VirtualBox&lt;/a&gt;と&lt;a href=&quot;https://www.vagrantup.com/&quot;&gt;Vagrant&lt;/a&gt;で環境を構築．Vagrantってこんな便利だったのか．
-    &lt;ul&gt;
-      &lt;li&gt;仮想環境構築：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant up&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;ログイン：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant ssh&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;ファイル共有は&lt;code class=&quot;highlighter-rouge&quot;&gt;/vagrant&lt;/code&gt;ディレクトリ．&lt;/li&gt;
-      &lt;li&gt;PostgreSQLの起動：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ psql&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;ログアウト：&lt;code class=&quot;highlighter-rouge&quot;&gt;$ exit&lt;/code&gt;あるいは&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-D&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;VagrantとDockerの違いについては，以下が参考になった．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://qiita.com/hidekuro/items/fc12344d36d996198e96&quot;&gt;VagrantとDockerについて名前しか知らなかったので試した&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://acchi-muite-hoi.hatenablog.com/entry/2016/05/30/041618&quot;&gt;dockerとvagrantの違い言える？新人エンジニアでも分かった気になれる俺流まとめ&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;3-python-db-api&quot;&gt;3. Python DB-API&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;PythonからDatabaseを叩く際，DB-APIを用いる．DB-APIはPythonの組み込みモジュール．Databaseに応じて，DB-APIモジュールは異なる：SQLiteは&lt;code class=&quot;highlighter-rouge&quot;&gt;sqlite3&lt;/code&gt;，PostgreSQLは&lt;code class=&quot;highlighter-rouge&quot;&gt;psycopg2&lt;/code&gt;，ODBCは&lt;code class=&quot;highlighter-rouge&quot;&gt;pyodbc&lt;/code&gt;，MySQLは&lt;code class=&quot;highlighter-rouge&quot;&gt;mysql.connector&lt;/code&gt;など．&lt;/li&gt;
-  &lt;li&gt;例えば，次のようなPythonコードを書く．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/92a4506f6b0f3461b217934860490173.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Databaseにおける追加や削除を行った後は，必ず&lt;code class=&quot;highlighter-rouge&quot;&gt;Connection.commit()&lt;/code&gt;する．&lt;/li&gt;
-  &lt;li&gt;PostgreSQLを使って，簡易なForumサイトを作成する．実験環境を確認．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant up&lt;/code&gt;で仮想環境を立ち上げ．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ vagrant ssh&lt;/code&gt;で仮想環境にログイン．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ cd /vagrant/forum&lt;/code&gt;で当該ディレクトリに移動．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ python form.py&lt;/code&gt;でForumサーバを起動．ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8000&lt;/code&gt;にアクセス．適当にMessageを投稿してみる．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+C&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;$ python form.py&lt;/code&gt;で再起動すると，先ほど投稿したMessageが消えていることがわかる．以降では，Messageを保存する機能をPostgreSQLで実装する．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;4-deeper-into-sql&quot;&gt;4. Deeper into SQL&lt;/h1&gt;
-
-&lt;h1 id=&quot;5-tournament-database&quot;&gt;5. Tournament Database&lt;/h1&gt;
-</description>
-        <pubDate>Thu, 10 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/10/udacity-rdb</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/10/udacity-rdb</guid>
         
         
         <category>data science</category>
