@@ -74,8 +74,6 @@
       
         
       
-        
-      
     </nav>
   </div>
 </header>
@@ -109,14 +107,32 @@
 
 <ul>
   <li>Pythonは学習済みなので，JavaScriptを中心にメモを残す．</li>
+  <li><code class="highlighter-rouge">index.html</code>のあるディレクトリで<code class="highlighter-rouge">$ python -m http.server</code><sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup>して，ブラウザで<code class="highlighter-rouge">http://localhost:8000</code>にアクセスすると，JavaScriptの実行結果が見られる<sup id="fnref:3"><a href="#fn:3" class="footnote">2</a></sup>．</li>
   <li><a href="https://www.google.co.jp/chrome/browser/desktop/index.html">Chrome</a>のショートカット<code class="highlighter-rouge">[Ctrl] + [Shift] + [J]</code>で，JavaScriptのコンソールが利用できる．</li>
   <li>JavaScriptでは，関数やモジュールの先頭で<code class="highlighter-rouge">'use strict'</code>を記述することで，厳格なスタイルガイドを利用できる．</li>
-  <li>JavaScriptでは，変数名に<a href="https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%A1%E3%83%AB%E3%82%B1%E3%83%BC%E3%82%B9">キャメルケース</a>を用いることが多い<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．</li>
-  <li>続きはp.16から．</li>
+  <li>JavaScriptでは，変数名に<a href="https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%A1%E3%83%AB%E3%82%B1%E3%83%BC%E3%82%B9">キャメルケース</a>を用いることが多い<sup id="fnref:1"><a href="#fn:1" class="footnote">3</a></sup>．</li>
+  <li>Pythonでは，ドット<code class="highlighter-rouge">.</code>表記を使って相対パスで<code class="highlighter-rouge">import</code>できる．</li>
+  <li>JavaScriptでは，関数外で宣言した変数や<code class="highlighter-rouge">var</code>キーワードのない変数はグローバルになってしまう．</li>
+  <li>JavaScriptの<a href="http://taiju.hatenablog.com/entry/20110331/1301535208">reduce</a>関数は便利．配列の合計値などが簡単に計算できる．</li>
+  <li>JavaScriptでは，<code class="highlighter-rouge">array.forEach(callback)</code>で，効率的に配列<code class="highlighter-rouge">array</code>に繰り返し処理を実行できる．</li>
+  <li>JavaScriptでは，変数を他のコードより先に処理する．変数を必ず先頭で定義するようにしないと，予期しない動作を招く可能性がある．</li>
+  <li>続きは24ページから．</li>
 </ul>
 
+<h1 id="参考">参考</h1>
+
+<ul>
+  <li><a href="http://taiju.hatenablog.com/entry/20110331/1301535208">あと味，reduce関数は結構有用っていうお話</a>：JavaScriptにおける<code class="highlighter-rouge">reduce</code>の使い方について．</li>
+  <li><a href="https://www.sejuku.net/blog/20257">侍エンジニア塾，【JavaScript入門】「forEach文」の使い方を基本から応用まで徹底解説！</a>：JavaScriptにおける<code class="highlighter-rouge">array.forEach</code>の使い方について．</li>
+</ul>
 <div class="footnotes">
   <ol>
+    <li id="fn:2">
+      <p>Python3の場合．Python2の場合は<code class="highlighter-rouge">$ python -m SimpleHTTPServer</code>．&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p><code class="highlighter-rouge">index.html</code>に具体的に何を書くかについては，本書では割愛．&nbsp;<a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
     <li id="fn:1">
       <p>諸説ある．<a href="https://qiita.com/takayukishmz@github/items/f833744f43958a3a9ea9">Qiita，React(Javascript)でファイルの命名規則をどうするかという問題</a>&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
@@ -160,15 +176,15 @@
   <div class="col-box-title">Newest Posts</div>
   <ul class="post-list">
     
-      <li><a class="post-link" href="/2017/11/19/support-vector-machine">Support vector machineまとめ</a></li>
-    
-      <li><a class="post-link" href="/2017/11/18/what3words-jp">What3Wordsを日本語化</a></li>
-    
-      <li><a class="post-link" href="/2017/11/18/time-series">時系列分析技術まとめ</a></li>
-    
-      <li><a class="post-link" href="/2017/11/18/announcer-scraping">深層学習で女子アナの所属推定①スクレイピング</a></li>
-    
       <li><a class="post-link" href="/2017/11/18/python-js">Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション</a></li>
+    
+      <li><a class="post-link" href="/2017/11/13/reajob">Reajob，South Australia to improve wind farm with world’s largest battery</a></li>
+    
+      <li><a class="post-link" href="/2017/11/12/marketing-science">古川一郎，マーケティング・サイエンス入門</a></li>
+    
+      <li><a class="post-link" href="/2017/11/08/digital-marketing-1">Courcera，Marketing in a digital world：1. Product</a></li>
+    
+      <li><a class="post-link" href="/2017/10/25/jekyll-drafts">Jekyllで下書き記事管理</a></li>
     
   </ul>
 </div>
