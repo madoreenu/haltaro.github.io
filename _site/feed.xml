@@ -6,9 +6,179 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Nov 2017 00:59:10 +0900</pubDate>
-    <lastBuildDate>Sun, 19 Nov 2017 00:59:10 +0900</lastBuildDate>
+    <pubDate>Sun, 19 Nov 2017 19:01:04 +0900</pubDate>
+    <lastBuildDate>Sun, 19 Nov 2017 19:01:04 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Support vector machineまとめ</title>
+        <description>&lt;p&gt;本記事では，&lt;a href=&quot;http://home.hiroshima-u.ac.jp/tkurita/lecture/svm.pdf&quot;&gt;栗田多喜夫，サポートベクターマシン入門&lt;/a&gt;や&lt;a href=&quot;http://amzn.asia/0OTDQtT&quot;&gt;C. M. ビショップ，パターン認識と機械学習&lt;/a&gt;を参考に，
+&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%B3&quot;&gt;Support vector machine&lt;/a&gt;（SVM）の基本をまとめる．
+SVMは，現在知られている手法の中でも認識性能が優れたモデルの一つであり，分類および回帰の両方に適用可能である．&lt;/p&gt;
+
+&lt;p&gt;最も単純な&lt;strong&gt;ハードマージン線形SVM&lt;/strong&gt;から，&lt;strong&gt;ソフトマージン線形SVM&lt;/strong&gt;，そしてカーネルトリックを使った&lt;strong&gt;非線形SVM&lt;/strong&gt;と，徐々に複雑なモデルを解説します．&lt;/p&gt;
+
+&lt;h1 id=&quot;1-記号類&quot;&gt;1. 記号類&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_n&lt;/script&gt;：&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;番目データの特徴ベクトル．&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;y_n&lt;/script&gt;：&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;番目データの教師ラベル．&lt;script type=&quot;math/tex&quot;&gt;y_n \in \{-1, 1\}&lt;/script&gt;．&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{w}&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;：ラベルを予測するためのパラメータ．&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\hat{y}(\mathbf{x}_n)&lt;/script&gt;：&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;番目のデータ&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_n&lt;/script&gt;に対するラベルの予測結果．&lt;script type=&quot;math/tex&quot;&gt;\hat{y}(\mathbf{x}_n) &gt; 0&lt;/script&gt;のときラベルを&lt;script type=&quot;math/tex&quot;&gt;y_n=1&lt;/script&gt;と予測し，それ以外のときはラベルを&lt;script type=&quot;math/tex&quot;&gt;y_n=-1&lt;/script&gt;と予測する．&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\xi&lt;/script&gt;：ソフトマージンSVMで用いるパラメータ．&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\phi}(\mathbf{x}_n)&lt;/script&gt;：&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;番目のデータの特徴ベクトル&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_n&lt;/script&gt;の写像後のベクトル．&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_n&lt;/script&gt;と&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\phi}(\mathbf{x}_n)&lt;/script&gt;の次元は必ずしも同じである必要はない．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-ハードマージン線形svm&quot;&gt;2. ハードマージン線形SVM&lt;/h1&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+\hat{y} \left( \mathbf{x} \right) = \mathbf{w}^{T} \mathbf{\phi}(\mathbf{x}) + b \tag{1}
+\end{align*}&lt;/script&gt;
+
+&lt;h1 id=&quot;3-ソフトマージン線形svm&quot;&gt;3. ソフトマージン線形SVM&lt;/h1&gt;
+
+&lt;h1 id=&quot;4-非線形svm&quot;&gt;4. 非線形SVM&lt;/h1&gt;
+
+&lt;h1 id=&quot;5-感想&quot;&gt;5. 感想&lt;/h1&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://home.hiroshima-u.ac.jp/tkurita/lecture/svm.pdf&quot;&gt;栗田多喜夫，サポートベクターマシン入門&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.asia/0OTDQtT&quot;&gt;C.M.ビショップ，パターン認識と機械学習 下&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 19 Nov 2017 19:01:04 +0900</pubDate>
+        <link>http://localhost:4000/2017/11/19/support-vector-machine</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/19/support-vector-machine</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
+    
+      <item>
+        <title>What3Wordsを日本語化</title>
+        <description>&lt;p&gt;（作成中）&lt;a href=&quot;https://what3words.com/&quot;&gt;What3Words&lt;/a&gt;とは，新しい住所定義サービスである．本サービスで定義された住所は，従来より詳細（3m四方のグリッド単位！）で，かつ覚えやすい（わずか三単語！）．&lt;a href=&quot;https://docs.what3words.com/api/v2/&quot;&gt;API&lt;/a&gt;を公開しているが，2017年10月24日時点で日本語未対応っぽい．そこで，本記事ではWhat3Wordsを日本語化して遊ぶ．&lt;/p&gt;
+
+&lt;div style=&quot;max-width:854px&quot;&gt;&lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://embed.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth&quot; width=&quot;854&quot; height=&quot;480&quot; style=&quot;position:absolute;left:0;top:0;width:100%;height:100%&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;上のビデオは，このサービスを知るきっかけになった&lt;a href=&quot;https://www.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth?utm_campaign=tedspread--a&amp;amp;utm_medium=referral&amp;amp;utm_source=tedcomshare&quot;&gt;TED talk&lt;/a&gt;．&lt;/p&gt;
+
+&lt;h1 id=&quot;1-what3words&quot;&gt;1. What3Words&lt;/h1&gt;
+
+&lt;h1 id=&quot;2-api&quot;&gt;2. API&lt;/h1&gt;
+
+&lt;h1 id=&quot;3-日本語化&quot;&gt;3. 日本語化&lt;/h1&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://what3words.com/&quot;&gt;What3Words&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ted.com/talks/chris_sheldrick_a_precise_three_word_address_for_every_place_on_earth?utm_campaign=tedspread--a&amp;amp;utm_medium=referral&amp;amp;utm_source=tedcomshare&quot;&gt;TED，A precise, three-word address for every place on earth&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gigazine.net/news/20160626-mongolia-three-word-address&quot;&gt;Gigazine，全ての住所を単語3つの組み合わせだけで表現する「What3Words」がモンゴルで導入へ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/hfu/items/895141107aa4eb693f66&quot;&gt;Qiita，覚えやすい位置表現（what3words）による行動支援の可能性 / Possibilities of the what3words for disaster response&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 18 Nov 2017 21:14:11 +0900</pubDate>
+        <link>http://localhost:4000/2017/11/18/what3words-jp</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/18/what3words-jp</guid>
+        
+        
+        <category>geo</category>
+        
+      </item>
+    
+      <item>
+        <title>時系列分析技術まとめ</title>
+        <description>&lt;p&gt;（作成中）時系列分析技術をまとめる．時系列解析と呼ばれることもあるが，本記事では時系列分析で統一する．時系列分析とは，時間軸に沿って変化している現象を分析すること．計量経済学や制御工学等，多様な学術領域で研究が進められている．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2017-08-16-time.jpg&quot; alt=&quot;time&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-計量時系列分析&quot;&gt;1. 計量時系列分析&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tjo.hatenablog.com/entry/2013/07/12/184704&quot;&gt;六本木で働くデータサイエンティストのブログ，Rで計量時系列分析：AR, MA, ARMA, ARIMAモデル, 予測&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1a-ar&quot;&gt;1.a AR&lt;/h2&gt;
+
+&lt;h2 id=&quot;1b-ma&quot;&gt;1.b MA&lt;/h2&gt;
+
+&lt;h2 id=&quot;1c-arma&quot;&gt;1.c ARMA&lt;/h2&gt;
+
+&lt;h2 id=&quot;1d-arima&quot;&gt;1.d ARIMA&lt;/h2&gt;
+
+&lt;h1 id=&quot;2-状態空間モデル&quot;&gt;2. 状態空間モデル&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mathwords.net/zyotaikukan&quot;&gt;具体例で学ぶ数学，状態空間モデルの意味と4つの分類（線形性、正規性、時変性、連続性）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.asia/aGb1uXY&quot;&gt;C.M.ビショップ，パターン認識と機械学習&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2a-隠れマルコフモデル&quot;&gt;2.a 隠れマルコフモデル&lt;/h2&gt;
+
+&lt;h2 id=&quot;2b-線形動的システム&quot;&gt;2.b 線形動的システム&lt;/h2&gt;
+
+&lt;h2 id=&quot;2c-非線形動的システム&quot;&gt;2.c 非線形動的システム&lt;/h2&gt;
+
+&lt;h2 id=&quot;2d-カルマンフィルタ&quot;&gt;2.d カルマンフィルタ&lt;/h2&gt;
+
+&lt;h1 id=&quot;3-neural-network-not-deep&quot;&gt;3. Neural Network (Not deep)&lt;/h1&gt;
+
+&lt;h1 id=&quot;4-deep-neural-network&quot;&gt;4. Deep Neural Network&lt;/h1&gt;
+
+&lt;h2 id=&quot;41-lstm&quot;&gt;4.1 LSTM&lt;/h2&gt;
+
+&lt;h2 id=&quot;42-qrnn&quot;&gt;4.2 QRNN&lt;/h2&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tjo.hatenablog.com/entry/2013/07/12/184704&quot;&gt;六本木で働くデータサイエンティストのブログ，Rで計量時系列分析：AR, MA, ARMA, ARIMAモデル, 予測&lt;/a&gt;：計量時系列分析について．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mathwords.net/zyotaikukan&quot;&gt;具体例で学ぶ数学，状態空間モデルの意味と4つの分類（線形性、正規性、時変性、連続性）&lt;/a&gt;：状態空間モデルについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.asia/aGb1uXY&quot;&gt;C.M.ビショップ，パターン認識と機械学習&lt;/a&gt;：隠れマルコフモデル，線形動的システムについて．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0031320305001305&quot;&gt;T. Warren Liao, Clustering of time series data—a survey, Pattern Recognition, Volume 38, Issue 11, 2005, Pages 1857-1874, ISSN 0031-3203&lt;/a&gt;：時系列データのクラスタリングについて．&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 18 Nov 2017 21:14:11 +0900</pubDate>
+        <link>http://localhost:4000/2017/11/18/time-series</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/18/time-series</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
+    
+      <item>
+        <title>深層学習で女子アナの所属推定①スクレイピング</title>
+        <description>&lt;p&gt;深層学習で，女子アナの所属局の分類&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;問題に挑戦する．最終的には，顔画像から適切な放送局を助言するサービスを作り，アナウンサーを志す大学生の就活を支援したい．&lt;/p&gt;
+
+&lt;p&gt;その第一歩として，本記事では女子アナ画像をWebスクレイピングする．&lt;/p&gt;
+
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;根拠は一切ないが，NHKは分類しやすそう．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 18 Nov 2017 21:14:11 +0900</pubDate>
+        <link>http://localhost:4000/2017/11/18/announcer-scraping</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/18/announcer-scraping</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
     
       <item>
         <title>Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション</title>
@@ -395,407 +565,6 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
         
         
         <category>python</category>
-        
-      </item>
-    
-      <item>
-        <title>コトラー，アームストロング，恩藏のマーケティング原理</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/eGcRMag&quot;&gt;コトラー，アームストロング，恩藏のマーケティング原理&lt;/a&gt;の読書メモ．マーケティングの基本を，実例付きでわかりやすく解説してくれる名著．マーケティングとは，意図的に，顧客と良好な関係を築くための手法である．顧客の意識の有り様は，時代の流れに大きく左右されるため，マーケティング理論を常にアップデートし続ける必要がある．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;p.xiv&lt;/strong&gt;：マーケティングの5ステップ．
-    &lt;ol&gt;
-      &lt;li&gt;顧客ニーズの理解．&lt;/li&gt;
-      &lt;li&gt;顧客主導マーケティング戦略の設定．&lt;/li&gt;
-      &lt;li&gt;マーケティング・プログラムの策定．&lt;/li&gt;
-      &lt;li&gt;顧客リレーションシップの構築．&lt;/li&gt;
-      &lt;li&gt;顧客からの価値獲得．&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.6&lt;/strong&gt;：マーケティングの究極の目的は，セリング（売り込み）を不要とすること．顧客と有益な価値交換ができる関係を築くこと．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.7&lt;/strong&gt;：ニーズとは，人間が本質的に備える性質であり，何かが欠乏している状態．ウォンツとは，ニーズが文化的背景や個人の特徴を通して具現化されたもの．需要とは，ウォンツが購買力を伴ったもの．マーケターが把握すべきなのは，ニーズ．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.10&lt;/strong&gt;：マーケティング・マネジメントとは，ターゲットとなる市場を選定し，その市場との間に収益性の高い関係を構築する技術および科学．マネジメント設計には5つの志向がある：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;生産志向&lt;/strong&gt;：顧客は価格と手に入り易さを重視するので，経営者は生産と流通の効率化に集中すべき，という考え方．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;製品志向&lt;/strong&gt;：顧客は品質と性能を重視するので，経営者は継続的な性能改善に集中すべき，という考え方．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;販売志向&lt;/strong&gt;：顧客は商品の必要性に気づきにくいため，経営者は大々的な販売活動を行うべき，という考え方．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;マーケティング志向&lt;/strong&gt;：顧客満足を提供することが重要なので，経営者は市場のニーズを的確に把握すべき，という考え方．マーケティングの方式として，顧客主導型マーケティングと，顧客誘導型マーケティングがある．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;ソサイエタル・マーケティング志向&lt;/strong&gt;： 顧客の短期的な満足だけでなく，長期的な幸福も考慮すべき，という考え方．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.13&lt;/strong&gt;：マーケティング・ミックスとは，製品（Product），価格（Price），流通（Place），およびプロモーション（Promotion）などのマーケティング実践のために用いる枠組み．4Pとも呼ばれる．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.23&lt;/strong&gt;：短期的な売上だけでなく，将来的な売上も考慮すべき．カスタマー・エクイティとは，企業が抱える全顧客の生涯価値の総計である．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.37&lt;/strong&gt;：市場成長率-相対市場シェア・マトリクス．&lt;a href=&quot;http://www.darecon.com/tool/ppm1.html&quot;&gt;PPM分析&lt;/a&gt;とも呼ばれる．スター，問題児，金のなる木，負け犬．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.52&lt;/strong&gt;：&lt;a href=&quot;http://www.darecon.com/tool/swot1.html&quot;&gt;SWOT分析&lt;/a&gt;．企業の強み（Strength），弱み（Weakness），機会（Opportunity），脅威（Threat）を評価する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.53&lt;/strong&gt;：&lt;a href=&quot;http://www.nrc.co.jp/marketing/02-09.html&quot;&gt;マーケティング計画&lt;/a&gt;．エグゼクティブ・サマリー，現状分析，脅威と機会の分析，目標と課題，マーケティング戦略，行動プログラム，予算，コントロールをまとめる．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.57&lt;/strong&gt;：&lt;a href=&quot;https://www.leadplus.net/blog/marketing-roi.html&quot;&gt;マーケティングROI&lt;/a&gt;とは，マーケティング投資に対する，マーケティング効果の比率．マーケティングROIの算出は難しい．最近では，マーケティング効果としてカスタマー・エクイティを用いることが増えている．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.70&lt;/strong&gt;：競合他社への&lt;a href=&quot;http://www.marketingbank.jp/special/cat07/129.php&quot;&gt;競争戦略&lt;/a&gt;として，次の三つがある：コスト・リーダーシップ戦略，差別化戦略，そして集中戦略．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.87&lt;/strong&gt;：顧客主導型マーケティング戦略の設計ステップとして，市場細分化，ターゲティング，差別化，およびポジショニングがある．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.93&lt;/strong&gt;：市場細分化のポイント．測定可能性（規模，購買力，特性が評価できること），接近可能性（セグメントに効果的に近づき，製品を提供できること），利益確保可能性（収益性があること）．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.98&lt;/strong&gt;：究極のマイクロマーケティングは，個人マーケティング．以下が参考になる．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://jp.techcrunch.com/2015/08/16/20150814the-future-of-consumer-marketing-is-personal-2/&quot;&gt;TechCrunch，個人ユーザー単位でマーケティングできる未来が来る&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://markezine.jp/article/detail/24150&quot;&gt;MarketZine，個人単位のマーケティングを実現し、顧客体験中心のビジネスを／Adobe Summit 2016開催&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.134&lt;/strong&gt;：&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E9%A1%A7%E5%AE%A2%E9%96%A2%E4%BF%82%E7%AE%A1%E7%90%86&quot;&gt;顧客関係管理（CRM: Customer Relationship Management）&lt;/a&gt;．顧客満足度と顧客ロイヤルティの向上を通して，売上の拡大と収益性の向上を目指す経営戦略．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.141&lt;/strong&gt;：マーケターが最も知りたいのは，&lt;strong&gt;マーケティング活動に対して，消費者がどのような反応を示すか&lt;/strong&gt;．購買行動の刺激-反応モデル（S-Rモデル）では，購買者の特性と意思決定プロセスの解明がポイントとなる．消費者行動理論という枠組みで，体系化されているみたい．以下が参考になる．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://maki-jun77.blogspot.jp/2009/08/blog-post_08.html&quot;&gt;NOTE，消費者行動理論&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.172&lt;/strong&gt;：製品は，&lt;a href=&quot;https://kotobank.jp/word/%E6%B6%88%E8%B2%BB%E8%B2%A1-23127&quot;&gt;消費財&lt;/a&gt;と&lt;a href=&quot;https://kotobank.jp/word/%E7%94%9F%E7%94%A3%E8%B2%A1-23129&quot;&gt;生産財&lt;/a&gt;から成る．消費財は，最寄品，買回品，専門品，非探索品から成る．生産財は，材料・部品，資本財，備品・サービスから成る．以下が参考になる．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.182&lt;/strong&gt;：エビデンス・マネジメント．本来形のないサービスに形を与えることで，顧客に安心感を与えること．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.242&lt;/strong&gt;：商品価格の平均約20％が輸送や発送にかかる．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.255&lt;/strong&gt;：グッドバリュー価格設定とは，優れた品質とサービスとの組み合わせに対して，低価格を設定すること．付加価値価格設定とは，付加価値により自社製品を差別化し，高い価格をつけること．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.265&lt;/strong&gt;：需要の&lt;a href=&quot;https://mba.globis.ac.jp/about_mba/glossary/detail-12099.html&quot;&gt;価格弾性力&lt;/a&gt;とは，価格の変動によって，ある製品の需要や供給が変化する度合いを示す数値．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.289&lt;/strong&gt;：AIDA（Attention, Interest, Desire, Action）．消費者が商品に接してから購買に至るまでの決定プロセス．以下の記事によると，ほかにも様々なモデルがあるみたい．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://iso-labo.com/labo/AIDMA_AIDA_AISAS_AIDCA.html&quot;&gt;iso.labo，「AIDMA」、「AIDA」、「AISAS」、「AIDCA」の法則&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.309&lt;/strong&gt;：広告効果を見積もるのは，とても難しい．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.311&lt;/strong&gt;：広告の氾濫を改善するために，アドバテイメントや，ブランデッド・エンターテイメントなどが提案されている．&lt;a href=&quot;https://www.koukokutenshoku.com/app/user.php/dictionary/index?wordid=116&quot;&gt;アドバテイメント&lt;/a&gt;とは，映画やドラマなどの劇中に特定の商品を登場させ，商品の認知度や企業イメージの向上を図ること．&lt;a href=&quot;https://kotobank.jp/word/%E3%83%96%E3%83%A9%E3%83%B3%E3%83%87%E3%83%83%E3%83%89%E3%83%BB%E3%82%A8%E3%83%B3%E3%82%BF%E3%83%86%E3%82%A4%E3%83%B3%E3%83%A1%E3%83%B3%E3%83%88-22856&quot;&gt;ブランデッド・エンタテイメント&lt;/a&gt;とは，映画やTV番組，ゲームなどのエンタテイメント・コンテンツと連携したブランド・コミュニケーション．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.357&lt;/strong&gt;：紙のカタログは，未だに重要．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.374&lt;/strong&gt;：ソサイエタル・マーケティングでは，顧客の将来のニーズと，企業の現在のニーズを満足するよう行動する．一方，持続可能なマーケティングでは，顧客と企業両方の将来のニーズを満足するよう行動する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.381&lt;/strong&gt;：&lt;a href=&quot;https://kotobank.jp/word/%E3%82%B3%E3%83%B3%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%BA%E3%83%A0-67268&quot;&gt;コンシューマリズム&lt;/a&gt;．消費者運動．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.381&lt;/strong&gt;：エンバイロンメンタリズム．環境活動．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 15 Oct 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/10/15/marketing</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/15/marketing</guid>
-        
-        
-        <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>Windows7でJekyll+GitHub Pages</title>
-        <description>&lt;p&gt;船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）に&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;+&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;環境を構築した．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-10-15-env.png&quot; alt=&quot;env&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Windows 7 Professional, Serice Pack 1, 64 bit&lt;/li&gt;
-  &lt;li&gt;PowerShell 5.0.10586.117&lt;/li&gt;
-  &lt;li&gt;ATOM 1.21.1&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;：WindowsにおけるGit環境構築．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-for-windows.github.io/&quot;&gt;Git for Windows&lt;/a&gt;：Windows用Git環境．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;posh-git&lt;/a&gt;：PowerShellでgitコマンド補完を可能にするツール．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaoriya.net/blog/2016/02/07/&quot;&gt;KaoriYa，Windowsでjekyll 3.0（github-pages）を使う&lt;/a&gt;：WindowsにおけるJekyll環境構築方法．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;RubyInstaller&lt;/a&gt;：RubyおよびDevKitのインストール．
-&lt;a href=&quot;https://qiita.com/windhorn/items/0f58866291f8273f18fb&quot;&gt;Qiita，bundle execとかdb:createとかが何をしているのか&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec&lt;/code&gt;の使い方について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://atom.io/&quot;&gt;ATOM&lt;/a&gt;：GitHubが開発したテキストエディタ．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://atom.io/packages/line-ending-converter&quot;&gt;ATOM，Line ending converter&lt;/a&gt;：ATOMの改行コードを一括変換するパッケージ．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf&quot;&gt;Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）&lt;/a&gt;：ATOMのデフォルト改行コード設定方法．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
-
-&lt;h2 id=&quot;1-gitのインストール&quot;&gt;1. Gitのインストール&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;を参考にした．&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-for-windows.github.io/&quot;&gt;Git for Windows&lt;/a&gt;をダウンロード．&lt;/li&gt;
-  &lt;li&gt;インストーラを起動し，基本的にデフォルト設定を選択．ただし，改行設定（&lt;code class=&quot;highlighter-rouge&quot;&gt;Configuring the line ending conversions&lt;/code&gt;）では，上記サイトのおすすめに従い，&lt;code class=&quot;highlighter-rouge&quot;&gt;Checkout as-is, commit as-is&lt;/code&gt;を選択．&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;2-gitのグローバル設定&quot;&gt;2. Gitのグローバル設定&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Git bash&lt;/code&gt;を起動し，上記サイトを参考にグローバル設定した．&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;haltaro&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;***@gmail.com&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; core.quotepath &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;3-gitのsshキー作成&quot;&gt;3. GitのSSHキー作成&lt;/h2&gt;
-
-&lt;p&gt;引き続き上記サイトを参考に，SSHキーを作成した．&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;スタートメニューから&lt;code class=&quot;highlighter-rouge&quot;&gt;Git GUI&lt;/code&gt;を起動．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Help &amp;gt; Show SSH Key&lt;/code&gt;を選択．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Generate Key&lt;/code&gt;をクリックし，適当にpassphraseを入力．&lt;/li&gt;
-  &lt;li&gt;公開鍵をコピーして，&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;のアカウントに登録．&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;4-posh-gitのインストール&quot;&gt;4. posh-gitのインストール&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;posh-git&lt;/a&gt;を使うと，PowerShellでgitコマンド補完してくれて便利なので，インストールした． &lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;のPsGetを使った方法だと上手くいかなかったので，&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;公式GitHub&lt;/a&gt;から直接クローンした．以下はその詳細である．&lt;/p&gt;
-
-&lt;p&gt;まずは，PowerShellで以下のコマンドを打ち，&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;公式GitHub&lt;/a&gt;からクローンする．ディレクトリはどこでも良い．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; git clone git@github.com:dahlbyk/posh-git.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;PowerShellのセキュリティ設定を変更した．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;上記ディレクトリに移動して，&lt;code class=&quot;highlighter-rouge&quot;&gt;install.ps1&lt;/code&gt;を実行した．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; .\install.ps1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;5-rubyのインストール&quot;&gt;5. Rubyのインストール&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;RubyInstaller&lt;/a&gt;から2017年10月15日現在の最新版である&lt;code class=&quot;highlighter-rouge&quot;&gt;Ruby 2.4.2-2(x64)&lt;/code&gt;をダウンロードした．&lt;/p&gt;
-
-&lt;h2 id=&quot;6-devkitのインストール&quot;&gt;6. DevKitのインストール&lt;/h2&gt;
-
-&lt;p&gt;Rubyのパッケージ管理システム&lt;code class=&quot;highlighter-rouge&quot;&gt;RubyGems&lt;/code&gt;のインストールに必要な&lt;code class=&quot;highlighter-rouge&quot;&gt;DevKit&lt;/code&gt;をインストールした．以下はその詳細である．&lt;/p&gt;
-
-&lt;p&gt;まず，&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;RubyInstaller&lt;/a&gt;から，&lt;code class=&quot;highlighter-rouge&quot;&gt;DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exee&lt;/code&gt;をダウンロードした．以下では&lt;code class=&quot;highlighter-rouge&quot;&gt;C:\DevKit&lt;/code&gt;に解凍したと想定する．&lt;/p&gt;
-
-&lt;p&gt;次に，PowerShellから以下のコマンドを実行した．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; cd C:\DevKit
-&amp;gt; ruby dk.rb init
-&amp;gt; ruby dk.rb install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;7-関連パッケージのインストール&quot;&gt;7. 関連パッケージのインストール&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;RubyGems&lt;/code&gt;を使い，&lt;code class=&quot;highlighter-rouge&quot;&gt;github-pages&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;wdm&lt;/code&gt;をインストールした．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; gem install github-pages wdm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; jekyll serve&lt;/code&gt;したらと，次のようなエラーが出た．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;WARN: Unresolved specs during Gem::Specification.reset:
-      rouge (&amp;lt; 3, &amp;gt;= 1.7)
-WARN: Clearing out unresolved specs.
-Please report a bug if this causes problems.
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:315:in `check_for_activated_spec!': Y
-ou have already activated public_suffix 3.0.0, but your Gemfile requires public_suffix 2.0.5. Prepending `bundle exec` t
-o your command may solve this. (Gem::LoadError)
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:33:in `block in setup'
-        from C:/Ruby24-x64/lib/ruby/2.4.0/forwardable.rb:229:in `each'
-        from C:/Ruby24-x64/lib/ruby/2.4.0/forwardable.rb:229:in `each'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:28:in `map'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:28:in `setup'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler.rb:107:in `setup'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/lib/jekyll/plugin_manager.rb:50:in `require_from_bundle
-r'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/exe/jekyll:11:in `&amp;lt;top (required)&amp;gt;'
-        from C:/Ruby24-x64/bin/jekyll:23:in `load'
-        from C:/Ruby24-x64/bin/jekyll:23:in `&amp;lt;main&amp;gt;'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;指示通り，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; bundle exec jekyll serve&lt;/code&gt;とコマンドを打ったらうまく行った．&lt;a href=&quot;https://qiita.com/windhorn/items/0f58866291f8273f18fb&quot;&gt;Qiita，bundle execとかdb:createとかが何をしているのか&lt;/a&gt;によると，&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec&lt;/code&gt;を頭につけると，当該プロジェクトの&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;で指定された環境でコマンドを実行するらしい．&lt;/p&gt;
-
-&lt;h2 id=&quot;8-atomのインストール&quot;&gt;8. ATOMのインストール&lt;/h2&gt;
-&lt;p&gt;マークダウンエディタが欲しかったので，&lt;a href=&quot;https://atom.io/&quot;&gt;ATOM&lt;/a&gt;をインストールした．&lt;a href=&quot;https://atom.io/&quot;&gt;公式ページ&lt;/a&gt;からインストーラをダウンロードすれば簡単にできた．しかし…&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-10-15-outline.png&quot; alt=&quot;outline&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;サマリ部分に全文表示されてしまう問題が発生した．これはUnixの改行コード（&lt;code class=&quot;highlighter-rouge&quot;&gt;LF&lt;/code&gt;）とWindowsの改行コード（&lt;code class=&quot;highlighter-rouge&quot;&gt;CRLF&lt;/code&gt;）が混在していることが原因らしい．&lt;/p&gt;
-
-&lt;h2 id=&quot;9-line-ending-converterで改行コードを一括変換&quot;&gt;9. line-ending-converterで改行コードを一括変換&lt;/h2&gt;
-
-&lt;p&gt;ATOMの設定画面から，&lt;code class=&quot;highlighter-rouge&quot;&gt;line-ending-converter&lt;/code&gt;をインストール．&lt;code class=&quot;highlighter-rouge&quot;&gt;Packages&lt;/code&gt;&amp;gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Convert Line Endings To&lt;/code&gt;で，&lt;code class=&quot;highlighter-rouge&quot;&gt;Unix Format&lt;/code&gt;を選択すると，現在選択中のファイルの改行コードが一括変換される．&lt;/p&gt;
-
-&lt;p&gt;詳細は&lt;a href=&quot;https://atom.io/packages/line-ending-converter&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
-
-&lt;h2 id=&quot;10-line-ending-selectorで改行コード設定&quot;&gt;10. line-ending-selectorで改行コード設定&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf&quot;&gt;Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）&lt;/a&gt;を参考に，デフォルト設定を変更．&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;ATOMの設定画面から&lt;code class=&quot;highlighter-rouge&quot;&gt;line-ending-selector&lt;/code&gt;を検索．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;line-ending-selector&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;Setting&lt;/code&gt;ボタンを押下．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Default line ending&lt;/code&gt;から，&lt;code class=&quot;highlighter-rouge&quot;&gt;LF&lt;/code&gt;を選択．&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;11-まとめ&quot;&gt;11. まとめ&lt;/h2&gt;
-
-&lt;p&gt;下図のような環境が完成した．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-10-15-env.png&quot; alt=&quot;env&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;PowerShellで&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; bundle exec jekyll serve&lt;/code&gt;して，ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:4000&lt;/code&gt;から出来栄えを確認しながら，ATOMでマークダウンを編集できる．&lt;/p&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-&lt;p&gt;ATOMは本当に便利．Linuxが届いたらインストールしようと思う．&lt;/p&gt;
-</description>
-        <pubDate>Sun, 15 Oct 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/10/15/jekyll-windows</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/15/jekyll-windows</guid>
-        
-        
-        <category>jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>武井由紀子，ユーザ中心ウェブビジネス戦略</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/0sBIq3B&quot;&gt;武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略&lt;/a&gt;を読んだ．インターネットはユーザが能動的に情報を取捨選択可能なメディアであるため，ウェブビジネスにおいては，ターゲットユーザを徹底的に理解する必要がある．ユーザ理解のためのツールとして，ユーザ行動パターン検証ツール（アクセスログ解析等）と，ユーザ行動理由検証ツール（ユーザ行動観察調査等）がある．両者の特徴を理解して，使い分けることが重要である．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;p.10&lt;/strong&gt;：いかなる製品やサービスも，まずは事業の目的や市場，ターゲット顧客，収益性といった観点から検討が始まる．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.12&lt;/strong&gt;：本書は二部構成．一部は理論編，二部は実践編．二部は主にウェブマスター向けの話なので，一部を中心に読む．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.19&lt;/strong&gt;：ウェブビジネス成功事例の共通点として，下記4点があるが，もっとも重要なのは1である：
-    &lt;ol&gt;
-      &lt;li&gt;サイトの顧客（ユーザ）を徹底的に知っている．&lt;/li&gt;
-      &lt;li&gt;ユーザを知った上でサイト上でのコミュニケーションを設計している．&lt;/li&gt;
-      &lt;li&gt;事前に仮説検証をしている．&lt;/li&gt;
-      &lt;li&gt;事後に仮説検証をしている．&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.25&lt;/strong&gt;：インターネットによりメディアの民主化が起こった．企業から発信される情報の信頼性が低下する一方で，個人から発信される情報の信頼性が増大した．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.32&lt;/strong&gt;：論理武装した消費者に対応するためには，ユーザの期待に応えているか，が最も重要．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.37&lt;/strong&gt;：ユーザ利用時のインターネットの特性として，以下の5つがある：前のめり，斜め読み，新鮮，遠慮不要，比較可能．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.45&lt;/strong&gt;：ユーザ中心設計のプロセス：サイトの目的と目標，ターゲットユーザ，コミュニケーションシナリオ，ユーザ視点の検証作業．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.51&lt;/strong&gt;：ウォーターフォール型ではなく，スパイラル型でサイト設計を行う．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.55&lt;/strong&gt;：ユーザの過去の経験やサイト内外での体験まで想定して，コミュニケーションシナリオを構築する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.65&lt;/strong&gt;：ウェブサイトによるプロモーションと相性が良いのは，比較に耐えるサービスか，そもそも比較できないサービス．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.81&lt;/strong&gt;：ユーザ行動パターン検証ツールと，ユーザ行動理由検証ツールを使い分ける必要がある．前者は，例えばアクセスログ解析．後者は，例えばユーザ行動観察調査．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.85&lt;/strong&gt;：ユーザの意見ではなく，行動を重視する．往々にして，ユーザの意見は正確でない．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 14 Oct 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/10/14/web-buisiness</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/14/web-buisiness</guid>
-        
-        
-        <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>Udacity, Intro to Hadoop and MapReduce</title>
-        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/DEQNknALf_8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&quot;1-big-data&quot;&gt;1. Big Data&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Big Dataとは，一つのマシンでは処理しきれないほど大量のデータである．&lt;/li&gt;
-  &lt;li&gt;Big Dataにおける課題は主に以下の２つ：
-    &lt;ul&gt;
-      &lt;li&gt;データが高速に生成されること．&lt;/li&gt;
-      &lt;li&gt;データが異なるソースから多様なフォーマットで生成されること．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;データの性質を表現する三つのV：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Volume&lt;/strong&gt;（量）：データを保存するだけではなく，処理することも考える必要がある．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Variety&lt;/strong&gt;（多様性）：非構造データや半構造データが増加しており，従来のデータベースへは保管が難しい．もし非構造データをそのまま保存できれば，後で活用できるかもしれない．&lt;code class=&quot;highlighter-rouge&quot;&gt;Hadoop&lt;/code&gt;では，データフォーマットによらず，そのまま保存できる．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Velocity&lt;/strong&gt;（速度）：処理速度が速ければ速いほど，より多くのビジネスチャンスが生まれる．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Hadoopの由来は，製作者の子供のおもちゃ．&lt;/li&gt;
-  &lt;li&gt;Hadoopの技術的コアは２つ：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;HDFS&lt;/strong&gt;（Hadoop distributed file system）による分散ファイル保存．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;MapReduce&lt;/strong&gt;によるデータ処理．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Hadoopでは，データの保存及び処理が，クラスタ毎に行われる．&lt;/li&gt;
-  &lt;li&gt;Hadoop ecosystem：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Pig&lt;/strong&gt;，&lt;strong&gt;Hive&lt;/strong&gt;：MapReduceのハイレベルインターフェース．SQLチックに使える．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Impala&lt;/strong&gt;：HDFSへの低レベルインターフェース．PigやHiveより高速．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Sqoop&lt;/strong&gt;，&lt;strong&gt;Flume&lt;/strong&gt;：他のデータベース上のデータを，クラスタとして保存できる．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;HBase&lt;/strong&gt;：HDFS上のリアルタイムデータベース．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Hue&lt;/strong&gt;：GUI．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Oozie&lt;/strong&gt;：ワークフロー管理ツール．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Mahout&lt;/strong&gt;：機械学習ライブラリ．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Cloudera&lt;/strong&gt;：環境構築ツール．上記のソフトウェアをまとめてインストールできる．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;2-hdfs-and-mapreduce&quot;&gt;2. HDFS and MapReduce&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;HDFSでは，データを64Mbyteの&lt;strong&gt;ブロック&lt;/strong&gt;に分割し，それぞれ別のマシンに保存する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;ネームノード&lt;/strong&gt;は，どのブロックがどのマシンに保存されているかという&lt;strong&gt;メタデータ&lt;/strong&gt;を管理する．&lt;/li&gt;
-  &lt;li&gt;冗長性のため，Hadoopはブロックを三回複製する．またネームノードの複製も用意する．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -ls&lt;/code&gt;などで，HDFSにアクセスできる．&lt;code class=&quot;highlighter-rouge&quot;&gt;-ls&lt;/code&gt;の部分は，UNIXのファイルシステムコマンドを利用可能．&lt;/li&gt;
-  &lt;li&gt;ハッシュテーブルは，Big Data適用時に，処理時間とメモリ消費という課題があった．&lt;/li&gt;
-  &lt;li&gt;MapReduceのまとめ：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Map&lt;/strong&gt;：小さく分割されたデータを，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key, value&amp;gt;&lt;/code&gt;形式で保存し，同一&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;でまとめる．Mapperの出力を中間レコード（Intermediate records）と呼ぶ．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Shuffle and sort&lt;/strong&gt;：中間レコードをReduceに渡し，&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;でソートする．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Reduce&lt;/strong&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;毎に処理し，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key, values&amp;gt;&lt;/code&gt;リストを作成する．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;最終結果をソートするためには，単独のReducerを使うか，別途処理を行うか．&lt;/li&gt;
-  &lt;li&gt;各Reducerが受け取る&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;の数は，事前にはわからない．等分されるとは限らない．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Job tracker&lt;/strong&gt;が，MapperとReducerにジョブを割り当てる．&lt;/li&gt;
-  &lt;li&gt;各デーモンは，&lt;strong&gt;Task tracker&lt;/strong&gt;を持つ．&lt;/li&gt;
-  &lt;li&gt;HadoopではJavaが使われるが，Pythonを使うこともできる．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hs {mapper script} {reducer script} {input_file} {output directory}&lt;/code&gt;で実行できる．ただし，&lt;code class=&quot;highlighter-rouge&quot;&gt;{output directory}&lt;/code&gt;が既に存在する場合，エラーが返されるので注意．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -put&lt;/code&gt;でデータをHDFSに保存し，&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -get&lt;/code&gt;で取り出す．&lt;/li&gt;
-  &lt;li&gt;仮想マシンで実際にHadoopを動かす．以下，参考：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/pub&quot;&gt;インストールと初期設定&lt;/a&gt;：ダブルクリックで&lt;code class=&quot;highlighter-rouge&quot;&gt;.zip&lt;/code&gt;を解凍したらうまくいかなかった．コマンドラインで&lt;code class=&quot;highlighter-rouge&quot;&gt;unzip&lt;/code&gt;で解凍した．&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub&quot;&gt;ファイル共有&lt;/a&gt;：うちの環境では&lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.0.9&lt;/code&gt;だった．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/l0I_2nyPNZM?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/d5TZ_2I7dwE?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;技術的な詳細は，&lt;a href=&quot;http://go.cloudera.com/udacity-lesson-2&quot;&gt;Chapter 6 of Tom White’s essential text, Hadoop: The Definitive Guide&lt;/a&gt;を参照．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;3-mapreduce-code&quot;&gt;3. MapReduce Code&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Hadoop streaming&lt;/strong&gt;により，どんな言語でも処理を書くことができる．&lt;/li&gt;
-  &lt;li&gt;MapperおよびReducerには，&lt;code class=&quot;highlighter-rouge&quot;&gt;sys.stdin&lt;/code&gt;形式でデータを入力する．&lt;code class=&quot;highlighter-rouge&quot;&gt;for line in sys.stdin:&lt;/code&gt;以下に処理を書く．&lt;/li&gt;
-  &lt;li&gt;MapperおよびReducerは，処理結果を&lt;code class=&quot;highlighter-rouge&quot;&gt;print&lt;/code&gt;で標準出力する．&lt;/li&gt;
-  &lt;li&gt;シェルで&lt;code class=&quot;highlighter-rouge&quot;&gt;$ ./mapper.py&lt;/code&gt;で実行すれば，Hadoop外でMapperの動作を検証できる．Reducerについても同様．さらに，以下のコマンドで全ての処理を検証可能．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat testfile | ./mapper.py | sort | ./reducer.py
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;詳細は，以下の動画がとてもわかりやすい．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/MYo8EZwDRUA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&quot;4-project&quot;&gt;4. Project&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;1-1. 全店舗におけるカテゴリー毎の売上額を求めよ．&lt;/li&gt;
-  &lt;li&gt;1-2.&lt;/li&gt;
-  &lt;li&gt;1-3.&lt;/li&gt;
-  &lt;li&gt;2-1.&lt;/li&gt;
-  &lt;li&gt;2-2.&lt;/li&gt;
-  &lt;li&gt;2-2.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;5-mapreduce-design-patterns&quot;&gt;5. MapReduce Design Patterns&lt;/h1&gt;
-
-&lt;h1 id=&quot;6-project-prep&quot;&gt;6. Project Prep&lt;/h1&gt;
-</description>
-        <pubDate>Sun, 13 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/13/udacity-hadoop</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/13/udacity-hadoop</guid>
-        
-        
-        <category>data science</category>
         
       </item>
     
