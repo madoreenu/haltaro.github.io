@@ -6,9 +6,101 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Nov 2017 23:13:34 +0900</pubDate>
-    <lastBuildDate>Sun, 19 Nov 2017 23:13:34 +0900</lastBuildDate>
+    <pubDate>Tue, 21 Nov 2017 11:00:41 +0900</pubDate>
+    <lastBuildDate>Tue, 21 Nov 2017 11:00:41 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>SkimaTalk，フリートーク体験メモ</title>
+        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，友人から紹介された&lt;a href=&quot;https://www.skimatalk.com/jp&quot;&gt;SkimaTalk&lt;/a&gt;のフリートーク．&lt;/p&gt;
+
+&lt;h1 id=&quot;skimatalkとは&quot;&gt;SkimaTalkとは&lt;/h1&gt;
+
+&lt;p&gt;ネイティブ講師のみで構成されるオンライン英会話．特徴的なのは，講師によって単価が違うこと．受講者は毎月付与されるコインで，授業を&lt;strong&gt;購入&lt;/strong&gt;する．&lt;/p&gt;
+
+&lt;p&gt;2017年11月20日時点での&lt;a href=&quot;https://www.skimatalk.com/jp/pricing&quot;&gt;料金プラン&lt;/a&gt;は以下．&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;プラン名&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;料金 [円]&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;コイン数&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;トライアル&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9,300&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;80&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ベーシック&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;18,300&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;160&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;スタンダード&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;26,800&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;240&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;プレミアム&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;34,800&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;320&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;1授業の平均料金は9コイン程度なので，月9,300円で9回弱受講できる計算．フィリピン系オンライン英会話の大手&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の[]月8回コース](https://www.rarejob.com/payment/)は4,200円なので，約2倍の価格である．&lt;/p&gt;
+
+&lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
+
+&lt;p&gt;今回はフリートークだったため，特に予習はしなかった．&lt;/p&gt;
+
+&lt;h1 id=&quot;講義内容&quot;&gt;講義内容&lt;/h1&gt;
+
+&lt;p&gt;先生はスペイン在住のイギリス人だった．以下のようなやり取りがあった．ゆっくり話してくれた．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;自己紹介．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;趣味は何か？&lt;/strong&gt;：ジョギングと水彩画．
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;好きな作家は？&lt;/strong&gt;：ゴッホ．ひまわりを見て感動した．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;何に感動したのか？&lt;/strong&gt;：重ね塗りがすごすぎて，表面がでこぼこしている（パッとしない答えの上，でこぼこを英語で言えなかった）．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;仕事は何か？&lt;/strong&gt;：通信系の研究職．
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;具体的には何をしているのか？&lt;/strong&gt;：論文や技術文書を読んだり，実験したり，書いたり．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;通信業界のどこに研究要素があるのか？&lt;/strong&gt;：スマートフォン等の普及により，今後も継続的に通信量が増加することが予想される．現状の通信インフラだと対応できない可能性があるので，より効率的にデータトラフィックを制御する技術が求められている．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;先生からのフィードバック&quot;&gt;先生からのフィードバック&lt;/h1&gt;
+
+&lt;p&gt;特になし．&lt;/p&gt;
+
+&lt;h1 id=&quot;学んだこと&quot;&gt;学んだこと&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/captivating&quot;&gt;captivating&lt;/a&gt;：人の心を捉えるような，魅力的な&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://eow.alc.co.jp/search?q=it%27s+fair+to+say+that&quot;&gt;It’s fair to say that&lt;/a&gt;：（that以下）と言うのが正しい，言ってもいいだろう．&lt;em&gt;Is that fair?&lt;/em&gt; みたいに使ってた．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;フィリピン系オンライン英会話の二倍の値段だが，ネイティブと話せるのは嬉しい．正しい発音や，こなれた言い回しなど，ここでしか学べないことも多いと思う．予算に余裕があるのなら，SkimaTalk一択と感じた．&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Nov 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/11/20/skima</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/20/skima</guid>
+        
+        
+        <category>english</category>
+        
+      </item>
     
       <item>
         <title>Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション</title>
@@ -72,8 +164,31 @@
       </item>
     
       <item>
-        <title>Reajob，South Australia to improve wind farm with world’s largest battery</title>
+        <title>Reajob，Article discussion体験メモ</title>
         <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，出国前まで続けていた&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の&lt;a href=&quot;https://www.rarejob.com/dna&quot;&gt;Article discussion&lt;/a&gt;．以下はその受講メモ．&lt;/p&gt;
+
+&lt;h1 id=&quot;reajobとは&quot;&gt;Reajobとは&lt;/h1&gt;
+
+&lt;p&gt;フィリピン系オンライン英会話の最大手．2017年11月21日時点の&lt;a href=&quot;https://www.rarejob.com/payment/&quot;&gt;料金プラン&lt;/a&gt;は以下．&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;プラン&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;料金[円/月]&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;月8回&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4,200&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;毎日25分&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5,800&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
 
@@ -688,132 +803,6 @@ r'
         
         
         <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>Udacity, Intro to Hadoop and MapReduce</title>
-        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617&quot;&gt;Udacity, Intro to Hadoop and MapReduce&lt;/a&gt;の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/DEQNknALf_8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&quot;1-big-data&quot;&gt;1. Big Data&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Big Dataとは，一つのマシンでは処理しきれないほど大量のデータである．&lt;/li&gt;
-  &lt;li&gt;Big Dataにおける課題は主に以下の２つ：
-    &lt;ul&gt;
-      &lt;li&gt;データが高速に生成されること．&lt;/li&gt;
-      &lt;li&gt;データが異なるソースから多様なフォーマットで生成されること．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;データの性質を表現する三つのV：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Volume&lt;/strong&gt;（量）：データを保存するだけではなく，処理することも考える必要がある．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Variety&lt;/strong&gt;（多様性）：非構造データや半構造データが増加しており，従来のデータベースへは保管が難しい．もし非構造データをそのまま保存できれば，後で活用できるかもしれない．&lt;code class=&quot;highlighter-rouge&quot;&gt;Hadoop&lt;/code&gt;では，データフォーマットによらず，そのまま保存できる．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Velocity&lt;/strong&gt;（速度）：処理速度が速ければ速いほど，より多くのビジネスチャンスが生まれる．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Hadoopの由来は，製作者の子供のおもちゃ．&lt;/li&gt;
-  &lt;li&gt;Hadoopの技術的コアは２つ：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;HDFS&lt;/strong&gt;（Hadoop distributed file system）による分散ファイル保存．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;MapReduce&lt;/strong&gt;によるデータ処理．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Hadoopでは，データの保存及び処理が，クラスタ毎に行われる．&lt;/li&gt;
-  &lt;li&gt;Hadoop ecosystem：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Pig&lt;/strong&gt;，&lt;strong&gt;Hive&lt;/strong&gt;：MapReduceのハイレベルインターフェース．SQLチックに使える．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Impala&lt;/strong&gt;：HDFSへの低レベルインターフェース．PigやHiveより高速．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Sqoop&lt;/strong&gt;，&lt;strong&gt;Flume&lt;/strong&gt;：他のデータベース上のデータを，クラスタとして保存できる．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;HBase&lt;/strong&gt;：HDFS上のリアルタイムデータベース．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Hue&lt;/strong&gt;：GUI．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Oozie&lt;/strong&gt;：ワークフロー管理ツール．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Mahout&lt;/strong&gt;：機械学習ライブラリ．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Cloudera&lt;/strong&gt;：環境構築ツール．上記のソフトウェアをまとめてインストールできる．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;2-hdfs-and-mapreduce&quot;&gt;2. HDFS and MapReduce&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;HDFSでは，データを64Mbyteの&lt;strong&gt;ブロック&lt;/strong&gt;に分割し，それぞれ別のマシンに保存する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;ネームノード&lt;/strong&gt;は，どのブロックがどのマシンに保存されているかという&lt;strong&gt;メタデータ&lt;/strong&gt;を管理する．&lt;/li&gt;
-  &lt;li&gt;冗長性のため，Hadoopはブロックを三回複製する．またネームノードの複製も用意する．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -ls&lt;/code&gt;などで，HDFSにアクセスできる．&lt;code class=&quot;highlighter-rouge&quot;&gt;-ls&lt;/code&gt;の部分は，UNIXのファイルシステムコマンドを利用可能．&lt;/li&gt;
-  &lt;li&gt;ハッシュテーブルは，Big Data適用時に，処理時間とメモリ消費という課題があった．&lt;/li&gt;
-  &lt;li&gt;MapReduceのまとめ：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Map&lt;/strong&gt;：小さく分割されたデータを，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key, value&amp;gt;&lt;/code&gt;形式で保存し，同一&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;でまとめる．Mapperの出力を中間レコード（Intermediate records）と呼ぶ．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Shuffle and sort&lt;/strong&gt;：中間レコードをReduceに渡し，&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;でソートする．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Reduce&lt;/strong&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;毎に処理し，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key, values&amp;gt;&lt;/code&gt;リストを作成する．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;最終結果をソートするためには，単独のReducerを使うか，別途処理を行うか．&lt;/li&gt;
-  &lt;li&gt;各Reducerが受け取る&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;の数は，事前にはわからない．等分されるとは限らない．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Job tracker&lt;/strong&gt;が，MapperとReducerにジョブを割り当てる．&lt;/li&gt;
-  &lt;li&gt;各デーモンは，&lt;strong&gt;Task tracker&lt;/strong&gt;を持つ．&lt;/li&gt;
-  &lt;li&gt;HadoopではJavaが使われるが，Pythonを使うこともできる．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hs {mapper script} {reducer script} {input_file} {output directory}&lt;/code&gt;で実行できる．ただし，&lt;code class=&quot;highlighter-rouge&quot;&gt;{output directory}&lt;/code&gt;が既に存在する場合，エラーが返されるので注意．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -put&lt;/code&gt;でデータをHDFSに保存し，&lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop fs -get&lt;/code&gt;で取り出す．&lt;/li&gt;
-  &lt;li&gt;仮想マシンで実際にHadoopを動かす．以下，参考：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/pub&quot;&gt;インストールと初期設定&lt;/a&gt;：ダブルクリックで&lt;code class=&quot;highlighter-rouge&quot;&gt;.zip&lt;/code&gt;を解凍したらうまくいかなかった．コマンドラインで&lt;code class=&quot;highlighter-rouge&quot;&gt;unzip&lt;/code&gt;で解凍した．&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub&quot;&gt;ファイル共有&lt;/a&gt;：うちの環境では&lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.0.9&lt;/code&gt;だった．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/l0I_2nyPNZM?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/d5TZ_2I7dwE?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;技術的な詳細は，&lt;a href=&quot;http://go.cloudera.com/udacity-lesson-2&quot;&gt;Chapter 6 of Tom White’s essential text, Hadoop: The Definitive Guide&lt;/a&gt;を参照．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;3-mapreduce-code&quot;&gt;3. MapReduce Code&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Hadoop streaming&lt;/strong&gt;により，どんな言語でも処理を書くことができる．&lt;/li&gt;
-  &lt;li&gt;MapperおよびReducerには，&lt;code class=&quot;highlighter-rouge&quot;&gt;sys.stdin&lt;/code&gt;形式でデータを入力する．&lt;code class=&quot;highlighter-rouge&quot;&gt;for line in sys.stdin:&lt;/code&gt;以下に処理を書く．&lt;/li&gt;
-  &lt;li&gt;MapperおよびReducerは，処理結果を&lt;code class=&quot;highlighter-rouge&quot;&gt;print&lt;/code&gt;で標準出力する．&lt;/li&gt;
-  &lt;li&gt;シェルで&lt;code class=&quot;highlighter-rouge&quot;&gt;$ ./mapper.py&lt;/code&gt;で実行すれば，Hadoop外でMapperの動作を検証できる．Reducerについても同様．さらに，以下のコマンドで全ての処理を検証可能．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat testfile | ./mapper.py | sort | ./reducer.py
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;詳細は，以下の動画がとてもわかりやすい．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/MYo8EZwDRUA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&quot;4-project&quot;&gt;4. Project&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;1-1. 全店舗におけるカテゴリー毎の売上額を求めよ．&lt;/li&gt;
-  &lt;li&gt;1-2.&lt;/li&gt;
-  &lt;li&gt;1-3.&lt;/li&gt;
-  &lt;li&gt;2-1.&lt;/li&gt;
-  &lt;li&gt;2-2.&lt;/li&gt;
-  &lt;li&gt;2-2.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;5-mapreduce-design-patterns&quot;&gt;5. MapReduce Design Patterns&lt;/h1&gt;
-
-&lt;h1 id=&quot;6-project-prep&quot;&gt;6. Project Prep&lt;/h1&gt;
-</description>
-        <pubDate>Sun, 13 Aug 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/08/13/udacity-hadoop</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/13/udacity-hadoop</guid>
-        
-        
-        <category>data science</category>
         
       </item>
     
