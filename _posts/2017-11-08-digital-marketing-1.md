@@ -54,6 +54,10 @@ categories:
   * Rally Fighterの製作期間は18ヶ月である，従来の五分の一の長さである．製作費は三百万ドルで，従来より大幅に小さい．Local Motersは，車の設計を根本から見直すことで，これを成し遂げた．例えば，六百万ドルかけてエアバックを製造する代わりに，十ドルかけて五点シートベルトを設計した．
   * 購入後，オーナーは自らRally Fighterを組み立てる．
 * [YouTube，Local Motors Rally Fighter - Jay Leno's Garage](https://www.youtube.com/watch?v=OetiD8rL1KU)
+* Peer-graded Assignment．受講生同士で相互に採点するプロジェクト．
+  1. What type of co-creation is Local Motors using?
+  2. What do you think of the Rally Fighter? Will this new car be successful? Why or why not?
+  3. What is Local Motors’ value proposition?
 
 # Digital concept: Doppelgänger brands
 
