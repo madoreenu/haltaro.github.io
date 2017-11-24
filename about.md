@@ -6,8 +6,8 @@ public: true
 ---
 
 * **2013.03**：工学修士（航空宇宙工学）修了．機械学習を用いた人工衛星の故障検知を研究．
-* **2013.04**：通信会社の研究所に入社．ネットワーク制御アルゴリズムの研究や，通信装置の設計検討に従事．
-* **2016.09**：アメリカの研究所に出向．現地のスタッフと協力し，ネットワーク制御アルゴリズムの研究に従事．
+* **2013.04**：通信会社の研究所に入社．ネットワーク制御アルゴリズムを研究．
+* **2016.09**：アメリカの研究所に出向．データトラフィック予測アルゴリズムを研究．
 * **2017.10**：帰任．
 
 [Network engineeringと，algorithmic tradingと，machine learningに興味](https://haltaro.github.io/projects)があります．[C++](https://isocpp.org/)と[Python](https://www.python.org/)をメインで使ってます．最近，[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)の勉強を始めました．
