@@ -6,9 +6,9 @@ categories:
  - marketing
 ---
 
-**随時更新**：[Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る[Digital marketing specialization](https://www.coursera.org/specializations/digital-marketing)の一つ．四週かけて，デジタル時代の[マーケティング・ミックス](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9)について学ぶ．第一週では，本講座の概要と，Productを取り扱う．
+**随時更新**：[Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る[Digital marketing specialization](https://www.coursera.org/specializations/digital-marketing)の一つ．四週かけて，デジタル時代の[マーケティング・ミックス](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9)について学ぶ．第一週では，本講座の概要と，Productを取り扱う．学生同士で互いに回答を採点しあうPeer review方式で課題を提出する．ライティング力の無さが如実に顕れて辛いが，いろんな人の意見が読めて良い刺激になる．
 
-![marketing]({{site.baseurl}}/images/2017-11-08-marketing.jpg)
+![courcera]({{site.baseurl}}/images/2017-11-18-courcera.png)
 
 # About the course
 
@@ -43,21 +43,22 @@ categories:
 * Co-creationには，二つのステップがある．ContributionとSelectionである．Contributionにおいては，いかに消費者から協力を得るか，Selectionにおいては，いかに消費者の印象を悪くすることなくアイデアを選定するかが課題である．
 * Contributionにおいて消費者の協力を得る際に重要なのは，Social recognitionとFinancial rewardsである．
 * Contributionの方法（1.Fix，2.Open）と，Selectionの方法（a.Firm-led，b.Crowd-led）によって，Co-creationを四種類に分類できる．1.a.Submitting，1.b.Co-designing，2.a.Tinkering，2.b.Collaboration．
-* Tinkeringがいまいちよくわからん．
+* 上記については，[畠山仁友，消費者手動の意図せざる共創 -共創プロセスへの「アレンジの組み込み」-](https://waseda.repo.nii.ac.jp/?action=repository_action_common_download&item_id=13535&item_no=1&attribute_id=162&file_no=1)に解説があった．Tinkering（いじくりまわし）は，コンピュータゲームの修正等で使われる手法．
 * The rule of 1．消費者から集められたアイデアのうち，1%しか使い物にならない．
 
 # Case study: local motors
 
+* [Local Motors](https://localmotors.com/company/)という会社の共創マーケティングについて，意見を述べる課題．
 * [CNN，How the Internet built a $100,000 race car](http://edition.cnn.com/2013/03/12/tech/web/crowdsourced-car-sxsw/)
   * [Rally Fighter](http://rallyfighter.com/)は，おそらく世界で初めて，Crowdsourcingで設計された車である．Rally Fighterを製造したのは，アリゾナ州のLocal Motors社である．
   * ユーザはインターネットを介して，車両のデザインおよび投票に参加した．
   * Rally Fighterの製作期間は18ヶ月である，従来の五分の一の長さである．製作費は三百万ドルで，従来より大幅に小さい．Local Motersは，車の設計を根本から見直すことで，これを成し遂げた．例えば，六百万ドルかけてエアバックを製造する代わりに，十ドルかけて五点シートベルトを設計した．
   * 購入後，オーナーは自らRally Fighterを組み立てる．
 * [YouTube，Local Motors Rally Fighter - Jay Leno's Garage](https://www.youtube.com/watch?v=OetiD8rL1KU)
-* Peer-graded Assignment．受講生同士で相互に採点するプロジェクト．
-  1. What type of co-creation is Local Motors using?
-  2. What do you think of the Rally Fighter? Will this new car be successful? Why or why not?
-  3. What is Local Motors’ value proposition?
+* [KAIROS marketing，良いバリュープロポジションを作る５つのコツ](https://blog.kairosmarketing.net/contentmarketing/value-proposition/)によると，Value Propositionとは，提供価値のこと．
+  * [Local Motors](https://localmotors.com/company/)には，次のようなことが書かれている．*We are focused on low volume manufacturing of open-source vehicle designs, using multiple microfactories and a co-creation SaaS platform.*
+* Peer review．学生同士で互いに回答を採点しあう．自分のを提出した後に，三人分の回答を採点できる仕組み．まず思ったのは，もっときちんと回答すれば良かったということ．次に思ったのは，学生毎に特徴が出ていて，とても面白いということ．以下は，初見の英単語等のメモ．みんな英語上手だなあ．
+  * [intriguing](https://ejje.weblio.jp/content/intriguing)：好奇心をそそる．
 
 # Digital concept: Doppelgänger brands
 
