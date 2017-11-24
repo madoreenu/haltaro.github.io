@@ -57,13 +57,37 @@ categories:
 * [YouTube，Local Motors Rally Fighter - Jay Leno's Garage](https://www.youtube.com/watch?v=OetiD8rL1KU)
 * [KAIROS marketing，良いバリュープロポジションを作る５つのコツ](https://blog.kairosmarketing.net/contentmarketing/value-proposition/)によると，Value Propositionとは，提供価値のこと．
   * [Local Motors](https://localmotors.com/company/)には，次のようなことが書かれている．*We are focused on low volume manufacturing of open-source vehicle designs, using multiple microfactories and a co-creation SaaS platform.*
-* Peer review．学生同士で互いに回答を採点しあう．自分のを提出した後に，三人分の回答を採点できる仕組み．まず思ったのは，もっときちんと回答すれば良かったということ．次に思ったのは，学生毎に特徴が出ていて，とても面白いということ．以下は，初見の英単語等のメモ．みんな英語上手だなあ．
-  * [intriguing](https://ejje.weblio.jp/content/intriguing)：好奇心をそそる．
+* Peer review．学生同士で互いに回答を採点しあう．自分のを提出した後に，三人分の回答を採点できる仕組み．まず思ったのは，もっときちんと回答すれば良かったということ．次に思ったのは，学生毎に特徴が出ていて，とても面白いということ．
+  * Local motorsは，どのタイプの共創マーケティングか？
+  * Rally Fighterは成功すると思うか？
+  * Local motorsのvalue propositionは何か？
+
 
 # Digital concept: Doppelgänger brands
 
+* Doppelgänger brand imageとは，（DBI）とは，特定のブランドを貶めるイメージやストーリーの一つであり，緩やかに組織されたコミュニティで拡散される．
+* DBIの動機は，当該ブランドが真実とは異なるイメージを流布しようとしている（ように思える）ことに対する怒り．
+* DBIの対象にされやすいのは，有名なブランド．
+* DBIが発生するのは，個人ブログやSNSや，[Adbusters](http://www.adbusters.org/)などのウェブサイト．
+* DBIの対策としては：
+  * 常にネット上の評判を監視し，DBIの予兆を見つけること．
+  * DBIが原因で当該ブランドから遠ざかっている顧客を特定すること．
+  * DBIによって形成されたイメージを上書きする，あるいは回避するような新たなイメージを構築すること．
+* Peer review．DBIの具体例と，その背景およびメッセージを述べよ．
+
 # Exersice: Ideas.Lego.com
+
+* [Ideas.Lego.com](https://ideas.lego.com/dashboard)：
+  * ユーザは新しい製品のアイデアを投稿可能．
+  * 別のユーザは，気に入ったアイデアに投票できる．10,000以上の支持を得たアイデアは，レゴが正式に製品として開発する．
 
 # Campus spotlight
 
+* John Roger先生のインタビュー．この人は，ウェアラブルな医療端末を研究している．
+
 # Module 1 review quiz
+
+# 知らなかった英単語
+
+* [intriguing](https://ejje.weblio.jp/content/intriguing)：好奇心をそそる．
+* [vaccinate](https://ejje.weblio.jp/content/vaccinate)：ワクチン接種をする．

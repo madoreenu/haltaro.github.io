@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Nov 2017 18:19:16 +0900</pubDate>
-    <lastBuildDate>Fri, 24 Nov 2017 18:19:16 +0900</lastBuildDate>
+    <pubDate>Fri, 24 Nov 2017 22:17:19 +0900</pubDate>
+    <lastBuildDate>Fri, 24 Nov 2017 22:17:19 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -406,20 +406,57 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
       &lt;li&gt;&lt;a href=&quot;https://localmotors.com/company/&quot;&gt;Local Motors&lt;/a&gt;には，次のようなことが書かれている．&lt;em&gt;We are focused on low volume manufacturing of open-source vehicle designs, using multiple microfactories and a co-creation SaaS platform.&lt;/em&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Peer review．学生同士で互いに回答を採点しあう．自分のを提出した後に，三人分の回答を採点できる仕組み．まず思ったのは，もっときちんと回答すれば良かったということ．次に思ったのは，学生毎に特徴が出ていて，とても面白いということ．以下は，初見の英単語等のメモ．みんな英語上手だなあ．
+  &lt;li&gt;Peer review．学生同士で互いに回答を採点しあう．自分のを提出した後に，三人分の回答を採点できる仕組み．まず思ったのは，もっときちんと回答すれば良かったということ．次に思ったのは，学生毎に特徴が出ていて，とても面白いということ．
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/intriguing&quot;&gt;intriguing&lt;/a&gt;：好奇心をそそる．&lt;/li&gt;
+      &lt;li&gt;Local motorsは，どのタイプの共創マーケティングか？&lt;/li&gt;
+      &lt;li&gt;Rally Fighterは成功すると思うか？&lt;/li&gt;
+      &lt;li&gt;Local motorsのvalue propositionは何か？&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;digital-concept-doppelgänger-brands&quot;&gt;Digital concept: Doppelgänger brands&lt;/h1&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;Doppelgänger brand imageとは，（DBI）とは，特定のブランドを貶めるイメージやストーリーの一つであり，緩やかに組織されたコミュニティで拡散される．&lt;/li&gt;
+  &lt;li&gt;DBIの動機は，当該ブランドが真実とは異なるイメージを流布しようとしている（ように思える）ことに対する怒り．&lt;/li&gt;
+  &lt;li&gt;DBIの対象にされやすいのは，有名なブランド．&lt;/li&gt;
+  &lt;li&gt;DBIが発生するのは，個人ブログやSNSや，&lt;a href=&quot;http://www.adbusters.org/&quot;&gt;Adbusters&lt;/a&gt;などのウェブサイト．&lt;/li&gt;
+  &lt;li&gt;DBIの対策としては：
+    &lt;ul&gt;
+      &lt;li&gt;常にネット上の評判を監視し，DBIの予兆を見つけること．&lt;/li&gt;
+      &lt;li&gt;DBIが原因で当該ブランドから遠ざかっている顧客を特定すること．&lt;/li&gt;
+      &lt;li&gt;DBIによって形成されたイメージを上書きする，あるいは回避するような新たなイメージを構築すること．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Peer review．DBIの具体例と，その背景およびメッセージを述べよ．&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;exersice-ideaslegocom&quot;&gt;Exersice: Ideas.Lego.com&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ideas.lego.com/dashboard&quot;&gt;Ideas.Lego.com&lt;/a&gt;：
+    &lt;ul&gt;
+      &lt;li&gt;ユーザは新しい製品のアイデアを投稿可能．&lt;/li&gt;
+      &lt;li&gt;別のユーザは，気に入ったアイデアに投票できる．10,000以上の支持を得たアイデアは，レゴが正式に製品として開発する．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;campus-spotlight&quot;&gt;Campus spotlight&lt;/h1&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;John Roger先生のインタビュー．この人は，ウェアラブルな医療端末を研究している．&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;module-1-review-quiz&quot;&gt;Module 1 review quiz&lt;/h1&gt;
+
+&lt;h1 id=&quot;知らなかった英単語&quot;&gt;知らなかった英単語&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/intriguing&quot;&gt;intriguing&lt;/a&gt;：好奇心をそそる．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/vaccinate&quot;&gt;vaccinate&lt;/a&gt;：ワクチン接種をする．&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Wed, 08 Nov 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/11/08/digital-marketing-1</link>
