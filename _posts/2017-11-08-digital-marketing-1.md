@@ -97,7 +97,7 @@ categories:
 * John Roger先生のインタビュー．この人は，ウェアラブルな医療端末を研究している．
 * ウェアラブル端末によって自分の健康情報が簡単に得られるようになったとしても，ほとんどの人はその情報を分析しようとは思わないだろう．ウェアラブル端末は，情報処理技術と組み合わせて初めて意味がある．
 
-# 知らなかった英単語
+# 英語メモ
 
 * [intriguing](https://ejje.weblio.jp/content/intriguing)：好奇心をそそる．
 * [vaccinate](https://ejje.weblio.jp/content/vaccinate)：ワクチン接種をする．

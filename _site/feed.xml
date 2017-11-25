@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Nov 2017 19:12:06 +0900</pubDate>
-    <lastBuildDate>Sat, 25 Nov 2017 19:12:06 +0900</lastBuildDate>
+    <pubDate>Sat, 25 Nov 2017 21:08:08 +0900</pubDate>
+    <lastBuildDate>Sat, 25 Nov 2017 21:08:08 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -26,7 +26,31 @@
 
 &lt;h1 id=&quot;module-2-overview&quot;&gt;Module 2 overview&lt;/h1&gt;
 
-&lt;p&gt;*&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;第二週では，新技術によって，消費者が市場でどのように能動的な役割を演じるようになったかを学ぶ．以下は事前に読んでおくべき記事．&lt;/li&gt;
+  &lt;li&gt;Edelman, D. C. (2010). &lt;a href=&quot;https://hbr.org/2010/12/branding-in-the-digital-age-youre-spending-your-money-in-all-the-wrong-places&quot;&gt;Branding in the digital age: You’re spending your money in all the wrong places&lt;/a&gt;. &lt;em&gt;Harvard Business Review&lt;/em&gt;, 88(12), 62–69.
+    &lt;ul&gt;
+      &lt;li&gt;消費者とブランドの接点のあり方は，大きく様変わりしてしまった．消費者が購入ブランドを段階的に狭めていくという仮定に基づいた，&lt;a href=&quot;https://next.rikunabi.com/journal/entry/20161101_S8&quot;&gt;AIDMA理論&lt;/a&gt;は，必ずしも適用できない場合がある．&lt;/li&gt;
+      &lt;li&gt;2009年にDavid Courtらは，Consumer decision journey (CDJ)モデルを提案した．本モデルでは，消費者は購入ブランドを単調に狭めずに，かつ各段階を反復的に移行する．本モデルでは，Consider，Evaluate，Buy，そしてEnjoy-advocate-bondの四つの段階を定義する．特に最後の段階は，従来のモデルでカバーできない接点である．実際，化粧品を購入した消費者のうち60%は，&lt;strong&gt;購入後に&lt;/strong&gt; ネットで肯定的な意見を検索する．ブランドと強固な繋がりを確立した消費者は，Enjoy-advocate-buyループに入る．&lt;/li&gt;
+      &lt;li&gt;CDJモデルを考慮したマーケティングを実施する上で，課題が二つある．
+        &lt;ul&gt;
+          &lt;li&gt;ターゲットとする段階と，その効果のミスマッチ．従来のプロモーションでは，70%から90%の予算を，ConsiderおよびBuy段階の消費者を対象に使用してきた．しかし実際には，Enjoy-advocate-bond段階の消費者こそ注力すべきターゲットである．&lt;/li&gt;
+          &lt;li&gt;予算のミスマッチ．従来のプロモーションでは，マスメディアでの大規模宣伝のための固定費がかさんでいる．マーケターは，自社メディアか，個人ブログ等に注力すべきである．&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;CDJモデルを考慮したマーケティングの実施には，次の三ステップがある．(1)消費者の決定経路（Decision journey）を理解する，(2)優先度の高い接点を定める，(3)予算を組む．&lt;/li&gt;
+      &lt;li&gt;消費者の考慮集合は非常に柔軟であることがわかった．また，Evaluate段階では，Google等の検索エンジンではなく，Amazon.com等のECサイトや他の価格比較サイトを利用することがわかった．一方で，10%以下の消費者しか，当該ブランドのホームページを閲覧しないことがわかった．またオンライン広告は，ディスカウントがある場合を除き，消費者のブランド選択に大きな影響を与えない可能性があることがわかった．&lt;/li&gt;
+      &lt;li&gt;今マーケティングに求められているのは，次の三つの役割だ．消費者との数多くの接点の総合管理，コンテンツの総合管理，そしてデータの総合管理．&lt;/li&gt;
+      &lt;li&gt;所感としては，やはりユーザのレビューを如何に効率よく収集し，分析するかが重要な気がする．SNSのスクレイピングについて，さわりだけでも勉強した方が良いかもしれない．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.coca-colacompany.com/history/advertising&quot;&gt;Coca-Cola advertising page&lt;/a&gt; [Websites]. (n.d.).&lt;/li&gt;
+  &lt;li&gt;Marrs, M. (2014, April 28). &lt;a href=&quot;http://www.wordstream.com/blog/ws/2014/04/28/user-generated-content&quot;&gt;UGC 101: Guide to user-generated content marketing&lt;/a&gt;. &lt;em&gt;WordStream&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Parkin, L. (2013, August 29). &lt;a href=&quot;https://www.huffingtonpost.com/lisa-parkin/how-to-use-user-generated-content_b_3818827.html&quot;&gt;What every business should know about user-generated content&lt;/a&gt;. &lt;em&gt;Huff Post Business&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Roesler, P. (2016, May 2). &lt;a href=&quot;https://www.inc.com/peter-roesler/is-your-brand-authentic-when-marketing-online.html&quot;&gt;Is Your Brand Authentic When Marketing Online?&lt;/a&gt; &lt;em&gt;Inc&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Pareto_principle&quot;&gt;Pareto principle&lt;/a&gt;. (n.d.) In &lt;em&gt;Wikipedia&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Williams, D. (2016, May 13). &lt;a href=&quot;https://www.huffingtonpost.com/dennis-williams-ii/the-history-of-augmented-_b_9955048.html?utm_medium=email&amp;amp;utm_source=other&amp;amp;utm_campaign=opencourse.FDKAdNsuEeSEcyIAC2mPOQ.announcements~opencourse.FDKAdNsuEeSEcyIAC2mPOQ.V3aMLQJDEeaFRBL8xcPRow&quot;&gt;The History of Augmented Reality (Infographic)&lt;/a&gt;. &lt;em&gt;The Huffington Post&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;basic-concept-promotion&quot;&gt;Basic concept: promotion&lt;/h1&gt;
 
@@ -40,7 +64,21 @@
 
 &lt;h1 id=&quot;campas-spotlight-alan-craig&quot;&gt;Campas spotlight: Alan Craig&lt;/h1&gt;
 
-&lt;h1 id=&quot;知らなかった英単語&quot;&gt;知らなかった英単語&lt;/h1&gt;
+&lt;h1 id=&quot;英語メモ&quot;&gt;英語メモ&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://eow.alc.co.jp/search?q=pare+down&quot;&gt;pare down&lt;/a&gt;：…を削減する．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/reel&quot;&gt;reel&lt;/a&gt;：糸巻きに巻く，操る．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/dissipate&quot;&gt;dissipate&lt;/a&gt;：散らす；散逸する．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/promiscuous&quot;&gt;promiscuous&lt;/a&gt;：乱雑な．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/myriad&quot;&gt;myriad&lt;/a&gt;：無数．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/assail&quot;&gt;assail&lt;/a&gt;：激しく攻撃する，猛攻する．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/advocate&quot;&gt;advocate&lt;/a&gt;：提唱する，主張する．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/invigorating&quot;&gt;invigorating&lt;/a&gt;：激励の，元気づける．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/malleable&quot;&gt;malleable&lt;/a&gt;：柔軟な，順応性のある．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/conspicuously&quot;&gt;conspicuously&lt;/a&gt;：著しく，目立って．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/deliberate&quot;&gt;deliberate&lt;/a&gt;：故意の，計画的な，慎重な，思慮のある．&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sat, 25 Nov 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/11/25/digital-marketing-2</link>
@@ -507,7 +545,7 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
   &lt;li&gt;ウェアラブル端末によって自分の健康情報が簡単に得られるようになったとしても，ほとんどの人はその情報を分析しようとは思わないだろう．ウェアラブル端末は，情報処理技術と組み合わせて初めて意味がある．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;知らなかった英単語&quot;&gt;知らなかった英単語&lt;/h1&gt;
+&lt;h1 id=&quot;英語メモ&quot;&gt;英語メモ&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/intriguing&quot;&gt;intriguing&lt;/a&gt;：好奇心をそそる．&lt;/li&gt;
