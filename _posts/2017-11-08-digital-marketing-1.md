@@ -1,20 +1,27 @@
 ---
 layout: post
 title: Courcera，Marketing in a digital world：1. Product
-updated: 2017-11-08 22:00
+updated: 2017-11-25 18:30
 categories:
  - marketing
 ---
 
-**随時更新**：[Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る[Digital marketing specialization](https://www.coursera.org/specializations/digital-marketing)の一つ．四週かけて，デジタル時代の[マーケティング・ミックス](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9)について学ぶ．第一週では，本講座の概要と，Productを取り扱う．学生同士で互いに回答を採点しあうPeer review方式で課題を提出する．ライティング力の無さが如実に顕れて辛いが，いろんな人の意見が読めて良い刺激になる．
+[Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る[Digital marketing specialization](https://www.coursera.org/specializations/digital-marketing)の一つ．四週かけて，デジタル時代の[マーケティング・ミックス](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9)について学ぶ．第一週では，Productを取り扱い，Co-creationやDoppelgänger brand imageについて学ぶ．
 
 ![courcera]({{site.baseurl}}/images/2017-11-18-courcera.png)
+
+以下は，本講座に関する記事一覧：
+* [Courcera，Marketing in a digital world：1. Product](https://haltaro.github.io/2017/11/08/digital-marketing-1)
+* [Courcera，Marketing in a digital world：2. Promotion](https://haltaro.github.io/2017/11/25/digital-marketing-2)
+* Courcera, Marketing in a digital world：3. Placement
+* Courcera, Marketing in a digital world：4. Price
 
 # About the course
 
 * インターネット，スマートフォン，3Dプリンターに代表される技術革新により，市場のパワーバランスは，企業側から消費者側に傾きつつある．
 * 本講座では，このような激動の時代におけるマーケティング手法を，実例や演習を交えて学習する．
 * 本講座では，教材として[Harvard Business Review](https://hbr.org/)や[MIT Sloan Management Review](https://subscribe.sloanreview.mit.edu/ecom/SMR/app/live/subscriptions?&org=SMR&publ=SM&key_code=OSABC76&type=S)を用いる．また，補助教材として[Understanding Digital Marketing: Marketing Strategies for Engaging the Digital Generation](https://books.google.co.jp/books?id=veuhAwAAQBAJ&source=gbs_book_other_versions&redir_esc=y)が手元にあれば望ましいが，必須ではない．
+* 課題は，互いに回答を評価しあうPeer review方式である．自分の表現力の無さが浮き彫りになって辛いが，他の学生の考えを知ることができて，とても良い．
 
 # Module 1 overview
 
@@ -29,7 +36,7 @@ categories:
   * Complementorは，Apple storeのように，複数のタスクを実行可能な形態である．Complementorを利用する際は，まず，プラットフォームのアクセス方法を整備する必要がある．
   * Labor marketは，従来より短期の雇用契約を仲介する形態である．例えば，[Elance](https://www.elance.com/php/landing/main/login.php?redirect=)，[oDesk](https://www.upwork.com/)，Guru，[Clickworker](https://www.clickworker.com/)，[ShortTask](http://www.shorttask.com/)，[Samasource](https://www.samasource.org/)，[Freelancer](https://www.freelancer.com/?utm_expid=294858-553.v56tHEK5QEmWFNtoUUBcgw.0)，CloudCrowdなどがある．Labor marketの成功の鍵は，プラットフォームの整備である．Labor marketは，タスクや解決策や必要なスキルが明確なとき，有効な形態である．Labor marketは，長期雇用契約に適さないような，知的な反復作業のアウトソーシングに適している．
 * Giesler, M. (2012). [How doppelgänger brand images influence the market creation process: Longitudinal insights from the rise of Botox cosmetic.](https://archive.ama.org/archive/AboutAMA/Pages/AMA%20Publications/AMA%20Journals/Journal%20of%20Marketing/TOCs/SUM_2012.6/doppelganger-brand-images.aspx) *Journal of Marketing*, 76(6), 55–68.
-  * Doppelgänger brand image（DBI）とは，特定のブランドを貶めるイメージやストーリーの一つであり，緩やかに組織されたコミュニティで拡散される．
+  * Doppelgänger brDoppelgänger brandsand image（DBI）とは，特定のブランドを貶めるイメージやストーリーの一つであり，緩やかに組織されたコミュニティで拡散される．
   * 人気のあるブランドだけでなく，新たな機械，技術，薬等に対してもDBIが形成されることがある．
   * DBIに打ち勝つためには，4つのステップが有効である．Problematization，Interessement，Enrollment，そしてMobilization．
 
@@ -79,15 +86,19 @@ categories:
 
 * [Ideas.Lego.com](https://ideas.lego.com/dashboard)：
   * ユーザは新しい製品のアイデアを投稿可能．
-  * 別のユーザは，気に入ったアイデアに投票できる．10,000以上の支持を得たアイデアは，レゴが正式に製品として開発する．
+  * 別のユーザは，気に入ったアイデアを支持できる．10,000以上の支持を得たアイデアは，レゴが正式に製品として開発する．一年間に約10のアイデアが製品化されている．
+* Peer review．
+  * 上記のウェブサイトに訪問し，レゴに対する印象がどのように変わったか述べなさい．
+  * 上記の取り組みでは，どのタイプの共創手法が採用されているか．
+  * 上記の取り組みを通して，レゴは何を達成しようとしているか．
 
 # Campus spotlight
 
 * John Roger先生のインタビュー．この人は，ウェアラブルな医療端末を研究している．
-
-# Module 1 review quiz
+* ウェアラブル端末によって自分の健康情報が簡単に得られるようになったとしても，ほとんどの人はその情報を分析しようとは思わないだろう．ウェアラブル端末は，情報処理技術と組み合わせて初めて意味がある．
 
 # 知らなかった英単語
 
 * [intriguing](https://ejje.weblio.jp/content/intriguing)：好奇心をそそる．
 * [vaccinate](https://ejje.weblio.jp/content/vaccinate)：ワクチン接種をする．
+* [unleash](https://ejje.weblio.jp/content/unleash)：（…を）開放する．
