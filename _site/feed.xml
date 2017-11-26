@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Nov 2017 21:08:08 +0900</pubDate>
-    <lastBuildDate>Sat, 25 Nov 2017 21:08:08 +0900</lastBuildDate>
+    <pubDate>Sun, 26 Nov 2017 11:57:39 +0900</pubDate>
+    <lastBuildDate>Sun, 26 Nov 2017 11:57:39 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -44,12 +44,43 @@
       &lt;li&gt;所感としては，やはりユーザのレビューを如何に効率よく収集し，分析するかが重要な気がする．SNSのスクレイピングについて，さわりだけでも勉強した方が良いかもしれない．&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.coca-colacompany.com/history/advertising&quot;&gt;Coca-Cola advertising page&lt;/a&gt; [Websites]. (n.d.).&lt;/li&gt;
-  &lt;li&gt;Marrs, M. (2014, April 28). &lt;a href=&quot;http://www.wordstream.com/blog/ws/2014/04/28/user-generated-content&quot;&gt;UGC 101: Guide to user-generated content marketing&lt;/a&gt;. &lt;em&gt;WordStream&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;Parkin, L. (2013, August 29). &lt;a href=&quot;https://www.huffingtonpost.com/lisa-parkin/how-to-use-user-generated-content_b_3818827.html&quot;&gt;What every business should know about user-generated content&lt;/a&gt;. &lt;em&gt;Huff Post Business&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;Roesler, P. (2016, May 2). &lt;a href=&quot;https://www.inc.com/peter-roesler/is-your-brand-authentic-when-marketing-online.html&quot;&gt;Is Your Brand Authentic When Marketing Online?&lt;/a&gt; &lt;em&gt;Inc&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Pareto_principle&quot;&gt;Pareto principle&lt;/a&gt;. (n.d.) In &lt;em&gt;Wikipedia&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;Williams, D. (2016, May 13). &lt;a href=&quot;https://www.huffingtonpost.com/dennis-williams-ii/the-history-of-augmented-_b_9955048.html?utm_medium=email&amp;amp;utm_source=other&amp;amp;utm_campaign=opencourse.FDKAdNsuEeSEcyIAC2mPOQ.announcements~opencourse.FDKAdNsuEeSEcyIAC2mPOQ.V3aMLQJDEeaFRBL8xcPRow&quot;&gt;The History of Augmented Reality (Infographic)&lt;/a&gt;. &lt;em&gt;The Huffington Post&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.coca-colacompany.com/history/advertising&quot;&gt;Coca-Cola advertising page&lt;/a&gt; [Websites]. (n.d.).
+    &lt;ul&gt;
+      &lt;li&gt;コカ・コーラの広告の歴史がまとめられている．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Marrs, M. (2014, April 28). &lt;a href=&quot;http://www.wordstream.com/blog/ws/2014/04/28/user-generated-content&quot;&gt;UGC 101: Guide to user-generated content marketing&lt;/a&gt;. &lt;em&gt;WordStream&lt;/em&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;User generated content（UGC）とは，ユーザによって作成されたウェブ上のあらゆるコンテンツを指す．例えば，ブログのコメント，facebookのコメントや記事，レビュー，ビデオ作品，ブログ記事，Forum，Podcastなど．&lt;/li&gt;
+      &lt;li&gt;UGCの中でも人気なのは，企業とユーザのコラボレーション作品．例えば，Jib Jabの&lt;a href=&quot;http://www.elfyourself.com/&quot;&gt;Elf Yourself&lt;/a&gt;キャンペーンなど．&lt;/li&gt;
+      &lt;li&gt;多くの企業は，SNSでファンアートを公開することで，UGCの効果を高めている．例えば，ドミノ・ピザ，M&amp;amp;Ms，スターバックス，GoProなど．&lt;/li&gt;
+      &lt;li&gt;UGCを探せるのは，&lt;a href=&quot;https://www.deviantart.com/&quot;&gt;Devianart&lt;/a&gt;，&lt;a href=&quot;https://www.flickr.com/&quot;&gt;Flickr&lt;/a&gt;，&lt;a href=&quot;https://www.reddit.com/&quot;&gt;Raddit&lt;/a&gt;，Facebook，Twitter，YouTube，&lt;a href=&quot;https://www.pinterest.jp/&quot;&gt;Pinterest&lt;/a&gt;，Instagram，Amazonのレビューなど．&lt;/li&gt;
+      &lt;li&gt;あなたのブランドに関連したUGCが見つからない場合は，業界に関連するものを探すと良い．&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Crowdtap&lt;/a&gt;の調査によると，&lt;a href=&quot;https://en.wikipedia.org/wiki/Millennials&quot;&gt;Millennial（2000年前後に生まれた世代）&lt;/a&gt;は，UGCを広告より重視することがわかった．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Parkin, L. (2013, August 29). &lt;a href=&quot;https://www.huffingtonpost.com/lisa-parkin/how-to-use-user-generated-content_b_3818827.html&quot;&gt;What every business should know about user-generated content&lt;/a&gt;. &lt;em&gt;Huff Post Business&lt;/em&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;UGCによって得られるのは，次の二つ．(1)さらなるファン参加を加速する無料のコンテンツ，(2)ファンの心理や行動に関する，非常に価値のある知見．&lt;/li&gt;
+      &lt;li&gt;より良いUGC創作を喚起するために，次の四点に気をつけるべき．(1)UGCを募集する理由を明確化する．(2)適切なインセンティブを設定する．(3)ハッシュタグやコミュニティなどを利用して，効率的に作品を管理する．(4)実際に使う．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Roesler, P. (2016, May 2). &lt;a href=&quot;https://www.inc.com/peter-roesler/is-your-brand-authentic-when-marketing-online.html&quot;&gt;Is Your Brand Authentic When Marketing Online?&lt;/a&gt; &lt;em&gt;Inc&lt;/em&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;信憑性こそ，デジタルマーケティングで重要な要素の一つであることが，&lt;a href=&quot;http://authentic100.com/&quot;&gt;Chon &amp;amp; Wolfeの調査&lt;/a&gt;で明らかになった．&lt;/li&gt;
+      &lt;li&gt;信憑性は，高品質の製品と，顧客とのオープンな接触によって生成される．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Pareto_principle&quot;&gt;Pareto principle&lt;/a&gt;. (n.d.) In &lt;em&gt;Wikipedia&lt;/em&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;いわゆる80:20の法則．経済において，全体の数値の大部分は，全体を構成するうちの一部の要素が生み出しているという理論．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Williams, D. (2016, May 13). &lt;a href=&quot;https://www.huffingtonpost.com/dennis-williams-ii/the-history-of-augmented-_b_9955048.html?utm_medium=email&amp;amp;utm_source=other&amp;amp;utm_campaign=opencourse.FDKAdNsuEeSEcyIAC2mPOQ.announcements~opencourse.FDKAdNsuEeSEcyIAC2mPOQ.V3aMLQJDEeaFRBL8xcPRow&quot;&gt;The History of Augmented Reality (Infographic)&lt;/a&gt;. &lt;em&gt;The Huffington Post&lt;/em&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;Augmented reality（AR）およびVirtual reality（VR）の歴史．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;basic-concept-promotion&quot;&gt;Basic concept: promotion&lt;/h1&gt;
@@ -78,6 +109,12 @@
   &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/malleable&quot;&gt;malleable&lt;/a&gt;：柔軟な，順応性のある．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/conspicuously&quot;&gt;conspicuously&lt;/a&gt;：著しく，目立って．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/deliberate&quot;&gt;deliberate&lt;/a&gt;：故意の，計画的な，慎重な，思慮のある．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/eloquent&quot;&gt;eloquent&lt;/a&gt;：雄弁な，人を動かす力のある．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/testimonial&quot;&gt;testimonial&lt;/a&gt;：証明書，感謝状，功労表彰の贈り物．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/authenticity&quot;&gt;authenticity&lt;/a&gt;：信頼性，確実性，信憑性．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/realm&quot;&gt;realm&lt;/a&gt;：領域，範囲，部門．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/cynicism&quot;&gt;cynicism&lt;/a&gt;：冷笑，皮肉．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/irrevocably&quot;&gt;irrevocably&lt;/a&gt;：取り消しできないやり方で．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 25 Nov 2017 00:00:00 +0900</pubDate>
@@ -479,7 +516,7 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
 &lt;h1 id=&quot;case-study-local-motors&quot;&gt;Case study: local motors&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://localmotors.com/company/&quot;&gt;Local Motors&lt;/a&gt;という会社の共創マーケティングについて，意見を述べる課題．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://localmotors.com/company/&quot;&gt;Local Motors&lt;/a&gt;のRally Fighterで採用された共創手法について，意見を述べる課題．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://edition.cnn.com/2013/03/12/tech/web/crowdsourced-car-sxsw/&quot;&gt;CNN，How the Internet built a $100,000 race car&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;http://rallyfighter.com/&quot;&gt;Rally Fighter&lt;/a&gt;は，おそらく世界で初めて，Crowdsourcingで設計された車である．Rally Fighterを製造したのは，アリゾナ州のLocal Motors社である．&lt;/li&gt;
@@ -496,10 +533,18 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
   &lt;/li&gt;
   &lt;li&gt;Peer review．学生同士で互いに回答を採点しあう．自分のを提出した後に，三人分の回答を採点できる仕組み．まず思ったのは，もっときちんと回答すれば良かったということ．次に思ったのは，学生毎に特徴が出ていて，とても面白いということ．
     &lt;ul&gt;
-      &lt;li&gt;Local motorsは，どのタイプの共創マーケティングか？&lt;/li&gt;
+      &lt;li&gt;Local motorsは，どのタイプの共創手法か？&lt;/li&gt;
       &lt;li&gt;Rally Fighterは成功すると思うか？&lt;/li&gt;
       &lt;li&gt;Local motorsのvalue propositionは何か？&lt;/li&gt;
     &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;本ケーススタディを通じた学びは以下の四つ：
+    &lt;ol&gt;
+      &lt;li&gt;従来の製品開発の慣習は，必ずしも最良ではない．&lt;/li&gt;
+      &lt;li&gt;どんなものでも共創のチャンスはある．&lt;/li&gt;
+      &lt;li&gt;共創の協力者（Contributor）は，必ずしも顧客ではない．&lt;/li&gt;
+      &lt;li&gt;顧客ではない人も，顧客と同様に価値がある．&lt;/li&gt;
+    &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 

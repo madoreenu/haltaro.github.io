@@ -30,12 +30,24 @@ categories:
   * 今マーケティングに求められているのは，次の三つの役割だ．消費者との数多くの接点の総合管理，コンテンツの総合管理，そしてデータの総合管理．
   * 所感としては，やはりユーザのレビューを如何に効率よく収集し，分析するかが重要な気がする．SNSのスクレイピングについて，さわりだけでも勉強した方が良いかもしれない．
 * [Coca-Cola advertising page](http://www.coca-colacompany.com/history/advertising) [Websites]. (n.d.).
+  * コカ・コーラの広告の歴史がまとめられている．
 * Marrs, M. (2014, April 28). [UGC 101: Guide to user-generated content marketing](http://www.wordstream.com/blog/ws/2014/04/28/user-generated-content). *WordStream*.
+  * User generated content（UGC）とは，ユーザによって作成されたウェブ上のあらゆるコンテンツを指す．例えば，ブログのコメント，facebookのコメントや記事，レビュー，ビデオ作品，ブログ記事，Forum，Podcastなど．
+  * UGCの中でも人気なのは，企業とユーザのコラボレーション作品．例えば，Jib Jabの[Elf Yourself](http://www.elfyourself.com/)キャンペーンなど．
+  * 多くの企業は，SNSでファンアートを公開することで，UGCの効果を高めている．例えば，ドミノ・ピザ，M&Ms，スターバックス，GoProなど．
+  * UGCを探せるのは，[Devianart](https://www.deviantart.com/)，[Flickr](https://www.flickr.com/)，[Raddit](https://www.reddit.com/)，Facebook，Twitter，YouTube，[Pinterest](https://www.pinterest.jp/)，Instagram，Amazonのレビューなど．
+  * あなたのブランドに関連したUGCが見つからない場合は，業界に関連するものを探すと良い．
+  * [Crowdtap]()の調査によると，[Millennial（2000年前後に生まれた世代）](https://en.wikipedia.org/wiki/Millennials)は，UGCを広告より重視することがわかった．
 * Parkin, L. (2013, August 29). [What every business should know about user-generated content](https://www.huffingtonpost.com/lisa-parkin/how-to-use-user-generated-content_b_3818827.html). *Huff Post Business*.
+  * UGCによって得られるのは，次の二つ．(1)さらなるファン参加を加速する無料のコンテンツ，(2)ファンの心理や行動に関する，非常に価値のある知見．
+  * より良いUGC創作を喚起するために，次の四点に気をつけるべき．(1)UGCを募集する理由を明確化する．(2)適切なインセンティブを設定する．(3)ハッシュタグやコミュニティなどを利用して，効率的に作品を管理する．(4)実際に使う．
 * Roesler, P. (2016, May 2). [Is Your Brand Authentic When Marketing Online?](https://www.inc.com/peter-roesler/is-your-brand-authentic-when-marketing-online.html) *Inc*.
+  * 信憑性こそ，デジタルマーケティングで重要な要素の一つであることが，[Chon & Wolfeの調査](http://authentic100.com/)で明らかになった．
+  * 信憑性は，高品質の製品と，顧客とのオープンな接触によって生成される．
 * [Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle). (n.d.) In *Wikipedia*.
+  * いわゆる80:20の法則．経済において，全体の数値の大部分は，全体を構成するうちの一部の要素が生み出しているという理論．
 * Williams, D. (2016, May 13). [The History of Augmented Reality (Infographic)](https://www.huffingtonpost.com/dennis-williams-ii/the-history-of-augmented-_b_9955048.html?utm_medium=email&utm_source=other&utm_campaign=opencourse.FDKAdNsuEeSEcyIAC2mPOQ.announcements~opencourse.FDKAdNsuEeSEcyIAC2mPOQ.V3aMLQJDEeaFRBL8xcPRow). *The Huffington Post*.
-
+  * Augmented reality（AR）およびVirtual reality（VR）の歴史．
 
 # Basic concept: promotion
 
@@ -62,3 +74,9 @@ categories:
 * [malleable](https://ejje.weblio.jp/content/malleable)：柔軟な，順応性のある．
 * [conspicuously](https://ejje.weblio.jp/content/conspicuously)：著しく，目立って．
 * [deliberate](https://ejje.weblio.jp/content/deliberate)：故意の，計画的な，慎重な，思慮のある．
+* [eloquent](https://ejje.weblio.jp/content/eloquent)：雄弁な，人を動かす力のある．
+* [testimonial](https://ejje.weblio.jp/content/testimonial)：証明書，感謝状，功労表彰の贈り物．
+* [authenticity](https://ejje.weblio.jp/content/authenticity)：信頼性，確実性，信憑性．
+* [realm](https://ejje.weblio.jp/content/realm)：領域，範囲，部門．
+* [cynicism](https://ejje.weblio.jp/content/cynicism)：冷笑，皮肉．
+* [irrevocably](https://ejje.weblio.jp/content/irrevocably)：取り消しできないやり方で．

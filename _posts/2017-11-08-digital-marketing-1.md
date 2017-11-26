@@ -55,7 +55,7 @@ categories:
 
 # Case study: local motors
 
-* [Local Motors](https://localmotors.com/company/)という会社の共創マーケティングについて，意見を述べる課題．
+* [Local Motors](https://localmotors.com/company/)のRally Fighterで採用された共創手法について，意見を述べる課題．
 * [CNN，How the Internet built a $100,000 race car](http://edition.cnn.com/2013/03/12/tech/web/crowdsourced-car-sxsw/)
   * [Rally Fighter](http://rallyfighter.com/)は，おそらく世界で初めて，Crowdsourcingで設計された車である．Rally Fighterを製造したのは，アリゾナ州のLocal Motors社である．
   * ユーザはインターネットを介して，車両のデザインおよび投票に参加した．
@@ -65,10 +65,14 @@ categories:
 * [KAIROS marketing，良いバリュープロポジションを作る５つのコツ](https://blog.kairosmarketing.net/contentmarketing/value-proposition/)によると，Value Propositionとは，提供価値のこと．
   * [Local Motors](https://localmotors.com/company/)には，次のようなことが書かれている．*We are focused on low volume manufacturing of open-source vehicle designs, using multiple microfactories and a co-creation SaaS platform.*
 * Peer review．学生同士で互いに回答を採点しあう．自分のを提出した後に，三人分の回答を採点できる仕組み．まず思ったのは，もっときちんと回答すれば良かったということ．次に思ったのは，学生毎に特徴が出ていて，とても面白いということ．
-  * Local motorsは，どのタイプの共創マーケティングか？
+  * Local motorsは，どのタイプの共創手法か？
   * Rally Fighterは成功すると思うか？
   * Local motorsのvalue propositionは何か？
-
+* 本ケーススタディを通じた学びは以下の四つ：
+  1. 従来の製品開発の慣習は，必ずしも最良ではない．
+  2. どんなものでも共創のチャンスはある．
+  3. 共創の協力者（Contributor）は，必ずしも顧客ではない．
+  4. 顧客ではない人も，顧客と同様に価値がある．
 
 # Digital concept: Doppelgänger brands
 
