@@ -6,9 +6,80 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Nov 2017 11:57:39 +0900</pubDate>
-    <lastBuildDate>Sun, 26 Nov 2017 11:57:39 +0900</lastBuildDate>
+    <pubDate>Tue, 28 Nov 2017 22:14:51 +0900</pubDate>
+    <lastBuildDate>Tue, 28 Nov 2017 22:14:51 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>BizMate体験レッスン</title>
+        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，ビジネス英会話に強みを持つ&lt;a href=&quot;https://www.bizmates.jp/&quot;&gt;BizMate&lt;/a&gt;の体験レッスン．同じくフィリピン系の&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の二倍の価格帯だが，講師と教材の質が高く，その価値はあると感じた．&lt;/p&gt;
+
+&lt;h1 id=&quot;bizmateとは&quot;&gt;BizMateとは&lt;/h1&gt;
+
+&lt;p&gt;ビジネスユーザに特化したフィリピン系のオンライン英会話．2017年11月28日時点の&lt;a href=&quot;https://www.bizmates.jp/price/&quot;&gt;料金プラン&lt;/a&gt;は以下．&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;プラン&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;月額料金&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;毎日25分プラン&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12,000円&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;毎日50分プラン&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;18,000円&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;なお，2017年12月18日まで入会初月半額キャンペーン中．&lt;/p&gt;
+
+&lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
+
+&lt;p&gt;今回はレベルチェックだったため，特に予習はしなかった．&lt;/p&gt;
+
+&lt;h1 id=&quot;講義内容&quot;&gt;講義内容&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;自己紹介．&lt;/li&gt;
+  &lt;li&gt;レベルチェック．&lt;/li&gt;
+  &lt;li&gt;お試しレッスン．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;先生からのフィードバック&quot;&gt;先生からのフィードバック&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;リスニングに関しては問題なし．&lt;/li&gt;
+  &lt;li&gt;スピーキングに関しては，発音と文法に注意する必要がある．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;ビジネス英会話に特化しているだけあって，ビジネス系のコンテンツが非常に充実している．同じくフィリピン系の&lt;a href=&quot;https://www.rarejob.com/&quot;&gt;Reajob&lt;/a&gt;の二倍の価格帯だが，ビジネスユーザにとっては使い勝手がよいかもしれない&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．指導はとても丁寧で，好感が持てた．&lt;/p&gt;
+
+&lt;p&gt;2017年12月18日まで，初月半額キャンペーン中なので，申し込むなら今かもしれない．&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;うちの会社も法人契約したら良いのに…．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 28 Nov 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/11/28/bizmate</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/28/bizmate</guid>
+        
+        
+        <category>english</category>
+        
+      </item>
     
       <item>
         <title>Courcera，Marketing in a digital world：2. Promotion</title>
@@ -127,8 +198,8 @@
       </item>
     
       <item>
-        <title>SkimaTalk，フリートーク体験メモ</title>
-        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，友人から紹介された&lt;a href=&quot;https://www.skimatalk.com/jp&quot;&gt;SkimaTalk&lt;/a&gt;のフリートーク．&lt;/p&gt;
+        <title>SkimaTalk体験レッスン</title>
+        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，友人から紹介された&lt;a href=&quot;https://www.skimatalk.com/jp&quot;&gt;SkimaTalk&lt;/a&gt;．&lt;/p&gt;
 
 &lt;h1 id=&quot;skimatalkとは&quot;&gt;SkimaTalkとは&lt;/h1&gt;
 
@@ -168,7 +239,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;1授業の平均料金は9コイン程度なので，月9,300円で9回弱受講できる計算．フィリピン系オンライン英会話の大手&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;．&lt;a href=&quot;https://www.rarejob.com/payment/&quot;&gt;月8回コース&lt;/a&gt;は4,200円なので，約2倍の価格である．&lt;/p&gt;
+&lt;p&gt;1授業の平均料金は9コイン程度なので，月9,300円で9回弱受講できる計算．フィリピン系オンライン英会話の大手&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の体験レッスン．&lt;a href=&quot;https://www.rarejob.com/payment/&quot;&gt;月8回コース&lt;/a&gt;は4,200円なので，約2倍の価格である．&lt;/p&gt;
 
 &lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
 
@@ -280,8 +351,8 @@
       </item>
     
       <item>
-        <title>Reajob，Article discussion体験メモ</title>
-        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，出国前まで続けていた&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の&lt;a href=&quot;https://www.rarejob.com/dna&quot;&gt;Article discussion&lt;/a&gt;．以下はその受講メモ．&lt;/p&gt;
+        <title>Reajob体験レッスン：Article discussion</title>
+        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，出国前まで続けていた&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の&lt;a href=&quot;https://www.rarejob.com/dna&quot;&gt;Article discussion&lt;/a&gt;．&lt;/p&gt;
 
 &lt;h1 id=&quot;reajobとは&quot;&gt;Reajobとは&lt;/h1&gt;
 
@@ -789,173 +860,6 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
         
         
         <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>Windows7でJekyll+GitHub Pages</title>
-        <description>&lt;p&gt;船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）に&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;+&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;環境を構築した．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-10-15-env.png&quot; alt=&quot;env&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Windows 7 Professional, Serice Pack 1, 64 bit&lt;/li&gt;
-  &lt;li&gt;PowerShell 5.0.10586.117&lt;/li&gt;
-  &lt;li&gt;ATOM 1.21.1&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;：WindowsにおけるGit環境構築．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-for-windows.github.io/&quot;&gt;Git for Windows&lt;/a&gt;：Windows用Git環境．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;posh-git&lt;/a&gt;：PowerShellでgitコマンド補完を可能にするツール．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaoriya.net/blog/2016/02/07/&quot;&gt;KaoriYa，Windowsでjekyll 3.0（github-pages）を使う&lt;/a&gt;：WindowsにおけるJekyll環境構築方法．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;RubyInstaller&lt;/a&gt;：RubyおよびDevKitのインストール．
-&lt;a href=&quot;https://qiita.com/windhorn/items/0f58866291f8273f18fb&quot;&gt;Qiita，bundle execとかdb:createとかが何をしているのか&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec&lt;/code&gt;の使い方について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://atom.io/&quot;&gt;ATOM&lt;/a&gt;：GitHubが開発したテキストエディタ．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://atom.io/packages/line-ending-converter&quot;&gt;ATOM，Line ending converter&lt;/a&gt;：ATOMの改行コードを一括変換するパッケージ．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf&quot;&gt;Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）&lt;/a&gt;：ATOMのデフォルト改行コード設定方法．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
-
-&lt;h2 id=&quot;1-gitのインストール&quot;&gt;1. Gitのインストール&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;を参考にした．&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-for-windows.github.io/&quot;&gt;Git for Windows&lt;/a&gt;をダウンロード．&lt;/li&gt;
-  &lt;li&gt;インストーラを起動し，基本的にデフォルト設定を選択．ただし，改行設定（&lt;code class=&quot;highlighter-rouge&quot;&gt;Configuring the line ending conversions&lt;/code&gt;）では，上記サイトのおすすめに従い，&lt;code class=&quot;highlighter-rouge&quot;&gt;Checkout as-is, commit as-is&lt;/code&gt;を選択．&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;2-gitのグローバル設定&quot;&gt;2. Gitのグローバル設定&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Git bash&lt;/code&gt;を起動し，上記サイトを参考にグローバル設定した．&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;haltaro&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;***@gmail.com&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; core.quotepath &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;3-gitのsshキー作成&quot;&gt;3. GitのSSHキー作成&lt;/h2&gt;
-
-&lt;p&gt;引き続き上記サイトを参考に，SSHキーを作成した．&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;スタートメニューから&lt;code class=&quot;highlighter-rouge&quot;&gt;Git GUI&lt;/code&gt;を起動．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Help &amp;gt; Show SSH Key&lt;/code&gt;を選択．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Generate Key&lt;/code&gt;をクリックし，適当にpassphraseを入力．&lt;/li&gt;
-  &lt;li&gt;公開鍵をコピーして，&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;のアカウントに登録．&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;4-posh-gitのインストール&quot;&gt;4. posh-gitのインストール&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;posh-git&lt;/a&gt;を使うと，PowerShellでgitコマンド補完してくれて便利なので，インストールした． &lt;a href=&quot;http://opcdiary.net/?page_id=27065&quot;&gt;OPC Diary，私家版Git For Windowsのインストール手順&lt;/a&gt;のPsGetを使った方法だと上手くいかなかったので，&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;公式GitHub&lt;/a&gt;から直接クローンした．以下はその詳細である．&lt;/p&gt;
-
-&lt;p&gt;まずは，PowerShellで以下のコマンドを打ち，&lt;a href=&quot;https://github.com/dahlbyk/posh-git&quot;&gt;公式GitHub&lt;/a&gt;からクローンする．ディレクトリはどこでも良い．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; git clone git@github.com:dahlbyk/posh-git.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;PowerShellのセキュリティ設定を変更した．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;上記ディレクトリに移動して，&lt;code class=&quot;highlighter-rouge&quot;&gt;install.ps1&lt;/code&gt;を実行した．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; .\install.ps1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;5-rubyのインストール&quot;&gt;5. Rubyのインストール&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;RubyInstaller&lt;/a&gt;から2017年10月15日現在の最新版である&lt;code class=&quot;highlighter-rouge&quot;&gt;Ruby 2.4.2-2(x64)&lt;/code&gt;をダウンロードした．&lt;/p&gt;
-
-&lt;h2 id=&quot;6-devkitのインストール&quot;&gt;6. DevKitのインストール&lt;/h2&gt;
-
-&lt;p&gt;Rubyのパッケージ管理システム&lt;code class=&quot;highlighter-rouge&quot;&gt;RubyGems&lt;/code&gt;のインストールに必要な&lt;code class=&quot;highlighter-rouge&quot;&gt;DevKit&lt;/code&gt;をインストールした．以下はその詳細である．&lt;/p&gt;
-
-&lt;p&gt;まず，&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;RubyInstaller&lt;/a&gt;から，&lt;code class=&quot;highlighter-rouge&quot;&gt;DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exee&lt;/code&gt;をダウンロードした．以下では&lt;code class=&quot;highlighter-rouge&quot;&gt;C:\DevKit&lt;/code&gt;に解凍したと想定する．&lt;/p&gt;
-
-&lt;p&gt;次に，PowerShellから以下のコマンドを実行した．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; cd C:\DevKit
-&amp;gt; ruby dk.rb init
-&amp;gt; ruby dk.rb install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;7-関連パッケージのインストール&quot;&gt;7. 関連パッケージのインストール&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;RubyGems&lt;/code&gt;を使い，&lt;code class=&quot;highlighter-rouge&quot;&gt;github-pages&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;wdm&lt;/code&gt;をインストールした．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; gem install github-pages wdm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; jekyll serve&lt;/code&gt;したらと，次のようなエラーが出た．&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;WARN: Unresolved specs during Gem::Specification.reset:
-      rouge (&amp;lt; 3, &amp;gt;= 1.7)
-WARN: Clearing out unresolved specs.
-Please report a bug if this causes problems.
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:315:in `check_for_activated_spec!': Y
-ou have already activated public_suffix 3.0.0, but your Gemfile requires public_suffix 2.0.5. Prepending `bundle exec` t
-o your command may solve this. (Gem::LoadError)
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:33:in `block in setup'
-        from C:/Ruby24-x64/lib/ruby/2.4.0/forwardable.rb:229:in `each'
-        from C:/Ruby24-x64/lib/ruby/2.4.0/forwardable.rb:229:in `each'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:28:in `map'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler/runtime.rb:28:in `setup'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.0.pre.3/lib/bundler.rb:107:in `setup'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/lib/jekyll/plugin_manager.rb:50:in `require_from_bundle
-r'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/exe/jekyll:11:in `&amp;lt;top (required)&amp;gt;'
-        from C:/Ruby24-x64/bin/jekyll:23:in `load'
-        from C:/Ruby24-x64/bin/jekyll:23:in `&amp;lt;main&amp;gt;'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;指示通り，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; bundle exec jekyll serve&lt;/code&gt;とコマンドを打ったらうまく行った．&lt;a href=&quot;https://qiita.com/windhorn/items/0f58866291f8273f18fb&quot;&gt;Qiita，bundle execとかdb:createとかが何をしているのか&lt;/a&gt;によると，&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec&lt;/code&gt;を頭につけると，当該プロジェクトの&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;で指定された環境でコマンドを実行するらしい．&lt;/p&gt;
-
-&lt;h2 id=&quot;8-atomのインストール&quot;&gt;8. ATOMのインストール&lt;/h2&gt;
-&lt;p&gt;マークダウンエディタが欲しかったので，&lt;a href=&quot;https://atom.io/&quot;&gt;ATOM&lt;/a&gt;をインストールした．&lt;a href=&quot;https://atom.io/&quot;&gt;公式ページ&lt;/a&gt;からインストーラをダウンロードすれば簡単にできた．しかし…&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-10-15-outline.png&quot; alt=&quot;outline&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;サマリ部分に全文表示されてしまう問題が発生した．これはUnixの改行コード（&lt;code class=&quot;highlighter-rouge&quot;&gt;LF&lt;/code&gt;）とWindowsの改行コード（&lt;code class=&quot;highlighter-rouge&quot;&gt;CRLF&lt;/code&gt;）が混在していることが原因らしい．&lt;/p&gt;
-
-&lt;h2 id=&quot;9-line-ending-converterで改行コードを一括変換&quot;&gt;9. line-ending-converterで改行コードを一括変換&lt;/h2&gt;
-
-&lt;p&gt;ATOMの設定画面から，&lt;code class=&quot;highlighter-rouge&quot;&gt;line-ending-converter&lt;/code&gt;をインストール．&lt;code class=&quot;highlighter-rouge&quot;&gt;Packages&lt;/code&gt;&amp;gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Convert Line Endings To&lt;/code&gt;で，&lt;code class=&quot;highlighter-rouge&quot;&gt;Unix Format&lt;/code&gt;を選択すると，現在選択中のファイルの改行コードが一括変換される．&lt;/p&gt;
-
-&lt;p&gt;詳細は&lt;a href=&quot;https://atom.io/packages/line-ending-converter&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
-
-&lt;h2 id=&quot;10-line-ending-selectorで改行コード設定&quot;&gt;10. line-ending-selectorで改行コード設定&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf&quot;&gt;Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）&lt;/a&gt;を参考に，デフォルト設定を変更．&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;ATOMの設定画面から&lt;code class=&quot;highlighter-rouge&quot;&gt;line-ending-selector&lt;/code&gt;を検索．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;line-ending-selector&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;Setting&lt;/code&gt;ボタンを押下．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Default line ending&lt;/code&gt;から，&lt;code class=&quot;highlighter-rouge&quot;&gt;LF&lt;/code&gt;を選択．&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;11-まとめ&quot;&gt;11. まとめ&lt;/h2&gt;
-
-&lt;p&gt;下図のような環境が完成した．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2017-10-15-env.png&quot; alt=&quot;env&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;PowerShellで&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; bundle exec jekyll serve&lt;/code&gt;して，ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:4000&lt;/code&gt;から出来栄えを確認しながら，ATOMでマークダウンを編集できる．&lt;/p&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-&lt;p&gt;ATOMは本当に便利．Linuxが届いたらインストールしようと思う．&lt;/p&gt;
-</description>
-        <pubDate>Sun, 15 Oct 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/10/15/jekyll-windows</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/15/jekyll-windows</guid>
-        
-        
-        <category>jekyll</category>
         
       </item>
     
