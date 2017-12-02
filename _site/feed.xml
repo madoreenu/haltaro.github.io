@@ -6,9 +6,57 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Nov 2017 22:14:51 +0900</pubDate>
-    <lastBuildDate>Tue, 28 Nov 2017 22:14:51 +0900</lastBuildDate>
+    <pubDate>Sat, 02 Dec 2017 16:09:29 +0900</pubDate>
+    <lastBuildDate>Sat, 02 Dec 2017 16:09:29 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>佐藤達郎，「これからの広告」の教科書</title>
+        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/5fzKuNu&quot;&gt;佐藤達郎，「これからの広告」の教科書&lt;/a&gt;を読んだ．&lt;a href=&quot;https://haltaro.github.io/2017/11/25/digital-marketing-2&quot;&gt;Courcera，Marketing in a digital world：2. Promotion&lt;/a&gt;でも触れたように，近年の技術革新により，市場のパワーバランスが大きく消費者側に傾き始めた．本書では，具体例を用いてわかりやすく，新たな広告手法を学ぶことができた．&lt;/p&gt;
+
+&lt;p&gt;広告業界は流行り廃りが激しいため，今回学んだ手法が，将来ずっと有効であるとは限らない．重要なのは，表面的な流行だけを追うのではなく，その社会的背景を理解することだと感じた．&lt;/p&gt;
+
+&lt;h1 id=&quot;1-差別化よりもウィル意思やインサイトで勝負せよ&quot;&gt;1. 差別化よりもウィル（意思）やインサイトで勝負せよ&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;従来は，&lt;a href=&quot;https://en.wikipedia.org/wiki/Unique_selling_proposition&quot;&gt;USP&lt;/a&gt;（Unique Selling Proposition）に基づき，機能的特徴を全面に出す広告戦略が取られていた．&lt;/li&gt;
+  &lt;li&gt;しかし，今やモノが溢れる時代．そもそもUSPとなるような機能的特徴を見つけることは難しいし，あったとしてもすぐに真似されてしまう．&lt;/li&gt;
+  &lt;li&gt;そこで，消費者のインサイトを考慮した価値や，ブランドメッセージを訴える．
+    &lt;ul&gt;
+      &lt;li&gt;インサイトとは，心の奥底にある（本人すら気付いていないような）意見．&lt;/li&gt;
+      &lt;li&gt;あるインサイトが売り上げにつながるか証明するのは非常に難しい．調査やデータに基づいた理論武装が必要．&lt;/li&gt;
+      &lt;li&gt;インサイトは，その製品固有のものではなく，製品カテゴリー全体のものであることが見受けられる．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-消費者との接点によって見せ方を変える&quot;&gt;2. 消費者との接点によって見せ方を変える&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;従来は，&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;3-消費者に謎をかけて突っ込ませる&quot;&gt;3. 消費者に謎をかけて突っ込ませる&lt;/h1&gt;
+
+&lt;h1 id=&quot;4-商品の良さよりイイ時間を提供する&quot;&gt;4. 「商品の良さ」より「イイ時間」を提供する&lt;/h1&gt;
+
+&lt;h1 id=&quot;5-１本の広告より全体の仕掛けで効果を狙う&quot;&gt;5. １本の広告より全体の仕掛けで効果を狙う&lt;/h1&gt;
+
+&lt;h1 id=&quot;6-送り届けるのではなく広がる経路を作る&quot;&gt;6. 送り届けるのではなく広がる経路を作る&lt;/h1&gt;
+
+&lt;h1 id=&quot;7-ライブ感こそ人の心を動かす時代である&quot;&gt;7. ライブ感こそ人の心を動かす時代である&lt;/h1&gt;
+
+&lt;h1 id=&quot;8-少ない予算でも広告効果は生み出せる&quot;&gt;8. 少ない予算でも広告効果は生み出せる&lt;/h1&gt;
+
+</description>
+        <pubDate>Sat, 02 Dec 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/12/02/marketing-manual</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/02/marketing-manual</guid>
+        
+        
+        <category>marketing</category>
+        
+      </item>
     
       <item>
         <title>BizMate体験レッスン</title>
@@ -787,79 +835,6 @@ V_i = \alpha_i + \sum_k \beta_k X_{ik}
         
         
         <category>python</category>
-        
-      </item>
-    
-      <item>
-        <title>コトラー，アームストロング，恩藏のマーケティング原理</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/eGcRMag&quot;&gt;コトラー，アームストロング，恩藏のマーケティング原理&lt;/a&gt;の読書メモ．マーケティングの基本を，実例付きでわかりやすく解説してくれる名著．マーケティングとは，意図的に，顧客と良好な関係を築くための手法である．顧客の意識の有り様は，時代の流れに大きく左右されるため，マーケティング理論を常にアップデートし続ける必要がある．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;p.xiv&lt;/strong&gt;：マーケティングの5ステップ．
-    &lt;ol&gt;
-      &lt;li&gt;顧客ニーズの理解．&lt;/li&gt;
-      &lt;li&gt;顧客主導マーケティング戦略の設定．&lt;/li&gt;
-      &lt;li&gt;マーケティング・プログラムの策定．&lt;/li&gt;
-      &lt;li&gt;顧客リレーションシップの構築．&lt;/li&gt;
-      &lt;li&gt;顧客からの価値獲得．&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.6&lt;/strong&gt;：マーケティングの究極の目的は，セリング（売り込み）を不要とすること．顧客と有益な価値交換ができる関係を築くこと．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.7&lt;/strong&gt;：ニーズとは，人間が本質的に備える性質であり，何かが欠乏している状態．ウォンツとは，ニーズが文化的背景や個人の特徴を通して具現化されたもの．需要とは，ウォンツが購買力を伴ったもの．マーケターが把握すべきなのは，ニーズ．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.10&lt;/strong&gt;：マーケティング・マネジメントとは，ターゲットとなる市場を選定し，その市場との間に収益性の高い関係を構築する技術および科学．マネジメント設計には5つの志向がある：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;生産志向&lt;/strong&gt;：顧客は価格と手に入り易さを重視するので，経営者は生産と流通の効率化に集中すべき，という考え方．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;製品志向&lt;/strong&gt;：顧客は品質と性能を重視するので，経営者は継続的な性能改善に集中すべき，という考え方．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;販売志向&lt;/strong&gt;：顧客は商品の必要性に気づきにくいため，経営者は大々的な販売活動を行うべき，という考え方．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;マーケティング志向&lt;/strong&gt;：顧客満足を提供することが重要なので，経営者は市場のニーズを的確に把握すべき，という考え方．マーケティングの方式として，顧客主導型マーケティングと，顧客誘導型マーケティングがある．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;ソサイエタル・マーケティング志向&lt;/strong&gt;： 顧客の短期的な満足だけでなく，長期的な幸福も考慮すべき，という考え方．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.13&lt;/strong&gt;：マーケティング・ミックスとは，製品（Product），価格（Price），流通（Place），およびプロモーション（Promotion）などのマーケティング実践のために用いる枠組み．4Pとも呼ばれる．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.23&lt;/strong&gt;：短期的な売上だけでなく，将来的な売上も考慮すべき．カスタマー・エクイティとは，企業が抱える全顧客の生涯価値の総計である．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.37&lt;/strong&gt;：市場成長率-相対市場シェア・マトリクス．&lt;a href=&quot;http://www.darecon.com/tool/ppm1.html&quot;&gt;PPM分析&lt;/a&gt;とも呼ばれる．スター，問題児，金のなる木，負け犬．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.52&lt;/strong&gt;：&lt;a href=&quot;http://www.darecon.com/tool/swot1.html&quot;&gt;SWOT分析&lt;/a&gt;．企業の強み（Strength），弱み（Weakness），機会（Opportunity），脅威（Threat）を評価する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.53&lt;/strong&gt;：&lt;a href=&quot;http://www.nrc.co.jp/marketing/02-09.html&quot;&gt;マーケティング計画&lt;/a&gt;．エグゼクティブ・サマリー，現状分析，脅威と機会の分析，目標と課題，マーケティング戦略，行動プログラム，予算，コントロールをまとめる．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.57&lt;/strong&gt;：&lt;a href=&quot;https://www.leadplus.net/blog/marketing-roi.html&quot;&gt;マーケティングROI&lt;/a&gt;とは，マーケティング投資に対する，マーケティング効果の比率．マーケティングROIの算出は難しい．最近では，マーケティング効果としてカスタマー・エクイティを用いることが増えている．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.70&lt;/strong&gt;：競合他社への&lt;a href=&quot;http://www.marketingbank.jp/special/cat07/129.php&quot;&gt;競争戦略&lt;/a&gt;として，次の三つがある：コスト・リーダーシップ戦略，差別化戦略，そして集中戦略．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.87&lt;/strong&gt;：顧客主導型マーケティング戦略の設計ステップとして，市場細分化，ターゲティング，差別化，およびポジショニングがある．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.93&lt;/strong&gt;：市場細分化のポイント．測定可能性（規模，購買力，特性が評価できること），接近可能性（セグメントに効果的に近づき，製品を提供できること），利益確保可能性（収益性があること）．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.98&lt;/strong&gt;：究極のマイクロマーケティングは，個人マーケティング．以下が参考になる．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://jp.techcrunch.com/2015/08/16/20150814the-future-of-consumer-marketing-is-personal-2/&quot;&gt;TechCrunch，個人ユーザー単位でマーケティングできる未来が来る&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://markezine.jp/article/detail/24150&quot;&gt;MarketZine，個人単位のマーケティングを実現し、顧客体験中心のビジネスを／Adobe Summit 2016開催&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.134&lt;/strong&gt;：&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E9%A1%A7%E5%AE%A2%E9%96%A2%E4%BF%82%E7%AE%A1%E7%90%86&quot;&gt;顧客関係管理（CRM: Customer Relationship Management）&lt;/a&gt;．顧客満足度と顧客ロイヤルティの向上を通して，売上の拡大と収益性の向上を目指す経営戦略．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.141&lt;/strong&gt;：マーケターが最も知りたいのは，&lt;strong&gt;マーケティング活動に対して，消費者がどのような反応を示すか&lt;/strong&gt;．購買行動の刺激-反応モデル（S-Rモデル）では，購買者の特性と意思決定プロセスの解明がポイントとなる．消費者行動理論という枠組みで，体系化されているみたい．以下が参考になる．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://maki-jun77.blogspot.jp/2009/08/blog-post_08.html&quot;&gt;NOTE，消費者行動理論&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.172&lt;/strong&gt;：製品は，&lt;a href=&quot;https://kotobank.jp/word/%E6%B6%88%E8%B2%BB%E8%B2%A1-23127&quot;&gt;消費財&lt;/a&gt;と&lt;a href=&quot;https://kotobank.jp/word/%E7%94%9F%E7%94%A3%E8%B2%A1-23129&quot;&gt;生産財&lt;/a&gt;から成る．消費財は，最寄品，買回品，専門品，非探索品から成る．生産財は，材料・部品，資本財，備品・サービスから成る．以下が参考になる．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.182&lt;/strong&gt;：エビデンス・マネジメント．本来形のないサービスに形を与えることで，顧客に安心感を与えること．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.242&lt;/strong&gt;：商品価格の平均約20％が輸送や発送にかかる．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.255&lt;/strong&gt;：グッドバリュー価格設定とは，優れた品質とサービスとの組み合わせに対して，低価格を設定すること．付加価値価格設定とは，付加価値により自社製品を差別化し，高い価格をつけること．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.265&lt;/strong&gt;：需要の&lt;a href=&quot;https://mba.globis.ac.jp/about_mba/glossary/detail-12099.html&quot;&gt;価格弾性力&lt;/a&gt;とは，価格の変動によって，ある製品の需要や供給が変化する度合いを示す数値．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.289&lt;/strong&gt;：AIDA（Attention, Interest, Desire, Action）．消費者が商品に接してから購買に至るまでの決定プロセス．以下の記事によると，ほかにも様々なモデルがあるみたい．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://iso-labo.com/labo/AIDMA_AIDA_AISAS_AIDCA.html&quot;&gt;iso.labo，「AIDMA」、「AIDA」、「AISAS」、「AIDCA」の法則&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.309&lt;/strong&gt;：広告効果を見積もるのは，とても難しい．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.311&lt;/strong&gt;：広告の氾濫を改善するために，アドバテイメントや，ブランデッド・エンターテイメントなどが提案されている．&lt;a href=&quot;https://www.koukokutenshoku.com/app/user.php/dictionary/index?wordid=116&quot;&gt;アドバテイメント&lt;/a&gt;とは，映画やドラマなどの劇中に特定の商品を登場させ，商品の認知度や企業イメージの向上を図ること．&lt;a href=&quot;https://kotobank.jp/word/%E3%83%96%E3%83%A9%E3%83%B3%E3%83%87%E3%83%83%E3%83%89%E3%83%BB%E3%82%A8%E3%83%B3%E3%82%BF%E3%83%86%E3%82%A4%E3%83%B3%E3%83%A1%E3%83%B3%E3%83%88-22856&quot;&gt;ブランデッド・エンタテイメント&lt;/a&gt;とは，映画やTV番組，ゲームなどのエンタテイメント・コンテンツと連携したブランド・コミュニケーション．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.357&lt;/strong&gt;：紙のカタログは，未だに重要．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.374&lt;/strong&gt;：ソサイエタル・マーケティングでは，顧客の将来のニーズと，企業の現在のニーズを満足するよう行動する．一方，持続可能なマーケティングでは，顧客と企業両方の将来のニーズを満足するよう行動する．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.381&lt;/strong&gt;：&lt;a href=&quot;https://kotobank.jp/word/%E3%82%B3%E3%83%B3%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%BA%E3%83%A0-67268&quot;&gt;コンシューマリズム&lt;/a&gt;．消費者運動．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;p.381&lt;/strong&gt;：エンバイロンメンタリズム．環境活動．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 15 Oct 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/10/15/marketing</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/15/marketing</guid>
-        
-        
-        <category>marketing</category>
         
       </item>
     
