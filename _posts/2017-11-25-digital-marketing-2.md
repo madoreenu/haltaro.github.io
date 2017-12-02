@@ -37,7 +37,7 @@ categories:
   * 多くの企業は，SNSでファンアートを公開することで，UGCの効果を高めている．例えば，ドミノ・ピザ，M&Ms，スターバックス，GoProなど．
   * UGCを探せるのは，[Devianart](https://www.deviantart.com/)，[Flickr](https://www.flickr.com/)，[Raddit](https://www.reddit.com/)，Facebook，Twitter，YouTube，[Pinterest](https://www.pinterest.jp/)，Instagram，Amazonのレビューなど．
   * あなたのブランドに関連したUGCが見つからない場合は，業界に関連するものを探すと良い．
-  * [Crowdtap]()の調査によると，[Millennial（2000年前後に生まれた世代）](https://en.wikipedia.org/wiki/Millennials)は，UGCを広告より重視することがわかった．
+  * [Crowdtap](https://crowdtap.com/)の調査によると，[Millennial（2000年前後に生まれた世代）](https://en.wikipedia.org/wiki/Millennials)は，UGCを広告より重視することがわかった．
 * Parkin, L. (2013, August 29). [What every business should know about user-generated content](https://www.huffingtonpost.com/lisa-parkin/how-to-use-user-generated-content_b_3818827.html). *Huff Post Business*.
   * UGCによって得られるのは，次の二つ．(1)さらなるファン参加を加速する無料のコンテンツ，(2)ファンの心理や行動に関する，非常に価値のある知見．
   * より良いUGC創作を喚起するために，次の四点に気をつけるべき．(1)UGCを募集する理由を明確化する．(2)適切なインセンティブを設定する．(3)ハッシュタグやコミュニティなどを利用して，効率的に作品を管理する．(4)実際に使う．
@@ -51,9 +51,48 @@ categories:
 
 # Basic concept: promotion
 
+* Promotionとは，製品の情報を消費者に知らせるための活動を指す．Promotionの目的は，消費者に製品を購入してもらうことである．
+* Promotionにおける重要な概念として，次の二つがある：
+  * **Advertising**：毎年，莫大な費用がテレビ広告のために費やされている．広告のターゲットは，消費者，小売業者等のパートナー，そして従業員．広告の目的は，新製品の告知や，既存製品のイメージ変更など．
+  * **Persuasion**：他社の製品ではなく，自社製品を買わせるための取り組み．Persuasionの手法としては，セレブの起用，ユーモア，科学的裏付けなどがある．
+* [Elaboration Likelihood Model (ELM)](http://xn--u9jv24hptcj7lm5oe96d.com/entry20.html)（日本語では，「精密化見込みモデル」らしい）は，Persuasionの代表的なモデルである．このモデルでは，購入を誘導する方法を二つ提案している．
+  * **Central route**：製品に備わっている本質的な価値や，特徴，特性等によって説得する方法．
+  * **Peripheral route**：感情や雰囲気など，数値化出来ない情報によって説得する方法．
+* かつてのPromotionは，消費者を説得するための作り物のメッセージが有効だった．今では，消費者にストーリーを共有するための信憑性のあるメッセージが有効である．
+* 今やアメリカでは，テレビ向け広告費より，インターネット向け広告費の方が大きい．
+
 # Digital concept: authenticity
 
+* インターネットが発達した現代においては，虚偽（誇張）広告はすぐに暴かれ，企業は甚大な被害を被る．企業は，企業自身やその製品について，ありのままの情報を伝える姿勢を持つべきである．
+* Digital authenticityとは，Online promotionにおいて，製品の情報（生産地，特徴，長所，短所）がどの程度偽りなく記述されているか，という基準．
+* Authenticityを獲得するためには：
+  * 製品の長所を一方的に主張するのではなく，製品の背後の物語を語ること．
+  * 物語に一貫性を持たせること．
+  * 過ちを直ちに認めること．
+  * 消費者を巻き込むこと．
+* Authenticityの獲得プロセスにおいて，消費者は広告塔や，広告製作者になりうる．
+* Authenticityを獲得するメリットは：
+  * Doppelgänger brand imageを回避できること．
+  * SNS等で肯定的な評判を得ること．
+  * 消費者の意思決定に良い影響を与えること．ある調査によると，60%の消費者はAuthenticityをブランド選択の基準にしている．
+* 2015年の論文によると，消費者がInauthenticを感じる原因は，模倣とミスマッチの二つ．
+
 # Case study: pepsi refresh
+
+* Pepsi Refresh Projectについて議論する．
+  * Digital marketing promotional campaignを評価する基準として，何が適切か？
+  * Pepsi Refresh Projectは成功したか？
+  * Pepsiは，本プロジェクトに対して何を行うべきか？
+* Jennfer, P. (2011, Jan. 30). [Pepsi Bets on Local Grants, Not the Super Bowl](http://www.nytimes.com/2011/01/31/business/media/31pepsi.html). *The New York Times*
+  * Pepsiは，昨年のスーパーボールのスポンサーを降り，代わりに[Pepsi Refresh Project](http://www.nygreenfashion.com/html/news/20100116.html)を実行した．
+  * ユーザから投稿された世の中を良くするためのアイデアに対し，毎月130万ドルを提供するというもの．
+  * PepsiのSNS担当者によると，本プロジェクトで最も重要な点は，長期的なPepsiコミュニティを構築できること．
+  * 2011年の調査によると，79%の企業がSNSを用いたPromotionを準備している．一方で，他のチャネルとどのように組み合わせればよいか，またどのように効果を評価すればよいか，悩んでいると答えた．三分の一近くの企業は，効果を測定していなかった．25%以上の企業は，分析ツールを利用していた．
+  * Pepsiは様々なツールを用いて本プロジェクトを評価したが，目立った効果はまだ確認できていない．Pepsiの売上は6%落ちた．
+* このケーススタディから得られた知見は以下：
+  * 売上が最も重要な評価指標である．
+  * SNSの指標は，売上と必ずしも一致しない．
+  * SNSを用いたPromotionキャンペーンでは，特にAuthenticityが重要になる．
 
 # Digital concept: user generated content
 
@@ -80,3 +119,10 @@ categories:
 * [realm](https://ejje.weblio.jp/content/realm)：領域，範囲，部門．
 * [cynicism](https://ejje.weblio.jp/content/cynicism)：冷笑，皮肉．
 * [irrevocably](https://ejje.weblio.jp/content/irrevocably)：取り消しできないやり方で．
+* [elaboration](https://ejje.weblio.jp/content/elaboration)：入念な仕上げ，精巧さ．
+* [narrate](https://ejje.weblio.jp/content/narrate)：物語る，話す．
+* [substantial](https://ejje.weblio.jp/content/substantial)：実在する，本当の，頑丈な，しっかりとした，相当な．
+* [genuine](https://ejje.weblio.jp/content/genuine)：正真正銘の，本物の，偽りのない．
+* [portrayal](https://ejje.weblio.jp/content/portrayal)：描写，記述，演技．
+* [plow](https://ejje.weblio.jp/content/plow)：耕す，掘り起こす；（…を）骨折って進む．
+* [philanthropy](https://ejje.weblio.jp/content/philanthropy)：慈善行為．

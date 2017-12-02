@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Dec 2017 16:39:45 +0900</pubDate>
-    <lastBuildDate>Sat, 02 Dec 2017 16:39:45 +0900</lastBuildDate>
+    <pubDate>Sat, 02 Dec 2017 20:05:46 +0900</pubDate>
+    <lastBuildDate>Sat, 02 Dec 2017 20:05:46 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -50,8 +50,8 @@
 
 </description>
         <pubDate>Sat, 02 Dec 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/12/02/marketing-manual</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/02/marketing-manual</guid>
+        <link>http://localhost:4000/2017/12/02/advertising-manual</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/02/advertising-manual</guid>
         
         
         <category>marketing</category>
@@ -175,7 +175,7 @@
       &lt;li&gt;多くの企業は，SNSでファンアートを公開することで，UGCの効果を高めている．例えば，ドミノ・ピザ，M&amp;amp;Ms，スターバックス，GoProなど．&lt;/li&gt;
       &lt;li&gt;UGCを探せるのは，&lt;a href=&quot;https://www.deviantart.com/&quot;&gt;Devianart&lt;/a&gt;，&lt;a href=&quot;https://www.flickr.com/&quot;&gt;Flickr&lt;/a&gt;，&lt;a href=&quot;https://www.reddit.com/&quot;&gt;Raddit&lt;/a&gt;，Facebook，Twitter，YouTube，&lt;a href=&quot;https://www.pinterest.jp/&quot;&gt;Pinterest&lt;/a&gt;，Instagram，Amazonのレビューなど．&lt;/li&gt;
       &lt;li&gt;あなたのブランドに関連したUGCが見つからない場合は，業界に関連するものを探すと良い．&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Crowdtap&lt;/a&gt;の調査によると，&lt;a href=&quot;https://en.wikipedia.org/wiki/Millennials&quot;&gt;Millennial（2000年前後に生まれた世代）&lt;/a&gt;は，UGCを広告より重視することがわかった．&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://crowdtap.com/&quot;&gt;Crowdtap&lt;/a&gt;の調査によると，&lt;a href=&quot;https://en.wikipedia.org/wiki/Millennials&quot;&gt;Millennial（2000年前後に生まれた世代）&lt;/a&gt;は，UGCを広告より重視することがわかった．&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Parkin, L. (2013, August 29). &lt;a href=&quot;https://www.huffingtonpost.com/lisa-parkin/how-to-use-user-generated-content_b_3818827.html&quot;&gt;What every business should know about user-generated content&lt;/a&gt;. &lt;em&gt;Huff Post Business&lt;/em&gt;.
@@ -204,9 +204,75 @@
 
 &lt;h1 id=&quot;basic-concept-promotion&quot;&gt;Basic concept: promotion&lt;/h1&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;Promotionとは，製品の情報を消費者に知らせるための活動を指す．Promotionの目的は，消費者に製品を購入してもらうことである．&lt;/li&gt;
+  &lt;li&gt;Promotionにおける重要な概念として，次の二つがある：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Advertising&lt;/strong&gt;：毎年，莫大な費用がテレビ広告のために費やされている．広告のターゲットは，消費者，小売業者等のパートナー，そして従業員．広告の目的は，新製品の告知や，既存製品のイメージ変更など．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Persuasion&lt;/strong&gt;：他社の製品ではなく，自社製品を買わせるための取り組み．Persuasionの手法としては，セレブの起用，ユーモア，科学的裏付けなどがある．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://xn--u9jv24hptcj7lm5oe96d.com/entry20.html&quot;&gt;Elaboration Likelihood Model (ELM)&lt;/a&gt;（日本語では，「精密化見込みモデル」らしい）は，Persuasionの代表的なモデルである．このモデルでは，購入を誘導する方法を二つ提案している．
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Central route&lt;/strong&gt;：製品に備わっている本質的な価値や，特徴，特性等によって説得する方法．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Peripheral route&lt;/strong&gt;：感情や雰囲気など，数値化出来ない情報によって説得する方法．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;かつてのPromotionは，消費者を説得するための作り物のメッセージが有効だった．今では，消費者にストーリーを共有するための信憑性のあるメッセージが有効である．&lt;/li&gt;
+  &lt;li&gt;今やアメリカでは，テレビ向け広告費より，インターネット向け広告費の方が大きい．&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;digital-concept-authenticity&quot;&gt;Digital concept: authenticity&lt;/h1&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;インターネットが発達した現代においては，虚偽（誇張）広告はすぐに暴かれ，企業は甚大な被害を被る．企業は，企業自身やその製品について，ありのままの情報を伝える姿勢を持つべきである．&lt;/li&gt;
+  &lt;li&gt;Digital authenticityとは，Online promotionにおいて，製品の情報（生産地，特徴，長所，短所）がどの程度偽りなく記述されているか，という基準．&lt;/li&gt;
+  &lt;li&gt;Authenticityを獲得するためには：
+    &lt;ul&gt;
+      &lt;li&gt;製品の長所を一方的に主張するのではなく，製品の背後の物語を語ること．&lt;/li&gt;
+      &lt;li&gt;物語に一貫性を持たせること．&lt;/li&gt;
+      &lt;li&gt;過ちを直ちに認めること．&lt;/li&gt;
+      &lt;li&gt;消費者を巻き込むこと．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Authenticityの獲得プロセスにおいて，消費者は広告塔や，広告製作者になりうる．&lt;/li&gt;
+  &lt;li&gt;Authenticityを獲得するメリットは：
+    &lt;ul&gt;
+      &lt;li&gt;Doppelgänger brand imageを回避できること．&lt;/li&gt;
+      &lt;li&gt;SNS等で肯定的な評判を得ること．&lt;/li&gt;
+      &lt;li&gt;消費者の意思決定に良い影響を与えること．ある調査によると，60%の消費者はAuthenticityをブランド選択の基準にしている．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2015年の論文によると，消費者がInauthenticを感じる原因は，模倣とミスマッチの二つ．&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;case-study-pepsi-refresh&quot;&gt;Case study: pepsi refresh&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pepsi Refresh Projectについて議論する．
+    &lt;ul&gt;
+      &lt;li&gt;Digital marketing promotional campaignを評価する基準として，何が適切か？&lt;/li&gt;
+      &lt;li&gt;Pepsi Refresh Projectは成功したか？&lt;/li&gt;
+      &lt;li&gt;Pepsiは，本プロジェクトに対して何を行うべきか？&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Jennfer, P. (2011, Jan. 30). &lt;a href=&quot;http://www.nytimes.com/2011/01/31/business/media/31pepsi.html&quot;&gt;Pepsi Bets on Local Grants, Not the Super Bowl&lt;/a&gt;. &lt;em&gt;The New York Times&lt;/em&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Pepsiは，昨年のスーパーボールのスポンサーを降り，代わりに&lt;a href=&quot;http://www.nygreenfashion.com/html/news/20100116.html&quot;&gt;Pepsi Refresh Project&lt;/a&gt;を実行した．&lt;/li&gt;
+      &lt;li&gt;ユーザから投稿された世の中を良くするためのアイデアに対し，毎月130万ドルを提供するというもの．&lt;/li&gt;
+      &lt;li&gt;PepsiのSNS担当者によると，本プロジェクトで最も重要な点は，長期的なPepsiコミュニティを構築できること．&lt;/li&gt;
+      &lt;li&gt;2011年の調査によると，79%の企業がSNSを用いたPromotionを準備している．一方で，他のチャネルとどのように組み合わせればよいか，またどのように効果を評価すればよいか，悩んでいると答えた．三分の一近くの企業は，効果を測定していなかった．25%以上の企業は，分析ツールを利用していた．&lt;/li&gt;
+      &lt;li&gt;Pepsiは様々なツールを用いて本プロジェクトを評価したが，目立った効果はまだ確認できていない．Pepsiの売上は6%落ちた．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;このケーススタディから得られた知見は以下：
+    &lt;ul&gt;
+      &lt;li&gt;売上が最も重要な評価指標である．&lt;/li&gt;
+      &lt;li&gt;SNSの指標は，売上と必ずしも一致しない．&lt;/li&gt;
+      &lt;li&gt;SNSを用いたPromotionキャンペーンでは，特にAuthenticityが重要になる．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;digital-concept-user-generated-content&quot;&gt;Digital concept: user generated content&lt;/h1&gt;
 
@@ -234,6 +300,13 @@
   &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/realm&quot;&gt;realm&lt;/a&gt;：領域，範囲，部門．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/cynicism&quot;&gt;cynicism&lt;/a&gt;：冷笑，皮肉．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/irrevocably&quot;&gt;irrevocably&lt;/a&gt;：取り消しできないやり方で．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/elaboration&quot;&gt;elaboration&lt;/a&gt;：入念な仕上げ，精巧さ．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/narrate&quot;&gt;narrate&lt;/a&gt;：物語る，話す．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/substantial&quot;&gt;substantial&lt;/a&gt;：実在する，本当の，頑丈な，しっかりとした，相当な．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/genuine&quot;&gt;genuine&lt;/a&gt;：正真正銘の，本物の，偽りのない．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/portrayal&quot;&gt;portrayal&lt;/a&gt;：描写，記述，演技．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/plow&quot;&gt;plow&lt;/a&gt;：耕す，掘り起こす；（…を）骨折って進む．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/philanthropy&quot;&gt;philanthropy&lt;/a&gt;：慈善行為．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 25 Nov 2017 00:00:00 +0900</pubDate>
@@ -537,8 +610,7 @@ A_i = \sum_j h_j b_{ij}
 \end{align*}&lt;/script&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;非補償型の評価方法として，連結型，分散型，辞書編纂型がある．&lt;/li&gt;
-  &lt;li&gt;ブランド選択モデルとして，補償型の評価方法を仮定することが多い．&lt;/li&gt;
+  &lt;li&gt;非補償型の評価方法として，連結型，分散型，辞書編纂型がある．ブランド選択モデルとして，補償型の評価方法を仮定することが多い．&lt;/li&gt;
   &lt;li&gt;消費者がブランド集合&lt;script type=&quot;math/tex&quot;&gt;C&lt;/script&gt;から特定のブランド&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;を選択する確率&lt;script type=&quot;math/tex&quot;&gt;P(i \mid C)&lt;/script&gt;は，そのブランドの効用&lt;script type=&quot;math/tex&quot;&gt;U_i&lt;/script&gt;を用いて次のように表現できる．&lt;/li&gt;
 &lt;/ul&gt;
 
