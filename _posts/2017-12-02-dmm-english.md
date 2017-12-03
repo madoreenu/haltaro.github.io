@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DMM体験レッスン：Article discussion
+title: DMM体験レッスン：1．Article discussion
 updated: 2017-12-02 22:00
 categories:
  - english
