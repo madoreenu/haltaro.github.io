@@ -118,6 +118,10 @@ categories:
 
 # Campas spotlight: Alan Craig
 
+* Alan Craig先生は，VRおよびARの第一人者．
+* VRでは，ユーザは現実世界を離れて仮想世界に入り込む．一方でARでは，ユーザの現実世界と仮想世界が融合する．また，VRは一時的な体験に終わる可能性があるが，ARは24時間365日継続する体験となる可能性がある．
+* Alan Craig先生のところに，いろんな会社からARを使ったPromotionについてオファーがある．
+* 現時点で，現実世界とARの識別が難しい段階に突入している．
 
 # 英語メモ
 
@@ -145,3 +149,4 @@ categories:
 * [portrayal](https://ejje.weblio.jp/content/portrayal)：描写，記述，演技．
 * [plow](https://ejje.weblio.jp/content/plow)：耕す，掘り起こす；（…を）骨折って進む．
 * [philanthropy](https://ejje.weblio.jp/content/philanthropy)：慈善行為．
+* [intrusion](https://ejje.weblio.jp/content/intrusion)：侵入，押し付け．
