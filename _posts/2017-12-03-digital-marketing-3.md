@@ -6,7 +6,7 @@ categories:
  - marketing
 ---
 
-**随時更新**：[Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る[Digital marketing specialization](https://www.coursera.org/specializations/digital-marketing)の一つ．四週かけて，デジタル時代の[マーケティング・ミックス](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9)について学ぶ．第二週では，Placementを取り扱い，New retailや3D printingについて学ぶ．
+**随時更新**：[Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る[Digital marketing specialization](https://www.coursera.org/specializations/digital-marketing)の一つ．四週かけて，デジタル時代の[マーケティング・ミックス](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9)について学ぶ．第三週では，Placementを取り扱い，New retailや3D printingについて学ぶ．
 
 ![courcera]({{site.baseurl}}/images/2017-11-18-courcera.png)
 
