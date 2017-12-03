@@ -96,9 +96,28 @@ categories:
 
 # Digital concept: user generated content
 
+* User generated content（UGC）とは，ユーザによって作成されたウェブ上のあらゆるコンテンツを指す．例えば，ブログのコメント，facebookのコメントや記事，レビュー，ビデオ作品，ブログ記事，Forum，Podcastなど．例えば，Twiiterのつぶやきの内，約20%がブランドに関連するものと言われている．
+* UGCの特徴は以下の三点：
+  * 企業よりユーザの貢献度が大きいものである．
+  * クリエイティブである．
+  * オンラインに投稿される．
+* UGCの動機は，自己承認あるいはインセンティブである．
+* UGCのメリットは，低コストで作成できること，売上に良い影響を与えること，そして，コンテンツの鮮度を保てること．
+* Smith et al. (2012) "How does Brand-related user-generated content differ across YouTube, Facebook, and Twitter?". *Journal of Interactive Marketing*.
+  * SNS上のUGCは，肯定的なものが圧倒的に多い．
+  * Twitterでアクティブな企業は，肯定的なUGCを作成されやすい．
+* UGCと上手に付き合うために重要なことは：
+  * ユーザにアイデアの共有を依頼すること．競合ブランドより自社ブランドに注目が集まるよう誘導するために，ユーザと対話する必要がある．対話のキッカケは，アイデア共有の依頼で良い．
+  * ユーザの貢献に対し，真摯に反応すること．
+  * [Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle)を覚えておくこと．90%のUGCは，10%のユーザによって作成される．
+  * 他のPromotion手法と連動させること．
+
 # Exercise: wikipedia.org
 
+* [Wikipedia](https://www.wikipedia.org/)の編集に参加して，UGCを体感する．
+
 # Campas spotlight: Alan Craig
+
 
 # 英語メモ
 
