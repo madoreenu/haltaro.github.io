@@ -13,7 +13,7 @@ categories:
 以下は，本講座に関する記事一覧：
 * [Courcera，Marketing in a digital world：1. Product](https://haltaro.github.io/2017/11/08/digital-marketing-1)
 * [Courcera，Marketing in a digital world：2. Promotion](https://haltaro.github.io/2017/11/25/digital-marketing-2)
-* Courcera, Marketing in a digital world：3. Placement
+* [Courcera, Marketing in a digital world：3. Placement](https://haltaro.github.io/2017/12/03/digital-marketing-3)
 * Courcera, Marketing in a digital world：4. Price
 
 # About the course
