@@ -18,6 +18,14 @@ categories:
 
 # Module 3 overview
 
+* 以下は，事前に読む必要がある資料．
+* Rigby, D. (2011). [The future of shopping](https://hbr.org/2011/12/the-future-of-shopping). *Harvard Business Review*, 89 (12), 65–76.
+  * Forresterの試算によると，アメリカのEコマースの売上は2000億ドルに到達すると見られ，これは小売業の総売上の9%に相当する．世界全体では，15%から20%に達すると見られる．（**注**：本記事は2011年のもの）
+  * 今後，Eコマースと実店舗は密接に連携し合い，両社を明確に区別する意味がなくなるだろう．専門家は，店舗売上の50%以上がデジタルな情報の影響を受けており，今後この割合は急激に増加すると予想している．今後は，**Omnichannel retailing** が重要になるだろう．
+* Cairns, A. (2012, July 6). [The future of digital music distribution and online music marketing](https://econsultancy.com/blog/10275-the-future-of-digital-music-distribution-and-online-music-marketing/). *Econsultancy*.
+* Kain, E. (2013, May 30). [Why digital distribution is the future and GameStop is not: Taking the long view on used games](https://www.forbes.com/sites/erikkain/2013/05/30/why-digital-distribution-is-the-future-and-gamestop-is-not-taking-the-long-view-on-used-games/#583e878d4a5e). *Forbes*.
+* Parker, J. (2013, June 27). [How digital marketing will influence industry distribution structures](http://www.cmo.com/features/articles/2013/6/27/how_digital_marketin.html). *CMO*.
+
 # Basic concept: Placement
 
 # Digital concept: New retail
@@ -31,3 +39,15 @@ categories:
 # Campus spotlight: Travis Ross
 
 # 英語メモ
+* [fanciful](https://ejje.weblio.jp/content/fanciful)：想像力に富む，気まぐれな，空想的な，非現実的な．
+* [suburb](https://ejje.weblio.jp/content/suburb)：郊外，市外．
+* [shaky](https://ejje.weblio.jp/content/shaky)：揺れる，ぐらつく，ぶるぶる震える．
+* [bevy](https://ejje.weblio.jp/content/bevy)：群れ，一団．
+* [embrace](https://ejje.weblio.jp/content/embrace)：抱擁する，取り囲む，含む，乗ずる．
+* [fledgling](https://ejje.weblio.jp/content/fledgling)：ひな鳥，駆け出しの若者．
+* [ill-conceived](https://ejje.weblio.jp/content/ill-conceived)：十分に考えられていない．
+* [abrupt](https://ejje.weblio.jp/content/abrupt)：不意の，突然の，急な．
+* [irrational](https://ejje.weblio.jp/content/irrational)：分別のない，不合理な．
+* [exuberance](https://ejje.weblio.jp/content/exuberance)：豊富，繁茂．
+* [morph](https://ejje.weblio.jp/content/morph)：変態する．
+* [implode](https://ejje.weblio.jp/content/implode)：内破する．explodeの逆か．
