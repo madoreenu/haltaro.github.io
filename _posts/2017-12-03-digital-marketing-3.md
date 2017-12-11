@@ -22,6 +22,14 @@ categories:
 * Rigby, D. (2011). [The future of shopping](https://hbr.org/2011/12/the-future-of-shopping). *Harvard Business Review*, 89 (12), 65–76.
   * Forresterの試算によると，アメリカのEコマースの売上は2000億ドルに到達すると見られ，これは小売業の総売上の9%に相当する．世界全体では，15%から20%に達すると見られる．（**注**：本記事は2011年のもの）
   * 今後，Eコマースと実店舗は密接に連携し合い，両社を明確に区別する意味がなくなるだろう．専門家は，店舗売上の50%以上がデジタルな情報の影響を受けており，今後この割合は急激に増加すると予想している．今後は，**Omnichannel retailing** が重要になるだろう．
+  * 従来の小売業者がEコマースで遅れをとっている理由は次の四点：
+    * ドットコムバブルで痛い目を見ている．
+    * 売り上げ指標が，基本的に事業所ベースであり，全体ベースのものは取れていない．
+    * 余剰売り上げ(prfit marginって日本語でなんていうんだ？)という，誤った経営目標を掲げている
+    * 破壊的イノベーションを受け入れづらい体質である．
+  * 小売業者は，消費者は常にそこにいると考えているが，オムニチャネル化した世界では必ずしもそうではない．
+  * 小売業者の取るべき対策としては：
+    * 現実を受け入れる．
 * Cairns, A. (2012, July 6). [The future of digital music distribution and online music marketing](https://econsultancy.com/blog/10275-the-future-of-digital-music-distribution-and-online-music-marketing/). *Econsultancy*.
 * Kain, E. (2013, May 30). [Why digital distribution is the future and GameStop is not: Taking the long view on used games](https://www.forbes.com/sites/erikkain/2013/05/30/why-digital-distribution-is-the-future-and-gamestop-is-not-taking-the-long-view-on-used-games/#583e878d4a5e). *Forbes*.
 * Parker, J. (2013, June 27). [How digital marketing will influence industry distribution structures](http://www.cmo.com/features/articles/2013/6/27/how_digital_marketin.html). *CMO*.
