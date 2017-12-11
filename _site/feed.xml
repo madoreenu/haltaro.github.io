@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 10 Dec 2017 19:16:17 +0900</pubDate>
-    <lastBuildDate>Sun, 10 Dec 2017 19:16:17 +0900</lastBuildDate>
+    <pubDate>Tue, 12 Dec 2017 08:04:22 +0900</pubDate>
+    <lastBuildDate>Tue, 12 Dec 2017 08:04:22 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -38,8 +38,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 09 Dec 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/12/09/dont-fooling-yourself</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/09/dont-fooling-yourself</guid>
+        <link>http://localhost:4000/2017/12/09/dont-fool-yourself</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/09/dont-fool-yourself</guid>
         
         
         <category>marketing</category>
@@ -186,7 +186,7 @@
     
       <item>
         <title>佐藤達郎，「これからの広告」の教科書</title>
-        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/5fzKuNu&quot;&gt;佐藤達郎，「これからの広告」の教科書&lt;/a&gt;を読んだ．&lt;a href=&quot;https://haltaro.github.io/2017/11/25/digital-marketing-2&quot;&gt;Courcera，Marketing in a digital world：2. Promotion&lt;/a&gt;でも触れたように，近年の技術革新により，市場のパワーバランスが大きく消費者側に傾き始めた．本書では，具体例を用いてわかりやすく，新たな広告手法を学ぶことができた．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/5fzKuNu&quot;&gt;佐藤達郎，「これからの広告」の教科書&lt;/a&gt;を読んだ．&lt;a href=&quot;https://haltaro.github.io/2017/11/25/digital-marketing-2&quot;&gt;Courcera，Marketing in a digital world：2. Promotion&lt;/a&gt;でも触れたように，近年の技術革新により，市場のパワーバランスが大きく消費者側に傾き始めた．本書では，具体例を用いてわかりやすく，新たな広告手法を学ぶことができた．&lt;/p&gt;
 
 &lt;p&gt;広告業界は流行り廃りが激しいため，今回学んだ手法が，将来ずっと有効であるとは限らない．重要なのは，表面的な流行だけを追うのではなく，その社会的背景を理解することだと感じた．&lt;/p&gt;
 
@@ -210,24 +210,56 @@
   &lt;li&gt;従来は，IMC（Integrated Marketing Communication）の代表的概念である，ワンルック・ワンボイスが実施されていた．&lt;/li&gt;
   &lt;li&gt;しかし，上記の手法は受動的な消費者を対象としたメディアで有効とされるもの．インターネットの登場により，能動的な消費者を対象とした新たな戦略が必要となる．&lt;/li&gt;
   &lt;li&gt;そこで，根本的なメッセージは統一しつつも，メディアによってアプローチを変化させる&lt;strong&gt;顧客接点マネジメント&lt;/strong&gt;が重要になる．統一よりも連動させる．&lt;/li&gt;
+  &lt;li&gt;今まで考慮していなかった顧客接点を，360度再検討する．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;3-消費者に謎をかけて突っ込ませる&quot;&gt;3. 消費者に謎をかけて突っ込ませる&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;従来は，わかりやすさを重視していた．&lt;/li&gt;
-  &lt;li&gt;しかし，&lt;/li&gt;
+  &lt;li&gt;しかし，広告が氾濫する現在では，わかりやすいだけの広告は消費者の目に止まらない．&lt;/li&gt;
+  &lt;li&gt;そこで，あえてわかりにくくすることで消費者の注目を集める方法が，今メジャーになりつつある．&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;4-商品の良さよりイイ時間を提供する&quot;&gt;4. 「商品の良さ」より「イイ時間」を提供する&lt;/h1&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;従来は，わかりやすさを重視していた．&lt;/li&gt;
+  &lt;li&gt;しかし，広告が氾濫する現在では，わかりやすいだけの広告は消費者の目に止まらない．&lt;/li&gt;
+  &lt;li&gt;​広告により良い時間を提供し，関係構築を目指す．&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;5-１本の広告より全体の仕掛けで効果を狙う&quot;&gt;5. １本の広告より全体の仕掛けで効果を狙う&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;従来は，限られた予算の中で，できるだけクオリティを高めるよう努力していた．&lt;/li&gt;
+  &lt;li&gt;しかし，広告が溢れる現在においては，中途半端なクオリティの広告は目に止まらない．&lt;/li&gt;
+  &lt;li&gt;そこで，広告のクオリティを重視する代わりに，全体の仕掛け作りに注力する．&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;6-送り届けるのではなく広がる経路を作る&quot;&gt;6. 送り届けるのではなく広がる経路を作る&lt;/h1&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;従来は，ターゲットに直接購買を働きかけるのうなメッセージを乗せていた．&lt;/li&gt;
+  &lt;li&gt;しかし，広告が氾濫する現在では，直接的なメッセージは消費者から否定的な反応を受ける可能性がある．&lt;/li&gt;
+  &lt;li&gt;そこで，伝播性を重視して，拡散しやすい内容の広告を作る．&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;7-ライブ感こそ人の心を動かす時代である&quot;&gt;7. ライブ感こそ人の心を動かす時代である&lt;/h1&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;従来は，作り込んで，手間暇をかけて，演出に凝って一本の広告を作っていた．&lt;/li&gt;
+  &lt;li&gt;しかし，作り込まれた演出に拒否感を示す消費者が増えてきた．&lt;/li&gt;
+  &lt;li&gt;そこで，一回性と真正性のある内容で，消費者やの中に盛り上がりを生む&lt;strong&gt;リアルタイム・マーケティング&lt;/strong&gt;が注目されている．&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;8-少ない予算でも広告効果は生み出せる&quot;&gt;8. 少ない予算でも広告効果は生み出せる&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;従来は，少しでも予算が取れるのであれば，とりあえずマス広告を打つ，という風潮があった．&lt;/li&gt;
+  &lt;li&gt;しかし，広告が氾濫する現在では，中途半端なマス広告では印象に残らない．&lt;/li&gt;
+  &lt;li&gt;そこで，受け手が見たいコンテンツを作成してターゲットを引き寄せる&lt;strong&gt;コンテンツ・マーケティング&lt;/strong&gt;が注目されている．&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sat, 02 Dec 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/12/02/next-advertising</link>
