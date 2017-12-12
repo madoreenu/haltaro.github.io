@@ -28,8 +28,11 @@ categories:
     * 余剰売り上げ(prfit marginって日本語でなんていうんだ？)という，誤った経営目標を掲げている
     * 破壊的イノベーションを受け入れづらい体質である．
   * 小売業者は，消費者は常にそこにいると考えているが，オムニチャネル化した世界では必ずしもそうではない．
-  * 小売業者の取るべき対策としては：
-    * 現実を受け入れる．
+  * 小売業者が取るべき対策は：
+    * **現状を知ること**：消費者は，小売業者ならではの利点を求めている；つまり実店舗である．具体的には，接客や，実製品，イベントとしてのショッピングなどである．
+    * **購入経路と泣き所を知ること**：消費者の購入経路を調査するための，様々なツールが存在する．これらを利用するポイントは，かつてのように汎用的なソリューションを探るのではなく，セグメントごとにソリューションを最適化することである．
+    * **実店舗での顧客体験を演出すること**：小売業者の武器は，実店舗を持っていることである．デジタル技術を用いれば，低コストで，顧客体験を向上できる．また，デジタル技術により，小売業者は無限の価値を持つ顧客情報を得られる．最も重要なのは，デジタル技術を用いてオムニチャネル化した小売戦略は，実店舗を持たない純粋なオンライン小売戦略より優れている，ということである．オムニチャネル化した小売業者は，誰よりも早く広範囲に新サービスを展開し，素早く学習サイクルを回す必要がある．
+    * **オムニチャネルを管理すること**：
 * Cairns, A. (2012, July 6). [The future of digital music distribution and online music marketing](https://econsultancy.com/blog/10275-the-future-of-digital-music-distribution-and-online-music-marketing/). *Econsultancy*.
 * Kain, E. (2013, May 30). [Why digital distribution is the future and GameStop is not: Taking the long view on used games](https://www.forbes.com/sites/erikkain/2013/05/30/why-digital-distribution-is-the-future-and-gamestop-is-not-taking-the-long-view-on-used-games/#583e878d4a5e). *Forbes*.
 * Parker, J. (2013, June 27). [How digital marketing will influence industry distribution structures](http://www.cmo.com/features/articles/2013/6/27/how_digital_marketin.html). *CMO*.
@@ -59,3 +62,4 @@ categories:
 * [exuberance](https://ejje.weblio.jp/content/exuberance)：豊富，繁茂．
 * [morph](https://ejje.weblio.jp/content/morph)：変態する．
 * [implode](https://ejje.weblio.jp/content/implode)：内破する．explodeの逆か．
+* week points：痛点．ビジネスでは弱点と訳すらしい．
