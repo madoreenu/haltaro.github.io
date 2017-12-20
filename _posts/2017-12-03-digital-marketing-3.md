@@ -39,17 +39,38 @@ categories:
   * Access型配信は，Promotionと相性が良い．ユーザがアクセスしたアーティストの販促に役立つだけでなく，SNS上での共有を促すこともできる．一方で，Ownership型配信の楽曲は，著作権の問題があるため共有できない．
   * `share2download`は，SNSでの拡散行動をユーザに求める代わりに，無料で楽曲を提供するサービスである．
 * Kain, E. (2013, May 30). [Why digital distribution is the future and GameStop is not: Taking the long view on used games](https://www.forbes.com/sites/erikkain/2013/05/30/why-digital-distribution-is-the-future-and-gamestop-is-not-taking-the-long-view-on-used-games/#583e878d4a5e). *Forbes*.
-  * 時間が足りないので，後で読む．
 * Parker, J. (2013, June 27). [How digital marketing will influence industry distribution structures](http://www.cmo.com/features/articles/2013/6/27/how_digital_marketin.html). *CMO*.
-  * 時間が足りないので，後で読む．
 
 # Basic concept: Placement
 
-
+* Placementにおける重要な概念として，Inventory management，Logistics，Sales force managementがある．
+* 本講座では，DistributionとRetailingに着目する．
+* Distributionでは，複数の独立したプレーヤーが連携して，商品を消費者のもとに届ける．各プレーヤーは，各々の利益の最大化を目指すため，衝突が生じてしまう．
+* Retailing（小売）は，Distribution chainの最後のステップである．
+* 従来のPlacementは，メーカーと消費者の両方にとって，コストが大きかった．しかし，Amazon.comに代表されるオンライン小売業者は，実店舗を持つ小売業者を省略した，消費者への直接配送を可能にした．さらに，3Dプリンタは，小売業者だけでなくDistribution channel全体を省略することすら可能にした．
 
 # Digital concept: New retail
 
+* オンライン小売業者は，実店舗を持つ従来の小売業者にとって脅威である．しかし，オンライン小売業者が，アメリカの小売業者全体の売上に占める割合は，10%前後である．
+* New retailとは，Digital worldでの課題を解決するための，Physical worldにおける小売戦略の総称である．
+  * New retailの一つめの例は，Best buyの自動販売機である．Best buyは，実店舗の固定費を極限まで削減するため，最もよく売れる製品のみを取り扱う自動販売機を導入した．
+  * 二つめの例は，TescoのVirtual storeである．消費者は，駅やバス停に設置されたディスプレイから，好きな製品のバーコードをアプリでスキャンすることで，購入できる．
+  * 三つめの例は，Rotate storeである．2ヶ月ごとに店舗全体が入れ替わる．
+* オンライン小売業者の売上は，驚くべきことに，地理的要因に大きく左右される．つまり，従来型のオフライン小売店舗が充実している地域では，オンライン小売店舗の売上は芳しくない．
+* Showrooming：最初にオフライン店舗を訪れて，最終的にオンライン店舗で購入すること．
+* Webrooming：最初にオンライン店舗を訪れて情報を収集し，最終的にオフライン店舗で購入すること．
+* Omnichannel marketing：オンラインとオフラインを組み合わせて製品を販売すること．
+* 2015年の論文は，スマートフォンの利用が服飾店での購買行動に与える影響を明らかにした．調査の結果，消費者のうち15%しかスマートフォンを利用していないことがわかった．利用用としては，知人とのコミュニケーションが大部分だった．そして驚くべきことに，スマートフォンを利用した消費者は，来店前に購入を予定していた商品のうち三分の一を買い忘れていた．
+* New retailerには，以下が求められている：
+  * 来店した消費者を徹底的に調査し，それぞれに適した広告やサービスを提供すること．購買体験を楽しくすること．
+  * デジタル技術を利用して，実店舗を補強すること．
+  * 触れ合いを最大限活用すること．オフライン店舗がオンライン店舗より優れている点は，実際に商品に触れることである．
+  * 実店舗は，出来る限り小さく，一時的なものにすること．
+
 # Case study: Threadless
+
+* Marcia Froelke Coburn (2012, June 20), [How Jake Nickell Built His Threadless Empire](http://www.chicagomag.com/Chicago-Magazine/July-2012/How-Jake-Nickell-Built-His-Threadless-Empire/). *Chicago Magazine*
+  *
 
 # Digital concept: 3D printing
 
@@ -70,12 +91,12 @@ categories:
 * [exuberance](https://ejje.weblio.jp/content/exuberance)：豊富，繁茂．
 * [morph](https://ejje.weblio.jp/content/morph)：変態する．
 * [implode](https://ejje.weblio.jp/content/implode)：内破する．explodeの逆か．
-* trickle：わずかな動き
-* chore：雑務
-* rebate：払い戻し
-* lackluster：パッとしない
-* frenzied：半狂乱の
-* conspicuously：著しく，目立って
-* acumen：判断力
-* judicial：賢明な
-* arenas：活動の場
+* trickle：わずかな動き．
+* chore：雑務．
+* rebate：払い戻し．
+* lackluster：パッとしない．
+* frenzied：半狂乱の．
+* conspicuously：著しく，目立って．
+* acumen：判断力．
+* judicial：賢明な．
+* arenas：活動の場．
