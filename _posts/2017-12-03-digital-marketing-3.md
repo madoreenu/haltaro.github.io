@@ -32,12 +32,20 @@ categories:
     * **現状を知ること**：消費者は，小売業者ならではの利点を求めている；つまり実店舗である．具体的には，接客や，実製品，イベントとしてのショッピングなどである．
     * **購入経路と泣き所を知ること**：消費者の購入経路を調査するための，様々なツールが存在する．これらを利用するポイントは，かつてのように汎用的なソリューションを探るのではなく，セグメントごとにソリューションを最適化することである．
     * **実店舗での顧客体験を演出すること**：小売業者の武器は，実店舗を持っていることである．デジタル技術を用いれば，低コストで，顧客体験を向上できる．また，デジタル技術により，小売業者は無限の価値を持つ顧客情報を得られる．最も重要なのは，デジタル技術を用いてオムニチャネル化した小売戦略は，実店舗を持たない純粋なオンライン小売戦略より優れている，ということである．オムニチャネル化した小売業者は，誰よりも早く広範囲に新サービスを展開し，素早く学習サイクルを回す必要がある．
-    * **オムニチャネルを管理すること**：
+    * **オムニチャネルを組織的に管理すること**：​オムニチャネルマーケティングを組織的に実行するのは，とても難しい．一つのアプローチは，専門の組織を立ち上げ，重要な決定は本部と連携して行うことだ．創造性のある人材の確保も課題だ．この側面でも，最新のデジタル技術を利用するべき．また，改革を行うスピードにも注意する必要がある．あまりに遅すぎると，他者に水をあげられてしまう．逆にあまりに速すぎると，試行錯誤する時間がなくなってしまう．
 * Cairns, A. (2012, July 6). [The future of digital music distribution and online music marketing](https://econsultancy.com/blog/10275-the-future-of-digital-music-distribution-and-online-music-marketing/). *Econsultancy*.
+  * ​オンライン音楽配信の方式として，**Access** と **Ownership** がある．Accessは，Spotifyのような，いわゆるストリーミングサービス．Ownershipは，iTunesなどの購入型サービス．
+  * Ownershipユーザは，音楽を所有することに重きを置いているため，Accessを受け入れられない．若い世代はAccessを好む傾向があるが，それ以外はOwnershipを好む．若い世代が成長し，購買力を増したとき，オンライン音楽配信の勢力図に大きな影響を及ぼすと見られる．
+  * Access型配信は，Promotionと相性が良い．ユーザがアクセスしたアーティストの販促に役立つだけでなく，SNS上での共有を促すこともできる．一方で，Ownership型配信の楽曲は，著作権の問題があるため共有できない．
+  * `share2download`は，SNSでの拡散行動をユーザに求める代わりに，無料で楽曲を提供するサービスである．
 * Kain, E. (2013, May 30). [Why digital distribution is the future and GameStop is not: Taking the long view on used games](https://www.forbes.com/sites/erikkain/2013/05/30/why-digital-distribution-is-the-future-and-gamestop-is-not-taking-the-long-view-on-used-games/#583e878d4a5e). *Forbes*.
+  * 時間が足りないので，後で読む．
 * Parker, J. (2013, June 27). [How digital marketing will influence industry distribution structures](http://www.cmo.com/features/articles/2013/6/27/how_digital_marketin.html). *CMO*.
+  * 時間が足りないので，後で読む．
 
 # Basic concept: Placement
+
+
 
 # Digital concept: New retail
 

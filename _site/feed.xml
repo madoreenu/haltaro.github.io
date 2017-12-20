@@ -6,13 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-<<<<<<< HEAD
-    <pubDate>Wed, 20 Dec 2017 12:49:50 +0900</pubDate>
-    <lastBuildDate>Wed, 20 Dec 2017 12:49:50 +0900</lastBuildDate>
-=======
-    <pubDate>Tue, 12 Dec 2017 08:07:21 +0900</pubDate>
-    <lastBuildDate>Tue, 12 Dec 2017 08:07:21 +0900</lastBuildDate>
->>>>>>> 10b8b762766f9b8fd4cdce5ae9c15352c220602f
+    <pubDate>Wed, 20 Dec 2017 14:17:50 +0900</pubDate>
+    <lastBuildDate>Wed, 20 Dec 2017 14:17:50 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -154,16 +149,34 @@
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;小売業者は，消費者は常にそこにいると考えているが，オムニチャネル化した世界では必ずしもそうではない．&lt;/li&gt;
-      &lt;li&gt;小売業者の取るべき対策としては：
+      &lt;li&gt;小売業者が取るべき対策は：
         &lt;ul&gt;
-          &lt;li&gt;現実を受け入れる．&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;現状を知ること&lt;/strong&gt;：消費者は，小売業者ならではの利点を求めている；つまり実店舗である．具体的には，接客や，実製品，イベントとしてのショッピングなどである．&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;購入経路と泣き所を知ること&lt;/strong&gt;：消費者の購入経路を調査するための，様々なツールが存在する．これらを利用するポイントは，かつてのように汎用的なソリューションを探るのではなく，セグメントごとにソリューションを最適化することである．&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;実店舗での顧客体験を演出すること&lt;/strong&gt;：小売業者の武器は，実店舗を持っていることである．デジタル技術を用いれば，低コストで，顧客体験を向上できる．また，デジタル技術により，小売業者は無限の価値を持つ顧客情報を得られる．最も重要なのは，デジタル技術を用いてオムニチャネル化した小売戦略は，実店舗を持たない純粋なオンライン小売戦略より優れている，ということである．オムニチャネル化した小売業者は，誰よりも早く広範囲に新サービスを展開し，素早く学習サイクルを回す必要がある．&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;オムニチャネルを組織的に管理すること&lt;/strong&gt;：​オムニチャネルマーケティングを組織的に実行するのは，とても難しい．一つのアプローチは，専門の組織を立ち上げ，重要な決定は本部と連携して行うことだ．創造性のある人材の確保も課題だ．この側面でも，最新のデジタル技術を利用するべき．また，改革を行うスピードにも注意する必要がある．あまりに遅すぎると，他者に水をあげられてしまう．逆にあまりに速すぎると，試行錯誤する時間がなくなってしまう．&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Cairns, A. (2012, July 6). &lt;a href=&quot;https://econsultancy.com/blog/10275-the-future-of-digital-music-distribution-and-online-music-marketing/&quot;&gt;The future of digital music distribution and online music marketing&lt;/a&gt;. &lt;em&gt;Econsultancy&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;Kain, E. (2013, May 30). &lt;a href=&quot;https://www.forbes.com/sites/erikkain/2013/05/30/why-digital-distribution-is-the-future-and-gamestop-is-not-taking-the-long-view-on-used-games/#583e878d4a5e&quot;&gt;Why digital distribution is the future and GameStop is not: Taking the long view on used games&lt;/a&gt;. &lt;em&gt;Forbes&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;Parker, J. (2013, June 27). &lt;a href=&quot;http://www.cmo.com/features/articles/2013/6/27/how_digital_marketin.html&quot;&gt;How digital marketing will influence industry distribution structures&lt;/a&gt;. &lt;em&gt;CMO&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Cairns, A. (2012, July 6). &lt;a href=&quot;https://econsultancy.com/blog/10275-the-future-of-digital-music-distribution-and-online-music-marketing/&quot;&gt;The future of digital music distribution and online music marketing&lt;/a&gt;. &lt;em&gt;Econsultancy&lt;/em&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;​オンライン音楽配信の方式として，&lt;strong&gt;Access&lt;/strong&gt; と &lt;strong&gt;Ownership&lt;/strong&gt; がある．Accessは，Spotifyのような，いわゆるストリーミングサービス．Ownershipは，iTunesなどの購入型サービス．&lt;/li&gt;
+      &lt;li&gt;Ownershipユーザは，音楽を所有することに重きを置いているため，Accessを受け入れられない．若い世代はAccessを好む傾向があるが，それ以外はOwnershipを好む．若い世代が成長し，購買力を増したとき，オンライン音楽配信の勢力図に大きな影響を及ぼすと見られる．&lt;/li&gt;
+      &lt;li&gt;Access型配信は，Promotionと相性が良い．ユーザがアクセスしたアーティストの販促に役立つだけでなく，SNS上での共有を促すこともできる．一方で，Ownership型配信の楽曲は，著作権の問題があるため共有できない．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;share2download&lt;/code&gt;は，SNSでの拡散行動をユーザに求める代わりに，無料で楽曲を提供するサービスである．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Kain, E. (2013, May 30). &lt;a href=&quot;https://www.forbes.com/sites/erikkain/2013/05/30/why-digital-distribution-is-the-future-and-gamestop-is-not-taking-the-long-view-on-used-games/#583e878d4a5e&quot;&gt;Why digital distribution is the future and GameStop is not: Taking the long view on used games&lt;/a&gt;. &lt;em&gt;Forbes&lt;/em&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;時間が足りないので，後で読む．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Parker, J. (2013, June 27). &lt;a href=&quot;http://www.cmo.com/features/articles/2013/6/27/how_digital_marketin.html&quot;&gt;How digital marketing will influence industry distribution structures&lt;/a&gt;. &lt;em&gt;CMO&lt;/em&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;時間が足りないので，後で読む．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;basic-concept-placement&quot;&gt;Basic concept: Placement&lt;/h1&gt;
@@ -300,7 +313,7 @@
     
       <item>
         <title>DMM体験レッスン：1．Article discussion</title>
-        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回も，&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;と並ぶオンライン英会話最大手の&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;で，&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;を体験した．セルビア在住の先生に対応してもらったが，とても親切で，英語力も高かった．フィリピン人と比べて元気が無いように感じたのは，雇用情勢のせいだろう．とりあえず，あと二回体験してみる．&lt;/p&gt;
+        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;と並ぶオンライン英会話最大手の&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;で，&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;を体験した．セルビア在住の先生に対応してもらったが，とても親切で，英語力も高かった．フィリピン人と比べて元気が無いように感じたのは，雇用情勢のせいだろう．とりあえず，あと二回体験してみる．&lt;/p&gt;
 
 &lt;h1 id=&quot;dmm英会話とは&quot;&gt;DMM英会話とは&lt;/h1&gt;
 
