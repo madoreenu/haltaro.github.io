@@ -6,9 +6,54 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Dec 2017 19:04:59 +0900</pubDate>
-    <lastBuildDate>Wed, 20 Dec 2017 19:04:59 +0900</lastBuildDate>
+    <pubDate>Wed, 20 Dec 2017 20:07:58 +0900</pubDate>
+    <lastBuildDate>Wed, 20 Dec 2017 20:07:58 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>DMM英会話：Article discussion</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;で，&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;を受講した．アメリカのISPの規制緩和に関する話題で，難しかった．&lt;/p&gt;
+
+&lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;の&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/internet-at-risk-as-us-scraps-net-neutrality-rules/QC3TQOFoEee5-Gd_BZxWsA&quot;&gt;Internet at Risk as US Scraps Net Neutrality Rules&lt;/a&gt;を二回音読した．&lt;/p&gt;
+
+&lt;h1 id=&quot;講義内容&quot;&gt;講義内容&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;自己紹介．&lt;/li&gt;
+  &lt;li&gt;Daily news discussion．
+    &lt;ul&gt;
+      &lt;li&gt;Vocabularyを先生に続けて読む．&lt;/li&gt;
+      &lt;li&gt;Articleを先生に続けて読む．&lt;/li&gt;
+      &lt;li&gt;Questionsに回答．&lt;/li&gt;
+      &lt;li&gt;Discussionに回答．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;学んだこと&quot;&gt;学んだこと&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Scrap：廃棄する，廃止する．&lt;/li&gt;
+  &lt;li&gt;Light tough (regulation)：軽微な規制，的な意味？&lt;/li&gt;
+  &lt;li&gt;Norm：標準，規範．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;ISPの話題で，結構難しかった．Daily newsは，トピック自体面白いものが多いので良い．&lt;/p&gt;
+
+&lt;p&gt;レアジョブのように音声教材が無いので，正しい発音を知りたい場合は講義時間中に先生に音読してもらう必要がある．25分しかないので，そこが難点だ．&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Dec 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/12/20/dmm-english</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/20/dmm-english</guid>
+        
+        
+        <category>english</category>
+        
+      </item>
     
       <item>
         <title>本田哲也，田端信太郎，広告やメディアで人を動かそうとするのは、もう諦めなさい。</title>
@@ -865,90 +910,6 @@
         
         
         <category>javascript</category>
-        
-      </item>
-    
-      <item>
-        <title>Reajob体験レッスン：Article discussion</title>
-        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，出国前まで続けていた&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の&lt;a href=&quot;https://www.rarejob.com/dna&quot;&gt;Article discussion&lt;/a&gt;．&lt;/p&gt;
-
-&lt;h1 id=&quot;reajobとは&quot;&gt;Reajobとは&lt;/h1&gt;
-
-&lt;p&gt;フィリピン系オンライン英会話の最大手．2017年11月21日時点の&lt;a href=&quot;https://www.rarejob.com/payment/&quot;&gt;料金プラン&lt;/a&gt;は以下．&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;プラン&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;料金[円/月]&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;月8回&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;4,200&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;毎日25分&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;5,800&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.rarejob.com/dna/2017/11/13/south-australia-to-improve-wind-farm-with-worlds-largest-battery/&quot;&gt;Daily news article&lt;/a&gt;のページで：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;文章を見ずにリスニング１回&lt;/li&gt;
-  &lt;li&gt;文章を見ながらシャドウイング6回&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;講義内容&quot;&gt;講義内容&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;自己紹介．沖縄に行ったことがあるそうなので少し盛り上がる．&lt;/li&gt;
-  &lt;li&gt;タイトルを読んだあと，停電に関する質疑応答．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;大規模な停電を経験したことがあるか？&lt;/strong&gt;：ある．2013年の大震災のとき．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;どのくらいの間停電したか？&lt;/strong&gt;：一日中（うろ覚え）．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;停電時，どのような活動に影響がでたか？&lt;/strong&gt;：家電が止まって大変だった．（今思えば，電車が止まって帰宅難民が出たとか言えばよかった）&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;New wordsを音読．&lt;/li&gt;
-  &lt;li&gt;Articleを音読．途中で３つほど質問に答える．&lt;/li&gt;
-  &lt;li&gt;Articleの即興サマライズ．&lt;/li&gt;
-  &lt;li&gt;Viewpoint discussion．&lt;/li&gt;
-  &lt;li&gt;少し時間が余ったので逆質問．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;サマライズが難しかった．何かコツがあったら教えてほしい&lt;/strong&gt;：記事全体を眺めて，重要そうな部分を抜き出せば良いよ．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;先生からのフィードバック&quot;&gt;先生からのフィードバック&lt;/h1&gt;
-
-&lt;p&gt;特になし．&lt;/p&gt;
-
-&lt;h1 id=&quot;学んだこと&quot;&gt;学んだこと&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/intermittent&quot;&gt;&lt;em&gt;intermittent&lt;/em&gt;&lt;/a&gt;：時々とぎれる，断続する，間欠性の．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ejje.weblio.jp/content/forestall&quot;&gt;&lt;em&gt;forestall&lt;/em&gt;&lt;/a&gt;：先んずる，機先を制する，出し抜く，買い占める．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/operational&quot;&gt;&lt;em&gt;operational&lt;/em&gt;&lt;/a&gt;：操作上の，経営上の；使用できる，運転可能な；作戦上の．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;サマライズはやっぱり難しい．とりあえず話す習慣をつけることが大事だと思った．&lt;/p&gt;
-
-&lt;p&gt;Reajobはリーズナブルで安定しているが，できればネイティブスピーカーの先生に習いたい．もっといろいろ探してみる．&lt;/p&gt;
-</description>
-        <pubDate>Mon, 13 Nov 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/11/13/reajob</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/13/reajob</guid>
-        
-        
-        <category>english</category>
         
       </item>
     
