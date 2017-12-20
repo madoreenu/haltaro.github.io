@@ -51,3 +51,12 @@ categories:
 * [exuberance](https://ejje.weblio.jp/content/exuberance)：豊富，繁茂．
 * [morph](https://ejje.weblio.jp/content/morph)：変態する．
 * [implode](https://ejje.weblio.jp/content/implode)：内破する．explodeの逆か．
+* trickle：わずかな動き
+* chore：雑務
+* rebate：払い戻し
+* lackluster：パッとしない
+* frenzied：半狂乱の
+* conspicuously：著しく，目立って
+* acumen：判断力
+* judicial：賢明な
+* arenas：活動の場
