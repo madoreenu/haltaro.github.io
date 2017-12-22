@@ -11,11 +11,11 @@ categories:
 # 序章．マーケティング・サイエンスのすすめ
 
 * マーケティング・マネジメント・プロセス：
-  * 新規事業の発見：*Research*．
-  * マーケティング戦略：*Segmentation*，*Targeting*，*Positioning*．
-  * マーケティング戦術：*Marketing mix*．
-  * 実行：*Inplementation*．
-  * 制御：*Control*．
+  * 新規事業の発見：Research．
+  * マーケティング戦略：Segmentation，Targeting，Positioning．
+  * マーケティング戦術：Marketing mix．
+  * 実行：Implementation．
+  * 制御：Control．
 
 # 1章．ビジネス・チャンスの発見
 
