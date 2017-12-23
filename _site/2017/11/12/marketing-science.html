@@ -100,11 +100,11 @@
 <ul>
   <li>マーケティング・マネジメント・プロセス：
     <ul>
-      <li>新規事業の発見：<em>Research</em>．</li>
-      <li>マーケティング戦略：<em>Segmentation</em>，<em>Targeting</em>，<em>Positioning</em>．</li>
-      <li>マーケティング戦術：<em>Marketing mix</em>．</li>
-      <li>実行：<em>Inplementation</em>．</li>
-      <li>制御：<em>Control</em>．</li>
+      <li>新規事業の発見：Research．</li>
+      <li>マーケティング戦略：Segmentation，Targeting，Positioning．</li>
+      <li>マーケティング戦術：Marketing mix．</li>
+      <li>実行：Implementation．</li>
+      <li>制御：Control．</li>
     </ul>
   </li>
 </ul>
@@ -170,6 +170,27 @@ U_i = V_i + \epsilon_i
 <script type="math/tex; mode=display">\begin{align*}
 V_i = \alpha_i + \sum_k \beta_k X_{ik}
 \end{align*}</script>
+
+<ul>
+  <li><script type="math/tex">\epsilon_i</script>に​
+正規分布を仮定したモデルを，プロビット・モデルと呼ぶ．
+プロビット・モデルでは，<script type="math/tex">P(i \mid C)</script>の積分を解析的に解けない．よって，<script type="math/tex">\epsilon_i</script>に二重指数分布（<a href="​
+https://ja.m.wikipedia.org/wiki/%E3%83%A9%E3%83%97%E3%83%A9%E3%82%B9%E5%88%86%E5%B8%83">ラプラス分布？</a>）を仮定したロジット・モデルが提案されている．</li>
+</ul>
+
+<script type="math/tex; mode=display">\begin{align*}
+P(i \mid C) = \frac{\mathrm{exp} (V_i)}{\sum_{j \in C}\mathrm{exp} (V_j)}
+\end{align*}</script>
+
+<ul>
+  <li>​ロジット・モデルの課題は，消費者ごとの異質性をどのように取り込むか．アプローチとしては二つある：
+    <ul>
+      <li>​消費者の嗜好性を説明変数(おそらく<script type="math/tex">X</script>)として追加する方法．</li>
+      <li>​パラメータの値が消費者間で異なると仮定する方法．​潜在クラスモデルと，階層ベイズモデルがある．前者は，パラメータの事前分布として離散的分布を仮定するもので，後者は連続的分布を仮定するもの．</li>
+    </ul>
+  </li>
+  <li>階層ベイズモデルについては，<a href="http://tjo.hatenablog.com/entry/2014/05/01/190346">六本木で働くデータサイエンティストのブログ，Stanで統計モデリングを学ぶ(4): とりあえず階層ベイズモデルを試してみる（基本編）</a>がわかりやすかった．</li>
+</ul>
 
   </article>
   
