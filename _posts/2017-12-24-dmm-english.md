@@ -10,7 +10,7 @@ categories:
 
 # 予習
 
-[Daily news](https://app.eikaiwa.dmm.com/daily-news)の[IWhere Do Christmas Traditions Come From?](https://app.eikaiwa.dmm.com/daily-news/article/where-do-christmas-traditions-come-from/CWZQ7trnEeerlo-E-v-yyA)を二回音読した．
+[Daily news](https://app.eikaiwa.dmm.com/daily-news)の[Where Do Christmas Traditions Come From?](https://app.eikaiwa.dmm.com/daily-news/article/where-do-christmas-traditions-come-from/CWZQ7trnEeerlo-E-v-yyA)を二回音読した．
 
 # 講義内容
 
