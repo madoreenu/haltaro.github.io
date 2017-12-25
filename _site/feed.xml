@@ -6,9 +6,88 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Dec 2017 09:51:29 +0900</pubDate>
-    <lastBuildDate>Sun, 24 Dec 2017 09:51:29 +0900</lastBuildDate>
+    <pubDate>Mon, 25 Dec 2017 17:44:53 +0900</pubDate>
+    <lastBuildDate>Mon, 25 Dec 2017 17:44:53 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>チャットボットを作ろう：1．調査</title>
+        <description>&lt;p&gt;諸事情により，チャットボットを自作したいと思った．まずは，どんなことを実現したいのか，またどうやったら実現できそうか整理してみる．&lt;/p&gt;
+
+&lt;h1 id=&quot;実現したいもの&quot;&gt;実現したいもの&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ウェブサイトに埋め込む形で，自己紹介風のチャットを行うこと．つまり，LINEボットのように，アプリケーション依存ではないこと．&lt;/li&gt;
+  &lt;li&gt;会話のログを，統計解析可能な形で保存できること．&lt;/li&gt;
+  &lt;li&gt;回答に応じて，ウェブサイトのデザインを変更できること．例えば，好きな色を聞いて「赤」と回答されたら，赤をベースとしたデザインに変更するなど．&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;上から順番に優先順位が高い．&lt;/p&gt;
+
+&lt;h1 id=&quot;使えそうなもの&quot;&gt;使えそうなもの&lt;/h1&gt;
+
+&lt;p&gt;いろいろ調べた結果，JavaScriptだけで動く&lt;a href=&quot;https://botui.org/&quot;&gt;BotUI&lt;/a&gt;がよさ気な気がする．以下は参考になりそうな記事：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.darudaru-life.com/entry/2017/09/30/095308&quot;&gt;darudaru，JavaScriptだけで作るチャットボット「BotUI」&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://paiza.hatenablog.com/entry/2017/09/21/%EF%BB%BFJavaScript%E3%81%A0%E3%81%91%E3%81%A7%E6%9C%AC%E6%A0%BC%E7%9A%84%E3%81%AA%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%82%8B&quot;&gt;paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;今後の予定&quot;&gt;今後の予定&lt;/h1&gt;
+&lt;p&gt;そもそもJavaScriptの基礎知識が皆無なので，そこから勉強する．11月末にUdemyのセールで購入した&lt;a href=&quot;https://www.udemy.com/completeweb2_jp/&quot;&gt;フルスタックWebエンジニア講座&lt;/a&gt;を使おう．&lt;/p&gt;
+</description>
+        <pubDate>Mon, 25 Dec 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/12/25/chatbot</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/25/chatbot</guid>
+        
+        
+        <category>chatbot</category>
+        
+      </item>
+    
+      <item>
+        <title>DMM英会話：Article discussion</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;で，&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;を受講した．クリスマスの起源をめぐる話題．先生が陽気で，とても楽しかった．&lt;/p&gt;
+
+&lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;の&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/where-do-christmas-traditions-come-from/CWZQ7trnEeerlo-E-v-yyA&quot;&gt;Where Do Christmas Traditions Come From?&lt;/a&gt;を二回音読した．&lt;/p&gt;
+
+&lt;h1 id=&quot;講義内容&quot;&gt;講義内容&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;自己紹介．&lt;/li&gt;
+  &lt;li&gt;Daily news discussion．
+    &lt;ul&gt;
+      &lt;li&gt;Vocabularyを先生に続けて読む．&lt;/li&gt;
+      &lt;li&gt;Articleを先生に続けて読む．&lt;/li&gt;
+      &lt;li&gt;Questionsに回答．&lt;/li&gt;
+      &lt;li&gt;Discussionに回答．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;学んだこと&quot;&gt;学んだこと&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;festive：お祭りの．&lt;/li&gt;
+  &lt;li&gt;peasant：農民，百姓．&lt;/li&gt;
+  &lt;li&gt;christianity：キリスト教．&lt;/li&gt;
+  &lt;li&gt;merchant：商人．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;セルビア人の先生を依頼．レアジョブでは，クリスマス付近は休講になるみたいだが，DMMだと普通に予約できた．セルビアではそこまでしっかりお祝いしないのか？&lt;/p&gt;
+</description>
+        <pubDate>Sun, 24 Dec 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/12/24/dmm-english</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/24/dmm-english</guid>
+        
+        
+        <category>english</category>
+        
+      </item>
     
       <item>
         <title>DMM英会話：Article discussion</title>
@@ -757,159 +836,6 @@
         
         
         <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>SkimaTalk体験レッスン</title>
-        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，友人から紹介された&lt;a href=&quot;https://www.skimatalk.com/jp&quot;&gt;SkimaTalk&lt;/a&gt;．フィリピン系英会話の二倍の価格帯だが，ネイティブスピーカーと話せるのは嬉しい．予算に余裕があればここで決まりか．&lt;/p&gt;
-
-&lt;h1 id=&quot;skimatalkとは&quot;&gt;SkimaTalkとは&lt;/h1&gt;
-
-&lt;p&gt;ネイティブ講師のみで構成されるオンライン英会話．特徴的なのは，講師によって単価が違うこと．受講者は毎月付与されるコインで，授業を&lt;strong&gt;購入&lt;/strong&gt;する．&lt;/p&gt;
-
-&lt;p&gt;2017年11月20日時点での&lt;a href=&quot;https://www.skimatalk.com/jp/pricing&quot;&gt;料金プラン&lt;/a&gt;は以下．&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;プラン名&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;料金 [円]&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;コイン数&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;トライアル&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9,300&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;80&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ベーシック&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;18,300&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;160&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;スタンダード&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;26,800&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;240&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;プレミアム&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;34,800&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;320&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;1授業の平均料金は9コイン程度なので，月9,300円で9回弱受講できる計算．フィリピン系オンライン英会話の大手&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の体験レッスン．&lt;a href=&quot;https://www.rarejob.com/payment/&quot;&gt;月8回コース&lt;/a&gt;は4,200円なので，約2倍の価格である．&lt;/p&gt;
-
-&lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
-
-&lt;p&gt;今回はフリートークだったため，特に予習はしなかった．&lt;/p&gt;
-
-&lt;h1 id=&quot;講義内容&quot;&gt;講義内容&lt;/h1&gt;
-
-&lt;p&gt;先生はスペイン在住のイギリス人だった．以下のようなやり取りがあった．ゆっくり話してくれた．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;自己紹介．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;趣味は何か？&lt;/strong&gt;：ジョギングと水彩画．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;好きな作家は？&lt;/strong&gt;：ゴッホ．ひまわりを見て感動した．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;何に感動したのか？&lt;/strong&gt;：重ね塗りがすごすぎて，表面がでこぼこしている（パッとしない答えの上，でこぼこを英語で言えなかった）．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;仕事は何か？&lt;/strong&gt;：通信系の研究職．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;具体的には何をしているのか？&lt;/strong&gt;：論文や技術文書を読んだり，実験したり，書いたり．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;通信業界のどこに研究要素があるのか？&lt;/strong&gt;：スマートフォン等の普及により，今後も継続的に通信量が増加することが予想される．現状の通信インフラだと対応できない可能性があるので，より効率的にデータトラフィックを制御する技術が求められている．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;先生からのフィードバック&quot;&gt;先生からのフィードバック&lt;/h1&gt;
-
-&lt;p&gt;特になし．&lt;/p&gt;
-
-&lt;h1 id=&quot;学んだこと&quot;&gt;学んだこと&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/captivating&quot;&gt;captivating&lt;/a&gt;：人の心を捉えるような，魅力的な&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://eow.alc.co.jp/search?q=it%27s+fair+to+say+that&quot;&gt;It’s fair to say that&lt;/a&gt;：（that以下）と言うのが正しい，言ってもいいだろう．&lt;em&gt;Is that fair?&lt;/em&gt; みたいに使ってた．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;フィリピン系オンライン英会話の二倍の値段だが，ネイティブと話せるのは嬉しい．正しい発音や，こなれた言い回しなど，ここでしか学べないことも多いと思う．予算に余裕があるのなら，SkimaTalk一択と感じた．&lt;/p&gt;
-</description>
-        <pubDate>Mon, 20 Nov 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/11/20/skima</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/20/skima</guid>
-        
-        
-        <category>english</category>
-        
-      </item>
-    
-      <item>
-        <title>Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション</title>
-        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/2saLJcb&quot;&gt;Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション&lt;/a&gt;の読書メモ．&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/JavaScript&quot;&gt;JavaScript&lt;/a&gt;習得の取っ掛かりにしたい．&lt;/p&gt;
-
-&lt;p&gt;なお，演習ではUbuntu16.04を用いた．&lt;/p&gt;
-
-&lt;h1 id=&quot;1章開発環境の準備&quot;&gt;1章．開発環境の準備&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;本書で扱うコードは&lt;a href=&quot;https://github.com/Kyrand/dataviz-with-python-and-js&quot;&gt;著者のGitHubレポジトリ&lt;/a&gt;で公開されている．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt;の開発環境を構築．&lt;code class=&quot;highlighter-rouge&quot;&gt;$ conda create --name pyjsviz anaconda&lt;/code&gt;．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.sqlite.org/&quot;&gt;SQLite&lt;/a&gt;をインストール．&lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo apt-get install sqlite3&lt;/code&gt;．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/&quot;&gt;MongoDB，Install MongoDB Community Edition on Ubuntu&lt;/a&gt;を参考に，&lt;a href=&quot;https://www.mongodb.com/?_ga=2.209021842.1022727536.1511017438-1207852474.1511017438&quot;&gt;MongoDB&lt;/a&gt;をインストール．&lt;/li&gt;
-  &lt;li&gt;MongoDB用に，ルートディレクトリに&lt;code class=&quot;highlighter-rouge&quot;&gt;/data&lt;/code&gt;および&lt;code class=&quot;highlighter-rouge&quot;&gt;/data/db&lt;/code&gt;ディレクトリを作成．&lt;/li&gt;
-  &lt;li&gt;上記ディレクトリの所有者を自分に設定．&lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo chown 'haltaro' /data/db&lt;/code&gt;．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;2章pythonとjavascript間の言語学習の橋渡し&quot;&gt;2章．PythonとJavaScript間の言語学習の橋渡し&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Pythonは学習済みなので，JavaScriptを中心にメモを残す．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;のあるディレクトリで&lt;code class=&quot;highlighter-rouge&quot;&gt;$ python -m http.server&lt;/code&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;して，ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8000&lt;/code&gt;にアクセスすると，JavaScriptの実行結果が見られる&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.google.co.jp/chrome/browser/desktop/index.html&quot;&gt;Chrome&lt;/a&gt;のショートカット&lt;code class=&quot;highlighter-rouge&quot;&gt;[Ctrl] + [Shift] + [J]&lt;/code&gt;で，JavaScriptのコンソールが利用できる．&lt;/li&gt;
-  &lt;li&gt;JavaScriptでは，関数やモジュールの先頭で&lt;code class=&quot;highlighter-rouge&quot;&gt;'use strict'&lt;/code&gt;を記述することで，厳格なスタイルガイドを利用できる．&lt;/li&gt;
-  &lt;li&gt;JavaScriptでは，変数名に&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%A1%E3%83%AB%E3%82%B1%E3%83%BC%E3%82%B9&quot;&gt;キャメルケース&lt;/a&gt;を用いることが多い&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;．&lt;/li&gt;
-  &lt;li&gt;Pythonでは，ドット&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;表記を使って相対パスで&lt;code class=&quot;highlighter-rouge&quot;&gt;import&lt;/code&gt;できる．&lt;/li&gt;
-  &lt;li&gt;JavaScriptでは，関数外で宣言した変数や&lt;code class=&quot;highlighter-rouge&quot;&gt;var&lt;/code&gt;キーワードのない変数はグローバルになってしまう．&lt;/li&gt;
-  &lt;li&gt;JavaScriptの&lt;a href=&quot;http://taiju.hatenablog.com/entry/20110331/1301535208&quot;&gt;reduce&lt;/a&gt;関数は便利．配列の合計値などが簡単に計算できる．&lt;/li&gt;
-  &lt;li&gt;JavaScriptでは，&lt;code class=&quot;highlighter-rouge&quot;&gt;array.forEach(callback)&lt;/code&gt;で，効率的に配列&lt;code class=&quot;highlighter-rouge&quot;&gt;array&lt;/code&gt;に繰り返し処理を実行できる．&lt;/li&gt;
-  &lt;li&gt;JavaScriptでは，変数を他のコードより先に処理する．変数を必ず先頭で定義するようにしないと，予期しない動作を招く可能性がある．&lt;/li&gt;
-  &lt;li&gt;続きは24ページから．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://taiju.hatenablog.com/entry/20110331/1301535208&quot;&gt;あと味，reduce関数は結構有用っていうお話&lt;/a&gt;：JavaScriptにおける&lt;code class=&quot;highlighter-rouge&quot;&gt;reduce&lt;/code&gt;の使い方について．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.sejuku.net/blog/20257&quot;&gt;侍エンジニア塾，【JavaScript入門】「forEach文」の使い方を基本から応用まで徹底解説！&lt;/a&gt;：JavaScriptにおける&lt;code class=&quot;highlighter-rouge&quot;&gt;array.forEach&lt;/code&gt;の使い方について．&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;Python3の場合．Python2の場合は&lt;code class=&quot;highlighter-rouge&quot;&gt;$ python -m SimpleHTTPServer&lt;/code&gt;．&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:3&quot;&gt;
-      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;に具体的に何を書くかについては，本書では割愛．&amp;nbsp;&lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;諸説ある．&lt;a href=&quot;https://qiita.com/takayukishmz@github/items/f833744f43958a3a9ea9&quot;&gt;Qiita，React(Javascript)でファイルの命名規則をどうするかという問題&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 18 Nov 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/11/18/python-js</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/18/python-js</guid>
-        
-        
-        <category>javascript</category>
         
       </item>
     
