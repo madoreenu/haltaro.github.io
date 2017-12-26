@@ -6,11 +6,11 @@ categories:
  - english
 ---
 
-[DMM英会話](http://eikaiwa.dmm.com/)で，[Daily news](https://app.eikaiwa.dmm.com/daily-news)を受講した．本記事は12月分のまとめ．
+結局，[DMM英会話](http://eikaiwa.dmm.com/)でセルビア人の先生に習うことにした．以下は，2017年12月の受講記録．
 
 # 12/20
 
-[Daily news](https://app.eikaiwa.dmm.com/daily-news)の[Internet at Risk as US Scraps Net Neutrality Rules](https://app.eikaiwa.dmm.com/daily-news/article/internet-at-risk-as-us-scraps-net-neutrality-rules/QC3TQOFoEee5-Gd_BZxWsA)を受講．
+[Daily news](https://app.eikaiwa.dmm.com/daily-news)の[Internet at Risk as US Scraps Net Neutrality Rules](https://app.eikaiwa.dmm.com/daily-news/article/internet-at-risk-as-us-scraps-net-neutrality-rules/QC3TQOFoEee5-Gd_BZxWsA)を受講．ISPの規制緩和に関する話題．
 
 学んだこと：
 
@@ -20,7 +20,7 @@ categories:
 
 # 12/24
 
-[Daily news](https://app.eikaiwa.dmm.com/daily-news)の[Where Do Christmas Traditions Come From?](https://app.eikaiwa.dmm.com/daily-news/article/where-do-christmas-traditions-come-from/CWZQ7trnEeerlo-E-v-yyA)を受講した．
+[Daily news](https://app.eikaiwa.dmm.com/daily-news)の[Where Do Christmas Traditions Come From?](https://app.eikaiwa.dmm.com/daily-news/article/where-do-christmas-traditions-come-from/CWZQ7trnEeerlo-E-v-yyA)を受講．クリスマスの起源に関する話題．
 
 学んだこと：
 
@@ -32,4 +32,4 @@ categories:
 
 # 12/26
 
-[Daily news](https://app.eikaiwa.dmm.com/daily-news)の[Has the Human Race Reached Its Peak?](https://app.eikaiwa.dmm.com/daily-news/article/has-the-human-race-reached-its-peak/5f_JIN6BEeeDuhvR0NTrRQ)を受講した．
+[Daily news](https://app.eikaiwa.dmm.com/daily-news)の[Has the Human Race Reached Its Peak?](https://app.eikaiwa.dmm.com/daily-news/article/has-the-human-race-reached-its-peak/5f_JIN6BEeeDuhvR0NTrRQ)を受講．人類の生物学的限界が発見された，という話題．
