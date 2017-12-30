@@ -1,6 +1,5 @@
 (function() {
 
-  var msgIndex, key;
   var botui = new BotUI('self-intro');
 
   //初期メッセージ．
