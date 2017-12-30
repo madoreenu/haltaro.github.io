@@ -41,7 +41,7 @@
   function tomizawa() {
     botui.message.add({
       delay: 2500,
-      content: 'ちょっと何言ってるかわかんないです．'
+      content: 'ちょっと何言ってるかわからないです．'
     }).then(function() {
       return botui.message.add({
         delay: 1000,
@@ -122,7 +122,7 @@
   function showMemotaro() {
     botui.message.add({
       delay: 1000,
-      content: 'このウェブサイトには，Qiita以下で日記以上な技術的メモを書く予定です．'
+      content: 'このウェブサイトには，Qiita以下かつ日記以上な技術的メモを書く予定です．'
     }).then(function(){
       return botui.message.add({
         delay: 2000,
