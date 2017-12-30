@@ -42,11 +42,6 @@
     botui.message.add({
       delay: 2500,
       content: 'ちょっと何言ってるかわからないです．'
-    }).then(function() {
-      return botui.message.add({
-        delay: 1000,
-        content: 'ちなみに，好きな芸人はサンドウィッチマンです．'
-      })
     }).then(showQuestions);
   }
 
