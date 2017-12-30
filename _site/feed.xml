@@ -6,15 +6,110 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Dec 2017 08:17:33 +0900</pubDate>
-    <lastBuildDate>Sat, 30 Dec 2017 08:17:33 +0900</lastBuildDate>
+    <pubDate>Sat, 30 Dec 2017 09:34:32 +0900</pubDate>
+    <lastBuildDate>Sat, 30 Dec 2017 09:34:32 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>チャットボットを作ろう：2．JekyllサイトでBotUI</title>
+        <description>&lt;p&gt;諸事情により，チャットボットを自作したいと思った．&lt;a href=&quot;http://paiza.hatenablog.com/entry/2017/09/21/%EF%BB%BFJavaScript%E3%81%A0%E3%81%91%E3%81%A7%E6%9C%AC%E6%A0%BC%E7%9A%84%E3%81%AA%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%82%8B&quot;&gt;paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！&lt;/a&gt;を参考にチャットボットを作成し，&lt;a href=&quot;https://haltaro.github.io/about/&quot;&gt;本サイトのAbout欄&lt;/a&gt;に埋め込んだ．&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;460&quot; src=&quot;https://www.youtube.com/embed/5PrEYAkgwi0?rel=0&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;関連記事はこちら：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/25/chatbot&quot;&gt;チャットボットを作ろう：1．調査&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/30/chatbot&quot;&gt;チャットボットを作ろう：2．JekyllサイトでBotUI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/easybook/&quot;&gt;Easybook&lt;/a&gt;：本サイトで利用している&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;のテーマ．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/botui/botui&quot;&gt;BotUI&lt;/a&gt;：JavaScriptだけで動くチャットボットライブラリ．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://paiza.hatenablog.com/entry/2017/09/21/%EF%BB%BFJavaScript%E3%81%A0%E3%81%91%E3%81%A7%E6%9C%AC%E6%A0%BC%E7%9A%84%E3%81%AA%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%82%8B&quot;&gt;paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！&lt;/a&gt;を参考した．&lt;/p&gt;
+
+&lt;h2 id=&quot;_includesheadhtmlを追記&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;を追記&lt;/h2&gt;
+
+&lt;p&gt;BotUI関連のファイルを，CDN経由で読み込む設定を&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;に追記した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/1eb351f9a2abe6d2fc31f0c79a45e548.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;_layoutsbothtmlを作成&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/bot.html&lt;/code&gt;を作成&lt;/h2&gt;
+
+&lt;p&gt;BotUI用の新レイアウト&lt;code class=&quot;highlighter-rouge&quot;&gt;bot.html&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/&lt;/code&gt;に追加した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/e28df2507fb5599dead68683fc9ca3f8.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;任意の&lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt;を付与可能．チャットボットを表示したい位置に，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;bot-ui&amp;gt;&lt;/code&gt;タグを配置した．&lt;/p&gt;
+
+&lt;h2 id=&quot;jsbotjsを作成&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;js/bot.js&lt;/code&gt;を作成&lt;/h2&gt;
+
+&lt;p&gt;チャットボット本体となる&lt;code class=&quot;highlighter-rouge&quot;&gt;bot.js&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;js/&lt;/code&gt;に追加した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/3c1db5f8bdf01c6f8f76bb9684a680b6.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise&quot;&gt;Promise&lt;/a&gt;をベースとしたメソッドチェーンを繋げて，構成するらしい．詳細はよくわからなかったが，ノリで&lt;code class=&quot;highlighter-rouge&quot;&gt;then&lt;/code&gt;を繋げていったら動くものができた．&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.message.add&lt;/code&gt;：新規メッセージの表示．&lt;code class=&quot;highlighter-rouge&quot;&gt;delay&lt;/code&gt;で表示までの待ち時間を，&lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt;で表示内容を指定できる．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.action.text&lt;/code&gt;：入力フォームを表示．&lt;code class=&quot;highlighter-rouge&quot;&gt;res&lt;/code&gt;でユーザの回答を取得できる．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.action.button&lt;/code&gt;：ボタンを表示．&lt;code class=&quot;highlighter-rouge&quot;&gt;res&lt;/code&gt;でユーザの回答を取得できる．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;_aboutmdを修正&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_about.md&lt;/code&gt;を修正&lt;/h2&gt;
+
+&lt;p&gt;Markdownで記載していた自己紹介欄を削除し，&lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;bot&lt;/code&gt;に変更した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/d286f37bc2195d2b6797a38e7c2cf468.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;課題&quot;&gt;課題&lt;/h1&gt;
+
+&lt;p&gt;時間切れのため，以下の課題を解決できなかった．時間に余裕ができたら解決したい．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.botui.org/guide.html#botui-markup&quot;&gt;BotUI, Guide, BotUI Markup&lt;/a&gt;を参考にしたが，URLや画像が埋め込めない．&lt;/li&gt;
+  &lt;li&gt;会話が長くなったとき，サイドバーが二重に表示されてダサい．&lt;/li&gt;
+  &lt;li&gt;If-Thenルールに則った人工無能&lt;sup id=&quot;fnref:sand&quot;&gt;&lt;a href=&quot;#fn:sand&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/botui/botui&quot;&gt;BotUI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://paiza.hatenablog.com/entry/2017/09/21/%EF%BB%BFJavaScript%E3%81%A0%E3%81%91%E3%81%A7%E6%9C%AC%E6%A0%BC%E7%9A%84%E3%81%AA%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%82%8B&quot;&gt;paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:sand&quot;&gt;
+      &lt;p&gt;自由記述欄を設けてはいるが，サンドウィッチマンのアレをやりたいだけ．自然言語を理解する能力はない．&amp;nbsp;&lt;a href=&quot;#fnref:sand&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/12/30/chatbot</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/30/chatbot</guid>
+        
+        
+        <category>javascript</category>
+        
+      </item>
     
       <item>
         <title>チャットボットを作ろう：1．調査</title>
         <description>&lt;p&gt;諸事情により，チャットボットを自作したいと思った．まずは，どんなことを実現したいのか，またどうやったら実現できそうか整理してみる．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2017-12-25-bot.png&quot; alt=&quot;bot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;関連記事はこちら：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/25/chatbot&quot;&gt;チャットボットを作ろう：1．調査&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/30/chatbot&quot;&gt;チャットボットを作ろう：2．JekyllサイトでBotUI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;実現したいもの&quot;&gt;実現したいもの&lt;/h1&gt;
 
@@ -43,7 +138,7 @@
         <guid isPermaLink="true">http://localhost:4000/2017/12/25/chatbot</guid>
         
         
-        <category>chatbot</category>
+        <category>javascript</category>
         
       </item>
     
@@ -792,98 +887,6 @@
         
         
         <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>SkimaTalk体験レッスン</title>
-        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，友人から紹介された&lt;a href=&quot;https://www.skimatalk.com/jp&quot;&gt;SkimaTalk&lt;/a&gt;．フィリピン系英会話の二倍の価格帯だが，ネイティブスピーカーと話せるのは嬉しい．予算に余裕があればここで決まりか．&lt;/p&gt;
-
-&lt;h1 id=&quot;skimatalkとは&quot;&gt;SkimaTalkとは&lt;/h1&gt;
-
-&lt;p&gt;ネイティブ講師のみで構成されるオンライン英会話．特徴的なのは，講師によって単価が違うこと．受講者は毎月付与されるコインで，授業を&lt;strong&gt;購入&lt;/strong&gt;する．&lt;/p&gt;
-
-&lt;p&gt;2017年11月20日時点での&lt;a href=&quot;https://www.skimatalk.com/jp/pricing&quot;&gt;料金プラン&lt;/a&gt;は以下．&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;プラン名&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;料金 [円]&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;コイン数&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;トライアル&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9,300&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;80&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ベーシック&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;18,300&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;160&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;スタンダード&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;26,800&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;240&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;プレミアム&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;34,800&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;320&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;1授業の平均料金は9コイン程度なので，月9,300円で9回弱受講できる計算．フィリピン系オンライン英会話の大手&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の体験レッスン．&lt;a href=&quot;https://www.rarejob.com/payment/&quot;&gt;月8回コース&lt;/a&gt;は4,200円なので，約2倍の価格である．&lt;/p&gt;
-
-&lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
-
-&lt;p&gt;今回はフリートークだったため，特に予習はしなかった．&lt;/p&gt;
-
-&lt;h1 id=&quot;講義内容&quot;&gt;講義内容&lt;/h1&gt;
-
-&lt;p&gt;先生はスペイン在住のイギリス人だった．以下のようなやり取りがあった．ゆっくり話してくれた．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;自己紹介．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;趣味は何か？&lt;/strong&gt;：ジョギングと水彩画．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;好きな作家は？&lt;/strong&gt;：ゴッホ．ひまわりを見て感動した．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;何に感動したのか？&lt;/strong&gt;：重ね塗りがすごすぎて，表面がでこぼこしている（パッとしない答えの上，でこぼこを英語で言えなかった）．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;仕事は何か？&lt;/strong&gt;：通信系の研究職．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;具体的には何をしているのか？&lt;/strong&gt;：論文や技術文書を読んだり，実験したり，書いたり．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;通信業界のどこに研究要素があるのか？&lt;/strong&gt;：スマートフォン等の普及により，今後も継続的に通信量が増加することが予想される．現状の通信インフラだと対応できない可能性があるので，より効率的にデータトラフィックを制御する技術が求められている．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;先生からのフィードバック&quot;&gt;先生からのフィードバック&lt;/h1&gt;
-
-&lt;p&gt;特になし．&lt;/p&gt;
-
-&lt;h1 id=&quot;学んだこと&quot;&gt;学んだこと&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/captivating&quot;&gt;captivating&lt;/a&gt;：人の心を捉えるような，魅力的な&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://eow.alc.co.jp/search?q=it%27s+fair+to+say+that&quot;&gt;It’s fair to say that&lt;/a&gt;：（that以下）と言うのが正しい，言ってもいいだろう．&lt;em&gt;Is that fair?&lt;/em&gt; みたいに使ってた．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;フィリピン系オンライン英会話の二倍の値段だが，ネイティブと話せるのは嬉しい．正しい発音や，こなれた言い回しなど，ここでしか学べないことも多いと思う．予算に余裕があるのなら，SkimaTalk一択と感じた．&lt;/p&gt;
-</description>
-        <pubDate>Mon, 20 Nov 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/11/20/skima</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/20/skima</guid>
-        
-        
-        <category>english</category>
         
       </item>
     
