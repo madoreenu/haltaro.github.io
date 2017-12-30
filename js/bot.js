@@ -150,7 +150,7 @@
   function askEnd(){
     botui.message.add({
       delay:2000,
-      content: 'まだ続けますか？'
+      content: '他に質問がありますか？'
     }).then(function() {
 
       // ボタンを提示する．
