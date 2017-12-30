@@ -41,7 +41,7 @@
   function tomizawa() {
     botui.message.add({
       delay: 2500,
-      content: 'ちょっと何言ってるかわかんないです．'
+      content: 'ちょっと何言ってるかわからないです．'
     }).then(function() {
       return botui.message.add({
         delay: 1000,
