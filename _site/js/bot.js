@@ -41,7 +41,7 @@
   function tomizawa() {
     botui.message.add({
       delay: 2500,
-      content: 'ちょっと何言ってるかわからないです．'
+      content: 'ちょっと何言ってるかわかんないです．'
     }).then(function() {
       return botui.message.add({
         delay: 1000,
@@ -108,7 +108,7 @@
     }).then(function() {
       return botui.message.add({
         delay: 2000,
-        content: 'また，週末プログラマとして，c++，Python，JavaScriptなどで遊んでいます．'
+        content: 'また，日曜プログラマとして，c++，Python，JavaScriptなどで遊んでいます．'
       });
     }).then(function() {
       return botui.message.add({
