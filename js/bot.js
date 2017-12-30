@@ -9,47 +9,11 @@
   }).then(showQuestions);
 
 
-  // 最初に，（見かけ上）質問を自由に入力してもらう関数．
-  // 実際はちゃんと回答する気はない．
-  function init() {
-    botui.message.add({
-      delay: 1500,  //メッセージの表示タイミングをずらす．
-      content: '何について，お話ししましょうか？'
-    }).then(function() {
-
-      //キーワードの入力
-      return botui.action.text({
-        delay: 1500,
-        action: {
-          placeholder: '質問を入力'
-        }
-      });
-
-    }).then(function(res){
-
-      key = res.value;
-      return botui.message.add({
-        delay: 1500,
-        content: '「' + key + '」…？'
-      });
-
-    }).then(tomizawa);
-    }
-
-
-  // よくわからない質問を適当にあしらう関数．
-  function tomizawa() {
-    botui.message.add({
-      delay: 2500,
-      content: '聞いてみただけです．'
-    }).then(showQuestions);
-  }
-
   // 質問の選択肢を提示する関数．
   function showQuestions() {
     botui.message.add({
       delay:1500,
-      content: '質問を選んでください．'
+      content: '何について，お話ししましょうか？'
     }).then(function() {
 
       // ボタンを提示する．
