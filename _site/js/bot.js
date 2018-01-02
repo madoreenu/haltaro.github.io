@@ -1,66 +1,24 @@
 (function() {
 
-  var msgIndex, key;
   var botui = new BotUI('self-intro');
 
   //初期メッセージ．
   botui.message.add({
     content: 'こんにちは！haltaroです！'
-  }).then(init);
+  }).then(showQuestions);
 
-
-  // 最初に，（見かけ上）質問を自由に入力してもらう関数．
-  // 実際はちゃんと回答する気はない．
-  function init() {
-    botui.message.add({
-      delay: 1000,  //メッセージの表示タイミングをずらす．
-      content: '何について，お話ししましょうか？'
-    }).then(function() {
-
-      //キーワードの入力
-      return botui.action.text({
-        delay: 1000,
-        action: {
-          placeholder: '質問を入力'
-        }
-      });
-
-    }).then(function(res){
-
-      key = res.value;
-      return botui.message.add({
-        delay: 1000,
-        content: '「' + key + '」…？'
-      });
-
-    }).then(tomizawa);
-    }
-
-
-  // よくわからない質問を適当にあしらう関数．
-  function tomizawa() {
-    botui.message.add({
-      delay: 2500,
-      content: 'ちょっと何言ってるかわからないです．'
-    }).then(function() {
-      return botui.message.add({
-        delay: 1000,
-        content: 'ちなみに，好きな芸人はサンドウィッチマンです．'
-      })
-    }).then(showQuestions);
-  }
 
   // 質問の選択肢を提示する関数．
   function showQuestions() {
     botui.message.add({
-      delay:1000,
-      content: '質問を選んでください．'
+      delay:1500,
+      content: '何について，お話ししましょうか？'
     }).then(function() {
 
       // ボタンを提示する．
       return botui.action.button({
         autoHide: false,
-        delay: 1000,
+        delay: 1500,
         action: [
           {icon: 'user-o', text: '来歴', value: 'carrier'},
           {icon: 'rocket', text: '趣味', value: 'hobby'},
@@ -80,7 +38,7 @@
   // 来歴について説明する関数．
   function showCarrier() {
     botui.message.add({
-      delay: 1000,
+      delay: 1500,
       content: '大学院では，工学修士（航空宇宙工学）を修了しました．主に，GPS衛星の異常検知について研究しました．'
     }).then(function() {
       return botui.message.add({
@@ -103,11 +61,11 @@
   // 趣味について説明する関数．
   function showHobby() {
     botui.message.add({
-      delay: 1000,
+      delay: 1500,
       content: '趣味はジョギングです．今年の目標は，ハーフマラソンに出場することです．'
     }).then(function() {
       return botui.message.add({
-        delay: 2000,
+        delay: 2500,
         content: 'また，日曜プログラマとして，c++，Python，JavaScriptなどで遊んでいます．'
       });
     }).then(function() {
@@ -121,8 +79,8 @@
   // 本ウェブサイトについて説明する関数．
   function showMemotaro() {
     botui.message.add({
-      delay: 1000,
-      content: 'このウェブサイトには，Qiita以下かつ日記以上な技術的メモを書く予定です．'
+      delay: 1500,
+      content: 'このウェブサイトには，日記以上かつQiita未満な技術的メモを書く予定です．'
     }).then(function(){
       return botui.message.add({
         delay: 2000,
@@ -150,12 +108,12 @@
   function askEnd(){
     botui.message.add({
       delay:2000,
-      content: 'まだ続けますか？'
+      content: '他に質問がありますか？'
     }).then(function() {
 
       // ボタンを提示する．
       return botui.action.button({
-        delay: 1000,
+        delay: 1500,
         action: [
           {icon: 'circle-o', text: 'はい', value: true},
           {icon: 'close', text: 'いいえ', value: false}]
@@ -168,11 +126,11 @@
   //プログラムを終了する関数．
   function end() {
     botui.message.add({
-      delay: 1000,
+      delay: 1500,
       content: 'お時間頂き，ありがとうございました．'
     }).then(function(){
       return botui.message.add({
-        delay: 1000,
+        delay: 1500,
         content: 'それでは，引き続きよろしくお願いします！'
       });
     });
