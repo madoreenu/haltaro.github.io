@@ -6,7 +6,7 @@ categories:
  - english
 ---
 
-[DMM英会話](http://eikaiwa.dmm.com/)を受講している．以下は，2018年1月の受講メモ．
+**更新中**：[DMM英会話](http://eikaiwa.dmm.com/)を受講している．以下は，2018年1月の受講メモ．
 
 # 1/2
 
