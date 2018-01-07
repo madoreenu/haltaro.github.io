@@ -59,9 +59,9 @@ categories:
 
 # 感想
 
-結論から言えば，受講して良かった．とりあえず，広告に関連するWeek 2は修了できたので，この業界で何がホットな話題なのか，何となく掴むことができた．また，ピア・レビューは大変だったが，他の受講生の考えを知れて良い刺激になったし，英語の練習にもなった．
+受講して良かった．ひとまず，広告に深く関連するWeek 2は修了できたので，この業界で何がホットな話題なのか，何となく掴むことができた．また，ピア・レビューは大変だったが，他の受講生の考えを知れて良い刺激になったし，英語の練習にもなった．
 
-転職後，落ち着いたらまた受講したい[^1]と思っている．姉妹講座の[Digital Analytics for Marketing Professionals: Marketing Analytics in Theory](https://www.coursera.org/learn/marketing-analytics)や[Digital Analytics for Marketing Professionals: Marketing Analytics in Practice](https://www.coursera.org/learn/digital-analytics)にも興味がある．予算の都合がつけば，[UdacityのDigital marketing nanodegree](https://www.udacity.com/course/digital-marketing-nanodegree--nd018)[^2]も受講したい．
+落ち着いたらまた受講したい[^1]と思っている．姉妹講座の[Digital Analytics for Marketing Professionals: Marketing Analytics in Theory](https://www.coursera.org/learn/marketing-analytics)や[Digital Analytics for Marketing Professionals: Marketing Analytics in Practice](https://www.coursera.org/learn/digital-analytics)にも興味がある．予算の都合がつけば，[UdacityのDigital marketing nanodegree](https://www.udacity.com/course/digital-marketing-nanodegree--nd018)[^2]も受講したい．
 
 [^1]: 経費で落ちたらいいのにな…．
 [^2]: $999 USD．
