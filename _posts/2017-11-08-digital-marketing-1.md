@@ -14,7 +14,7 @@ categories:
 * [Courcera，Marketing in a digital world：1. Product](https://haltaro.github.io/2017/11/08/digital-marketing-1)
 * [Courcera，Marketing in a digital world：2. Promotion](https://haltaro.github.io/2017/11/25/digital-marketing-2)
 * [Courcera, Marketing in a digital world：3. Placement](https://haltaro.github.io/2017/12/03/digital-marketing-3)
-* Courcera, Marketing in a digital world：4. Price
+* [Courcera, Marketing in a digital world：4. Price](https://haltaro.github.io/2017/01/07/digital-marketing-4)
 
 # About the course
 
