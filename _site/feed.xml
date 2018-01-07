@@ -6,9 +6,138 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 Jan 2018 22:12:19 +0900</pubDate>
-    <lastBuildDate>Tue, 02 Jan 2018 22:12:19 +0900</lastBuildDate>
+    <pubDate>Sun, 07 Jan 2018 10:26:42 +0900</pubDate>
+    <lastBuildDate>Sun, 07 Jan 2018 10:26:42 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>CourceraのDigital marketing講座を退会した</title>
+        <description>&lt;p&gt;2017年10月頃から，&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;を受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は一万円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2017-11-18-courcera.png&quot; alt=&quot;courcera&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;背景&quot;&gt;背景&lt;/h1&gt;
+
+&lt;p&gt;2018年1月から広告代理店に転職することが決まったため，マーケティングや広告の基礎について，ほそぼそと書籍で勉強することにした．2017年12月末まで前の会社で働いていたので，退職準備を進めつつ，通勤中や土日に時間を作った．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/10/14/web-buisiness&quot;&gt;武井由紀子，ユーザ中心ウェブビジネス戦略&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/10/15/marketing&quot;&gt;コトラー，アームストロング，恩藏のマーケティング原理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/12/marketing-science&quot;&gt;古川一郎，マーケティング・サイエンス入門&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/02/next-advertising&quot;&gt;佐藤達郎，「これからの広告」の教科書&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/09/dont-fool-yourself&quot;&gt;本田哲也，田端信太郎，広告やメディアで人を動かそうとするのは、もう諦めなさい。&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;書籍を斜め読みしてわかったことは，技術の移り変わりがとても速い業界である，ということ．マーケティングの大家であるコトラー氏は，内容が陳腐化しているため，自分の古い著書にサインを求められても応じない，という逸話があるくらい．最先端の動向をキャッチアップするためには，書籍だけでなく，MOOC（Massive Open Online Course）等のオンライン講座も併用した方が良いと判断した．&lt;/p&gt;
+
+&lt;p&gt;マーケティングに関するMOOCを検索したところ，&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;CourceraのMarketing in a digital world&lt;/a&gt;の評判が良いことがわかった．月額約5000円の有料講座だが，週8時間ほど勉強すれば，4週間で終わるらしい．5000円であれば技術書と変わらないので，2017年10月頃受講を開始した．&lt;/p&gt;
+
+&lt;p&gt;今から考えると，退職準備や中途入社準備を進めながら，週8時間確保できるという読みが甘すぎた．結局2ヶ月かけても修了できず，入社日を迎えて時間切れとなった．&lt;/p&gt;
+
+&lt;h1 id=&quot;講義&quot;&gt;講義&lt;/h1&gt;
+
+&lt;p&gt;受講記録は以下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/08/digital-marketing-1&quot;&gt;Courcera，Marketing in a digital world：1. Product&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/25/digital-marketing-2&quot;&gt;Courcera，Marketing in a digital world：2. Promotion&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/03/digital-marketing-3&quot;&gt;Courcera, Marketing in a digital world：3. Placement&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-4&quot;&gt;Courcera, Marketing in a digital world：4. Price&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;前提&quot;&gt;前提&lt;/h2&gt;
+
+&lt;p&gt;前提として，大学レベルの英語力と，マーケティングの基礎知識（4Pなど）が求められた．日本語訳は一切なく，全て英語で対応する必要があった．&lt;/p&gt;
+
+&lt;h2 id=&quot;教材&quot;&gt;教材&lt;/h2&gt;
+
+&lt;p&gt;リーディング教材と，ビデオ教材の二つ．リーディング教材は，Harvard Business ReviewやHuff Post Businessの記事を週2-4本読まされる．メモを残したり，単語を調べたりしていると，これだけで4時間くらいかかる．ビデオ教材は，合計で週1-2時間ほど．リーディング教材を読んでいればすんなり理解できる．慢性的に時間が足りていなかったので，慣れてきたら1.5倍速で流し見した．&lt;/p&gt;
+
+&lt;p&gt;おそらく，平均すると週6-8時間くらいで一通りの教材をカバーできたと思う．問題は，これに加え，週三つの課題があることだった．&lt;/p&gt;
+
+&lt;h2 id=&quot;課題&quot;&gt;課題&lt;/h2&gt;
+
+&lt;p&gt;課題は，おさらいクイズとピア・レビュー．クイズは，各週の教材の内容を理解していれば難しくなかった．大変なのはピア・レビューだった．&lt;/p&gt;
+
+&lt;p&gt;ピア・レビュー課題には，二つのステップがあった．第一ステップでは，自由筆記形式の質問に自分で回答する．毎回，実在する会社や製品に対し，&lt;strong&gt;この製品は，教材で取り上げたどのタイプに該当するか，理由もつけて答えなさい&lt;/strong&gt; や， &lt;strong&gt;この製品は成功すると思うか，理由もつけて答えなさい&lt;/strong&gt; のような自由記述形式の課題（1セット3-4問）が課せられた．ライティングは苦手なので，これだけで1時間くらいかかった．第二ステップでは，他の受講者の回答を，最低3人分採点する必要があった．採点自体はすぐ終わるが，否が応でも自分の回答と比較してしまい，とても辛った．自分自身の回答も，最低3人から及第点を貰わなければ履修完了とならない．このようなピア・レビュー課題を，週に2セットこなす必要があった．&lt;/p&gt;
+
+&lt;p&gt;教材に週6-8時間，課題に2時間ほどかかるので，週最大10時間確保しなければならなかった．スケジュール通り進められたのはWeek 1だけだった．&lt;/p&gt;
+
+&lt;h1 id=&quot;結果&quot;&gt;結果&lt;/h1&gt;
+
+&lt;p&gt;転職直後に時間が取れるとは思えないため，Week 3の途中で退会することにした．講座全体で見ると，60%ぐらいの進捗だと思う．結局2ヶ月受講したため，受講料は合計で約一万円ほどとなった．&lt;/p&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;結論から言えば，受講して良かった．とりあえず，広告に関連するWeek 2は修了できたので，この業界で何がホットな話題なのか，何となく掴むことができた．また，ピア・レビューは大変だったが，他の受講生の考えを知れて良い刺激になったし，英語の練習にもなった．&lt;/p&gt;
+
+&lt;p&gt;転職後，落ち着いたらまた受講したい&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;と思っている．姉妹講座の&lt;a href=&quot;https://www.coursera.org/learn/marketing-analytics&quot;&gt;Digital Analytics for Marketing Professionals: Marketing Analytics in Theory&lt;/a&gt;や&lt;a href=&quot;https://www.coursera.org/learn/digital-analytics&quot;&gt;Digital Analytics for Marketing Professionals: Marketing Analytics in Practice&lt;/a&gt;にも興味がある．予算の都合がつけば，&lt;a href=&quot;https://www.udacity.com/course/digital-marketing-nanodegree--nd018&quot;&gt;UdacityのDigital marketing nanodegree&lt;/a&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;も受講したい．&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;経費で落ちたらいいのにな…．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;$999 USD．&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 07 Jan 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/01/07/digital-marketing-retire</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/07/digital-marketing-retire</guid>
+        
+        
+        <category>marketing</category>
+        
+      </item>
+    
+      <item>
+        <title>Courcera，Marketing in a digital world：4. Price</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る&lt;a href=&quot;https://www.coursera.org/specializations/digital-marketing&quot;&gt;Digital marketing specialization&lt;/a&gt;の一つ．四週かけて，デジタル時代の&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&quot;&gt;マーケティング・ミックス&lt;/a&gt;について学ぶ．第四週では，Priceを取り扱い，Pay what you wantやPrice comparison toolsについて学ぶ．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2017-11-18-courcera.png&quot; alt=&quot;courcera&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本講座に関する記事：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/08/digital-marketing-1&quot;&gt;Courcera，Marketing in a digital world：1. Product&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/25/digital-marketing-2&quot;&gt;Courcera，Marketing in a digital world：2. Promotion&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/03/digital-marketing-3&quot;&gt;Courcera, Marketing in a digital world：3. Placement&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-4&quot;&gt;Courcera, Marketing in a digital world：4. Price&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-retire&quot;&gt;CourceraのDigital marketing講座を退会した&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;module-3-overview&quot;&gt;Module 3 overview&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;以下は，事前に読む必要がある資料．&lt;/li&gt;
+  &lt;li&gt;Bertini, M., &amp;amp; Koenigsberg, O. (2014). &lt;a href=&quot;https://sloanreview.mit.edu/article/when-customers-help-set-prices/&quot;&gt;When customers help set price&lt;/a&gt;. &lt;em&gt;MIT Sloan Management Review&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Kalb, I. (2013, October 2). &lt;a href=&quot;http://www.businessinsider.com/3-powerful-pricing-strategies-businesses-should-always-consider-2013-10&quot;&gt;Three ways companies decide the price of a product&lt;/a&gt;. &lt;em&gt;Business Insider&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Thaler, R. H., &amp;amp; Tucker, W. (2013). &lt;a href=&quot;https://hbr.org/2013/01/smarter-information-smarter-consumers&quot;&gt;Smarter information, smarter consumers&lt;/a&gt;. &lt;em&gt;Harvard Business Review&lt;/em&gt;, 91(1), 44–54.&lt;/li&gt;
+  &lt;li&gt;Tuttle, B. (2014, November 11). &lt;a href=&quot;http://time.com/money/3576844/pay-what-you-want-businesses/&quot;&gt;A brief history of ‘Pay what you want’ businesses&lt;/a&gt;. &lt;em&gt;Money&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;basic-concept-price&quot;&gt;Basic concept: Price&lt;/h1&gt;
+
+&lt;h1 id=&quot;digital-concept-pay-what-you-want&quot;&gt;Digital concept: Pay what you want&lt;/h1&gt;
+
+&lt;h1 id=&quot;case-study-radiohead&quot;&gt;Case study: Radiohead&lt;/h1&gt;
+
+&lt;h1 id=&quot;digital-concept-price-comparison-tools&quot;&gt;Digital concept: Price comparison tools&lt;/h1&gt;
+
+&lt;h1 id=&quot;exercise-redlasercom&quot;&gt;Exercise: RedLaser.com&lt;/h1&gt;
+
+&lt;h1 id=&quot;campus-spotlight-dr-hari-sundaram&quot;&gt;Campus spotlight: Dr. Hari Sundaram&lt;/h1&gt;
+</description>
+        <pubDate>Sun, 07 Jan 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/01/07/digital-marketing-4</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/07/digital-marketing-4</guid>
+        
+        
+        <category>marketing</category>
+        
+      </item>
     
       <item>
         <title>DMM英会話受講メモ：2018年1月</title>
@@ -18,9 +147,21 @@
 
 &lt;p&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;の&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/start-the-new-year-by-setting-reasonable-learning-goals/pHlmguV6Eee2Ly8HurcLvg&quot;&gt;Start the New Year By Setting Reasonable Learning Goals&lt;/a&gt;を受講．語学学習に関する記事．思春期を過ぎると，口の筋肉を司る脳細胞が死に始めるらしい．マジか…．&lt;/p&gt;
 
-&lt;p&gt;学んだこと：&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;puberty：思春期．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;14&quot;&gt;1/4&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;の&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/top-5-places-to-visit-in-australia/zwdbQOUyEeeVw69Zqdo1cg&quot;&gt;Top 5 Places to Visit in Australia&lt;/a&gt;を受講．オーストラリアの観光名所を紹介する話．文章量が少なかったので，最後のFurther discussionまで終わった．最後の質問&lt;code class=&quot;highlighter-rouge&quot;&gt;We wander for distraction, but we travel for fulfillment. Hilaire Belloc. Do you agree with Belloc? Why? Why not?&lt;/code&gt;は，抽象的すぎて意味がわからなかった（先生もそう言ってた）．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;indigenous：土着の，地域固有の．&lt;/li&gt;
+  &lt;li&gt;engraving：彫刻．&lt;/li&gt;
+  &lt;li&gt;ashore：浜に，岸に，陸上に．&lt;/li&gt;
+  &lt;li&gt;sacred：神聖な，宗教上の．&lt;/li&gt;
+  &lt;li&gt;distraction：気の散ること，気晴らし，娯楽．&lt;/li&gt;
+  &lt;li&gt;fulfillment：履行，遂行，実現．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 02 Jan 2018 00:00:00 +0900</pubDate>
@@ -310,16 +451,17 @@
     
       <item>
         <title>Courcera，Marketing in a digital world：3. Placement</title>
-        <description>&lt;p&gt;&lt;strong&gt;随時更新&lt;/strong&gt;：&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る&lt;a href=&quot;https://www.coursera.org/specializations/digital-marketing&quot;&gt;Digital marketing specialization&lt;/a&gt;の一つ．四週かけて，デジタル時代の&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&quot;&gt;マーケティング・ミックス&lt;/a&gt;について学ぶ．第三週では，Placementを取り扱い，New retailや3D printingについて学ぶ．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る&lt;a href=&quot;https://www.coursera.org/specializations/digital-marketing&quot;&gt;Digital marketing specialization&lt;/a&gt;の一つ．四週かけて，デジタル時代の&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&quot;&gt;マーケティング・ミックス&lt;/a&gt;について学ぶ．第三週では，Placementを取り扱い，New retailや3D printingについて学ぶ．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2017-11-18-courcera.png&quot; alt=&quot;courcera&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;以下は，本講座に関する記事一覧：&lt;/p&gt;
+&lt;p&gt;本講座に関する記事：&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/08/digital-marketing-1&quot;&gt;Courcera，Marketing in a digital world：1. Product&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/25/digital-marketing-2&quot;&gt;Courcera，Marketing in a digital world：2. Promotion&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/03/digital-marketing-3&quot;&gt;Courcera, Marketing in a digital world：3. Placement&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Courcera, Marketing in a digital world：4. Price&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-4&quot;&gt;Courcera, Marketing in a digital world：4. Price&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-retire&quot;&gt;CourceraのDigital marketing講座を退会した&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;module-3-overview&quot;&gt;Module 3 overview&lt;/h1&gt;
@@ -527,153 +669,6 @@
         
         
         <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>DMM体験レッスン：1．Article discussion</title>
-        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;と並ぶオンライン英会話最大手の&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;で，&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;を体験した．セルビア在住の先生に対応してもらったが，とても親切で，英語力も高かった．フィリピン人と比べて元気が無いように感じたのは，雇用情勢のせいだろう．とりあえず，あと二回体験してみる．&lt;/p&gt;
-
-&lt;h1 id=&quot;dmm英会話とは&quot;&gt;DMM英会話とは&lt;/h1&gt;
-
-&lt;p&gt;オンライン英会話の最大手．同じく大手の&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;との違いは，講師の出身国の多様性．DMM英会話では，フィリピンだけでなく，セルビアやボスニア・ヘルツェゴビナ等出身の先生も在籍している．&lt;/p&gt;
-
-&lt;p&gt;2017年12月2日時点の&lt;a href=&quot;http://eikaiwa.dmm.com/plan/&quot;&gt;料金プラン&lt;/a&gt;は以下．&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;プラン&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;料金[円/月]&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;スタンダード（毎日25分）&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;5,500&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;プラスネイティブ（毎日25分）&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;15,800&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;他にも毎日2レッスン（計50分）や3レッスン（計75分）のプランがある．&lt;/p&gt;
-
-&lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
-
-&lt;p&gt;特に予習しなかった．&lt;/p&gt;
-
-&lt;h1 id=&quot;講義内容&quot;&gt;講義内容&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;自己紹介．&lt;/li&gt;
-  &lt;li&gt;Daily news discussion．
-    &lt;ul&gt;
-      &lt;li&gt;Vocabularyを先生に続けて読む．&lt;/li&gt;
-      &lt;li&gt;Articleを一人で一通り読む．&lt;/li&gt;
-      &lt;li&gt;Questionsに回答．&lt;/li&gt;
-      &lt;li&gt;Discussion．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;先生からのフィードバック&quot;&gt;先生からのフィードバック&lt;/h1&gt;
-
-&lt;p&gt;発音や文法を気にしていたようだが，特に問題ない．&lt;/p&gt;
-
-&lt;h1 id=&quot;学んだこと&quot;&gt;学んだこと&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/ominous&quot;&gt;&lt;em&gt;ominous&lt;/em&gt;&lt;/a&gt;：不吉な，不気味な．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/rumble&quot;&gt;&lt;em&gt;rumble&lt;/em&gt;&lt;/a&gt;：ゴロゴロ鳴る．&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;of all stripes&lt;/em&gt;：of all types．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;セルビア人の先生と初めて話したが，英語は上手だし，親切だし，申し分なかった．フィリピン人と比べて暗く感じるのは，国内の雇用状況が非常に悪いためだろう（&lt;a href=&quot;https://kutinholland.com/why-are-there-many-serbian-teachers-in-online-english-schools&quot;&gt;「オランダ在住ｘセルビア脱線」系こーたろーの社会派ブログ，格安オンライン英会話にセルビア人講師が多いのはなぜか？&lt;/a&gt;）．&lt;/p&gt;
-
-&lt;p&gt;先生の話し方は，アメリカの研究所にいた頃によく聞いたものと似ていた（ネイティブスピーカーがほとんどいない職場だった）．料金も安いし，毎日話せるのであれば，DMM英会話で良いような気がしてきた．あと二回体験できるので，もう少し考えてみる．&lt;/p&gt;
-</description>
-        <pubDate>Sat, 02 Dec 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/12/02/dmm-english</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/02/dmm-english</guid>
-        
-        
-        <category>english</category>
-        
-      </item>
-    
-      <item>
-        <title>BizMate体験レッスン</title>
-        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，ビジネス英会話に強みを持つ&lt;a href=&quot;https://www.bizmates.jp/&quot;&gt;BizMate&lt;/a&gt;の体験レッスン．同じくフィリピン系の&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;の二倍の価格帯だが，講師と教材の質が高く，その価値はあると感じた．&lt;/p&gt;
-
-&lt;h1 id=&quot;bizmateとは&quot;&gt;BizMateとは&lt;/h1&gt;
-
-&lt;p&gt;ビジネスユーザに特化したフィリピン系のオンライン英会話．2017年11月28日時点の&lt;a href=&quot;https://www.bizmates.jp/price/&quot;&gt;料金プラン&lt;/a&gt;は以下．&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;プラン&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;月額料金&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;毎日25分プラン&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;12,000円&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;毎日50分プラン&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;18,000円&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;なお，2017年12月18日まで入会初月半額キャンペーン中．&lt;/p&gt;
-
-&lt;h1 id=&quot;予習&quot;&gt;予習&lt;/h1&gt;
-
-&lt;p&gt;今回はレベルチェックだったため，特に予習はしなかった．&lt;/p&gt;
-
-&lt;h1 id=&quot;講義内容&quot;&gt;講義内容&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;自己紹介．&lt;/li&gt;
-  &lt;li&gt;レベルチェック．&lt;/li&gt;
-  &lt;li&gt;お試しレッスン．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;先生からのフィードバック&quot;&gt;先生からのフィードバック&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;リスニングに関しては問題なし．&lt;/li&gt;
-  &lt;li&gt;スピーキングに関しては，発音と文法に注意する必要がある．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;ビジネス英会話に特化しているだけあって，ビジネス系のコンテンツが非常に充実している．同じくフィリピン系の&lt;a href=&quot;https://www.rarejob.com/&quot;&gt;Reajob&lt;/a&gt;の二倍の価格帯だが，ビジネスユーザにとっては使い勝手がよいかもしれない&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．指導はとても丁寧で，好感が持てた．&lt;/p&gt;
-
-&lt;p&gt;2017年12月18日まで，初月半額キャンペーン中なので，申し込むなら今かもしれない．&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;うちの会社も法人契約したら良いのに…．&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 28 Nov 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/11/28/bizmate</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/28/bizmate</guid>
-        
-        
-        <category>english</category>
         
       </item>
     

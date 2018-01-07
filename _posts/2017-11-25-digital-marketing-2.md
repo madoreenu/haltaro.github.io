@@ -10,11 +10,12 @@ categories:
 
 ![courcera]({{site.baseurl}}/images/2017-11-18-courcera.png)
 
-以下は，本講座に関する記事一覧：
+本講座に関する記事：
 * [Courcera，Marketing in a digital world：1. Product](https://haltaro.github.io/2017/11/08/digital-marketing-1)
 * [Courcera，Marketing in a digital world：2. Promotion](https://haltaro.github.io/2017/11/25/digital-marketing-2)
 * [Courcera, Marketing in a digital world：3. Placement](https://haltaro.github.io/2017/12/03/digital-marketing-3)
 * [Courcera, Marketing in a digital world：4. Price](https://haltaro.github.io/2017/01/07/digital-marketing-4)
+* [CourceraのDigital marketing講座を退会した](https://haltaro.github.io/2017/01/07/digital-marketing-retire)
 
 # Module 2 overview
 
