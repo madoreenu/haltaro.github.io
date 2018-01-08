@@ -24,3 +24,8 @@ categories:
 * sacred：神聖な，宗教上の．
 * distraction：気の散ること，気晴らし，娯楽．
 * fulfillment：履行，遂行，実現．
+
+# 1/8
+
+
+[Daily news](https://app.eikaiwa.dmm.com/daily-news)の
