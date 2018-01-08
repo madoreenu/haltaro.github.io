@@ -27,7 +27,7 @@ categories:
 
 # 1/8
 
-[Daily news](https://app.eikaiwa.dmm.com/daily-news)の[New Zealanders Build 'Island' to Avoid Alcohol Ban](https://app.eikaiwa.dmm.com/daily-news/article/new-zealanders-build-island-to-avoid-alcohol-ban/LhvZCO84EeeOtn84dWFxlQ)を受講した．公共の場での飲酒が違法なニュージーランドで，屋外で飲みながら年越しを迎えるために，わざわざ領海外に孤島を作ったニュージーランド人の話．先生は，ボスニア・ヘルツェゴビナに住む18歳の高校生．
+[Daily news](https://app.eikaiwa.dmm.com/daily-news)の[New Zealanders Build 'Island' to Avoid Alcohol Ban](https://app.eikaiwa.dmm.com/daily-news/article/new-zealanders-build-island-to-avoid-alcohol-ban/LhvZCO84EeeOtn84dWFxlQ)を受講した．公共の場での飲酒が違法なニュージーランドで，屋外で飲みながら新年を迎えるために，わざわざ領海外に孤島を作ったニュージーランド人の話．先生は，ボスニア・ヘルツェゴビナに住む18歳の高校生．
 
 * laid-back：くつろいだ，リラックスした．
 * intact：手を付けてなくて，そのままで．
