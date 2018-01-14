@@ -53,7 +53,7 @@
     }).then(function() {
       return botui.message.add({
         delay: 2500,
-        content: '現在は，広告会社でデータマイニングやってます．'
+        content: '現在は，広告会社でデータ分析やってます．'
       });
     }).then(askEnd);
   }
