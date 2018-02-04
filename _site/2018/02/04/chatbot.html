@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>チャットボットを作ろう：3．BotUIのCSS修正 « Memotaro</title>
+	<meta name="description" content="BotUIを本サイトのAboutページに埋め込んだが，会話が長くなると二重にスライドバーが表示されてダサすぎる1．BotUIのCSSをいじって修正することにした．            好みの問題かも．&nbsp;&#8617;      ">
+
+  <link rel="icon" href="/images/h_icon.png">
+  <link rel="apple-touch-icon" href="/images/h_icon.png">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/2018/02/04/chatbot">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
+
+  <!-- MathJax -->
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  <!-- BotUI -->
+  <link rel="stylesheet" href="../css/botui.min.css" />
+  <link rel="stylesheet" href="../css/botui-theme-default.css" />
+</head>
+
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>チャットボットを作ろう：3．BotUIのCSS修正 | Memotaro</title>
+<meta property="og:title" content="チャットボットを作ろう：3．BotUIのCSS修正" />
+<meta name="author" content="haltaro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="BotUIを本サイトのAboutページに埋め込んだが，会話が長くなると二重にスライドバーが表示されてダサすぎる1．BotUIのCSSをいじって修正することにした． 好みの問題かも．&nbsp;&#8617;" />
+<meta property="og:description" content="BotUIを本サイトのAboutページに埋め込んだが，会話が長くなると二重にスライドバーが表示されてダサすぎる1．BotUIのCSSをいじって修正することにした． 好みの問題かも．&nbsp;&#8617;" />
+<link rel="canonical" href="http://localhost:4000/2018/02/04/chatbot" />
+<meta property="og:url" content="http://localhost:4000/2018/02/04/chatbot" />
+<meta property="og:site_name" content="Memotaro" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-02-04T00:00:00+09:00" />
+<script type="application/ld+json">
+{"name":null,"description":"BotUIを本サイトのAboutページに埋め込んだが，会話が長くなると二重にスライドバーが表示されてダサすぎる1．BotUIのCSSをいじって修正することにした． 好みの問題かも．&nbsp;&#8617;","author":{"@type":"Person","name":"haltaro"},"@type":"BlogPosting","url":"http://localhost:4000/2018/02/04/chatbot","publisher":null,"image":null,"headline":"チャットボットを作ろう：3．BotUIのCSS修正","dateModified":"2018-02-04T00:00:00+09:00","datePublished":"2018-02-04T00:00:00+09:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/02/04/chatbot"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <body>
+
+    <header class="header">
+  <div class="wrapper">
+    <a class="site-title" href="/">Memotaro</a>
+    <nav class="site-nav">
+      
+        
+      
+        
+      
+        
+      
+        
+        <a class="page-link" href="/about/">About</a>
+        
+      
+        
+        <a class="page-link" href="/category/">Category</a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <a class="page-link" href="/projects/">Projects</a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </nav>
+  </div>
+</header>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="col-main">
+          <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">チャットボットを作ろう：3．BotUIのCSS修正</h1>
+    <p class="post-meta">Feb 4, 2018</p>
+  </header>
+
+  <article class="post-content">
+    <p><a href="https://github.com/botui/botui">BotUI</a>を本サイトの<a href="https://haltaro.github.io/about/">Aboutページ</a>に埋め込んだが，会話が長くなると二重にスライドバーが表示されてダサすぎる<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．BotUIのCSSをいじって修正することにした．</p>
+
+<p>以下は修正前の動作．<code class="highlighter-rouge">他に何か質問ありますか</code>あたりから，二重にスライドバーが表示されてとても使いづらい．</p>
+<iframe width="100%" height="460" src="https://www.youtube.com/embed/-8c8oNbgoOE" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+
+<p>以下は修正後の動作．<code class="highlighter-rouge">他に何か質問ありますか</code>以降もスライドバーが出現することはない．</p>
+
+<iframe width="100%" height="460" src="https://www.youtube.com/embed/qh53W17SCeg?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+
+<p>関連記事はこちら：</p>
+
+<ul>
+  <li><a href="https://haltaro.github.io/2017/12/25/chatbot">チャットボットを作ろう：1．調査</a></li>
+  <li><a href="https://haltaro.github.io/2017/12/30/chatbot">チャットボットを作ろう：2．JekyllサイトでBotUI</a></li>
+</ul>
+
+<h1 id="環境">環境</h1>
+
+<ul>
+  <li><a href="http://jekyllthemes.org/themes/easybook/">Easybook</a>：本サイトで利用している<a href="https://jekyllrb-ja.github.io/">Jekyll</a>のテーマ．</li>
+  <li><a href="https://github.com/botui/botui">BotUI</a>：JavaScriptだけで動くチャットボットライブラリ．</li>
+</ul>
+
+<h1 id="手順">手順</h1>
+
+<h2 id="botuiのcssとjavascriptをローカルに保存">BotUIのCSSとJavaScriptをローカルに保存</h2>
+
+<p>ローカルでBotUIを実行するのに必要なファイルを<a href="https://github.com/botui/botui">GitHub</a>からダウンロードする．<a href="https://docs.botui.org/install.html">公式ドキュメント</a>によると，<code class="highlighter-rouge">botui.min.css</code>と<code class="highlighter-rouge">botui-theme-default.css</code>と<code class="highlighter-rouge">botui.min.js</code>があれば良さそう<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>．Easybookのディレクトリ構造を鑑み，それぞれ<code class="highlighter-rouge">css/</code>および<code class="highlighter-rouge">js/</code>配下に保存する．</p>
+
+<h2 id="botuimincssを修正"><code class="highlighter-rouge">botui.min.css</code>を修正</h2>
+
+<p><code class="highlighter-rouge">.botui-app-container</code>の<code class="highlighter-rouge">height:500px</code>をコメントアウトし，高さ制限をなくす．</p>
+
+<script src="https://gist.github.com/haltaro/ee415d36ea915749883b97319473cda0.js"></script>
+
+<h2 id="_includeheadhtmlを修正"><code class="highlighter-rouge">_include/head.html</code>を修正</h2>
+
+<p>CDNではなく，ローカルの<code class="highlighter-rouge">botui.min.css</code>と<code class="highlighter-rouge">botui-theme-default.css</code>を参照する．</p>
+
+<script src="https://gist.github.com/haltaro/a45a366dfe08960cc492021a53886ea5.js"></script>
+
+<h2 id="_layoutsbothtmlを修正"><code class="highlighter-rouge">_layouts/bot.html</code>を修正</h2>
+
+<p>CDNではなく，ローカルの<code class="highlighter-rouge">botui.js</code>を参照する．</p>
+
+<script src="https://gist.github.com/haltaro/743fd6bc47d99575bbfc1475961663c7.js"></script>
+
+<h1 id="結果">結果</h1>
+
+<p>こんな感じになった．</p>
+
+<iframe width="100%" height="460" src="https://www.youtube.com/embed/qh53W17SCeg?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+
+<h1 id="参考">参考</h1>
+
+<ul>
+  <li><a href="https://docs.botui.org/install.html">BotUIインストールガイド</a></li>
+</ul>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>好みの問題かも．&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>試行錯誤の結果，<code class="highlighter-rouge">botui.min.css</code>をいじるだけで問題は解決できることが判明したので，全てをダウンロードする必要はなかった．&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </article>
+  
+  
+
+
+
+
+</div>
+
+        </div>
+        <div class="col-second">
+          <div class="col-box col-box-author">
+  <img class="avatar" src="//www.gravatar.com/avatar/546804f938d574fc5141fc1431066d29" alt="haltaro">
+  <div class="col-box-title name">haltaro</div>
+  <p>柴犬を愛でる研究員</p>
+  <p class="contact">
+    
+    <a href="https://github.com/haltaro">GitHub</a>
+    
+    
+    
+		<a href="https://qiita.com/haltaro">Qiita</a>
+    
+    
+		<a href="https://kaggle.com/haltaro">Kaggle</a>
+    
+
+    
+    <a href="mailto:mail.to.haltaro@gmail.com">Email</a>
+    
+  </p>
+</div>
+
+<div class="col-box">
+  <div class="col-box-title">Newest Posts</div>
+  <ul class="post-list">
+    
+      <li><a class="post-link" href="/2018/02/04/chatbot">チャットボットを作ろう：3．BotUIのCSS修正</a></li>
+    
+      <li><a class="post-link" href="/2018/01/07/digital-marketing-retire">CourceraのDigital marketing講座を退会した</a></li>
+    
+      <li><a class="post-link" href="/2018/01/07/digital-marketing-4">Courcera，Marketing in a digital world：4. Price</a></li>
+    
+      <li><a class="post-link" href="/2018/01/02/dmm-english">DMM英会話受講メモ：2018年1月</a></li>
+    
+      <li><a class="post-link" href="/2017/12/30/chatbot">チャットボットを作ろう：2．JekyllサイトでBotUI</a></li>
+    
+  </ul>
+</div>
+
+<div class="col-box post-toc hide">
+  <div class="col-box-title">TOC</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+<div class="wrapper">
+&copy; 2017 haltaro
+</div>
+</footer>
+
+<script src="/js/easybook.js"></script>
+
+    
+
+
+  </body>
+
+</html>
