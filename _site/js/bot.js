@@ -22,7 +22,7 @@
         action: [
           {icon: 'user-o', text: '来歴', value: 'carrier'},
           {icon: 'rocket', text: '趣味', value: 'hobby'},
-          {icon: 'pencil', text: 'このサイト', value: 'memotaro'}]
+          {icon: 'pencil', text: 'サイト', value: 'memotaro'}]
       });
     }).then(function(res) {
       botui.action.hide();
