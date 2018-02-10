@@ -6,7 +6,8 @@ body {
 }
 a {
 	text-decoration: none;
-	color: #036;
+	//color: #036;
+	color: #0174DF;
 }
 a:hover, a:focus {
 	text-decoration:underline;
@@ -24,7 +25,8 @@ code,pre {
 }
 code {
 	color: #900;
-	background-color: #fff;
+	//background-color: #fff;
+	background-color: #F8E0E0;
 	padding: 2px 5px;
 	border-radius: 5px;
 }
@@ -37,7 +39,7 @@ pre, pre code {
 	background-color: #223;
 }
 pre code {
-	padding: 0;	
+	padding: 0;
 }
 .hide {
     display: none;
@@ -56,14 +58,14 @@ table {
 		padding: 5px 15px;
 		margin: 0;
 	}
-	
+
 	th {
 		border-color: #555;
 		background: #555;
 		color: #eee;
 		font-weight:normal;
 	}
-	
+
 	tr:hover {
 		background: rgba(255,255,0,0.2);
 	}

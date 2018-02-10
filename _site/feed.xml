@@ -6,12 +6,12 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Feb 2018 18:17:20 +0900</pubDate>
-    <lastBuildDate>Sun, 04 Feb 2018 18:17:20 +0900</lastBuildDate>
+    <pubDate>Sat, 10 Feb 2018 11:39:55 +0900</pubDate>
+    <lastBuildDate>Sat, 10 Feb 2018 11:39:55 +0900</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
-        <title>チャットボットを作ろう：3．BotUIのCSS修正</title>
+        <title>チャットボットを作ろう：3．CSS修正</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://github.com/botui/botui&quot;&gt;BotUI&lt;/a&gt;を本サイトの&lt;a href=&quot;https://haltaro.github.io/about/&quot;&gt;Aboutページ&lt;/a&gt;に埋め込んだが，会話が長くなると二重にスライドバーが表示されてダサすぎる&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．BotUIのCSSをいじって修正することにした．&lt;/p&gt;
 
 &lt;p&gt;以下は修正前の動作．&lt;code class=&quot;highlighter-rouge&quot;&gt;他に何か質問ありますか&lt;/code&gt;あたりから，二重にスライドバーが表示されてとても使いづらい．&lt;/p&gt;
@@ -26,6 +26,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/25/chatbot&quot;&gt;チャットボットを作ろう：1．調査&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/30/chatbot&quot;&gt;チャットボットを作ろう：2．JekyllサイトでBotUI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2018/02/04/chatbot&quot;&gt;チャットボットを作ろう：3．CSS修正&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
@@ -359,6 +360,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/25/chatbot&quot;&gt;チャットボットを作ろう：1．調査&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/30/chatbot&quot;&gt;チャットボットを作ろう：2．JekyllサイトでBotUI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2018/02/04/chatbot&quot;&gt;チャットボットを作ろう：3．CSS修正&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;実現したいもの&quot;&gt;実現したいもの&lt;/h1&gt;

@@ -1,13 +1,13 @@
 ---
-layout: page
-title: Projects
-permalink: /projects/
+layout: post
+title: Project
+permalink: /project/
 public: true
 ---
 
 # 1. Network engineering
 
-## 1.a [Comparing TCP algorithms](https://haltaro.github.io/comparing-tcp-algorithms) 
+## 1.a [Comparing TCP algorithms](https://haltaro.github.io/comparing-tcp-algorithms)
 
 [ns-3](https://www.nsnam.org/)で12種類のTCP輻輳制御アルゴリズムをシミュレートし，[matplotlib](https://matplotlib.org/)で視覚化しました([Qiita](http://qiita.com/haltaro/items/d479538345357f08c595), [Github](https://github.com/haltaro/comparing-tcp-algorithms))．
 
@@ -16,7 +16,7 @@ public: true
 
 # 2. Algorithmic trading
 
-## 2.a [Animating alpha and beta](https://haltaro.github.io/animating-alpha-and-beta) 
+## 2.a [Animating alpha and beta](https://haltaro.github.io/animating-alpha-and-beta)
 
 [Pandas](http://pandas.pydata.org/)で世界株価時価総額トップ銘柄のアルファ値とベータ値を計算し，[matplotlib](https://matplotlib.org/)でアニメ化しました([Qiita](http://qiita.com/haltaro/items/e3e29264079f6b90d6df), [Github](https://github.com/haltaro/animating-alpha-and-beta))．
 
@@ -25,7 +25,7 @@ public: true
 
 # 3. Machine learning
 
-## 3.a [Predicting comic end](https://haltaro.github.io/predicting-comic-end) 
+## 3.a [Predicting comic end](https://haltaro.github.io/predicting-comic-end)
 
 週刊少年ジャンプの掲載順から，短命作品を予測しました．掲載順のデータは[文化庁メディア芸術データベースのWeb API](https://mediaarts-db.bunka.go.jp/webapi_proto_documents.pdf)から取得し，予測には[TensorFlow](https://www.tensorflow.org/)で多層パーセプトロンを実装しました ([Qiita part1](http://qiita.com/haltaro/items/c54fa1855767f1a1abd5), [Qiita part2](http://qiita.com/haltaro/items/62d49875ed658ac8a93f), [Github](https://github.com/haltaro/predicting-comic-end))．下図は，短命作品と継続作品の相関関係の分析結果です．
 
@@ -86,5 +86,3 @@ Prediction
 [TensorFlow](https://www.tensorflow.org/)でgenerative adversarial networkを実装し，顔画像の生成に挑戦しました．下図は，[celebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)データセットをもとに自動生成した顔画像です．
 
 ![celeba.gif]({{site.baseurl}}/images/celeba.gif)
-
-
