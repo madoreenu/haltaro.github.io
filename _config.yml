@@ -30,7 +30,7 @@ gems:
  - jekyll-seo-tag
 
 # Build settings
-paginate: 5
+paginate: 4
 paginate_path: "page:num"
 
 highlighter: rouge
