@@ -6,9 +6,43 @@
 </description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Feb 2018 12:36:43 +0900</pubDate>
-    <lastBuildDate>Sun, 11 Feb 2018 12:36:43 +0900</lastBuildDate>
+    <pubDate>Sun, 11 Feb 2018 21:50:16 +0900</pubDate>
+    <lastBuildDate>Sun, 11 Feb 2018 21:50:16 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Jekyll themeをCentrariumに変更する</title>
+        <description>&lt;p&gt;3連休だったので，本サイトの&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt;を&lt;a href=&quot;https://github.com/laobubu/jekyll-theme-EasyBook&quot;&gt;EasyBook&lt;/a&gt;から&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;に変更した．背景写真を使いすぎて意識高めのアフィブログ感がすごいが，自分としては気に入っている．特にロゴ．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;参考&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/07/30/first-post&quot;&gt;JekyllとGitHub Pagesでウェブサイト自作 - Memotaro&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/08/04/set-google-analytics&quot;&gt;JekyllでGoogle Analytics - Memotaro&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/10/15/jekyll-windows&quot;&gt;Windows7でJekyll+GitHub Pages - Memotaro&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/10/25/jekyll-drafts&quot;&gt;Jekyllで下書き記事管理 - Memotaro&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;環境&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;：Rubyベースの静的サイトジェネレータ．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;：本サイトで利用したJekyllテーマ．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;手順&lt;/h1&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;見た目が変わると，モチベーションが上がる．&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Feb 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/02/11/theme-change</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/02/11/theme-change</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>チャットボットを作ろう：3．CSS修正</title>
@@ -120,7 +154,7 @@
   &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/08/digital-marketing-1&quot;&gt;Courcera，Marketing in a digital world：1. Product&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/25/digital-marketing-2&quot;&gt;Courcera，Marketing in a digital world：2. Promotion&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/03/digital-marketing-3&quot;&gt;Courcera, Marketing in a digital world：3. Placement&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-4&quot;&gt;Courcera, Marketing in a digital world：4. Price&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2018/01/07/digital-marketing-4&quot;&gt;Courcera, Marketing in a digital world：4. Price&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;前提&lt;/h2&gt;
@@ -173,9 +207,9 @@
     
       <item>
         <title>Courcera，Marketing in a digital world：4. Price</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る&lt;a href=&quot;https://www.coursera.org/specializations/digital-marketing&quot;&gt;Digital marketing specialization&lt;/a&gt;の一つ．四週かけて，デジタル時代の&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&quot;&gt;マーケティング・ミックス&lt;/a&gt;について学ぶ．第四週では，Priceを取り扱い，Pay what you wantやPrice comparison toolsについて学ぶ．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る&lt;a href=&quot;https://www.coursera.org/specializations/digital-marketing&quot;&gt;Digital marketing specialization&lt;/a&gt;の一つ．四週かけて，デジタル時代の&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&quot;&gt;マーケティング・ミックス&lt;/a&gt;について学ぶ．第四週では，Priceを取り扱い，Pay what you wantやPrice comparison toolsについて学ぶ．&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-retire&quot;&gt;途中退会してしまった&lt;/a&gt;ため，本記事は中途半端になってしまった．&lt;/p&gt;
+&lt;p&gt;…予定だったが，&lt;a href=&quot;https://haltaro.github.io/2018/01/07/digital-marketing-retire&quot;&gt;途中退会してしまった&lt;/a&gt;．再入会するかもしれないので，その際は追記する．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/2017-11-18-courcera.png&quot; alt=&quot;courcera&quot; /&gt;&lt;/p&gt;
 
@@ -197,7 +231,6 @@
   &lt;li&gt;Thaler, R. H., &amp;amp; Tucker, W. (2013). &lt;a href=&quot;https://hbr.org/2013/01/smarter-information-smarter-consumers&quot;&gt;Smarter information, smarter consumers&lt;/a&gt;. &lt;em&gt;Harvard Business Review&lt;/em&gt;, 91(1), 44–54.&lt;/li&gt;
   &lt;li&gt;Tuttle, B. (2014, November 11). &lt;a href=&quot;http://time.com/money/3576844/pay-what-you-want-businesses/&quot;&gt;A brief history of ‘Pay what you want’ businesses&lt;/a&gt;. &lt;em&gt;Money&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-
 </description>
         <pubDate>Sun, 07 Jan 2018 00:00:00 +0900</pubDate>
         <link>https://haltaro.github.io/2018/01/07/digital-marketing-4</link>
@@ -210,7 +243,7 @@
     
       <item>
         <title>DMM英会話受講メモ：2018年1月</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;を受講している．以下は，2018年1月の受講メモ．バタバタして，なかなか毎日時間を確保できない．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;を受講している．以下は，2018年1月の受講メモ．バタバタして，なかなか毎日時間を確保できないので，一旦退会することにした．&lt;/p&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;1/2&lt;/h1&gt;
 
@@ -529,143 +562,6 @@
         
         
         <category>english</category>
-        
-      </item>
-    
-      <item>
-        <title>Courcera，Marketing in a digital world：3. Placement</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る&lt;a href=&quot;https://www.coursera.org/specializations/digital-marketing&quot;&gt;Digital marketing specialization&lt;/a&gt;の一つ．四週かけて，デジタル時代の&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&quot;&gt;マーケティング・ミックス&lt;/a&gt;について学ぶ．第三週では，Placementを取り扱い，New retailや3D printingについて学ぶ．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2017-11-18-courcera.png&quot; alt=&quot;courcera&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;本講座に関する記事：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/08/digital-marketing-1&quot;&gt;Courcera，Marketing in a digital world：1. Product&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/25/digital-marketing-2&quot;&gt;Courcera，Marketing in a digital world：2. Promotion&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/03/digital-marketing-3&quot;&gt;Courcera, Marketing in a digital world：3. Placement&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-4&quot;&gt;Courcera, Marketing in a digital world：4. Price&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-retire&quot;&gt;CourceraのDigital marketing講座を退会した&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;module-3-overview&quot;&gt;Module 3 overview&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;以下は，事前に読む必要がある資料．&lt;/li&gt;
-  &lt;li&gt;Rigby, D. (2011). &lt;a href=&quot;https://hbr.org/2011/12/the-future-of-shopping&quot;&gt;The future of shopping&lt;/a&gt;. &lt;em&gt;Harvard Business Review&lt;/em&gt;, 89 (12), 65–76.
-    &lt;ul&gt;
-      &lt;li&gt;Forresterの試算によると，アメリカのEコマースの売上は2000億ドルに到達すると見られ，これは小売業の総売上の9%に相当する．世界全体では，15%から20%に達すると見られる．（&lt;strong&gt;注&lt;/strong&gt;：本記事は2011年のもの）&lt;/li&gt;
-      &lt;li&gt;今後，Eコマースと実店舗は密接に連携し合い，両社を明確に区別する意味がなくなるだろう．専門家は，店舗売上の50%以上がデジタルな情報の影響を受けており，今後この割合は急激に増加すると予想している．今後は，&lt;strong&gt;Omnichannel retailing&lt;/strong&gt; が重要になるだろう．&lt;/li&gt;
-      &lt;li&gt;従来の小売業者がEコマースで遅れをとっている理由は次の四点：
-        &lt;ul&gt;
-          &lt;li&gt;ドットコムバブルで痛い目を見ている．&lt;/li&gt;
-          &lt;li&gt;売り上げ指標が，基本的に事業所ベースであり，全体ベースのものは取れていない．&lt;/li&gt;
-          &lt;li&gt;余剰売り上げ(prfit marginって日本語でなんていうんだ？)という，誤った経営目標を掲げている&lt;/li&gt;
-          &lt;li&gt;破壊的イノベーションを受け入れづらい体質である．&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;小売業者は，消費者は常にそこにいると考えているが，オムニチャネル化した世界では必ずしもそうではない．&lt;/li&gt;
-      &lt;li&gt;小売業者が取るべき対策は：
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;現状を知ること&lt;/strong&gt;：消費者は，小売業者ならではの利点を求めている；つまり実店舗である．具体的には，接客や，実製品，イベントとしてのショッピングなどである．&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;購入経路と泣き所を知ること&lt;/strong&gt;：消費者の購入経路を調査するための，様々なツールが存在する．これらを利用するポイントは，かつてのように汎用的なソリューションを探るのではなく，セグメントごとにソリューションを最適化することである．&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;実店舗での顧客体験を演出すること&lt;/strong&gt;：小売業者の武器は，実店舗を持っていることである．デジタル技術を用いれば，低コストで，顧客体験を向上できる．また，デジタル技術により，小売業者は無限の価値を持つ顧客情報を得られる．最も重要なのは，デジタル技術を用いてオムニチャネル化した小売戦略は，実店舗を持たない純粋なオンライン小売戦略より優れている，ということである．オムニチャネル化した小売業者は，誰よりも早く広範囲に新サービスを展開し，素早く学習サイクルを回す必要がある．&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;オムニチャネルを組織的に管理すること&lt;/strong&gt;：​オムニチャネルマーケティングを組織的に実行するのは，とても難しい．一つのアプローチは，専門の組織を立ち上げ，重要な決定は本部と連携して行うことだ．創造性のある人材の確保も課題だ．この側面でも，最新のデジタル技術を利用するべき．また，改革を行うスピードにも注意する必要がある．あまりに遅すぎると，他者に水をあげられてしまう．逆にあまりに速すぎると，試行錯誤する時間がなくなってしまう．&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Cairns, A. (2012, July 6). &lt;a href=&quot;https://econsultancy.com/blog/10275-the-future-of-digital-music-distribution-and-online-music-marketing/&quot;&gt;The future of digital music distribution and online music marketing&lt;/a&gt;. &lt;em&gt;Econsultancy&lt;/em&gt;.
-    &lt;ul&gt;
-      &lt;li&gt;​オンライン音楽配信の方式として，&lt;strong&gt;Access&lt;/strong&gt; と &lt;strong&gt;Ownership&lt;/strong&gt; がある．Accessは，Spotifyのような，いわゆるストリーミングサービス．Ownershipは，iTunesなどの購入型サービス．&lt;/li&gt;
-      &lt;li&gt;Ownershipユーザは，音楽を所有することに重きを置いているため，Accessを受け入れられない．若い世代はAccessを好む傾向があるが，それ以外はOwnershipを好む．若い世代が成長し，購買力を増したとき，オンライン音楽配信の勢力図に大きな影響を及ぼすと見られる．&lt;/li&gt;
-      &lt;li&gt;Access型配信は，Promotionと相性が良い．ユーザがアクセスしたアーティストの販促に役立つだけでなく，SNS上での共有を促すこともできる．一方で，Ownership型配信の楽曲は，著作権の問題があるため共有できない．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;share2download&lt;/code&gt;は，SNSでの拡散行動をユーザに求める代わりに，無料で楽曲を提供するサービスである．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Kain, E. (2013, May 30). &lt;a href=&quot;https://www.forbes.com/sites/erikkain/2013/05/30/why-digital-distribution-is-the-future-and-gamestop-is-not-taking-the-long-view-on-used-games/#583e878d4a5e&quot;&gt;Why digital distribution is the future and GameStop is not: Taking the long view on used games&lt;/a&gt;. &lt;em&gt;Forbes&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;Parker, J. (2013, June 27). &lt;a href=&quot;http://www.cmo.com/features/articles/2013/6/27/how_digital_marketin.html&quot;&gt;How digital marketing will influence industry distribution structures&lt;/a&gt;. &lt;em&gt;CMO&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;basic-concept-placement&quot;&gt;Basic concept: Placement&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Placementにおける重要な概念として，Inventory management，Logistics，Sales force managementがある．&lt;/li&gt;
-  &lt;li&gt;本講座では，DistributionとRetailingに着目する．&lt;/li&gt;
-  &lt;li&gt;Distributionでは，複数の独立したプレーヤーが連携して，商品を消費者のもとに届ける．各プレーヤーは，各々の利益の最大化を目指すため，衝突が生じてしまう．&lt;/li&gt;
-  &lt;li&gt;Retailing（小売）は，Distribution chainの最後のステップである．&lt;/li&gt;
-  &lt;li&gt;従来のPlacementは，メーカーと消費者の両方にとって，コストが大きかった．しかし，Amazon.comに代表されるオンライン小売業者は，実店舗を持つ小売業者を省略した，消費者への直接配送を可能にした．さらに，3Dプリンタは，小売業者だけでなくDistribution channel全体を省略することすら可能にした．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;digital-concept-new-retail&quot;&gt;Digital concept: New retail&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;オンライン小売業者は，実店舗を持つ従来の小売業者にとって脅威である．しかし，オンライン小売業者が，アメリカの小売業者全体の売上に占める割合は，10%前後である．&lt;/li&gt;
-  &lt;li&gt;New retailとは，Digital worldでの課題を解決するための，Physical worldにおける小売戦略の総称である．
-    &lt;ul&gt;
-      &lt;li&gt;New retailの一つめの例は，Best buyの自動販売機である．Best buyは，実店舗の固定費を極限まで削減するため，最もよく売れる製品のみを取り扱う自動販売機を導入した．&lt;/li&gt;
-      &lt;li&gt;二つめの例は，TescoのVirtual storeである．消費者は，駅やバス停に設置されたディスプレイから，好きな製品のバーコードをアプリでスキャンすることで，購入できる．&lt;/li&gt;
-      &lt;li&gt;三つめの例は，Rotate storeである．2ヶ月ごとに店舗全体が入れ替わる．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;オンライン小売業者の売上は，驚くべきことに，地理的要因に大きく左右される．つまり，従来型のオフライン小売店舗が充実している地域では，オンライン小売店舗の売上は芳しくない．&lt;/li&gt;
-  &lt;li&gt;Showrooming：最初にオフライン店舗を訪れて，最終的にオンライン店舗で購入すること．&lt;/li&gt;
-  &lt;li&gt;Webrooming：最初にオンライン店舗を訪れて情報を収集し，最終的にオフライン店舗で購入すること．&lt;/li&gt;
-  &lt;li&gt;Omnichannel marketing：オンラインとオフラインを組み合わせて製品を販売すること．&lt;/li&gt;
-  &lt;li&gt;2015年の論文は，スマートフォンの利用が服飾店での購買行動に与える影響を明らかにした．調査の結果，消費者のうち15%しかスマートフォンを利用していないことがわかった．利用用としては，知人とのコミュニケーションが大部分だった．そして驚くべきことに，スマートフォンを利用した消費者は，来店前に購入を予定していた商品のうち三分の一を買い忘れていた．&lt;/li&gt;
-  &lt;li&gt;New retailerには，以下が求められている：
-    &lt;ul&gt;
-      &lt;li&gt;来店した消費者を徹底的に調査し，それぞれに適した広告やサービスを提供すること．購買体験を楽しくすること．&lt;/li&gt;
-      &lt;li&gt;デジタル技術を利用して，実店舗を補強すること．&lt;/li&gt;
-      &lt;li&gt;触れ合いを最大限活用すること．オフライン店舗がオンライン店舗より優れている点は，実際に商品に触れることである．&lt;/li&gt;
-      &lt;li&gt;実店舗は，出来る限り小さく，一時的なものにすること．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;case-study-threadless&quot;&gt;Case study: Threadless&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Marcia Froelke Coburn (2012, June 20), &lt;a href=&quot;http://www.chicagomag.com/Chicago-Magazine/July-2012/How-Jake-Nickell-Built-His-Threadless-Empire/&quot;&gt;How Jake Nickell Built His Threadless Empire&lt;/a&gt;. &lt;em&gt;Chicago Magazine&lt;/em&gt;
-*&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;digital-concept-3d-printing&quot;&gt;Digital concept: 3D printing&lt;/h1&gt;
-
-&lt;h1 id=&quot;exercise-thingiversecom&quot;&gt;Exercise: Thingiverse.com&lt;/h1&gt;
-
-&lt;h1 id=&quot;campus-spotlight-travis-ross&quot;&gt;Campus spotlight: Travis Ross&lt;/h1&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;英語メモ&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/fanciful&quot;&gt;fanciful&lt;/a&gt;：想像力に富む，気まぐれな，空想的な，非現実的な．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/suburb&quot;&gt;suburb&lt;/a&gt;：郊外，市外．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/shaky&quot;&gt;shaky&lt;/a&gt;：揺れる，ぐらつく，ぶるぶる震える．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/bevy&quot;&gt;bevy&lt;/a&gt;：群れ，一団．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/embrace&quot;&gt;embrace&lt;/a&gt;：抱擁する，取り囲む，含む，乗ずる．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/fledgling&quot;&gt;fledgling&lt;/a&gt;：ひな鳥，駆け出しの若者．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/ill-conceived&quot;&gt;ill-conceived&lt;/a&gt;：十分に考えられていない．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/abrupt&quot;&gt;abrupt&lt;/a&gt;：不意の，突然の，急な．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/irrational&quot;&gt;irrational&lt;/a&gt;：分別のない，不合理な．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/exuberance&quot;&gt;exuberance&lt;/a&gt;：豊富，繁茂．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/morph&quot;&gt;morph&lt;/a&gt;：変態する．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/implode&quot;&gt;implode&lt;/a&gt;：内破する．explodeの逆か．&lt;/li&gt;
-  &lt;li&gt;trickle：わずかな動き．&lt;/li&gt;
-  &lt;li&gt;chore：雑務．&lt;/li&gt;
-  &lt;li&gt;rebate：払い戻し．&lt;/li&gt;
-  &lt;li&gt;lackluster：パッとしない．&lt;/li&gt;
-  &lt;li&gt;frenzied：半狂乱の．&lt;/li&gt;
-  &lt;li&gt;conspicuously：著しく，目立って．&lt;/li&gt;
-  &lt;li&gt;acumen：判断力．&lt;/li&gt;
-  &lt;li&gt;judicial：賢明な．&lt;/li&gt;
-  &lt;li&gt;arenas：活動の場．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 03 Dec 2017 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2017/12/03/digital-marketing-3</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2017/12/03/digital-marketing-3</guid>
-        
-        
-        <category>marketing</category>
         
       </item>
     

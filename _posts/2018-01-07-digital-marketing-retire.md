@@ -7,7 +7,7 @@ categories:
  - marketing
 ---
 
-2017年10月頃から，[Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)を受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は11,000円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている．
+ 2017年10月頃から，[Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)を受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は11,000円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている．
 
 ![courcera]({{site.baseurl}}/assets/2017-11-18-courcera.png)
 
@@ -34,7 +34,7 @@ categories:
 * [Courcera，Marketing in a digital world：1. Product](https://haltaro.github.io/2017/11/08/digital-marketing-1)
 * [Courcera，Marketing in a digital world：2. Promotion](https://haltaro.github.io/2017/11/25/digital-marketing-2)
 * [Courcera, Marketing in a digital world：3. Placement](https://haltaro.github.io/2017/12/03/digital-marketing-3)
-* [Courcera, Marketing in a digital world：4. Price](https://haltaro.github.io/2017/01/07/digital-marketing-4)
+* [Courcera, Marketing in a digital world：4. Price](https://haltaro.github.io/2018/01/07/digital-marketing-4)
 
 ## 前提
 

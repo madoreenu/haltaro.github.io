@@ -66,12 +66,12 @@
     }).then(function() {
       return botui.message.add({
         delay: 2500,
-        content: 'また，日曜プログラマとして，c++，Python，JavaScriptなどで遊んでいます．'
+        content: 'また，日曜プログラマとして，C++，Python，JavaScript，Rなどで遊んでいます．'
       });
     }).then(function() {
       return botui.message.add({
         delay: 2500,
-        content: 'Network engineeringとか，Algorithmic tradingとか，Machine learningに興味があります．詳細はProjectsをご参照ください．'
+        content: 'Machine learningや，Marketing scienceや，Network engineeringに興味があります．詳細はProjectsをご参照ください．'
       });
     }).then(askEnd);
   }
