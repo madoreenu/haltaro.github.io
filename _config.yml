@@ -13,8 +13,11 @@ title: Memotaro
 subtitle: "Haltaro's technical memorandum"
 email: mail.to.haltaro[at]gmail.com
 name: haltaro
-description: >
-  I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
+description:
+  I'm haltaro, a researcher from Tokyo, Japan.
+  My research interests include machine learning,
+  marketing science, network engineering and
+  shiba-inu:)
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
