@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 外資系研究所で使う便利な英会話表現
-updated: 2017-08-03 23:00 
+updated: 2017-08-03 23:00
+cover:  "/assets/2017-08-03-lab.jpg"
 categories:
  - english
 ---
@@ -89,4 +90,3 @@ categories:
 
 * `you know`：えーと．
 * `like a`，`sort of`，`kind of`：みたいな．
-

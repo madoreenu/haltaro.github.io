@@ -6,125 +6,182 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Kaggle，Zillow Prize概要 « Memotaro</title>
-	<meta name="description" content="KaggleのZillow Prizeは，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．">
+  <title>Kaggle，Zillow Prize概要</title>
+  <meta name="description" content="KaggleのZillow Prizeは，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．">
+  
+  <meta name="author" content="haltaro">
+  <meta name="copyright" content="&copy; haltaro 2018">
+  
 
-  <link rel="icon" href="/images/h_icon.png">
-  <link rel="apple-touch-icon" href="/images/h_icon.png">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2017/08/07/zillow-conpetition">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
-
-  <!-- MathJax -->
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+  <!-- Mathjax -->
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
   <!-- BotUI -->
-  <link rel="stylesheet" href="../css/botui.min.css" />
-  <link rel="stylesheet" href="../css/botui-theme-default.css" />
-</head>
+  <link rel="stylesheet" href="/css/botui.min.css" >
+  <link rel="stylesheet" href="/css/botui-theme-default.css" >
 
-  <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>Kaggle，Zillow Prize概要 | Memotaro</title>
-<meta property="og:title" content="Kaggle，Zillow Prize概要" />
-<meta name="author" content="haltaro" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="KaggleのZillow Prizeは，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．" />
-<meta property="og:description" content="KaggleのZillow Prizeは，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．" />
-<link rel="canonical" href="http://localhost:4000/2017/08/07/zillow-conpetition" />
-<meta property="og:url" content="http://localhost:4000/2017/08/07/zillow-conpetition" />
-<meta property="og:site_name" content="Memotaro" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-08-07T00:00:00+09:00" />
-<script type="application/ld+json">
-{"name":null,"description":"KaggleのZillow Prizeは，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．","author":{"@type":"Person","name":"haltaro"},"@type":"BlogPosting","url":"http://localhost:4000/2017/08/07/zillow-conpetition","publisher":null,"image":null,"headline":"Kaggle，Zillow Prize概要","dateModified":"2017-08-07T00:00:00+09:00","datePublished":"2017-08-07T00:00:00+09:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/08/07/zillow-conpetition"},"@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <!--
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+-->
+  <link rel="icon" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="KaggleのZillow Prizeは，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．" />
+  <meta property="og:url" content="http://bencentra.github.io" />
+  <meta property="og:site_name" content="Memotaro" />
+  <meta property="og:title" content="Kaggle，Zillow Prize概要" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://bencentra.github.io/assets/2017-08-07-retech.jpg" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kaggle，Zillow Prize概要">
+  <meta name="twitter:description" content="KaggleのZillow Prizeは，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．">
+  <meta name="twitter:image" content="http://bencentra.github.io/assets/2017-08-07-retech.jpg">
+  <meta name="twitter:url" content="http://bencentra.github.io">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://bencentra.github.io/2017/08/07/zillow-conpetition">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://bencentra.github.io/feed.xml" />
+</head>
 
 
   <body>
 
-    <header class="header">
-  <div class="wrapper">
-    <a class="site-title" href="/">Memotaro</a>
-    <nav class="site-nav">
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
       
-        
+      <img src="/assets/logo.png" alt="Memotaro">
       
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
         
-      
+          
+          <li class="nav-link"><a href="/about/">About</a>
+          
         
-      
+          
         
-        <a class="page-link" href="/about/">About</a>
+          
         
-      
+          
         
-        <a class="page-link" href="/category/">Category</a>
+          
+          <li class="nav-link"><a href="/posts/">Posts</a>
+          
         
-      
+          
+          <li class="nav-link"><a href="/projects/">Projects</a>
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-        <a class="page-link" href="/project/">Project</a>
+          
         
-      
+          
         
-      
+          
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+      </ul>
     </nav>
   </div>
 </header>
 
+
     <div class="page-content">
-      <div class="wrapper">
-        <div class="col-main">
-          <div class="post">
+        <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">Kaggle，Zillow Prize概要</h1>
-    <p class="post-meta">Aug 7, 2017</p>
-  </header>
+<div class="post-header-container has-cover" style="background-image: url(/assets/2017-08-07-retech.jpg);">
+  <div class="scrim has-cover">
+    <header class="post-header">
+      <h1 class="title">Kaggle，Zillow Prize概要</h1>
+      <!--<p class="info">by <strong></strong></p>-->
+    </header>
+  </div>
+</div>
 
-  <article class="post-content">
-    <p><a href="https://www.kaggle.com/c/zillow-prize-1">KaggleのZillow Prize</a>は，<a href="https://www.zillow.com/">Zillow</a>が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．</p>
+<div class="wrapper">
 
-<p><img src="/images/2017-08-07-retech.jpg" alt="retech" /></p>
+
+
+<section class="post-meta">
+  <div class="post-date">August 7, 2017</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/x-tech">X-tech</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <p><a href="https://www.kaggle.com/c/zillow-prize-1">KaggleのZillow Prize</a>は，<a href="https://www.zillow.com/">Zillow</a>が2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．</p>
 
 <p>誤訳があるかもしれないのでご注意．</p>
 
-<h1 id="1-背景">1. 背景</h1>
+<h1 id="section">1. 背景</h1>
 
-<h2 id="1a-kaggle">1.a Kaggle</h2>
+<h2 id="a-kaggle">1.a Kaggle</h2>
 
 <p><a href="https://www.kaggle.com/">Kaggle</a>は，データサイエンティストのプラットフォームである．様々なコンペティションを開催しており，データサイエンティストの腕試しの場として広く認知されている．Kaggleへの参加方法については，<a href="http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7">Kaggle事始め</a>が詳しい．</p>
 
-<h2 id="1b-zillow">1.b Zillow</h2>
+<h2 id="b-zillow">1.b Zillow</h2>
 
 <p><a href="https://www.zillow.com/">Zillow</a>は，オンライン不動産データベースを運営するアメリカの企業である．アメリカ全土の1億件以上の物件情報を有し，Zestimateと呼ばれる価格見積もりサービスを持つ．</p>
 
-<h1 id="2-zillow-prize">2. Zillow Prize</h1>
+<h1 id="zillow-prize">2. Zillow Prize</h1>
 
-<h2 id="2a-概要">2.a 概要</h2>
+<h2 id="a-">2.a 概要</h2>
 
 <p><a href="https://www.kaggle.com/c/zillow-prize-1">Zillow Prize</a>は，Zillowが2017年5月に開始したコンペティションである．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，Qualifying round（第1ラウンド）とPrivate round（第2ラウンド）からなる．Private roundは，Qualifying roundの上位100チームのみに対し2018年1月1日から実施される．</p>
 
 <p><a href="https://www.kaggle.com/c/zillow-prize-1/data">Data</a>や<a href="https://www.kaggle.com/c/zillow-prize-1/rules">Rules</a>等の詳細は以下．</p>
 
-<h2 id="2b-data">2.b Data</h2>
+<h2 id="b-data">2.b Data</h2>
 
 <p>本コンペティションの目的は，Zestimate（<script type="math/tex">z</script>）と実際の売値（<script type="math/tex">s</script>）の対数誤差を予測すること．対数誤差は以下で定義される．</p>
 
@@ -157,7 +214,7 @@ logerror = log(z) - log(s) \tag{1}
   <li><code class="highlighter-rouge">sample_submission.csv</code>：提出用のサンプルファイル．</li>
 </ul>
 
-<h2 id="2c-rules">2.c Rules</h2>
+<h2 id="c-rules">2.c Rules</h2>
 <p>重要そうなものだけ抜粋．</p>
 
 <ul>
@@ -186,7 +243,7 @@ logerror = log(z) - log(s) \tag{1}
   <li>第2ラウンドでは，いかなる形でもソースコードを公開できない</li>
 </ul>
 
-<h1 id="参考">参考</h1>
+<h1 id="section-1">参考</h1>
 
 <ul>
   <li><a href="https://www.kaggle.com/c/zillow-prize-1">Kaggle，Zillow Prize</a></li>
@@ -199,79 +256,192 @@ logerror = log(z) - log(s) \tag{1}
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>ここで検討過程を公開しようと思っていたが，どうやらルール違反っぽい．一旦Kernelで公開したものを，日本語訳して自分のサイトで公開するのはOKか？&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>ここで検討過程を公開しようと思っていたが，どうやらルール違反っぽい．一旦Kernelで公開したものを，日本語訳して自分のサイトで公開するのはOKか？ <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
 
-  </article>
+</article>
+
+
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<!--
+<section class="share">
+  <span>Share: </span>
   
+    
+    
+    
+    
+    
+    
+    
+    
   
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+-->
+
 
 
 
 
 </div>
-
-        </div>
-        <div class="col-second">
-          <div class="col-box col-box-author">
-  <img class="avatar" src="//www.gravatar.com/avatar/546804f938d574fc5141fc1431066d29" alt="haltaro">
-  <div class="col-box-title name">haltaro</div>
-  <p>柴犬を愛でる研究員</p>
-  <p class="contact">
-    
-    <a href="https://github.com/haltaro">GitHub</a>
-    
-    
-    
-		<a href="https://qiita.com/haltaro">Qiita</a>
-    
-    
-		<a href="https://kaggle.com/haltaro">Kaggle</a>
-    
-
-    
-    <a href="mailto:mail.to.haltaro@gmail.com">Email</a>
-    
-  </p>
 </div>
 
-<div class="col-box">
-  <div class="col-box-title">Newest Posts</div>
-  <ul class="post-list">
-    
-      <li><a class="post-link" href="/2018/02/04/chatbot">チャットボットを作ろう：3．CSS修正</a></li>
-    
-      <li><a class="post-link" href="/2018/01/07/digital-marketing-retire">CourceraのDigital marketing講座を退会した</a></li>
-    
-      <li><a class="post-link" href="/2018/01/07/digital-marketing-4">Courcera，Marketing in a digital world：4. Price</a></li>
-    
-      <li><a class="post-link" href="/2018/01/02/dmm-english">DMM英会話受講メモ：2018年1月</a></li>
-    
-      <li><a class="post-link" href="/2017/12/30/chatbot">チャットボットを作ろう：2．JekyllサイトでBotUI</a></li>
-    
-  </ul>
-</div>
-
-<div class="col-box post-toc hide">
-  <div class="col-box-title">TOC</div>
-</div>
-
-        </div>
-      </div>
     </div>
 
-    <footer class="footer">
-<div class="wrapper">
-&copy; 2017 haltaro
-</div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">Memotaro</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/about/">About</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+          <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:mail.to.haltaro@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">mail.to.haltaro@gmail.com</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://github.com/haltaro" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">github.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://qiita.com/haltaro" title="Follow me on Qiita">
+              <i class="fa fa-search"></i>
+              <span class="username">qiita.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://kaggle.com/haltaro" title="Follow me on Kaggle">
+              <i class="fa fa-space-shuttle"></i>
+              <span class="username">kaggle.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
+</p>
+    </div>
+
+  </div>
+
 </footer>
 
-<script src="/js/easybook.js"></script>
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+
 
     
-
 
   </body>
 

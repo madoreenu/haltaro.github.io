@@ -2,8 +2,24 @@
 layout: default
 ---
 
-<div class="botui-app-container" id="self-intro">
-  <bot-ui></bot-ui>
+
+
+<div class="wrapper">
+<div class="page">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  {% include page_divider.html %}
+
+  <img src="{{ site.baseurl }}/assets/profile.jpg" title="Profile Picture" class="profile">
+
+  <div class="botui-app-container" id="self-intro">
+    <bot-ui></bot-ui>
+  </div>
+
+</div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>

@@ -2,6 +2,7 @@
 layout: post
 title: Udacity, Intro to Relational Databases
 updated: 2017-08-10 18:00
+cover: "/assets/2017-08-13-data.jpg"
 categories:
  - data science
 ---

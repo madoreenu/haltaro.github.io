@@ -2,6 +2,7 @@
 layout: post
 title: JekyllでGoogle Analytics
 updated: 2017-08-04 22:00
+cover: "/assets/2017-08-06-blog.jpg"
 categories:
  - jekyll
 ---

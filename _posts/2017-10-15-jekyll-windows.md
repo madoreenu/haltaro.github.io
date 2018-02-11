@@ -2,13 +2,14 @@
 layout: post
 title: Windows7でJekyll+GitHub Pages
 updated: 2017-10-15 17:00
+cover: "/assets/2017-08-06-blog.jpg"
 categories:
  - jekyll
 ---
 
 船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）に[Jekyll](https://jekyllrb-ja.github.io/)+[GitHub Pages](https://pages.github.com/)環境を構築した．
 
-![env]({{site.baseurl}}/images/2017-10-15-env.png)
+![env]({{site.baseurl}}/assets/2017-10-15-env.png)
 
 # 環境
 
@@ -131,7 +132,7 @@ r'
 ## 8. ATOMのインストール
 マークダウンエディタが欲しかったので，[ATOM](https://atom.io/)をインストールした．[公式ページ](https://atom.io/)からインストーラをダウンロードすれば簡単にできた．しかし…
 
-![outline]({{site.baseurl}}/images/2017-10-15-outline.png)
+![outline]({{site.baseurl}}/assets/2017-10-15-outline.png)
 
 サマリ部分に全文表示されてしまう問題が発生した．これはUnixの改行コード（`LF`）とWindowsの改行コード（`CRLF`）が混在していることが原因らしい．
 
@@ -152,7 +153,7 @@ ATOMの設定画面から，`line-ending-converter`をインストール．`Pack
 
 下図のような環境が完成した．
 
-![env]({{site.baseurl}}/images/2017-10-15-env.png)
+![env]({{site.baseurl}}/assets/2017-10-15-env.png)
 
 PowerShellで`> bundle exec jekyll serve`して，ブラウザで`http://127.0.0.1:4000`から出来栄えを確認しながら，ATOMでマークダウンを編集できる．
 

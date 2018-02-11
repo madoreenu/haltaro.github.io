@@ -2,6 +2,7 @@
 layout: post
 title: JekyllとGitHub Pagesでウェブサイト自作
 updated: 2017-08-06 10:00
+cover: "/assets/2017-08-06-blog.jpg"
 categories:
  - jekyll
 ---

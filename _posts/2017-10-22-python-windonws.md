@@ -2,6 +2,7 @@
 layout: post
 title: Windows 7でAnaconda 5.0.0
 updated: 2017-10-22 21:30
+cover: "/assets/2017-10-22-python.jpg"
 categories:
  - python
 ---

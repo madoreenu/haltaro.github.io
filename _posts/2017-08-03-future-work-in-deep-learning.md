@@ -1,15 +1,13 @@
 ---
 layout: post
 title: 機械学習のプロジェクト計画
-updated: 2017-08-02 22:00 
+updated: 2017-08-02 22:00
+cover:  "/assets/2017-08-03-ml.jpg"
 categories:
- - machine learning 
+ - machine learning
 ---
 
 くだらないものばかりだけど，今後やりたいことをメモしておく．
-
-![project]({{site.baseurl}}/images/dlnd.png)
-
 
 # 1. 画像処理系
 

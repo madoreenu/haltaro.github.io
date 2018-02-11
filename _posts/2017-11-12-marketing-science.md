@@ -2,6 +2,7 @@
 layout: post
 title: 古川一郎，マーケティング・サイエンス入門
 updated: 2017-11-13 22:00
+cover:  "/assets/2017-11-18-marketing.jpg"
 categories:
  - marketing
 ---
@@ -212,4 +213,3 @@ $$
 
 # 12章．ブランドの評価と測定
 * ブランド・パワーの高い企業は利益率が高い．
-

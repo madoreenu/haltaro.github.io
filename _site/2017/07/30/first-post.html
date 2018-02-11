@@ -6,103 +6,162 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>JekyllとGitHub Pagesでウェブサイト自作 « Memotaro</title>
-	<meta name="description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub P...">
+  <title>JekyllとGitHub Pagesでウェブサイト自作</title>
+  <meta name="description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub P...">
+  
+  <meta name="author" content="haltaro">
+  <meta name="copyright" content="&copy; haltaro 2018">
+  
 
-  <link rel="icon" href="/images/h_icon.png">
-  <link rel="apple-touch-icon" href="/images/h_icon.png">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2017/07/30/first-post">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
-
-  <!-- MathJax -->
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+  <!-- Mathjax -->
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
   <!-- BotUI -->
-  <link rel="stylesheet" href="../css/botui.min.css" />
-  <link rel="stylesheet" href="../css/botui-theme-default.css" />
-</head>
+  <link rel="stylesheet" href="/css/botui.min.css" >
+  <link rel="stylesheet" href="/css/botui-theme-default.css" >
 
-  <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>JekyllとGitHub Pagesでウェブサイト自作 | Memotaro</title>
-<meta property="og:title" content="JekyllとGitHub Pagesでウェブサイト自作" />
-<meta name="author" content="haltaro" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub Pagesで，ウェブサイトを立ち上げた．" />
-<meta property="og:description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub Pagesで，ウェブサイトを立ち上げた．" />
-<link rel="canonical" href="http://localhost:4000/2017/07/30/first-post" />
-<meta property="og:url" content="http://localhost:4000/2017/07/30/first-post" />
-<meta property="og:site_name" content="Memotaro" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-07-30T00:00:00+09:00" />
-<script type="application/ld+json">
-{"name":null,"description":"それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub Pagesで，ウェブサイトを立ち上げた．","author":{"@type":"Person","name":"haltaro"},"@type":"BlogPosting","url":"http://localhost:4000/2017/07/30/first-post","publisher":null,"image":null,"headline":"JekyllとGitHub Pagesでウェブサイト自作","dateModified":"2017-07-30T00:00:00+09:00","datePublished":"2017-07-30T00:00:00+09:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/07/30/first-post"},"@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <!--
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+-->
+  <link rel="icon" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub P..." />
+  <meta property="og:url" content="http://bencentra.github.io" />
+  <meta property="og:site_name" content="Memotaro" />
+  <meta property="og:title" content="JekyllとGitHub Pagesでウェブサイト自作" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://bencentra.github.io/assets/2017-08-06-blog.jpg" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="JekyllとGitHub Pagesでウェブサイト自作">
+  <meta name="twitter:description" content="それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub P...">
+  <meta name="twitter:image" content="http://bencentra.github.io/assets/2017-08-06-blog.jpg">
+  <meta name="twitter:url" content="http://bencentra.github.io">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://bencentra.github.io/2017/07/30/first-post">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://bencentra.github.io/feed.xml" />
+</head>
 
 
   <body>
 
-    <header class="header">
-  <div class="wrapper">
-    <a class="site-title" href="/">Memotaro</a>
-    <nav class="site-nav">
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
       
-        
+      <img src="/assets/logo.png" alt="Memotaro">
       
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
         
-      
+          
+          <li class="nav-link"><a href="/about/">About</a>
+          
         
-      
+          
         
-        <a class="page-link" href="/about/">About</a>
+          
         
-      
+          
         
-        <a class="page-link" href="/category/">Category</a>
+          
+          <li class="nav-link"><a href="/posts/">Posts</a>
+          
         
-      
+          
+          <li class="nav-link"><a href="/projects/">Projects</a>
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-        <a class="page-link" href="/project/">Project</a>
+          
         
-      
+          
         
-      
+          
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+      </ul>
     </nav>
   </div>
 </header>
 
+
     <div class="page-content">
-      <div class="wrapper">
-        <div class="col-main">
-          <div class="post">
+        <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">JekyllとGitHub Pagesでウェブサイト自作</h1>
-    <p class="post-meta">Jul 30, 2017</p>
-  </header>
+<div class="post-header-container has-cover" style="background-image: url(/assets/2017-08-06-blog.jpg);">
+  <div class="scrim has-cover">
+    <header class="post-header">
+      <h1 class="title">JekyllとGitHub Pagesでウェブサイト自作</h1>
+      <!--<p class="info">by <strong></strong></p>-->
+    </header>
+  </div>
+</div>
 
-  <article class="post-content">
-    <p>それなりに技術的なメモが溜まってきたが，<a href="http://qiita.com/">Qiita</a>に投稿するほどではない．これまでは<a href="https://evernote.com/intl/jp/">evernote</a>で管理していたが，数式やソースコードを書きづらい．<a href="http://hatenablog.com/">はてなブログ</a>等で<a href="https://ja.wikipedia.org/wiki/Markdown">Markdown</a>を書いても良いが，手元にコンテンツが残らないのが嫌だし，<code class="highlighter-rouge">haltaro</code>ドメインが取れなかった．そこで，<a href="https://jekyllrb-ja.github.io/">Jekyll</a>と<a href="https://pages.github.com/">GitHub Pages</a>で，ウェブサイトを立ち上げた．</p>
+<div class="wrapper">
 
-<h1 id="参考">参考</h1>
+
+
+<section class="post-meta">
+  <div class="post-date">July 30, 2017</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/jekyll">Jekyll</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <p>それなりに技術的なメモが溜まってきたが，<a href="http://qiita.com/">Qiita</a>に投稿するほどではない．これまでは<a href="https://evernote.com/intl/jp/">evernote</a>で管理していたが，数式やソースコードを書きづらい．<a href="http://hatenablog.com/">はてなブログ</a>等で<a href="https://ja.wikipedia.org/wiki/Markdown">Markdown</a>を書いても良いが，手元にコンテンツが残らないのが嫌だし，<code class="highlighter-rouge">haltaro</code>ドメインが取れなかった．そこで，<a href="https://jekyllrb-ja.github.io/">Jekyll</a>と<a href="https://pages.github.com/">GitHub Pages</a>で，ウェブサイトを立ち上げた．</p>
+
+<h1 id="section">参考</h1>
 
 <p><code class="highlighter-rouge">jekyll github pages</code>等でググると素晴らしい記事がたくさん出てきた．今回は，特に，以下を参考にした．</p>
 
@@ -118,41 +177,43 @@
 
 <p>gitやGitHubの使い方は，もともと知っていたので割愛．</p>
 
-<h1 id="手順">手順</h1>
+<h1 id="section-1">手順</h1>
 
 <p>なお，Ubuntu 16.04を想定する．</p>
 
-<h2 id="1-githubアカウント取得">1. GitHubアカウント取得</h2>
+<h2 id="github">1. GitHubアカウント取得</h2>
 
 <p><a href="https://github.com/">GitHub</a>に登録し，アカウントを取得．もともと持ってた．</p>
 
-<h2 id="2-haltarogithubioレポジトリ作成">2. haltaro.github.ioレポジトリ作成</h2>
+<h2 id="haltarogithubio">2. haltaro.github.ioレポジトリ作成</h2>
 
 <p><code class="highlighter-rouge">&lt;アカウント名&gt;.github.io</code>レポジトリを作成．これも，もともと持ってた．</p>
 
-<h2 id="3-jekyllインストール">3. Jekyllインストール</h2>
+<h2 id="jekyll">3. Jekyllインストール</h2>
 
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04">How to Set Up a Jekyll Development Site on Ubuntu 16.04</a>を参考に，以下のコマンドを実行．</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get install ruby ruby-dev make gcc
-<span class="nv">$ </span><span class="nb">sudo </span>gem install jekyll bundler
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>sudo apt-get install ruby ruby-dev make gcc
+<span class="gp">$ </span>sudo gem install jekyll bundler
+</code></pre>
+</div>
 
 <p>ついでに，ローカル保存用のディレクトリを作成して移動．</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mkdir haltaro.github.io
-<span class="nv">$ </span><span class="nb">cd </span>haltaro.github.io
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>mkdir haltaro.github.io
+<span class="gp">$ </span><span class="nb">cd </span>haltaro.github.io
+</code></pre>
+</div>
 
-<h2 id="4-jekyllテーマ選定">4. Jekyllテーマ選定</h2>
+<h2 id="jekyll-1">4. Jekyllテーマ選定</h2>
 
 <p><a href="http://jekyllthemes.org/">Jekyll themes</a>から，テーマを選んだ．シンプルさと，カテゴリ分類機能という条件を満たす<a href="https://github.com/laobubu">laobubu</a>さんの<a href="http://jekyllthemes.org/themes/easybook/">EasyBook</a>を使わせてもらうことにした．</p>
 
 <p>ダウンロードするなりクローンしたファイル一式を，先程のローカルディレクトリに保存．</p>
 
-<h2 id="5-カスタマイズ">5. カスタマイズ</h2>
+<h2 id="section-2">5. カスタマイズ</h2>
 
-<h3 id="51-フォントの変更">5.1 フォントの変更</h3>
+<h3 id="section-3">5.1 フォントの変更</h3>
 
 <p>デフォルトだと日本語フォントが気持ち悪いので，<code class="highlighter-rouge">/css/main.scss</code>を次のように変更した．</p>
 
@@ -160,7 +221,7 @@
 
 <p>流行りの<a href="http://www.jiyu-kobo.co.jp/library/ygf/">游ゴシック</a>を使おうとしたが，<a href="http://mandel59.hateblo.jp/entry/2016/11/11/012654">windowsで線が細くなる問題</a>の闇が深く，初心者の手に負えない．<a href="http://unitopi.com/font-family-css/">もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。</a>を参考に，無難に設定した．</p>
 
-<h3 id="52-連絡先の追加">5.2 連絡先の追加</h3>
+<h3 id="section-4">5.2 連絡先の追加</h3>
 
 <p>連絡先に，<code class="highlighter-rouge">Qiita</code>と<code class="highlighter-rouge">Kaggle</code>を追加した．まず，<code class="highlighter-rouge">/_includes/sidebar.html</code>に<code class="highlighter-rouge">Qiita</code>ボタンと<code class="highlighter-rouge">Kaggle</code>ボタンの設定を追記．</p>
 
@@ -170,23 +231,23 @@
 
 <script src="https://gist.github.com/haltaro/dbbefa944f0072eda07c405e0fdb9762.js"></script>
 
-<h3 id="53-projectsページの追加">5.3 Projectsページの追加</h3>
+<h3 id="projects">5.3 Projectsページの追加</h3>
 
 <p>業績をまとめたページを作りたかったので，<code class="highlighter-rouge">/projects.md</code>を追加した．フロントマターは，<code class="highlighter-rouge">/about.md</code>を参考に作った．</p>
 
 <script src="https://gist.github.com/haltaro/ace85ef28accfb567b00fc2ca3f80d81.js"></script>
 
-<h3 id="54-gravatarの取得">5.4 Gravatarの取得</h3>
+<h3 id="gravatar">5.4 Gravatarの取得</h3>
 
 <p>丸窓にアイコンを表示するためには，<a href="https://en.gravatar.com/">Gravatar</a>を設定して，ハッシュ値を<code class="highlighter-rouge">/_config.yml</code>に追記する必要がある．<a href="http://zaitaku-hukugyo-net.com/1132.html">アバター画像を設定！Gravatar(グラバター)の登録方法と使い方</a>を参考にした．</p>
 
-<h3 id="55-アイコンの設定">5.5 アイコンの設定</h3>
+<h3 id="section-5">5.5 アイコンの設定</h3>
 
 <p>ブラウザのタブ部分と，iPhone/iPadのホーム画面用にアイコンを表示したかったので，<code class="highlighter-rouge">/_includes/head.html</code>に<code class="highlighter-rouge">icon</code>および<code class="highlighter-rouge">apple-touch-icon</code>設定を追記．アイコン自体は，<a href="http://www.irasutoya.com/">いらすとや</a>さんから調達し，<code class="highlighter-rouge">/images</code>に格納．</p>
 
 <script src="https://gist.github.com/haltaro/368a39e2956695d01a9728fb87b0e33d.js"></script>
 
-<h3 id="56-パーマリンクの設定">5.6 パーマリンクの設定</h3>
+<h3 id="section-6">5.6 パーマリンクの設定</h3>
 
 <p>デフォルトだと，<code class="highlighter-rouge">/archives/:title</code>形式だったので，<code class="highlighter-rouge">:title</code>の重複を避ける必要があり，大変．そこで，<code class="highlighter-rouge">/:year/:month/:day/:title</code>形式に変更した．</p>
 
@@ -194,101 +255,216 @@
 
 <p>なお，組み込みパーマリンクスタイル<code class="highlighter-rouge">date</code>を指定すれば簡単に<code class="highlighter-rouge">/:categories/:year/:month/:day/:title.html</code>形式になるが，<code class="highlighter-rouge">:categories</code>に空白文字が入ると嫌なので使わなかった．</p>
 
-<h3 id="57-mathjaxの設定">5.7 MathJaxの設定</h3>
+<h3 id="mathjax">5.7 MathJaxの設定</h3>
 
 <p><a href="https://www.mathjax.org/">MathJax</a>を使った数式表示を設定．<code class="highlighter-rouge">_includes/head.html</code>に以下を追記．</p>
 
 <script src="https://gist.github.com/haltaro/ab0a07373a387bd1b83966d1db9e0a07.js"></script>
 
-<h2 id="6-ローカルテスト">6. ローカルテスト</h2>
+<h2 id="section-7">6. ローカルテスト</h2>
 
 <p>下記コマンドで動作確認．いくつかエラーが出たので，その都度ググって解決した．</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ jekyll serve
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ jekyll serve
+</code></pre>
+</div>
 <p>ブラウザで<code class="highlighter-rouge">localhost:4000</code>にアクセスして，出来栄えを確認．</p>
 
-<h2 id="7-アップロード">7. アップロード</h2>
+<h2 id="section-8">7. アップロード</h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote add origin git@github.com:haltaro/haltaro.github.io <span class="c"># アカウント名等は適宜変更のこと．</span>
-<span class="nv">$ </span>git add <span class="nb">.</span> <span class="nt">-A</span>
-<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"First commit"</span>
-<span class="nv">$ </span>git push origin master
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git remote add origin git@github.com:haltaro/haltaro.github.io <span class="c"># アカウント名等は適宜変更のこと．</span>
+<span class="gp">$ </span>git add . -A
+<span class="gp">$ </span>git commit -m <span class="s2">"First commit"</span>
+<span class="gp">$ </span>git push origin master
+</code></pre>
+</div>
 
 <p>しばらく経ってから，<code class="highlighter-rouge">https://haltaro.github.io</code>にアクセスすると，サイトが出来上がっていた．</p>
 
-<h1 id="感想">感想</h1>
+<h1 id="section-9">感想</h1>
 
 <p>htmlとかcssとか全然わからんが，なんとか形になった．次回は，<a href="https://haltaro.github.io/2017/08/04/set-google-analytics">Google Analyticsでトラッキング機能を実装</a>する．</p>
 
-  </article>
+</article>
+
+
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<!--
+<section class="share">
+  <span>Share: </span>
   
+    
+    
+    
+    
+    
+    
+    
+    
   
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+-->
+
 
 
 
 
 </div>
-
-        </div>
-        <div class="col-second">
-          <div class="col-box col-box-author">
-  <img class="avatar" src="//www.gravatar.com/avatar/546804f938d574fc5141fc1431066d29" alt="haltaro">
-  <div class="col-box-title name">haltaro</div>
-  <p>柴犬を愛でる研究員</p>
-  <p class="contact">
-    
-    <a href="https://github.com/haltaro">GitHub</a>
-    
-    
-    
-		<a href="https://qiita.com/haltaro">Qiita</a>
-    
-    
-		<a href="https://kaggle.com/haltaro">Kaggle</a>
-    
-
-    
-    <a href="mailto:mail.to.haltaro@gmail.com">Email</a>
-    
-  </p>
 </div>
 
-<div class="col-box">
-  <div class="col-box-title">Newest Posts</div>
-  <ul class="post-list">
-    
-      <li><a class="post-link" href="/2018/02/04/chatbot">チャットボットを作ろう：3．CSS修正</a></li>
-    
-      <li><a class="post-link" href="/2018/01/07/digital-marketing-retire">CourceraのDigital marketing講座を退会した</a></li>
-    
-      <li><a class="post-link" href="/2018/01/07/digital-marketing-4">Courcera，Marketing in a digital world：4. Price</a></li>
-    
-      <li><a class="post-link" href="/2018/01/02/dmm-english">DMM英会話受講メモ：2018年1月</a></li>
-    
-      <li><a class="post-link" href="/2017/12/30/chatbot">チャットボットを作ろう：2．JekyllサイトでBotUI</a></li>
-    
-  </ul>
-</div>
-
-<div class="col-box post-toc hide">
-  <div class="col-box-title">TOC</div>
-</div>
-
-        </div>
-      </div>
     </div>
 
-    <footer class="footer">
-<div class="wrapper">
-&copy; 2017 haltaro
-</div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">Memotaro</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/about/">About</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+          <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:mail.to.haltaro@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">mail.to.haltaro@gmail.com</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://github.com/haltaro" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">github.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://qiita.com/haltaro" title="Follow me on Qiita">
+              <i class="fa fa-search"></i>
+              <span class="username">qiita.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://kaggle.com/haltaro" title="Follow me on Kaggle">
+              <i class="fa fa-space-shuttle"></i>
+              <span class="username">kaggle.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
+</p>
+    </div>
+
+  </div>
+
 </footer>
 
-<script src="/js/easybook.js"></script>
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+
 
     
-
 
   </body>
 

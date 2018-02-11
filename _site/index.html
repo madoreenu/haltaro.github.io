@@ -7,273 +7,572 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Memotaro</title>
-	<meta name="description" content="network engineering，algorithmic trading，machine learningに関する技術メモを書きます．
+  <meta name="description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
 ">
+  
+  <meta name="author" content="haltaro">
+  <meta name="copyright" content="&copy; haltaro 2018">
+  
 
-  <link rel="icon" href="/images/h_icon.png">
-  <link rel="apple-touch-icon" href="/images/h_icon.png">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
-
-  <!-- MathJax -->
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+  <!-- Mathjax -->
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
   <!-- BotUI -->
-  <link rel="stylesheet" href="../css/botui.min.css" />
-  <link rel="stylesheet" href="../css/botui-theme-default.css" />
-</head>
+  <link rel="stylesheet" href="/css/botui.min.css" >
+  <link rel="stylesheet" href="/css/botui-theme-default.css" >
 
-  <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>Memotaro | network engineering，algorithmic trading，machine learningに関する技術メモを書きます．</title>
-<meta property="og:title" content="Memotaro" />
-<meta name="author" content="haltaro" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="network engineering，algorithmic trading，machine learningに関する技術メモを書きます．" />
-<meta property="og:description" content="network engineering，algorithmic trading，machine learningに関する技術メモを書きます．" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Memotaro" />
-<link rel="next" href="http://localhost:4000/page2">
-<script type="application/ld+json">
-{"name":"Memotaro","description":"network engineering，algorithmic trading，machine learningに関する技術メモを書きます．","author":{"@type":"Person","name":"haltaro"},"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"Memotaro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <!--
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+-->
+  <link rel="icon" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
+" />
+  <meta property="og:url" content="http://bencentra.github.io" />
+  <meta property="og:site_name" content="Memotaro" />
+  <meta property="og:title" content="Memotaro" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://bencentra.github.io/assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Memotaro">
+  <meta name="twitter:description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
+">
+  <meta name="twitter:image" content="http://bencentra.github.io/assets/logo.png">
+  <meta name="twitter:url" content="http://bencentra.github.io">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://bencentra.github.io/">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://bencentra.github.io/feed.xml" />
+</head>
 
 
   <body>
 
-    <header class="header">
-  <div class="wrapper">
-    <a class="site-title" href="/">Memotaro</a>
-    <nav class="site-nav">
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
       
-        
+      <img src="/assets/logo.png" alt="Memotaro">
       
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
         
-      
+          
+          <li class="nav-link"><a href="/about/">About</a>
+          
         
-      
+          
         
-        <a class="page-link" href="/about/">About</a>
+          
         
-      
+          
         
-        <a class="page-link" href="/category/">Category</a>
+          
+          <li class="nav-link"><a href="/posts/">Posts</a>
+          
         
-      
+          
+          <li class="nav-link"><a href="/projects/">Projects</a>
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-        <a class="page-link" href="/project/">Project</a>
+          
         
-      
+          
         
-      
+          
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+      </ul>
     </nav>
   </div>
 </header>
 
+
     <div class="page-content">
-      <div class="wrapper">
-        <div class="col-main">
-          <div class="home">
-  <a class="rss-link" href="/feed.xml">RSS Feed</a>
-  <!--<h1 class="page-heading">Articles</h1>-->
+        <div class="home">
 
-  <ul class="post-list">
+<div class="site-header-container has-cover" style="background-image: url(/assets/header_image.jpg);">
+  <div class="scrim has-cover">
+    <header class="site-header">
+      <h1 class="title">Memotaro</h1>
+      <p class="subtitle">Haltaro's technical memorandum</p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+<ul class="post-list">
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/02/04/chatbot">チャットボットを作ろう：3．CSS修正</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>BotUIを本サイトのAboutページに埋め込んだが，会話が長くなると二重にスライドバーが表示されてダサすぎる1．BotUIのCSSをいじって修正することにした．
+
+以下は修正前の動作．他に何か質問ありますかあたりから，二重にスライドバーが表示されてとても使いづらい．
+
+
+以下は修正後の動作．他に何か質問ありますか以降もスライドバーが出現することはない．
+
+
+
+関連記事はこちら：
+
+
+  チャットボットを作ろう：1．調査
+  チャットボットを作ろう：2．JekyllサイトでBotUI
+  チャットボットを作ろう：3．CSS修正
+
+
+環境
+
+
+  Easybook：本サイトで利用しているJekyllのテーマ．
+  BotUI：JavaScriptだけで動くチャットボットライブラリ．
+
+
+手順
+
+BotUIのCSSとJavaScriptをローカルに保存
+
+ローカルでBotUIを実行するのに必要なファイルをGitHubからダウンロードする．公式ドキュメントによると，botui.min.cssとbotui-theme-default.cssとbotui.min.jsがあれば良さそう2．Easybookのディレクトリ構造を鑑み，それぞれcss/およびjs/配下に保存する．
+
+botui.min.cssを修正
+
+.botui-app-containerのheight:500pxをコメントアウトし，高さ制限をなくす．
+
+
+
+_include/head.htmlを修正
+
+CDNではなく，ローカルのbotui.min.cssとbotui-theme-default.cssを参照する．
+
+
+
+_layouts/bot.htmlを修正
+
+CDNではなく，ローカルのbotui.jsを参照する．
+
+
+
+結果
+
+こんな感じになった．
+
+
+
+参考
+
+
+  BotUIインストールガイド
+
+
+  
     
-      <li>
-        <h2>
-          <a class="post-link" href="/2018/02/04/chatbot">チャットボットを作ろう：3．CSS修正</a>
-        </h2>
+      好みの問題かも． &#8617;
+    
+    
+      試行錯誤の結果，botui.min.cssをいじるだけで問題は解決できることが判明したので，全てをダウンロードする必要はなかった． &#8617;
+    
+  
 
-        <div class="post-meta">Feb 4, 2018</div>
-
-        <div class="post-excerpt">
-          
-          <p><a href="https://github.com/botui/botui">BotUI</a>を本サイトの<a href="https://haltaro.github.io/about/">Aboutページ</a>に埋め込んだが，会話が長くなると二重にスライドバーが表示されてダサすぎる<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．BotUIのCSSをいじって修正することにした．</p>
+</p>-->
+      <p><p><a href="https://github.com/botui/botui">BotUI</a>を本サイトの<a href="https://haltaro.github.io/about/">Aboutページ</a>に埋め込んだが，会話が長くなると二重にスライドバーが表示されてダサすぎる<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．BotUIのCSSをいじって修正することにした．</p>
 
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>好みの問題かも．&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>好みの問題かも． <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
-
-          
-          <p>
-            <a class="post-link" href="/2018/02/04/chatbot">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
-    
-      <li>
-        <h2>
-          <a class="post-link" href="/2018/01/07/digital-marketing-retire">CourceraのDigital marketing講座を退会した</a>
-        </h2>
-
-        <div class="post-meta">Jan 7, 2018</div>
-
-        <div class="post-excerpt">
-          
-          <p>2017年10月頃から，<a href="https://www.coursera.org/learn/marketing-digital">Courcera，Marketing in a digital world</a>を受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は11,000円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている．</p>
-
-
-          
-          <p>
-            <a class="post-link" href="/2018/01/07/digital-marketing-retire">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
-    
-      <li>
-        <h2>
-          <a class="post-link" href="/2018/01/07/digital-marketing-4">Courcera，Marketing in a digital world：4. Price</a>
-        </h2>
-
-        <div class="post-meta">Jan 7, 2018</div>
-
-        <div class="post-excerpt">
-          
-          <p><a href="https://www.coursera.org/learn/marketing-digital">Courcera，Marketing in a digital world</a>の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る<a href="https://www.coursera.org/specializations/digital-marketing">Digital marketing specialization</a>の一つ．四週かけて，デジタル時代の<a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9">マーケティング・ミックス</a>について学ぶ．第四週では，Priceを取り扱い，Pay what you wantやPrice comparison toolsについて学ぶ．</p>
-
-
-          
-          <p>
-            <a class="post-link" href="/2018/01/07/digital-marketing-4">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
-    
-      <li>
-        <h2>
-          <a class="post-link" href="/2018/01/02/dmm-english">DMM英会話受講メモ：2018年1月</a>
-        </h2>
-
-        <div class="post-meta">Jan 2, 2018</div>
-
-        <div class="post-excerpt">
-          
-          <p><a href="http://eikaiwa.dmm.com/">DMM英会話</a>を受講している．以下は，2018年1月の受講メモ．バタバタして，なかなか毎日時間を確保できない．</p>
-
-
-          
-          <p>
-            <a class="post-link" href="/2018/01/02/dmm-english">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
-    
-      <li>
-        <h2>
-          <a class="post-link" href="/2017/12/30/chatbot">チャットボットを作ろう：2．JekyllサイトでBotUI</a>
-        </h2>
-
-        <div class="post-meta">Dec 30, 2017</div>
-
-        <div class="post-excerpt">
-          
-          <p>諸事情により，チャットボットを自作したいと思った．<a href="http://paiza.hatenablog.com/entry/2017/09/21/%EF%BB%BFJavaScript%E3%81%A0%E3%81%91%E3%81%A7%E6%9C%AC%E6%A0%BC%E7%9A%84%E3%81%AA%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%82%8B">paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！</a>を参考にチャットボットを作成し，<a href="https://haltaro.github.io/about/">本サイトのAbout欄</a>に埋め込んだ．</p>
-
-
-          
-          <p>
-            <a class="post-link" href="/2017/12/30/chatbot">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
-    
-  </ul>
-
-  <!-- Pagination links -->
-<div class="pagination">
-  
-    <span class="previous">PREV</span>
-  
-  <span class="page_number ">1 of 7</span>
-  
-    <a href="/page2" class="next">NEXT</a>
-  
-</div>
-
-</div>
-
-        </div>
-        <div class="col-second">
-          <div class="col-box col-box-author">
-  <img class="avatar" src="//www.gravatar.com/avatar/546804f938d574fc5141fc1431066d29" alt="haltaro">
-  <div class="col-box-title name">haltaro</div>
-  <p>柴犬を愛でる研究員</p>
-  <p class="contact">
-    
-    <a href="https://github.com/haltaro">GitHub</a>
-    
-    
-    
-		<a href="https://qiita.com/haltaro">Qiita</a>
-    
-    
-		<a href="https://kaggle.com/haltaro">Kaggle</a>
-    
-
-    
-    <a href="mailto:mail.to.haltaro@gmail.com">Email</a>
-    
-  </p>
-</div>
-
-<div class="col-box">
-  <div class="col-box-title">Newest Posts</div>
-  <ul class="post-list">
-    
-      <li><a class="post-link" href="/2018/02/04/chatbot">チャットボットを作ろう：3．CSS修正</a></li>
-    
-      <li><a class="post-link" href="/2018/01/07/digital-marketing-retire">CourceraのDigital marketing講座を退会した</a></li>
-    
-      <li><a class="post-link" href="/2018/01/07/digital-marketing-4">Courcera，Marketing in a digital world：4. Price</a></li>
-    
-      <li><a class="post-link" href="/2018/01/02/dmm-english">DMM英会話受講メモ：2018年1月</a></li>
-    
-      <li><a class="post-link" href="/2017/12/30/chatbot">チャットボットを作ろう：2．JekyllサイトでBotUI</a></li>
-    
-  </ul>
-</div>
-
-<div class="col-box post-toc hide">
-  <div class="col-box-title">TOC</div>
-</div>
-
-        </div>
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">February 4, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/javascript">Javascript</a>
+        
+      
       </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/01/07/digital-marketing-retire">CourceraのDigital marketing講座を退会した</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>2017年10月頃から，Courcera，Marketing in a digital worldを受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は11,000円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている． 背景 2018年1月から広告業界に転職することが決まったため，マーケティングの基礎について，ほそぼそと書籍で勉強することにした．2017年12月末まで前の会社で働いていたので，退職準備を進めつつ，通勤中や土日に時間を作った． 武井由紀子，ユーザ中心ウェブビジネス戦略 コトラー，アームストロング，恩藏のマーケティング原理 古川一郎，マーケティング・サイエンス入門 佐藤達郎，「これからの広告」の教科書 本田哲也，田端信太郎，広告やメディアで人を動かそうとするのは、もう諦めなさい。 書籍を斜め読みしてわかったことは，技術の移り変わりがとても速い業界である，ということ．マーケティングの大家であるコトラー氏は，内容が陳腐化しているため，自分の古い著書にサインを求められても応じない，という逸話があるくらい．最先端の動向をキャッチアップするためには，書籍だけでなく，MOOC（Massive Open Online Course）等のオンライン講座も併用した方が良いと判断した． マーケティングに関するMOOCを検索したところ，CourceraのMarketing in a digital worldの評判が良いことがわかった．月額約5,500円の有料講座だが，週8時間ほど勉強すれば，4週間で終わるらしい．5,500円であれば技術書を買うのと変わらないので，2017年10月頃受講を開始した． 今から考えると，退職準備や中途入社準備を進めながら，週8時間確保できるという読みが甘すぎた．結局2ヶ月かけても修了できず，入社日を迎えて時間切れとなった． 講義 受講記録は以下： Courcera，Marketing in a digital world：1. Product Courcera，Marketing in a digital world：2. Promotion Courcera, Marketing in a digital world：3. Placement Courcera, Marketing in a digital world：4. Price...</p>-->
+      <p><p>2017年10月頃から，<a href="https://www.coursera.org/learn/marketing-digital">Courcera，Marketing in a digital world</a>を受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は11,000円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">January 7, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/marketing">Marketing</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/01/07/digital-marketing-4">Courcera，Marketing in a digital world：4. Price</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>Courcera，Marketing in a digital worldの受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成るDigital marketing specializationの一つ．四週かけて，デジタル時代のマーケティング・ミックスについて学ぶ．第四週では，Priceを取り扱い，Pay what you wantやPrice comparison toolsについて学ぶ． 本講座に関する記事： Courcera，Marketing in a digital world：1. Product Courcera，Marketing in a digital world：2. Promotion Courcera, Marketing in a digital world：3. Placement Courcera, Marketing in a digital world：4. Price CourceraのDigital marketing講座を退会した Module 3 overview 以下は，事前に読む必要がある資料． Bertini, M., &amp; Koenigsberg, O....</p>-->
+      <p><p><a href="https://www.coursera.org/learn/marketing-digital">Courcera，Marketing in a digital world</a>の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る<a href="https://www.coursera.org/specializations/digital-marketing">Digital marketing specialization</a>の一つ．四週かけて，デジタル時代の<a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9">マーケティング・ミックス</a>について学ぶ．第四週では，Priceを取り扱い，Pay what you wantやPrice comparison toolsについて学ぶ．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">January 7, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/marketing">Marketing</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/01/02/dmm-english">DMM英会話受講メモ：2018年1月</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>DMM英会話を受講している．以下は，2018年1月の受講メモ．バタバタして，なかなか毎日時間を確保できない． 1/2 Daily newsのStart the New Year By Setting Reasonable Learning Goalsを受講した．語学学習に関する記事．思春期を過ぎると，口の筋肉を司る脳細胞が死に始めるらしい．マジか…． puberty：思春期． 1/4 Daily newsのTop 5 Places to Visit in Australiaを受講した．オーストラリアの観光名所を紹介する話．文章量が少なかったので，最後のFurther discussionまで終わった．最後の質問We wander for distraction, but we travel for fulfillment. Hilaire Belloc. Do you agree with Belloc? Why? Why not?は，抽象的すぎて意味がわからなかった（先生もそう言ってた）． indigenous：土着の，地域固有の． engraving：彫刻． ashore：浜に，岸に，陸上に． sacred：神聖な，宗教上の． distraction：気の散ること，気晴らし，娯楽． fulfillment：履行，遂行，実現． 1/8 Daily newsのNew...</p>-->
+      <p><p><a href="http://eikaiwa.dmm.com/">DMM英会話</a>を受講している．以下は，2018年1月の受講メモ．バタバタして，なかなか毎日時間を確保できない．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">January 2, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/english">English</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2017/12/30/chatbot">チャットボットを作ろう：2．JekyllサイトでBotUI</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>諸事情により，チャットボットを自作したいと思った．paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！を参考にチャットボットを作成し，本サイトのAbout欄に埋め込んだ．
+
+
+
+関連記事はこちら：
+
+  チャットボットを作ろう：1．調査
+  チャットボットを作ろう：2．JekyllサイトでBotUI
+
+
+環境
+
+
+  Easybook：本サイトで利用しているJekyllのテーマ．
+  BotUI：JavaScriptだけで動くチャットボットライブラリ．
+
+
+手順
+
+paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！を参考した．
+
+_includes/head.htmlを追記
+
+BotUI関連のファイルを，CDN経由で読み込む設定を_includes/head.htmlに追記した．
+
+
+
+_layouts/bot.htmlを作成
+
+BotUI用の新レイアウトbot.htmlを_layouts/に追加した．
+
+
+
+任意のidを付与可能．チャットボットを表示したい位置に，&lt;bot-ui&gt;タグを配置した．
+
+js/bot.jsを作成
+
+チャットボット本体となるbot.jsをjs/に追加した．
+
+
+
+Promiseをベースとしたメソッドチェーンを繋げて，構成するらしい．詳細はよくわからなかったが，ノリでthenを繋げていったら動くものができた．
+
+  botui.message.add：新規メッセージの表示．delayで表示までの待ち時間を，contentで表示内容を指定できる．
+  botui.action.text：入力フォームを表示．resでユーザの回答を取得できる．
+  botui.action.button：ボタンを表示．resでユーザの回答を取得できる．
+
+
+_about.mdを修正
+
+Markdownで記載していた自己紹介欄を削除し，layoutをbotに変更した．
+
+
+
+課題
+
+時間切れのため，以下の課題を解決できなかった．時間に余裕ができたら解決したい．
+
+
+  BotUI, Guide, BotUI Markupを参考にしたが，URLや画像が埋め込めない．
+  会話が長くなったとき，サイドバーが二重に表示されてダサい．
+  If-Thenルールに則っただけの，人工無能．
+
+
+参考
+
+
+  BotUI
+  paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！
+
+</p>-->
+      <p><p>諸事情により，チャットボットを自作したいと思った．<a href="http://paiza.hatenablog.com/entry/2017/09/21/%EF%BB%BFJavaScript%E3%81%A0%E3%81%91%E3%81%A7%E6%9C%AC%E6%A0%BC%E7%9A%84%E3%81%AA%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%82%8B">paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！</a>を参考にチャットボットを作成し，<a href="https://haltaro.github.io/about/">本サイトのAbout欄</a>に埋め込んだ．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">December 30, 2017</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/javascript">Javascript</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  
+</ul>
+
+<nav class="pagination" role="navigation">
+	<p>
+    
+		<span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+    </span>
+		
+		<span class="page-number">Page 1 of 7</span>
+		
+		<a class="newer-posts" href="/page2">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+		
+	</p>
+</nav>
+
+</div>
+</div>
+
     </div>
 
-    <footer class="footer">
-<div class="wrapper">
-&copy; 2017 haltaro
-</div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">Memotaro</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/about/">About</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+          <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:mail.to.haltaro@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">mail.to.haltaro@gmail.com</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://github.com/haltaro" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">github.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://qiita.com/haltaro" title="Follow me on Qiita">
+              <i class="fa fa-search"></i>
+              <span class="username">qiita.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://kaggle.com/haltaro" title="Follow me on Kaggle">
+              <i class="fa fa-space-shuttle"></i>
+              <span class="username">kaggle.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
+</p>
+    </div>
+
+  </div>
+
 </footer>
 
-<script src="/js/easybook.js"></script>
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+
 
     
-
 
   </body>
 

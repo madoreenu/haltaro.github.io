@@ -2,6 +2,7 @@
 layout: post
 title: Jekyllで下書き記事管理
 updated: 2017-10-25 20:00
+cover: "/assets/2017-08-06-blog.jpg"
 categories:
  - jekyll
 ---
@@ -18,11 +19,11 @@ categories:
 
 [^2]: `yyyy-mm-dd-title.md`形式で保存すると，エラーが出た．
 
-![before]({{site.baseurl}}/images/2017-10-25-jekyll-before.png)
+![before]({{site.baseurl}}/assets/2017-10-25-jekyll-before.png)
 
 一方，`$ jekyll serve --drafts`とすると，`_drafts`以下の記事も含めてサイトが構築される．ここで，最終更新日が，各ドラフト記事の投稿日として処理されることに注意．
 
-![after]({{site.baseurl}}/images/2017-10-25-jekyll-after.png)
+![after]({{site.baseurl}}/assets/2017-10-25-jekyll-after.png)
 
 以下のように記事を整理した．
 

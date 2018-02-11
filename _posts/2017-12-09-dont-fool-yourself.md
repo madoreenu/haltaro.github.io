@@ -2,6 +2,7 @@
 layout: post
 title: 本田哲也，田端信太郎，広告やメディアで人を動かそうとするのは、もう諦めなさい。
 updated: 2017-12-09 22:00
+cover:  "/assets/2017-11-18-marketing.jpg"
 categories:
  - marketing
 ---

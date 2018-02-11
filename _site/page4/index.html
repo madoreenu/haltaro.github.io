@@ -7,274 +7,563 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Memotaro</title>
-	<meta name="description" content="network engineering，algorithmic trading，machine learningに関する技術メモを書きます．
+  <meta name="description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
 ">
+  
+  <meta name="author" content="haltaro">
+  <meta name="copyright" content="&copy; haltaro 2018">
+  
 
-  <link rel="icon" href="/images/h_icon.png">
-  <link rel="apple-touch-icon" href="/images/h_icon.png">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/page4/">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
-
-  <!-- MathJax -->
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+  <!-- Mathjax -->
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
   <!-- BotUI -->
-  <link rel="stylesheet" href="../css/botui.min.css" />
-  <link rel="stylesheet" href="../css/botui-theme-default.css" />
-</head>
+  <link rel="stylesheet" href="/css/botui.min.css" >
+  <link rel="stylesheet" href="/css/botui-theme-default.css" >
 
-  <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>Memotaro | network engineering，algorithmic trading，machine learningに関する技術メモを書きます．</title>
-<meta property="og:title" content="Memotaro" />
-<meta name="author" content="haltaro" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="network engineering，algorithmic trading，machine learningに関する技術メモを書きます．" />
-<meta property="og:description" content="network engineering，algorithmic trading，machine learningに関する技術メモを書きます．" />
-<link rel="canonical" href="http://localhost:4000/page4/" />
-<meta property="og:url" content="http://localhost:4000/page4/" />
-<meta property="og:site_name" content="Memotaro" />
-<link rel="prev" href="http://localhost:4000/page3">
-<link rel="next" href="http://localhost:4000/page5">
-<script type="application/ld+json">
-{"name":null,"description":"network engineering，algorithmic trading，machine learningに関する技術メモを書きます．","author":{"@type":"Person","name":"haltaro"},"@type":"WebPage","url":"http://localhost:4000/page4/","publisher":null,"image":null,"headline":"Memotaro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <!--
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+-->
+  <link rel="icon" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
+" />
+  <meta property="og:url" content="http://bencentra.github.io" />
+  <meta property="og:site_name" content="Memotaro" />
+  <meta property="og:title" content="Memotaro" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://bencentra.github.io/assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Memotaro">
+  <meta name="twitter:description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
+">
+  <meta name="twitter:image" content="http://bencentra.github.io/assets/logo.png">
+  <meta name="twitter:url" content="http://bencentra.github.io">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://bencentra.github.io/page4/">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://bencentra.github.io/feed.xml" />
+</head>
 
 
   <body>
 
-    <header class="header">
-  <div class="wrapper">
-    <a class="site-title" href="/">Memotaro</a>
-    <nav class="site-nav">
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
       
-        
+      <img src="/assets/logo.png" alt="Memotaro">
       
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
         
-      
+          
+          <li class="nav-link"><a href="/about/">About</a>
+          
         
-      
+          
         
-        <a class="page-link" href="/about/">About</a>
+          
         
-      
+          
         
-        <a class="page-link" href="/category/">Category</a>
+          
+          <li class="nav-link"><a href="/posts/">Posts</a>
+          
         
-      
+          
+          <li class="nav-link"><a href="/projects/">Projects</a>
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-        <a class="page-link" href="/project/">Project</a>
+          
         
-      
+          
         
-      
+          
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+      </ul>
     </nav>
   </div>
 </header>
 
+
     <div class="page-content">
-      <div class="wrapper">
-        <div class="col-main">
-          <div class="home">
-  <a class="rss-link" href="/feed.xml">RSS Feed</a>
-  <!--<h1 class="page-heading">Articles</h1>-->
+        <div class="home">
 
-  <ul class="post-list">
+<div class="site-header-container has-cover" style="background-image: url(/assets/header_image.jpg);">
+  <div class="scrim has-cover">
+    <header class="site-header">
+      <h1 class="title">Memotaro</h1>
+      <p class="subtitle">Haltaro's technical memorandum</p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+<ul class="post-list">
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2017/11/18/python-js">Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>随時更新：Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーションの読書メモ．JavaScript習得の取っ掛かりにしたい． なお，演習ではUbuntu16.04を用いた． 1章．開発環境の準備 本書で扱うコードは著者のGitHubレポジトリで公開されている． Pythonの開発環境を構築．$ conda create --name pyjsviz anaconda． SQLiteをインストール．$ sudo apt-get install sqlite3． MongoDB，Install MongoDB Community Edition on Ubuntuを参考に，MongoDBをインストール． MongoDB用に，ルートディレクトリに/dataおよび/data/dbディレクトリを作成． 上記ディレクトリの所有者を自分に設定．$ sudo chown 'haltaro' /data/db． 2章．PythonとJavaScript間の言語学習の橋渡し Pythonは学習済みなので，JavaScriptを中心にメモを残す． index.htmlのあるディレクトリで$ python -m http.server1して，ブラウザでhttp://localhost:8000にアクセスすると，JavaScriptの実行結果が見られる2． Chromeのショートカット[Ctrl] + [Shift] + [J]で，JavaScriptのコンソールが利用できる． JavaScriptでは，関数やモジュールの先頭で'use strict'を記述することで，厳格なスタイルガイドを利用できる． JavaScriptでは，変数名にキャメルケースを用いることが多い3． Pythonでは，ドット.表記を使って相対パスでimportできる． JavaScriptでは，関数外で宣言した変数やvarキーワードのない変数はグローバルになってしまう． JavaScriptのreduce関数は便利．配列の合計値などが簡単に計算できる． JavaScriptでは，array.forEach(callback)で，効率的に配列arrayに繰り返し処理を実行できる． JavaScriptでは，変数を他のコードより先に処理する．変数を必ず先頭で定義するようにしないと，予期しない動作を招く可能性がある． 続きは24ページから． 参考 あと味，reduce関数は結構有用っていうお話：JavaScriptにおけるreduceの使い方について．...</p>-->
+      <p><p><strong>随時更新</strong>：<a href="http://amzn.asia/2saLJcb">Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション</a>の読書メモ．<a href="https://developer.mozilla.org/ja/docs/Web/JavaScript">JavaScript</a>習得の取っ掛かりにしたい．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">November 18, 2017</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/javascript">Javascript</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2017/11/13/reajob">Reajob体験レッスン：Article discussion</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，出国前まで続けていたReajobのArticle discussion．
+
+Reajobとは
+
+フィリピン系オンライン英会話の最大手．2017年11月21日時点の料金プランは以下．
+
+
+  
     
-      <li>
-        <h2>
-          <a class="post-link" href="/2017/11/18/python-js">Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション</a>
-        </h2>
-
-        <div class="post-meta">Nov 18, 2017</div>
-
-        <div class="post-excerpt">
-          
-          <p><strong>随時更新</strong>：<a href="http://amzn.asia/2saLJcb">Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション</a>の読書メモ．<a href="https://developer.mozilla.org/ja/docs/Web/JavaScript">JavaScript</a>習得の取っ掛かりにしたい．</p>
-
-
-          
-          <p>
-            <a class="post-link" href="/2017/11/18/python-js">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
+      プラン
+      料金[円/月]
     
-      <li>
-        <h2>
-          <a class="post-link" href="/2017/11/13/reajob">Reajob体験レッスン：Article discussion</a>
-        </h2>
-
-        <div class="post-meta">Nov 13, 2017</div>
-
-        <div class="post-excerpt">
-          
-          <p>帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，出国前まで続けていた<a href="https://www.rarejob.com">Reajob</a>の<a href="https://www.rarejob.com/dna">Article discussion</a>．</p>
-
-
-          
-          <p>
-            <a class="post-link" href="/2017/11/13/reajob">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
+  
+  
     
-      <li>
-        <h2>
-          <a class="post-link" href="/2017/11/12/marketing-science">古川一郎，マーケティング・サイエンス入門</a>
-        </h2>
-
-        <div class="post-meta">Nov 12, 2017</div>
-
-        <div class="post-excerpt">
-          
-          <p><a href="http://amzn.asia/1QZt1OR">古川一郎，他，マーケティング・サイエンス入門－市場対応の科学的マネジメント</a>を読んだ．マーケティング・サイエンス全体を俯瞰できる良書．ただし，2011年のものなので，最新技術はカバーできていないので，<a href="https://haltaro.github.io/2017/11/08/digital-marketing-1">courcera</a>でカバー予定．</p>
-
-
-          
-          <p>
-            <a class="post-link" href="/2017/11/12/marketing-science">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
+      月8回
+      4,200
     
-      <li>
-        <h2>
-          <a class="post-link" href="/2017/11/08/digital-marketing-1">Courcera，Marketing in a digital world：1. Product</a>
-        </h2>
-
-        <div class="post-meta">Nov 8, 2017</div>
-
-        <div class="post-excerpt">
-          
-          <p><a href="https://www.coursera.org/learn/marketing-digital">Courcera，Marketing in a digital world</a>の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る<a href="https://www.coursera.org/specializations/digital-marketing">Digital marketing specialization</a>の一つ．四週かけて，デジタル時代の<a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9">マーケティング・ミックス</a>について学ぶ．第一週では，Productを取り扱い，Co-creationやDoppelgänger brand imageについて学ぶ．</p>
-
-
-          
-          <p>
-            <a class="post-link" href="/2017/11/08/digital-marketing-1">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
     
-      <li>
-        <h2>
-          <a class="post-link" href="/2017/10/25/jekyll-drafts">Jekyllで下書き記事管理</a>
-        </h2>
+      毎日25分
+      5,800
+    
+  
 
-        <div class="post-meta">Oct 25, 2017</div>
 
-        <div class="post-excerpt">
-          
-          <p>これまでは下書き記事を<code class="highlighter-rouge">（作成中）</code>と注意書きして公開していたが，見栄えが良くないので，<a href="http://jekyllrb-ja.github.io/docs/drafts/">Jekyllのdrafts機能</a>で一旦非公開<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>にすることにした．ただし，途中経過を公開する意味がありそうな，読書メモや受講メモはそのまま残す．</p>
+予習
+
+Daily news articleのページで：
+
+  文章を見ずにリスニング１回
+  文章を見ながらシャドウイング6回
+
+
+講義内容
+
+
+  自己紹介．沖縄に行ったことがあるそうなので少し盛り上がる．
+  タイトルを読んだあと，停電に関する質疑応答．
+    
+      大規模な停電を経験したことがあるか？：ある．2013年の大震災のとき．
+      どのくらいの間停電したか？：一日中（うろ覚え）．
+      停電時，どのような活動に影響がでたか？：家電が止まって大変だった．（今思えば，電車が止まって帰宅難民が出たとか言えばよかった）
+    
+  
+  New wordsを音読．
+  Articleを音読．途中で３つほど質問に答える．
+  Articleの即興サマライズ．
+  Viewpoint discussion．
+  少し時間が余ったので逆質問．
+    
+      サマライズが難しかった．何かコツがあったら教えてほしい：記事全体を眺めて，重要そうな部分を抜き出せば良いよ．
+    
+  
+
+
+先生からのフィードバック
+
+特になし．
+
+学んだこと
+
+
+  intermittent：時々とぎれる，断続する，間欠性の．
+  forestall：先んずる，機先を制する，出し抜く，買い占める．
+  operational：操作上の，経営上の；使用できる，運転可能な；作戦上の．
+
+
+感想
+
+サマライズはやっぱり難しい．とりあえず話す習慣をつけることが大事だと思った．
+
+Reajobはリーズナブルで安定しているが，できればネイティブスピーカーの先生に習いたい．もっといろいろ探してみる．
+</p>-->
+      <p><p>帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．今回は，出国前まで続けていた<a href="https://www.rarejob.com">Reajob</a>の<a href="https://www.rarejob.com/dna">Article discussion</a>．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">November 13, 2017</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/english">English</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2017/11/12/marketing-science">古川一郎，マーケティング・サイエンス入門</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>古川一郎，他，マーケティング・サイエンス入門－市場対応の科学的マネジメントを読んだ．マーケティング・サイエンス全体を俯瞰できる良書．ただし，2011年のものなので，最新技術はカバーできていないので，courceraでカバー予定． 序章．マーケティング・サイエンスのすすめ マーケティング・マネジメント・プロセス： 新規事業の発見：Research． マーケティング戦略：Segmentation，Targeting，Positioning． マーケティング戦術：Marketing mix． 実行：Implementation． 制御：Control． 1章．ビジネス・チャンスの発見 プロデジー・モデルとは，顧客の購買行動から競争市場構造を把握する手法の一つ．ある製品を強制的に顧客の選択対象から除外したときに，顧客はどの他のブランドを選択するかを測定することで，競争構造を分析する． 無構造市場仮説とは，既存の製品シェアに比例してシェア変動が起こるという仮説．プロデジー・モデルでは，検定者が想定する構造仮説と，無構造市場仮説を比較する． バス・モデルとは，イノベーションの普及モデル．自発的に購入するイノベーターと，すでに購入者消費者を模倣して購入するイミテーターを想定する．期の売上は，期までの普及割合，市場規模，イノベータ係数，およびイミテーター係数を使って，下式で表現できる． 理論的には，3期以上のデータがあれば，回帰分析で，，およびを推定可能．データ数が足りない場合は，類似製品の値を事前情報として用いたベイズ推定なども提案されている． 2章．消費者行動 知覚マップ（perception map）あるいはプロダクトマップ（product map）とは，様々なブランドに関する消費者の図示したもの．多次元尺度構成法（multi dimensional scaling; MDS）と因子分析（factor analysis）がよく用いられる． 因子分析と主成分分析は異なる． 目的：因子分析は共通因子の抽出を目的としているのに対し，主成分分析は情報の縮約を目的としている．詳細は株式会社リサーチ・アンド・ディベロプメント，新シリーズ第7回「因子分析と主成分分析の混同」を参照されたい． モデル：主成分分析を最尤推定と解釈すると，数理モデルとして，因子分析とどう違うか理解しやすくなる．因子分析では因子毎に異なる分散を持つガウス分布を仮定しているが，主成分分析では等方的な分散を持つガウス分布を仮定している．詳細は，C.M. ビショップ，パターン認識と機械学習 下（ベイズ理論による統計的予測）を参照されたい． MDSで計算した知覚マップからは，軸の直感的な解釈は得られない． 購買履歴データを用いてマップを作成する場合は，消費者の知覚を直接測定したわけではないので，プロダクトマップと呼ばれる． 消費者による製品の評価方法として，補償型と非補償型の２つがある．補償型の評価方法として，以下に示す加算式がある．製品の評価は，その製品の属性に対する評価と，その属性の重要度によって次のように表現できる． 非補償型の評価方法として，連結型，分散型，辞書編纂型がある．ブランド選択モデルとして，補償型の評価方法を仮定することが多い． 消費者がブランド集合から特定のブランドを選択する確率は，そのブランドの効用を用いて次のように表現できる． ここで，は，確定的部分，および確率的部分を用いて，次のように表現できる． ここで，は，ブランド固有の魅力を表すパラメータと，マーケティング変数の影響を表すパラメータと，そのマーケティング変数におけるブランドの値を用いて，次のように表現できる． に​ 正規分布を仮定したモデルを，プロビット・モデルと呼ぶ． プロビット・モデルでは，の積分を解析的に解けない．よって，に二重指数分布（ラプラス分布？）を仮定したロジット・モデルが提案されている． ​ロジット・モデルの課題は，消費者ごとの異質性をどのように取り込むか．アプローチとしては二つある： ​消費者の嗜好性を説明変数(おそらく)として追加する方法． ​パラメータの値が消費者間で異なると仮定する方法．​潜在クラスモデルと，階層ベイズモデルがある．前者は，パラメータの事前分布として離散的分布を仮定するもので，後者は連続的分布を仮定するもの． 階層ベイズモデルについては，六本木で働くデータサイエンティストのブログ，Stanで統計モデリングを学ぶ(4): とりあえず階層ベイズモデルを試してみる（基本編）がわかりやすかった． 説明変数（独立変数）と目的変数（従属変数，外的基準）については，こちらがわかりやすかった． ​パッケージ製品を対象としたロジット・モデル分析では，ブランド・ロイヤルティのような過去の履歴に基づいた変数が使われることがある． ​マーケティング・サイエンスでは，抽象的な議論ではなく，実際のマーケティング活動に活かせるかどうかを常に意識する必要がある． ​本書で説明されるマーケティング・サイエンスの諸モデルは，複雑な消費者行動の中でも，数理モデルが適用可能な範囲に複雑性が限定されていることに注意． 3章．マーケティング情報の収集と活用 1次データとは，消費者調査など，課題に対して新たに実施されることによって得られるデータ． 2次データとは，別の目的によって収集され，社内外にすでに存在しているデータ． マーケティング情報には，以下の三種類がある：...</p>-->
+      <p><p><a href="http://amzn.asia/1QZt1OR">古川一郎，他，マーケティング・サイエンス入門－市場対応の科学的マネジメント</a>を読んだ．マーケティング・サイエンス全体を俯瞰できる良書．ただし，2011年のものなので，最新技術はカバーできていないので，<a href="https://haltaro.github.io/2017/11/08/digital-marketing-1">courcera</a>でカバー予定．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">November 12, 2017</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/marketing">Marketing</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2017/11/08/digital-marketing-1">Courcera，Marketing in a digital world：1. Product</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>Courcera，Marketing in a digital worldの受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成るDigital marketing specializationの一つ．四週かけて，デジタル時代のマーケティング・ミックスについて学ぶ．第一週では，Productを取り扱い，Co-creationやDoppelgänger brand imageについて学ぶ． 本講座に関する記事： Courcera，Marketing in a digital world：1. Product Courcera，Marketing in a digital world：2. Promotion Courcera, Marketing in a digital world：3. Placement Courcera, Marketing in a digital world：4. Price CourceraのDigital marketing講座を退会した About the course インターネット，スマートフォン，3Dプリンターに代表される技術革新により，市場のパワーバランスは，企業側から消費者側に傾きつつある． 本講座では，このような激動の時代におけるマーケティング手法を，実例や演習を交えて学習する． 本講座では，教材としてHarvard Business ReviewやMIT Sloan Management Reviewを用いる．また，補助教材としてUnderstanding Digital...</p>-->
+      <p><p><a href="https://www.coursera.org/learn/marketing-digital">Courcera，Marketing in a digital world</a>の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る<a href="https://www.coursera.org/specializations/digital-marketing">Digital marketing specialization</a>の一つ．四週かけて，デジタル時代の<a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9">マーケティング・ミックス</a>について学ぶ．第一週では，Productを取り扱い，Co-creationやDoppelgänger brand imageについて学ぶ．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">November 8, 2017</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/marketing">Marketing</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2017/10/25/jekyll-drafts">Jekyllで下書き記事管理</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>これまでは下書き記事を（作成中）と注意書きして公開していたが，見栄えが良くないので，Jekyllのdrafts機能で一旦非公開1にすることにした．ただし，途中経過を公開する意味がありそうな，読書メモや受講メモはそのまま残す．
+
+Jekyllのdrafts機能
+
+Jekyll，ドラフトを使うを参考にした．
+
+下書き記事はtitle.md形式2で，ルートディレクトリに作成した_draftsフォルダに保存する．このまま$ jekyll serveすると，_drafts以下の記事を無視してサイトが構築される．
+
+
+
+一方，$ jekyll serve --draftsとすると，_drafts以下の記事も含めてサイトが構築される．ここで，最終更新日が，各ドラフト記事の投稿日として処理されることに注意．
+
+
+
+以下のように記事を整理した．
+
+公開のままにした記事
+
+未完成の読書メモや受講メモは，栞として役に立つ．随時更新と注意書きをつけて公開することにした．
+
+
+  Udacity, Intro to Relational Databases
+  Udacity, Intro to Hadoop and MapReduce
+  コトラー，アームストロング，恩藏のマーケティング原理
+
+
+_draftsに退避した記事
+
+その他の下書き記事は一旦_draftsに対比した．完成し次第，再度公開する予定．
+
+
+  Support vector machineの理論と実装
+  時系列分析技術まとめ
+
+
+感想
+
+Jekyllには，まだまだ理解していない機能がたくさんある．いつかドキュメントをちゃんと読まないと．
+
+お礼とお詫び
+
+Google analyticsでアクセス解析してみると，ごくわずかですが，本ウェブサイトを訪問してくださる方がいるみたいです．感謝です．
+
+今回のように，当方の勝手な都合で記事を削除させていただく場合もございます．何卒ご理解よろしくお願い致します．これに懲りず，たまに覗きに来ていただけると嬉しいです．
+
+  
+    
+      万が一リンクを保存していた方がいたらごめんなさい． &#8617;
+    
+    
+      yyyy-mm-dd-title.md形式で保存すると，エラーが出た． &#8617;
+    
+  
+
+</p>-->
+      <p><p>これまでは下書き記事を<code class="highlighter-rouge">（作成中）</code>と注意書きして公開していたが，見栄えが良くないので，<a href="http://jekyllrb-ja.github.io/docs/drafts/">Jekyllのdrafts機能</a>で一旦非公開<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>にすることにした．ただし，途中経過を公開する意味がありそうな，読書メモや受講メモはそのまま残す．</p>
 
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>万が一リンクを保存していた方がいたらごめんなさい．&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>万が一リンクを保存していた方がいたらごめんなさい． <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
-
-          
-          <p>
-            <a class="post-link" href="/2017/10/25/jekyll-drafts">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
-    
-  </ul>
-
-  <!-- Pagination links -->
-<div class="pagination">
-  
-    <a href="/page3" class="previous">PREV</a>
-  
-  <span class="page_number ">4 of 7</span>
-  
-    <a href="/page5" class="next">NEXT</a>
-  
-</div>
-
-</div>
-
-        </div>
-        <div class="col-second">
-          <div class="col-box col-box-author">
-  <img class="avatar" src="//www.gravatar.com/avatar/546804f938d574fc5141fc1431066d29" alt="haltaro">
-  <div class="col-box-title name">haltaro</div>
-  <p>柴犬を愛でる研究員</p>
-  <p class="contact">
-    
-    <a href="https://github.com/haltaro">GitHub</a>
-    
-    
-    
-		<a href="https://qiita.com/haltaro">Qiita</a>
-    
-    
-		<a href="https://kaggle.com/haltaro">Kaggle</a>
-    
-
-    
-    <a href="mailto:mail.to.haltaro@gmail.com">Email</a>
-    
-  </p>
-</div>
-
-<div class="col-box">
-  <div class="col-box-title">Newest Posts</div>
-  <ul class="post-list">
-    
-      <li><a class="post-link" href="/2018/02/04/chatbot">チャットボットを作ろう：3．CSS修正</a></li>
-    
-      <li><a class="post-link" href="/2018/01/07/digital-marketing-retire">CourceraのDigital marketing講座を退会した</a></li>
-    
-      <li><a class="post-link" href="/2018/01/07/digital-marketing-4">Courcera，Marketing in a digital world：4. Price</a></li>
-    
-      <li><a class="post-link" href="/2018/01/02/dmm-english">DMM英会話受講メモ：2018年1月</a></li>
-    
-      <li><a class="post-link" href="/2017/12/30/chatbot">チャットボットを作ろう：2．JekyllサイトでBotUI</a></li>
-    
-  </ul>
-</div>
-
-<div class="col-box post-toc hide">
-  <div class="col-box-title">TOC</div>
-</div>
-
-        </div>
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">October 25, 2017</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/jekyll">Jekyll</a>
+        
+      
       </div>
+    </section>
+  </li>
+  
+  
+</ul>
+
+<nav class="pagination" role="navigation">
+	<p>
+    
+			
+			<a class="newer-posts" href="/page3">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-square fa-stack-2x"></i>
+					<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+			
+		
+		<span class="page-number">Page 4 of 7</span>
+		
+		<a class="newer-posts" href="/page5">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+		
+	</p>
+</nav>
+
+</div>
+</div>
+
     </div>
 
-    <footer class="footer">
-<div class="wrapper">
-&copy; 2017 haltaro
-</div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">Memotaro</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/about/">About</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+          <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:mail.to.haltaro@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">mail.to.haltaro@gmail.com</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://github.com/haltaro" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">github.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://qiita.com/haltaro" title="Follow me on Qiita">
+              <i class="fa fa-search"></i>
+              <span class="username">qiita.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://kaggle.com/haltaro" title="Follow me on Kaggle">
+              <i class="fa fa-space-shuttle"></i>
+              <span class="username">kaggle.com/haltaro</span>
+            </a>
+          </li>
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)
+</p>
+    </div>
+
+  </div>
+
 </footer>
 
-<script src="/js/easybook.js"></script>
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+
 
     
-
 
   </body>
 

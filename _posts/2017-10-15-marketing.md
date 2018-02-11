@@ -2,6 +2,7 @@
 layout: post
 title: コトラー，アームストロング，恩藏のマーケティング原理
 updated: 2017-10-22 22:00
+cover:  "/assets/2017-11-18-marketing.jpg"
 categories:
  - marketing
 ---

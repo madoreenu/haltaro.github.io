@@ -2,6 +2,7 @@
 layout: post
 title: 佐藤達郎，「これからの広告」の教科書
 updated: 2017-12-02 16:00
+cover:  "/assets/2017-11-18-marketing.jpg"
 categories:
  - marketing
 ---

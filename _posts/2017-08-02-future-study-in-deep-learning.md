@@ -1,14 +1,13 @@
 ---
 layout: post
 title: 機械学習の学習計画
-updated: 2017-08-03 18:00 
+updated: 2017-08-03 18:00
+cover:  "/assets/2017-08-03-ml.jpg"
 categories:
- - machine learning 
+ - machine learning
 ---
 
 [Udacity](https://www.udacity.com/)の[Deep learning foundations nanodegree](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101)を修了して，基本はある程度押さえられたし，論文も読めるようになった．やりたいことをメモしておく．
-
-![study]({{site.baseurl}}/images/dlnd.png)
 
 # Udacityの公開教材を和訳
 
@@ -44,5 +43,3 @@ Ianさんの本は無料公開されているけど，アメリカにいるう�
 2016年ぶんなら，下記が参考になるかも．
 
 * [2016年のディープラーニング論文100選](http://qiita.com/sakaiakira/items/9da1edda802c4884865c)
-
-

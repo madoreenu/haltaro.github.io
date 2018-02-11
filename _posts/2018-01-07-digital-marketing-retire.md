@@ -2,13 +2,14 @@
 layout: post
 title: CourceraのDigital marketing講座を退会した
 updated: 2018-01-07 09:30
+cover:  "/assets/2017-11-18-marketing.jpg"
 categories:
  - marketing
 ---
 
 2017年10月頃から，[Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)を受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は11,000円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている．
 
-![courcera]({{site.baseurl}}/images/2017-11-18-courcera.png)
+![courcera]({{site.baseurl}}/assets/2017-11-18-courcera.png)
 
 # 背景
 

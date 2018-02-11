@@ -2,6 +2,7 @@
 layout: post
 title: DMM体験レッスン：2．Article discussion
 updated: 2017-12-03 22:00
+cover:  "/assets/2017-08-03-english.jpg"
 categories:
  - english
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: DMM英会話受講メモ：2017年12月
 updated: 2017-12-20 19:30
+cover:  "/assets/2017-08-03-english.jpg"
 categories:
  - english
 ---
