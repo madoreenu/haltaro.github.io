@@ -9,6 +9,9 @@ categories:
 
 [Courcera，Marketing in a digital world](https://www.coursera.org/learn/marketing-digital)の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る[Digital marketing specialization](https://www.coursera.org/specializations/digital-marketing)の一つ．四週かけて，デジタル時代の[マーケティング・ミックス](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9)について学ぶ．第四週では，Priceを取り扱い，Pay what you wantやPrice comparison toolsについて学ぶ．
 
+[途中退会してしまった](https://haltaro.github.io/2017/01/07/digital-marketing-retire)ため，本記事は中途半端になってしまった．
+
+
 ![courcera]({{site.baseurl}}/assets/2017-11-18-courcera.png)
 
 本講座に関する記事：
@@ -26,14 +29,3 @@ categories:
 * Thaler, R. H., & Tucker, W. (2013). [Smarter information, smarter consumers](https://hbr.org/2013/01/smarter-information-smarter-consumers). *Harvard Business Review*, 91(1), 44–54.
 * Tuttle, B. (2014, November 11). [A brief history of 'Pay what you want' businesses](http://time.com/money/3576844/pay-what-you-want-businesses/). *Money*.
 
-# Basic concept: Price
-
-# Digital concept: Pay what you want
-
-# Case study: Radiohead
-
-# Digital concept: Price comparison tools
-
-# Exercise: RedLaser.com
-
-# Campus spotlight: Dr. Hari Sundaram
