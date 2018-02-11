@@ -20,7 +20,7 @@ description: >
 # root of your server.
 #baseurl: "/centrarium" # the subpath of your site, e.g. /blog/
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://bencentra.github.io" # the base hostname & protocol for your site
+url: "http://haltaro.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 permalink: "/:year/:month/:day/:title"
@@ -106,23 +106,23 @@ social:
 
   - name: GitHub
     icon: github
-    username: github.com/haltaro 
+    username: github.com/haltaro
     url: https://github.com/haltaro
     desc: Fork me on GitHub
     share: false
 
-  - name: Qiita 
+  - name: Qiita
     icon: search
-    username: qiita.com/haltaro 
+    username: qiita.com/haltaro
     url: https://qiita.com/haltaro
-    desc: Follow me on Qiita 
+    desc: Follow me on Qiita
     share: false
 
-  - name: Kaggle 
+  - name: Kaggle
     icon: space-shuttle
-    username: kaggle.com/haltaro 
+    username: kaggle.com/haltaro
     url: https://kaggle.com/haltaro
-    desc: Follow me on Kaggle 
+    desc: Follow me on Kaggle
     share: false
 
 #  - name: LinkedIn
