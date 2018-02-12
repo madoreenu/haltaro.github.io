@@ -5,9 +5,32 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Feb 2018 20:59:24 +0900</pubDate>
-    <lastBuildDate>Mon, 12 Feb 2018 20:59:24 +0900</lastBuildDate>
+    <pubDate>Mon, 12 Feb 2018 18:00:55 +0900</pubDate>
+    <lastBuildDate>Mon, 12 Feb 2018 18:00:55 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Ubuntu 16.04にfishermanを入れたかった</title>
+        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：軽快かつ補完機能が素晴らしいので，自宅のUbuntu 16.04に&lt;a href=&quot;&quot;&gt;fish&lt;/a&gt;を入れた．&lt;a href=&quot;&quot;&gt;fisherman&lt;/a&gt;の導入でハマってしまった．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
+
+&lt;h1 id=&quot;fish&quot;&gt;fish&lt;/h1&gt;
+
+&lt;h1 id=&quot;fisherman&quot;&gt;fisherman&lt;/h1&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;参考&lt;/h1&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;感想&lt;/h1&gt;
+</description>
+        <pubDate>Mon, 12 Feb 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/02/12/fish</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/02/12/fish</guid>
+        
+        
+        <category>shell</category>
+        
+      </item>
     
       <item>
         <title>Jekyll themeをCentrariumに変更する</title>
@@ -624,79 +647,7 @@
         <guid isPermaLink="true">https://haltaro.github.io/2017/12/09/dont-fool-yourself</guid>
         
         
-        <category>marketingß</category>
-        
-      </item>
-    
-      <item>
-        <title>DMM体験レッスン：2．Article discussion</title>
-        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．昨日に引き続き，オンライン英会話最大手の&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;で，&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;を体験した．今回もセルビア在住の先生に対応してもらったが，とても親切で，英語での議論に慣れている印象を受けた．&lt;/p&gt;
-
-&lt;h1 id=&quot;dmm&quot;&gt;DMM英会話とは&lt;/h1&gt;
-
-&lt;p&gt;オンライン英会話の最大手．同じく大手の&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;との違いは，講師の出身国の多様性．DMM英会話では，フィリピンだけでなく，セルビアやボスニア・ヘルツェゴビナ等出身の先生も在籍している．&lt;/p&gt;
-
-&lt;p&gt;2017年12月2日時点の&lt;a href=&quot;http://eikaiwa.dmm.com/plan/&quot;&gt;料金プラン&lt;/a&gt;は以下．&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;プラン&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;料金[円/月]&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;スタンダード（毎日25分）&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;5,500&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;プラスネイティブ（毎日25分）&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;15,800&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;他にも毎日2レッスン（計50分）や3レッスン（計75分）のプランがある．&lt;/p&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;予習&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;を受講すると決めていたので，一回記事を音読した．&lt;/p&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;講義内容&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;自己紹介．&lt;/li&gt;
-  &lt;li&gt;Daily news discussion．
-    &lt;ul&gt;
-      &lt;li&gt;Vocabularyを先生に続けて読む．&lt;/li&gt;
-      &lt;li&gt;Articleを先生に続けて読む．&lt;/li&gt;
-      &lt;li&gt;Questionsに回答．&lt;/li&gt;
-      &lt;li&gt;Discussion．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;先生からのフィードバック&lt;/h1&gt;
-
-&lt;p&gt;特に問題ないとのこと．&lt;/p&gt;
-
-&lt;h1 id=&quot;section-3&quot;&gt;学んだこと&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/dictatorship&quot;&gt;&lt;em&gt;dictatorship&lt;/em&gt;&lt;/a&gt;：独裁制．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-4&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;今回も先生のレベルが高かった．北朝鮮のインターネット政策に関する話題だったが，芯の通った考えをお持ちで，会話していてとても楽しかった．このレベルの授業を毎日受けられるのであれば，DMM英会話で間違いないと思った．&lt;/p&gt;
-</description>
-        <pubDate>Sun, 03 Dec 2017 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2017/12/03/dmm-english</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2017/12/03/dmm-english</guid>
-        
-        
-        <category>english</category>
+        <category>marketing</category>
         
       </item>
     
