@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Jekyll themeをCentrariumに変更する</title>
-  <meta name="description" content="3連休を利用して，本サイトのJekyll themeをEasyBookからCentrariumに変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴ．">
+  <meta name="description" content="3連休を利用して，本サイトのJekyll themeをEasyBookからCentrariumに変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴがかわいい．">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,7 +51,7 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="3連休を利用して，本サイトのJekyll themeをEasyBookからCentrariumに変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴ．" />
+  <meta property="og:description" content="3連休を利用して，本サイトのJekyll themeをEasyBookからCentrariumに変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴがかわいい．" />
   <meta property="og:url" content="https://haltaro.github.io" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="Jekyll themeをCentrariumに変更する" />
@@ -66,7 +66,7 @@
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Jekyll themeをCentrariumに変更する">
-  <meta name="twitter:description" content="3連休を利用して，本サイトのJekyll themeをEasyBookからCentrariumに変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴ．">
+  <meta name="twitter:description" content="3連休を利用して，本サイトのJekyll themeをEasyBookからCentrariumに変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴがかわいい．">
   <meta name="twitter:image" content="https://haltaro.github.io/assets/2017-11-18-vis.jpg">
   <meta name="twitter:url" content="https://haltaro.github.io">
   
@@ -159,7 +159,7 @@
 </section>
 
 <article class="post-content">
-  <p>3連休を利用して，本サイトの<a href="http://jekyllthemes.org/">Jekyll theme</a>を<a href="https://github.com/laobubu/jekyll-theme-EasyBook">EasyBook</a>から<a href="https://github.com/bencentra/centrarium">Centrarium</a>に変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴ．</p>
+  <p>3連休を利用して，本サイトの<a href="http://jekyllthemes.org/">Jekyll theme</a>を<a href="https://github.com/laobubu/jekyll-theme-EasyBook">EasyBook</a>から<a href="https://github.com/bencentra/centrarium">Centrarium</a>に変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴがかわいい．</p>
 
 <h1 id="section">環境</h1>
 
@@ -193,7 +193,7 @@
 
 <p>以下のコマンドで環境を整える．エラーが出た場合はその都度対処する．</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span><span class="nb">cd </span>centrarium
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="gp">$ </span><span class="nb">cd </span>centrarium
 <span class="gp">$ </span>bundle install</code></pre></figure>
 
 <h2 id="configyml"><code class="highlighter-rouge">_config.yml</code>の設定変更</h2>
@@ -236,7 +236,7 @@
 
 <p><img src="/assets/profile.jpg" alt="cover" /></p>
 
-<p>各記事のカバーイメージとして，<a href="https://pixabay.com/ja/">Pixabay</a>から意識高めの写真をダウンロードして保存する<sup id="fnref:1"><a href="#fn:1" class="footnote">2</a></sup>．カバーイメージは，各記事のフロントマタ―で，<code class="highlighter-rouge">cover: "assets/*.jpg"</code>で指定できる．</p>
+<p>各記事のヘッダー画像として，<a href="https://pixabay.com/ja/">Pixabay</a>から意識高めの写真をダウンロードして保存する<sup id="fnref:1"><a href="#fn:1" class="footnote">2</a></sup>．フロントマタ―で，<code class="highlighter-rouge">cover: "assets/*.jpg"</code>のように指定できる．</p>
 
 <p><img src="/assets/2017-11-18-vis.jpg" alt="image" /></p>
 
@@ -300,20 +300,20 @@
 
 <h2 id="section-3">ローカルテスト</h2>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>bundle <span class="nb">exec </span>jekyll serve</code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="gp">$ </span>bundle <span class="nb">exec </span>jekyll serve</code></pre></figure>
 
 <p>ブラウザで<code class="highlighter-rouge">localhost:4000</code>にアクセスして動作を確認する．</p>
 
 <h1 id="section-4">感想</h1>
 
-<p>カバーイメージ楽しい．</p>
+<p>思っていたより時間はかからなかった．実は<a href="https://github.com/bencentra/centrarium">Jekyll-archivesがまともに動作していない</a>し，<code class="highlighter-rouge">highlight.js</code>がうまく動作していないので，追って修正しようと思う．</p>
 <div class="footnotes">
   <ol>
     <li id="fn:2">
       <p>キュート． <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:1">
-      <p>カバーイメージがつくと，一気に胡散臭くなる不思議． <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>ヘッダー画像がつくと，一気に胡散臭くなる不思議． <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

@@ -8,7 +8,7 @@ categories:
  - jekyll
 ---
 
-3連休を利用して，本サイトの[Jekyll theme](http://jekyllthemes.org/)を[EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)から[Centrarium](https://github.com/bencentra/centrarium)に変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴ．
+3連休を利用して，本サイトの[Jekyll theme](http://jekyllthemes.org/)を[EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)から[Centrarium](https://github.com/bencentra/centrarium)に変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴがかわいい．
 
 # 環境
 
@@ -38,7 +38,7 @@ categories:
 
 以下のコマンドで環境を整える．エラーが出た場合はその都度対処する．
 
-{% highlight bash %}
+{% highlight shell %}
 $ cd centrarium
 $ bundle install
 {% endhighlight %}
@@ -83,9 +83,9 @@ $ bundle install
 
 ![cover]({{site.baseurl}}/assets/profile.jpg)
 
-各記事のカバーイメージとして，[Pixabay](https://pixabay.com/ja/)から意識高めの写真をダウンロードして保存する[^1]．カバーイメージは，各記事のフロントマタ―で，`cover: "assets/*.jpg"`で指定できる．
+各記事のヘッダー画像として，[Pixabay](https://pixabay.com/ja/)から意識高めの写真をダウンロードして保存する[^1]．フロントマタ―で，`cover: "assets/*.jpg"`のように指定できる．
 
-[^1]: カバーイメージがつくと，一気に胡散臭くなる不思議．
+[^1]: ヘッダー画像がつくと，一気に胡散臭くなる不思議．
 [^2]: キュート．
 
 ![image]({{site.baseurl}}/assets/2017-11-18-vis.jpg)
@@ -150,7 +150,7 @@ SNS共有もコメントアウトする．
 
 ## ローカルテスト
 
-{% highlight bash %}
+{% highlight shell %}
 $ bundle exec jekyll serve
 {% endhighlight %}
 
@@ -158,4 +158,4 @@ $ bundle exec jekyll serve
 
 # 感想
 
-カバーイメージ楽しい．
+思っていたより時間はかからなかった．実は[Jekyll-archivesがまともに動作していない](https://github.com/bencentra/centrarium)し，`highlight.js`がうまく動作していないので，追って修正しようと思う．

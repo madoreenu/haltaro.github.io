@@ -5,13 +5,86 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Feb 2018 21:23:54 +0900</pubDate>
-    <lastBuildDate>Mon, 12 Feb 2018 21:23:54 +0900</lastBuildDate>
+    <pubDate>Sat, 17 Feb 2018 07:33:27 +0900</pubDate>
+    <lastBuildDate>Sat, 17 Feb 2018 07:33:27 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
+        <title>Ubuntu 16.04にFish環境を構築する</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://fishshell.com/&quot;&gt;Fish&lt;/a&gt;（Frendly Interactive SHell）とは，シェルの一種．デフォルトのタブ保管が便利なので，Macでは重宝している．ローカルのUbuntuデスクトップでも使いたくなり，環境を構築することにした．パッケージ管理ツールの&lt;a href=&quot;https://github.com/fisherman/fisherman&quot;&gt;Fisherman&lt;/a&gt;，Fishテーマ&lt;a href=&quot;https://github.com/oh-my-fish/theme-bobthefish&quot;&gt;Bobthefish&lt;/a&gt;，および&lt;a href=&quot;https://github.com/powerline/fonts&quot;&gt;Powerlineフォント&lt;/a&gt;を導入した．ターミナルエミュレータ&lt;a href=&quot;https://launchpad.net/terminator&quot;&gt;Terminator&lt;/a&gt;のフォントをPowerline系に変更した．慣れてきたら，FishをデフォルトShellに設定しようと思う．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ubuntu 16.04&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://launchpad.net/terminator&quot;&gt;Terminator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;手順&lt;/h1&gt;
+
+&lt;h2 id=&quot;fish&quot;&gt;Fishインストール&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://takapi86.hatenablog.com/entry/2017/05/28/124642&quot;&gt;自宅のubuntu-16.04マシンのシェルをfishに変更した - takapi86のブログ&lt;/a&gt;を参考にした．&lt;code class=&quot;highlighter-rouge&quot;&gt;ppa&lt;/code&gt;を追加しないと，最新版のFishをインストールできず，後述するBobthefishのインストールでハマるので注意．&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-add-repository ppa:fish-shell/release-2
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get install fish&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;fisherman&quot;&gt;Fishermanインストール&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/fisherman/fisherman&quot;&gt;fisherman/fisherman - GitHub&lt;/a&gt;を参考にした．&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;fish
+&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;fish&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt; curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;bobthefish&quot;&gt;Bobthefishインストール&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dev.classmethod.jp/etc/fish-shell-life/&quot;&gt;fish shell を使いたい人生だった - Developers.IO&lt;/a&gt;を参考にした．&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;fish&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt; fisher install omf/theme-bobthefish&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;powerline&quot;&gt;Powerlineインストール&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/powerline/fonts&quot;&gt;powerline/fonts - GitHub&lt;/a&gt;を参考にした．&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get install fonts-powerline&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;terminator&quot;&gt;Terminatorのフォント変更&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://d.hatena.ne.jp/yohei-a/20140223/1393120021&quot;&gt;ターミナルエミュレータ “Terminator” の背景を半透明にする - ablog&lt;/a&gt;を参考にした．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Terminatorのウインドウ上で右クリックして，&lt;code class=&quot;highlighter-rouge&quot;&gt;Preference&lt;/code&gt;を選択する．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Profiles &amp;gt; Font&lt;/code&gt;で任意のフォントを選択する．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;想定よりずっと簡単に導入できた．唯一の不満は，FishはBashと文法が違うこと．デフォルトシェルにするためには，設定ファイル&lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;を翻訳する必要がある…．いつかやる．&lt;/p&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://takapi86.hatenablog.com/entry/2017/05/28/124642&quot;&gt;自宅のubuntu-16.04マシンのシェルをfishに変更した - takapi86のブログ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fisherman/fisherman&quot;&gt;fisherman/fisherman - GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/oh-my-fish/theme-bobthefish&quot;&gt;oh-my-fish/theme-bobthefish - GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dev.classmethod.jp/etc/fish-shell-life/&quot;&gt;fish shell を使いたい人生だった - Developers.IO&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/powerline/fonts&quot;&gt;powerline/fonts - GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://d.hatena.ne.jp/yohei-a/20140223/1393120021&quot;&gt;ターミナルエミュレータ “Terminator” の背景を半透明にする - ablog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 12 Feb 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/02/12/fish</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/02/12/fish</guid>
+        
+        
+        <category>shell</category>
+        
+      </item>
+    
+      <item>
         <title>Jekyll themeをCentrariumに変更する</title>
-        <description>&lt;p&gt;3連休を利用して，本サイトの&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt;を&lt;a href=&quot;https://github.com/laobubu/jekyll-theme-EasyBook&quot;&gt;EasyBook&lt;/a&gt;から&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;に変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴ．&lt;/p&gt;
+        <description>&lt;p&gt;3連休を利用して，本サイトの&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt;を&lt;a href=&quot;https://github.com/laobubu/jekyll-theme-EasyBook&quot;&gt;EasyBook&lt;/a&gt;から&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;に変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴがかわいい．&lt;/p&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
 
@@ -45,7 +118,7 @@
 
 &lt;p&gt;以下のコマンドで環境を整える．エラーが出た場合はその都度対処する．&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;centrarium
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;centrarium
 &lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundle install&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;configyml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の設定変更&lt;/h2&gt;
@@ -88,7 +161,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/profile.jpg&quot; alt=&quot;cover&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;各記事のカバーイメージとして，&lt;a href=&quot;https://pixabay.com/ja/&quot;&gt;Pixabay&lt;/a&gt;から意識高めの写真をダウンロードして保存する&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;．カバーイメージは，各記事のフロントマタ―で，&lt;code class=&quot;highlighter-rouge&quot;&gt;cover: &quot;assets/*.jpg&quot;&lt;/code&gt;で指定できる．&lt;/p&gt;
+&lt;p&gt;各記事のヘッダー画像として，&lt;a href=&quot;https://pixabay.com/ja/&quot;&gt;Pixabay&lt;/a&gt;から意識高めの写真をダウンロードして保存する&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;．フロントマタ―で，&lt;code class=&quot;highlighter-rouge&quot;&gt;cover: &quot;assets/*.jpg&quot;&lt;/code&gt;のように指定できる．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/2017-11-18-vis.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
@@ -152,20 +225,20 @@
 
 &lt;h2 id=&quot;section-3&quot;&gt;ローカルテスト&lt;/h2&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:4000&lt;/code&gt;にアクセスして動作を確認する．&lt;/p&gt;
 
 &lt;h1 id=&quot;section-4&quot;&gt;感想&lt;/h1&gt;
 
-&lt;p&gt;カバーイメージ楽しい．&lt;/p&gt;
+&lt;p&gt;思っていたより時間はかからなかった．実は&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Jekyll-archivesがまともに動作していない&lt;/a&gt;し，&lt;code class=&quot;highlighter-rouge&quot;&gt;highlight.js&lt;/code&gt;がうまく動作していないので，追って修正しようと思う．&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
       &lt;p&gt;キュート． &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;カバーイメージがつくと，一気に胡散臭くなる不思議． &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;ヘッダー画像がつくと，一気に胡散臭くなる不思議． &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -181,7 +254,7 @@
     
       <item>
         <title>チャットボットを作ろう：3．CSS修正</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/botui/botui&quot;&gt;BotUI&lt;/a&gt;を本サイトの&lt;a href=&quot;https://haltaro.github.io/about/&quot;&gt;Aboutページ&lt;/a&gt;に埋め込んだが，会話が長くなると二重にスライドバーが表示されて使いづらい．そこで，BotUIのCSSを改造することにした．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/botui/botui&quot;&gt;BotUI&lt;/a&gt;を本サイトの&lt;a href=&quot;https://haltaro.github.io/about/&quot;&gt;Aboutページ&lt;/a&gt;に埋め込んだが，会話が長くなると二重にスライドバーが表示されて使いづらい．そこで，BotUIのCSSを修正することにした．&lt;/p&gt;
 
 &lt;p&gt;以下は修正前の動作．&lt;code class=&quot;highlighter-rouge&quot;&gt;他に何か質問ありますか&lt;/code&gt;あたりから，二重にスライドバーが表示されてしまう．&lt;/p&gt;
 &lt;iframe width=&quot;100%&quot; height=&quot;460&quot; src=&quot;https://www.youtube.com/embed/-8c8oNbgoOE&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -625,78 +698,6 @@
         
         
         <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>DMM体験レッスン：2．Article discussion</title>
-        <description>&lt;p&gt;帰国してから英語力が落ちまくっているので，オンライン英会話を再開することにした．とにかく選択肢が多いので，無料体験をはしごして決める．昨日に引き続き，オンライン英会話最大手の&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;で，&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;を体験した．今回もセルビア在住の先生に対応してもらったが，とても親切で，英語での議論に慣れている印象を受けた．&lt;/p&gt;
-
-&lt;h1 id=&quot;dmm&quot;&gt;DMM英会話とは&lt;/h1&gt;
-
-&lt;p&gt;オンライン英会話の最大手．同じく大手の&lt;a href=&quot;https://www.rarejob.com&quot;&gt;Reajob&lt;/a&gt;との違いは，講師の出身国の多様性．DMM英会話では，フィリピンだけでなく，セルビアやボスニア・ヘルツェゴビナ等出身の先生も在籍している．&lt;/p&gt;
-
-&lt;p&gt;2017年12月2日時点の&lt;a href=&quot;http://eikaiwa.dmm.com/plan/&quot;&gt;料金プラン&lt;/a&gt;は以下．&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;プラン&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;料金[円/月]&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;スタンダード（毎日25分）&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;5,500&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;プラスネイティブ（毎日25分）&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;15,800&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;他にも毎日2レッスン（計50分）や3レッスン（計75分）のプランがある．&lt;/p&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;予習&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;を受講すると決めていたので，一回記事を音読した．&lt;/p&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;講義内容&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;自己紹介．&lt;/li&gt;
-  &lt;li&gt;Daily news discussion．
-    &lt;ul&gt;
-      &lt;li&gt;Vocabularyを先生に続けて読む．&lt;/li&gt;
-      &lt;li&gt;Articleを先生に続けて読む．&lt;/li&gt;
-      &lt;li&gt;Questionsに回答．&lt;/li&gt;
-      &lt;li&gt;Discussion．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;先生からのフィードバック&lt;/h1&gt;
-
-&lt;p&gt;特に問題ないとのこと．&lt;/p&gt;
-
-&lt;h1 id=&quot;section-3&quot;&gt;学んだこと&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ejje.weblio.jp/content/dictatorship&quot;&gt;&lt;em&gt;dictatorship&lt;/em&gt;&lt;/a&gt;：独裁制．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-4&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;今回も先生のレベルが高かった．北朝鮮のインターネット政策に関する話題だったが，芯の通った考えをお持ちで，会話していてとても楽しかった．このレベルの授業を毎日受けられるのであれば，DMM英会話で間違いないと思った．&lt;/p&gt;
-</description>
-        <pubDate>Sun, 03 Dec 2017 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2017/12/03/dmm-english</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2017/12/03/dmm-english</guid>
-        
-        
-        <category>english</category>
         
       </item>
     
