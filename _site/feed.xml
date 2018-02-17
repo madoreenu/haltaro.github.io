@@ -5,8 +5,8 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Feb 2018 07:33:27 +0900</pubDate>
-    <lastBuildDate>Sat, 17 Feb 2018 07:33:27 +0900</lastBuildDate>
+    <pubDate>Sat, 17 Feb 2018 09:42:43 +0900</pubDate>
+    <lastBuildDate>Sat, 17 Feb 2018 09:42:43 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -73,12 +73,124 @@
   &lt;li&gt;&lt;a href=&quot;http://d.hatena.ne.jp/yohei-a/20140223/1393120021&quot;&gt;ターミナルエミュレータ “Terminator” の背景を半透明にする - ablog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 12 Feb 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/02/12/fish</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/02/12/fish</guid>
+        <pubDate>Sat, 17 Feb 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/02/17/fish</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/02/17/fish</guid>
         
         
         <category>shell</category>
+        
+      </item>
+    
+      <item>
+        <title>マーク・ジェフリー，データ・ドリブン・マーケティング</title>
+        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/6WKHTCO&quot;&gt;マーク・ジェフリー，データ・ドリブン・マーケティング - 最低限知っておくべき15の指標&lt;/a&gt;を読んだ．&lt;a href=&quot;http://marketing-base.jp/books/6204&quot;&gt;どうやら原著は2010年1月に発刊されたらしく&lt;/a&gt;，古さを感じる部分があるが，勉強のとっかかりとして基本を押さえるには良いと思った．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;概要&lt;/h1&gt;
+
+&lt;p&gt;かつて，マーケティング施策は定量評価が難しいという風潮があったため，行動に対して評価されることが多かった．そこで本書では，マーケティング施策を定量的に評価するための15の指標と，これらを用いた施策管理方法を紹介する．&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;1. マーケティング格差&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;フォーチュン100社に含まれる大企業の中でさえ，マーケティング格差が存在する（2010年当時）．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;2. 何から始めるべきか？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;データ・ドリブン・マーケティングの障壁として，次の5点がある：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;何から手を付ければいいかわからない&lt;/strong&gt;：まずは小さくはじめて，成功事例を積み上げること．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;因果関係がわかならい&lt;/strong&gt;：適切な指標を使うこと．また，対照実験を行うこと．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;データが足りない&lt;/strong&gt;：B2B企業は，代理店にデータ共有のメリットを示すこと．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;経営資源やツールが足りない&lt;/strong&gt;：頑張って絞り出すこと．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;組織や人に問題がある&lt;/strong&gt;：小さく仲間づくりを始めること．可能であれば，役員も巻き込むこと．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;データ・ドリブン・マーケティングを実践するロードマップ：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;設計&lt;/strong&gt;：関係者が理解しやすい明解な実行計画．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;診断&lt;/strong&gt;：事実把握および洞察．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;機会&lt;/strong&gt;：マーケティング機会の特定とアクションプラン．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;ツール&lt;/strong&gt;：定期的なレビューを行う組織体制の構築．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;プロセス&lt;/strong&gt;：定期的なレビューに基づく意思決定．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;3. 10の伝統的なマーケティング指標&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ブランド認知率&lt;/strong&gt;：商品やサービスの想起で計測する．大規模調査をする予算がない場合は，カスタムURLなどを用いてリーチを計測する．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;試乗（お試し）&lt;/strong&gt;：比較検討・評価段階の指標．試乗など，購入前の商品のお試し使用で評価する．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;解約（離反）率&lt;/strong&gt;：ロイヤルティ指標．解約率や離反率．年単位で計算されることが多い．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;顧客満足度&lt;/strong&gt;：CSAT（Customer Satisfaction）．マーケティングの黄金指標．「友人にこの商品を勧めますか」というアンケートで計測される．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;オファー応諾率&lt;/strong&gt;：マーケティング施策の運用効率を表す指標．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;利益&lt;/strong&gt;：売上高 - 費用．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;正味現在価値&lt;/strong&gt;：NPV（Net Present Value）．複利割引した将来的な利益の総和．NPVが正になる施策は実行する価値がある．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;内部収益率&lt;/strong&gt;：IRR（Internal Rate of Return）．NVPが正になるための，利益の割引率．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;投資回収期間&lt;/strong&gt;：売上高が費用を上回るまでにかかる期間．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;顧客価値指標&lt;/strong&gt;：CLTV（Customer Lifetime Value）．当該顧客の将来的な価値を複利割引して総和したもの．CLTVが高い顧客は優良顧客である．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;4. 5つの重要な非財務系指標&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ブランド認知率，試乗（お試し），解約（離反）率，顧客満足度，オファー応諾率を詳説する．&lt;/li&gt;
+  &lt;li&gt;3年間の離反率を1年間の離反率に換算するとき，単純に3で割っていいんだっけ？三乗根とかじゃないの？&lt;/li&gt;
+  &lt;li&gt;​優れたロイヤルティマーケティングとは，企業の経済的負担が少なく，かつ顧客への価値提供が大きい施策．&lt;/li&gt;
+  &lt;li&gt;​
+需要喚起型マーケティングにおいては，顧客獲得単価が顧客獲得利益より小さい場合，そのようなキャンペーンは中止するべき．&lt;/li&gt;
+  &lt;li&gt;オファー応諾率の改善や送付単価の低減は，マーケティング費用対効果を劇的に改善する．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;5. 投資リターンを示せ&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;利益，正味現在価値，内部収益率，投資回収期間の詳説する．&lt;/li&gt;
+  &lt;li&gt;売上高を営業の評価指標にする企業が多いが，本来は利益を評価指標にすべき．&lt;/li&gt;
+  &lt;li&gt;マネジメントの意思決定では，絶対的な正解や不正解は存在しない．しかし，より現状にマッチした答えは存在する．&lt;/li&gt;
+  &lt;li&gt;無借金経営の企業では，企業価値を発行済み株式数で割ったものが株価となる．つまり，あるマーケティング施策の正味現在価値を株式数で割ると，その施策が株価に与える影響と等しくなる．&lt;/li&gt;
+  &lt;li&gt;多くの上場企業では，経営陣の賞与は株価と連動する．&lt;/li&gt;
+  &lt;li&gt;内部収益率は，正味現在価値が0となる時のハードルレート&lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt;の値．内部収益率が&lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt;より大きくなる時，正味現在価値が&lt;script type=&quot;math/tex&quot;&gt;0&lt;/script&gt;より大きくなるので，その施策を実施すべきである．&lt;/li&gt;
+  &lt;li&gt;マーケティング投資収益率（ROMI）は，正味現在価値，内部収益率，および投資回収期間ををもとに，総合的に判断される．&lt;/li&gt;
+  &lt;li&gt;ROMIの計算期間は，1年，2年，あるいは3年を利用することが多い．IT関連製品の場合は，3年を超えて計算することは稀．逆に自動車の場合は，9年間など長期間で計算される．&lt;/li&gt;
+  &lt;li&gt;感度分析とは，前提条件を様々に変更して，ROMIの変化を観察する．エクセルのデータフレーム機能で容易に実装できる．&lt;/li&gt;
+  &lt;li&gt;不確実な変数が3つ以上ある場合は，モンテカルロ法を使う．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;6. すべての顧客は等しく重要……ではない&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;顧客生涯価値（CLTV）は，継続率と割引率を考慮して，ある顧客から生涯得られる利益を総和したもの．&lt;/li&gt;
+  &lt;li&gt;CLTVがマイナスの顧客が判明した場合は，その顧客を拒否するのではなく，その原因となるプロセスを修正する．&lt;/li&gt;
+  &lt;li&gt;CLTVが高い顧客に対しては維持および更なるアップセルとクロスセルを，中程度の顧客にはアップセルとクロスセルを，そしてマイナスの顧客には支出の最小化を図る．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;7. クリックからバリューへ&lt;/h2&gt;
+
+&lt;h2 id=&quot;section-8&quot;&gt;8. アジャイル・マーケティング&lt;/h2&gt;
+
+&lt;h2 id=&quot;section-9&quot;&gt;9. 「まさにこれが必要だったんだ！」&lt;/h2&gt;
+
+&lt;h2 id=&quot;it&quot;&gt;10. データ・ドリブン・マーケティングに必要なITインフラ&lt;/h2&gt;
+
+&lt;h2 id=&quot;section-10&quot;&gt;11. マーケティングの予算，テクノロジー，プロセス&lt;/h2&gt;
+
+&lt;h1 id=&quot;section-11&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://marketing-base.jp/books/6204&quot;&gt;今からでも遅くない，データ活用の経営
+――書評『データ・ドリブン・マーケティング―――最低限知っておくべき15の指標』 - MarketingBase&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 17 Feb 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/02/17/data-driven</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/02/17/data-driven</guid>
+        
+        
+        <category>marketing</category>
         
       </item>
     
@@ -662,42 +774,6 @@
         
         
         <category>english</category>
-        
-      </item>
-    
-      <item>
-        <title>本田哲也，田端信太郎，広告やメディアで人を動かそうとするのは、もう諦めなさい。</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/1a2cpaH&quot;&gt;本田哲也，田端信太郎，広告やメディアで人を動かそうとするのは、もう諦めなさい。&lt;/a&gt;を読んだ．情報爆発により，主導権は消費者にシフトした．このような時代に人を動かすためには，様々なメディアの特性を理解し適切に組み合わせることと，インサイトを掘り出して世の中の空気を作ることが重要．&lt;/p&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;1. 「たくさんの人に見てもらえるほどよい」は本当か？&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;情報爆発時代に主導権を持つのは「受け手」．&lt;/li&gt;
-  &lt;li&gt;事前に全てをコントロールしようとする発想をあきらめる．アンコントロールを受け入れる．例えばソーシャルメディアや口コミは完全にコントロールはできないもの．&lt;/li&gt;
-  &lt;li&gt;メディアの特性を理解し，最適に組み合わせることが重要．例えば，マスに働きかけるならテレビCMが最適だが，個々人に働きかけるならインターネット広告が良い．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;2. なぜ，人は「動く」のか？&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;1000人から10億人まで，スケールごとにポイントを整理する．詳細は本書を参照．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;3. 「人を動かす」ことをあきらめない&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;人を動かす新しい方法論&lt;strong&gt;戦略PR&lt;/strong&gt;．製品を大々的に売り出すのではなく，その製品が必要とされるような世の中の空気を作る．&lt;/li&gt;
-  &lt;li&gt;現代人は一日に4000もの広告メッセージを受けている．&lt;/li&gt;
-  &lt;li&gt;コントロールできない広告手段の対応用に，20%を対応予算として残しておく．&lt;/li&gt;
-  &lt;li&gt;3割は，コントロールできないものとして，社会や消費者に委ねる勇気も必要．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 09 Dec 2017 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2017/12/09/dont-fool-yourself</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2017/12/09/dont-fool-yourself</guid>
-        
-        
-        <category>marketing</category>
         
       </item>
     
