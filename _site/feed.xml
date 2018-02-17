@@ -5,9 +5,30 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Feb 2018 12:59:33 +0900</pubDate>
-    <lastBuildDate>Sat, 17 Feb 2018 12:59:33 +0900</lastBuildDate>
+    <pubDate>Sun, 18 Feb 2018 08:31:24 +0900</pubDate>
+    <lastBuildDate>Sun, 18 Feb 2018 08:31:24 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Brett Slatkin，Effective Python</title>
+        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/gDvdj6b&quot;&gt;Brett Slatkin，Effective Python ―Pythonプログラムを改良する59項目&lt;/a&gt;を読む．&lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt;を効率的に書くための59のヒントが紹介されている．&lt;/p&gt;
+
+&lt;p&gt;特に心に残った項目を以下にまとめる．Jupyter notebookは&lt;a href=&quot;&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;リスト内包表記には，3つ以上の式を避ける&lt;/h1&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/64f7a37df260ad506cb9be4d7b0ad106.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;大きな内包表記にはジェネレータ式を考える&lt;/h1&gt;
+</description>
+        <pubDate>Sun, 18 Feb 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/02/18/effective-python</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/02/18/effective-python</guid>
+        
+        
+        <category>python</category>
+        
+      </item>
     
       <item>
         <title>Ubuntu 16.04にFish環境を構築する</title>
@@ -738,49 +759,6 @@
         
         
         <category>javascript</category>
-        
-      </item>
-    
-      <item>
-        <title>DMM英会話受講メモ：2017年12月</title>
-        <description>&lt;p&gt;結局，&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;でセルビア人の先生に習うことにした．以下は，2017年12月の受講記録．&lt;/p&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;12/20&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;の&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/internet-at-risk-as-us-scraps-net-neutrality-rules/QC3TQOFoEee5-Gd_BZxWsA&quot;&gt;Internet at Risk as US Scraps Net Neutrality Rules&lt;/a&gt;を受講．ISPの規制緩和に関する話題．&lt;/p&gt;
-
-&lt;p&gt;学んだこと：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;scrap：廃棄する，廃止する．&lt;/li&gt;
-  &lt;li&gt;light tough (regulation)：軽微な規制，的な意味？&lt;/li&gt;
-  &lt;li&gt;norm：標準，規範．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;12/24&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;の&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/where-do-christmas-traditions-come-from/CWZQ7trnEeerlo-E-v-yyA&quot;&gt;Where Do Christmas Traditions Come From?&lt;/a&gt;を受講．クリスマスの起源に関する話題．&lt;/p&gt;
-
-&lt;p&gt;学んだこと：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;festive：お祭りの．&lt;/li&gt;
-  &lt;li&gt;peasant：農民，百姓．&lt;/li&gt;
-  &lt;li&gt;christianity：キリスト教．&lt;/li&gt;
-  &lt;li&gt;merchant：商人．&lt;/li&gt;
-  &lt;li&gt;edible：食べられる．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;12/26&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news&quot;&gt;Daily news&lt;/a&gt;の&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/has-the-human-race-reached-its-peak/5f_JIN6BEeeDuhvR0NTrRQ&quot;&gt;Has the Human Race Reached Its Peak?&lt;/a&gt;を受講．人類の生物学的限界が発見された，という話題．&lt;/p&gt;
-</description>
-        <pubDate>Wed, 20 Dec 2017 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2017/12/20/dmm-english</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2017/12/20/dmm-english</guid>
-        
-        
-        <category>english</category>
         
       </item>
     
