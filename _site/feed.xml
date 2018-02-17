@@ -5,13 +5,15 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Feb 2018 09:42:43 +0900</pubDate>
-    <lastBuildDate>Sat, 17 Feb 2018 09:42:43 +0900</lastBuildDate>
+    <pubDate>Sat, 17 Feb 2018 09:44:10 +0900</pubDate>
+    <lastBuildDate>Sat, 17 Feb 2018 09:44:10 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Ubuntu 16.04にFish環境を構築する</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://fishshell.com/&quot;&gt;Fish&lt;/a&gt;（Frendly Interactive SHell）とは，シェルの一種．デフォルトのタブ保管が便利なので，Macでは重宝している．ローカルのUbuntuデスクトップでも使いたくなり，環境を構築することにした．パッケージ管理ツールの&lt;a href=&quot;https://github.com/fisherman/fisherman&quot;&gt;Fisherman&lt;/a&gt;，Fishテーマ&lt;a href=&quot;https://github.com/oh-my-fish/theme-bobthefish&quot;&gt;Bobthefish&lt;/a&gt;，および&lt;a href=&quot;https://github.com/powerline/fonts&quot;&gt;Powerlineフォント&lt;/a&gt;を導入した．ターミナルエミュレータ&lt;a href=&quot;https://launchpad.net/terminator&quot;&gt;Terminator&lt;/a&gt;のフォントをPowerline系に変更した．慣れてきたら，FishをデフォルトShellに設定しようと思う．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://fishshell.com/&quot;&gt;Fish&lt;/a&gt;（Frendly Interactive SHell）とは，シェルの一種．デフォルトのタブ保管が便利なので，Macでは重宝している．ローカルのUbuntuデスクトップでも使いたくなり，環境を構築することにした．&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://fishshell.com/&quot;&gt;Fish&lt;/a&gt;本体に加え，パッケージ管理ツールの&lt;a href=&quot;https://github.com/fisherman/fisherman&quot;&gt;Fisherman&lt;/a&gt;，Fishテーマ&lt;a href=&quot;https://github.com/oh-my-fish/theme-bobthefish&quot;&gt;Bobthefish&lt;/a&gt;，および&lt;a href=&quot;https://github.com/powerline/fonts&quot;&gt;Powerlineフォント&lt;/a&gt;を導入した．また，ターミナルエミュレータ&lt;a href=&quot;https://launchpad.net/terminator&quot;&gt;Terminator&lt;/a&gt;のフォントをPowerline系に変更した．慣れてきたら，FishをデフォルトShellに設定しようと思う．&lt;/p&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
 
