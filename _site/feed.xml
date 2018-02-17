@@ -5,21 +5,23 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Feb 2018 09:44:10 +0900</pubDate>
-    <lastBuildDate>Sat, 17 Feb 2018 09:44:10 +0900</lastBuildDate>
+    <pubDate>Sat, 17 Feb 2018 12:47:21 +0900</pubDate>
+    <lastBuildDate>Sat, 17 Feb 2018 12:47:21 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Ubuntu 16.04にFish環境を構築する</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://fishshell.com/&quot;&gt;Fish&lt;/a&gt;（Frendly Interactive SHell）とは，シェルの一種．デフォルトのタブ保管が便利なので，Macでは重宝している．ローカルのUbuntuデスクトップでも使いたくなり，環境を構築することにした．&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://fishshell.com/&quot;&gt;Fish&lt;/a&gt;本体に加え，パッケージ管理ツールの&lt;a href=&quot;https://github.com/fisherman/fisherman&quot;&gt;Fisherman&lt;/a&gt;，Fishテーマ&lt;a href=&quot;https://github.com/oh-my-fish/theme-bobthefish&quot;&gt;Bobthefish&lt;/a&gt;，および&lt;a href=&quot;https://github.com/powerline/fonts&quot;&gt;Powerlineフォント&lt;/a&gt;を導入した．また，ターミナルエミュレータ&lt;a href=&quot;https://launchpad.net/terminator&quot;&gt;Terminator&lt;/a&gt;のフォントをPowerline系に変更した．慣れてきたら，FishをデフォルトShellに設定しようと思う．&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;460&quot; src=&quot;https://www.youtube.com/embed/RiGvTt0K4Hs?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://fishshell.com/&quot;&gt;Fish&lt;/a&gt;本体に加え，パッケージ管理ツールの&lt;a href=&quot;https://github.com/fisherman/fisherman&quot;&gt;Fisherman&lt;/a&gt;，Fishテーマ&lt;a href=&quot;https://github.com/oh-my-fish/theme-bobthefish&quot;&gt;Bobthefish&lt;/a&gt;，および&lt;a href=&quot;https://github.com/powerline/fonts&quot;&gt;Powerlineフォント&lt;/a&gt;を導入した．また，ターミナルエミュレータ&lt;a href=&quot;https://gnometerminator.blogspot.jp/p/introduction.html&quot;&gt;Terminator&lt;/a&gt;のフォントをPowerline系に変更した．慣れてきたら，FishをデフォルトShellに設定しようと思う．&lt;/p&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Ubuntu 16.04&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://launchpad.net/terminator&quot;&gt;Terminator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gnometerminator.blogspot.jp/p/introduction.html&quot;&gt;Terminator&lt;/a&gt;：1.9.1&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;section-1&quot;&gt;手順&lt;/h1&gt;
@@ -28,28 +30,25 @@
 
 &lt;p&gt;&lt;a href=&quot;http://takapi86.hatenablog.com/entry/2017/05/28/124642&quot;&gt;自宅のubuntu-16.04マシンのシェルをfishに変更した - takapi86のブログ&lt;/a&gt;を参考にした．&lt;code class=&quot;highlighter-rouge&quot;&gt;ppa&lt;/code&gt;を追加しないと，最新版のFishをインストールできず，後述するBobthefishのインストールでハマるので注意．&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-add-repository ppa:fish-shell/release-2
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get update
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get install fish&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;script src=&quot;https://gist.github.com/haltaro/dbba79b76244047de0c059edda1d8cf7.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;fisherman&quot;&gt;Fishermanインストール&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/fisherman/fisherman&quot;&gt;fisherman/fisherman - GitHub&lt;/a&gt;を参考にした．&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;fish
-&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;fish&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt; curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;script src=&quot;https://gist.github.com/haltaro/ba217c930f747792950ae5e954d984b1.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;bobthefish&quot;&gt;Bobthefishインストール&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://dev.classmethod.jp/etc/fish-shell-life/&quot;&gt;fish shell を使いたい人生だった - Developers.IO&lt;/a&gt;を参考にした．&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;fish&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt; fisher install omf/theme-bobthefish&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;script src=&quot;https://gist.github.com/haltaro/bd97069a1b87f1e6c13e480f9f17664c.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;powerline&quot;&gt;Powerlineインストール&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/powerline/fonts&quot;&gt;powerline/fonts - GitHub&lt;/a&gt;を参考にした．&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get install fonts-powerline&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;script src=&quot;https://gist.github.com/haltaro/dc8a66e641df42c94cc7f5c672e98354.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;terminator&quot;&gt;Terminatorのフォント変更&lt;/h2&gt;
 
@@ -60,11 +59,17 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Profiles &amp;gt; Font&lt;/code&gt;で任意のフォントを選択する．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;感想&lt;/h1&gt;
+&lt;h2 id=&quot;section-2&quot;&gt;結果&lt;/h2&gt;
+
+&lt;p&gt;こんな感じになった．&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;460&quot; src=&quot;https://www.youtube.com/embed/RiGvTt0K4Hs?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;感想&lt;/h1&gt;
 
 &lt;p&gt;想定よりずっと簡単に導入できた．唯一の不満は，FishはBashと文法が違うこと．デフォルトシェルにするためには，設定ファイル&lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;を翻訳する必要がある…．いつかやる．&lt;/p&gt;
 
-&lt;h1 id=&quot;section-3&quot;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&quot;section-4&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://takapi86.hatenablog.com/entry/2017/05/28/124642&quot;&gt;自宅のubuntu-16.04マシンのシェルをfishに変更した - takapi86のブログ&lt;/a&gt;&lt;/li&gt;
