@@ -5,8 +5,8 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Feb 2018 17:46:35 +0900</pubDate>
-    <lastBuildDate>Sun, 18 Feb 2018 17:46:35 +0900</lastBuildDate>
+    <pubDate>Sun, 18 Feb 2018 18:46:22 +0900</pubDate>
+    <lastBuildDate>Sun, 18 Feb 2018 18:46:22 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -15,11 +15,37 @@
 
 &lt;p&gt;特に心に残った項目を以下にまとめる．Jupyter notebookは&lt;a href=&quot;https://github.com/haltaro/effective-python&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;リスト内包表記には，3つ以上の式を避ける&lt;/h1&gt;
+&lt;h1 id=&quot;pythonic-thinking&quot;&gt;1章．Pythonic thinking&lt;/h1&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;リスト内包表記には，3つ以上の式を避ける&lt;/h2&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/64f7a37df260ad506cb9be4d7b0ad106.js&quot;&gt;&lt;/script&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;大きな内包表記にはジェネレータ式を考える&lt;/h1&gt;
+&lt;p&gt;リスト内包表記に毒されすぎて，もとの表記の何がわかりづらいのか，また修正された表記でわかりやすくなったのかピンとこない．気をつけないと．&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;大きな内包表記にはジェネレータ式を考える&lt;/h2&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/9284d0b7762c8d24b0cabf09af1723ef.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;イテレータとジェネレータについては，&lt;a href=&quot;https://qiita.com/tomotaka_ito/items/35f3eb108f587022fa09&quot;&gt;Pythonのイテレータとジェネレータ - Qiita&lt;/a&gt;がわかりやすい．&lt;/p&gt;
+
+&lt;h2 id=&quot;tryexceptelsefinally&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;try&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;except&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;else&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;finally&lt;/code&gt;の各ブロックを活用する&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;except&lt;/code&gt;：エラーが補足された場合の処理．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;else&lt;/code&gt;：エラーが捕捉されなかった場合の処理．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;finally&lt;/code&gt;：エラーの捕捉にかかわらず，最後に実行される処理．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;2章．関数&lt;/h1&gt;
+
+&lt;h2 id=&quot;none&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;None&lt;/code&gt;を返すよりは例外を選ぶ&lt;/h2&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/7444e23cfc581fb1f2cb5dc8c8744503.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;None&lt;/code&gt;と，&lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;や空白文字などの他の値がすべて条件式において&lt;code class=&quot;highlighter-rouge&quot;&gt;False&lt;/code&gt;と評価されるため，エラーを引き起こしやすい．それはそうと，&lt;code class=&quot;highlighter-rouge&quot;&gt;raise from&lt;/code&gt;構文がよくわからない．あとで確認しよう．&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;クロージャが変数スコープとどう関わるか知っておく&lt;/h2&gt;
 </description>
         <pubDate>Sun, 18 Feb 2018 00:00:00 +0900</pubDate>
         <link>https://haltaro.github.io/2018/02/18/effective-python</link>
