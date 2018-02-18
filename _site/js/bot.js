@@ -89,7 +89,7 @@
     }).then(function(){
       return botui.message.add({
         delay: 2000,
-        content: 'Categoryには，各記事をカテゴリごとにまとめています．'
+        content: 'Postsには，各記事をカテゴリごとにまとめています．'
       });
     }).then(function(){
       return botui.message.add({

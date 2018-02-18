@@ -53,30 +53,30 @@ jekyll-archives:
 # ga_tracking_id: "UA-XXXX-1"
 
 # Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Jekyllの設定や機能追加に関するメモ．"
-
-  - cat: english
-    desc: "アメリカ在住時のメモや，帰国後のオンライン英会話の受講記録．"
-
-  - cat: data science
-    desc: "ビッグデータやデータベースに関するオンライン講座の受講メモ．"
-
-  - cat: machine learning
-    desc: "機械学習に関するメモ．数学的なことも書きたい．"
-
-  - cat: marketing
-    desc: "マーケティング関連書籍の読書メモや，オンライン講座の受講メモ．"
-
-  - cat: python
-    desc: "Pytonの設定や使い方に関するメモ．"
-
-  - cat: javascript
-    desc: "JavaScriptに関する勉強メモ．あと，チャットボットの作成記録．"
-
-  - cat: x-tech
-    desc: "その他のテクノロジー関連の技術メモ．"
+#descriptions:
+#  - cat: jekyll
+#    desc: "Jekyllの設定や機能追加に関するメモ．"
+#
+#  - cat: english
+#    desc: "アメリカ在住時のメモや，帰国後のオンライン英会話の受講記録．"
+#
+#  - cat: data science
+#    desc: "ビッグデータやデータベースに関するオンライン講座の受講メモ．"
+#
+#  - cat: machine learning
+#    desc: "機械学習に関するメモ．数学的なことも書きたい．"
+#
+#  - cat: marketing
+#    desc: "マーケティング関連書籍の読書メモや，オンライン講座の受講メモ．"
+#
+#  - cat: python
+#    desc: "Pytonの設定や使い方に関するメモ．"
+#
+#  - cat: javascript
+#    desc: "JavaScriptに関する勉強メモ．あと，チャットボットの作成記録．"
+#
+#  - cat: x-tech
+#    desc: "その他のテクノロジー関連の技術メモ．"
 
 # Social icons and sharing options
 #

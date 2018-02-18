@@ -53,9 +53,9 @@ $ bundle install
 
 <script src="https://gist.github.com/haltaro/b958eb3bd1c7516158c41da09648e2bf.js"></script>
 
-`descriptions`に，各カテゴリの説明文を追加する．
+`descriptions`に，各カテゴリの説明文を追加することもできる[^desc]．
 
-<script src="https://gist.github.com/haltaro/f0f3f92378de2afa3d707379e0aab944.js"></script>
+[^desc]: キリがないのでやめた．
 
 `social`に`GitHub`と`Qiita`と`Kaggle`を設定．`icon`では[Font awesomeのicon](https://fontawesome.com/icons?d=gallery)を指定できる．残念ながらQiitaとKaggleは無かったため，それっぽいもので代用する．
 

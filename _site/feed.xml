@@ -5,15 +5,15 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Feb 2018 08:31:24 +0900</pubDate>
-    <lastBuildDate>Sun, 18 Feb 2018 08:31:24 +0900</lastBuildDate>
+    <pubDate>Sun, 18 Feb 2018 17:46:35 +0900</pubDate>
+    <lastBuildDate>Sun, 18 Feb 2018 17:46:35 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Brett Slatkin，Effective Python</title>
         <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/gDvdj6b&quot;&gt;Brett Slatkin，Effective Python ―Pythonプログラムを改良する59項目&lt;/a&gt;を読む．&lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt;を効率的に書くための59のヒントが紹介されている．&lt;/p&gt;
 
-&lt;p&gt;特に心に残った項目を以下にまとめる．Jupyter notebookは&lt;a href=&quot;&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
+&lt;p&gt;特に心に残った項目を以下にまとめる．Jupyter notebookは&lt;a href=&quot;https://github.com/haltaro/effective-python&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;リスト内包表記には，3つ以上の式を避ける&lt;/h1&gt;
 
@@ -271,9 +271,7 @@
 
 &lt;script src=&quot;https://gist.github.com/haltaro/b958eb3bd1c7516158c41da09648e2bf.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;descriptions&lt;/code&gt;に，各カテゴリの説明文を追加する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/f0f3f92378de2afa3d707379e0aab944.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;descriptions&lt;/code&gt;に，各カテゴリの説明文を追加することもできる&lt;sup id=&quot;fnref:desc&quot;&gt;&lt;a href=&quot;#fn:desc&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;social&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;を設定．&lt;code class=&quot;highlighter-rouge&quot;&gt;icon&lt;/code&gt;では&lt;a href=&quot;https://fontawesome.com/icons?d=gallery&quot;&gt;Font awesomeのicon&lt;/a&gt;を指定できる．残念ながらQiitaとKaggleは無かったため，それっぽいもので代用する．&lt;/p&gt;
 
@@ -297,11 +295,11 @@
 
 &lt;script src=&quot;https://gist.github.com/haltaro/b9faabdc247ff1af3b57702f3a14bba3.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;about&lt;/code&gt;のプロフィール画像&lt;code class=&quot;highlighter-rouge&quot;&gt;profile.jpg&lt;/code&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;を保存する．&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;about&lt;/code&gt;のプロフィール画像&lt;code class=&quot;highlighter-rouge&quot;&gt;profile.jpg&lt;/code&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;を保存する．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/profile.jpg&quot; alt=&quot;cover&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;各記事のヘッダー画像として，&lt;a href=&quot;https://pixabay.com/ja/&quot;&gt;Pixabay&lt;/a&gt;から意識高めの写真をダウンロードして保存する&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;．フロントマタ―で，&lt;code class=&quot;highlighter-rouge&quot;&gt;cover: &quot;assets/*.jpg&quot;&lt;/code&gt;のように指定できる．&lt;/p&gt;
+&lt;p&gt;各記事のヘッダー画像として，&lt;a href=&quot;https://pixabay.com/ja/&quot;&gt;Pixabay&lt;/a&gt;から意識高めの写真をダウンロードして保存する&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;．フロントマタ―で，&lt;code class=&quot;highlighter-rouge&quot;&gt;cover: &quot;assets/*.jpg&quot;&lt;/code&gt;のように指定できる．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/2017-11-18-vis.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
@@ -374,6 +372,9 @@
 &lt;p&gt;思っていたより時間はかからなかった．実は&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Jekyll-archivesがまともに動作していない&lt;/a&gt;し，&lt;code class=&quot;highlighter-rouge&quot;&gt;highlight.js&lt;/code&gt;がうまく動作していないので，追って修正しようと思う．&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
+    &lt;li id=&quot;fn:desc&quot;&gt;
+      &lt;p&gt;キリがないのでやめた． &lt;a href=&quot;#fnref:desc&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
       &lt;p&gt;キュート． &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
