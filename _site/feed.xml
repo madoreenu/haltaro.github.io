@@ -5,8 +5,8 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Feb 2018 18:46:22 +0900</pubDate>
-    <lastBuildDate>Sun, 18 Feb 2018 18:46:22 +0900</lastBuildDate>
+    <pubDate>Sat, 24 Feb 2018 09:31:01 +0900</pubDate>
+    <lastBuildDate>Sat, 24 Feb 2018 09:31:01 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -138,7 +138,7 @@
     
       <item>
         <title>マーク・ジェフリー，データ・ドリブン・マーケティング</title>
-        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/6WKHTCO&quot;&gt;マーク・ジェフリー，データ・ドリブン・マーケティング - 最低限知っておくべき15の指標&lt;/a&gt;を読んだ．&lt;a href=&quot;http://marketing-base.jp/books/6204&quot;&gt;どうやら原著は2010年1月に発刊されたらしく&lt;/a&gt;，古さを感じる部分があるが，勉強のとっかかりとして基本を押さえるには良いと思った．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/6WKHTCO&quot;&gt;マーク・ジェフリー，データ・ドリブン・マーケティング - 最低限知っておくべき15の指標&lt;/a&gt;を読んだ．&lt;a href=&quot;http://marketing-base.jp/books/6204&quot;&gt;どうやら原著は2010年1月に発刊されたらしく&lt;/a&gt;，古さを感じる部分があるが，勉強のとっかかりとして基本を押さえるには良いと思った．&lt;/p&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;概要&lt;/h1&gt;
 
@@ -224,13 +224,78 @@
 
 &lt;h2 id=&quot;section-7&quot;&gt;7. クリックからバリューへ&lt;/h2&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;5つの重要な指標：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;クリック単価（CPC）&lt;/strong&gt;：ネット広告の評価指標．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;トランザクションコンバージョン率（TCR）&lt;/strong&gt;：広告をクリックしてウェブサイトに遷移したユーザが商品を購入した割合を表す．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;広告費用対効果（ROAS）&lt;/strong&gt;：(売上 - 費用) / 費用．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;直帰率&lt;/strong&gt;：滞在5秒未満で離脱してしまうユーザの割合．解約率に相当する．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;口コミ増幅係数（WOM）&lt;/strong&gt;：(ダイレクトクリック数 + 友人へのシェアから発生したクリック数)/ダイレクトクリック数．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ネット広告におけるオファー応諾率は，CTR（クリック率） * TCRに相当する．&lt;/li&gt;
+  &lt;li&gt;アトリビューション分析とは，ユーザが推移した各ページの，売上への貢献を分析すること．クッキーを用いて実施される．&lt;/li&gt;
+  &lt;li&gt;WOMが大きくなると実質的なCPCが減少するとかかれているが，これは各プラットフォームの料金体系に依存すると思う．例えば料金体系変更前のFacebookでは，シェア自体にコストがかかるため，口コミが増えてもCPCは減少しない（CTRは上がるが）．&lt;a href=&quot;https://www.advertimes.com/20150709/article197729/&quot;&gt;CPC増、CTR減に…Facebook広告がクリックカウントを変更 - AdverTimes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&quot;section-8&quot;&gt;8. アジャイル・マーケティング&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;アジャイルマーケティングとは，データ収集をキャンペーン中に行い，高速に軌道修正するマーケティングである．&lt;/li&gt;
+  &lt;li&gt;マーケティング施策は，途中で軌道修正可能なように設計するべき．具体的には，キャンペーン開始前に，成功，失敗の基準を設定する．意思決定ポイントをあらかじめ設定する．&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;section-9&quot;&gt;9. 「まさにこれが必要だったんだ！」&lt;/h2&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;傾向分析モデル，アソシエーション分析，決定木分析を紹介
+    &lt;ul&gt;
+      &lt;li&gt;傾向分析モデルとして，ロジスティック回帰を紹介．&lt;/li&gt;
+      &lt;li&gt;アソシエーション分析として，クラスター分析を紹介．&lt;/li&gt;
+      &lt;li&gt;技術的な詳細は語られていないので，別途自分で調べてまとめよう．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;予測の正確さもさることながら，視認性や解釈のし易さも，分析モデルにとって重要．&lt;/li&gt;
+  &lt;li&gt;解析マーケティングは，クロスセルやアップセル，顧客リテンション(解約率の削減)向けに多用され，ROMIと親和性が高い．&lt;/li&gt;
+  &lt;li&gt;イベントドリブンマーケティングは，アジャイルマーケティングを一歩進めたもの．&lt;/li&gt;
+  &lt;li&gt;解析マーケティングの財務計画では，正味現在価値，内部収益率，投資回収期間を使って投資リターンを定量化する．重要な変数は，オファー応諾率の上昇幅と，利益の増価額．&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&quot;it&quot;&gt;10. データ・ドリブン・マーケティングに必要なITインフラ&lt;/h2&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;EDW（今で言うDMP）のリスク要因：
+    &lt;ul&gt;
+      &lt;li&gt;プロジェクトの目的が明確に定義されていない．&lt;/li&gt;
+      &lt;li&gt;経営陣や経営幹部の支援がない．&lt;/li&gt;
+      &lt;li&gt;社内政治や社内文化と合わない．&lt;/li&gt;
+      &lt;li&gt;予算，時間，人材などのリソース不足．&lt;/li&gt;
+      &lt;li&gt;システムに拡張性がない．&lt;/li&gt;
+      &lt;li&gt;開発技術の選定が適切でない．&lt;/li&gt;
+      &lt;li&gt;開発チームに適切なスキルがない．外注開発先に依存している．&lt;/li&gt;
+      &lt;li&gt;既存のデータベースの質が悪い．&lt;/li&gt;
+      &lt;li&gt;人事異動によりスキルをもった人材が流出する．&lt;/li&gt;
+      &lt;li&gt;トレーニングが不足している．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&quot;section-10&quot;&gt;11. マーケティングの予算，テクノロジー，プロセス&lt;/h2&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;マーケティングに使用するテクノロジーと，業績の間に，統計的に有意な相関はない．企業業績と相関するのは，MCM(Marketing campaign management) 組織能力だけ．MCM組織能力とは，選択，ポートフォリオ最適化，モニタリング，適応学習からなる．&lt;/li&gt;
+  &lt;li&gt;上位企業と下位企業には，マーケティング予算配分に違いがある．上位企業は，ブランディングおよびITインフラにより多く投資しており，需要喚起型マーケティングへの投資は抑えめ．&lt;/li&gt;
+  &lt;li&gt;本書で紹介した15の指標を統合活用するステップ：
+    &lt;ol&gt;
+      &lt;li&gt;スコアカードで成果を測定する．&lt;/li&gt;
+      &lt;li&gt;アジャイル・マーケティングで，柔軟に軌道修正する．&lt;/li&gt;
+      &lt;li&gt;解析マーケティングで，動的なターゲティングやセグメンテーションを可能にする．&lt;/li&gt;
+      &lt;li&gt;MCMプロセスを向上させる．&lt;/li&gt;
+      &lt;li&gt;クリエイティブXファクターを活用する．&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;section-11&quot;&gt;参考&lt;/h1&gt;
 
