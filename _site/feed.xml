@@ -5,9 +5,64 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Feb 2018 09:31:01 +0900</pubDate>
-    <lastBuildDate>Sat, 24 Feb 2018 09:31:01 +0900</lastBuildDate>
+    <pubDate>Sat, 24 Feb 2018 18:53:54 +0900</pubDate>
+    <lastBuildDate>Sat, 24 Feb 2018 18:53:54 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>HTTPS+トークンで複数のGitHubアカウントを制御する</title>
+        <description>&lt;p&gt;複数のGitHubアカウントを制御したい．&lt;a href=&quot;https://dev.classmethod.jp/tool/github-ssh-sub-account-setting/&quot;&gt;SSHの秘密鍵を複数管理する方法&lt;/a&gt;もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，&lt;a href=&quot;https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139&quot;&gt;HTTPSとトークンを使用する方法&lt;/a&gt;が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;手順&lt;/h1&gt;
+
+&lt;p&gt;全面的に&lt;a href=&quot;https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139&quot;&gt;https+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiita&lt;/a&gt;に従う．&lt;/p&gt;
+
+&lt;h2 id=&quot;github&quot;&gt;GitHubアクセストークンの作成&lt;/h2&gt;
+
+&lt;p&gt;所望のGitHubアカウントにログインし，&lt;a href=&quot;https://github.com/settings/developers&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Settings &amp;gt; Developer settings&lt;/code&gt;&lt;/a&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;Personal access tokens&lt;/code&gt;を選択する．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-02-24-github-token.png&quot; alt=&quot;github&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Generate new token&lt;/code&gt;を押す．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-02-24-github-options.png&quot; alt=&quot;github&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Token description&lt;/code&gt;に，用途がわかるような名前をつける．&lt;code class=&quot;highlighter-rouge&quot;&gt;Select scopes&lt;/code&gt;で，アクセス権を指定できる．とりあえず&lt;code class=&quot;highlighter-rouge&quot;&gt;repo&lt;/code&gt;にチェックしとけば良さそう&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．私の場合，Gistをブログに埋め込むことがあるので，&lt;code class=&quot;highlighter-rouge&quot;&gt;gist&lt;/code&gt;にもチェックを入れる．これでページ下部の&lt;code class=&quot;highlighter-rouge&quot;&gt;Generate token&lt;/code&gt;を押す．表示されるトークンをクリップボードにコピーする．&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;リポジトリをクローン&lt;/h2&gt;
+
+&lt;p&gt;次のフォーマットで，リポジトリをクローンする．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/82a7e2f6628df832e0ba78aca62a9865.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;アカウント名を使い分ける場合は，以下の設定を忘れずに．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/b23267dfbd159ace2178f805380e48ad.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;あとは，何も考えずに&lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;を使えば良い．&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dev.classmethod.jp/tool/github-ssh-sub-account-setting/&quot;&gt;【メモ】githubの複数アカウントにSSH接続するための設定手順 - Developers.IO&lt;/a&gt;：SSHを使った方法&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139&quot;&gt;https+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiita&lt;/a&gt;：HTTPS＋トークンを使った方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;他のはよくわからない． &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 24 Feb 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/02/24/github-token</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/02/24/github-token</guid>
+        
+        
+        <category>github</category>
+        
+      </item>
     
       <item>
         <title>Brett Slatkin，Effective Python</title>
@@ -806,48 +861,6 @@
         <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
         <link>https://haltaro.github.io/2017/12/30/chatbot</link>
         <guid isPermaLink="true">https://haltaro.github.io/2017/12/30/chatbot</guid>
-        
-        
-        <category>javascript</category>
-        
-      </item>
-    
-      <item>
-        <title>チャットボットを作ろう：1．調査</title>
-        <description>&lt;p&gt;諸事情により，チャットボットを自作したいと思った．まずは，どんなことを実現したいのか，またどうやったら実現できそうか整理してみる．&lt;/p&gt;
-
-&lt;p&gt;関連記事はこちら：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/25/chatbot&quot;&gt;チャットボットを作ろう：1．調査&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/30/chatbot&quot;&gt;チャットボットを作ろう：2．JekyllサイトでBotUI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2018/02/04/chatbot&quot;&gt;チャットボットを作ろう：3．CSS修正&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;実現したいもの&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;ウェブサイトに埋め込む形で，自己紹介風のチャットを行うこと．つまり，LINEボットのように，アプリケーション依存ではないこと．&lt;/li&gt;
-  &lt;li&gt;会話のログを，統計解析可能な形で保存できること．&lt;/li&gt;
-  &lt;li&gt;回答に応じて，ウェブサイトのデザインを変更できること．例えば，好きな色を聞いて「赤」と回答されたら，赤をベースとしたデザインに変更するなど．&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;上から順番に優先順位が高い．&lt;/p&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;使えそうなもの&lt;/h1&gt;
-
-&lt;p&gt;いろいろ調べた結果，JavaScriptだけで動く&lt;a href=&quot;https://botui.org/&quot;&gt;BotUI&lt;/a&gt;がよさ気な気がする．以下は参考になりそうな記事：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.darudaru-life.com/entry/2017/09/30/095308&quot;&gt;darudaru，JavaScriptだけで作るチャットボット「BotUI」&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://paiza.hatenablog.com/entry/2017/09/21/%EF%BB%BFJavaScript%E3%81%A0%E3%81%91%E3%81%A7%E6%9C%AC%E6%A0%BC%E7%9A%84%E3%81%AA%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%82%8B&quot;&gt;paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;今後の予定&lt;/h1&gt;
-&lt;p&gt;そもそもJavaScriptの基礎知識が皆無なので，そこから勉強する．11月末にUdemyのセールで購入した&lt;a href=&quot;https://www.udemy.com/completeweb2_jp/&quot;&gt;フルスタックWebエンジニア講座&lt;/a&gt;を使おう．&lt;/p&gt;
-</description>
-        <pubDate>Mon, 25 Dec 2017 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2017/12/25/chatbot</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2017/12/25/chatbot</guid>
         
         
         <category>javascript</category>
