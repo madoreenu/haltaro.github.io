@@ -3,7 +3,6 @@ layout: post
 title: HTTPS+トークンで複数のGitHubアカウントを制御する
 updated: 2018-02-24
 cover: "/assets/2018-02-24-woods.jpg"
-#published: false
 categories:
  - github
 ---

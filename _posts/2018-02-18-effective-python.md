@@ -3,7 +3,6 @@ layout: post
 title: Brett Slatkin，Effective Python
 updated: 2018-02-18 13:00
 cover: "/assets/2018-02-17-effective-python.jpg"
-#published: false
 categories:
  - python
 ---

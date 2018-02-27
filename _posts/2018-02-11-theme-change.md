@@ -3,7 +3,6 @@ layout: post
 title: Jekyll themeをCentrariumに変更する
 updated: 2018-02-11 10:00
 cover: "/assets/2017-11-18-vis.jpg"
-#published: false
 categories:
  - jekyll
 ---

@@ -3,7 +3,6 @@ layout: post
 title: マーク・ジェフリー，データ・ドリブン・マーケティング
 updated: 2018-02-17 10:00
 cover: "/assets/2018-02-17-jupyter-r.jpg"
-#published: false
 categories:
  - marketing
 ---
