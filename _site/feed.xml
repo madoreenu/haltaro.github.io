@@ -5,9 +5,49 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Feb 2018 21:54:15 +0900</pubDate>
-    <lastBuildDate>Tue, 27 Feb 2018 21:54:15 +0900</lastBuildDate>
+    <pubDate>Sat, 03 Mar 2018 07:07:16 +0900</pubDate>
+    <lastBuildDate>Sat, 03 Mar 2018 07:07:16 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>多田洋介，行動経済学入門</title>
+        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/46XW33f&quot;&gt;多田洋介，行動経済学入門&lt;/a&gt;を読んだ．心理学の発想を経済活動や経済減少の分析に活かす，行動経済学の基本を学ぶことができた．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;行動経済学とは何か？&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新古典派と呼ばれる標準的な経済学の世界では，以下のような特徴を持つ合理的経済人（homo economicus）を仮定している：
+    &lt;ul&gt;
+      &lt;li&gt;超合理的：全ての情報を完璧に処理し，自己の効用を最大化する意思決定を常に行う．&lt;/li&gt;
+      &lt;li&gt;超自制的：時間を通じた活動に関して，はじめに決めた計画通りに実行する．&lt;/li&gt;
+      &lt;li&gt;超利己的：他者の利益や公平性といった価値基準を持たない．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;人間はどこまで合理的か?&lt;/h1&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;近道を選ぶと失敗する&lt;/h1&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;プロスペクト理論&lt;/h1&gt;
+
+&lt;h1 id=&quot;section-4&quot;&gt;非合理的な投資家は試乗を狂わす&lt;/h1&gt;
+
+&lt;h1 id=&quot;section-5&quot;&gt;人間は「超」自制的か&lt;/h1&gt;
+
+&lt;h1 id=&quot;section-6&quot;&gt;人間は他人の目を気にするもの&lt;/h1&gt;
+
+&lt;h1 id=&quot;section-7&quot;&gt;心理学的アプローチの限界と可能性&lt;/h1&gt;
+</description>
+        <pubDate>Tue, 27 Feb 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/02/27/intro-to-behavioral-economics</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/02/27/intro-to-behavioral-economics</guid>
+        
+        
+        <category>economics</category>
+        
+      </item>
     
       <item>
         <title>HTTPS+トークンで複数のGitHubアカウントを制御する</title>
@@ -781,89 +821,6 @@
         
         
         <category>english</category>
-        
-      </item>
-    
-      <item>
-        <title>チャットボットを作ろう：2．JekyllサイトでBotUI</title>
-        <description>&lt;p&gt;諸事情により，チャットボットを自作したいと思った．&lt;a href=&quot;http://paiza.hatenablog.com/entry/2017/09/21/%EF%BB%BFJavaScript%E3%81%A0%E3%81%91%E3%81%A7%E6%9C%AC%E6%A0%BC%E7%9A%84%E3%81%AA%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%82%8B&quot;&gt;paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！&lt;/a&gt;を参考にチャットボットを作成し，&lt;a href=&quot;https://haltaro.github.io/about/&quot;&gt;本サイトのAbout欄&lt;/a&gt;に埋め込んだ．&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;460&quot; src=&quot;https://www.youtube.com/embed/-8c8oNbgoOE&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;関連記事はこちら：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/25/chatbot&quot;&gt;チャットボットを作ろう：1．調査&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/30/chatbot&quot;&gt;チャットボットを作ろう：2．JekyllサイトでBotUI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2018/02/04/chatbot&quot;&gt;チャットボットを作ろう：3．CSS修正&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/easybook/&quot;&gt;Easybook&lt;/a&gt;：本サイトで利用している&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;のテーマ．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/botui/botui&quot;&gt;BotUI&lt;/a&gt;：JavaScriptだけで動くチャットボットライブラリ．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;手順&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://paiza.hatenablog.com/entry/2017/09/21/%EF%BB%BFJavaScript%E3%81%A0%E3%81%91%E3%81%A7%E6%9C%AC%E6%A0%BC%E7%9A%84%E3%81%AA%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%82%8B&quot;&gt;paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！&lt;/a&gt;を参考した．&lt;/p&gt;
-
-&lt;h2 id=&quot;includesheadhtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;を追記&lt;/h2&gt;
-
-&lt;p&gt;BotUI関連のファイルを，CDN経由で読み込む設定を&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;に追記した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/1eb351f9a2abe6d2fc31f0c79a45e548.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;layoutsbothtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/bot.html&lt;/code&gt;を作成&lt;/h2&gt;
-
-&lt;p&gt;BotUI用の新レイアウト&lt;code class=&quot;highlighter-rouge&quot;&gt;bot.html&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/&lt;/code&gt;に追加した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/e28df2507fb5599dead68683fc9ca3f8.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;任意の&lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt;を付与可能．チャットボットを表示したい位置に，&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;bot-ui&amp;gt;&lt;/code&gt;タグを配置した．&lt;/p&gt;
-
-&lt;h2 id=&quot;jsbotjs&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;js/bot.js&lt;/code&gt;を作成&lt;/h2&gt;
-
-&lt;p&gt;チャットボット本体となる&lt;code class=&quot;highlighter-rouge&quot;&gt;bot.js&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;js/&lt;/code&gt;に追加した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/3c1db5f8bdf01c6f8f76bb9684a680b6.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise&quot;&gt;Promise&lt;/a&gt;をベースとしたメソッドチェーンを繋げて，構成するらしい．詳細はよくわからなかったが，ノリで&lt;code class=&quot;highlighter-rouge&quot;&gt;then&lt;/code&gt;を繋げていったら動くものができた．&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.message.add&lt;/code&gt;：新規メッセージの表示．&lt;code class=&quot;highlighter-rouge&quot;&gt;delay&lt;/code&gt;で表示までの待ち時間を，&lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt;で表示内容を指定できる．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.action.text&lt;/code&gt;：入力フォームを表示．&lt;code class=&quot;highlighter-rouge&quot;&gt;res&lt;/code&gt;でユーザの回答を取得できる．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.action.button&lt;/code&gt;：ボタンを表示．&lt;code class=&quot;highlighter-rouge&quot;&gt;res&lt;/code&gt;でユーザの回答を取得できる．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;aboutmd&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_about.md&lt;/code&gt;を修正&lt;/h2&gt;
-
-&lt;p&gt;Markdownで記載していた自己紹介欄を削除し，&lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;bot&lt;/code&gt;に変更した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/d286f37bc2195d2b6797a38e7c2cf468.js&quot;&gt;&lt;/script&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;課題&lt;/h1&gt;
-
-&lt;p&gt;時間切れのため，以下の課題を解決できなかった．時間に余裕ができたら解決したい．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;会話が長くなったとき，サイドバーが二重に表示されてダサい．&lt;a href=&quot;https://haltaro.github.io/2018/02/04/chatbot&quot;&gt;次回&lt;/a&gt;で解決する．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.botui.org/guide.html#botui-markup&quot;&gt;BotUI, Guide, BotUI Markup&lt;/a&gt;を参考にしたが，URLや画像が埋め込めない．&lt;/li&gt;
-  &lt;li&gt;If-Thenルールに則っただけの，人工無能．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-3&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/botui/botui&quot;&gt;BotUI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://paiza.hatenablog.com/entry/2017/09/21/%EF%BB%BFJavaScript%E3%81%A0%E3%81%91%E3%81%A7%E6%9C%AC%E6%A0%BC%E7%9A%84%E3%81%AA%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%82%8B&quot;&gt;paiza開発日誌，JavaScriptだけで本格的なチャットボットを開発できるライブラリ「BotUI」を使ってみた！&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2017/12/30/chatbot</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2017/12/30/chatbot</guid>
-        
-        
-        <category>javascript</category>
         
       </item>
     
