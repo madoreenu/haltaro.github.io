@@ -150,6 +150,54 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2017/10/14/web-buisiness">武井由紀子，ユーザ中心ウェブビジネス戦略</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略を読んだ．インターネットはユーザが能動的に情報を取捨選択可能なメディアであるため，ウェブビジネスにおいては，ターゲットユーザを徹底的に理解する必要がある．ユーザ理解のためのツールとして，ユーザ行動パターン検証ツール（アクセスログ解析等）と，ユーザ行動理由検証ツール（ユーザ行動観察調査等）がある．両者の特徴を理解して，使い分けることが重要である．
+
+
+  p.10：いかなる製品やサービスも，まずは事業の目的や市場，ターゲット顧客，収益性といった観点から検討が始まる．
+  p.12：本書は二部構成．一部は理論編，二部は実践編．二部は主にウェブマスター向けの話なので，一部を中心に読む．
+  p.19：ウェブビジネス成功事例の共通点として，下記4点があるが，もっとも重要なのは1である：
+    
+      サイトの顧客（ユーザ）を徹底的に知っている．
+      ユーザを知った上でサイト上でのコミュニケーションを設計している．
+      事前に仮説検証をしている．
+      事後に仮説検証をしている．
+    
+  
+  p.25：インターネットによりメディアの民主化が起こった．企業から発信される情報の信頼性が低下する一方で，個人から発信される情報の信頼性が増大した．
+  p.32：論理武装した消費者に対応するためには，ユーザの期待に応えているか，が最も重要．
+  p.37：ユーザ利用時のインターネットの特性として，以下の5つがある：前のめり，斜め読み，新鮮，遠慮不要，比較可能．
+  p.45：ユーザ中心設計のプロセス：サイトの目的と目標，ターゲットユーザ，コミュニケーションシナリオ，ユーザ視点の検証作業．
+  p.51：ウォーターフォール型ではなく，スパイラル型でサイト設計を行う．
+  p.55：ユーザの過去の経験やサイト内外での体験まで想定して，コミュニケーションシナリオを構築する．
+  p.65：ウェブサイトによるプロモーションと相性が良いのは，比較に耐えるサービスか，そもそも比較できないサービス．
+  p.81：ユーザ行動パターン検証ツールと，ユーザ行動理由検証ツールを使い分ける必要がある．前者は，例えばアクセスログ解析．後者は，例えばユーザ行動観察調査．
+  p.85：ユーザの意見ではなく，行動を重視する．往々にして，ユーザの意見は正確でない．
+
+</p>-->
+      <p><p><a href="http://amzn.asia/0sBIq3B">武井由紀子，三木順哉，ユーザ中心ウェブビジネス戦略</a>を読んだ．インターネットはユーザが能動的に情報を取捨選択可能なメディアであるため，ウェブビジネスにおいては，ターゲットユーザを徹底的に理解する必要がある．ユーザ理解のためのツールとして，ユーザ行動パターン検証ツール（アクセスログ解析等）と，ユーザ行動理由検証ツール（ユーザ行動観察調査等）がある．両者の特徴を理解して，使い分けることが重要である．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">October 14, 2017</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/marketing">Marketing</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2017/08/13/udacity-hadoop">Udacity, Intro to Hadoop and MapReduce</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -239,74 +287,6 @@
       in 
         
         <a href="/category/kaggle">Kaggle</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2017/08/04/set-google-analytics">JekyllでGoogle Analytics</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>JekyllとGitHub Pagesで立ち上げたウェブサイトに，Google Analyticsでトラッキング機能を導入した．
-
-
-
-おー．見えてる見えてる．
-
-参考
-
-
-  Google アナリティクス トラッキングを設定する：本家ヘルプ．
-  Google Analytics setup for Jekyll：Jekyllにおける設定方法について．
-  ブログにYouTubeの動画を埋め込む方法：Youtube動画の埋め込みについて．
-
-
-手順
-
-1. Google Analyticsの登録
-
-Google Analyticsにウェブサイト（https://haltaro.github.io）を登録．趣味で使うぶんにはデフォルト設定で十分だし，あとで変更可能．
-
-2. analytics.htmlの保存
-
-管理 &gt; プロパティ &gt; トラッキング情報 &gt; トラッキングコードを選択．以下のようなJavaScriptスニペットをコピーし，analytics.htmlとして/_includes/ディレクトリに保存．
-
-
-
-ただし，UA-*********-*はウェブサイト固有のトラッキングコード．
-
-3. default.htmlの修正
-
-/_layoutディレクトリのdefault.htmlに，下記のanalytics.htmlを追記．
-
-
-
-ここで，jekyll.environment == 'production'は，ローカル環境での動作テスト（$ jekyll serve）をトラッキング対象から除外するためのもの．
-
-4. 待機
-
-設定が反映されるまで，30分ほどかかった．
-
-感想
-
-指示通り設定すれば，問題なく動作した．Youtube動画も埋め込めたので満足．
-</p>-->
-      <p><p><a href="https://haltaro.github.io/2017/07/30/first-post">JekyllとGitHub Pagesで立ち上げたウェブサイト</a>に，<a href="https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/">Google Analytics</a>でトラッキング機能を導入した．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">August 4, 2017</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/jekyll">Jekyll</a>
         
       
       </div>
