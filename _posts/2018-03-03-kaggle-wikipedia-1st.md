@@ -7,7 +7,7 @@ categories:
  - deep learning
 ---
 
-[Kaggle，Web Traffic Time Series Forecasting](https://www.kaggle.com/c/web-traffic-time-series-forecasting)の[1st place solution](https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795)のメモ．一年前と四半期前の値を特徴量として追加し，RNN（Recurrent Neural Network）seq2seqで予測したらしい．
+[Kaggle，Web Traffic Time Series Forecasting](https://www.kaggle.com/c/web-traffic-time-series-forecasting)の[1st place solution](https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795)のメモ．Wikipediaのpageviewを予測するコンテスト．解法のポイントは，一年前と四半期前の値を特徴量として追加し，RNN seq2seqを使うこと．
 
 # 概要
 
