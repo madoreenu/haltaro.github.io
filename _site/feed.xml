@@ -5,9 +5,36 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Mar 2018 19:11:41 +0900</pubDate>
-    <lastBuildDate>Mon, 05 Mar 2018 19:11:41 +0900</lastBuildDate>
+    <pubDate>Mon, 05 Mar 2018 21:07:05 +0900</pubDate>
+    <lastBuildDate>Mon, 05 Mar 2018 21:07:05 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Jupyter notebookのフォントを変更する</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://jupyter.org/&quot;&gt;Jupyter notebook&lt;/a&gt;のコードブロックを等幅フォントにしたい．&lt;a href=&quot;https://github.com/dunovank/jupyter-themes&quot;&gt;Jupytertheme&lt;/a&gt;を使っても良いが，拡張機能のボタンが消えてしまうことがあり不便．&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.jupyter/custom/custom.css&lt;/code&gt;をいじって変更した．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;参考&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://shu87.hateblo.jp/entry/2017/08/30/003224&quot;&gt;Jupyter notebookを等幅フォントにする - 元文学部統計学専攻学生の備忘録&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/hiropignis/items/f2192d86971746b849e8&quot;&gt;Jupyter Notebookを自分仕様に：背景，アイコンの変更 - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;手順&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.jupyter/custom/custom.css&lt;/code&gt;に，&lt;code class=&quot;highlighter-rouge&quot;&gt;.CodeMirror pre, .output pre { font-family: Monaco, monospace; }&lt;/code&gt;を追記して，Jupyterを再起動する．&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;簡単だった．&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Mar 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/03/05/jupyter-font</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/03/05/jupyter-font</guid>
+        
+        
+        <category>python</category>
+        
+      </item>
     
       <item>
         <title>Kaggle，Web Traffic Time Series Forecasting，1st place solution</title>
@@ -292,6 +319,8 @@
 &lt;h2 id=&quot;section-4&quot;&gt;リストを返さずにジェネレータを返すことを考える&lt;/h2&gt;
 
 &lt;p&gt;これはやってしまいがち．例えば&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;中の単語のインデックスを返す関数は次のように定義できる．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/f029b65d87b604c8e3996ab9b5633eb6.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;ジェネレータを使うと，リストで返すよりもコードが明確になる．また，作業メモリに全ての入出力を保持する必要がないので，どのような長さの入力に対しても出力シーケンスを生成できる．&lt;/p&gt;
 </description>
@@ -887,42 +916,6 @@
         <pubDate>Sun, 07 Jan 2018 00:00:00 +0900</pubDate>
         <link>https://haltaro.github.io/2018/01/07/digital-marketing-retire</link>
         <guid isPermaLink="true">https://haltaro.github.io/2018/01/07/digital-marketing-retire</guid>
-        
-        
-        <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>Courcera，Marketing in a digital world：4. Price</title>
-        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;https://www.coursera.org/learn/marketing-digital&quot;&gt;Courcera，Marketing in a digital world&lt;/a&gt;の受講メモ．本講座は，イリノイ大学主催のオンライン講座であり，全7講座から成る&lt;a href=&quot;https://www.coursera.org/specializations/digital-marketing&quot;&gt;Digital marketing specialization&lt;/a&gt;の一つ．四週かけて，デジタル時代の&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&quot;&gt;マーケティング・ミックス&lt;/a&gt;について学ぶ．第四週では，Priceを取り扱い，Pay what you wantやPrice comparison toolsについて学ぶ．&lt;/p&gt;
-
-&lt;p&gt;…予定だったが，&lt;a href=&quot;https://haltaro.github.io/2018/01/07/digital-marketing-retire&quot;&gt;途中退会してしまった&lt;/a&gt;．再入会するかもしれないので，その際は追記する．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2017-11-18-courcera.png&quot; alt=&quot;courcera&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;本講座に関する記事：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/08/digital-marketing-1&quot;&gt;Courcera，Marketing in a digital world：1. Product&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/11/25/digital-marketing-2&quot;&gt;Courcera，Marketing in a digital world：2. Promotion&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/12/03/digital-marketing-3&quot;&gt;Courcera, Marketing in a digital world：3. Placement&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-4&quot;&gt;Courcera, Marketing in a digital world：4. Price&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/01/07/digital-marketing-retire&quot;&gt;CourceraのDigital marketing講座を退会した&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;module-3-overview&quot;&gt;Module 3 overview&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;以下は，事前に読む必要がある資料．&lt;/li&gt;
-  &lt;li&gt;Bertini, M., &amp;amp; Koenigsberg, O. (2014). &lt;a href=&quot;https://sloanreview.mit.edu/article/when-customers-help-set-prices/&quot;&gt;When customers help set price&lt;/a&gt;. &lt;em&gt;MIT Sloan Management Review&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;Kalb, I. (2013, October 2). &lt;a href=&quot;http://www.businessinsider.com/3-powerful-pricing-strategies-businesses-should-always-consider-2013-10&quot;&gt;Three ways companies decide the price of a product&lt;/a&gt;. &lt;em&gt;Business Insider&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;Thaler, R. H., &amp;amp; Tucker, W. (2013). &lt;a href=&quot;https://hbr.org/2013/01/smarter-information-smarter-consumers&quot;&gt;Smarter information, smarter consumers&lt;/a&gt;. &lt;em&gt;Harvard Business Review&lt;/em&gt;, 91(1), 44–54.&lt;/li&gt;
-  &lt;li&gt;Tuttle, B. (2014, November 11). &lt;a href=&quot;http://time.com/money/3576844/pay-what-you-want-businesses/&quot;&gt;A brief history of ‘Pay what you want’ businesses&lt;/a&gt;. &lt;em&gt;Money&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 07 Jan 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/01/07/digital-marketing-4</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/01/07/digital-marketing-4</guid>
         
         
         <category>marketing</category>
