@@ -166,10 +166,6 @@
 手順
 
 ~/.jupyter/custom/custom.cssに，.CodeMirror pre, .output pre { font-family: Monaco, monospace; }を追記して，Jupyterを再起動する．
-
-感想
-
-簡単だった．
 </p>-->
       <p><p><a href="http://jupyter.org/">Jupyter notebook</a>のコードブロックを等幅フォントにしたい．<a href="https://github.com/dunovank/jupyter-themes">Jupytertheme</a>を使っても良いが，拡張機能のボタンが消えてしまうことがあり不便．<code class="highlighter-rouge">~/.jupyter/custom/custom.css</code>をいじって変更した．</p>
 
@@ -396,6 +392,16 @@ Noneと，0や空白文字などの他の値がすべて条件式においてFal
 
 
 ジェネレータを使うと，リストで返すよりもコードが明確になる．また，作業メモリに全ての入出力を保持する必要がないので，どのような長さの入力に対しても出力シーケンスを生成できる．
+
+引数に対してイテレータを使うときには確実さを尊ぶ
+
+StopIteration例外が起きたあとのジェネレータをもう一度反復した場合，難の例外も発生しない．つまり，出力のないイテレータと，出力があったが尽きてしまったイテレータを区別できない．
+
+よって，関数にイテレータを渡した場合，奇妙な振る舞いや欠損値を生む可能性がある．コンテナとイテレータを区別する方法として，組み込み関数iter()に二度突っ込んで同じ結果が出るか確認する方法がある．
+
+
+
+イテレータとジェネレータとコンテナの関係については，Python: ジェネレータをイテレータから理解する - CUBE SUGAR CONTAINERがわかりやすい．
 </p>-->
       <p><p><i class="fa fa-spinner"></i> <strong>更新中</strong>：<a href="http://amzn.asia/gDvdj6b">Brett Slatkin，Effective Python ―Pythonプログラムを改良する59項目</a>を読む．<a href="https://www.python.org/">Python</a>を効率的に書くための59のヒントが紹介されている．</p>
 

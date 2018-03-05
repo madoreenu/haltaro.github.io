@@ -5,8 +5,8 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Mar 2018 21:07:05 +0900</pubDate>
-    <lastBuildDate>Mon, 05 Mar 2018 21:07:05 +0900</lastBuildDate>
+    <pubDate>Mon, 05 Mar 2018 21:35:16 +0900</pubDate>
+    <lastBuildDate>Mon, 05 Mar 2018 21:35:16 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -22,10 +22,6 @@
 &lt;h1 id=&quot;section-1&quot;&gt;手順&lt;/h1&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.jupyter/custom/custom.css&lt;/code&gt;に，&lt;code class=&quot;highlighter-rouge&quot;&gt;.CodeMirror pre, .output pre { font-family: Monaco, monospace; }&lt;/code&gt;を追記して，Jupyterを再起動する．&lt;/p&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;簡単だった．&lt;/p&gt;
 </description>
         <pubDate>Mon, 05 Mar 2018 00:00:00 +0900</pubDate>
         <link>https://haltaro.github.io/2018/03/05/jupyter-font</link>
@@ -323,6 +319,16 @@
 &lt;script src=&quot;https://gist.github.com/haltaro/f029b65d87b604c8e3996ab9b5633eb6.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;ジェネレータを使うと，リストで返すよりもコードが明確になる．また，作業メモリに全ての入出力を保持する必要がないので，どのような長さの入力に対しても出力シーケンスを生成できる．&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;引数に対してイテレータを使うときには確実さを尊ぶ&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;StopIteration&lt;/code&gt;例外が起きたあとのジェネレータをもう一度反復した場合，難の例外も発生しない．つまり，出力のないイテレータと，出力があったが尽きてしまったイテレータを区別できない．&lt;/p&gt;
+
+&lt;p&gt;よって，関数にイテレータを渡した場合，奇妙な振る舞いや欠損値を生む可能性がある．コンテナとイテレータを区別する方法として，組み込み関数&lt;code class=&quot;highlighter-rouge&quot;&gt;iter()&lt;/code&gt;に二度突っ込んで同じ結果が出るか確認する方法がある．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/7a9ee7ed87ec7e13276083f814d91968.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;イテレータとジェネレータとコンテナの関係については，&lt;a href=&quot;http://blog.amedama.jp/entry/2017/11/23/213233&quot;&gt;Python: ジェネレータをイテレータから理解する - CUBE SUGAR CONTAINER&lt;/a&gt;がわかりやすい．&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Feb 2018 00:00:00 +0900</pubDate>
         <link>https://haltaro.github.io/2018/02/18/effective-python</link>
