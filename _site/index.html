@@ -153,8 +153,8 @@
       <a class="post-link" href="/2018/03/03/kaggle-wikipedia-1st">Kaggle，Web Traffic Time Series Forecasting，1st place solution</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <!--<p>Kaggle，Web Traffic Time Series Forecastingの1st place solutionのメモ．一年前と四半期前の値を特徴量として追加し，RNN（Recurrent Neural Network）seq2seqで予測したらしい． 概要 TL;DR 予測には２つの情報を用いた： ローカルな特徴量．自己相関モデル，移動平均モデル，季節性モデルなど． グローバルな特徴量．年周期，四半期周期のトレンド． RNN seq2seqを利用した理由は： RNNはARIMAの自然な拡張と考えられるし，柔軟で表現力が高い． RNNはノンパラメトリック． RNNはどんな特徴量も簡単に扱える． seq2seqはこのタスクに適していると考えた．直前の時系列の予測値を入力として使うため，誤差が蓄積されやすいため，結果として極端な予測は避けるようになる1． Deep learningは流行っている． Feature engineering 利用した特徴量は： pageviews：log1p()で変換したビュー数． agent，country，site：ページのURLから抽出． year-to-year autocorrelation，quarter-to-quarter autocorrelation：年周期や四半期周期のトレンドを捉えるため． page popularity：人気のページとそうでないものは，動きが異なるため． lagged pageviews：365日前と90日前のpageview． Feature preprocessing One-hot encodingしたカテゴリカル変数を含む，全ての特徴量をそれぞれ独立に正規化した．時不変な特徴量（countryなど）を時系列データ長にtf.tile()で変換した． 学習用データは，固定長でランダムに抽出した． Model core EncoderとしてcuDNN GRUを使った．cuDNN GRUはドキュメントが貧弱だが，通常のTensorFlowのRNNCellsより5倍から10倍ほど高速だ． DecoderとしてGRUBlockCellをtf.while_loop()でラップして使った．ループの中で，直前の時系列の予測結果を次のセルに入力する． Working with long timeseries LSTM/GRUはせいぜい100から300アイテム前の情報しか保持できないため，700日分のpageviewを使用する今回のタスクには，直接利用できない．...</p>-->
-      <p><p><a href="https://www.kaggle.com/c/web-traffic-time-series-forecasting">Kaggle，Web Traffic Time Series Forecasting</a>の<a href="https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795">1st place solution</a>のメモ．一年前と四半期前の値を特徴量として追加し，RNN（Recurrent Neural Network）seq2seqで予測したらしい．</p>
+      <!--<p>Kaggle，Web Traffic Time Series Forecastingの1st place solutionのメモ．Wikipediaのpageviewを予測するコンテスト．解法のポイントは，一年前と四半期前の値を特徴量として追加し，RNN seq2seqを使うこと． 概要 TL;DR 予測には２つの情報を用いた： ローカルな特徴量．自己相関モデル，移動平均モデル，季節性モデルなど． グローバルな特徴量．年周期，四半期周期のトレンド． RNN seq2seqを利用した理由は： RNNはARIMAの自然な拡張と考えられるし，柔軟で表現力が高い． RNNはノンパラメトリック． RNNはどんな特徴量も簡単に扱える． seq2seqはこのタスクに適していると考えた．直前の時系列の予測値を入力として使うため，誤差が蓄積されやすいため，結果として極端な予測は避けるようになる1． Deep learningは流行っている． Feature engineering 利用した特徴量は： pageviews：log1p()で変換したビュー数． agent，country，site：ページのURLから抽出． year-to-year autocorrelation，quarter-to-quarter autocorrelation：年周期や四半期周期のトレンドを捉えるため． page popularity：人気のページとそうでないものは，動きが異なるため． lagged pageviews：365日前と90日前のpageview． Feature preprocessing One-hot encodingしたカテゴリカル変数を含む，全ての特徴量をそれぞれ独立に正規化した．時不変な特徴量（countryなど）を時系列データ長にtf.tile()で変換した． 学習用データは，固定長でランダムに抽出した． Model core EncoderとしてcuDNN GRUを使った．cuDNN GRUはドキュメントが貧弱だが，通常のTensorFlowのRNNCellsより5倍から10倍ほど高速だ． DecoderとしてGRUBlockCellをtf.while_loop()でラップして使った．ループの中で，直前の時系列の予測結果を次のセルに入力する． Working with long timeseries LSTM/GRUはせいぜい100から300アイテム前の情報しか保持できないため，700日分のpageviewを使用する今回のタスクには，直接利用できない． 最初はattention的な考え方で，一年前と四半期前のEncoderの出力をDecoderの入力に使うことを考えた．しかし，処理が重い割に性能が出なかった．...</p>-->
+      <p><p><a href="https://www.kaggle.com/c/web-traffic-time-series-forecasting">Kaggle，Web Traffic Time Series Forecasting</a>の<a href="https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795">1st place solution</a>のメモ．Wikipediaのpageviewを予測するコンテスト．解法のポイントは，一年前と四半期前の値を特徴量として追加し，RNN seq2seqを使うこと．</p>
 
 </p>
     </section>
@@ -342,6 +342,16 @@ Noneを返すよりは例外を選ぶ
 Noneと，0や空白文字などの他の値がすべて条件式においてFalseと評価されるため，エラーを引き起こしやすい．それはそうと，raise from構文がよくわからない．あとで確認しよう．
 
 クロージャが変数スコープとどう関わるか知っておく
+
+クロージャとは，関数内の変数の名前解決が，その関数が宣言されたときのスコープで行われるもの．Python Tips： Python でクロージャを使いたい - Life with pythonがとてもわかりやすい．
+
+ちなみにここで登場した特殊メソッド__call__(self)は，クラスのインスタンスを関数っぽく呼び出したときに動作するもの．Pythonのクラスにおける__call__メソッドの使い方 - Qiitaがわかりやすい．
+
+リストを返さずにジェネレータを返すことを考える
+
+これはやってしまいがち．例えばtext中の単語のインデックスを返す関数は次のように定義できる．
+
+ジェネレータを使うと，リストで返すよりもコードが明確になる．また，作業メモリに全ての入出力を保持する必要がないので，どのような長さの入力に対しても出力シーケンスを生成できる．
 </p>-->
       <p><p><i class="fa fa-spinner"></i> <strong>更新中</strong>：<a href="http://amzn.asia/gDvdj6b">Brett Slatkin，Effective Python ―Pythonプログラムを改良する59項目</a>を読む．<a href="https://www.python.org/">Python</a>を効率的に書くための59のヒントが紹介されている．</p>
 

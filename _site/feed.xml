@@ -5,13 +5,13 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Mar 2018 08:57:22 +0900</pubDate>
-    <lastBuildDate>Sun, 04 Mar 2018 08:57:22 +0900</lastBuildDate>
+    <pubDate>Mon, 05 Mar 2018 19:11:41 +0900</pubDate>
+    <lastBuildDate>Mon, 05 Mar 2018 19:11:41 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Kaggle，Web Traffic Time Series Forecasting，1st place solution</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting&quot;&gt;Kaggle，Web Traffic Time Series Forecasting&lt;/a&gt;の&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795&quot;&gt;1st place solution&lt;/a&gt;のメモ．一年前と四半期前の値を特徴量として追加し，RNN（Recurrent Neural Network）seq2seqで予測したらしい．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting&quot;&gt;Kaggle，Web Traffic Time Series Forecasting&lt;/a&gt;の&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795&quot;&gt;1st place solution&lt;/a&gt;のメモ．Wikipediaのpageviewを予測するコンテスト．解法のポイントは，一年前と四半期前の値を特徴量として追加し，RNN seq2seqを使うこと．&lt;/p&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;概要&lt;/h1&gt;
 
@@ -284,6 +284,16 @@
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;None&lt;/code&gt;と，&lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;や空白文字などの他の値がすべて条件式において&lt;code class=&quot;highlighter-rouge&quot;&gt;False&lt;/code&gt;と評価されるため，エラーを引き起こしやすい．それはそうと，&lt;code class=&quot;highlighter-rouge&quot;&gt;raise from&lt;/code&gt;構文がよくわからない．あとで確認しよう．&lt;/p&gt;
 
 &lt;h2 id=&quot;section-3&quot;&gt;クロージャが変数スコープとどう関わるか知っておく&lt;/h2&gt;
+
+&lt;p&gt;クロージャとは，関数内の変数の名前解決が，その関数が宣言されたときのスコープで行われるもの．&lt;a href=&quot;https://www.lifewithpython.com/2014/09/python-use-closures.html&quot;&gt;Python Tips： Python でクロージャを使いたい - Life with python&lt;/a&gt;がとてもわかりやすい．&lt;/p&gt;
+
+&lt;p&gt;ちなみにここで登場した特殊メソッド&lt;code class=&quot;highlighter-rouge&quot;&gt;__call__(self)&lt;/code&gt;は，クラスのインスタンスを関数っぽく呼び出したときに動作するもの．&lt;a href=&quot;https://qiita.com/kyo-bad/items/439d8cc3a0424c45214a&quot;&gt;Pythonのクラスにおける__call__メソッドの使い方 - Qiita&lt;/a&gt;がわかりやすい．&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;リストを返さずにジェネレータを返すことを考える&lt;/h2&gt;
+
+&lt;p&gt;これはやってしまいがち．例えば&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;中の単語のインデックスを返す関数は次のように定義できる．&lt;/p&gt;
+
+&lt;p&gt;ジェネレータを使うと，リストで返すよりもコードが明確になる．また，作業メモリに全ての入出力を保持する必要がないので，どのような長さの入力に対しても出力シーケンスを生成できる．&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Feb 2018 00:00:00 +0900</pubDate>
         <link>https://haltaro.github.io/2018/02/18/effective-python</link>
