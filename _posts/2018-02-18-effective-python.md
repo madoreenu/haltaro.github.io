@@ -62,3 +62,13 @@ categories:
 <script src="https://gist.github.com/haltaro/7a9ee7ed87ec7e13276083f814d91968.js"></script>
 
 イテレータとジェネレータとコンテナの関係については，[Python: ジェネレータをイテレータから理解する - CUBE SUGAR CONTAINER](http://blog.amedama.jp/entry/2017/11/23/213233)がわかりやすい．
+
+## 可変長引数を使って，見た目をすっきりさせる
+
+`def function(*arg)`と定義すると，引数は可変長であり，内部でタプルとして処理される．また`def function(**arg)`と定義すると，やはり引数は可変長であり，内部で辞書型として処理される．[pythonの引数にある*hogeとか**mapとか - When it’s ready.](http://a2c.hatenablog.com/entry/20090301/1235909666)がわかりやすい．
+
+<script src="https://gist.github.com/haltaro/f7f1838ef92bae1325b656cc753493b0.js"></script>
+
+ちなみに，関数に引数を渡すとき，`*list`でリスト（タプル）を展開してくれるし，`**dict`で辞書を展開してくれる．
+
+可変長引数は便利だが，展開時にメモリを大量に消費してしまう可能性がある．引数の入力個数が少ないことがわかっている場合に限って使った方が良い．

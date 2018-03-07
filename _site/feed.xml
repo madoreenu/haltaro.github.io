@@ -5,8 +5,8 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Mar 2018 21:35:16 +0900</pubDate>
-    <lastBuildDate>Mon, 05 Mar 2018 21:35:16 +0900</lastBuildDate>
+    <pubDate>Wed, 07 Mar 2018 21:57:43 +0900</pubDate>
+    <lastBuildDate>Wed, 07 Mar 2018 21:57:43 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -329,6 +329,16 @@
 &lt;script src=&quot;https://gist.github.com/haltaro/7a9ee7ed87ec7e13276083f814d91968.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;イテレータとジェネレータとコンテナの関係については，&lt;a href=&quot;http://blog.amedama.jp/entry/2017/11/23/213233&quot;&gt;Python: ジェネレータをイテレータから理解する - CUBE SUGAR CONTAINER&lt;/a&gt;がわかりやすい．&lt;/p&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;可変長引数を使って，見た目をすっきりさせる&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;def function(*arg)&lt;/code&gt;と定義すると，引数は可変長であり，内部でタプルとして処理される．また&lt;code class=&quot;highlighter-rouge&quot;&gt;def function(**arg)&lt;/code&gt;と定義すると，やはり引数は可変長であり，内部で辞書型として処理される．&lt;a href=&quot;http://a2c.hatenablog.com/entry/20090301/1235909666&quot;&gt;pythonの引数にある*hogeとか**mapとか - When it’s ready.&lt;/a&gt;がわかりやすい．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/f7f1838ef92bae1325b656cc753493b0.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;ちなみに，関数に引数を渡すとき，&lt;code class=&quot;highlighter-rouge&quot;&gt;*list&lt;/code&gt;でリスト（タプル）を展開してくれるし，&lt;code class=&quot;highlighter-rouge&quot;&gt;**dict&lt;/code&gt;で辞書を展開してくれる．&lt;/p&gt;
+
+&lt;p&gt;可変長引数は便利だが，展開時にメモリを大量に消費してしまう可能性がある．引数の入力個数が少ないことがわかっている場合に限って使った方が良い．&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Feb 2018 00:00:00 +0900</pubDate>
         <link>https://haltaro.github.io/2018/02/18/effective-python</link>
