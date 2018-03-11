@@ -9,7 +9,7 @@ categories:
 
 <i class="fa fa-spinner"></i> **更新中**： [Udacity, Intro to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/DEQNknALf_8?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="460" src="https://www.youtube.com/embed/DEQNknALf_8?rel=0" frameborder="0" allowfullscreen></iframe>
 
 # 1. Big Data
 
@@ -59,9 +59,9 @@ categories:
     * [インストールと初期設定](https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/pub)：ダブルクリックで`.zip`を解凍したらうまくいかなかった．コマンドラインで`unzip`で解凍した．
     * [ファイル共有](https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub)：うちの環境では`192.168.0.9`だった．
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/l0I_2nyPNZM?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="460" src="https://www.youtube.com/embed/l0I_2nyPNZM?rel=0" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/d5TZ_2I7dwE?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="460" src="https://www.youtube.com/embed/d5TZ_2I7dwE?rel=0" frameborder="0" allowfullscreen></iframe>
 
 * 技術的な詳細は，[Chapter 6 of Tom White’s essential text, Hadoop: The Definitive Guide](http://go.cloudera.com/udacity-lesson-2)を参照．
 
@@ -79,7 +79,7 @@ $ cat testfile | ./mapper.py | sort | ./reducer.py
 
 * 詳細は，以下の動画がとてもわかりやすい．
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/MYo8EZwDRUA?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="460" src="https://www.youtube.com/embed/MYo8EZwDRUA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
 # 4. Project

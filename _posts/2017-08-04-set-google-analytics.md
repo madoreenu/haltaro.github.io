@@ -9,7 +9,7 @@ categories:
 
 [JekyllとGitHub Pagesで立ち上げたウェブサイト](https://haltaro.github.io/2017/07/30/first-post)に，[Google Analytics](https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/)でトラッキング機能を導入した．
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="460" src="https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0" frameborder="0" allowfullscreen></iframe>
 
 おー．見えてる見えてる．
 
