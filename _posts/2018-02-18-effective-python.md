@@ -47,7 +47,7 @@ categories:
 
 ## リストを返さずにジェネレータを返すことを考える
 
-これはやってしまいがち．例えば`text`中の単語のインデックスを返す関数は次のように定義できる．
+これはやってしまいがち．例えば`text`中の単語のインデックスを返す関数は次のように定義できる．su
 
 <script src="https://gist.github.com/haltaro/f029b65d87b604c8e3996ab9b5633eb6.js"></script>
 

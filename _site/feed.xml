@@ -5,13 +5,13 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Mar 2018 18:14:57 +0900</pubDate>
-    <lastBuildDate>Sun, 11 Mar 2018 18:14:57 +0900</lastBuildDate>
+    <pubDate>Sat, 14 Apr 2018 11:10:11 +0900</pubDate>
+    <lastBuildDate>Sat, 14 Apr 2018 11:10:11 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
-        <title>Fast.ai，Practical Deep Learning for Coders：1．Dogs and cats</title>
-        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;http://www.fast.ai/&quot;&gt;Fast.ai&lt;/a&gt;のMOOC&lt;a href=&quot;http://course.fast.ai/&quot;&gt;Practical Deep Learning for Coders&lt;/a&gt;の受講を開始した．全7回の講座で，KaggleマスターのJeremy Howardから無料でDeep learningを教えてもらえるらしい．第1回は，犬と猫の分類コンペをベースに，CNNのチューニングについて学ぶ．&lt;/p&gt;
+        <title>Fast.ai，Practical Deep Learning for Coders 2018：1．Dogs and cats</title>
+        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;http://www.fast.ai/&quot;&gt;Fast.ai&lt;/a&gt;のMOOC&lt;a href=&quot;http://course.fast.ai/&quot;&gt;Practical Deep Learning for Coders 2018&lt;/a&gt;の受講を開始した．全7回の講座で，KaggleマスターのJeremy Howardから無料でDeep learningを教えてもらえるらしい．第1回は，犬と猫の分類コンペをベースに，CNNのチューニングについて学ぶ．&lt;/p&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;教材&lt;/h1&gt;
 
@@ -20,7 +20,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://course.fast.ai/lessons/lessons.html&quot;&gt;Video lesson&lt;/a&gt;：全7本．それぞれ2時間以上ある．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/fastai/fastai/tree/master/courses/dl1&quot;&gt;Notebook&lt;/a&gt;：Videoのデモの詳細な説明がある．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://wiki.fast.ai/index.php/Main_Page#Lessons&quot;&gt;Wiki&lt;/a&gt;：Video lectureと若干内容が違う？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forums.fast.ai/t/wiki-lesson-1/9398&quot;&gt;Wiki&lt;/a&gt;：更に詳細な説明がある．&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://forums.fast.ai/&quot;&gt;Forum&lt;/a&gt;：わからないことはここで聞く．&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -33,18 +33,12 @@
 &lt;p&gt;GPUの準備方法として，いくつかのオプションがある：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.crestle.com/&quot;&gt;Crestle&lt;/a&gt;：最も簡単な方法．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.paperspace.com/&quot;&gt;Paperspace&lt;/a&gt;：時間があるならおすすめ．&lt;a href=&quot;https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/paperspace.md&quot;&gt;Paperspace for fast.ai - GitHub&lt;/a&gt;が参考になる．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.crestle.com/&quot;&gt;Crestle&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.paperspace.com/&quot;&gt;Paperspace&lt;/a&gt;：&lt;a href=&quot;https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/paperspace.md&quot;&gt;Paperspace for fast.ai - GitHub&lt;/a&gt;が参考になる．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://aws.amazon.com&quot;&gt;AWS&lt;/a&gt;：&lt;a href=&quot;https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md&quot;&gt;AWS fastami GPU Image Setup&lt;/a&gt;が参考になる．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;できれば会社が支援してくれそうなAWSで環境構築したい．適当にググってみると，古い記事で次のようなものがあった．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://course.fast.ai/lessons/aws.html&quot;&gt;How to set up your AWS deep learning server - Fast.ai&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://qiita.com/poisuke/items/a19dfe7e52d890c8e52b&quot;&gt;fast.aiの最初の最初のAWS設定につまずかないために - Qiita&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ダメ元でトライしてみる．&lt;/p&gt;
+&lt;p&gt;とりあえず，使ったことのあるAWSを選択する．&lt;/p&gt;
 
 &lt;h1 id=&quot;section-1&quot;&gt;参考&lt;/h1&gt;
 
@@ -368,7 +362,7 @@
 
 &lt;h2 id=&quot;section-4&quot;&gt;リストを返さずにジェネレータを返すことを考える&lt;/h2&gt;
 
-&lt;p&gt;これはやってしまいがち．例えば&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;中の単語のインデックスを返す関数は次のように定義できる．&lt;/p&gt;
+&lt;p&gt;これはやってしまいがち．例えば&lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;中の単語のインデックスを返す関数は次のように定義できる．su&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/f029b65d87b604c8e3996ab9b5633eb6.js&quot;&gt;&lt;/script&gt;
 
