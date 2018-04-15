@@ -152,6 +152,152 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2017/10/25/jekyll-drafts">Jekyllで下書き記事管理</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>これまでは下書き記事を（作成中）と注意書きして公開していたが，見栄えが良くないので，Jekyllのdrafts機能で一旦非公開1にすることにした．ただし，途中経過を公開する意味がありそうな，読書メモや受講メモはそのまま残す．
+
+Jekyllのdrafts機能
+
+Jekyll，ドラフトを使うを参考にした．
+
+下書き記事はtitle.md形式2で，ルートディレクトリに作成した_draftsフォルダに保存する．このまま$ jekyll serveすると，_drafts以下の記事を無視してサイトが構築される．
+
+
+
+一方，$ jekyll serve --draftsとすると，_drafts以下の記事も含めてサイトが構築される．ここで，最終更新日が，各ドラフト記事の投稿日として処理されることに注意．
+
+
+
+以下のように記事を整理した．
+
+公開のままにした記事
+
+未完成の読書メモや受講メモは，栞として役に立つ．随時更新と注意書きをつけて公開することにした．
+
+
+  Udacity, Intro to Relational Databases
+  Udacity, Intro to Hadoop and MapReduce
+  コトラー，アームストロング，恩藏のマーケティング原理
+
+
+_draftsに退避した記事
+
+その他の下書き記事は一旦_draftsに対比した．完成し次第，再度公開する予定．
+
+
+  Support vector machineの理論と実装
+  時系列分析技術まとめ
+
+
+感想
+
+Jekyllには，まだまだ理解していない機能がたくさんある．いつかドキュメントをちゃんと読まないと．
+
+お礼とお詫び
+
+Google analyticsでアクセス解析してみると，ごくわずかですが，本ウェブサイトを訪問してくださる方がいるみたいです．感謝です．
+
+今回のように，当方の勝手な都合で記事を削除させていただく場合もございます．何卒ご理解よろしくお願い致します．これに懲りず，たまに覗きに来ていただけると嬉しいです．
+
+  
+    
+      万が一リンクを保存していた方がいたらごめんなさい． &#8617;
+    
+    
+      yyyy-mm-dd-title.md形式で保存すると，エラーが出た． &#8617;
+    
+  
+
+</p>-->
+      <p><p>これまでは下書き記事を<code class="highlighter-rouge">（作成中）</code>と注意書きして公開していたが，見栄えが良くないので，<a href="http://jekyllrb-ja.github.io/docs/drafts/">Jekyllのdrafts機能</a>で一旦非公開<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>にすることにした．ただし，途中経過を公開する意味がありそうな，読書メモや受講メモはそのまま残す．</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>万が一リンクを保存していた方がいたらごめんなさい． <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">October 25, 2017</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/jekyll">Jekyll</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2017/10/22/python-windonws">Windows 7でAnaconda 5.0.0</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>Anacondaとは，Pythonのライブラリパッケージである．普段はUbuntuでコーディングしているが，以前の記事で述べたように，しばらくWindowsで作業する必要が出てきた．そこで，Windows 7にAnaconda 5.0.0環境を構築した．仮想環境のactivateにハマったのでメモしておく．
+
+前提
+
+
+  Windows 7 Professional, Serice Pack 1, 64 bit
+  Anaconda 5.0.0
+  PowerShell 5.0.10586.117
+
+
+手順
+
+1. Anacondaインストール
+
+Anaconda cloudから，Python 3.6対応の64 bit Windows向けインストーラをダウンロード．デフォルト設定でインストール．
+
+2. 環境変数の設定
+
+Qiita，Anaconda4.4.0 最初の設定 for Windowsを参考に，環境変数PathにAnacondaのパスを追加．自分の場合は，C:\Users\haltaro\Anaconda3\Scriptsだった．
+
+3. 設定ファイルの作成
+
+PowerShellから設定ファイルを作成．
+
+&gt; jupyter notebook --generate-config
+
+
+
+4. activate，deactivateパッチ
+
+このままだと，PowerShellから仮想環境をactivateできない．Qiita - PowerShellでAnacondaの仮想環境をactivateするメモを参考に，Liquidmantis - PSCondaEnvsからactivate.ps1とdeactivate.ps1をダウンロードし，activate.batとdeactivate.batがあるフォルダにコピー．自分の場合は，C:\Users\haltaro\Anaconda3\Scriptsだった．
+
+感想
+
+PowerShellは便利だけど，割とハマることが多い．早くLinux届かないかしら．
+</p>-->
+      <p><p><a href="https://anaconda.org/">Anaconda</a>とは，<a href="https://www.python.org/">Python</a>のライブラリパッケージである．普段はUbuntuでコーディングしているが，<a href="https://haltaro.github.io/2017/10/15/jekyll-windows">以前の記事</a>で述べたように，しばらくWindowsで作業する必要が出てきた．そこで，Windows 7に<a href="https://anaconda.org/">Anaconda 5.0.0</a>環境を構築した．仮想環境のactivateにハマったのでメモしておく．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">October 22, 2017</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/python">Python</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2017/10/15/marketing">コトラー，アームストロング，恩藏のマーケティング原理</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -239,56 +385,6 @@
       in 
         
         <a href="/category/marketing">Marketing</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2017/08/13/udacity-hadoop">Udacity, Intro to Hadoop and MapReduce</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>更新中： Udacity, Intro to Hadoop and MapReduceの受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる． 1. Big Data Big Dataとは，一つのマシンでは処理しきれないほど大量のデータである． Big Dataにおける課題は主に以下の２つ： データが高速に生成されること． データが異なるソースから多様なフォーマットで生成されること． データの性質を表現する三つのV： Volume（量）：データを保存するだけではなく，処理することも考える必要がある． Variety（多様性）：非構造データや半構造データが増加しており，従来のデータベースへは保管が難しい．もし非構造データをそのまま保存できれば，後で活用できるかもしれない．Hadoopでは，データフォーマットによらず，そのまま保存できる． Velocity（速度）：処理速度が速ければ速いほど，より多くのビジネスチャンスが生まれる． Hadoopの由来は，製作者の子供のおもちゃ． Hadoopの技術的コアは２つ： HDFS（Hadoop distributed file system）による分散ファイル保存． MapReduceによるデータ処理． Hadoopでは，データの保存及び処理が，クラスタ毎に行われる． Hadoop ecosystem： Pig，Hive：MapReduceのハイレベルインターフェース．SQLチックに使える． Impala：HDFSへの低レベルインターフェース．PigやHiveより高速． Sqoop，Flume：他のデータベース上のデータを，クラスタとして保存できる． HBase：HDFS上のリアルタイムデータベース． Hue：GUI． Oozie：ワークフロー管理ツール． Mahout：機械学習ライブラリ． Cloudera：環境構築ツール．上記のソフトウェアをまとめてインストールできる． 2. HDFS and MapReduce HDFSでは，データを64Mbyteのブロックに分割し，それぞれ別のマシンに保存する． ネームノードは，どのブロックがどのマシンに保存されているかというメタデータを管理する． 冗長性のため，Hadoopはブロックを三回複製する．またネームノードの複製も用意する． hadoop fs -lsなどで，HDFSにアクセスできる．-lsの部分は，UNIXのファイルシステムコマンドを利用可能． ハッシュテーブルは，Big Data適用時に，処理時間とメモリ消費という課題があった．...</p>-->
-      <p><p><i class="fa fa-spinner"></i> <strong>更新中</strong>： <a href="https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617">Udacity, Intro to Hadoop and MapReduce</a>の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">August 13, 2017</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/data science">Data science</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2017/08/10/udacity-rdb">Udacity, Intro to Relational Databases</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>更新中：Udacity, Intro to Relational Databasesの受講メモ．5部構成の無料講座． 1. Data and Tables Databaseは，同時に複数の人が編集可能．これが，普通のファイルと異なる点． Tableは，headerとbodyからなる．headerは，table nameと，column nameと，column typeからなる．bodyは，rowsとcolumnsからなる． 複数の行に跨る演算をaggregationと呼ぶ．SQLで使えるaggregationの代表的なものとして，count，avg，max，min，sumなどがある． codeからdatabaseにqueryを出すと，resultを返される．resultは，原則的にTable形式． Database中でデータの唯一性を担保するために，idを与えることがある．このように識別に用いられるcolumnをprimary keyと呼ぶ． 複数の情報を持つオブジェクトを定義するよりは，複数のTableで管理したほうが効率的． 2. Elements of SQL SQLのtypeとして，text，integer，dateなどがある．textおよびdateは，'2017-08-10'のようにシングルクォートで囲む．主なSQLのtypeは以下． Text and string types text：長さに制限のない文字列．Pythonのstrに相当． char(n)：長さがnの文字列． varchar(n)：長さが最大nの文字列． Numeric types integer：整数型．Pythonのintに相当． real：浮動小数点型．Pythonのfloatに相当．精度は小数第6位． double precision：倍精度小数点．精度は小数第15位． decimal：正確な小数型（？）． Date and time types date：日付型．年，月，日． time：時刻型． timestamp：dateおよびtime． 基本構文：select columns from tables where...</p>-->
-      <p><p><i class="fa fa-spinner"></i> <strong>更新中</strong>：<a href="https://www.udacity.com/course/intro-to-relational-databases--ud197">Udacity, Intro to Relational Databases</a>の受講メモ．5部構成の無料講座．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">August 10, 2017</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/data science">Data science</a>
         
       
       </div>
