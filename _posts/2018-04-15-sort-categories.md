@@ -23,7 +23,7 @@ categories:
 
 # 手順
 
-`./projects.md`の`category`ループを
+`./posts.md`の`category`ループを
 
 <script src="https://gist.github.com/haltaro/f0d3f4848103c64296919acef3b2e228.js"></script>
 
