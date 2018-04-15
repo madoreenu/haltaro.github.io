@@ -5,8 +5,8 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Apr 2018 09:03:42 +0900</pubDate>
-    <lastBuildDate>Sun, 15 Apr 2018 09:03:42 +0900</lastBuildDate>
+    <pubDate>Sun, 15 Apr 2018 12:44:41 +0900</pubDate>
+    <lastBuildDate>Sun, 15 Apr 2018 12:44:41 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -95,6 +95,8 @@
 &lt;p&gt;そしてこちらが修正後．
 &lt;img src=&quot;/assets/2018-04-15-after.png&quot; alt=&quot;after&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;アルファベット順になった．&lt;/p&gt;
+
 &lt;h1 id=&quot;section&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
@@ -103,9 +105,17 @@
 
 &lt;h1 id=&quot;section-1&quot;&gt;手順&lt;/h1&gt;
 
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./projects.md&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;category&lt;/code&gt;ループを&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/f0d3f4848103c64296919acef3b2e228.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;以下のように修正した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/260563d870c5663bd2dae1179aabcac2.js&quot;&gt;&lt;/script&gt;
+
 &lt;h1 id=&quot;section-2&quot;&gt;感想&lt;/h1&gt;
 
-&lt;p&gt;そろそろ真面目にRuby勉強するべきかもしれない．&lt;/p&gt;
+&lt;p&gt;そろそろ真面目にRubyを勉強するべきかもしれない．&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Apr 2018 00:00:00 +0900</pubDate>
         <link>https://haltaro.github.io/2018/04/15/sort-categories</link>
