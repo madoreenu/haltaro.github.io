@@ -5,8 +5,8 @@
     <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 28 Apr 2018 19:03:20 +0900</pubDate>
-    <lastBuildDate>Sat, 28 Apr 2018 19:03:20 +0900</lastBuildDate>
+    <pubDate>Mon, 30 Apr 2018 23:39:19 +0900</pubDate>
+    <lastBuildDate>Mon, 30 Apr 2018 23:39:19 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -82,6 +82,47 @@
         
         
         <category>statistics</category>
+        
+      </item>
+    
+      <item>
+        <title>JekyllのCategories一覧をアルファベット順にする</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/posts/&quot;&gt;Posts&lt;/a&gt;ページのCategoriesが出現順で使いづらかったので，アルファベット順になるようコードをを修正した．&lt;/p&gt;
+
+&lt;p&gt;こちらは修正前．
+&lt;img src=&quot;/assets/2018-04-15-before.png&quot; alt=&quot;before&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そしてこちらが修正後．
+&lt;img src=&quot;/assets/2018-04-15-after.png&quot; alt=&quot;after&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;アルファベット順になった．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/Phlow/57eb457898e4ac4c4a20&quot;&gt;Phlow/jekyll-sorted-category-for-loop-alphabetical-date.liquid - Gist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;手順&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./posts.md&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;category&lt;/code&gt;ループを&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/f0d3f4848103c64296919acef3b2e228.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;以下のように修正した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/260563d870c5663bd2dae1179aabcac2.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;そろそろ真面目にRubyを勉強するべきかもしれない．&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Apr 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/04/15/sort-categories</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/04/15/sort-categories</guid>
+        
+        
+        <category>jekyll</category>
         
       </item>
     
@@ -727,177 +768,6 @@
         
         
         <category>marketing</category>
-        
-      </item>
-    
-      <item>
-        <title>Jekyll themeをCentrariumに変更する</title>
-        <description>&lt;p&gt;3連休を利用して，本サイトの&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt;を&lt;a href=&quot;https://github.com/laobubu/jekyll-theme-EasyBook&quot;&gt;EasyBook&lt;/a&gt;から&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;に変更した．意識高めのアフィブログみたいになってしまったが，個人的には気に入っている．特にロゴがかわいい．&lt;/p&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
-
-&lt;p&gt;以下の記事で構築した環境を想定する．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/07/30/first-post&quot;&gt;JekyllとGitHub Pagesでウェブサイト自作 - Memotaro&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/08/04/set-google-analytics&quot;&gt;JekyllでGoogle Analytics - Memotaro&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/10/15/jekyll-windows&quot;&gt;Windows7でJekyll+GitHub Pages - Memotaro&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haltaro.github.io/2017/10/25/jekyll-drafts&quot;&gt;Jekyllで下書き記事管理 - Memotaro&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;つまり：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ruby-lang.org/ja/&quot;&gt;Ruby&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bundler.io/&quot;&gt;Bundler&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;：インストールについては&lt;a href=&quot;https://haltaro.github.io/2017/07/30/first-post&quot;&gt;JekyllとGitHub Pagesでウェブサイト自作 - Memotaro&lt;/a&gt;を参照されたい．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;haltaro.github.io&lt;/code&gt;レポジトリを作成済み．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.google.com/intl/ja_jp/analytics&quot;&gt;Google Analytics&lt;/a&gt;：トラッキングコードを取得済み．詳細は&lt;a href=&quot;https://haltaro.github.io/2017/08/04/set-google-analytics&quot;&gt;JekyllでGoogle Analytics - Memotaro&lt;/a&gt;を参照されたい．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/botui/botui&quot;&gt;BotUI&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.min.css&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;botui-theme-default.css&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.min.css&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.min.js&lt;/code&gt;をダウンロードし，&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.min.css&lt;/code&gt;を修正済み．詳細は&lt;a href=&quot;https://haltaro.github.io/2018/02/04/chatbot&quot;&gt;チャットボットを作ろう：3．CSS修正 - Memotaro&lt;/a&gt;を参照されたい．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;手順&lt;/h1&gt;
-
-&lt;h2 id=&quot;centrariumhttpsgithubcombencentracentrarium&quot;&gt;&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;をダウンロード&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;レポジトリ&lt;/a&gt;から任意のディレクトリにダウンロードする．&lt;/p&gt;
-
-&lt;h2 id=&quot;bundler&quot;&gt;Bundlerで環境構築&lt;/h2&gt;
-
-&lt;p&gt;以下のコマンドで環境を整える．エラーが出た場合はその都度対処する．&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;centrarium
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundle install&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;configyml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の設定変更&lt;/h2&gt;
-
-&lt;p&gt;個人設定（&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;subtitle&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;url&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;cover&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;logo&lt;/code&gt;）を変更する．本ウェブサイトは&lt;code class=&quot;highlighter-rouge&quot;&gt;https://haltaro.github.io&lt;/code&gt;直下に展開されるため，&lt;code class=&quot;highlighter-rouge&quot;&gt;baseurl&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;&quot;&lt;/code&gt;に変更する．また，これまでと一貫したURL構成にするため，&lt;code class=&quot;highlighter-rouge&quot;&gt;permalink: &quot;/:year/:month/:day/:title&quot;&lt;/code&gt;を追記する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/1029f646107109a94fb4c43ee2f146b2.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;highlightjs_theme&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;zenburn&lt;/code&gt;に変更する．テーマの詳細は&lt;a href=&quot;https://highlightjs.org/static/demo/&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/b958eb3bd1c7516158c41da09648e2bf.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;descriptions&lt;/code&gt;に，各カテゴリの説明文を追加することもできる&lt;sup id=&quot;fnref:desc&quot;&gt;&lt;a href=&quot;#fn:desc&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;social&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiita&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaggle&lt;/code&gt;を設定．&lt;code class=&quot;highlighter-rouge&quot;&gt;icon&lt;/code&gt;では&lt;a href=&quot;https://fontawesome.com/icons?d=gallery&quot;&gt;Font awesomeのicon&lt;/a&gt;を指定できる．残念ながらQiitaとKaggleは無かったため，それっぽいもので代用する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/d456ac11f4f1cb2f88a52b2b9fef32cb.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;posts&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_posts/&lt;/code&gt;に記事を移動&lt;/h2&gt;
-
-&lt;p&gt;これまで作成した全ての記事を&lt;code class=&quot;highlighter-rouge&quot;&gt;_posts/&lt;/code&gt;に保存する．&lt;/p&gt;
-
-&lt;h2 id=&quot;assets&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;assets&lt;/code&gt;に画像を移動&lt;/h2&gt;
-
-&lt;p&gt;これまでは&lt;code class=&quot;highlighter-rouge&quot;&gt;images/&lt;/code&gt;に配置していた画像を，&lt;code class=&quot;highlighter-rouge&quot;&gt;assets/&lt;/code&gt;に保存する．これに伴い，全記事中の画像参照を，&lt;code class=&quot;highlighter-rouge&quot;&gt;/images/*&lt;/code&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;/assets/*&lt;/code&gt;に変更する．また，&lt;code class=&quot;highlighter-rouge&quot;&gt;cover_image.jpg&lt;/code&gt;として，自分で撮影したこちらを利用する．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/cover_image.jpg&quot; alt=&quot;cover&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;サイト左上に表示されるロゴとして，&lt;a href=&quot;http://icooon-mono.com/&quot;&gt;ICOON MONO&lt;/a&gt;から柴犬感のあるものをダウンロードして，&lt;code class=&quot;highlighter-rouge&quot;&gt;logo.png&lt;/code&gt;として保存する．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/logo_small.png&quot; alt=&quot;logo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;オリジナルでは，解像度に合わせて複数の&lt;code class=&quot;highlighter-rouge&quot;&gt;icon&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;favicon&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;apple-touch-icon&lt;/code&gt;を用意しているが，面倒なので&lt;code class=&quot;highlighter-rouge&quot;&gt;logo.png&lt;/code&gt;を使いまわす．&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;を次のように修正する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/b9faabdc247ff1af3b57702f3a14bba3.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;about&lt;/code&gt;のプロフィール画像&lt;code class=&quot;highlighter-rouge&quot;&gt;profile.jpg&lt;/code&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;を保存する．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/profile.jpg&quot; alt=&quot;cover&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;各記事のヘッダー画像として，&lt;a href=&quot;https://pixabay.com/ja/&quot;&gt;Pixabay&lt;/a&gt;から意識高めの写真をダウンロードして保存する&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;．フロントマタ―で，&lt;code class=&quot;highlighter-rouge&quot;&gt;cover: &quot;assets/*.jpg&quot;&lt;/code&gt;のように指定できる．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2017-11-18-vis.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;section-2&quot;&gt;フォントサイズを調整&lt;/h2&gt;
-
-&lt;p&gt;本ウェブサイトでは，書籍名など，タイトルが長くなる場合がある．デフォルトのフォントサイズだと，モバイル表示で非常に見づらいため，&lt;code class=&quot;highlighter-rouge&quot;&gt;_sass/_layout.scss&lt;/code&gt;を変更する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/b5c37a771f8b2fb64f1c5217bccb7cec.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;見出しのフォントも大きい気がするので，&lt;code class=&quot;highlighter-rouge&quot;&gt;_sass/base/_typography.scss&lt;/code&gt;を変更する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/8b0eb9a74a1aebf9aaf8bcf640670cf5.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;layoutsposthtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt;を変更&lt;/h2&gt;
-
-&lt;p&gt;どうせ自分しか書かないので，著者表示をコメントアウトする．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/ee88390b901c5aabc58e48abea6062b3.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;SNS共有もコメントアウトする．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/a7c0169e575a970ded4bc5ed5da35fe3.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;mathjax&quot;&gt;MathJaxを導入&lt;/h2&gt;
-
-&lt;p&gt;記事中に数式を表示するため，&lt;a href=&quot;https://www.mathjax.org/&quot;&gt;MathJax&lt;/a&gt;を導入する．&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;を追記する．&lt;/p&gt;
-
-&lt;h2 id=&quot;indexhtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;のサマリ表示を変更&lt;/h2&gt;
-
-&lt;p&gt;日本語で記事を書くと，&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;のサマリ部分に全文表示されてしまう．おそらく&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;ul class=&quot;post-list&quot;&amp;gt;&lt;/code&gt;部分の&lt;code class=&quot;highlighter-rouge&quot;&gt;truncatewords: 50&lt;/code&gt;が&lt;a href=&quot;https://github.com/Shopify/liquid/issues/166&quot;&gt;英語以外で動作しない&lt;/a&gt;せいだと考えられる．無難に&lt;code class=&quot;highlighter-rouge&quot;&gt;post.excerpt&lt;/code&gt;で一行目だけ抽出する設定に変更する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/5918a210a41127356a2a71abba316fe9.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;projects&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Projects&lt;/code&gt;ページを追加&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/07/30/first-post&quot;&gt;JekyllとGitHub Pagesでウェブサイト自作 - Memotaro&lt;/a&gt;と同様，自分の成果をまとめた&lt;code class=&quot;highlighter-rouge&quot;&gt;Projects&lt;/code&gt;ページを作成したい．以下のフロントマターを持つ&lt;code class=&quot;highlighter-rouge&quot;&gt;projects.md&lt;/code&gt;を配置するだけでOK．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/d5b09a3e5648ad6e8bb8d91ebc46af13.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;google-analytics&quot;&gt;Google analyticsを導入&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2017/08/04/set-google-analytics&quot;&gt;JekyllでGoogle Analytics - Memotaro&lt;/a&gt;で作成した&lt;code class=&quot;highlighter-rouge&quot;&gt;analytics.html&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/&lt;/code&gt;に格納する．なお，&lt;code class=&quot;highlighter-rouge&quot;&gt;'UA-*********-*'&lt;/code&gt;は各自取得したトラッキングコード．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/45500c3c134f5c48b549408b02c312c3.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt;に以下を追記．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/c9d454635b5304cdb2163c5f38490f3b.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll.environment == 'production'&lt;/code&gt;は，ローカル環境での動作テスト（&lt;code class=&quot;highlighter-rouge&quot;&gt;$ bundle exec jekyll serve&lt;/code&gt;）をトラッキング対象から除外するためのもの．&lt;/p&gt;
-
-&lt;h2 id=&quot;aboutbotui&quot;&gt;AboutにBotUIを導入&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2018/02/04/chatbot&quot;&gt;チャットボットを作ろう：3．CSS修正 - Memotaro&lt;/a&gt;で用意した&lt;code class=&quot;highlighter-rouge&quot;&gt;botui.min.css&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;botui-theme-default.css&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;css/&lt;/code&gt;に保存する．同様に，&lt;code class=&quot;highlighter-rouge&quot;&gt;bot.js&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;bot.min.js&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;js/&lt;/code&gt;に保存する．&lt;/p&gt;
-
-&lt;p&gt;以下の&lt;code class=&quot;highlighter-rouge&quot;&gt;bot.html&lt;/code&gt;を作成し，&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/&lt;/code&gt;に保存する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/e7ea6215b2518f94df935e055de54b77.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;about.md&lt;/code&gt;のフロントマターの&lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;bot&lt;/code&gt;に変更する．&lt;/p&gt;
-
-&lt;h2 id=&quot;section-3&quot;&gt;ローカルテスト&lt;/h2&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;ブラウザで&lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:4000&lt;/code&gt;にアクセスして動作を確認する．&lt;/p&gt;
-
-&lt;h1 id=&quot;section-4&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;思っていたより時間はかからなかった．実は&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Jekyll-archivesがまともに動作していない&lt;/a&gt;し，&lt;code class=&quot;highlighter-rouge&quot;&gt;highlight.js&lt;/code&gt;がうまく動作していないので，追って修正しようと思う．&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:desc&quot;&gt;
-      &lt;p&gt;キリがないのでやめた． &lt;a href=&quot;#fnref:desc&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;キュート． &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;ヘッダー画像がつくと，一気に胡散臭くなる不思議． &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sun, 11 Feb 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/02/11/theme-change</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/02/11/theme-change</guid>
-        
-        
-        <category>jekyll</category>
         
       </item>
     
