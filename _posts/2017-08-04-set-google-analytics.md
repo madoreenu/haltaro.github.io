@@ -9,6 +9,8 @@ categories:
 
 [JekyllとGitHub Pagesで立ち上げたウェブサイト](https://haltaro.github.io/2017/07/30/first-post)に，[Google Analytics](https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/)でトラッキング機能を導入した．
 
+> **2018/02/11追記**：このあと，本サイトの[Jekyll theme](http://jekyllthemes.org/)を[EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)から[Centrarium](https://github.com/bencentra/centrarium)に変更した．詳細は[Jekyll themeをCentrariumに変更する - Memotaro](https://haltaro.github.io/2018/02/11/theme-change)を参照されたい．
+
 <iframe width="100%" height="460" src="https://www.youtube.com/embed/sXyS1Dd0ULM?rel=0" frameborder="0" allowfullscreen></iframe>
 
 おー．見えてる見えてる．

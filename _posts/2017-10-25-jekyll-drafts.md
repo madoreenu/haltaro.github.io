@@ -9,6 +9,8 @@ categories:
 
 これまでは下書き記事を`（作成中）`と注意書きして公開していたが，見栄えが良くないので，[Jekyllのdrafts機能](http://jekyllrb-ja.github.io/docs/drafts/)で一旦非公開[^1]にすることにした．ただし，途中経過を公開する意味がありそうな，読書メモや受講メモはそのまま残す．
 
+> **2018/02/11追記**：このあと，本サイトの[Jekyll theme](http://jekyllthemes.org/)を[EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)から[Centrarium](https://github.com/bencentra/centrarium)に変更した．詳細は[Jekyll themeをCentrariumに変更する - Memotaro](https://haltaro.github.io/2018/02/11/theme-change)を参照されたい．
+
 [^1]: 万が一リンクを保存していた方がいたらごめんなさい．
 
 # Jekyllのdrafts機能

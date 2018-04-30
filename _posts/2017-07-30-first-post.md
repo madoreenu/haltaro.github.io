@@ -10,6 +10,8 @@ categories:
 
 それなりに技術的なメモが溜まってきたが，[Qiita](http://qiita.com/)に投稿するほどではない．これまでは[evernote](https://evernote.com/intl/jp/)で管理していたが，数式やソースコードを書きづらい．[はてなブログ](http://hatenablog.com/)等で[Markdown](https://ja.wikipedia.org/wiki/Markdown)を書いても良いが，手元にコンテンツが残らないのが嫌だし，`haltaro`ドメインが取れなかった．そこで，[Jekyll](https://jekyllrb-ja.github.io/)と[GitHub Pages](https://pages.github.com/)で，ウェブサイトを立ち上げた．
 
+> **2018/02/11追記**：このあと，本サイトの[Jekyll theme](http://jekyllthemes.org/)を[EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)から[Centrarium](https://github.com/bencentra/centrarium)に変更した．詳細は[Jekyll themeをCentrariumに変更する - Memotaro](https://haltaro.github.io/2018/02/11/theme-change)を参照されたい．
+
 # 参考
 
 `jekyll github pages`等でググると素晴らしい記事がたくさん出てきた．今回は，特に，以下を参考にした．
