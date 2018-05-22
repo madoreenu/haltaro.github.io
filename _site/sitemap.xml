@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://haltaro.github.io/2018/04/24/dmm-english</loc>
+<lastmod>2018-04-24T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>https://haltaro.github.io/2018/04/15/statistics-book-1</loc>
 <lastmod>2018-04-15T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://haltaro.github.io/2018/04/15/sort-categories</loc>
 <lastmod>2018-04-15T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://haltaro.github.io/2018/03/29/dmm-english</loc>
+<lastmod>2018-03-29T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://haltaro.github.io/2018/03/11/fastai-01-01</loc>

@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Jupyter notebookのフォントを変更する</title>
-  <meta name="description" content="Jupyter notebookのコードブロックを等幅フォントにしたい．Jupyterthemeを使っても良いが，拡張機能のボタンが消えてしまうことがあり不便．~/.jupyter/custom/custom.cssをいじって変更した．">
+  <title>Memotaro</title>
+  <meta name="description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,12 +51,12 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="Jupyter notebookのコードブロックを等幅フォントにしたい．Jupyterthemeを使っても良いが，拡張機能のボタンが消えてしまうことがあり不便．~/.jupyter/custom/custom.cssをいじって変更した．" />
+  <meta property="og:description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)" />
   <meta property="og:url" content="https://haltaro.github.io" />
   <meta property="og:site_name" content="Memotaro" />
-  <meta property="og:title" content="Jupyter notebookのフォントを変更する" />
+  <meta property="og:title" content="Memotaro" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://haltaro.github.io/assets/2018-03-05-cover.jpg" />
+  <meta property="og:image" content="https://haltaro.github.io/assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -65,9 +65,9 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Jupyter notebookのフォントを変更する">
-  <meta name="twitter:description" content="Jupyter notebookのコードブロックを等幅フォントにしたい．Jupyterthemeを使っても良いが，拡張機能のボタンが消えてしまうことがあり不便．~/.jupyter/custom/custom.cssをいじって変更した．">
-  <meta name="twitter:image" content="https://haltaro.github.io/assets/2018-03-05-cover.jpg">
+  <meta name="twitter:title" content="Memotaro">
+  <meta name="twitter:description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)">
+  <meta name="twitter:image" content="https://haltaro.github.io/assets/logo.png">
   <meta name="twitter:url" content="https://haltaro.github.io">
   
 
@@ -75,7 +75,7 @@
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://haltaro.github.io/2018/03/05/jupyter-font">
+  <link rel="canonical" href="https://haltaro.github.io/page10/">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="https://haltaro.github.io/feed.xml" />
 </head>
 
@@ -138,92 +138,66 @@
 
 
     <div class="page-content">
-        <div class="post">
+        <div class="home">
 
-<div class="post-header-container has-cover" style="background-image: url(/assets/2018-03-05-cover.jpg);">
+<div class="site-header-container has-cover" style="background-image: url(/assets/cover_image.jpg);">
   <div class="scrim has-cover">
-    <header class="post-header">
-      <h1 class="title">Jupyter notebookのフォントを変更する</h1>
-      <!--<p class="info">by <strong></strong></p>-->
+    <header class="site-header">
+      <h1 class="title">Memotaro</h1>
+      <p class="subtitle">Haltaro's technical memorandum</p>
     </header>
   </div>
 </div>
 
 <div class="wrapper">
-
-
-
-<section class="post-meta">
-  <div class="post-date">March 5, 2018</div>
-  <div class="post-categories">
-  in 
-    
-    <a href="/category/python">Python</a>
-    
+<ul class="post-list">
   
-  </div>
-</section>
+  <li>
+    <h2>
+      <a class="post-link" href="/2017/07/30/first-post">JekyllとGitHub Pagesでウェブサイト自作</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>それなりに技術的なメモが溜まってきたが，Qiitaに投稿するほどではない．これまではevernoteで管理していたが，数式やソースコードを書きづらい．はてなブログ等でMarkdownを書いても良いが，手元にコンテンツが残らないのが嫌だし，haltaroドメインが取れなかった．そこで，JekyllとGitHub Pagesで，ウェブサイトを立ち上げた． 2018/02/11追記：このあと，本サイトのJekyll themeをEasyBookからCentrariumに変更した．詳細はJekyll themeをCentrariumに変更する - Memotaroを参照されたい． 参考 jekyll github pages等でググると素晴らしい記事がたくさん出てきた．今回は，特に，以下を参考にした． Jekyll：公式ドキュメント． DigitalOcean，How to Set Up a Jekyll Development Site on Ubuntu 16.04：Ubuntu 16.04を使ってJekyllでウェブサイトを立ち上げる全般について． unitopi，もう迷わない、「@font-familyはこれでOK！」を色々考えてみた。：*-font-familyの設定について． FukkaFuka TRADING POST，HTMLやCSSのソースコードをそのままページに貼り付ける方法：Gistを使ってソースコードをページに埋め込む方法について． joism，アバター画像を設定！Gravatar(グラバター)の登録方法と使い方：Gravatarの登録方法について． Jekyll，パーマリンク：パーマリンクの設定方法について． SKKTM Lab Blog，Nestaでkramdownを使って数式を表示してみる：MathJaxの設定について． gitやGitHubの使い方は，もともと知っていたので割愛． 手順 なお，Ubuntu 16.04を想定する． 1. GitHubアカウント取得 GitHubに登録し，アカウントを取得．もともと持ってた． 2. haltaro.github.ioレポジトリ作成 &lt;アカウント名&gt;.github.ioレポジトリを作成．これも，もともと持ってた． 3. Jekyllインストール How to Set Up a...</p>-->
+      <p><p>それなりに技術的なメモが溜まってきたが，<a href="http://qiita.com/">Qiita</a>に投稿するほどではない．これまでは<a href="https://evernote.com/intl/jp/">evernote</a>で管理していたが，数式やソースコードを書きづらい．<a href="http://hatenablog.com/">はてなブログ</a>等で<a href="https://ja.wikipedia.org/wiki/Markdown">Markdown</a>を書いても良いが，手元にコンテンツが残らないのが嫌だし，<code class="highlighter-rouge">haltaro</code>ドメインが取れなかった．そこで，<a href="https://jekyllrb-ja.github.io/">Jekyll</a>と<a href="https://pages.github.com/">GitHub Pages</a>で，ウェブサイトを立ち上げた．</p>
 
-<article class="post-content">
-  <p><a href="http://jupyter.org/">Jupyter notebook</a>のコードブロックを等幅フォントにしたい．<a href="https://github.com/dunovank/jupyter-themes">Jupytertheme</a>を使っても良いが，拡張機能のボタンが消えてしまうことがあり不便．<code class="highlighter-rouge">~/.jupyter/custom/custom.css</code>をいじって変更した．</p>
-
-<h1 id="section">参考</h1>
-<ul>
-  <li><a href="http://shu87.hateblo.jp/entry/2017/08/30/003224">Jupyter notebookを等幅フォントにする - 元文学部統計学専攻学生の備忘録</a></li>
-  <li><a href="https://qiita.com/hiropignis/items/f2192d86971746b849e8">Jupyter Notebookを自分仕様に：背景，アイコンの変更 - Qiita</a></li>
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">July 30, 2017</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/jekyll">Jekyll</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  
 </ul>
 
-<h1 id="section-1">手順</h1>
-
-<p><code class="highlighter-rouge">~/.jupyter/custom/custom.css</code>に，<code class="highlighter-rouge">.CodeMirror pre, .output pre { font-family: Monaco, monospace; }</code>を追記して，Jupyterを再起動する．</p>
-
-</article>
-
-
-
-
-
-<section class="rss">
-  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
-</section>
-
-<!--
-<section class="share">
-  <span>Share: </span>
-  
+<nav class="pagination" role="navigation">
+	<p>
     
-    
-    
-    
-    
-    
-    
-    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-  
-</section>
--->
-
-
-
-
+			
+			<a class="newer-posts" href="/page9">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-square fa-stack-2x"></i>
+					<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+			
+		
+		<span class="page-number">Page 10 of 10</span>
+		
+		<span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+    </span>
+		
+	</p>
+</nav>
 
 </div>
 </div>

@@ -129,6 +129,8 @@
         
           
         
+          
+        
       </ul>
     </nav>
   </div>
@@ -149,6 +151,67 @@
 
 <div class="wrapper">
 <ul class="post-list">
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/03/05/jupyter-font">Jupyter notebookのフォントを変更する</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>Jupyter notebookのコードブロックを等幅フォントにしたい．Jupyterthemeを使っても良いが，拡張機能のボタンが消えてしまうことがあり不便．~/.jupyter/custom/custom.cssをいじって変更した．
+
+参考
+
+  Jupyter notebookを等幅フォントにする - 元文学部統計学専攻学生の備忘録
+  Jupyter Notebookを自分仕様に：背景，アイコンの変更 - Qiita
+
+
+手順
+
+~/.jupyter/custom/custom.cssに，.CodeMirror pre, .output pre { font-family: Monaco, monospace; }を追記して，Jupyterを再起動する．
+</p>-->
+      <p><p><a href="http://jupyter.org/">Jupyter notebook</a>のコードブロックを等幅フォントにしたい．<a href="https://github.com/dunovank/jupyter-themes">Jupytertheme</a>を使っても良いが，拡張機能のボタンが消えてしまうことがあり不便．<code class="highlighter-rouge">~/.jupyter/custom/custom.css</code>をいじって変更した．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">March 5, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/python">Python</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/03/03/kaggle-wikipedia-1st">Kaggle，Web Traffic Time Series Forecasting，1st place solution</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>Kaggle，Web Traffic Time Series Forecastingの1st place solutionのメモ．Wikipediaのpageviewを予測するコンテスト．解法のポイントは，一年前と四半期前の値を特徴量として追加し，RNN seq2seqを使うこと． 概要 TL;DR 予測には２つの情報を用いた： ローカルな特徴量．自己相関モデル，移動平均モデル，季節性モデルなど． グローバルな特徴量．年周期，四半期周期のトレンド． RNN seq2seqを利用した理由は： RNNはARIMAの自然な拡張と考えられるし，柔軟で表現力が高い． RNNはノンパラメトリック． RNNはどんな特徴量も簡単に扱える． seq2seqはこのタスクに適していると考えた．直前の時系列の予測値を入力として使うため，誤差が蓄積されやすいため，結果として極端な予測は避けるようになる1． Deep learningは流行っている． Feature engineering 利用した特徴量は： pageviews：log1p()で変換したビュー数． agent，country，site：ページのURLから抽出． year-to-year autocorrelation，quarter-to-quarter autocorrelation：年周期や四半期周期のトレンドを捉えるため． page popularity：人気のページとそうでないものは，動きが異なるため． lagged pageviews：365日前と90日前のpageview． Feature preprocessing One-hot encodingしたカテゴリカル変数を含む，全ての特徴量をそれぞれ独立に正規化した．時不変な特徴量（countryなど）を時系列データ長にtf.tile()で変換した． 学習用データは，固定長でランダムに抽出した． Model core EncoderとしてcuDNN GRUを使った．cuDNN GRUはドキュメントが貧弱だが，通常のTensorFlowのRNNCellsより5倍から10倍ほど高速だ． DecoderとしてGRUBlockCellをtf.while_loop()でラップして使った．ループの中で，直前の時系列の予測結果を次のセルに入力する． Working with long timeseries LSTM/GRUはせいぜい100から300アイテム前の情報しか保持できないため，700日分のpageviewを使用する今回のタスクには，直接利用できない． 最初はattention的な考え方で，一年前と四半期前のEncoderの出力をDecoderの入力に使うことを考えた．しかし，処理が重い割に性能が出なかった．...</p>-->
+      <p><p><a href="https://www.kaggle.com/c/web-traffic-time-series-forecasting">Kaggle，Web Traffic Time Series Forecasting</a>の<a href="https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795">1st place solution</a>のメモ．Wikipediaのpageviewを予測するコンテスト．解法のポイントは，一年前と四半期前の値を特徴量として追加し，RNN seq2seqを使うこと．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">March 3, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/deep learning">Deep learning</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
   
   <li>
     <h2>
@@ -301,56 +364,6 @@ Token descriptionに，用途がわかるような名前をつける．Select sc
     </section>
   </li>
   
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/02/17/fish">Ubuntu 16.04にFish環境を構築する</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>Fish（Frendly Interactive SHell）とは，シェルの一種．デフォルトのタブ保管が便利なので，Macでは重宝している．ローカルのUbuntuデスクトップでも使いたくなり，環境を構築することにした． Fish本体に加え，パッケージ管理ツールのFisherman，FishテーマBobthefish，およびPowerlineフォントを導入した．また，ターミナルエミュレータTerminatorのフォントをPowerline系に変更した．慣れてきたら，FishをデフォルトShellに設定しようと思う． 環境 Ubuntu 16.04 Terminator：1.9.1 手順 Fishインストール 自宅のubuntu-16.04マシンのシェルをfishに変更した - takapi86のブログを参考にした．ppaを追加しないと，最新版のFishをインストールできず，後述するBobthefishのインストールでハマるので注意． Fishermanインストール fisherman/fisherman - GitHubを参考にした． Bobthefishインストール fish shell を使いたい人生だった - Developers.IOを参考にした． Powerlineインストール powerline/fonts - GitHubを参考にした． Terminatorのフォント変更 ターミナルエミュレータ “Terminator” の背景を半透明にする - ablogを参考にした． Terminatorのウインドウ上で右クリックして，Preferenceを選択する． Profiles &gt; Fontで任意のフォントを選択する． 結果 こんな感じになった． 感想 想定よりずっと簡単に導入できた．唯一の不満は，FishはBashと文法が違うこと．デフォルトシェルにするためには，設定ファイル.bashrcを翻訳する必要がある…．いつかやる． 参考 自宅のubuntu-16.04マシンのシェルをfishに変更した - takapi86のブログ fisherman/fisherman - GitHub oh-my-fish/theme-bobthefish -...</p>-->
-      <p><p><a href="https://fishshell.com/">Fish</a>（Frendly Interactive SHell）とは，シェルの一種．デフォルトのタブ保管が便利なので，Macでは重宝している．ローカルのUbuntuデスクトップでも使いたくなり，環境を構築することにした．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">February 17, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/shell">Shell</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/02/17/data-driven">マーク・ジェフリー，データ・ドリブン・マーケティング</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>マーク・ジェフリー，データ・ドリブン・マーケティング - 最低限知っておくべき15の指標を読んだ．どうやら原著は2010年1月に発刊されたらしく，古さを感じる部分があるが，勉強のとっかかりとして基本を押さえるには良いと思った． 概要 かつて，マーケティング施策は定量評価が難しいという風潮があったため，行動に対して評価されることが多かった．そこで本書では，マーケティング施策を定量的に評価するための15の指標と，これらを用いた施策管理方法を紹介する． 1. マーケティング格差 フォーチュン100社に含まれる大企業の中でさえ，マーケティング格差が存在する（2010年当時）． 2. 何から始めるべきか？ データ・ドリブン・マーケティングの障壁として，次の5点がある： 何から手を付ければいいかわからない：まずは小さくはじめて，成功事例を積み上げること． 因果関係がわかならい：適切な指標を使うこと．また，対照実験を行うこと． データが足りない：B2B企業は，代理店にデータ共有のメリットを示すこと． 経営資源やツールが足りない：頑張って絞り出すこと． 組織や人に問題がある：小さく仲間づくりを始めること．可能であれば，役員も巻き込むこと． データ・ドリブン・マーケティングを実践するロードマップ： 設計：関係者が理解しやすい明解な実行計画． 診断：事実把握および洞察． 機会：マーケティング機会の特定とアクションプラン． ツール：定期的なレビューを行う組織体制の構築． プロセス：定期的なレビューに基づく意思決定． 3. 10の伝統的なマーケティング指標 ブランド認知率：商品やサービスの想起で計測する．大規模調査をする予算がない場合は，カスタムURLなどを用いてリーチを計測する． 試乗（お試し）：比較検討・評価段階の指標．試乗など，購入前の商品のお試し使用で評価する． 解約（離反）率：ロイヤルティ指標．解約率や離反率．年単位で計算されることが多い． 顧客満足度：CSAT（Customer Satisfaction）．マーケティングの黄金指標．「友人にこの商品を勧めますか」というアンケートで計測される． オファー応諾率：マーケティング施策の運用効率を表す指標． 利益：売上高 - 費用． 正味現在価値：NPV（Net Present Value）．複利割引した将来的な利益の総和．NPVが正になる施策は実行する価値がある． 内部収益率：IRR（Internal Rate of Return）．NVPが正になるための，利益の割引率． 投資回収期間：売上高が費用を上回るまでにかかる期間． 顧客価値指標：CLTV（Customer Lifetime Value）．当該顧客の将来的な価値を複利割引して総和したもの．CLTVが高い顧客は優良顧客である． 4. 5つの重要な非財務系指標 ブランド認知率，試乗（お試し），解約（離反）率，顧客満足度，オファー応諾率を詳説する． 3年間の離反率を1年間の離反率に換算するとき，単純に3で割っていいんだっけ？三乗根とかじゃないの？ ​優れたロイヤルティマーケティングとは，企業の経済的負担が少なく，かつ顧客への価値提供が大きい施策． ​...</p>-->
-      <p><p><a href="http://amzn.asia/6WKHTCO">マーク・ジェフリー，データ・ドリブン・マーケティング - 最低限知っておくべき15の指標</a>を読んだ．<a href="http://marketing-base.jp/books/6204">どうやら原著は2010年1月に発刊されたらしく</a>，古さを感じる部分があるが，勉強のとっかかりとして基本を押さえるには良いと思った．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">February 17, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/marketing">Marketing</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
   
 </ul>
 
@@ -366,7 +379,7 @@ Token descriptionに，用途がわかるような名前をつける．Select sc
       </a>
 			
 		
-		<span class="page-number">Page 2 of 9</span>
+		<span class="page-number">Page 2 of 10</span>
 		
 		<a class="newer-posts" href="/page3">
       <span class="fa-stack fa-lg">
@@ -410,6 +423,8 @@ Token descriptionに，用途がわかるような名前をつける．Select sc
         
         
           <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
         
         
         
