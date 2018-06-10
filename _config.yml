@@ -15,7 +15,7 @@ email: mail.to.haltaro[at]gmail.com
 name: haltaro
 description:
   I'm haltaro, a data scientist from Tokyo, Japan.
-  I love machine learning, marketing science, 
+  I love machine learning, marketing science,
   network engineering and shiba-inu:)
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
@@ -46,7 +46,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Disqus comments
-# disqus_shortname: bencentra
+disqus_shortname: memotaro-haltaro
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
