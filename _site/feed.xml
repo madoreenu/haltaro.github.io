@@ -5,8 +5,8 @@
     <description>I'm haltaro, a data scientist from Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 10 Jun 2018 12:38:28 +0900</pubDate>
-    <lastBuildDate>Sun, 10 Jun 2018 12:38:28 +0900</lastBuildDate>
+    <pubDate>Sun, 10 Jun 2018 13:00:14 +0900</pubDate>
+    <lastBuildDate>Sun, 10 Jun 2018 13:00:14 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -82,6 +82,56 @@
         
         
         <category>network</category>
+        
+      </item>
+    
+      <item>
+        <title>Jekyll-CentrariumにDisqusを導入した</title>
+        <description>&lt;p&gt;このブログに&lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;でコメント機能を追加した．&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;の作り込みが素晴らしいので，Disqus上の登録と，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の変更だけで実現できた．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jekyll theme：&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;disqus&quot;&gt;Disqusの設定&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;でユーザ登録し，&lt;code class=&quot;highlighter-rouge&quot;&gt;Install on Site&lt;/code&gt;を選択する．以下に適当に情報を埋めていく．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-setting.png&quot; alt=&quot;setting&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Planを選択する．広告を出したくなかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;Plus&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;free&lt;/code&gt;を選択した．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-plan.png&quot; alt=&quot;plan&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;詳細設定を行う．とりあえずわかるところだけ埋めた．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-configure.png&quot; alt=&quot;configure&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;configyml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の変更&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;bencentra/centrarium - GitHub&lt;/a&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt;を読むと，どうやら&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;disqus_shortname&lt;/code&gt;に登録名を設定するだけで良いことがわかった．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/f877f8fb889ee7e4cc2cdfebd6d4772b.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;めちゃくちゃ簡単にできた．&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://takezoe.hatenablog.com/entry/2016/06/05/030805&quot;&gt;JekyllにDisqusのコメントフォームをつけてみる - たけぞう瀕死ブログ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;bencentra/centrarium - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 10 Jun 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/06/10/disqus</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/06/10/disqus</guid>
+        
+        
+        <category>jekyll</category>
         
       </item>
     
@@ -760,65 +810,6 @@
         
         
         <category>deep learning</category>
-        
-      </item>
-    
-      <item>
-        <title>多田洋介，行動経済学入門</title>
-        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;http://amzn.asia/46XW33f&quot;&gt;多田洋介，行動経済学入門&lt;/a&gt;を読んだ．心理学の発想を経済活動や経済減少の分析に活かす，行動経済学の基本を学ぶことができた．&lt;/p&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;行動経済学とは何か？&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;新古典派と呼ばれる標準的な経済学の世界では，以下のような特徴を持つ合理的経済人（homo economicus）を仮定している：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;超合理的&lt;/strong&gt;：全ての情報を完璧に処理し，自己の効用を最大化する意思決定を常に行う．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;超自制的&lt;/strong&gt;：時間を通じた活動に関して，はじめに決めた計画通りに実行する．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;超利己的&lt;/strong&gt;：他者の利益や公平性といった価値基準を持たない．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;経済学が合理的経済人を利用する理由：
-    &lt;ul&gt;
-      &lt;li&gt;数学的な扱いやすさ．&lt;/li&gt;
-      &lt;li&gt;合理的でないものは淘汰されるだろうというダーウィニズム．&lt;/li&gt;
-      &lt;li&gt;集合的に人間を見た場合に，非合理的な人間が市場に及ぼす影響は小さいという仮定．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;行動経済学&lt;/strong&gt; とは，標準的な経済学が十分に捉えきれていない人間の行動を，心理学あるいは認知科学といった学問分野研究成果を利用して紐解くことで，説明能力を補強しようという試み．&lt;/li&gt;
-  &lt;li&gt;ベイズ・ルール，ゲーム理論，期待効用仮説，時間を通じた消費決定モデルは経済学の標準的なツールだが，これらが現実の人間の行動を的確に表現しているかどうかについては疑問がある．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;人間はどこまで合理的か?&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;現実の人々は，膨大な量の情報を処理する能力がないため，必ずしも超合理的な行動を取らない．これを限定合理性を持つ、と呼ぶ．&lt;/li&gt;
-  &lt;li&gt;最適化を実行するためにもコストがかかる．このコストを見込んで「どの程度で最適化を打ち切るか」という新たな最適化問題を立式できるが，その新たな問題についても計算コストが存在する．このように，最適化コストを最適化問題自体に組み込むと，終わりのない再帰ループが発生するため，実用上は二つ目の最適化問題で打ち切ることが多いみたい．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;貨幣錯覚&lt;/strong&gt;：人々が賃金などを評価する際に，実質価格より名目価格に反応した経済行動を取ってしまうこと．&lt;/li&gt;
-  &lt;li&gt;相対価格と絶対価格．調べた方がいいかもしれない．&lt;/li&gt;
-  &lt;li&gt;ゲーム理論では他者より深読みして競争を勝ち抜くことは理論上ありえないが，現実には他者の行動の合理性の限界を想定して，他者の裏をかくことが可能．&lt;/li&gt;
-  &lt;li&gt;オークションでは勝者の呪いにより，落札者が損をする．&lt;/li&gt;
-  &lt;li&gt;限定合理的なプレーヤーが存在することで，合理的なプレーヤーの最適戦略が大きく影響を受ける．&lt;/li&gt;
-  &lt;li&gt;価格・賃金の硬直性を説明する一つの手段として限定合理性が用いられることがある．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;近道を選ぶと失敗する&lt;/h1&gt;
-
-&lt;h1 id=&quot;section-3&quot;&gt;プロスペクト理論&lt;/h1&gt;
-
-&lt;h1 id=&quot;section-4&quot;&gt;非合理的な投資家は試乗を狂わす&lt;/h1&gt;
-
-&lt;h1 id=&quot;section-5&quot;&gt;人間は「超」自制的か&lt;/h1&gt;
-
-&lt;h1 id=&quot;section-6&quot;&gt;人間は他人の目を気にするもの&lt;/h1&gt;
-
-&lt;h1 id=&quot;section-7&quot;&gt;心理学的アプローチの限界と可能性&lt;/h1&gt;
-</description>
-        <pubDate>Tue, 27 Feb 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/02/27/intro-to-behavioral-economics</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/02/27/intro-to-behavioral-economics</guid>
-        
-        
-        <category>economics</category>
         
       </item>
     
