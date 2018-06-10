@@ -2,12 +2,88 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Memotaro</title>
-    <description>I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</description>
+    <description>I'm haltaro, a data scientist from Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Jun 2018 23:05:38 +0900</pubDate>
-    <lastBuildDate>Sat, 02 Jun 2018 23:05:38 +0900</lastBuildDate>
+    <pubDate>Sun, 10 Jun 2018 12:16:48 +0900</pubDate>
+    <lastBuildDate>Sun, 10 Jun 2018 12:16:48 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>UCOMにAirMacを接続してWifi環境を構築する</title>
+        <description>&lt;p&gt;引越し先のマンションがUcomに契約していたので，壁付けのコンセントにLANケーブルを繋げばインターネットに接続できる．手持ちのAirMac Time Capsuleで無線LAN環境を構築したかったが，ネット上に情報が少なく，めちゃくちゃ苦戦した．試行錯誤の記録を残しておく．&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;UCOM光レジデンス LAN配線方式&lt;/li&gt;
+  &lt;li&gt;AirMac Time Capsule 7.6.9&lt;/li&gt;
+  &lt;li&gt;MacBook Pro，macOS Sierra（10.12.6）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-lan.png&quot; alt=&quot;lan&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;設定&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AirMacユーティリティ &amp;gt; AirMac Time Capsule &amp;gt; 編集&lt;/code&gt;を押す．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-utility.png&quot; alt=&quot;utility&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;インターネット&lt;/code&gt;タブを選択して，&lt;a href=&quot;https://help.ucom.ne.jp/type002/internet/dnsip/index.html&quot;&gt;インターネット接続の設定 - UCOM&lt;/a&gt;をもとに最寄りのDNSサーバアドレスを設定する．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-internet.png&quot; alt=&quot;internet&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ワイヤレス&lt;/code&gt;タブを選択して，設定を確認する．私の場合は，特に設定を変更する必要は無かった．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-wireless.png&quot; alt=&quot;wireless&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ネットワーク&lt;/code&gt;タブを選択して，&lt;code class=&quot;highlighter-rouge&quot;&gt;ルーターモード&lt;/code&gt;として&lt;code class=&quot;highlighter-rouge&quot;&gt;DHCPとNAT&lt;/code&gt;を選択する．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.ucom.ne.jp/downloads/manual/100tebiki.pdf&quot;&gt;UCOM 光 レジデンス ご利用の手引き- UCOM&lt;/a&gt;等によると，ブリッジモードでないとうまく接続できないとのことだったが，これだと設定用のMacBookと他の端末（iPhone）を同時に接続できなかった．&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://discussionsjapan.apple.com/thread/10170959&quot;&gt;一台しか接続できない - Apple コミュニティ&lt;/a&gt;によると，MacBookがグローバルIPアドレスを専有してるのが原因っぽい．ネットワークが不安定なるリスクがあった&lt;sup id=&quot;fnref:stable&quot;&gt;&lt;a href=&quot;#fn:stable&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;が，今回は&lt;code class=&quot;highlighter-rouge&quot;&gt;DHCPとNAT&lt;/code&gt;を選択した．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-network.png&quot; alt=&quot;network&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これで&lt;code class=&quot;highlighter-rouge&quot;&gt;アップデート&lt;/code&gt;を押す．&lt;code class=&quot;highlighter-rouge&quot;&gt;システム環境設定 &amp;gt; ネットワーク&lt;/code&gt;では，「Wi-Fiに自己割り当てIPアドレス&lt;script type=&quot;math/tex&quot;&gt;\blacksquare&lt;/script&gt;.&lt;script type=&quot;math/tex&quot;&gt;\blacksquare&lt;/script&gt;.&lt;script type=&quot;math/tex&quot;&gt;\blacksquare&lt;/script&gt;.&lt;script type=&quot;math/tex&quot;&gt;\blacksquare&lt;/script&gt;が設定されているためインターネットに接続できません。」と叱られるが，MacBookもiPhoneも同時に接続できている．もう疲れたので無視することにした．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-warning.png&quot; alt=&quot;warning&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;それでも繋がらないときは&lt;/h1&gt;
+
+&lt;p&gt;実際，以上の設定を行っても一発では繋がらなかった．以下をいろいろ試すうちにいつの間にか繋がったので，ご参考までに．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AirMacを再起動する．&lt;/li&gt;
+  &lt;li&gt;LANの接続口を変更する．どうやら，口ごとにIPアドレスが割り振られているっぽい．上位NW装置でどのような制御が行われているか不明だが，口を変えると一発で認証が通ることがあった．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://discussionsjapan.apple.com/thread/10170959&quot;&gt;一台しか接続できない - Apple コミュニティ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://fmmzk.hateblo.jp/entry/2014/07/10/120654&quot;&gt;“Wi-Fi”に自己割り当てのIP アドレスが設定されており、インターネットに接続できない可能性がありましたら - Jaì³üÉ&amp;gt;L(î)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.ucom.ne.jp/downloads/manual/simple_tebiki.pdf&quot;&gt;UCOM光 レジデンス【シンプルタイプ】ご利用の手引き -UCOM &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.ucom.ne.jp/downloads/manual/100tebiki.pdf&quot;&gt;UCOM 光 レジデンス ご利用の手引き- UCOM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ucom.ne.jp/type002/internet/dnsip/index.html&quot;&gt;インターネット接続の設定 - UCOM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:stable&quot;&gt;
+      &lt;p&gt;実際昼間は何回か途切れているみたい &lt;a href=&quot;#fnref:stable&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 10 Jun 2018 00:00:00 +0900</pubDate>
+        <link>https://haltaro.github.io/2018/06/10/ucom-airmac</link>
+        <guid isPermaLink="true">https://haltaro.github.io/2018/06/10/ucom-airmac</guid>
+        
+        
+        <category>network</category>
+        
+      </item>
     
       <item>
         <title>DMM英会話受講メモ：2018年5月</title>
@@ -714,6 +790,17 @@
 
 &lt;h1 id=&quot;section-1&quot;&gt;人間はどこまで合理的か?&lt;/h1&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;現実の人々は，膨大な量の情報を処理する能力がないため，必ずしも超合理的な行動を取らない．これを限定合理性を持つ、と呼ぶ．&lt;/li&gt;
+  &lt;li&gt;最適化を実行するためにもコストがかかる．このコストを見込んで「どの程度で最適化を打ち切るか」という新たな最適化問題を立式できるが，その新たな問題についても計算コストが存在する．このように，最適化コストを最適化問題自体に組み込むと，終わりのない再帰ループが発生するため，実用上は二つ目の最適化問題で打ち切ることが多いみたい．&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;貨幣錯覚&lt;/strong&gt;：人々が賃金などを評価する際に，実質価格より名目価格に反応した経済行動を取ってしまうこと．&lt;/li&gt;
+  &lt;li&gt;相対価格と絶対価格．調べた方がいいかもしれない．&lt;/li&gt;
+  &lt;li&gt;ゲーム理論では他者より深読みして競争を勝ち抜くことは理論上ありえないが，現実には他者の行動の合理性の限界を想定して，他者の裏をかくことが可能．&lt;/li&gt;
+  &lt;li&gt;オークションでは勝者の呪いにより，落札者が損をする．&lt;/li&gt;
+  &lt;li&gt;限定合理的なプレーヤーが存在することで，合理的なプレーヤーの最適戦略が大きく影響を受ける．&lt;/li&gt;
+  &lt;li&gt;価格・賃金の硬直性を説明する一つの手段として限定合理性が用いられることがある．&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;section-2&quot;&gt;近道を選ぶと失敗する&lt;/h1&gt;
 
 &lt;h1 id=&quot;section-3&quot;&gt;プロスペクト理論&lt;/h1&gt;
@@ -732,61 +819,6 @@
         
         
         <category>economics</category>
-        
-      </item>
-    
-      <item>
-        <title>HTTPS+トークンで複数のGitHubアカウントを制御する</title>
-        <description>&lt;p&gt;複数のGitHubアカウントを制御したい．&lt;a href=&quot;https://dev.classmethod.jp/tool/github-ssh-sub-account-setting/&quot;&gt;SSHの秘密鍵を複数管理する方法&lt;/a&gt;もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，&lt;a href=&quot;https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139&quot;&gt;HTTPSとトークンを使用する方法&lt;/a&gt;が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．&lt;/p&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;手順&lt;/h1&gt;
-
-&lt;p&gt;全面的に&lt;a href=&quot;https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139&quot;&gt;https+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiita&lt;/a&gt;に従う．&lt;/p&gt;
-
-&lt;h2 id=&quot;github&quot;&gt;GitHubアクセストークンの作成&lt;/h2&gt;
-
-&lt;p&gt;所望のGitHubアカウントにログインし，&lt;a href=&quot;https://github.com/settings/developers&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Settings &amp;gt; Developer settings&lt;/code&gt;&lt;/a&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;Personal access tokens&lt;/code&gt;を選択する．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-02-24-github-token.png&quot; alt=&quot;github&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Generate new token&lt;/code&gt;を押す．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-02-24-github-options.png&quot; alt=&quot;github&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Token description&lt;/code&gt;に，用途がわかるような名前をつける．&lt;code class=&quot;highlighter-rouge&quot;&gt;Select scopes&lt;/code&gt;で，アクセス権を指定できる．とりあえず&lt;code class=&quot;highlighter-rouge&quot;&gt;repo&lt;/code&gt;にチェックしとけば良さそう&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．私の場合，Gistをブログに埋め込むことがあるので，&lt;code class=&quot;highlighter-rouge&quot;&gt;gist&lt;/code&gt;にもチェックを入れる．これでページ下部の&lt;code class=&quot;highlighter-rouge&quot;&gt;Generate token&lt;/code&gt;を押す．表示されるトークンをクリップボードにコピーする．&lt;/p&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;リポジトリをクローン&lt;/h2&gt;
-
-&lt;p&gt;次のフォーマットで，リポジトリをクローンする．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/82a7e2f6628df832e0ba78aca62a9865.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;アカウント名を使い分ける場合は，以下の設定を忘れずに．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/b23267dfbd159ace2178f805380e48ad.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;あとは，何も考えずに&lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;を使えば良い．&lt;/p&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dev.classmethod.jp/tool/github-ssh-sub-account-setting/&quot;&gt;【メモ】githubの複数アカウントにSSH接続するための設定手順 - Developers.IO&lt;/a&gt;：SSHを使った方法&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139&quot;&gt;https+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiita&lt;/a&gt;：HTTPS＋トークンを使った方法&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;他のはよくわからない． &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 24 Feb 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/02/24/github-token</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/02/24/github-token</guid>
-        
-        
-        <category>github</category>
         
       </item>
     

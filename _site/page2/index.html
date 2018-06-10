@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Memotaro</title>
-  <meta name="description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)">
+  <meta name="description" content="I'm haltaro, a data scientist from Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,7 +51,7 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)" />
+  <meta property="og:description" content="I'm haltaro, a data scientist from Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)" />
   <meta property="og:url" content="https://haltaro.github.io" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="Memotaro" />
@@ -66,7 +66,7 @@
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Memotaro">
-  <meta name="twitter:description" content="I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)">
+  <meta name="twitter:description" content="I'm haltaro, a data scientist from Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)">
   <meta name="twitter:image" content="https://haltaro.github.io/assets/logo.png">
   <meta name="twitter:url" content="https://haltaro.github.io">
   
@@ -151,6 +151,31 @@
 
 <div class="wrapper">
 <ul class="post-list">
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/03/29/dmm-english">DMM英会話受講メモ：2018年3月</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>仕事が落ち着いてきたので，DMM英会話を再開することにした． 20180313 以前使っていたskypeアカウントは使えないことが発覚．なんとかならないか公式に問い合わせてみる． 20180314 対応メールが来ていたので打ち返した．たぶん入会可能になるのは明日以降． 20180315 無事対応していただけた．明日から体験授業． 20180316 DMM英会話，無料体験第一回． Theoretical Physicist Stephen Hawking Dies at 76 intricacy：the details of something that is complex Lucasian：教員職の一種．https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%BC%E3%82%AB%E3%82%B9%E6%95%99%E6%8E%88%E8%81%B7 confine：限定する，制限する，閉じ込める． proponent：提唱者，主張者． 久々の英会話で楽しかった． 20180319 DMM英会話，無料体験二回目． Smart Mirrors Used to Lure Shoppers Back into Stores lure：to make someone do something by presenting it in an attractive way．...</p>-->
+      <p><p>仕事が落ち着いてきたので，<a href="http://eikaiwa.dmm.com/">DMM英会話</a>を再開することにした．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">March 29, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/english">English</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
   
   <li>
     <h2>
@@ -304,6 +329,17 @@ GPUの準備方法として，いくつかのオプションがある：
 
 人間はどこまで合理的か?
 
+
+  現実の人々は，膨大な量の情報を処理する能力がないため，必ずしも超合理的な行動を取らない．これを限定合理性を持つ、と呼ぶ．
+  最適化を実行するためにもコストがかかる．このコストを見込んで「どの程度で最適化を打ち切るか」という新たな最適化問題を立式できるが，その新たな問題についても計算コストが存在する．このように，最適化コストを最適化問題自体に組み込むと，終わりのない再帰ループが発生するため，実用上は二つ目の最適化問題で打ち切ることが多いみたい．
+  貨幣錯覚：人々が賃金などを評価する際に，実質価格より名目価格に反応した経済行動を取ってしまうこと．
+  相対価格と絶対価格．調べた方がいいかもしれない．
+  ゲーム理論では他者より深読みして競争を勝ち抜くことは理論上ありえないが，現実には他者の行動の合理性の限界を想定して，他者の裏をかくことが可能．
+  オークションでは勝者の呪いにより，落札者が損をする．
+  限定合理的なプレーヤーが存在することで，合理的なプレーヤーの最適戦略が大きく影響を受ける．
+  価格・賃金の硬直性を説明する一つの手段として限定合理性が用いられることがある．
+
+
 近道を選ぶと失敗する
 
 プロスペクト理論
@@ -326,74 +362,6 @@ GPUの準備方法として，いくつかのオプションがある：
       in 
         
         <a href="/category/economics">Economics</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/02/24/github-token">HTTPS+トークンで複数のGitHubアカウントを制御する</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>複数のGitHubアカウントを制御したい．SSHの秘密鍵を複数管理する方法もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，HTTPSとトークンを使用する方法が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．
-
-手順
-
-全面的にhttps+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiitaに従う．
-
-GitHubアクセストークンの作成
-
-所望のGitHubアカウントにログインし，Settings &gt; Developer settingsからPersonal access tokensを選択する．
-
-
-
-Generate new tokenを押す．
-
-
-
-Token descriptionに，用途がわかるような名前をつける．Select scopesで，アクセス権を指定できる．とりあえずrepoにチェックしとけば良さそう1．私の場合，Gistをブログに埋め込むことがあるので，gistにもチェックを入れる．これでページ下部のGenerate tokenを押す．表示されるトークンをクリップボードにコピーする．
-
-リポジトリをクローン
-
-次のフォーマットで，リポジトリをクローンする．
-
-
-
-アカウント名を使い分ける場合は，以下の設定を忘れずに．
-
-
-
-あとは，何も考えずにgitを使えば良い．
-
-参考
-
-
-  【メモ】githubの複数アカウントにSSH接続するための設定手順 - Developers.IO：SSHを使った方法
-  https+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiita：HTTPS＋トークンを使った方法
-
-
-  
-    
-      他のはよくわからない． &#8617;
-    
-  
-
-</p>-->
-      <p><p>複数のGitHubアカウントを制御したい．<a href="https://dev.classmethod.jp/tool/github-ssh-sub-account-setting/">SSHの秘密鍵を複数管理する方法</a>もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，<a href="https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139">HTTPSとトークンを使用する方法</a>が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">February 24, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/github">Github</a>
         
       
       </div>
@@ -527,7 +495,7 @@ Token descriptionに，用途がわかるような名前をつける．Select sc
 
     <div class="site-signature">
       <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
-      <p class="text">I'm haltaro, a researcher from Tokyo, Japan. My research interests include machine learning, marketing science, network engineering and shiba-inu:)</p>
+      <p class="text">I'm haltaro, a data scientist from Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</p>
     </div>
 
   </div>
