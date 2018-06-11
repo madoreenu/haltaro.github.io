@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Memotaro</title>
-    <description>I'm haltaro, a data scientist from Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
+    <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>https://haltaro.github.io/</link>
     <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 10 Jun 2018 13:00:14 +0900</pubDate>
-    <lastBuildDate>Sun, 10 Jun 2018 13:00:14 +0900</lastBuildDate>
+    <pubDate>Tue, 12 Jun 2018 06:29:31 +0900</pubDate>
+    <lastBuildDate>Tue, 12 Jun 2018 06:29:31 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -86,7 +86,7 @@
       </item>
     
       <item>
-        <title>Jekyll-CentrariumにDisqusを導入した</title>
+        <title>Jekyll-CentrariumにDisqusを導入する</title>
         <description>&lt;p&gt;このブログに&lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;でコメント機能を追加した．&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;の作り込みが素晴らしいので，Disqus上の登録と，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の変更だけで実現できた．&lt;/p&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
