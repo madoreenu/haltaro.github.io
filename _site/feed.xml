@@ -3,17 +3,17 @@
   <channel>
     <title>Memotaro</title>
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
-    <link>https://haltaro.github.io/</link>
-    <atom:link href="https://haltaro.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Jun 2018 22:45:47 +0900</pubDate>
-    <lastBuildDate>Thu, 14 Jun 2018 22:45:47 +0900</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 15 Jun 2018 11:54:00 +0900</pubDate>
+    <lastBuildDate>Fri, 15 Jun 2018 11:54:00 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
     
       <item>
         <title>UCOMにAirMacを接続してWifi環境を構築する</title>
         <description>&lt;p&gt;引越し先のマンションがUcomに契約していたので，壁付けのコンセントにLANケーブルを繋げばインターネットに接続できる．手持ちのAirMac Time Capsuleで無線LAN環境を構築したかったが，ネット上に情報が少なく，めちゃくちゃ苦戦した．試行錯誤の記録を残しておく．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;UCOM光レジデンス LAN配線方式&lt;/li&gt;
@@ -23,7 +23,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-lan.png&quot; alt=&quot;lan&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;設定&lt;/h1&gt;
+&lt;h1 id=&quot;設定&quot;&gt;設定&lt;/h1&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AirMacユーティリティ &amp;gt; AirMac Time Capsule &amp;gt; 編集&lt;/code&gt;を押す．&lt;/p&gt;
 
@@ -50,7 +50,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-warning.png&quot; alt=&quot;warning&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;それでも繋がらないときは&lt;/h1&gt;
+&lt;h1 id=&quot;それでも繋がらないときは&quot;&gt;それでも繋がらないときは&lt;/h1&gt;
 
 &lt;p&gt;実際，以上の設定を行っても一発では繋がらなかった．以下をいろいろ試すうちにいつの間にか繋がったので，ご参考までに．&lt;/p&gt;
 
@@ -59,7 +59,7 @@
   &lt;li&gt;LANの接続口を変更する．どうやら，口ごとにIPアドレスが割り振られているっぽい．上位NW装置でどのような制御が行われているか不明だが，口を変えると一発で認証が通ることがあった．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-3&quot;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://discussionsjapan.apple.com/thread/10170959&quot;&gt;一台しか接続できない - Apple コミュニティ&lt;/a&gt;&lt;/li&gt;
@@ -71,14 +71,14 @@
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:stable&quot;&gt;
-      &lt;p&gt;実際昼間は何回か途切れているみたい &lt;a href=&quot;#fnref:stable&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;実際昼間は何回か途切れているみたい &lt;a href=&quot;#fnref:stable&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 10 Jun 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/06/10/ucom-airmac</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/06/10/ucom-airmac</guid>
+        <link>http://localhost:4000/2018/06/10/ucom-airmac</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/10/ucom-airmac</guid>
         
         
         <category>network</category>
@@ -89,13 +89,13 @@
         <title>Jekyll-CentrariumにDisqusを導入する</title>
         <description>&lt;p&gt;このブログに&lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;でコメント機能を追加した．&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;の作り込みが素晴らしいので，Disqus上の登録と，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の変更だけで実現できた．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;環境&lt;/h1&gt;
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Jekyll theme：&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;disqus&quot;&gt;Disqusの設定&lt;/h1&gt;
+&lt;h1 id=&quot;disqusの設定&quot;&gt;Disqusの設定&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;でユーザ登録し，&lt;code class=&quot;highlighter-rouge&quot;&gt;Install on Site&lt;/code&gt;を選択する．以下に適当に情報を埋めていく．&lt;/p&gt;
 
@@ -109,17 +109,17 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-configure.png&quot; alt=&quot;configure&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;configyml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の変更&lt;/h1&gt;
+&lt;h1 id=&quot;_configymlの変更&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の変更&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;bencentra/centrarium - GitHub&lt;/a&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt;を読むと，どうやら&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;disqus_shortname&lt;/code&gt;に登録名を設定するだけで良いことがわかった．&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/f877f8fb889ee7e4cc2cdfebd6d4772b.js&quot;&gt;&lt;/script&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;感想&lt;/h1&gt;
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
 &lt;p&gt;めちゃくちゃ簡単にできた．&lt;/p&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://takezoe.hatenablog.com/entry/2016/06/05/030805&quot;&gt;JekyllにDisqusのコメントフォームをつけてみる - たけぞう瀕死ブログ&lt;/a&gt;&lt;/li&gt;
@@ -127,8 +127,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 10 Jun 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/06/10/disqus</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/06/10/disqus</guid>
+        <link>http://localhost:4000/2018/06/10/disqus</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/10/disqus</guid>
         
         
         <category>jekyll</category>
@@ -139,7 +139,7 @@
         <title>DMM英会話受講メモ：2018年5月</title>
         <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;の受講メモ．後半にかけて仕事が非常に忙しくなり，なかなか時間が取れなかった．英語力が日に日に落ちていくのを実感している．だんだん仕事にも慣れてきたので，6月以降はもっと時間が取れると思う．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;20180501&lt;/h1&gt;
+&lt;h1 id=&quot;20180501&quot;&gt;20180501&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/parking-shortage-plagues-macedonian-capital/Jz27dElbEeilcdOxPuMyZg&quot;&gt;Parking Shortage Plagues Macedonian Capital&lt;/a&gt;&lt;/li&gt;
@@ -150,7 +150,7 @@
   &lt;li&gt;pedestrian: 歩行者&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;20180502&lt;/h1&gt;
+&lt;h1 id=&quot;20180502&quot;&gt;20180502&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/a-lifetime-of-exercise-slows-aging-process/QnT9DkeiEeimNN8sih9WnQ&quot;&gt;A Lifetime of Exercise Slows Aging Process&lt;/a&gt;&lt;/li&gt;
@@ -158,7 +158,7 @@
   &lt;li&gt;sedentary: doing or involving a lot of sitting&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;20180503&lt;/h1&gt;
+&lt;h1 id=&quot;20180503&quot;&gt;20180503&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/new-treadmill-uses-virtual-reality-to-encourage-fitness/iQqmhDvfEeicOauE8rVwog&quot;&gt;New Treadmill Uses Virtual Reality to Encourage Fitness&lt;/a&gt;&lt;/li&gt;
@@ -168,7 +168,7 @@
   &lt;li&gt;immersive: involving the whole body, not only sight and sound&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-3&quot;&gt;20180505&lt;/h1&gt;
+&lt;h1 id=&quot;20180505&quot;&gt;20180505&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/making-coffee-more-convenient-with-robot-baristas/pVS-wEkrEeiLtdtm-6218A&quot;&gt;Making Coffee More Convenient with Robot Baristas&lt;/a&gt;&lt;/li&gt;
@@ -176,7 +176,7 @@
   &lt;li&gt;ready，experience，averateの発音を注意された．eの長音と短音を意識したほうが良いとのこと．ありがたいアドバイス．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-4&quot;&gt;20180507&lt;/h1&gt;
+&lt;h1 id=&quot;20180507&quot;&gt;20180507&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/new-invention-detects-cancer-in-seconds/xTZ9ZEItEei1Sd9cm5dlEw&quot;&gt;New Invention Detects Cancer in Seconds&lt;/a&gt;&lt;/li&gt;
@@ -185,7 +185,7 @@
   &lt;li&gt;molecule: the smallest part of an element; a group of atoms&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-5&quot;&gt;20180508&lt;/h1&gt;
+&lt;h1 id=&quot;20180508&quot;&gt;20180508&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/us-education-report-card-says-much-can-be-improved/gD-FCkLoEeijwGtudd-0tw&quot;&gt;US Education ‘Report Card’ Says Much Can Be Improved&lt;/a&gt;&lt;/li&gt;
@@ -193,7 +193,7 @@
   &lt;li&gt;solid&lt;sup id=&quot;fnref:solid&quot;&gt;&lt;a href=&quot;#fn:solid&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;: good, better than average&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-6&quot;&gt;20180509&lt;/h1&gt;
+&lt;h1 id=&quot;20180509&quot;&gt;20180509&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/japanese-bus-drivers-strike-by-refusing-to-collect-fares/MgXr5k7vEeizVrsjnTWdXA&quot;&gt;Japanese Bus Drivers Strike by Refusing to Collect Fares&lt;/a&gt;&lt;/li&gt;
@@ -202,7 +202,7 @@
   &lt;li&gt;先生を予約し忘れていたので，一人で音読と質問回答だけやった．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-7&quot;&gt;20180511&lt;/h1&gt;
+&lt;h1 id=&quot;20180511&quot;&gt;20180511&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/life-may-exist-among-the-clouds-of-venus/reSOBDl7EeiulptgC8mmWQ&quot;&gt;Life May Exist Among the Clouds of Venus&lt;/a&gt;&lt;/li&gt;
@@ -212,7 +212,7 @@
   &lt;li&gt;めちゃくちゃ明るい先生だった．楽しかった．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-8&quot;&gt;20180513&lt;/h1&gt;
+&lt;h1 id=&quot;20180513&quot;&gt;20180513&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/elon-musks-tips-for-productivity/WyPuDEkNEeijw0tDiOVkhA&quot;&gt;Elon Musk’s Tips for Productivity&lt;/a&gt;&lt;/li&gt;
@@ -231,20 +231,20 @@
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:solid&quot;&gt;
-      &lt;p&gt;名詞だと固体という意味になるので注意． &lt;a href=&quot;#fnref:solid&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;名詞だと固体という意味になるので注意． &lt;a href=&quot;#fnref:solid&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:inhibit&quot;&gt;
-      &lt;p&gt;inhabit（住む）と勘違いした． &lt;a href=&quot;#fnref:inhibit&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;inhabit（住む）と勘違いした． &lt;a href=&quot;#fnref:inhibit&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:uandw&quot;&gt;
-      &lt;p&gt;uとwを比較して発音してもらったが，イマイチ違いがわかならかった． &lt;a href=&quot;#fnref:uandw&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;uとwを比較して発音してもらったが，イマイチ違いがわかならかった． &lt;a href=&quot;#fnref:uandw&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 31 May 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/05/31/dmm-english</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/05/31/dmm-english</guid>
+        <link>http://localhost:4000/2018/05/31/dmm-english</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/05/31/dmm-english</guid>
         
         
         <category>english</category>
@@ -255,7 +255,7 @@
         <title>DMM英会話受講メモ：2018年4月</title>
         <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;の受講メモ．4月末は仕事がバタつき，なかなか時間を取れなかった．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;20180402&lt;/h1&gt;
+&lt;h1 id=&quot;20180402&quot;&gt;20180402&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/japans-endangered-languages/J0UC_DLIEeiOsKvrFGYOEA&quot;&gt;Japan’s Endangered Languages&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;archipelago：a group of islands&lt;/li&gt;
@@ -266,7 +266,7 @@
   &lt;li&gt;フィリピンの停電でレッスン中断してしまった．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;20180403&lt;/h1&gt;
+&lt;h1 id=&quot;20180403&quot;&gt;20180403&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/nasa-wants-to-send-your-name-to-the-sun/fa88yiunEeiw_Xser5ssDA&quot;&gt;NASA Wants to Send Your Name to the Sun&lt;/a&gt;&lt;/li&gt;
@@ -274,7 +274,7 @@
   &lt;li&gt;etch：to cut something into a hard surface&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;20180405&lt;/h1&gt;
+&lt;h1 id=&quot;20180405&quot;&gt;20180405&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/facebook-founder-we-made-a-mistake-in-trying-to-protect-user-data/LDgK2C3nEeiiQo_IqfkFRg&quot;&gt;Facebook Founder: We Made a Mistake in Trying to Protect User Data&lt;/a&gt;&lt;/li&gt;
@@ -283,7 +283,7 @@
   &lt;li&gt;take a hit: to experience damage or loss&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-3&quot;&gt;20180406&lt;/h1&gt;
+&lt;h1 id=&quot;20180406&quot;&gt;20180406&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/canadian-brings-japanese-art-of-comic-storytelling-to-the-world/2JA5Wjg7Eei1ct8WYjNDtQ&quot;&gt;Canadian Brings Japanese Art of Comic Storytelling to the World&lt;/a&gt;&lt;/li&gt;
@@ -295,7 +295,7 @@
   &lt;li&gt;props: 小道具&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-4&quot;&gt;20180408&lt;/h1&gt;
+&lt;h1 id=&quot;20180408&quot;&gt;20180408&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/students-learn-real-skills-in-virtual-businesses/xBeIajHKEeiXratpL_tA0w&quot;&gt;Students Learn Real Skills in ‘Virtual’ Businesses&lt;/a&gt;&lt;/li&gt;
@@ -303,7 +303,7 @@
   &lt;li&gt;prosper: to develop and become successful&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-5&quot;&gt;20180409&lt;/h1&gt;
+&lt;h1 id=&quot;20180409&quot;&gt;20180409&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/scientists-stage-mars-mission-in-israeli-desert/HWXMFi6qEeiObjO1pmzNtA&quot;&gt;Scientists Stage Mars Mission in Israeli Desert&lt;/a&gt;&lt;/li&gt;
@@ -312,7 +312,7 @@
   &lt;li&gt;cactus: サボテン&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-6&quot;&gt;20180411&lt;/h1&gt;
+&lt;h1 id=&quot;20180411&quot;&gt;20180411&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/facebooks-business-model-built-on-absence-of-privacy/noYkaDwtEeiMmROk0uRkcw&quot;&gt;Facebook’s Business Model Built on Absence of Privacy&lt;/a&gt;&lt;/li&gt;
@@ -323,14 +323,14 @@
   &lt;li&gt;先生が授業をキャンセル．通信環境が悪いとのこと．とりあえず記事だけ読んでおいた．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-7&quot;&gt;20180412&lt;/h1&gt;
+&lt;h1 id=&quot;20180412&quot;&gt;20180412&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/independent-chefs-exchange-ideas/tp_DzjgdEeieZiOPHZWjDg&quot;&gt;Independent Chefs Exchange Ideas&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;eatery: a restaurant&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-8&quot;&gt;20180415&lt;/h1&gt;
+&lt;h1 id=&quot;20180415&quot;&gt;20180415&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/argentinians-exchange-private-data-for-free-wifi/JRbnhD2pEeiSJp-axCgWEg&quot;&gt;Argentinians Exchange Private Data for “Free” WiFi&lt;/a&gt;&lt;/li&gt;
@@ -339,7 +339,7 @@
   &lt;li&gt;セルビアのジョージ先生．話がはずんで面白かった．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-9&quot;&gt;20180416&lt;/h1&gt;
+&lt;h1 id=&quot;20180416&quot;&gt;20180416&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/helping-the-planet-one-burger-at-a-time/DFtivDvbEeiemqe4TEoLMg&quot;&gt;Helping the Planet, One Burger at a Time&lt;/a&gt;&lt;/li&gt;
@@ -347,7 +347,7 @@
   &lt;li&gt;resource-intensive: needing a lot of resources, such as land, food, water, etc.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-10&quot;&gt;20180417&lt;/h1&gt;
+&lt;h1 id=&quot;20180417&quot;&gt;20180417&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/spielberg-goes-into-future-with-ready-player-one-film/tsusNDjFEeipQJ_r7RQZ-g&quot;&gt;Spielberg Goes into Future with ‘Ready Player One’ Film&lt;/a&gt;&lt;/li&gt;
@@ -357,14 +357,14 @@
   &lt;li&gt;envision: to imagine something that is a likely possibility in the future&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-11&quot;&gt;20180418&lt;/h1&gt;
+&lt;h1 id=&quot;20180418&quot;&gt;20180418&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/french-baker-fined-for-working-7-days-a-week/ExeyqD5rEei0DNcRyGZfTw&quot;&gt;French Baker Fined For Working 7 Days a Week&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;jaywalking: 横断歩道のないところを渡ること．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-12&quot;&gt;20180424&lt;/h1&gt;
+&lt;h1 id=&quot;20180424&quot;&gt;20180424&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/stem-education-too-hard-and-too-boring/Sfvf-j8HEeirdF8odRf_uQ&quot;&gt;STEM Education: Too Hard and Too Boring?&lt;/a&gt;&lt;/li&gt;
@@ -372,8 +372,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 24 Apr 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/04/24/dmm-english</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/04/24/dmm-english</guid>
+        <link>http://localhost:4000/2018/04/24/dmm-english</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/04/24/dmm-english</guid>
         
         
         <category>english</category>
@@ -384,7 +384,7 @@
         <title>東京大学教養学部統計学教室編，統計学入門</title>
         <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/8f1AQFC&quot;&gt;東京大学教養学部統計学教室編，統計学入門&lt;/a&gt;を読んだ．統計学の基礎知識を復習できた．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;大数の法則と中心極限定理&lt;/h1&gt;
+&lt;h1 id=&quot;大数の法則と中心極限定理&quot;&gt;大数の法則と中心極限定理&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;大数の法則：標本平均&lt;script type=&quot;math/tex&quot;&gt;\bar{X}&lt;/script&gt;は母平均&lt;script type=&quot;math/tex&quot;&gt;\mu&lt;/script&gt;に確率収束する．&lt;/li&gt;
@@ -392,7 +392,7 @@
   &lt;li&gt;累積密度分布の逆関数が陽に求まる場合は，一様分布に従う&lt;script type=&quot;math/tex&quot;&gt;U&lt;/script&gt;を逆関数で変換することで，もとの確率密度関数に従う乱数を生成できる．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;標本分布&lt;/h1&gt;
+&lt;h1 id=&quot;標本分布&quot;&gt;標本分布&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;統計的推測とは，標本から母集団について推測すること．&lt;/li&gt;
@@ -403,7 +403,7 @@
   &lt;li&gt;母集団が有限&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;のとき，&lt;script type=&quot;math/tex&quot;&gt;V(\bar{x}) = \frac{N-n}{N-1}\cdot \frac{\sigma^2}{n}&lt;/script&gt;となる．このとき&lt;script type=&quot;math/tex&quot;&gt;\frac{N-n}{N-1}&lt;/script&gt;を有限母集団修正と呼ぶ．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;正規分布からの標本&lt;/h1&gt;
+&lt;h1 id=&quot;正規分布からの標本&quot;&gt;正規分布からの標本&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\chi^{2}&lt;/script&gt;分布：&lt;script type=&quot;math/tex&quot;&gt;Z_1, Z_2, \dots, Z_k&lt;/script&gt;を独立な，標準正規分布&lt;script type=&quot;math/tex&quot;&gt;N(0, 1)&lt;/script&gt;に従う確率変数とするとき，&lt;script type=&quot;math/tex&quot;&gt;\chi^{2} = Z_1^2 + Z_2^2 + \dots + Z_k^2&lt;/script&gt;を自由度&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;\chi^{2}&lt;/script&gt;分布と呼ぶ．ちなみに，&lt;script type=&quot;math/tex&quot;&gt;\chi^{2} = (n-1) s^2 / \sigma^{2}&lt;/script&gt;は自由度&lt;script type=&quot;math/tex&quot;&gt;n-1&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;\chi^{2}&lt;/script&gt;分布である．&lt;/li&gt;
@@ -418,7 +418,7 @@
   &lt;li&gt;標本相関係数の標本分布．フィッシャーのz変換を使うらしい．詳細は不明．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-3&quot;&gt;推定&lt;/h1&gt;
+&lt;h1 id=&quot;推定&quot;&gt;推定&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;推定量（estimator）：母数を推定するために標本から求めた統計量．標本平均や標本分散．&lt;/li&gt;
@@ -428,7 +428,7 @@
   &lt;li&gt;点推定の基準：不偏性．一致性．漸近正規性．有効性．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-4&quot;&gt;統計的検定&lt;/h1&gt;
+&lt;h1 id=&quot;統計的検定&quot;&gt;統計的検定&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;母平均の差の検定は，&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;検定を用いる．&lt;/li&gt;
@@ -440,7 +440,7 @@
   &lt;li&gt;棄却域の調整により&lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt;と&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;を調整できるが，療法を小さくすることは出来ない．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-5&quot;&gt;回帰分析&lt;/h1&gt;
+&lt;h1 id=&quot;回帰分析&quot;&gt;回帰分析&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;決定係数&lt;script type=&quot;math/tex&quot;&gt;\eta^2&lt;/script&gt;は，&lt;script type=&quot;math/tex&quot;&gt;Y_{i}&lt;/script&gt;の変動のうち&lt;script type=&quot;math/tex&quot;&gt;X_{i}&lt;/script&gt;で説明できる変動の割合を示す．0から1の値を取り，1に近いほど良い．&lt;/li&gt;
@@ -448,8 +448,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 15 Apr 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/04/15/statistics-book-1</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/04/15/statistics-book-1</guid>
+        <link>http://localhost:4000/2018/04/15/statistics-book-1</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/04/15/statistics-book-1</guid>
         
         
         <category>statistics</category>
@@ -468,13 +468,13 @@
 
 &lt;p&gt;アルファベット順になった．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://gist.github.com/Phlow/57eb457898e4ac4c4a20&quot;&gt;Phlow/jekyll-sorted-category-for-loop-alphabetical-date.liquid - Gist&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;手順&lt;/h1&gt;
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./posts.md&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;category&lt;/code&gt;ループを&lt;/p&gt;
 
@@ -484,13 +484,13 @@
 
 &lt;script src=&quot;https://gist.github.com/haltaro/260563d870c5663bd2dae1179aabcac2.js&quot;&gt;&lt;/script&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;感想&lt;/h1&gt;
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
 &lt;p&gt;そろそろ真面目にRubyを勉強するべきかもしれない．&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Apr 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/04/15/sort-categories</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/04/15/sort-categories</guid>
+        <link>http://localhost:4000/2018/04/15/sort-categories</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/04/15/sort-categories</guid>
         
         
         <category>jekyll</category>
@@ -501,25 +501,25 @@
         <title>DMM英会話受講メモ：2018年3月</title>
         <description>&lt;p&gt;仕事が落ち着いてきたので，&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;を再開することにした．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;20180313&lt;/h1&gt;
+&lt;h1 id=&quot;20180313&quot;&gt;20180313&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;以前使っていたskypeアカウントは使えないことが発覚．なんとかならないか公式に問い合わせてみる．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;20180314&lt;/h1&gt;
+&lt;h1 id=&quot;20180314&quot;&gt;20180314&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;対応メールが来ていたので打ち返した．たぶん入会可能になるのは明日以降．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;20180315&lt;/h1&gt;
+&lt;h1 id=&quot;20180315&quot;&gt;20180315&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;無事対応していただけた．明日から体験授業．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-3&quot;&gt;20180316&lt;/h1&gt;
+&lt;h1 id=&quot;20180316&quot;&gt;20180316&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;DMM英会話，無料体験第一回．&lt;/li&gt;
@@ -531,7 +531,7 @@
   &lt;li&gt;久々の英会話で楽しかった．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-4&quot;&gt;20180319&lt;/h1&gt;
+&lt;h1 id=&quot;20180319&quot;&gt;20180319&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;DMM英会話，無料体験二回目．&lt;/li&gt;
@@ -540,13 +540,13 @@
   &lt;li&gt;brick-and-mortar：existing as a physical building rather than on the internet&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-5&quot;&gt;20180320&lt;/h1&gt;
+&lt;h1 id=&quot;20180320&quot;&gt;20180320&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;無料体験が終了した．早く会員登録しないと．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-6&quot;&gt;20180322&lt;/h1&gt;
+&lt;h1 id=&quot;20180322&quot;&gt;20180322&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/super-wood-stronger-than-steel/L-77NCFvEeivUm8US8LTuQ&quot;&gt;‘Super Wood’ Stronger Than Steel&lt;/a&gt;&lt;/li&gt;
@@ -554,7 +554,7 @@
   &lt;li&gt;以前より，答えに詰まることが多くなった気がする．継続的に学習をすすめる必要がある．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-7&quot;&gt;20180323&lt;/h1&gt;
+&lt;h1 id=&quot;20180323&quot;&gt;20180323&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/iss-astronauts-will-soon-get-a-personal-assistant/_U1qMBzwEeiwy89U-cPjUg&quot;&gt;ISS Astronauts Will Soon Get a Personal Assistant&lt;/a&gt;&lt;/li&gt;
@@ -562,7 +562,7 @@
   &lt;li&gt;背景知識がある記事だと，すごく楽しい．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-8&quot;&gt;20180324&lt;/h1&gt;
+&lt;h1 id=&quot;20180324&quot;&gt;20180324&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/world-needs-greener-water-solutions-as-demand-rises/Z9J_tCtyEeiJhU8Pi9Kn9g&quot;&gt;World Needs ‘Greener’ Water Solutions as Demand Rises&lt;/a&gt;&lt;/li&gt;
@@ -573,14 +573,14 @@
   &lt;li&gt;もう少し落ち着いて文章を読めるようになりたい．あと，声を低めに出すと落ち着いて文章を組み立てられるような気がする（ほんまかいな）．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-9&quot;&gt;20180327&lt;/h1&gt;
+&lt;h1 id=&quot;20180327&quot;&gt;20180327&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/new-chatbot-lets-students-evaluate-professors/6MjfhCtmEeiByMsV7p_PSw&quot;&gt;New ‘Chatbot’ Lets Students Evaluate Professors&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;qualitative：related to how good something is or what it is like, rather than how much of it there is&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-10&quot;&gt;20180328&lt;/h1&gt;
+&lt;h1 id=&quot;20180328&quot;&gt;20180328&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/most-americans-dont-get-enough-sleep/nz5ooij_EeiaaJOLlkHDFA&quot;&gt;Most Americans Don’t Get Enough Sleep&lt;/a&gt;&lt;/li&gt;
@@ -591,7 +591,7 @@
   &lt;li&gt;文法まできちんと訂正してくれる先生で良かった．ただ，できればその回答の内容自体にもコメントしてほしかった．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-11&quot;&gt;20180329&lt;/h1&gt;
+&lt;h1 id=&quot;20180329&quot;&gt;20180329&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/3-d-printed-house-offers-cheap-solution-for-poor-worldwide/jMov0CksEeiJLm-lik5omg&quot;&gt;3-D Printed House Offers Cheap Solution for Poor Worldwide&lt;/a&gt;&lt;/li&gt;
@@ -599,8 +599,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 29 Mar 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/03/29/dmm-english</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/03/29/dmm-english</guid>
+        <link>http://localhost:4000/2018/03/29/dmm-english</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/03/29/dmm-english</guid>
         
         
         <category>english</category>
@@ -611,7 +611,7 @@
         <title>Fast.ai，Practical Deep Learning for Coders 2018：1．Dogs and cats</title>
         <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;http://www.fast.ai/&quot;&gt;Fast.ai&lt;/a&gt;のMOOC&lt;a href=&quot;http://course.fast.ai/&quot;&gt;Practical Deep Learning for Coders 2018&lt;/a&gt;の受講を開始した．全7回の講座で，KaggleマスターのJeremy Howardから無料でDeep learningを教えてもらえるらしい．第1回は，犬と猫の分類コンペをベースに，CNNのチューニングについて学ぶ．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;教材&lt;/h1&gt;
+&lt;h1 id=&quot;教材&quot;&gt;教材&lt;/h1&gt;
 
 &lt;p&gt;2018年に入ってからビデオの内容を更新したらしいので注意．&lt;/p&gt;
 
@@ -626,7 +626,7 @@
 
 &lt;iframe width=&quot;100%&quot; height=&quot;460&quot; src=&quot;https://www.youtube.com/embed/IPBSB1HLNLo?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;h2 id=&quot;gpu&quot;&gt;GPUの準備&lt;/h2&gt;
+&lt;h2 id=&quot;gpuの準備&quot;&gt;GPUの準備&lt;/h2&gt;
 
 &lt;p&gt;GPUの準備方法として，いくつかのオプションがある：&lt;/p&gt;
 
@@ -638,7 +638,7 @@
 
 &lt;p&gt;とりあえず，使ったことのあるAWSを選択する．&lt;/p&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://course.fast.ai/start.html&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
@@ -647,8 +647,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 11 Mar 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/03/11/fastai-01-01</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/03/11/fastai-01-01</guid>
+        <link>http://localhost:4000/2018/03/11/fastai-01-01</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/03/11/fastai-01-01</guid>
         
         
         <category>deep learning</category>
@@ -659,19 +659,19 @@
         <title>Jupyter notebookのフォントを変更する</title>
         <description>&lt;p&gt;&lt;a href=&quot;http://jupyter.org/&quot;&gt;Jupyter notebook&lt;/a&gt;のコードブロックを等幅フォントにしたい．&lt;a href=&quot;https://github.com/dunovank/jupyter-themes&quot;&gt;Jupytertheme&lt;/a&gt;を使っても良いが，拡張機能のボタンが消えてしまうことがあり不便．&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.jupyter/custom/custom.css&lt;/code&gt;をいじって変更した．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://shu87.hateblo.jp/entry/2017/08/30/003224&quot;&gt;Jupyter notebookを等幅フォントにする - 元文学部統計学専攻学生の備忘録&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://qiita.com/hiropignis/items/f2192d86971746b849e8&quot;&gt;Jupyter Notebookを自分仕様に：背景，アイコンの変更 - Qiita&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;手順&lt;/h1&gt;
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.jupyter/custom/custom.css&lt;/code&gt;に，&lt;code class=&quot;highlighter-rouge&quot;&gt;.CodeMirror pre, .output pre { font-family: Monaco, monospace; }&lt;/code&gt;を追記して，Jupyterを再起動する．&lt;/p&gt;
 </description>
         <pubDate>Mon, 05 Mar 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/03/05/jupyter-font</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/03/05/jupyter-font</guid>
+        <link>http://localhost:4000/2018/03/05/jupyter-font</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/03/05/jupyter-font</guid>
         
         
         <category>python</category>
@@ -682,7 +682,7 @@
         <title>Kaggle，Web Traffic Time Series Forecasting，1st place solution</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting&quot;&gt;Kaggle，Web Traffic Time Series Forecasting&lt;/a&gt;の&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795&quot;&gt;1st place solution&lt;/a&gt;のメモ．Wikipediaのpageviewを予測するコンテスト．解法のポイントは，一年前と四半期前の値を特徴量として追加し，RNN seq2seqを使うこと．&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;概要&lt;/h1&gt;
+&lt;h1 id=&quot;概要&quot;&gt;概要&lt;/h1&gt;
 
 &lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
 
@@ -785,11 +785,11 @@
   &lt;li&gt;モデルのVarianceを考慮可能．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;感想&lt;/h1&gt;
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
 &lt;p&gt;大筋は理解できた（気になった）．学習時のDecoderの扱いなど，&lt;a href=&quot;https://github.com/Arturus/kaggle-web-traffic&quot;&gt;ソースコード&lt;/a&gt;を確認した方が良いかもしれない．&lt;/p&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795&quot;&gt;Kaggle，Web Traffic Time Series Forecasting，1st place solution&lt;/a&gt;&lt;/li&gt;
@@ -799,14 +799,14 @@
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;seq2seqのDecoderの学習時って，普通，直前の時系列の予測結果は使わずに，ターゲットデータを使うんじゃなかったっけ？ソースコードを確認した方が良いかもしれない． &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;seq2seqのDecoderの学習時って，普通，直前の時系列の予測結果は使わずに，ターゲットデータを使うんじゃなかったっけ？ソースコードを確認した方が良いかもしれない． &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 03 Mar 2018 00:00:00 +0900</pubDate>
-        <link>https://haltaro.github.io/2018/03/03/kaggle-wikipedia-1st</link>
-        <guid isPermaLink="true">https://haltaro.github.io/2018/03/03/kaggle-wikipedia-1st</guid>
+        <link>http://localhost:4000/2018/03/03/kaggle-wikipedia-1st</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/03/03/kaggle-wikipedia-1st</guid>
         
         
         <category>deep learning</category>

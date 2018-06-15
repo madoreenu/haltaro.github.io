@@ -52,11 +52,11 @@
   
   <!-- Facebook OGP cards -->
   <meta property="og:description" content=" 更新中： Udacity, Intro to Hadoop and MapReduceの受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．" />
-  <meta property="og:url" content="https://haltaro.github.io" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="Udacity, Intro to Hadoop and MapReduce" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://haltaro.github.io/assets/2017-08-13-data.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2017-08-13-data.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -67,16 +67,16 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Udacity, Intro to Hadoop and MapReduce">
   <meta name="twitter:description" content=" 更新中： Udacity, Intro to Hadoop and MapReduceの受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．">
-  <meta name="twitter:image" content="https://haltaro.github.io/assets/2017-08-13-data.jpg">
-  <meta name="twitter:url" content="https://haltaro.github.io">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2017-08-13-data.jpg">
+  <meta name="twitter:url" content="http://localhost:4000">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://haltaro.github.io/2017/08/13/udacity-hadoop">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="https://haltaro.github.io/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/2017/08/13/udacity-hadoop">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -131,6 +131,10 @@
         
           
         
+          
+        
+          
+        
       </ul>
     </nav>
   </div>
@@ -158,7 +162,7 @@
   <div class="post-categories">
   in 
     
-    <a href="/category/data science">Data science</a>
+    <a href="/posts/#data science">Data science</a>
     
   
   </div>
@@ -169,7 +173,7 @@
 
 <iframe width="100%" height="460" src="https://www.youtube.com/embed/DEQNknALf_8?rel=0" frameborder="0" allowfullscreen=""></iframe>
 
-<h1 id="big-data">1. Big Data</h1>
+<h1 id="1-big-data">1. Big Data</h1>
 
 <ul>
   <li>Big Dataとは，一つのマシンでは処理しきれないほど大量のデータである．</li>
@@ -208,7 +212,7 @@
   </li>
 </ul>
 
-<h1 id="hdfs-and-mapreduce">2. HDFS and MapReduce</h1>
+<h1 id="2-hdfs-and-mapreduce">2. HDFS and MapReduce</h1>
 
 <ul>
   <li>HDFSでは，データを64Mbyteの<strong>ブロック</strong>に分割し，それぞれ別のマシンに保存する．</li>
@@ -228,7 +232,7 @@
   <li><strong>Job tracker</strong>が，MapperとReducerにジョブを割り当てる．</li>
   <li>各デーモンは，<strong>Task tracker</strong>を持つ．</li>
   <li>HadoopではJavaが使われるが，Pythonを使うこともできる．</li>
-  <li><code class="highlighter-rouge">hs {mapper script} {reducer script} {input_file} {output directory}</code>で実行できる．ただし，<code class="highlighter-rouge"><span class="p">{</span><span class="err">output</span><span class="w"> </span><span class="err">directory</span><span class="p">}</span></code>が既に存在する場合，エラーが返されるので注意．</li>
+  <li><code class="highlighter-rouge">hs {mapper script} {reducer script} {input_file} {output directory}</code>で実行できる．ただし，<code class="highlighter-rouge">{output directory}</code>が既に存在する場合，エラーが返されるので注意．</li>
   <li><code class="highlighter-rouge">hadoop fs -put</code>でデータをHDFSに保存し，<code class="highlighter-rouge">hadoop fs -get</code>で取り出す．</li>
   <li>仮想マシンで実際にHadoopを動かす．以下，参考：
     <ul>
@@ -246,7 +250,7 @@
   <li>技術的な詳細は，<a href="http://go.cloudera.com/udacity-lesson-2">Chapter 6 of Tom White’s essential text, Hadoop: The Definitive Guide</a>を参照．</li>
 </ul>
 
-<h1 id="mapreduce-code">3. MapReduce Code</h1>
+<h1 id="3-mapreduce-code">3. MapReduce Code</h1>
 
 <ul>
   <li><strong>Hadoop streaming</strong>により，どんな言語でも処理を書くことができる．</li>
@@ -255,10 +259,9 @@
   <li>シェルで<code class="highlighter-rouge">$ ./mapper.py</code>で実行すれば，Hadoop外でMapperの動作を検証できる．Reducerについても同様．さらに，以下のコマンドで全ての処理を検証可能．</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ cat testfile | ./mapper.py | sort | ./reducer.py
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat testfile | ./mapper.py | sort | ./reducer.py
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ul>
   <li>詳細は，以下の動画がとてもわかりやすい．</li>
@@ -266,7 +269,7 @@
 
 <iframe width="100%" height="460" src="https://www.youtube.com/embed/MYo8EZwDRUA?rel=0" frameborder="0" allowfullscreen=""></iframe>
 
-<h1 id="project">4. Project</h1>
+<h1 id="4-project">4. Project</h1>
 
 <ul>
   <li>1-1. 全店舗におけるカテゴリー毎の売上額を求めよ．</li>
@@ -277,13 +280,11 @@
   <li>2-2.</li>
 </ul>
 
-<h1 id="mapreduce-design-patterns">5. MapReduce Design Patterns</h1>
+<h1 id="5-mapreduce-design-patterns">5. MapReduce Design Patterns</h1>
 
-<h1 id="project-prep">6. Project Prep</h1>
+<h1 id="6-project-prep">6. Project Prep</h1>
 
 </article>
-
-
 
 
 
@@ -379,6 +380,10 @@
         
         
           <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
         
         
         

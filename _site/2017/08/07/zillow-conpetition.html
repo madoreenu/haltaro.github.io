@@ -52,11 +52,11 @@
   
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="KaggleのZillow Prizeは，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．" />
-  <meta property="og:url" content="https://haltaro.github.io" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="Kaggle，Zillow Prize概要" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://haltaro.github.io/assets/2017-08-07-retech.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2017-08-07-retech.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -67,16 +67,16 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Kaggle，Zillow Prize概要">
   <meta name="twitter:description" content="KaggleのZillow Prizeは，Zillowが2017年5月に開始したコンペティション．課題は不動産価格の予測であり，賞金は総額1億円以上（$1,200,000）．">
-  <meta name="twitter:image" content="https://haltaro.github.io/assets/2017-08-07-retech.jpg">
-  <meta name="twitter:url" content="https://haltaro.github.io">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2017-08-07-retech.jpg">
+  <meta name="twitter:url" content="http://localhost:4000">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://haltaro.github.io/2017/08/07/zillow-conpetition">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="https://haltaro.github.io/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/2017/08/07/zillow-conpetition">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -131,6 +131,10 @@
         
           
         
+          
+        
+          
+        
       </ul>
     </nav>
   </div>
@@ -158,7 +162,7 @@
   <div class="post-categories">
   in 
     
-    <a href="/category/kaggle">Kaggle</a>
+    <a href="/posts/#kaggle">Kaggle</a>
     
   
   </div>
@@ -169,25 +173,25 @@
 
 <p>誤訳があるかもしれないのでご注意．</p>
 
-<h1 id="section">1. 背景</h1>
+<h1 id="1-背景">1. 背景</h1>
 
-<h2 id="a-kaggle">1.a Kaggle</h2>
+<h2 id="1a-kaggle">1.a Kaggle</h2>
 
 <p><a href="https://www.kaggle.com/">Kaggle</a>は，データサイエンティストのプラットフォームである．様々なコンペティションを開催しており，データサイエンティストの腕試しの場として広く認知されている．Kaggleへの参加方法については，<a href="http://qiita.com/taka4sato/items/802c494fdebeaa7f43b7">Kaggle事始め</a>が詳しい．</p>
 
-<h2 id="b-zillow">1.b Zillow</h2>
+<h2 id="1b-zillow">1.b Zillow</h2>
 
 <p><a href="https://www.zillow.com/">Zillow</a>は，オンライン不動産データベースを運営するアメリカの企業である．アメリカ全土の1億件以上の物件情報を有し，Zestimateと呼ばれる価格見積もりサービスを持つ．</p>
 
-<h1 id="zillow-prize">2. Zillow Prize</h1>
+<h1 id="2-zillow-prize">2. Zillow Prize</h1>
 
-<h2 id="a-">2.a 概要</h2>
+<h2 id="2a-概要">2.a 概要</h2>
 
 <p><a href="https://www.kaggle.com/c/zillow-prize-1">Zillow Prize</a>は，Zillowが2017年5月に開始したコンペティションである．課題は不動産価格の予測で，賞金は総額1億円以上（$1,200,000）．本コンペティションは，Qualifying round（第1ラウンド）とPrivate round（第2ラウンド）からなる．Private roundは，Qualifying roundの上位100チームのみに対し2018年1月1日から実施される．</p>
 
 <p><a href="https://www.kaggle.com/c/zillow-prize-1/data">Data</a>や<a href="https://www.kaggle.com/c/zillow-prize-1/rules">Rules</a>等の詳細は以下．</p>
 
-<h2 id="b-data">2.b Data</h2>
+<h2 id="2b-data">2.b Data</h2>
 
 <p>本コンペティションの目的は，Zestimate（<script type="math/tex">z</script>）と実際の売値（<script type="math/tex">s</script>）の対数誤差を予測すること．対数誤差は以下で定義される．</p>
 
@@ -220,7 +224,7 @@ logerror = log(z) - log(s) \tag{1}
   <li><code class="highlighter-rouge">sample_submission.csv</code>：提出用のサンプルファイル．</li>
 </ul>
 
-<h2 id="c-rules">2.c Rules</h2>
+<h2 id="2c-rules">2.c Rules</h2>
 <p>重要そうなものだけ抜粋．</p>
 
 <ul>
@@ -249,7 +253,7 @@ logerror = log(z) - log(s) \tag{1}
   <li>第2ラウンドでは，いかなる形でもソースコードを公開できない</li>
 </ul>
 
-<h1 id="section-1">参考</h1>
+<h1 id="参考">参考</h1>
 
 <ul>
   <li><a href="https://www.kaggle.com/c/zillow-prize-1">Kaggle，Zillow Prize</a></li>
@@ -262,14 +266,12 @@ logerror = log(z) - log(s) \tag{1}
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>ここで検討過程を公開しようと思っていたが，どうやらルール違反っぽい．一旦Kernelで公開したものを，日本語訳して自分のサイトで公開するのはOKか？ <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>ここで検討過程を公開しようと思っていたが，どうやらルール違反っぽい．一旦Kernelで公開したものを，日本語訳して自分のサイトで公開するのはOKか？ <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
 
 </article>
-
-
 
 
 
@@ -365,6 +367,10 @@ logerror = log(z) - log(s) \tag{1}
         
         
           <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
         
         
         

@@ -52,11 +52,11 @@
   
   <!-- Facebook OGP cards -->
   <meta property="og:description" content=" 更新中：Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーションの読書メモ．JavaScript習得の取っ掛かりにしたい．" />
-  <meta property="og:url" content="https://haltaro.github.io" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://haltaro.github.io/assets/2017-11-18-vis.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2017-11-18-vis.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -67,16 +67,16 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーション">
   <meta name="twitter:description" content=" 更新中：Kyran Dale，PythonとJavaScriptではじめるデータビジュアライゼーションの読書メモ．JavaScript習得の取っ掛かりにしたい．">
-  <meta name="twitter:image" content="https://haltaro.github.io/assets/2017-11-18-vis.jpg">
-  <meta name="twitter:url" content="https://haltaro.github.io">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2017-11-18-vis.jpg">
+  <meta name="twitter:url" content="http://localhost:4000">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://haltaro.github.io/2017/11/18/python-js">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="https://haltaro.github.io/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/2017/11/18/python-js">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -131,6 +131,10 @@
         
           
         
+          
+        
+          
+        
       </ul>
     </nav>
   </div>
@@ -158,7 +162,7 @@
   <div class="post-categories">
   in 
     
-    <a href="/category/javascript">Javascript</a>
+    <a href="/posts/#javascript">Javascript</a>
     
   
   </div>
@@ -169,7 +173,7 @@
 
 <p>なお，演習ではUbuntu16.04を用いた．</p>
 
-<h1 id="section">1章．開発環境の準備</h1>
+<h1 id="1章開発環境の準備">1章．開発環境の準備</h1>
 <ul>
   <li>本書で扱うコードは<a href="https://github.com/Kyrand/dataviz-with-python-and-js">著者のGitHubレポジトリ</a>で公開されている．</li>
   <li><a href="https://www.python.org/">Python</a>の開発環境を構築．<code class="highlighter-rouge">$ conda create --name pyjsviz anaconda</code>．</li>
@@ -179,7 +183,7 @@
   <li>上記ディレクトリの所有者を自分に設定．<code class="highlighter-rouge">$ sudo chown 'haltaro' /data/db</code>．</li>
 </ul>
 
-<h1 id="pythonjavascript">2章．PythonとJavaScript間の言語学習の橋渡し</h1>
+<h1 id="2章pythonとjavascript間の言語学習の橋渡し">2章．PythonとJavaScript間の言語学習の橋渡し</h1>
 
 <ul>
   <li>Pythonは学習済みなので，JavaScriptを中心にメモを残す．</li>
@@ -195,7 +199,7 @@
   <li>続きは24ページから．</li>
 </ul>
 
-<h1 id="section-1">参考</h1>
+<h1 id="参考">参考</h1>
 
 <ul>
   <li><a href="http://taiju.hatenablog.com/entry/20110331/1301535208">あと味，reduce関数は結構有用っていうお話</a>：JavaScriptにおける<code class="highlighter-rouge">reduce</code>の使い方について．</li>
@@ -204,20 +208,18 @@
 <div class="footnotes">
   <ol>
     <li id="fn:2">
-      <p>Python3の場合．Python2の場合は<code class="highlighter-rouge">$ python -m SimpleHTTPServer</code>． <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>Python3の場合．Python2の場合は<code class="highlighter-rouge">$ python -m SimpleHTTPServer</code>． <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:3">
-      <p><code class="highlighter-rouge">index.html</code>に具体的に何を書くかについては，本書では割愛． <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+      <p><code class="highlighter-rouge">index.html</code>に具体的に何を書くかについては，本書では割愛． <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:1">
-      <p>諸説ある．<a href="https://qiita.com/takayukishmz@github/items/f833744f43958a3a9ea9">Qiita，React(Javascript)でファイルの命名規則をどうするかという問題</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>諸説ある．<a href="https://qiita.com/takayukishmz@github/items/f833744f43958a3a9ea9">Qiita，React(Javascript)でファイルの命名規則をどうするかという問題</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
 
 </article>
-
-
 
 
 
@@ -313,6 +315,10 @@
         
         
           <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
         
         
         

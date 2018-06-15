@@ -52,11 +52,11 @@
   
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="複数のGitHubアカウントを制御したい．SSHの秘密鍵を複数管理する方法もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，HTTPSとトークンを使用する方法が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．" />
-  <meta property="og:url" content="https://haltaro.github.io" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="HTTPS+トークンで複数のGitHubアカウントを制御する" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://haltaro.github.io/assets/2018-02-24-woods.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2018-02-24-woods.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -67,16 +67,16 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="HTTPS+トークンで複数のGitHubアカウントを制御する">
   <meta name="twitter:description" content="複数のGitHubアカウントを制御したい．SSHの秘密鍵を複数管理する方法もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，HTTPSとトークンを使用する方法が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．">
-  <meta name="twitter:image" content="https://haltaro.github.io/assets/2018-02-24-woods.jpg">
-  <meta name="twitter:url" content="https://haltaro.github.io">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2018-02-24-woods.jpg">
+  <meta name="twitter:url" content="http://localhost:4000">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://haltaro.github.io/2018/02/24/github-token">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="https://haltaro.github.io/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/2018/02/24/github-token">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -131,6 +131,10 @@
         
           
         
+          
+        
+          
+        
       </ul>
     </nav>
   </div>
@@ -158,7 +162,7 @@
   <div class="post-categories">
   in 
     
-    <a href="/category/github">Github</a>
+    <a href="/posts/#github">Github</a>
     
   
   </div>
@@ -167,11 +171,11 @@
 <article class="post-content">
   <p>複数のGitHubアカウントを制御したい．<a href="https://dev.classmethod.jp/tool/github-ssh-sub-account-setting/">SSHの秘密鍵を複数管理する方法</a>もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，<a href="https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139">HTTPSとトークンを使用する方法</a>が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．</p>
 
-<h1 id="section">手順</h1>
+<h1 id="手順">手順</h1>
 
 <p>全面的に<a href="https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139">https+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiita</a>に従う．</p>
 
-<h2 id="github">GitHubアクセストークンの作成</h2>
+<h2 id="githubアクセストークンの作成">GitHubアクセストークンの作成</h2>
 
 <p>所望のGitHubアカウントにログインし，<a href="https://github.com/settings/developers"><code class="highlighter-rouge">Settings &gt; Developer settings</code></a>から<code class="highlighter-rouge">Personal access tokens</code>を選択する．</p>
 
@@ -183,7 +187,7 @@
 
 <p><code class="highlighter-rouge">Token description</code>に，用途がわかるような名前をつける．<code class="highlighter-rouge">Select scopes</code>で，アクセス権を指定できる．とりあえず<code class="highlighter-rouge">repo</code>にチェックしとけば良さそう<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．私の場合，Gistをブログに埋め込むことがあるので，<code class="highlighter-rouge">gist</code>にもチェックを入れる．これでページ下部の<code class="highlighter-rouge">Generate token</code>を押す．表示されるトークンをクリップボードにコピーする．</p>
 
-<h2 id="section-1">リポジトリをクローン</h2>
+<h2 id="リポジトリをクローン">リポジトリをクローン</h2>
 
 <p>次のフォーマットで，リポジトリをクローンする．</p>
 
@@ -195,7 +199,7 @@
 
 <p>あとは，何も考えずに<code class="highlighter-rouge">git</code>を使えば良い．</p>
 
-<h1 id="section-2">参考</h1>
+<h1 id="参考">参考</h1>
 
 <ul>
   <li><a href="https://dev.classmethod.jp/tool/github-ssh-sub-account-setting/">【メモ】githubの複数アカウントにSSH接続するための設定手順 - Developers.IO</a>：SSHを使った方法</li>
@@ -204,14 +208,12 @@
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>他のはよくわからない． <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>他のはよくわからない． <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
 
 </article>
-
-
 
 
 
@@ -307,6 +309,10 @@
         
         
           <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
         
         
         

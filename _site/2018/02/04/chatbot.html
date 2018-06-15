@@ -52,11 +52,11 @@
   
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="BotUIを本サイトのAboutページに埋め込んだが，会話が長くなると二重にスライドバーが表示されて使いづらい．そこで，BotUIのCSSを修正することにした．" />
-  <meta property="og:url" content="https://haltaro.github.io" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="チャットボットを作ろう：3．CSS修正" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://haltaro.github.io/assets/2017-12-25-bot.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2017-12-25-bot.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -67,16 +67,16 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="チャットボットを作ろう：3．CSS修正">
   <meta name="twitter:description" content="BotUIを本サイトのAboutページに埋め込んだが，会話が長くなると二重にスライドバーが表示されて使いづらい．そこで，BotUIのCSSを修正することにした．">
-  <meta name="twitter:image" content="https://haltaro.github.io/assets/2017-12-25-bot.jpg">
-  <meta name="twitter:url" content="https://haltaro.github.io">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2017-12-25-bot.jpg">
+  <meta name="twitter:url" content="http://localhost:4000">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://haltaro.github.io/2018/02/04/chatbot">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="https://haltaro.github.io/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/2018/02/04/chatbot">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -131,6 +131,10 @@
         
           
         
+          
+        
+          
+        
       </ul>
     </nav>
   </div>
@@ -158,7 +162,7 @@
   <div class="post-categories">
   in 
     
-    <a href="/category/javascript">Javascript</a>
+    <a href="/posts/#javascript">Javascript</a>
     
   
   </div>
@@ -186,44 +190,44 @@
   <li><a href="https://haltaro.github.io/2018/02/04/chatbot">チャットボットを作ろう：3．CSS修正</a></li>
 </ul>
 
-<h1 id="section">環境</h1>
+<h1 id="環境">環境</h1>
 
 <ul>
   <li><a href="http://jekyllthemes.org/themes/easybook/">Easybook</a>：本サイトで利用している<a href="https://jekyllrb-ja.github.io/">Jekyll</a>のテーマ．</li>
   <li><a href="https://github.com/botui/botui">BotUI</a>：JavaScriptだけで動くチャットボットライブラリ．</li>
 </ul>
 
-<h1 id="section-1">手順</h1>
+<h1 id="手順">手順</h1>
 
-<h2 id="botuicssjavascript">BotUIのCSSとJavaScriptをローカルに保存</h2>
+<h2 id="botuiのcssとjavascriptをローカルに保存">BotUIのCSSとJavaScriptをローカルに保存</h2>
 
 <p>ローカルでBotUIを実行するのに必要なファイルを<a href="https://github.com/botui/botui">GitHub</a>からダウンロードする．<a href="https://docs.botui.org/install.html">公式ドキュメント</a>によると，<code class="highlighter-rouge">botui.min.css</code>と<code class="highlighter-rouge">botui-theme-default.css</code>と<code class="highlighter-rouge">botui.min.js</code>があれば良さそう<sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup>．Easybookのディレクトリ構造を鑑み，それぞれ<code class="highlighter-rouge">css/</code>および<code class="highlighter-rouge">js/</code>配下に保存する．</p>
 
-<h2 id="botuimincss"><code class="highlighter-rouge">botui.min.css</code>を修正</h2>
+<h2 id="botuimincssを修正"><code class="highlighter-rouge">botui.min.css</code>を修正</h2>
 
 <p><code class="highlighter-rouge">.botui-app-container</code>の<code class="highlighter-rouge">height:500px</code>をコメントアウトし，高さ制限をなくす．</p>
 
 <script src="https://gist.github.com/haltaro/ee415d36ea915749883b97319473cda0.js"></script>
 
-<h2 id="includeheadhtml"><code class="highlighter-rouge">_include/head.html</code>を修正</h2>
+<h2 id="_includeheadhtmlを修正"><code class="highlighter-rouge">_include/head.html</code>を修正</h2>
 
 <p>CDNではなく，ローカルの<code class="highlighter-rouge">botui.min.css</code>と<code class="highlighter-rouge">botui-theme-default.css</code>を参照する．</p>
 
 <script src="https://gist.github.com/haltaro/a45a366dfe08960cc492021a53886ea5.js"></script>
 
-<h2 id="layoutsbothtml"><code class="highlighter-rouge">_layouts/bot.html</code>を修正</h2>
+<h2 id="_layoutsbothtmlを修正"><code class="highlighter-rouge">_layouts/bot.html</code>を修正</h2>
 
 <p>CDNではなく，ローカルの<code class="highlighter-rouge">botui.js</code>を参照する．</p>
 
 <script src="https://gist.github.com/haltaro/743fd6bc47d99575bbfc1475961663c7.js"></script>
 
-<h1 id="section-2">結果</h1>
+<h1 id="結果">結果</h1>
 
 <p>こんな感じになった．</p>
 
 <iframe width="100%" height="460" src="https://www.youtube.com/embed/qh53W17SCeg?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
 
-<h1 id="section-3">参考</h1>
+<h1 id="参考">参考</h1>
 
 <ul>
   <li><a href="https://docs.botui.org/install.html">BotUIインストールガイド</a></li>
@@ -231,14 +235,12 @@
 <div class="footnotes">
   <ol>
     <li id="fn:2">
-      <p>試行錯誤の結果，<code class="highlighter-rouge">botui.min.css</code>をいじるだけで問題は解決できることが判明したので，全てをダウンロードする必要はなかった． <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>試行錯誤の結果，<code class="highlighter-rouge">botui.min.css</code>をいじるだけで問題は解決できることが判明したので，全てをダウンロードする必要はなかった． <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
 
 </article>
-
-
 
 
 
@@ -334,6 +336,10 @@
         
         
           <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
         
         
         

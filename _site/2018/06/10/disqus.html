@@ -52,11 +52,11 @@
   
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="このブログにDisqusでコメント機能を追加した．Centrariumの作り込みが素晴らしいので，Disqus上の登録と，_config.ymlの変更だけで実現できた．" />
-  <meta property="og:url" content="https://haltaro.github.io" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="Jekyll-CentrariumにDisqusを導入する" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://haltaro.github.io/assets/2018-06-10-disqus.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2018-06-10-disqus.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -67,16 +67,16 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Jekyll-CentrariumにDisqusを導入する">
   <meta name="twitter:description" content="このブログにDisqusでコメント機能を追加した．Centrariumの作り込みが素晴らしいので，Disqus上の登録と，_config.ymlの変更だけで実現できた．">
-  <meta name="twitter:image" content="https://haltaro.github.io/assets/2018-06-10-disqus.jpg">
-  <meta name="twitter:url" content="https://haltaro.github.io">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2018-06-10-disqus.jpg">
+  <meta name="twitter:url" content="http://localhost:4000">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://haltaro.github.io/2018/06/10/disqus">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="https://haltaro.github.io/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/2018/06/10/disqus">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -131,6 +131,10 @@
         
           
         
+          
+        
+          
+        
       </ul>
     </nav>
   </div>
@@ -158,7 +162,7 @@
   <div class="post-categories">
   in 
     
-    <a href="/category/jekyll">Jekyll</a>
+    <a href="/posts/#jekyll">Jekyll</a>
     
   
   </div>
@@ -167,13 +171,13 @@
 <article class="post-content">
   <p>このブログに<a href="https://disqus.com/">Disqus</a>でコメント機能を追加した．<a href="https://github.com/bencentra/centrarium">Centrarium</a>の作り込みが素晴らしいので，Disqus上の登録と，<code class="highlighter-rouge">_config.yml</code>の変更だけで実現できた．</p>
 
-<h1 id="section">環境</h1>
+<h1 id="環境">環境</h1>
 
 <ul>
   <li>Jekyll theme：<a href="https://github.com/bencentra/centrarium">Centrarium</a></li>
 </ul>
 
-<h1 id="disqus">Disqusの設定</h1>
+<h1 id="disqusの設定">Disqusの設定</h1>
 
 <p><a href="https://disqus.com/">Disqus</a>でユーザ登録し，<code class="highlighter-rouge">Install on Site</code>を選択する．以下に適当に情報を埋めていく．</p>
 
@@ -187,17 +191,17 @@
 
 <p><img src="/assets/2018-06-10-configure.png" alt="configure" /></p>
 
-<h1 id="configyml"><code class="highlighter-rouge">_config.yml</code>の変更</h1>
+<h1 id="_configymlの変更"><code class="highlighter-rouge">_config.yml</code>の変更</h1>
 
 <p><a href="https://github.com/bencentra/centrarium">bencentra/centrarium - GitHub</a>の<code class="highlighter-rouge">README.md</code>を読むと，どうやら<code class="highlighter-rouge">_config.yml</code>の<code class="highlighter-rouge">disqus_shortname</code>に登録名を設定するだけで良いことがわかった．</p>
 
 <script src="https://gist.github.com/haltaro/f877f8fb889ee7e4cc2cdfebd6d4772b.js"></script>
 
-<h1 id="section-1">感想</h1>
+<h1 id="感想">感想</h1>
 
 <p>めちゃくちゃ簡単にできた．</p>
 
-<h1 id="section-2">参考</h1>
+<h1 id="参考">参考</h1>
 
 <ul>
   <li><a href="http://takezoe.hatenablog.com/entry/2016/06/05/030805">JekyllにDisqusのコメントフォームをつけてみる - たけぞう瀕死ブログ</a></li>
@@ -205,8 +209,6 @@
 </ul>
 
 </article>
-
-
 
 
 
@@ -302,6 +304,10 @@
         
         
           <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
         
         
         

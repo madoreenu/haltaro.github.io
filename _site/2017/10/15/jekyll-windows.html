@@ -52,11 +52,11 @@
   
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）にJekyll+GitHub Pages環境を構築した．" />
-  <meta property="og:url" content="https://haltaro.github.io" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="Windows7でJekyll+GitHub Pages" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://haltaro.github.io/assets/2017-08-06-blog.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2017-08-06-blog.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -67,16 +67,16 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Windows7でJekyll+GitHub Pages">
   <meta name="twitter:description" content="船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）にJekyll+GitHub Pages環境を構築した．">
-  <meta name="twitter:image" content="https://haltaro.github.io/assets/2017-08-06-blog.jpg">
-  <meta name="twitter:url" content="https://haltaro.github.io">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2017-08-06-blog.jpg">
+  <meta name="twitter:url" content="http://localhost:4000">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://haltaro.github.io/2017/10/15/jekyll-windows">
-  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="https://haltaro.github.io/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/2017/10/15/jekyll-windows">
+  <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -131,6 +131,10 @@
         
           
         
+          
+        
+          
+        
       </ul>
     </nav>
   </div>
@@ -158,7 +162,7 @@
   <div class="post-categories">
   in 
     
-    <a href="/category/jekyll">Jekyll</a>
+    <a href="/posts/#jekyll">Jekyll</a>
     
   
   </div>
@@ -173,7 +177,7 @@
 
 <p><img src="/assets/2017-10-15-env.png" alt="env" /></p>
 
-<h1 id="section">環境</h1>
+<h1 id="環境">環境</h1>
 
 <ul>
   <li>Windows 7 Professional, Serice Pack 1, 64 bit</li>
@@ -181,7 +185,7 @@
   <li>ATOM 1.21.1</li>
 </ul>
 
-<h1 id="section-1">参考</h1>
+<h1 id="参考">参考</h1>
 
 <ul>
   <li><a href="http://opcdiary.net/?page_id=27065">OPC Diary，私家版Git For Windowsのインストール手順</a>：WindowsにおけるGit環境構築．</li>
@@ -195,9 +199,9 @@
   <li><a href="https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf">Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）</a>：ATOMのデフォルト改行コード設定方法．</li>
 </ul>
 
-<h1 id="section-2">手順</h1>
+<h1 id="手順">手順</h1>
 
-<h2 id="git">1. Gitのインストール</h2>
+<h2 id="1-gitのインストール">1. Gitのインストール</h2>
 
 <p><a href="http://opcdiary.net/?page_id=27065">OPC Diary，私家版Git For Windowsのインストール手順</a>を参考にした．</p>
 <ol>
@@ -205,17 +209,16 @@
   <li>インストーラを起動し，基本的にデフォルト設定を選択．ただし，改行設定（<code class="highlighter-rouge">Configuring the line ending conversions</code>）では，上記サイトのおすすめに従い，<code class="highlighter-rouge">Checkout as-is, commit as-is</code>を選択．</li>
 </ol>
 
-<h2 id="git-1">2. Gitのグローバル設定</h2>
+<h2 id="2-gitのグローバル設定">2. Gitのグローバル設定</h2>
 
 <p><code class="highlighter-rouge">Git bash</code>を起動し，上記サイトを参考にグローバル設定した．</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git config --global user.name <span class="s2">"haltaro"</span>
-<span class="gp">$ </span>git config --global user.email <span class="s2">"***@gmail.com"</span>
-<span class="gp">$ </span>git config --global core.quotepath <span class="nb">false</span>
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--global</span> user.name <span class="s2">"haltaro"</span>
+<span class="nv">$ </span>git config <span class="nt">--global</span> user.email <span class="s2">"***@gmail.com"</span>
+<span class="nv">$ </span>git config <span class="nt">--global</span> core.quotepath <span class="nb">false</span>
+</code></pre></div></div>
 
-<h2 id="gitssh">3. GitのSSHキー作成</h2>
+<h2 id="3-gitのsshキー作成">3. GitのSSHキー作成</h2>
 
 <p>引き続き上記サイトを参考に，SSHキーを作成した．</p>
 
@@ -226,33 +229,30 @@
   <li>公開鍵をコピーして，<code class="highlighter-rouge">GitHub</code>のアカウントに登録．</li>
 </ol>
 
-<h2 id="posh-git">4. posh-gitのインストール</h2>
+<h2 id="4-posh-gitのインストール">4. posh-gitのインストール</h2>
 
 <p><a href="https://github.com/dahlbyk/posh-git">posh-git</a>を使うと，PowerShellでgitコマンド補完してくれて便利なので，インストールした． <a href="http://opcdiary.net/?page_id=27065">OPC Diary，私家版Git For Windowsのインストール手順</a>のPsGetを使った方法だと上手くいかなかったので，<a href="https://github.com/dahlbyk/posh-git">公式GitHub</a>から直接クローンした．以下はその詳細である．</p>
 
 <p>まずは，PowerShellで以下のコマンドを打ち，<a href="https://github.com/dahlbyk/posh-git">公式GitHub</a>からクローンする．ディレクトリはどこでも良い．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; git clone git@github.com:dahlbyk/posh-git.git
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; git clone git@github.com:dahlbyk/posh-git.git
+</code></pre></div></div>
 
 <p>PowerShellのセキュリティ設定を変更した．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
+</code></pre></div></div>
 
 <p>上記ディレクトリに移動して，<code class="highlighter-rouge">install.ps1</code>を実行した．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; .\install.ps1
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; .\install.ps1
+</code></pre></div></div>
 
-<h2 id="ruby">5. Rubyのインストール</h2>
+<h2 id="5-rubyのインストール">5. Rubyのインストール</h2>
 
 <p><a href="https://rubyinstaller.org/downloads/">RubyInstaller</a>から2017年10月15日現在の最新版である<code class="highlighter-rouge">Ruby 2.4.2-2(x64)</code>をダウンロードした．</p>
 
-<h2 id="devkit">6. DevKitのインストール</h2>
+<h2 id="6-devkitのインストール">6. DevKitのインストール</h2>
 
 <p>Rubyのパッケージ管理システム<code class="highlighter-rouge">RubyGems</code>のインストールに必要な<code class="highlighter-rouge">DevKit</code>をインストールした．以下はその詳細である．</p>
 
@@ -260,23 +260,21 @@
 
 <p>次に，PowerShellから以下のコマンドを実行した．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; cd C:\DevKit
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; cd C:\DevKit
 &gt; ruby dk.rb init
 &gt; ruby dk.rb install
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<h2 id="section-3">7. 関連パッケージのインストール</h2>
+<h2 id="7-関連パッケージのインストール">7. 関連パッケージのインストール</h2>
 
 <p><code class="highlighter-rouge">RubyGems</code>を使い，<code class="highlighter-rouge">github-pages</code>と<code class="highlighter-rouge">wdm</code>をインストールした．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; gem install github-pages wdm
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; gem install github-pages wdm
+</code></pre></div></div>
 
 <p><code class="highlighter-rouge">&gt; jekyll serve</code>したらと，次のようなエラーが出た．</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>WARN: Unresolved specs during Gem::Specification.reset:
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WARN: Unresolved specs during Gem::Specification.reset:
       rouge (&lt; 3, &gt;= 1.7)
 WARN: Clearing out unresolved specs.
 Please report a bug if this causes problems.
@@ -294,25 +292,24 @@ r'
         from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/exe/jekyll:11:in `&lt;top (required)&gt;'
         from C:/Ruby24-x64/bin/jekyll:23:in `load'
         from C:/Ruby24-x64/bin/jekyll:23:in `&lt;main&gt;'
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>指示通り，<code class="highlighter-rouge">&gt; bundle exec jekyll serve</code>とコマンドを打ったらうまく行った．<a href="https://qiita.com/windhorn/items/0f58866291f8273f18fb">Qiita，bundle execとかdb:createとかが何をしているのか</a>によると，<code class="highlighter-rouge">bundle exec</code>を頭につけると，当該プロジェクトの<code class="highlighter-rouge">Gemfile</code>で指定された環境でコマンドを実行するらしい．</p>
 
-<h2 id="atom">8. ATOMのインストール</h2>
+<h2 id="8-atomのインストール">8. ATOMのインストール</h2>
 <p>マークダウンエディタが欲しかったので，<a href="https://atom.io/">ATOM</a>をインストールした．<a href="https://atom.io/">公式ページ</a>からインストーラをダウンロードすれば簡単にできた．しかし…</p>
 
 <p><img src="/assets/2017-10-15-outline.png" alt="outline" /></p>
 
 <p>サマリ部分に全文表示されてしまう問題が発生した．これはUnixの改行コード（<code class="highlighter-rouge">LF</code>）とWindowsの改行コード（<code class="highlighter-rouge">CRLF</code>）が混在していることが原因らしい．</p>
 
-<h2 id="line-ending-converter">9. line-ending-converterで改行コードを一括変換</h2>
+<h2 id="9-line-ending-converterで改行コードを一括変換">9. line-ending-converterで改行コードを一括変換</h2>
 
 <p>ATOMの設定画面から，<code class="highlighter-rouge">line-ending-converter</code>をインストール．<code class="highlighter-rouge">Packages</code>&gt;<code class="highlighter-rouge">Convert Line Endings To</code>で，<code class="highlighter-rouge">Unix Format</code>を選択すると，現在選択中のファイルの改行コードが一括変換される．</p>
 
 <p>詳細は<a href="https://atom.io/packages/line-ending-converter">こちら</a>．</p>
 
-<h2 id="line-ending-selector">10. line-ending-selectorで改行コード設定</h2>
+<h2 id="10-line-ending-selectorで改行コード設定">10. line-ending-selectorで改行コード設定</h2>
 
 <p><a href="https://qiita.com/nyoro_712/items/8c80e32aa49f7a2d2eaf">Qiita，Atomエディタ上からファイルを新規作成する際のデフォルトの改行コードを設定する（Windows環境）</a>を参考に，デフォルト設定を変更．</p>
 <ol>
@@ -321,7 +318,7 @@ r'
   <li><code class="highlighter-rouge">Default line ending</code>から，<code class="highlighter-rouge">LF</code>を選択．</li>
 </ol>
 
-<h2 id="section-4">11. まとめ</h2>
+<h2 id="11-まとめ">11. まとめ</h2>
 
 <p>下図のような環境が完成した．</p>
 
@@ -329,12 +326,10 @@ r'
 
 <p>PowerShellで<code class="highlighter-rouge">&gt; bundle exec jekyll serve</code>して，ブラウザで<code class="highlighter-rouge">http://127.0.0.1:4000</code>から出来栄えを確認しながら，ATOMでマークダウンを編集できる．</p>
 
-<h1 id="section-5">感想</h1>
+<h1 id="感想">感想</h1>
 <p>ATOMは本当に便利．Linuxが届いたらインストールしようと思う．</p>
 
 </article>
-
-
 
 
 
@@ -430,6 +425,10 @@ r'
         
         
           <li class="nav-link"><a href="/projects/">Projects</a>
+        
+        
+        
+        
         
         
         
