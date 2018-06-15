@@ -48,6 +48,12 @@ highlightjs_theme: "zenburn"
 # Disqus comments
 disqus_shortname: memotaro-haltaro
 
+# Algolia settings
+algolia:
+   application_id: W1ZQ0FTVG1
+   index_name: memotaro
+   search_only_api_key: 2aa4cae0d629ee50410d4fc8afa6b788
+
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
 
