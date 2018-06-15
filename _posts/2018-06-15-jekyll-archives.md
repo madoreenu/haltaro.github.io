@@ -13,6 +13,8 @@ categories:
 
 `Gemfile`は以下のような感じ．
 
+<script src="https://gist.github.com/haltaro/cb98944347875e62bdb072503bf9a0a5.js"></script>
+
 # 手順
 
 `_config.yml`における，`jekyll-archives`関連のすべての設定をコメントアウトする．
