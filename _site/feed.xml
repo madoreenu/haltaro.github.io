@@ -5,9 +5,40 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Jun 2018 12:52:11 +0900</pubDate>
-    <lastBuildDate>Fri, 15 Jun 2018 12:52:11 +0900</lastBuildDate>
+    <pubDate>Fri, 15 Jun 2018 22:13:36 +0900</pubDate>
+    <lastBuildDate>Fri, 15 Jun 2018 22:13:36 +0900</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Centrariumのjekyll-archives問題を回避する</title>
+        <description>&lt;p&gt;本ブログのベースである&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;は，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，&lt;a href=&quot;https://haltaro.github.io/2018/02/11/theme-change&quot;&gt;内部で利用されているjekyll-archivesがまともに動作しなかった&lt;/a&gt;．具体的には，各ポストのカテゴリリンク先が正しく貼れていなかった．試行錯誤の結果，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;で&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-archives&lt;/code&gt;を無効化したら，すべての問題が解決したのでメモしておく．&lt;/p&gt;
+
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;は以下のような感じ．&lt;/p&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;における，&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-archives&lt;/code&gt;関連のすべての設定をコメントアウトする．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/43b5d125344d139b15eb51c1177e21ed.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;これだけでOK．各ポストのカテゴリリンク先は，&lt;code class=&quot;highlighter-rouge&quot;&gt;/posts/#&lt;/code&gt;に向けて貼られるようになる．これは，&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;や&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt;において次のようにリンク先を指定しているため．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/78b00c5d648473f1546f6ca677ec7135.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;カテゴリごとに独立したページを作成したいわけではないので，この対応で十分．なんとなく使うのではなく，ソースコードをちゃんと読まないといけないなあ．&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Jun 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/06/15/jekyll-archives</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/15/jekyll-archives</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>UCOMにAirMacを接続してWifi環境を構築する</title>
@@ -675,141 +706,6 @@
         
         
         <category>python</category>
-        
-      </item>
-    
-      <item>
-        <title>Kaggle，Web Traffic Time Series Forecasting，1st place solution</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting&quot;&gt;Kaggle，Web Traffic Time Series Forecasting&lt;/a&gt;の&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795&quot;&gt;1st place solution&lt;/a&gt;のメモ．Wikipediaのpageviewを予測するコンテスト．解法のポイントは，一年前と四半期前の値を特徴量として追加し，RNN seq2seqを使うこと．&lt;/p&gt;
-
-&lt;h1 id=&quot;概要&quot;&gt;概要&lt;/h1&gt;
-
-&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
-
-&lt;p&gt;予測には２つの情報を用いた：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;ローカルな特徴量．自己相関モデル，移動平均モデル，季節性モデルなど．&lt;/li&gt;
-  &lt;li&gt;グローバルな特徴量．年周期，四半期周期のトレンド．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-03-04-autoregression.png&quot; alt=&quot;autoregression&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;RNN seq2seqを利用した理由は：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;RNNはARIMAの自然な拡張と考えられるし，柔軟で表現力が高い．&lt;/li&gt;
-  &lt;li&gt;RNNはノンパラメトリック．&lt;/li&gt;
-  &lt;li&gt;RNNはどんな特徴量も簡単に扱える．&lt;/li&gt;
-  &lt;li&gt;seq2seqはこのタスクに適していると考えた．直前の時系列の予測値を入力として使うため，誤差が蓄積されやすいため，結果として極端な予測は避けるようになる&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．&lt;/li&gt;
-  &lt;li&gt;Deep learningは流行っている．&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;feature-engineering&quot;&gt;Feature engineering&lt;/h2&gt;
-
-&lt;p&gt;利用した特徴量は：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;pageviews&lt;/strong&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;log1p()&lt;/code&gt;で変換したビュー数．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;agent&lt;/strong&gt;，&lt;strong&gt;country&lt;/strong&gt;，&lt;strong&gt;site&lt;/strong&gt;：ページのURLから抽出．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;year-to-year autocorrelation&lt;/strong&gt;，&lt;strong&gt;quarter-to-quarter autocorrelation&lt;/strong&gt;：年周期や四半期周期のトレンドを捉えるため．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;page popularity&lt;/strong&gt;：人気のページとそうでないものは，動きが異なるため．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;lagged pageviews&lt;/strong&gt;：365日前と90日前のpageview．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;feature-preprocessing&quot;&gt;Feature preprocessing&lt;/h2&gt;
-
-&lt;p&gt;One-hot encodingしたカテゴリカル変数を含む，全ての特徴量をそれぞれ独立に正規化した．時不変な特徴量（&lt;code class=&quot;highlighter-rouge&quot;&gt;country&lt;/code&gt;など）を時系列データ長に&lt;code class=&quot;highlighter-rouge&quot;&gt;tf.tile()&lt;/code&gt;で変換した．&lt;/p&gt;
-
-&lt;p&gt;学習用データは，固定長でランダムに抽出した．&lt;/p&gt;
-
-&lt;h2 id=&quot;model-core&quot;&gt;Model core&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-03-04-model-core.png&quot; alt=&quot;model-core&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Encoderとして&lt;a href=&quot;https://www.tensorflow.org/versions/master/api_docs/python/tf/contrib/cudnn_rnn/CudnnGRU&quot;&gt;cuDNN GRU&lt;/a&gt;を使った．cuDNN GRUはドキュメントが貧弱だが，通常のTensorFlowの&lt;code class=&quot;highlighter-rouge&quot;&gt;RNNCells&lt;/code&gt;より5倍から10倍ほど高速だ．&lt;/p&gt;
-
-&lt;p&gt;Decoderとして&lt;a href=&quot;https://www.tensorflow.org/api_docs/python/tf/contrib/rnn/GRUBlockCell&quot;&gt;GRUBlockCell&lt;/a&gt;を&lt;a href=&quot;https://www.tensorflow.org/api_docs/python/tf/while_loop&quot;&gt;tf.while_loop()&lt;/a&gt;でラップして使った．ループの中で，直前の時系列の予測結果を次のセルに入力する．&lt;/p&gt;
-
-&lt;h2 id=&quot;working-with-long-timeseries&quot;&gt;Working with long timeseries&lt;/h2&gt;
-
-&lt;p&gt;LSTM/GRUはせいぜい100から300アイテム前の情報しか保持できないため，700日分のpageviewを使用する今回のタスクには，直接利用できない．&lt;/p&gt;
-
-&lt;p&gt;最初は&lt;a href=&quot;https://distill.pub/2016/augmented-rnns/&quot;&gt;attention&lt;/a&gt;的な考え方で，一年前と四半期前のEncoderの出力をDecoderの入力に使うことを考えた．しかし，処理が重い割に性能が出なかった．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-03-04-attention.png&quot; alt=&quot;attention&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;結局，一年前と四半期前のpageviewをそのまま特徴量として使うことに決めた．Attentionより良い性能を得た．また，これによりEncoder長をむやみに長くする必要がなくなった．過去60から90日のアイテムを利用する場合でさえ，上記のモデルより高速に優れた予測が可能だった．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-03-04-lagged.png&quot; alt=&quot;lagged&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;losses-and-regularization&quot;&gt;Losses and regularization&lt;/h2&gt;
-
-&lt;p&gt;コンペの評価で用いられる&lt;a href=&quot;https://en.wikipedia.org/wiki/Symmetric_mean_absolute_percentage_error&quot;&gt;SMAPE&lt;/a&gt;は0付近で微分不可能な動きをするため，学習に利用しなかった．代わりに微分可能なSAMPE関数を独自に実装して利用した．&lt;/p&gt;
-
-&lt;p&gt;最終的な出力は整数値に丸めた．負の出力値は0に修正した．&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1511.08400&quot;&gt;Regularizing RNNs by Stabilizing Activations&lt;/a&gt;を参考にRNNの正規化を試みたが，改善効果は微々たるものだった．&lt;/p&gt;
-
-&lt;h2 id=&quot;training-and-validation&quot;&gt;Training and validation&lt;/h2&gt;
-
-&lt;p&gt;学習時は，&lt;a href=&quot;https://arxiv.org/abs/1705.07795&quot;&gt;Training Deep Networks without Learning Rates Through Coin Betting&lt;/a&gt;のCOCOB optimizerと，Gradient clippingを合わせて使った．COCOBは自動で学習率を調整してくれるから便利だし，従来のモーメントベースのoptimizerより高速だ．&lt;/p&gt;
-
-&lt;p&gt;TrainingとValidationの分け方として，次の二つが考えられる．&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Walk-forward split&lt;/strong&gt;：厳密にはSplitではない．TrainingとValidationでタイムフレームをずらす方法．&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Side-by-side split&lt;/strong&gt;：王道のSplit．データセットを独立な集合に分割し，それぞれTrainingとValidationに利用する．&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-03-04-split.png&quot; alt=&quot;split&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;今回は両方共利用した．Walk-forward splitは今回のタスクと親和性が高いが，Validation用に新しい日付のデータセットを残しておく必要があるため，古い日付のデータセットしか学習に使えない．一方でSide-by-sideは新しい日付のデータセットも学習に使えるが，Validationの性能がTrainingデータに大きく依存してしまう．&lt;/p&gt;
-
-&lt;p&gt;ハイパーパラメータのチューニングにのみSplitを利用し，全てのデータを使って再度学習したモデルで，最終的な予測を行った．&lt;/p&gt;
-
-&lt;h2 id=&quot;reducing-model-variance&quot;&gt;Reducing model variance&lt;/h2&gt;
-
-&lt;p&gt;今回の入力データ（Wikipediaのpageview）は非常にノイジーなので，Varianceを下げる工夫が必要だった．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-03-04-variance.png&quot; alt=&quot;variance&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;過学習直前（と思われる）前後1000エポックで，10個のチェックポイントを作成．&lt;/li&gt;
-  &lt;li&gt;サンプルを分割し，三つの独立なモデルを作成し，それぞれチェックポイントを作成．&lt;/li&gt;
-  &lt;li&gt;合計30のチェックポイントに対して，SGD averaging（ASGD）を適用する．つまり学習結果のパラメータを平均して，予測に使う．&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;hyperparameter-tuning&quot;&gt;Hyperparameter tuning&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://automl.github.io/SMAC3/stable/&quot;&gt;SMAC3&lt;/a&gt;を使ってチューニングした．SMAC3は：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;条件付きチューニングが可能．例えば，&lt;code class=&quot;highlighter-rouge&quot;&gt;n_layer &amp;gt; 1&lt;/code&gt;のときのみ，第二層を&lt;code class=&quot;highlighter-rouge&quot;&gt;dropout&lt;/code&gt;するなど．&lt;/li&gt;
-  &lt;li&gt;モデルのVarianceを考慮可能．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;大筋は理解できた（気になった）．学習時のDecoderの扱いなど，&lt;a href=&quot;https://github.com/Arturus/kaggle-web-traffic&quot;&gt;ソースコード&lt;/a&gt;を確認した方が良いかもしれない．&lt;/p&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/c/web-traffic-time-series-forecasting/discussion/43795&quot;&gt;Kaggle，Web Traffic Time Series Forecasting，1st place solution&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Arturus/kaggle-web-traffic&quot;&gt;Arturus/kaggle-web-traffic - GitHub&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://automl.github.io/SMAC3/stable/&quot;&gt;SMAC3 documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;seq2seqのDecoderの学習時って，普通，直前の時系列の予測結果は使わずに，ターゲットデータを使うんじゃなかったっけ？ソースコードを確認した方が良いかもしれない． &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 03 Mar 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/03/03/kaggle-wikipedia-1st</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/03/kaggle-wikipedia-1st</guid>
-        
-        
-        <category>deep learning</category>
         
       </item>
     
