@@ -5,13 +5,13 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Jun 2018 22:16:06 +0900</pubDate>
-    <lastBuildDate>Fri, 15 Jun 2018 22:16:06 +0900</lastBuildDate>
+    <pubDate>Fri, 15 Jun 2018 22:17:28 +0900</pubDate>
+    <lastBuildDate>Fri, 15 Jun 2018 22:17:28 +0900</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
         <title>Centrariumのjekyll-archives問題を回避する</title>
-        <description>&lt;p&gt;本ブログのベースである&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;は，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，&lt;a href=&quot;https://haltaro.github.io/2018/02/11/theme-change&quot;&gt;内部で利用されているjekyll-archivesがまともに動作しなかった&lt;/a&gt;．具体的には，各ポストのカテゴリリンク先が正しく貼れていなかった．試行錯誤の結果，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;で&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-archives&lt;/code&gt;を無効化したら，すべての問題が解決したのでメモしておく．&lt;/p&gt;
+        <description>&lt;p&gt;本ブログのベースである&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;は，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，&lt;a href=&quot;https://haltaro.github.io/2018/02/11/theme-change&quot;&gt;内部で利用されているjekyll-archivesがまともに動作せず&lt;/a&gt;，各ポストのカテゴリリンク先が正しく貼れていなかった．試行錯誤の結果，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;で&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-archives&lt;/code&gt;を無効化したら，すべての問題が解決したのでメモしておく．&lt;/p&gt;
 
 &lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
