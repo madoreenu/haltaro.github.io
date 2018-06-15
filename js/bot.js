@@ -53,7 +53,7 @@
     }).then(function() {
       return botui.message.add({
         delay: 2500,
-        content: '現在は，広告会社でマーケティングについて研究してます．'
+        content: '現在は，広告会社でデータ分析をしています．'
       });
     }).then(askEnd);
   }
@@ -89,7 +89,7 @@
     }).then(function(){
       return botui.message.add({
         delay: 2000,
-        content: 'Postsには，各記事をカテゴリごとにまとめています．'
+        content: 'Categoriesには，各記事をカテゴリごとにまとめています．'
       });
     }).then(function(){
       return botui.message.add({

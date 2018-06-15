@@ -5,9 +5,44 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Jun 2018 22:17:28 +0900</pubDate>
-    <lastBuildDate>Fri, 15 Jun 2018 22:17:28 +0900</lastBuildDate>
+    <pubDate>Fri, 15 Jun 2018 22:25:09 +0900</pubDate>
+    <lastBuildDate>Fri, 15 Jun 2018 22:25:09 +0900</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>CentrariumのPostsをCategoriesにリネームする</title>
+        <description>&lt;p&gt;近々，全文検索機能を実装し，現在の&lt;code class=&quot;highlighter-rouge&quot;&gt;Posts&lt;/code&gt;ページに配置しようと考えている．とは言え，現在の&lt;code class=&quot;highlighter-rouge&quot;&gt;Posts&lt;/code&gt;ページの&lt;code class=&quot;highlighter-rouge&quot;&gt;categories&lt;/code&gt;一覧は便利なので，できれば残したい．そこで，一旦&lt;code class=&quot;highlighter-rouge&quot;&gt;Posts&lt;/code&gt;ページを&lt;code class=&quot;highlighter-rouge&quot;&gt;Categories&lt;/code&gt;ページとしてリネームして退避することにした．&lt;/p&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;h2 id=&quot;postshtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;posts.html&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;まず，&lt;code class=&quot;highlighter-rouge&quot;&gt;posts.html&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;categories.html&lt;/code&gt;にリネームする．フロントマターを次のように変更する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/e2141c3a1062d73eb53588fba394ac8d.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;indexhtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;で列挙される，各ポストのカテゴリへのリンク先を，&lt;code class=&quot;highlighter-rouge&quot;&gt;/posts/#&lt;/code&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;/categories/#&lt;/code&gt;に変更する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/59920969396317c8f64d86bbdf020105.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;_layoutsposthtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt;
+の各カテゴリへのリンク先を，&lt;code class=&quot;highlighter-rouge&quot;&gt;/posts/#&lt;/code&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;/categories/#&lt;/code&gt;に変更する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/9d53778f905f71f938592957a3efaae8.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Fri, 15 Jun 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/06/15/rename-permalinks</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/15/rename-permalinks</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>Centrariumのjekyll-archives問題を回避する</title>
@@ -685,29 +720,6 @@
         
         
         <category>deep learning</category>
-        
-      </item>
-    
-      <item>
-        <title>Jupyter notebookのフォントを変更する</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://jupyter.org/&quot;&gt;Jupyter notebook&lt;/a&gt;のコードブロックを等幅フォントにしたい．&lt;a href=&quot;https://github.com/dunovank/jupyter-themes&quot;&gt;Jupytertheme&lt;/a&gt;を使っても良いが，拡張機能のボタンが消えてしまうことがあり不便．&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.jupyter/custom/custom.css&lt;/code&gt;をいじって変更した．&lt;/p&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://shu87.hateblo.jp/entry/2017/08/30/003224&quot;&gt;Jupyter notebookを等幅フォントにする - 元文学部統計学専攻学生の備忘録&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://qiita.com/hiropignis/items/f2192d86971746b849e8&quot;&gt;Jupyter Notebookを自分仕様に：背景，アイコンの変更 - Qiita&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.jupyter/custom/custom.css&lt;/code&gt;に，&lt;code class=&quot;highlighter-rouge&quot;&gt;.CodeMirror pre, .output pre { font-family: Monaco, monospace; }&lt;/code&gt;を追記して，Jupyterを再起動する．&lt;/p&gt;
-</description>
-        <pubDate>Mon, 05 Mar 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/03/05/jupyter-font</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/05/jupyter-font</guid>
-        
-        
-        <category>python</category>
         
       </item>
     
