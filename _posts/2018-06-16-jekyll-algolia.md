@@ -31,7 +31,7 @@ Algoliaは，リアルタイム検索をSaaSで提供するサービス群．今
 
 幸い，[Jekyll向けのプラグイン](https://community.algolia.com/jekyll-algolia/)があるため，私でも簡単に実装できた．以下に手順を示す．
 
-[^sad]: 月数千PVくらい．
+[^sad]: 月1000PVくらい．
 
 # 手順
 
@@ -73,7 +73,7 @@ Algoliaは，リアルタイム検索をSaaSで提供するサービス群．今
 
 ## `search.md`
 
-全文検索用の[Search]()ページを作成するために，以下の`search.md`ファイルを作成した．
+全文検索用の[Search](https://haltaro.github.io/search/)ページを作成するために，以下の`search.md`ファイルを作成した．
 
 <script src="https://gist.github.com/haltaro/c30ebf72374a701767ebc55fe33a898a.js"></script>
 
