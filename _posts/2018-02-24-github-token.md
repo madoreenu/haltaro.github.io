@@ -23,7 +23,7 @@ categories:
 
 ![github]({{site.baseurl}}/assets/2018-02-24-github-options.png)
 
-`Token description`に，用途がわかるような名前をつける．`Select scopes`で，アクセス権を指定できる．とりあえず`repo`にチェックしとけば良さそう[^1]．私の場合，Gistをブログに埋め込むことがあるので，`gist`にもチェックを入れる．これでページ下部の`Generate token`を押す．表示されるトークンをクリップボードにコピーする．
+`Token description`に，用途がわかるような名前をつける．`Select scopes`で，アクセス権を指定できる．とりあえず`repo`にチェックしとけば良さそう[^1]．私の場合，Gistをウェブサイトに埋め込むことがあるので，`gist`にもチェックを入れる．これでページ下部の`Generate token`を押す．表示されるトークンをクリップボードにコピーする．
 
 ## リポジトリをクローン
 

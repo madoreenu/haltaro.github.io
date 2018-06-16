@@ -164,6 +164,31 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/02/18/effective-python">Brett Slatkin，Effective Python</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>更新中：Brett Slatkin，Effective Python ―Pythonプログラムを改良する59項目を読む．Pythonを効率的に書くための59のヒントが紹介されている． 特に心に残った項目を以下にまとめる．Jupyter notebookはこちら． 1章．Pythonic thinking リスト内包表記には，3つ以上の式を避ける リスト内包表記に毒されすぎて，もとの表記の何がわかりづらいのか，また修正された表記でわかりやすくなったのかピンとこない．気をつけないと． 大きな内包表記にはジェネレータ式を考える イテレータとジェネレータについては，Pythonのイテレータとジェネレータ - Qiitaがわかりやすい． try/except/else/finallyの各ブロックを活用する except：エラーが補足された場合の処理． else：エラーが捕捉されなかった場合の処理． finally：エラーの捕捉にかかわらず，最後に実行される処理． 2章．関数 Noneを返すよりは例外を選ぶ Noneと，0や空白文字などの他の値がすべて条件式においてFalseと評価されるため，エラーを引き起こしやすい．それはそうと，raise from構文がよくわからない．あとで確認しよう． クロージャが変数スコープとどう関わるか知っておく クロージャとは，関数内の変数の名前解決が，その関数が宣言されたときのスコープで行われるもの．Python Tips： Python でクロージャを使いたい - Life with pythonがとてもわかりやすい． ちなみにここで登場した特殊メソッド__call__(self)は，クラスのインスタンスを関数っぽく呼び出したときに動作するもの．Pythonのクラスにおける__call__メソッドの使い方 - Qiitaがわかりやすい． リストを返さずにジェネレータを返すことを考える これはやってしまいがち．例えばtext中の単語のインデックスを返す関数は次のように定義できる．su ジェネレータを使うと，リストで返すよりもコードが明確になる．また，作業メモリに全ての入出力を保持する必要がないので，どのような長さの入力に対しても出力シーケンスを生成できる． 引数に対してイテレータを使うときには確実さを尊ぶ StopIteration例外が起きたあとのジェネレータをもう一度反復した場合，難の例外も発生しない．つまり，出力のないイテレータと，出力があったが尽きてしまったイテレータを区別できない． よって，関数にイテレータを渡した場合，奇妙な振る舞いや欠損値を生む可能性がある．コンテナとイテレータを区別する方法として，組み込み関数iter()に二度突っ込んで同じ結果が出るか確認する方法がある． イテレータとジェネレータとコンテナの関係については，Python: ジェネレータをイテレータから理解する - CUBE SUGAR CONTAINERがわかりやすい． 可変長引数を使って，見た目をすっきりさせる def function(*arg)と定義すると，引数は可変長であり，内部でタプルとして処理される．またdef function(**arg)と定義すると，やはり引数は可変長であり，内部で辞書型として処理される．pythonの引数にある*hogeとか**mapとか...</p>-->
+      <p><p><i class="fa fa-spinner"></i> <strong>更新中</strong>：<a href="http://amzn.asia/gDvdj6b">Brett Slatkin，Effective Python ―Pythonプログラムを改良する59項目</a>を読む．<a href="https://www.python.org/">Python</a>を効率的に書くための59のヒントが紹介されている．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">February 18, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#python">Python</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/02/17/fish">Ubuntu 16.04にFish環境を構築する</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -323,31 +348,6 @@ CDNではなく，ローカルのbotui.jsを参照する．
       in 
         
         <a href="/categories/#javascript">Javascript</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/01/07/digital-marketing-retire">CourceraのDigital marketing講座を退会した</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>2017年10月頃から，Courcera，Marketing in a digital worldを受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は11,000円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている． 背景 2018年1月から広告業界に転職することが決まったため，マーケティングの基礎について，ほそぼそと書籍で勉強することにした．2017年12月末まで前の会社で働いていたので，退職準備を進めつつ，通勤中や土日に時間を作った． 武井由紀子，ユーザ中心ウェブビジネス戦略 コトラー，アームストロング，恩藏のマーケティング原理 古川一郎，マーケティング・サイエンス入門 佐藤達郎，「これからの広告」の教科書 本田哲也，田端信太郎，広告やメディアで人を動かそうとするのは、もう諦めなさい。 書籍を斜め読みしてわかったことは，技術の移り変わりがとても速い業界である，ということ．マーケティングの大家であるコトラー氏は，内容が陳腐化しているため，自分の古い著書にサインを求められても応じない，という逸話があるくらい．最先端の動向をキャッチアップするためには，書籍だけでなく，MOOC（Massive Open Online Course）等のオンライン講座も併用した方が良いと判断した． マーケティングに関するMOOCを検索したところ，CourceraのMarketing in a digital worldの評判が良いことがわかった．月額約5,500円の有料講座だが，週8時間ほど勉強すれば，4週間で終わるらしい．5,500円であれば技術書を買うのと変わらないので，2017年10月頃受講を開始した． 今から考えると，退職準備や中途入社準備を進めながら，週8時間確保できるという読みが甘すぎた．結局2ヶ月かけても修了できず，入社日を迎えて時間切れとなった． 講義 受講記録は以下： Courcera，Marketing in a digital world：1. Product Courcera，Marketing in a digital world：2. Promotion Courcera, Marketing in a digital world：3. Placement Courcera, Marketing in a digital world：4. Price...</p>-->
-      <p><p>2017年10月頃から，<a href="https://www.coursera.org/learn/marketing-digital">Courcera，Marketing in a digital world</a>を受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は11,000円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">January 7, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#marketing">Marketing</a>
         
       
       </div>

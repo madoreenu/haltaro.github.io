@@ -7,7 +7,7 @@ categories:
  - jekyll
 ---
 
-本ブログのベースである[Centrarium](https://github.com/bencentra/centrarium)は，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，[内部で利用されているjekyll-archivesがまともに動作せず](https://haltaro.github.io/2018/02/11/theme-change)，各ポストのカテゴリリンク先が正しく貼れていなかった．試行錯誤の結果，`_config.yml`で`jekyll-archives`を無効化したら，すべての問題が解決したのでメモしておく．
+このウェブサイトのベーステーマである[Centrarium](https://github.com/bencentra/centrarium)は，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，[内部で利用されているjekyll-archivesがまともに動作せず](https://haltaro.github.io/2018/02/11/theme-change)，各ポストのカテゴリリンク先が正しく貼れていなかった．試行錯誤の結果，`_config.yml`で`jekyll-archives`を無効化したら，すべての問題が解決したのでメモしておく．
 
 # 環境
 

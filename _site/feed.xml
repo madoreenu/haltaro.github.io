@@ -5,9 +5,24 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Jun 2018 07:19:47 +0900</pubDate>
-    <lastBuildDate>Sat, 16 Jun 2018 07:19:47 +0900</lastBuildDate>
+    <pubDate>Sat, 16 Jun 2018 17:41:19 +0900</pubDate>
+    <lastBuildDate>Sat, 16 Jun 2018 17:41:19 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>JekyllサイトにAlgoliaで全文検索を実装する</title>
+        <description>&lt;p&gt;本サイトに待望の&lt;a href=&quot;https://haltaro.github.io/search/&quot;&gt;全文検索機能を実装&lt;/a&gt;した．Algolia社の&lt;a href=&quot;https://community.algolia.com/docsearch/&quot;&gt;DocSearch&lt;/a&gt;の審査に通らなかったので，同社の&lt;a href=&quot;https://www.algolia.com/pricing&quot;&gt;free hacker plan&lt;/a&gt;を採用した．&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/iBIoajzYWGE?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Sat, 16 Jun 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/06/16/jekyll-algolia</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/16/jekyll-algolia</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>CentrariumのPostsをCategoriesにリネームする</title>
@@ -46,7 +61,7 @@
     
       <item>
         <title>Centrariumのjekyll-archives問題を回避する</title>
-        <description>&lt;p&gt;本ブログのベースである&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;は，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，&lt;a href=&quot;https://haltaro.github.io/2018/02/11/theme-change&quot;&gt;内部で利用されているjekyll-archivesがまともに動作せず&lt;/a&gt;，各ポストのカテゴリリンク先が正しく貼れていなかった．試行錯誤の結果，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;で&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-archives&lt;/code&gt;を無効化したら，すべての問題が解決したのでメモしておく．&lt;/p&gt;
+        <description>&lt;p&gt;このウェブサイトのベーステーマである&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;は，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，&lt;a href=&quot;https://haltaro.github.io/2018/02/11/theme-change&quot;&gt;内部で利用されているjekyll-archivesがまともに動作せず&lt;/a&gt;，各ポストのカテゴリリンク先が正しく貼れていなかった．試行錯誤の結果，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;で&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-archives&lt;/code&gt;を無効化したら，すべての問題が解決したのでメモしておく．&lt;/p&gt;
 
 &lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
@@ -155,7 +170,7 @@
     
       <item>
         <title>Jekyll-CentrariumにDisqusを導入する</title>
-        <description>&lt;p&gt;このブログに&lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;でコメント機能を追加した．&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;の作り込みが素晴らしいので，Disqus上の登録と，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の変更だけで実現できた．&lt;/p&gt;
+        <description>&lt;p&gt;このウェブサイトに&lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;でコメント機能を追加した．&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;の作り込みが素晴らしいので，Disqus上の登録と，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の変更だけで実現できた．&lt;/p&gt;
 
 &lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
@@ -672,54 +687,6 @@
         
         
         <category>english</category>
-        
-      </item>
-    
-      <item>
-        <title>Fast.ai，Practical Deep Learning for Coders 2018：1．Dogs and cats</title>
-        <description>&lt;p&gt;&lt;i class=&quot;fa fa-spinner&quot;&gt;&lt;/i&gt; &lt;strong&gt;更新中&lt;/strong&gt;：&lt;a href=&quot;http://www.fast.ai/&quot;&gt;Fast.ai&lt;/a&gt;のMOOC&lt;a href=&quot;http://course.fast.ai/&quot;&gt;Practical Deep Learning for Coders 2018&lt;/a&gt;の受講を開始した．全7回の講座で，KaggleマスターのJeremy Howardから無料でDeep learningを教えてもらえるらしい．第1回は，犬と猫の分類コンペをベースに，CNNのチューニングについて学ぶ．&lt;/p&gt;
-
-&lt;h1 id=&quot;教材&quot;&gt;教材&lt;/h1&gt;
-
-&lt;p&gt;2018年に入ってからビデオの内容を更新したらしいので注意．&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://course.fast.ai/lessons/lessons.html&quot;&gt;Video lesson&lt;/a&gt;：全7本．それぞれ2時間以上ある．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/fastai/fastai/tree/master/courses/dl1&quot;&gt;Notebook&lt;/a&gt;：Videoのデモの詳細な説明がある．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forums.fast.ai/t/wiki-lesson-1/9398&quot;&gt;Wiki&lt;/a&gt;：更に詳細な説明がある．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forums.fast.ai/&quot;&gt;Forum&lt;/a&gt;：わからないことはここで聞く．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;lesson-1-recognizing-cats-and-dogs&quot;&gt;Lesson 1. Recognizing cats and dogs&lt;/h1&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;460&quot; src=&quot;https://www.youtube.com/embed/IPBSB1HLNLo?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;gpuの準備&quot;&gt;GPUの準備&lt;/h2&gt;
-
-&lt;p&gt;GPUの準備方法として，いくつかのオプションがある：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.crestle.com/&quot;&gt;Crestle&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.paperspace.com/&quot;&gt;Paperspace&lt;/a&gt;：&lt;a href=&quot;https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/paperspace.md&quot;&gt;Paperspace for fast.ai - GitHub&lt;/a&gt;が参考になる．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://aws.amazon.com&quot;&gt;AWS&lt;/a&gt;：&lt;a href=&quot;https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md&quot;&gt;AWS fastami GPU Image Setup&lt;/a&gt;が参考になる．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;とりあえず，使ったことのあるAWSを選択する．&lt;/p&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://course.fast.ai/start.html&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/paperspace.md&quot;&gt;Paperspace for fast.ai - GitHub&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://qiita.com/poisuke/items/a19dfe7e52d890c8e52b&quot;&gt;fast.aiの最初の最初のAWS設定につまずかないために - Qiita&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 11 Mar 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/03/11/fastai-01-01</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/11/fastai-01-01</guid>
-        
-        
-        <category>deep learning</category>
         
       </item>
     

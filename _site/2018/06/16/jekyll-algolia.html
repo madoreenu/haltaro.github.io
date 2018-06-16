@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Jekyll-CentrariumにDisqusを導入する</title>
-  <meta name="description" content="このウェブサイトにDisqusでコメント機能を追加した．Centrariumの作り込みが素晴らしいので，Disqus上の登録と，_config.ymlの変更だけで実現できた．">
+  <title>JekyllサイトにAlgoliaで全文検索を実装する</title>
+  <meta name="description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のfree hacker planを採用した．">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,12 +51,12 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="このウェブサイトにDisqusでコメント機能を追加した．Centrariumの作り込みが素晴らしいので，Disqus上の登録と，_config.ymlの変更だけで実現できた．" />
+  <meta property="og:description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のfree hacker planを採用した．" />
   <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
-  <meta property="og:title" content="Jekyll-CentrariumにDisqusを導入する" />
+  <meta property="og:title" content="JekyllサイトにAlgoliaで全文検索を実装する" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://localhost:4000/assets/2018-06-10-disqus.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2018-06-16-algolia.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -65,9 +65,9 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Jekyll-CentrariumにDisqusを導入する">
-  <meta name="twitter:description" content="このウェブサイトにDisqusでコメント機能を追加した．Centrariumの作り込みが素晴らしいので，Disqus上の登録と，_config.ymlの変更だけで実現できた．">
-  <meta name="twitter:image" content="http://localhost:4000/assets/2018-06-10-disqus.jpg">
+  <meta name="twitter:title" content="JekyllサイトにAlgoliaで全文検索を実装する">
+  <meta name="twitter:description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のfree hacker planを採用した．">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2018-06-16-algolia.jpg">
   <meta name="twitter:url" content="http://localhost:4000">
   
 
@@ -75,7 +75,7 @@
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2018/06/10/disqus">
+  <link rel="canonical" href="http://localhost:4000/2018/06/16/jekyll-algolia">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -150,10 +150,10 @@
     <div class="page-content">
         <div class="post">
 
-<div class="post-header-container has-cover" style="background-image: url(/assets/2018-06-10-disqus.jpg);">
+<div class="post-header-container has-cover" style="background-image: url(/assets/2018-06-16-algolia.jpg);">
   <div class="scrim has-cover">
     <header class="post-header">
-      <h1 class="title">Jekyll-CentrariumにDisqusを導入する</h1>
+      <h1 class="title">JekyllサイトにAlgoliaで全文検索を実装する</h1>
       <!--<p class="info">by <strong></strong></p>-->
     </header>
   </div>
@@ -164,7 +164,7 @@
 
 
 <section class="post-meta">
-  <div class="post-date">June 10, 2018</div>
+  <div class="post-date">June 16, 2018</div>
   <div class="post-categories">
   in 
     
@@ -175,44 +175,9 @@
 </section>
 
 <article class="post-content">
-  <p>このウェブサイトに<a href="https://disqus.com/">Disqus</a>でコメント機能を追加した．<a href="https://github.com/bencentra/centrarium">Centrarium</a>の作り込みが素晴らしいので，Disqus上の登録と，<code class="highlighter-rouge">_config.yml</code>の変更だけで実現できた．</p>
+  <p>本サイトに待望の<a href="https://haltaro.github.io/search/">全文検索機能を実装</a>した．Algolia社の<a href="https://community.algolia.com/docsearch/">DocSearch</a>の審査に通らなかったので，同社の<a href="https://www.algolia.com/pricing">free hacker plan</a>を採用した．</p>
 
-<h1 id="環境">環境</h1>
-
-<ul>
-  <li>Jekyll theme：<a href="https://github.com/bencentra/centrarium">Centrarium</a></li>
-</ul>
-
-<h1 id="disqusの設定">Disqusの設定</h1>
-
-<p><a href="https://disqus.com/">Disqus</a>でユーザ登録し，<code class="highlighter-rouge">Install on Site</code>を選択する．以下に適当に情報を埋めていく．</p>
-
-<p><img src="/assets/2018-06-10-setting.png" alt="setting" /></p>
-
-<p>Planを選択する．広告を出したくなかったので，<code class="highlighter-rouge">Plus</code>の<code class="highlighter-rouge">free</code>を選択した．</p>
-
-<p><img src="/assets/2018-06-10-plan.png" alt="plan" /></p>
-
-<p>詳細設定を行う．とりあえずわかるところだけ埋めた．</p>
-
-<p><img src="/assets/2018-06-10-configure.png" alt="configure" /></p>
-
-<h1 id="_configymlの変更"><code class="highlighter-rouge">_config.yml</code>の変更</h1>
-
-<p><a href="https://github.com/bencentra/centrarium">bencentra/centrarium - GitHub</a>の<code class="highlighter-rouge">README.md</code>を読むと，どうやら<code class="highlighter-rouge">_config.yml</code>の<code class="highlighter-rouge">disqus_shortname</code>に登録名を設定するだけで良いことがわかった．</p>
-
-<script src="https://gist.github.com/haltaro/f877f8fb889ee7e4cc2cdfebd6d4772b.js"></script>
-
-<h1 id="感想">感想</h1>
-
-<p>めちゃくちゃ簡単にできた．</p>
-
-<h1 id="参考">参考</h1>
-
-<ul>
-  <li><a href="http://takezoe.hatenablog.com/entry/2016/06/05/030805">JekyllにDisqusのコメントフォームをつけてみる - たけぞう瀕死ブログ</a></li>
-  <li><a href="https://github.com/bencentra/centrarium">bencentra/centrarium - GitHub</a></li>
-</ul>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/iBIoajzYWGE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 
 </article>
 
