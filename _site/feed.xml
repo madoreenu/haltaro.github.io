@@ -5,15 +5,101 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Jun 2018 17:41:19 +0900</pubDate>
-    <lastBuildDate>Sat, 16 Jun 2018 17:41:19 +0900</lastBuildDate>
+    <pubDate>Sat, 16 Jun 2018 18:49:55 +0900</pubDate>
+    <lastBuildDate>Sat, 16 Jun 2018 18:49:55 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
-        <title>JekyllサイトにAlgoliaで全文検索を実装する</title>
-        <description>&lt;p&gt;本サイトに待望の&lt;a href=&quot;https://haltaro.github.io/search/&quot;&gt;全文検索機能を実装&lt;/a&gt;した．Algolia社の&lt;a href=&quot;https://community.algolia.com/docsearch/&quot;&gt;DocSearch&lt;/a&gt;の審査に通らなかったので，同社の&lt;a href=&quot;https://www.algolia.com/pricing&quot;&gt;free hacker plan&lt;/a&gt;を採用した．&lt;/p&gt;
+        <title>JekyllにAlgoliaで全文検索機能を実装する</title>
+        <description>&lt;p&gt;本サイトに待望の&lt;a href=&quot;https://haltaro.github.io/search/&quot;&gt;全文検索機能を実装&lt;/a&gt;した．Algolia社の&lt;a href=&quot;https://community.algolia.com/docsearch/&quot;&gt;DocSearch&lt;/a&gt;の審査に通らなかったので，同社の&lt;a href=&quot;https://www.algolia.com/pricing&quot;&gt;Free hacker plan&lt;/a&gt;を利用した．&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/iBIoajzYWGE?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;algolia&quot;&gt;Algolia&lt;/h1&gt;
+
+&lt;p&gt;Algoliaは，リアルタイム検索をSaaSで提供するサービス群．今回は，&lt;a href=&quot;https://community.algolia.com/docsearch/&quot;&gt;DocSearch&lt;/a&gt;および&lt;a href=&quot;https://www.algolia.com/pricing&quot;&gt;Free hacker plan&lt;/a&gt;の利用を検討した．&lt;/p&gt;
+
+&lt;h2 id=&quot;docsearch&quot;&gt;DocSearch&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://community.algolia.com/docsearch/&quot;&gt;DocSearch申請用ページ&lt;/a&gt;で登録したURLが審査に通ると，Algoliaのクローラが自動でインデックスファイルを構築し，検索用APIを公開してくれるという，ゆとりには嬉しいサービス．何を隠そう&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;の検索システムもこれで実装されている．今回は残念ながら審査に通らなかった&lt;sup id=&quot;fnref:japanese&quot;&gt;&lt;a href=&quot;#fn:japanese&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;ので，&lt;a href=&quot;https://www.algolia.com/pricing&quot;&gt;Free hacker plan&lt;/a&gt;を利用することにした．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-16-docsearch.png&quot; alt=&quot;docsearch&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;free-hacker-plan&quot;&gt;Free hacker plan&lt;/h2&gt;
+
+&lt;p&gt;自力で作成したインデックスファイルをAlgoliaにアップロードし，検索用APIを利用するプラン．マスターデータは1万件まで登録でき，APIを月10万回まで利用できる．&lt;a href=&quot;https://blog.leko.jp/post/implement-site-search-with-algolia/&quot;&gt;Algoliaを利用してサイト内検索機能を実装する - WEB EGG&lt;/a&gt;によると，上限をオーバーすると検索もコンテンツの追加もできなくなるみたい．月1万PV程度のブログでギリギリ足りない感じらしいので，本ウェブサイトなら余裕である&lt;sup id=&quot;fnref:sad&quot;&gt;&lt;a href=&quot;#fn:sad&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-06-16-hacker.png&quot; alt=&quot;hacker&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;幸い，&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/&quot;&gt;Jekyll向けのプラグイン&lt;/a&gt;があるため，私でも簡単に実装できた．以下に手順を示す．&lt;/p&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;p&gt;以下は基本的に&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/&quot;&gt;Algolia for Jekyll - Algolia&lt;/a&gt;および&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/blog.html&quot;&gt;Blog search -  Algolia for Jekyll&lt;/a&gt;に則っているが，ウェブサイトの一貫性を保つために一部のコードを修正している．&lt;/p&gt;
+
+&lt;h2 id=&quot;algoliaのユーザ登録&quot;&gt;Algoliaのユーザ登録&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.algolia.com/&quot;&gt;Algolia&lt;/a&gt;からサインアップする．以降の処理で，ダッシュボードの&lt;code class=&quot;highlighter-rouge&quot;&gt;Application ID&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Search-Only API Key&lt;/code&gt;，および&lt;code class=&quot;highlighter-rouge&quot;&gt;Admin API Key&lt;/code&gt;が必要なのでメモしておく．&lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll-algliaの設定&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-alglia&lt;/code&gt;の設定&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;に以下を追記し，&lt;code class=&quot;highlighter-rouge&quot;&gt;$ bundle update&lt;/code&gt;する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/bc3a34adff021f762373f452f2aad4e7.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-algolia&lt;/code&gt;の設定を追加する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/af5b24ac877c78a8d2230f903f429b8c.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;インデックスの作成とアップロード&quot;&gt;インデックスの作成とアップロード&lt;/h2&gt;
+
+&lt;p&gt;シェルで以下を実行する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/7602fed4d47e0062ed2779fc5070e4f9.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;Admin API Key&lt;/code&gt;はローカルで保管する必要がある．間違ってGitHub等にアップしないように注意．以降は，検索窓の実装に入る．&lt;/p&gt;
+
+&lt;h2 id=&quot;_layoutssearchhtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/search.html&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/blog.html&quot;&gt;Blog search -  Algolia for Jekyll&lt;/a&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;search.html&lt;/code&gt;を参考にした．ただし，本ウェブサイトのベーステーマである&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;と整合するよう，一部に手を加えた．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/1c1f54a75dff0ce897373d2d6450310c.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;_includesalgoliahtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/algolia.html&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/blog.html&quot;&gt;Blog search -  Algolia for Jekyll&lt;/a&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;algolia.html&lt;/code&gt;を参考にした．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/17c7d07fdd56f07c80735e0328ecfbe0.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;searchmd&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;search.md&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;全文検索用の&lt;a href=&quot;&quot;&gt;Search&lt;/a&gt;ページを作成するために，以下の&lt;code class=&quot;highlighter-rouge&quot;&gt;search.md&lt;/code&gt;ファイルを作成した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/c30ebf72374a701767ebc55fe33a898a.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;これで，本ウェブサイトに欲しかった機能はあらかた実装してしまった．今後は，現職で得たデータ分析のノウハウや統計・機械学習の理論を，就業規則に抵触しない範囲でまとめていきたい．あと，そろそろRubyを真面目に勉強したい．&lt;/p&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.algolia.com/&quot;&gt;Algolia - Algolia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://community.algolia.com/docsearch/&quot;&gt;DocSearch - Algolia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/&quot;&gt;Algolia for Jekyll - Algolia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.leko.jp/post/implement-site-search-with-algolia/&quot;&gt;Algoliaを利用してサイト内検索機能を実装する - WEB EGG&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rs.luminousspice.com/hugo-site-search/&quot;&gt;Hugo に全文検索を取り付けた - the Right Stuff&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:japanese&quot;&gt;
+      &lt;p&gt;Algolia社が定める”technical documentation site”ではないと，丁寧なお祈りメールが来た．そもそも日本語だと通りづらいんじゃないか． &lt;a href=&quot;#fnref:japanese&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:sad&quot;&gt;
+      &lt;p&gt;月数千PVくらい． &lt;a href=&quot;#fnref:sad&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sat, 16 Jun 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018/06/16/jekyll-algolia</link>
@@ -81,7 +167,7 @@
 
 &lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
-&lt;p&gt;カテゴリごとに独立したページを作成したいわけではないので，この対応で十分．なんとなく使うのではなく，ソースコードをちゃんと読まないといけないなあ．&lt;/p&gt;
+&lt;p&gt;カテゴリごとに独立したページを作成したいわけではないので，この対応で十分．&lt;/p&gt;
 </description>
         <pubDate>Fri, 15 Jun 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018/06/15/jekyll-archives</link>
