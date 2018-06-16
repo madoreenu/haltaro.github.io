@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>JekyllにAlgoliaで全文検索機能を実装する</title>
-  <meta name="description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した．">
+  <title>OpenSSLが古すぎてbundle updateできない</title>
+  <meta name="description" content="Algoliaで全文検索機能を実装するためにGemfileを書き換えて$ bundle updateしたところ，OpenSSLが古すぎると叱られた．How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に試行錯誤したら解決した．">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,12 +51,12 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した．" />
+  <meta property="og:description" content="Algoliaで全文検索機能を実装するためにGemfileを書き換えて$ bundle updateしたところ，OpenSSLが古すぎると叱られた．How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に試行錯誤したら解決した．" />
   <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
-  <meta property="og:title" content="JekyllにAlgoliaで全文検索機能を実装する" />
+  <meta property="og:title" content="OpenSSLが古すぎてbundle updateできない" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://localhost:4000/assets/2018-06-16-algolia.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2018-06-16-gem.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -65,9 +65,9 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="JekyllにAlgoliaで全文検索機能を実装する">
-  <meta name="twitter:description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した．">
-  <meta name="twitter:image" content="http://localhost:4000/assets/2018-06-16-algolia.jpg">
+  <meta name="twitter:title" content="OpenSSLが古すぎてbundle updateできない">
+  <meta name="twitter:description" content="Algoliaで全文検索機能を実装するためにGemfileを書き換えて$ bundle updateしたところ，OpenSSLが古すぎると叱られた．How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に試行錯誤したら解決した．">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2018-06-16-gem.jpg">
   <meta name="twitter:url" content="http://localhost:4000">
   
 
@@ -75,7 +75,7 @@
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2018/06/16/jekyll-algolia">
+  <link rel="canonical" href="http://localhost:4000/2018/06/16/too-old-openssl">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -150,10 +150,10 @@
     <div class="page-content">
         <div class="post">
 
-<div class="post-header-container has-cover" style="background-image: url(/assets/2018-06-16-algolia.jpg);">
+<div class="post-header-container has-cover" style="background-image: url(/assets/2018-06-16-gem.jpg);">
   <div class="scrim has-cover">
     <header class="post-header">
-      <h1 class="title">JekyllにAlgoliaで全文検索機能を実装する</h1>
+      <h1 class="title">OpenSSLが古すぎてbundle updateできない</h1>
       <!--<p class="info">by <strong></strong></p>-->
     </header>
   </div>
@@ -168,102 +168,52 @@
   <div class="post-categories">
   in 
     
-    <a href="/categories/#jekyll">Jekyll</a>
+    <a href="/categories/#ruby">Ruby</a>
     
   
   </div>
 </section>
 
 <article class="post-content">
-  <p>本サイトに待望の<a href="https://haltaro.github.io/search/">全文検索機能を実装</a>した．Algolia社の<a href="https://community.algolia.com/docsearch/">DocSearch</a>の審査に通らなかったので，同社の<a href="https://www.algolia.com/pricing">Free hacker plan</a>を利用した．</p>
+  <p><a href="https://haltaro.github.io/2018/06/16/jekyll-algolia">Algoliaで全文検索機能を実装</a>するために<code class="highlighter-rouge">Gemfile</code>を書き換えて<code class="highlighter-rouge">$ bundle update</code>したところ，<code class="highlighter-rouge">OpenSSL</code>が古すぎると叱られた．<a href="https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions">How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs</a>を参考に試行錯誤したら解決した．</p>
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/iBIoajzYWGE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+<h1 id="症状">症状</h1>
 
-<h1 id="algolia">Algolia</h1>
+<p><code class="highlighter-rouge">bundle update</code>したら，次のようなエラーが出た．</p>
 
-<p>Algoliaは，リアルタイム検索をSaaSで提供するサービス群．今回は，<a href="https://community.algolia.com/docsearch/">DocSearch</a>および<a href="https://www.algolia.com/pricing">Free hacker plan</a>の利用を検討した．</p>
+<script src="https://gist.github.com/haltaro/659ab18c1adf3992c6d77d017bd7e370.js"></script>
 
-<h2 id="docsearch">DocSearch</h2>
+<p>よく見たら，冒頭に以下のような警告が．<code class="highlighter-rouge">OpenSSL</code>のバージョンが古すぎるのが原因らしい．</p>
 
-<p><a href="https://community.algolia.com/docsearch/">DocSearch申請用ページ</a>で登録したURLが審査に通ると，Algoliaのクローラが自動でインデックスファイルを構築し，検索用APIを公開してくれるという，ゆとりには嬉しいサービス．何を隠そう<a href="https://jekyllrb.com/">Jekyll</a>の検索システムもこれで実装されている．今回は残念ながら審査に通らなかった<sup id="fnref:japanese"><a href="#fn:japanese" class="footnote">1</a></sup>ので，<a href="https://www.algolia.com/pricing">Free hacker plan</a>を利用することにした．</p>
+<script src="https://gist.github.com/haltaro/553c23ad838f043c81d208afd84b10ab.js"></script>
 
-<p><img src="/assets/2018-06-16-docsearch.png" alt="docsearch" /></p>
+<h1 id="対応記録">対応記録</h1>
 
-<h2 id="free-hacker-plan">Free hacker plan</h2>
+<p>ほぼ原因はわかっていたが，念の為<a href="https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions">How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs</a>を参考に以下のテストを実行した．</p>
 
-<p>自力で作成したインデックスファイルをAlgoliaにアップロードし，検索用APIを利用するプラン．マスターデータは1万件まで登録でき，APIを月10万回まで利用できる．<a href="https://blog.leko.jp/post/implement-site-search-with-algolia/">Algoliaを利用してサイト内検索機能を実装する - WEB EGG</a>によると，上限をオーバーすると検索もコンテンツの追加もできなくなるみたい．月1万PV程度のブログでギリギリ足りない感じらしいので，本ウェブサイトなら余裕である<sup id="fnref:sad"><a href="#fn:sad" class="footnote">2</a></sup>．</p>
+<script src="https://gist.github.com/haltaro/e337be914ab33cde81fb2313f14e382d.js"></script>
 
-<p><img src="/assets/2018-06-16-hacker.png" alt="hacker" /></p>
+<p>すると，案の定，<code class="highlighter-rouge">OpenSSL</code>のバージョンが古いことがわかった．</p>
 
-<p>幸い，<a href="https://community.algolia.com/jekyll-algolia/">Jekyll向けのプラグイン</a>があるため，私でも簡単に実装できた．以下に手順を示す．</p>
+<script src="https://gist.github.com/haltaro/a2c798d8d1a2429cb1b42ac81dad3458.js"></script>
 
-<h1 id="手順">手順</h1>
+<p><a href="https://stackoverflow.com/questions/30741367/ruby-using-wrong-version-of-openssl?utm_medium=organic&amp;utm_source=google_rich_qa&amp;utm_campaign=google_rich_qa">Ruby using wrong version of openssl</a>を参考に以下を実行した．</p>
 
-<p>以下は基本的に<a href="https://community.algolia.com/jekyll-algolia/">Algolia for Jekyll - Algolia</a>および<a href="https://community.algolia.com/jekyll-algolia/blog.html">Blog search -  Algolia for Jekyll</a>に則っているが，ウェブサイトの一貫性を保つために一部のコードを修正している．</p>
+<script src="https://gist.github.com/haltaro/e9be5079025e1c04f5bd9af81a8cba9b.js"></script>
 
-<h2 id="algoliaのユーザ登録">Algoliaのユーザ登録</h2>
+<p>すると<code class="highlighter-rouge">brew reinstall openssl</code>しろと怒られた．</p>
 
-<p><a href="https://www.algolia.com/">Algolia</a>からサインアップする．以降の処理で，ダッシュボードの<code class="highlighter-rouge">Application ID</code>，<code class="highlighter-rouge">Search-Only API Key</code>，および<code class="highlighter-rouge">Admin API Key</code>が必要なのでメモしておく．</p>
+<script src="https://gist.github.com/haltaro/ffe682173c1cc3c8ae980157bfd73427.js"></script>
 
-<h2 id="jekyll-algliaの設定"><code class="highlighter-rouge">jekyll-alglia</code>の設定</h2>
+<p>これで再度<code class="highlighter-rouge">$ ruby -ropen-uri -e 'eval open("https://git.io/vQhWq").read'</code>にトライしたが，解決せず．<a href="https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions">How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs</a>のThe Solutionsに記載されている他のコマンドを試してみた．</p>
 
-<p><code class="highlighter-rouge">Gemfile</code>に以下を追記し，<code class="highlighter-rouge">$ bundle update</code>する．</p>
+<script src="https://gist.github.com/haltaro/98c4a5495aa8acea2232cfab11af960a.js"></script>
 
-<script src="https://gist.github.com/haltaro/bc3a34adff021f762373f452f2aad4e7.js"></script>
-
-<p><code class="highlighter-rouge">_config.yml</code>に<code class="highlighter-rouge">jekyll-algolia</code>の設定を追加する．</p>
-
-<script src="https://gist.github.com/haltaro/af5b24ac877c78a8d2230f903f429b8c.js"></script>
-
-<h2 id="インデックスの作成とアップロード">インデックスの作成とアップロード</h2>
-
-<p>シェルで以下を実行する．</p>
-
-<script src="https://gist.github.com/haltaro/7602fed4d47e0062ed2779fc5070e4f9.js"></script>
-
-<p>ここで，<code class="highlighter-rouge">Admin API Key</code>はローカルで保管する必要がある．間違ってGitHub等にアップしないように注意．以降は，検索窓の実装に入る．</p>
-
-<h2 id="_layoutssearchhtml"><code class="highlighter-rouge">_layouts/search.html</code></h2>
-
-<p><a href="https://community.algolia.com/jekyll-algolia/blog.html">Blog search -  Algolia for Jekyll</a>の<code class="highlighter-rouge">search.html</code>を参考にした．ただし，本ウェブサイトのベーステーマである<a href="https://github.com/bencentra/centrarium">Centrarium</a>と整合するよう，一部に手を加えた．</p>
-
-<script src="https://gist.github.com/haltaro/1c1f54a75dff0ce897373d2d6450310c.js"></script>
-
-<h2 id="_includesalgoliahtml"><code class="highlighter-rouge">_includes/algolia.html</code></h2>
-
-<p><a href="https://community.algolia.com/jekyll-algolia/blog.html">Blog search -  Algolia for Jekyll</a>の<code class="highlighter-rouge">algolia.html</code>を参考にした．</p>
-
-<script src="https://gist.github.com/haltaro/17c7d07fdd56f07c80735e0328ecfbe0.js"></script>
-
-<h2 id="searchmd"><code class="highlighter-rouge">search.md</code></h2>
-
-<p>全文検索用の<a href="">Search</a>ページを作成するために，以下の<code class="highlighter-rouge">search.md</code>ファイルを作成した．</p>
-
-<script src="https://gist.github.com/haltaro/c30ebf72374a701767ebc55fe33a898a.js"></script>
+<p>解決した．</p>
 
 <h1 id="感想">感想</h1>
 
-<p>これで，本ウェブサイトに欲しかった機能はあらかた実装してしまった．結構書きたい（書かないと忘れてしまいそうな）ことが溜まってきたので，しばらくは統計・機械学習のノウハウや理論を書いていきたい．</p>
-
-<h1 id="参考">参考</h1>
-
-<ul>
-  <li><a href="https://www.algolia.com/">Algolia - Algolia</a></li>
-  <li><a href="https://community.algolia.com/docsearch/">DocSearch - Algolia</a></li>
-  <li><a href="https://community.algolia.com/jekyll-algolia/">Algolia for Jekyll - Algolia</a></li>
-  <li><a href="https://blog.leko.jp/post/implement-site-search-with-algolia/">Algoliaを利用してサイト内検索機能を実装する - WEB EGG</a></li>
-  <li><a href="http://rs.luminousspice.com/hugo-site-search/">Hugo に全文検索を取り付けた - the Right Stuff</a></li>
-</ul>
-<div class="footnotes">
-  <ol>
-    <li id="fn:japanese">
-      <p>Algolia社が定める”technical documentation site”ではないと，丁寧なお祈りメールが来た．そもそも日本語だと通りづらいんじゃないか． <a href="#fnref:japanese" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:sad">
-      <p>月数千PVくらい． <a href="#fnref:sad" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p>Ruby力が低いため，具体的にどのコマンドが解決の鍵だったのかよくわからなかった．ただ，この機会に<code class="highlighter-rouge">bundle update</code>と<code class="highlighter-rouge">bundle install</code>の違いを理解できたので良かった．</p>
 
 </article>
 

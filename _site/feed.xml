@@ -5,9 +5,60 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Jun 2018 18:50:28 +0900</pubDate>
-    <lastBuildDate>Sat, 16 Jun 2018 18:50:28 +0900</lastBuildDate>
+    <pubDate>Sat, 16 Jun 2018 22:01:58 +0900</pubDate>
+    <lastBuildDate>Sat, 16 Jun 2018 22:01:58 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>OpenSSLが古すぎてbundle updateできない</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2018/06/16/jekyll-algolia&quot;&gt;Algoliaで全文検索機能を実装&lt;/a&gt;するために&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;を書き換えて&lt;code class=&quot;highlighter-rouge&quot;&gt;$ bundle update&lt;/code&gt;したところ，&lt;code class=&quot;highlighter-rouge&quot;&gt;OpenSSL&lt;/code&gt;が古すぎると叱られた．&lt;a href=&quot;https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions&quot;&gt;How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs&lt;/a&gt;を参考に試行錯誤したら解決した．&lt;/p&gt;
+
+&lt;h1 id=&quot;症状&quot;&gt;症状&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt;したら，次のようなエラーが出た．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/659ab18c1adf3992c6d77d017bd7e370.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;よく見たら，冒頭に以下のような警告が．&lt;code class=&quot;highlighter-rouge&quot;&gt;OpenSSL&lt;/code&gt;のバージョンが古すぎるのが原因らしい．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/553c23ad838f043c81d208afd84b10ab.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;対応記録&quot;&gt;対応記録&lt;/h1&gt;
+
+&lt;p&gt;ほぼ原因はわかっていたが，念の為&lt;a href=&quot;https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions&quot;&gt;How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs&lt;/a&gt;を参考に以下のテストを実行した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/e337be914ab33cde81fb2313f14e382d.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;すると，案の定，&lt;code class=&quot;highlighter-rouge&quot;&gt;OpenSSL&lt;/code&gt;のバージョンが古いことがわかった．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/a2c798d8d1a2429cb1b42ac81dad3458.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/30741367/ruby-using-wrong-version-of-openssl?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;Ruby using wrong version of openssl&lt;/a&gt;を参考に以下を実行した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/e9be5079025e1c04f5bd9af81a8cba9b.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;すると&lt;code class=&quot;highlighter-rouge&quot;&gt;brew reinstall openssl&lt;/code&gt;しろと怒られた．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/ffe682173c1cc3c8ae980157bfd73427.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;これで再度&lt;code class=&quot;highlighter-rouge&quot;&gt;$ ruby -ropen-uri -e 'eval open(&quot;https://git.io/vQhWq&quot;).read'&lt;/code&gt;にトライしたが，解決せず．&lt;a href=&quot;https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions&quot;&gt;How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs&lt;/a&gt;のThe Solutionsに記載されている他のコマンドを試してみた．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/98c4a5495aa8acea2232cfab11af960a.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;解決した．&lt;/p&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;Ruby力が低いため，具体的にどのコマンドが解決の鍵だったのかよくわからなかった．ただ，この機会に&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;の違いを理解できたので良かった．&lt;/p&gt;
+</description>
+        <pubDate>Sat, 16 Jun 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/06/16/too-old-openssl</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/16/too-old-openssl</guid>
+        
+        
+        <category>ruby</category>
+        
+      </item>
     
       <item>
         <title>JekyllにAlgoliaで全文検索機能を実装する</title>
@@ -79,7 +130,7 @@
 
 &lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
-&lt;p&gt;これで，本ウェブサイトに欲しかった機能はあらかた実装してしまった．今後は，現職で得たデータ分析のノウハウや統計・機械学習の理論を，就業規則に抵触しない範囲でまとめていきたい．あと，そろそろRubyを真面目に勉強したい．&lt;/p&gt;
+&lt;p&gt;これで，本ウェブサイトに欲しかった機能はあらかた実装してしまった．結構書きたい（書かないと忘れてしまいそうな）ことが溜まってきたので，しばらくは統計・機械学習のノウハウや理論を書いていきたい．&lt;/p&gt;
 
 &lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
 
@@ -663,116 +714,6 @@
         
         
         <category>jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>DMM英会話受講メモ：2018年3月</title>
-        <description>&lt;p&gt;仕事が落ち着いてきたので，&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;を再開することにした．&lt;/p&gt;
-
-&lt;h1 id=&quot;20180313&quot;&gt;20180313&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;以前使っていたskypeアカウントは使えないことが発覚．なんとかならないか公式に問い合わせてみる．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180314&quot;&gt;20180314&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;対応メールが来ていたので打ち返した．たぶん入会可能になるのは明日以降．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180315&quot;&gt;20180315&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;無事対応していただけた．明日から体験授業．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180316&quot;&gt;20180316&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;DMM英会話，無料体験第一回．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/theoretical-physicist-stephen-hawking-dies-at-76/lZHQ0CddEeilaZvmh_d11w&quot;&gt;Theoretical Physicist Stephen Hawking Dies at 76&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;intricacy：the details of something that is complex&lt;/li&gt;
-  &lt;li&gt;Lucasian：教員職の一種．https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%BC%E3%82%AB%E3%82%B9%E6%95%99%E6%8E%88%E8%81%B7&lt;/li&gt;
-  &lt;li&gt;confine：限定する，制限する，閉じ込める．&lt;/li&gt;
-  &lt;li&gt;proponent：提唱者，主張者．&lt;/li&gt;
-  &lt;li&gt;久々の英会話で楽しかった．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180319&quot;&gt;20180319&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;DMM英会話，無料体験二回目．&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/smart-mirrors-used-to-lure-shoppers-back-into-stores/D4dyACLCEeiASld-d9sJCQ&quot;&gt;Smart Mirrors Used to Lure Shoppers Back into Stores&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;lure：to make someone do something by presenting it in an attractive way．&lt;/li&gt;
-  &lt;li&gt;brick-and-mortar：existing as a physical building rather than on the internet&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180320&quot;&gt;20180320&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;無料体験が終了した．早く会員登録しないと．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180322&quot;&gt;20180322&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/super-wood-stronger-than-steel/L-77NCFvEeivUm8US8LTuQ&quot;&gt;‘Super Wood’ Stronger Than Steel&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;fancy：expensive and of high quality&lt;/li&gt;
-  &lt;li&gt;以前より，答えに詰まることが多くなった気がする．継続的に学習をすすめる必要がある．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180323&quot;&gt;20180323&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/iss-astronauts-will-soon-get-a-personal-assistant/_U1qMBzwEeiwy89U-cPjUg&quot;&gt;ISS Astronauts Will Soon Get a Personal Assistant&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;rudimentary：simple and basic&lt;/li&gt;
-  &lt;li&gt;背景知識がある記事だと，すごく楽しい．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180324&quot;&gt;20180324&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/world-needs-greener-water-solutions-as-demand-rises/Z9J_tCtyEeiJhU8Pi9Kn9g&quot;&gt;World Needs ‘Greener’ Water Solutions as Demand Rises&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;erosion：the slow destruction of something, usually by natural forces such as wind or water&lt;/li&gt;
-  &lt;li&gt;reservoir：a man-made lake where water is stored&lt;/li&gt;
-  &lt;li&gt;irrigation：a system for supplying water to plants&lt;/li&gt;
-  &lt;li&gt;harvest：収穫&lt;/li&gt;
-  &lt;li&gt;もう少し落ち着いて文章を読めるようになりたい．あと，声を低めに出すと落ち着いて文章を組み立てられるような気がする（ほんまかいな）．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180327&quot;&gt;20180327&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/new-chatbot-lets-students-evaluate-professors/6MjfhCtmEeiByMsV7p_PSw&quot;&gt;New ‘Chatbot’ Lets Students Evaluate Professors&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;qualitative：related to how good something is or what it is like, rather than how much of it there is&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180328&quot;&gt;20180328&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/most-americans-dont-get-enough-sleep/nz5ooij_EeiaaJOLlkHDFA&quot;&gt;Most Americans Don’t Get Enough Sleep&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;underpinning：a foundation or basis&lt;/li&gt;
-  &lt;li&gt;deprivation：the fact of not having enough of something that one needs&lt;/li&gt;
-  &lt;li&gt;premature：happening earlier than usual or expected&lt;/li&gt;
-  &lt;li&gt;circadian：約 24 時間周期の&lt;/li&gt;
-  &lt;li&gt;文法まできちんと訂正してくれる先生で良かった．ただ，できればその回答の内容自体にもコメントしてほしかった．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180329&quot;&gt;20180329&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/3-d-printed-house-offers-cheap-solution-for-poor-worldwide/jMov0CksEeiJLm-lik5omg&quot;&gt;3-D Printed House Offers Cheap Solution for Poor Worldwide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;まったくの、本当の、ごく薄い、透きとおるような、切り立った、険しい&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 29 Mar 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/03/29/dmm-english</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/29/dmm-english</guid>
-        
-        
-        <category>english</category>
         
       </item>
     
