@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>JekyllにAlgoliaで全文検索機能を実装する</title>
-  <meta name="description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した．">
+  <title>PythonとLight GBMで遊ぶNotebookを作った</title>
+  <meta name="description" content="知り合いから「プログラミングしたことないけどLight GBMを使ってみたい．2時間くらいで教えてくれ」と言われた．2時間だと理論面をカバーするのは難しいので，とりあえず触ってみることを目標に，Pythonおよび関連ライブラリの基礎（のさらにごく一部）でさくっと遊ぶNotebookを作った．勉強会当日は一緒に動か...">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,12 +51,12 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した．" />
+  <meta property="og:description" content="知り合いから「プログラミングしたことないけどLight GBMを使ってみたい．2時間くらいで教えてくれ」と言われた．2時間だと理論面をカバーするのは難しいので，とりあえず触ってみることを目標に，Pythonおよび関連ライブラリの基礎（のさらにごく一部）でさくっと遊ぶNotebookを作った．勉強会当日は一緒に動か..." />
   <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
-  <meta property="og:title" content="JekyllにAlgoliaで全文検索機能を実装する" />
+  <meta property="og:title" content="PythonとLight GBMで遊ぶNotebookを作った" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://localhost:4000/assets/2018-06-16-algolia.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2017-10-22-python.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -65,9 +65,9 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="JekyllにAlgoliaで全文検索機能を実装する">
-  <meta name="twitter:description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した．">
-  <meta name="twitter:image" content="http://localhost:4000/assets/2018-06-16-algolia.jpg">
+  <meta name="twitter:title" content="PythonとLight GBMで遊ぶNotebookを作った">
+  <meta name="twitter:description" content="知り合いから「プログラミングしたことないけどLight GBMを使ってみたい．2時間くらいで教えてくれ」と言われた．2時間だと理論面をカバーするのは難しいので，とりあえず触ってみることを目標に，Pythonおよび関連ライブラリの基礎（のさらにごく一部）でさくっと遊ぶNotebookを作った．勉強会当日は一緒に動か...">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2017-10-22-python.jpg">
   <meta name="twitter:url" content="http://localhost:4000">
   
 
@@ -75,7 +75,7 @@
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2018/06/16/jekyll-algolia">
+  <link rel="canonical" href="http://localhost:4000/2018/06/17/intro-to-lightgbm">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -150,10 +150,10 @@
     <div class="page-content">
         <div class="post">
 
-<div class="post-header-container has-cover" style="background-image: url(/assets/2018-06-16-algolia.jpg);">
+<div class="post-header-container has-cover" style="background-image: url(/assets/2017-10-22-python.jpg);">
   <div class="scrim has-cover">
     <header class="post-header">
-      <h1 class="title">JekyllにAlgoliaで全文検索機能を実装する</h1>
+      <h1 class="title">PythonとLight GBMで遊ぶNotebookを作った</h1>
       <!--<p class="info">by <strong></strong></p>-->
     </header>
   </div>
@@ -164,103 +164,76 @@
 
 
 <section class="post-meta">
-  <div class="post-date">June 16, 2018</div>
+  <div class="post-date">June 17, 2018</div>
   <div class="post-categories">
   in 
     
-    <a href="/categories/#jekyll">Jekyll</a>
+    <a href="/categories/#machine learning">Machine learning</a>
     
   
   </div>
 </section>
 
 <article class="post-content">
-  <p>本サイトに待望の<a href="https://haltaro.github.io/search/">全文検索機能を実装</a>した．Algolia社の<a href="https://community.algolia.com/docsearch/">DocSearch</a>の審査に通らなかったので，同社の<a href="https://www.algolia.com/pricing">Free hacker plan</a>を利用した．</p>
+  <p>知り合いから「プログラミングしたことないけどLight GBMを使ってみたい．2時間くらいで教えてくれ」と言われた．2時間だと理論面をカバーするのは難しいので，とりあえず触ってみることを目標に，Pythonおよび関連ライブラリの基礎（のさらにごく一部）でさくっと遊ぶ<a href="https://github.com/haltaro/intro-to-lightgbm">Notebook</a>を作った．勉強会当日は一緒に動かしながらレクチャーする予定．</p>
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/iBIoajzYWGE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+<h1 id="対象者">対象者</h1>
 
-<h1 id="algolia">Algolia</h1>
+<ul>
+  <li>統計的な専門用語（平均，分散，相関係数，平均二乗誤差，等々）に馴染みがある．</li>
+  <li>Excelでデータ分析をしたことがある．</li>
+  <li>Pythonどころか，プログラミング自体の経験がない．</li>
+</ul>
 
-<p>Algoliaは，リアルタイム検索をSaaSで提供するサービス群．今回は，<a href="https://community.algolia.com/docsearch/">DocSearch</a>および<a href="https://www.algolia.com/pricing">Free hacker plan</a>の利用を検討した．</p>
+<p>初学者を対象とするため，用語の厳密さよりもわかりやすさを重視した．</p>
 
-<h2 id="docsearch">DocSearch</h2>
+<h1 id="レポジトリ">レポジトリ</h1>
 
-<p><a href="https://community.algolia.com/docsearch/">DocSearch申請用ページ</a>で登録したURLが審査に通ると，Algoliaのクローラが自動でインデックスファイルを構築し，検索用APIを公開してくれるという，ゆとりには嬉しいサービス．何を隠そう<a href="https://jekyllrb.com/">Jekyll</a>の検索システムもこれで実装されている．今回は残念ながら審査に通らなかった<sup id="fnref:japanese"><a href="#fn:japanese" class="footnote">1</a></sup>ので，<a href="https://www.algolia.com/pricing">Free hacker plan</a>を利用することにした．</p>
+<p><a href="https://github.com/haltaro/intro-to-lightgbm">haltaro/intro-to-lightgbm - GitHub</a></p>
 
-<p><img src="/assets/2018-06-16-docsearch.png" alt="docsearch" /></p>
+<h1 id="20180616make_dataipynb"><a href="https://github.com/haltaro/intro-to-lightgbm/blob/master/20180616.make_data.ipynb"><code class="highlighter-rouge">20180616.make_data.ipynb</code></a></h1>
 
-<h2 id="free-hacker-plan">Free hacker plan</h2>
+<p>データ加工を行う自分用のNotebook．Bostonデータは，<code class="highlighter-rouge">sklearn</code>から直接ダウンロードできるが，より実務に近い使い方をしてもらうため，一旦csvファイルに加工した．また，回帰問題だけでなく識別問題にも触れてもらいたいということで<code class="highlighter-rouge">seaborn</code>から<code class="highlighter-rouge">titanic</code>をcsvファイルとして保存した．カテゴリカル変数は，その対応方法も体験して欲しかったので敢えてそのまま残している<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．</p>
 
-<p>自力で作成したインデックスファイルをAlgoliaにアップロードし，検索用APIを利用するプラン．マスターデータは1万件まで登録でき，APIを月10万回まで利用できる．<a href="https://blog.leko.jp/post/implement-site-search-with-algolia/">Algoliaを利用してサイト内検索機能を実装する - WEB EGG</a>によると，上限をオーバーすると検索もコンテンツの追加もできなくなるみたい．月1万PV程度のブログでギリギリ足りない感じらしいので，本ウェブサイトなら余裕である<sup id="fnref:sad"><a href="#fn:sad" class="footnote">2</a></sup>．</p>
+<h1 id="20180617intro_to_pythonipynb"><a href="https://github.com/haltaro/intro-to-lightgbm/blob/master/20180617.intro_to_python.ipynb"><code class="highlighter-rouge">20180617.intro_to_python.ipynb</code></a></h1>
 
-<p><img src="/assets/2018-06-16-hacker.png" alt="hacker" /></p>
+<p>Pythonの基本の基本から，<code class="highlighter-rouge">numpy</code>，<code class="highlighter-rouge">matplotlib</code>，<code class="highlighter-rouge">pandas</code>，<code class="highlighter-rouge">sklearn</code>，そして<code class="highlighter-rouge">lightgbm</code>で遊べる構成にした．以下はその詳細である．</p>
 
-<p>幸い，<a href="https://community.algolia.com/jekyll-algolia/">Jekyll向けのプラグイン</a>があるため，私でも簡単に実装できた．以下に手順を示す．</p>
+<h2 id="jupyter-notebook"><code class="highlighter-rouge">Jupyter notebook</code></h2>
 
-<h1 id="手順">手順</h1>
+<p>そもそもJupyter notebookに馴染みがないと思うので，簡単に操作方法を記載した．</p>
 
-<p>以下は基本的に<a href="https://community.algolia.com/jekyll-algolia/">Algolia for Jekyll - Algolia</a>および<a href="https://community.algolia.com/jekyll-algolia/blog.html">Blog search -  Algolia for Jekyll</a>に則っているが，ウェブサイトの一貫性を保つために一部のコードを修正している．</p>
+<h2 id="python基本の基本">Python：基本の基本</h2>
 
-<h2 id="algoliaのユーザ登録">Algoliaのユーザ登録</h2>
+<p>時間に限りがあるので，データ分析に特化して，四則演算，変数への代入，リスト操作，ループ，条件分岐について記載した．これでなんとなくわかった気になってほしい．</p>
 
-<p><a href="https://www.algolia.com/">Algolia</a>からサインアップする．以降の処理で，ダッシュボードの<code class="highlighter-rouge">Application ID</code>，<code class="highlighter-rouge">Search-Only API Key</code>，および<code class="highlighter-rouge">Admin API Key</code>が必要なのでメモしておく．</p>
+<h2 id="numpy"><code class="highlighter-rouge">numpy</code></h2>
 
-<h2 id="jekyll-algliaの設定"><code class="highlighter-rouge">jekyll-alglia</code>の設定</h2>
+<p>ベクトル，行列，および統計量の計算方法を記載した．</p>
 
-<p><code class="highlighter-rouge">Gemfile</code>に以下を追記し，<code class="highlighter-rouge">$ bundle update</code>する．</p>
+<h2 id="matplotlib"><code class="highlighter-rouge">matplotlib</code></h2>
 
-<script src="https://gist.github.com/haltaro/bc3a34adff021f762373f452f2aad4e7.js"></script>
+<p>折れ線グラフ，散布図，棒グラフ，ヒストグラムの表示方法を記載した．</p>
 
-<p><code class="highlighter-rouge">_config.yml</code>に<code class="highlighter-rouge">jekyll-algolia</code>の設定を追加する．</p>
+<h2 id="pandas"><code class="highlighter-rouge">pandas</code></h2>
 
-<script src="https://gist.github.com/haltaro/af5b24ac877c78a8d2230f903f429b8c.js"></script>
+<p>データの読み込み，統計量の計算，ソート，フィルタリング，<code class="highlighter-rouge">numpy.array</code>への変換方法等を記載した．</p>
 
-<h2 id="インデックスの作成とアップロード">インデックスの作成とアップロード</h2>
+<h2 id="sklearn"><code class="highlighter-rouge">sklearn</code></h2>
 
-<p>シェルで以下を実行する．</p>
+<p>線形回帰モデル<code class="highlighter-rouge">LinearRegressor</code>や平均絶対誤差の計算方法を記載した．</p>
 
-<script src="https://gist.github.com/haltaro/7602fed4d47e0062ed2779fc5070e4f9.js"></script>
+<h2 id="lightgbm"><code class="highlighter-rouge">lightgbm</code></h2>
 
-<p>ここで，<code class="highlighter-rouge">Admin API Key</code>はローカルで保管する必要がある．間違ってGitHub等にアップしないように注意．以降は，検索窓の実装に入る．</p>
-
-<h2 id="_layoutssearchhtml"><code class="highlighter-rouge">_layouts/search.html</code></h2>
-
-<p><a href="https://community.algolia.com/jekyll-algolia/blog.html">Blog search -  Algolia for Jekyll</a>の<code class="highlighter-rouge">search.html</code>を参考にした．ただし，本ウェブサイトのベーステーマである<a href="https://github.com/bencentra/centrarium">Centrarium</a>と整合するよう，一部に手を加えた．</p>
-
-<script src="https://gist.github.com/haltaro/1c1f54a75dff0ce897373d2d6450310c.js"></script>
-
-<h2 id="_includesalgoliahtml"><code class="highlighter-rouge">_includes/algolia.html</code></h2>
-
-<p><a href="https://community.algolia.com/jekyll-algolia/blog.html">Blog search -  Algolia for Jekyll</a>の<code class="highlighter-rouge">algolia.html</code>を参考にした．</p>
-
-<script src="https://gist.github.com/haltaro/17c7d07fdd56f07c80735e0328ecfbe0.js"></script>
-
-<h2 id="searchmd"><code class="highlighter-rouge">search.md</code></h2>
-
-<p>全文検索用の<a href="https://haltaro.github.io/search/">Search</a>ページを作成するために，以下の<code class="highlighter-rouge">search.md</code>ファイルを作成した．</p>
-
-<script src="https://gist.github.com/haltaro/c30ebf72374a701767ebc55fe33a898a.js"></script>
+<p>学習方法，ハイパーパラメータのチューニング方法などを記載した．</p>
 
 <h1 id="感想">感想</h1>
 
-<p>これで，本ウェブサイトに欲しかった機能はあらかた実装してしまった．結構書きたい（書かないと忘れてしまいそうな）ことが溜まってきたので，しばらくは統計・機械学習のノウハウや理論を書いていきたい．</p>
-
-<h1 id="参考">参考</h1>
-
-<ul>
-  <li><a href="https://www.algolia.com/">Algolia - Algolia</a></li>
-  <li><a href="https://community.algolia.com/docsearch/">DocSearch - Algolia</a></li>
-  <li><a href="https://community.algolia.com/jekyll-algolia/">Algolia for Jekyll - Algolia</a></li>
-  <li><a href="https://blog.leko.jp/post/implement-site-search-with-algolia/">Algoliaを利用してサイト内検索機能を実装する - WEB EGG</a></li>
-  <li><a href="http://rs.luminousspice.com/hugo-site-search/">Hugo に全文検索を取り付けた - the Right Stuff</a></li>
-</ul>
+<p>これで十分だとは全く思っていないが，なんとなく雰囲気を掴む程度のものはできたと思う．これをきっかけに興味を持ってくれたら嬉しい．勉強会でフィードバックがあったらNotebookを修正したい．</p>
 <div class="footnotes">
   <ol>
-    <li id="fn:japanese">
-      <p>Algolia社が定める”technical documentation site”ではないと，丁寧なお祈りメールが来た．そもそも日本語だと通りづらいんじゃないか． <a href="#fnref:japanese" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:sad">
-      <p>月1000PVくらい． <a href="#fnref:sad" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1">
+      <p>結局，時間切れで<code class="highlighter-rouge">titanic</code>データで遊ぶ部分は作れなかった． <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

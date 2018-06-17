@@ -5,9 +5,83 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Jun 2018 22:01:58 +0900</pubDate>
-    <lastBuildDate>Sat, 16 Jun 2018 22:01:58 +0900</lastBuildDate>
+    <pubDate>Sun, 17 Jun 2018 13:19:09 +0900</pubDate>
+    <lastBuildDate>Sun, 17 Jun 2018 13:19:09 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>PythonとLight GBMで遊ぶNotebookを作った</title>
+        <description>&lt;p&gt;知り合いから「プログラミングしたことないけどLight GBMを使ってみたい．2時間くらいで教えてくれ」と言われた．2時間だと理論面をカバーするのは難しいので，とりあえず触ってみることを目標に，Pythonおよび関連ライブラリの基礎（のさらにごく一部）でさくっと遊ぶ&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm&quot;&gt;Notebook&lt;/a&gt;を作った．勉強会当日は一緒に動かしながらレクチャーする予定．&lt;/p&gt;
+
+&lt;h1 id=&quot;対象者&quot;&gt;対象者&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;統計的な専門用語（平均，分散，相関係数，平均二乗誤差，等々）に馴染みがある．&lt;/li&gt;
+  &lt;li&gt;Excelでデータ分析をしたことがある．&lt;/li&gt;
+  &lt;li&gt;Pythonどころか，プログラミング自体の経験がない．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;初学者を対象とするため，用語の厳密さよりもわかりやすさを重視した．&lt;/p&gt;
+
+&lt;h1 id=&quot;レポジトリ&quot;&gt;レポジトリ&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm&quot;&gt;haltaro/intro-to-lightgbm - GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;20180616make_dataipynb&quot;&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm/blob/master/20180616.make_data.ipynb&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;20180616.make_data.ipynb&lt;/code&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;データ加工を行う自分用のNotebook．Bostonデータは，&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;から直接ダウンロードできるが，より実務に近い使い方をしてもらうため，一旦csvファイルに加工した．また，回帰問題だけでなく識別問題にも触れてもらいたいということで&lt;code class=&quot;highlighter-rouge&quot;&gt;seaborn&lt;/code&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;titanic&lt;/code&gt;をcsvファイルとして保存した．カテゴリカル変数は，その対応方法も体験して欲しかったので敢えてそのまま残している&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
+
+&lt;h1 id=&quot;20180617intro_to_pythonipynb&quot;&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm/blob/master/20180617.intro_to_python.ipynb&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;20180617.intro_to_python.ipynb&lt;/code&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;Pythonの基本の基本から，&lt;code class=&quot;highlighter-rouge&quot;&gt;numpy&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;pandas&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;，そして&lt;code class=&quot;highlighter-rouge&quot;&gt;lightgbm&lt;/code&gt;で遊べる構成にした．以下はその詳細である．&lt;/p&gt;
+
+&lt;h2 id=&quot;jupyter-notebook&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Jupyter notebook&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;そもそもJupyter notebookに馴染みがないと思うので，簡単に操作方法を記載した．&lt;/p&gt;
+
+&lt;h2 id=&quot;python基本の基本&quot;&gt;Python：基本の基本&lt;/h2&gt;
+
+&lt;p&gt;時間に限りがあるので，データ分析に特化して，四則演算，変数への代入，リスト操作，ループ，条件分岐について記載した．これでなんとなくわかった気になってほしい．&lt;/p&gt;
+
+&lt;h2 id=&quot;numpy&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;numpy&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;ベクトル，行列，および統計量の計算方法を記載した．&lt;/p&gt;
+
+&lt;h2 id=&quot;matplotlib&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;折れ線グラフ，散布図，棒グラフ，ヒストグラムの表示方法を記載した．&lt;/p&gt;
+
+&lt;h2 id=&quot;pandas&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pandas&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;データの読み込み，統計量の計算，ソート，フィルタリング，&lt;code class=&quot;highlighter-rouge&quot;&gt;numpy.array&lt;/code&gt;への変換方法等を記載した．&lt;/p&gt;
+
+&lt;h2 id=&quot;sklearn&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;線形回帰モデル&lt;code class=&quot;highlighter-rouge&quot;&gt;LinearRegressor&lt;/code&gt;や平均絶対誤差の計算方法を記載した．&lt;/p&gt;
+
+&lt;h2 id=&quot;lightgbm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lightgbm&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;学習方法，ハイパーパラメータのチューニング方法などを記載した．&lt;/p&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;これで十分だとは全く思っていないが，なんとなく雰囲気を掴む程度のものはできたと思う．これをきっかけに興味を持ってくれたら嬉しい．勉強会でフィードバックがあったらNotebookを修正したい．&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;結局，時間切れで&lt;code class=&quot;highlighter-rouge&quot;&gt;titanic&lt;/code&gt;データで遊ぶ部分は作れなかった． &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 17 Jun 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/06/17/intro-to-lightgbm</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/17/intro-to-lightgbm</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
     
       <item>
         <title>OpenSSLが古すぎてbundle updateできない</title>
@@ -124,7 +198,7 @@
 
 &lt;h2 id=&quot;searchmd&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;search.md&lt;/code&gt;&lt;/h2&gt;
 
-&lt;p&gt;全文検索用の&lt;a href=&quot;&quot;&gt;Search&lt;/a&gt;ページを作成するために，以下の&lt;code class=&quot;highlighter-rouge&quot;&gt;search.md&lt;/code&gt;ファイルを作成した．&lt;/p&gt;
+&lt;p&gt;全文検索用の&lt;a href=&quot;https://haltaro.github.io/search/&quot;&gt;Search&lt;/a&gt;ページを作成するために，以下の&lt;code class=&quot;highlighter-rouge&quot;&gt;search.md&lt;/code&gt;ファイルを作成した．&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/c30ebf72374a701767ebc55fe33a898a.js&quot;&gt;&lt;/script&gt;
 
@@ -147,7 +221,7 @@
       &lt;p&gt;Algolia社が定める”technical documentation site”ではないと，丁寧なお祈りメールが来た．そもそも日本語だと通りづらいんじゃないか． &lt;a href=&quot;#fnref:japanese&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:sad&quot;&gt;
-      &lt;p&gt;月数千PVくらい． &lt;a href=&quot;#fnref:sad&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;月1000PVくらい． &lt;a href=&quot;#fnref:sad&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -673,47 +747,6 @@
         
         
         <category>statistics</category>
-        
-      </item>
-    
-      <item>
-        <title>JekyllのCategories一覧をアルファベット順にする</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/posts/&quot;&gt;Posts&lt;/a&gt;ページのCategoriesが出現順で使いづらかったので，アルファベット順になるようコードをを修正した．&lt;/p&gt;
-
-&lt;p&gt;こちらは修正前．
-&lt;img src=&quot;/assets/2018-04-15-before.png&quot; alt=&quot;before&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そしてこちらが修正後．
-&lt;img src=&quot;/assets/2018-04-15-after.png&quot; alt=&quot;after&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;アルファベット順になった．&lt;/p&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/Phlow/57eb457898e4ac4c4a20&quot;&gt;Phlow/jekyll-sorted-category-for-loop-alphabetical-date.liquid - Gist&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./posts.md&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;category&lt;/code&gt;ループを&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/f0d3f4848103c64296919acef3b2e228.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;以下のように修正した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/260563d870c5663bd2dae1179aabcac2.js&quot;&gt;&lt;/script&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;そろそろ真面目にRubyを勉強するべきかもしれない．&lt;/p&gt;
-</description>
-        <pubDate>Sun, 15 Apr 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/04/15/sort-categories</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/04/15/sort-categories</guid>
-        
-        
-        <category>jekyll</category>
         
       </item>
     
