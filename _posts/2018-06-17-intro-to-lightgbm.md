@@ -31,7 +31,7 @@ categories:
 
 Pythonの基本の基本から，`numpy`，`matplotlib`，`pandas`，`sklearn`，そして`lightgbm`で遊べる構成にした．以下はその詳細である．
 
-## `Jupyter notebook`
+## Jupyter notebook
 
 そもそもJupyter notebookに馴染みがないと思うので，簡単に操作方法を記載した．
 
