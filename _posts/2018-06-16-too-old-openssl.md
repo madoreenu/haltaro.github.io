@@ -7,7 +7,7 @@ categories:
  - ruby
 ---
 
-[Algoliaで全文検索機能を実装](https://haltaro.github.io/2018/06/16/jekyll-algolia)するために`Gemfile`を書き換えて`$ bundle update`したところ，`OpenSSL`が古すぎると叱られた．[How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs](https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions)を参考に試行錯誤したら解決した．
+[Algoliaで全文検索機能を実装](https://haltaro.github.io/2018/06/16/jekyll-algolia)するために`Gemfile`を書き換えて`$ bundle update`したところ，`OpenSSL`が古すぎると叱られた．[How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs](https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions)を参考に対応したら解決した．
 
 # 症状
 
