@@ -5,9 +5,49 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Jun 2018 13:19:09 +0900</pubDate>
-    <lastBuildDate>Sun, 17 Jun 2018 13:19:09 +0900</lastBuildDate>
+    <pubDate>Fri, 22 Jun 2018 22:51:04 +0900</pubDate>
+    <lastBuildDate>Fri, 22 Jun 2018 22:51:04 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>Light GBMを使うとOMPエラーでカーネルが死ぬ</title>
+        <description>&lt;p&gt;業務でも趣味でもよく&lt;a href=&quot;https://github.com/Microsoft/LightGBM&quot;&gt;Light GBM&lt;/a&gt;にお世話になっているが，この前手元のMacで使おうとしたら&lt;code class=&quot;highlighter-rouge&quot;&gt;Dead kernel&lt;/code&gt;エラーが発生した．&lt;code class=&quot;highlighter-rouge&quot;&gt;conda&lt;/code&gt;で入れたLight GBMを一旦アンインストールして，&lt;a href=&quot;https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html&quot;&gt;Installation Guide - LightGBM&lt;/a&gt;に従って再インストールしたら解決した．&lt;/p&gt;
+
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;macOS Sierra：10.12.6&lt;/li&gt;
+  &lt;li&gt;Python：3.6.5&lt;/li&gt;
+  &lt;li&gt;lightgbm：2.1.0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;症状&quot;&gt;症状&lt;/h1&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/9ac6d0e11a96deed56cb8b57a0543838.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;解決策&quot;&gt;解決策&lt;/h1&gt;
+
+&lt;p&gt;公式のインストールガイドに従わず，&lt;code class=&quot;highlighter-rouge&quot;&gt;$ conda install -c conda-forge lightgbm&lt;/code&gt;で落としたのが原因っぽい．一旦&lt;code class=&quot;highlighter-rouge&quot;&gt;$ conda uninstall lightgbm&lt;/code&gt;して，&lt;a href=&quot;https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html&quot;&gt;Installation Guide - LightGBM&lt;/a&gt;に従ってインストールした．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/f2d55efbd91a731c31cdf910b2a6b854.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;なお，&lt;a href=&quot;https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html&quot;&gt;Installation Guide - LightGBM&lt;/a&gt;では&lt;code class=&quot;highlighter-rouge&quot;&gt;export CXX=g++-7 CC=gcc-7&lt;/code&gt;だが，手元の環境に合わせてバージョンを変更する必要があることに注意．&lt;/p&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dmlc/xgboost/issues/1715&quot;&gt;OMP: Error #15: Initializing libiomp5.dylib, but found libiomp5.dylib already initialized. #1715 - GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html&quot;&gt;Installation Guide - LightGBM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 22 Jun 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/06/22/dead-kernel-lgbm</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/22/dead-kernel-lgbm</guid>
+        
+        
+        <category>machine learning</category>
+        
+      </item>
     
       <item>
         <title>PythonとLight GBMで遊ぶNotebookを作った</title>
@@ -27,15 +67,15 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm&quot;&gt;haltaro/intro-to-lightgbm - GitHub&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;20180616make_dataipynb&quot;&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm/blob/master/20180616.make_data.ipynb&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;20180616.make_data.ipynb&lt;/code&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;make_dataipynb&quot;&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm/blob/master/20180616.make_data.ipynb&quot;&gt;make_data.ipynb&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;データ加工を行う自分用のNotebook．Bostonデータは，&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;から直接ダウンロードできるが，より実務に近い使い方をしてもらうため，一旦csvファイルに加工した．また，回帰問題だけでなく識別問題にも触れてもらいたいということで&lt;code class=&quot;highlighter-rouge&quot;&gt;seaborn&lt;/code&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;titanic&lt;/code&gt;をcsvファイルとして保存した．カテゴリカル変数は，その対応方法も体験して欲しかったので敢えてそのまま残している&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
 
-&lt;h1 id=&quot;20180617intro_to_pythonipynb&quot;&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm/blob/master/20180617.intro_to_python.ipynb&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;20180617.intro_to_python.ipynb&lt;/code&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;intro_to_pythonipynb&quot;&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm/blob/master/20180617.intro_to_python.ipynb&quot;&gt;intro_to_python.ipynb&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;Pythonの基本の基本から，&lt;code class=&quot;highlighter-rouge&quot;&gt;numpy&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;pandas&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;，そして&lt;code class=&quot;highlighter-rouge&quot;&gt;lightgbm&lt;/code&gt;で遊べる構成にした．以下はその詳細である．&lt;/p&gt;
 
-&lt;h2 id=&quot;jupyter-notebook&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Jupyter notebook&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;jupyter-notebook&quot;&gt;Jupyter notebook&lt;/h2&gt;
 
 &lt;p&gt;そもそもJupyter notebookに馴染みがないと思うので，簡単に操作方法を記載した．&lt;/p&gt;
 
@@ -85,7 +125,7 @@
     
       <item>
         <title>OpenSSLが古すぎてbundle updateできない</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2018/06/16/jekyll-algolia&quot;&gt;Algoliaで全文検索機能を実装&lt;/a&gt;するために&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;を書き換えて&lt;code class=&quot;highlighter-rouge&quot;&gt;$ bundle update&lt;/code&gt;したところ，&lt;code class=&quot;highlighter-rouge&quot;&gt;OpenSSL&lt;/code&gt;が古すぎると叱られた．&lt;a href=&quot;https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions&quot;&gt;How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs&lt;/a&gt;を参考に試行錯誤したら解決した．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2018/06/16/jekyll-algolia&quot;&gt;Algoliaで全文検索機能を実装&lt;/a&gt;するために&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;を書き換えて&lt;code class=&quot;highlighter-rouge&quot;&gt;$ bundle update&lt;/code&gt;したところ，&lt;code class=&quot;highlighter-rouge&quot;&gt;OpenSSL&lt;/code&gt;が古すぎると叱られた．&lt;a href=&quot;https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions&quot;&gt;How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs&lt;/a&gt;を参考に対応したら解決した．&lt;/p&gt;
 
 &lt;h1 id=&quot;症状&quot;&gt;症状&lt;/h1&gt;
 
@@ -272,7 +312,7 @@
     
       <item>
         <title>Centrariumのjekyll-archives問題を回避する</title>
-        <description>&lt;p&gt;このウェブサイトのベーステーマである&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;は，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，&lt;a href=&quot;https://haltaro.github.io/2018/02/11/theme-change&quot;&gt;内部で利用されているjekyll-archivesがまともに動作せず&lt;/a&gt;，各ポストのカテゴリリンク先が正しく貼れていなかった．試行錯誤の結果，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;で&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-archives&lt;/code&gt;を無効化したら，すべての問題が解決したのでメモしておく．&lt;/p&gt;
+        <description>&lt;p&gt;このウェブサイトのベーステーマである&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;は，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，&lt;a href=&quot;https://haltaro.github.io/2018/02/11/theme-change&quot;&gt;内部で利用されているjekyll-archivesがまともに動作せず&lt;/a&gt;，各ポストのカテゴリリンク先が正しく貼れていなかった．いろいろ試した結果，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;で&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-archives&lt;/code&gt;を無効化したら，すべての問題が解決したのでメモしておく．&lt;/p&gt;
 
 &lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
@@ -306,6 +346,10 @@
       <item>
         <title>UCOMにAirMacを接続してWifi環境を構築する</title>
         <description>&lt;p&gt;引越し先のマンションがUcomに契約していたので，壁付けのコンセントにLANケーブルを繋げばインターネットに接続できる．手持ちのAirMac Time Capsuleで無線LAN環境を構築したかったが，ネット上に情報が少なく，めちゃくちゃ苦戦した．試行錯誤の記録を残しておく．&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;2018年6月19日追記&lt;/strong&gt;：接続がめちゃくちゃ不安定で，Skype英会話がまともにできない．おそらくNAT設定が原因だと思う．解決し次第，別記事でまとめる．&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
@@ -671,82 +715,6 @@
         
         
         <category>english</category>
-        
-      </item>
-    
-      <item>
-        <title>東京大学教養学部統計学教室編，統計学入門</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/8f1AQFC&quot;&gt;東京大学教養学部統計学教室編，統計学入門&lt;/a&gt;を読んだ．統計学の基礎知識を復習できた．&lt;/p&gt;
-
-&lt;h1 id=&quot;大数の法則と中心極限定理&quot;&gt;大数の法則と中心極限定理&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;大数の法則：標本平均&lt;script type=&quot;math/tex&quot;&gt;\bar{X}&lt;/script&gt;は母平均&lt;script type=&quot;math/tex&quot;&gt;\mu&lt;/script&gt;に確率収束する．&lt;/li&gt;
-  &lt;li&gt;中心極限定理：母集団分布がなんであっても，標本和&lt;script type=&quot;math/tex&quot;&gt;\sum_{i}^{n} X_{i}&lt;/script&gt;は十分大きな&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;に対して大略正規分布に収束する．モーメント母関数を用いて証明できる．&lt;/li&gt;
-  &lt;li&gt;累積密度分布の逆関数が陽に求まる場合は，一様分布に従う&lt;script type=&quot;math/tex&quot;&gt;U&lt;/script&gt;を逆関数で変換することで，もとの確率密度関数に従う乱数を生成できる．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;標本分布&quot;&gt;標本分布&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;統計的推測とは，標本から母集団について推測すること．&lt;/li&gt;
-  &lt;li&gt;母集団分布のパラメータを母数と呼ぶ．&lt;/li&gt;
-  &lt;li&gt;標本平均のように，標本を要約し，母集団の母数の推測に使われるものを統計量と呼ぶ．&lt;/li&gt;
-  &lt;li&gt;標本分散は，&lt;script type=&quot;math/tex&quot;&gt;s^2 = \frac{1}{n-1} \sum_i^n (X_i - \bar{X})&lt;/script&gt;で計算できる．計算に母平均&lt;script type=&quot;math/tex&quot;&gt;\mu&lt;/script&gt;でなく標本平均&lt;script type=&quot;math/tex&quot;&gt;\bar{X}&lt;/script&gt;を使っているため，自由度が1下がり，分母は&lt;script type=&quot;math/tex&quot;&gt;n-1&lt;/script&gt;となることに注意．&lt;/li&gt;
-  &lt;li&gt;母集団が再生性を持つ分布に従うとき，標本和の分布は簡単に求まる．再生性とは，独立な複数の確率変数が同一の分布族に属する場合，その和もそれに属すること．二項分布，ポアソン分布，正規分布など．&lt;/li&gt;
-  &lt;li&gt;母集団が有限&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;のとき，&lt;script type=&quot;math/tex&quot;&gt;V(\bar{x}) = \frac{N-n}{N-1}\cdot \frac{\sigma^2}{n}&lt;/script&gt;となる．このとき&lt;script type=&quot;math/tex&quot;&gt;\frac{N-n}{N-1}&lt;/script&gt;を有限母集団修正と呼ぶ．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;正規分布からの標本&quot;&gt;正規分布からの標本&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\chi^{2}&lt;/script&gt;分布：&lt;script type=&quot;math/tex&quot;&gt;Z_1, Z_2, \dots, Z_k&lt;/script&gt;を独立な，標準正規分布&lt;script type=&quot;math/tex&quot;&gt;N(0, 1)&lt;/script&gt;に従う確率変数とするとき，&lt;script type=&quot;math/tex&quot;&gt;\chi^{2} = Z_1^2 + Z_2^2 + \dots + Z_k^2&lt;/script&gt;を自由度&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;\chi^{2}&lt;/script&gt;分布と呼ぶ．ちなみに，&lt;script type=&quot;math/tex&quot;&gt;\chi^{2} = (n-1) s^2 / \sigma^{2}&lt;/script&gt;は自由度&lt;script type=&quot;math/tex&quot;&gt;n-1&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;\chi^{2}&lt;/script&gt;分布である．&lt;/li&gt;
-  &lt;li&gt;分散が未知のときの標本平均の標本分布として，スチューデントの&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;分布が用いられる．&lt;script type=&quot;math/tex&quot;&gt;Z&lt;/script&gt;が標準正規分布&lt;script type=&quot;math/tex&quot;&gt;N(0, 1)&lt;/script&gt;に従い，&lt;script type=&quot;math/tex&quot;&gt;Z&lt;/script&gt;と独立な&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;が自由度&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;\chi^2&lt;/script&gt;分布に従うとき，&lt;script type=&quot;math/tex&quot;&gt;t = \frac{Z}{\sqrt{Y/k}}&lt;/script&gt;は自由度&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;分布である．つまり，&lt;script type=&quot;math/tex&quot;&gt;t = \frac{\bar{x} - \mu}{s / \sqrt{n}}&lt;/script&gt;は自由度&lt;script type=&quot;math/tex&quot;&gt;n-1&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;分布．&lt;/li&gt;
-  &lt;li&gt;二標本問題．標本平均の差の標本分布は，条件により分布が異なる：
-    &lt;ul&gt;
-      &lt;li&gt;母分散が既知のとき：正規分布&lt;/li&gt;
-      &lt;li&gt;母分散が未知だが等しいとき：t分布&lt;/li&gt;
-      &lt;li&gt;母分散が未知で，かつ等しいとは限らないとき：ウェルチの近似法を用いたt分布．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;標本相関係数の標本分布．フィッシャーのz変換を使うらしい．詳細は不明．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;推定&quot;&gt;推定&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;推定量（estimator）：母数を推定するために標本から求めた統計量．標本平均や標本分散．&lt;/li&gt;
-  &lt;li&gt;点推定（point estimation）：母数をある一つの値で指定する．&lt;/li&gt;
-  &lt;li&gt;区間推定（interval estimation）：母数の値が入る確率がある値&lt;script type=&quot;math/tex&quot;&gt;1 - \alpha&lt;/script&gt;以上と保証される区間を求める．&lt;/li&gt;
-  &lt;li&gt;モーメント法による点推定は，母集団モーメント関数と標本モーメント関数が等しいと仮定する方法．モーメント法で標本分散を点推定すると不偏推定量とはならない．より洗練された手法として，最尤法がある．&lt;/li&gt;
-  &lt;li&gt;点推定の基準：不偏性．一致性．漸近正規性．有効性．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;統計的検定&quot;&gt;統計的検定&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;母平均の差の検定は，&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;検定を用いる．&lt;/li&gt;
-  &lt;li&gt;母分散の検定は，&lt;script type=&quot;math/tex&quot;&gt;\chi^2&lt;/script&gt;検定を用いる．&lt;/li&gt;
-  &lt;li&gt;母分散の比の検定は，&lt;script type=&quot;math/tex&quot;&gt;F&lt;/script&gt;検定を用いる．&lt;/li&gt;
-  &lt;li&gt;適合度の&lt;script type=&quot;math/tex&quot;&gt;\chi^2&lt;/script&gt;検定．&lt;script type=&quot;math/tex&quot;&gt;\chi^2=\frac{\sum (O - E)^2}{E}&lt;/script&gt;．ここで，&lt;script type=&quot;math/tex&quot;&gt;O&lt;/script&gt;は観測された値，&lt;script type=&quot;math/tex&quot;&gt;E&lt;/script&gt;は理論的に予測された値を表す．この考え方を使うと，分割表の独立性の検定などが実施できる．&lt;/li&gt;
-  &lt;li&gt;第一種の誤り：帰無仮説を誤って棄却してしまうこと．有意水準&lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt;の確率で発生しうる．&lt;/li&gt;
-  &lt;li&gt;第二種の誤り：帰無仮説を誤って棄却しないこと．確率&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;で発生し得る．このとき，&lt;script type=&quot;math/tex&quot;&gt;1-\beta&lt;/script&gt;を検出力と呼ぶ．&lt;/li&gt;
-  &lt;li&gt;棄却域の調整により&lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt;と&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;を調整できるが，療法を小さくすることは出来ない．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;回帰分析&quot;&gt;回帰分析&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;決定係数&lt;script type=&quot;math/tex&quot;&gt;\eta^2&lt;/script&gt;は，&lt;script type=&quot;math/tex&quot;&gt;Y_{i}&lt;/script&gt;の変動のうち&lt;script type=&quot;math/tex&quot;&gt;X_{i}&lt;/script&gt;で説明できる変動の割合を示す．0から1の値を取り，1に近いほど良い．&lt;/li&gt;
-  &lt;li&gt;偏回帰係数&lt;script type=&quot;math/tex&quot;&gt;\beta_2&lt;/script&gt;（傾き）の検定するときは，&lt;script type=&quot;math/tex&quot;&gt;\frac{\hat{\beta} - \beta}{s.e. \left(\hat{\beta}\right)}&lt;/script&gt;をt検定にかける．重回帰の場合はF検定にかける．詳細は3巻2章で．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 15 Apr 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/04/15/statistics-book-1</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/04/15/statistics-book-1</guid>
-        
-        
-        <category>statistics</category>
         
       </item>
     

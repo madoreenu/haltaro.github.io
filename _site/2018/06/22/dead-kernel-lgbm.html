@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>OpenSSLが古すぎてbundle updateできない</title>
-  <meta name="description" content="Algoliaで全文検索機能を実装するためにGemfileを書き換えて$ bundle updateしたところ，OpenSSLが古すぎると叱られた．How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に対応したら解決した．">
+  <title>Light GBMを使うとOMPエラーでカーネルが死ぬ</title>
+  <meta name="description" content="業務でも趣味でもよくLight GBMにお世話になっているが，この前手元のMacで使おうとしたらDead kernelエラーが発生した．condaで入れたLight GBMを一旦アンインストールして，Installation Guide - LightGBMに従って再インストールしたら解決した．">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,12 +51,12 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="Algoliaで全文検索機能を実装するためにGemfileを書き換えて$ bundle updateしたところ，OpenSSLが古すぎると叱られた．How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に対応したら解決した．" />
+  <meta property="og:description" content="業務でも趣味でもよくLight GBMにお世話になっているが，この前手元のMacで使おうとしたらDead kernelエラーが発生した．condaで入れたLight GBMを一旦アンインストールして，Installation Guide - LightGBMに従って再インストールしたら解決した．" />
   <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
-  <meta property="og:title" content="OpenSSLが古すぎてbundle updateできない" />
+  <meta property="og:title" content="Light GBMを使うとOMPエラーでカーネルが死ぬ" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://localhost:4000/assets/2018-06-16-gem.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2018-06-22-forest.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -65,9 +65,9 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="OpenSSLが古すぎてbundle updateできない">
-  <meta name="twitter:description" content="Algoliaで全文検索機能を実装するためにGemfileを書き換えて$ bundle updateしたところ，OpenSSLが古すぎると叱られた．How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に対応したら解決した．">
-  <meta name="twitter:image" content="http://localhost:4000/assets/2018-06-16-gem.jpg">
+  <meta name="twitter:title" content="Light GBMを使うとOMPエラーでカーネルが死ぬ">
+  <meta name="twitter:description" content="業務でも趣味でもよくLight GBMにお世話になっているが，この前手元のMacで使おうとしたらDead kernelエラーが発生した．condaで入れたLight GBMを一旦アンインストールして，Installation Guide - LightGBMに従って再インストールしたら解決した．">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2018-06-22-forest.jpg">
   <meta name="twitter:url" content="http://localhost:4000">
   
 
@@ -75,7 +75,7 @@
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2018/06/16/too-old-openssl">
+  <link rel="canonical" href="http://localhost:4000/2018/06/22/dead-kernel-lgbm">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -150,10 +150,10 @@
     <div class="page-content">
         <div class="post">
 
-<div class="post-header-container has-cover" style="background-image: url(/assets/2018-06-16-gem.jpg);">
+<div class="post-header-container has-cover" style="background-image: url(/assets/2018-06-22-forest.jpg);">
   <div class="scrim has-cover">
     <header class="post-header">
-      <h1 class="title">OpenSSLが古すぎてbundle updateできない</h1>
+      <h1 class="title">Light GBMを使うとOMPエラーでカーネルが死ぬ</h1>
       <!--<p class="info">by <strong></strong></p>-->
     </header>
   </div>
@@ -164,56 +164,45 @@
 
 
 <section class="post-meta">
-  <div class="post-date">June 16, 2018</div>
+  <div class="post-date">June 22, 2018</div>
   <div class="post-categories">
   in 
     
-    <a href="/categories/#ruby">Ruby</a>
+    <a href="/categories/#machine learning">Machine learning</a>
     
   
   </div>
 </section>
 
 <article class="post-content">
-  <p><a href="https://haltaro.github.io/2018/06/16/jekyll-algolia">Algoliaで全文検索機能を実装</a>するために<code class="highlighter-rouge">Gemfile</code>を書き換えて<code class="highlighter-rouge">$ bundle update</code>したところ，<code class="highlighter-rouge">OpenSSL</code>が古すぎると叱られた．<a href="https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions">How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs</a>を参考に対応したら解決した．</p>
+  <p>業務でも趣味でもよく<a href="https://github.com/Microsoft/LightGBM">Light GBM</a>にお世話になっているが，この前手元のMacで使おうとしたら<code class="highlighter-rouge">Dead kernel</code>エラーが発生した．<code class="highlighter-rouge">conda</code>で入れたLight GBMを一旦アンインストールして，<a href="https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html">Installation Guide - LightGBM</a>に従って再インストールしたら解決した．</p>
+
+<h1 id="環境">環境</h1>
+
+<ul>
+  <li>macOS Sierra：10.12.6</li>
+  <li>Python：3.6.5</li>
+  <li>lightgbm：2.1.0</li>
+</ul>
 
 <h1 id="症状">症状</h1>
 
-<p><code class="highlighter-rouge">bundle update</code>したら，次のようなエラーが出た．</p>
+<script src="https://gist.github.com/haltaro/9ac6d0e11a96deed56cb8b57a0543838.js"></script>
 
-<script src="https://gist.github.com/haltaro/659ab18c1adf3992c6d77d017bd7e370.js"></script>
+<h1 id="解決策">解決策</h1>
 
-<p>よく見たら，冒頭に以下のような警告が．<code class="highlighter-rouge">OpenSSL</code>のバージョンが古すぎるのが原因らしい．</p>
+<p>公式のインストールガイドに従わず，<code class="highlighter-rouge">$ conda install -c conda-forge lightgbm</code>で落としたのが原因っぽい．一旦<code class="highlighter-rouge">$ conda uninstall lightgbm</code>して，<a href="https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html">Installation Guide - LightGBM</a>に従ってインストールした．</p>
 
-<script src="https://gist.github.com/haltaro/553c23ad838f043c81d208afd84b10ab.js"></script>
+<script src="https://gist.github.com/haltaro/f2d55efbd91a731c31cdf910b2a6b854.js"></script>
 
-<h1 id="対応記録">対応記録</h1>
+<p>なお，<a href="https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html">Installation Guide - LightGBM</a>では<code class="highlighter-rouge">export CXX=g++-7 CC=gcc-7</code>だが，手元の環境に合わせてバージョンを変更する必要があることに注意．</p>
 
-<p>ほぼ原因はわかっていたが，念の為<a href="https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions">How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs</a>を参考に以下のテストを実行した．</p>
+<h1 id="参考">参考</h1>
 
-<script src="https://gist.github.com/haltaro/e337be914ab33cde81fb2313f14e382d.js"></script>
-
-<p>すると，案の定，<code class="highlighter-rouge">OpenSSL</code>のバージョンが古いことがわかった．</p>
-
-<script src="https://gist.github.com/haltaro/a2c798d8d1a2429cb1b42ac81dad3458.js"></script>
-
-<p><a href="https://stackoverflow.com/questions/30741367/ruby-using-wrong-version-of-openssl?utm_medium=organic&amp;utm_source=google_rich_qa&amp;utm_campaign=google_rich_qa">Ruby using wrong version of openssl</a>を参考に以下を実行した．</p>
-
-<script src="https://gist.github.com/haltaro/e9be5079025e1c04f5bd9af81a8cba9b.js"></script>
-
-<p>すると<code class="highlighter-rouge">brew reinstall openssl</code>しろと怒られた．</p>
-
-<script src="https://gist.github.com/haltaro/ffe682173c1cc3c8ae980157bfd73427.js"></script>
-
-<p>これで再度<code class="highlighter-rouge">$ ruby -ropen-uri -e 'eval open("https://git.io/vQhWq").read'</code>にトライしたが，解決せず．<a href="https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions">How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs</a>のThe Solutionsに記載されている他のコマンドを試してみた．</p>
-
-<script src="https://gist.github.com/haltaro/98c4a5495aa8acea2232cfab11af960a.js"></script>
-
-<p>解決した．</p>
-
-<h1 id="感想">感想</h1>
-
-<p>Ruby力が低いため，具体的にどのコマンドが解決の鍵だったのかよくわからなかった．ただ，この機会に<code class="highlighter-rouge">bundle update</code>と<code class="highlighter-rouge">bundle install</code>の違いを理解できたので良かった．</p>
+<ul>
+  <li><a href="https://github.com/dmlc/xgboost/issues/1715">OMP: Error #15: Initializing libiomp5.dylib, but found libiomp5.dylib already initialized. #1715 - GitHub</a></li>
+  <li><a href="https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html">Installation Guide - LightGBM</a></li>
+</ul>
 
 </article>
 
