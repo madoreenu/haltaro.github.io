@@ -57,27 +57,13 @@ Udacityの[Deep learning foundation nanodegree](https://www.udacity.com/course/d
 
 [TensorFlow](https://www.tensorflow.org/)でRecurrent neural networkを実装して，文章を自動生成しました．シンプソンズのスクリプトをもとに学習したモデルに，`homer_simpson`を入力すると，下記のようにそれらしい会話文が生成されました．
 
-```
-homer_simpson:(upset) marge, you're making a complete fool of yourse...(belches)
-homer_simpson:(moans) i wanna take a nap so i'm awake for the meteor shower.
-waylon_smithers: well...(to self) three beers, that's it.
-homer_simpson:(to moe, slightly concerned) do you care about all this?
-moe_szyslak:(to homer) hey, i don't need your sharity!(cries)
-```
+<script src="https://gist.github.com/haltaro/3f36c6469259b7daac59be4b9d96a092.js"></script>
 
 ## [Project 4 - Translate a language](https://github.com/haltaro/udacity-deep-learning-project4/blob/master/dlnd_language_translation.ipynb)
 
 [TensorFlow](https://www.tensorflow.org/)でSeq2Seqを実装し，機械翻訳に挑戦しました．下記のように英語をフランス語に変換できました[^1]．
 
-```
-Input
-  Word Ids:      [33, 146, 10, 75, 91, 24, 16]
-  English Words: ['he', 'saw', 'a', 'old', 'yellow', 'truck', '.']
-
-Prediction
-  Word Ids:      [188, 260, 34, 209, 248, 35, 234, 97, 1]
-  French Words: il a vu un vieux camion jaune . <EOS>
-```
+<script src="https://gist.github.com/haltaro/9fff20127b7e3319f3fa079c4ed399c9.js"></script>
 
 [^1]: 正しい英語は`an old yellow truck`ですが，今回は`a`と`an`を学習するほどデータが無かったため，あえて`a old yellow truck`を入力しました．
 
