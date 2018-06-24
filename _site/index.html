@@ -141,8 +141,6 @@
         
           
         
-          
-        
       </ul>
     </nav>
   </div>
@@ -163,31 +161,6 @@
 
 <div class="wrapper">
 <ul class="post-list">
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/06/24/time-series">萩原淳一郎，基礎からわかる時系列分析</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>萩原淳一郎，基礎からわかる時系列分析 ―Rで実践するカルマンフィルタ・MCMC・粒子フィルターをざっと読んで状態空間モデルを勉強した．線形・ガウス型の状態空間モデルの場合はカルマンフィルタで解析的に解けるが，一般状態空間モデルの場合は，フィルタリング分布・予測分布・平滑化分布の積分計算を必ずしも解析的に解けない．そこで，MCMCを用いた一括解法や，粒子フィルタによる逐次解法が提案されている． 確率・統計に関する基礎 周辺化消去は，同時分布から外したい変数の影響を，あらかじめ平均的に考慮することに相当する．なるほど，腑に落ちた． 定常過程と非定常過程． 強定常：確率過程の確率分布が時点によらず一定． 弱定常：確率過程の平均・分散・自己共分散・自己相関係数が時点によらず一定． 時系列分析ひとめぐり 五数要約：最小値・25%値・中央値・75%値・最大値．Rだとsummary()で，Python（pandas）だとDataFrame.describe()で確認できる． 自己相関係数．． 時系列データの成分分解：レベル＋傾き＋周期． ホルト・ウィンタース法．指数加重型移動平均（EWMA：Exponentially Weighted Moving Average）の一種．Rでは，HoltWinters()関数で実施できる． 残差を確認して，モデルの妥当性を分析する．残差の自己相関により，周期性を上手く捉えられたか確認できる． 状態空間モデルの解法の分類： 線形・ガウス型状態空間モデル： 一括型解法：ウィナーフィルタ． 逐次型解法：カルマンフィルタ． 一般状態空間モデル： 一括型解法：MCMCを利用した解法． 逐次型解法：粒子フィルタ． 状態空間モデル 方程式による表現： 状態方程式1： 観測方程式： 確率分布による表現： 状態方程式に相当： 観測方程式に相当： 状態空間モデルの同時分布： ARIMAモデルと状態空間モデルは密接な関係がある． 状態空間モデルにおける状態の推定 状態の周辺事後分布： ：平滑化分布 ：フィルタリング分布 ：予測分布 フィルタリング分布： モデルの状態方程式と，以下の一期先予測分布，一期先予測尤度からなる． 一期先予測分布： 一期先予測尤度2： 予測分布： 定式化： 一期先予測分布をもとに，状態方程式に基いて時間順方向への遷移を解繰り返したもの． 平滑化分布： 定式化： p(\mathbf{x}{t} \mid y{1:t})はフィルタリング分布，p(\mathbf{x}{t+1} \mid...</p>-->
-      <p><p><a href="http://amzn.asia/bTrcjv0">萩原淳一郎，基礎からわかる時系列分析 ―Rで実践するカルマンフィルタ・MCMC・粒子フィルター</a>をざっと読んで状態空間モデルを勉強した．線形・ガウス型の状態空間モデルの場合はカルマンフィルタで解析的に解けるが，一般状態空間モデルの場合は，フィルタリング分布・予測分布・平滑化分布の積分計算を必ずしも解析的に解けない．そこで，MCMCを用いた一括解法や，粒子フィルタによる逐次解法が提案されている．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">June 24, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#statistics">Statistics</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
   
   <li>
     <h2>
@@ -348,6 +321,54 @@ lightgbm
     </section>
   </li>
   
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/06/15/rename-permalinks">CentrariumのPostsをCategoriesにリネームする</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>近々，全文検索機能を実装し，現在のPostsページに配置しようと考えている．とは言え，現在のPostsページのcategories一覧は便利なので，できれば残したい．そこで，一旦PostsページをCategoriesページとしてリネームして退避することにした．
+
+手順
+
+posts.html
+
+まず，posts.htmlをcategories.htmlにリネームする．フロントマターを次のように変更する．
+
+
+
+index.html
+
+index.htmlで列挙される，各ポストのカテゴリへのリンク先を，/posts/#から/categories/#に変更する．
+
+
+
+_layouts/post.html
+
+_layouts/post.html
+の各カテゴリへのリンク先を，/posts/#から/categories/#に変更する．
+
+
+
+</p>-->
+      <p><p>近々，全文検索機能を実装し，現在の<code class="highlighter-rouge">Posts</code>ページに配置しようと考えている．とは言え，現在の<code class="highlighter-rouge">Posts</code>ページの<code class="highlighter-rouge">categories</code>一覧は便利なので，できれば残したい．そこで，一旦<code class="highlighter-rouge">Posts</code>ページを<code class="highlighter-rouge">Categories</code>ページとしてリネームして退避することにした．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">June 15, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#jekyll">Jekyll</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
   
 </ul>
 
@@ -359,7 +380,7 @@ lightgbm
       <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
     </span>
 		
-		<span class="page-number">Page 1 of 12</span>
+		<span class="page-number">Page 1 of 11</span>
 		
 		<a class="newer-posts" href="/page2">
       <span class="fa-stack fa-lg">
@@ -407,8 +428,6 @@ lightgbm
         
         
           <li class="nav-link"><a href="/search/">Search</a>
-        
-        
         
         
         

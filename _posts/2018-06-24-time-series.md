@@ -3,6 +3,7 @@ layout: post
 title: 萩原淳一郎，基礎からわかる時系列分析
 updated: 2018-06-24
 cover:  "/assets/2018-06-24-berries.jpg"
+published: false
 categories:
  - statistics
 ---

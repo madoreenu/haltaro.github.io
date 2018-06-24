@@ -5,154 +5,9 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Jun 2018 15:44:05 +0900</pubDate>
-    <lastBuildDate>Sun, 24 Jun 2018 15:44:05 +0900</lastBuildDate>
+    <pubDate>Sun, 24 Jun 2018 15:44:47 +0900</pubDate>
+    <lastBuildDate>Sun, 24 Jun 2018 15:44:47 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
-    
-      <item>
-        <title>萩原淳一郎，基礎からわかる時系列分析</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/bTrcjv0&quot;&gt;萩原淳一郎，基礎からわかる時系列分析 ―Rで実践するカルマンフィルタ・MCMC・粒子フィルター&lt;/a&gt;をざっと読んで状態空間モデルを勉強した．線形・ガウス型の状態空間モデルの場合はカルマンフィルタで解析的に解けるが，一般状態空間モデルの場合は，フィルタリング分布・予測分布・平滑化分布の積分計算を必ずしも解析的に解けない．そこで，MCMCを用いた一括解法や，粒子フィルタによる逐次解法が提案されている．&lt;/p&gt;
-
-&lt;h1 id=&quot;確率統計に関する基礎&quot;&gt;確率・統計に関する基礎&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;周辺化消去は，同時分布から外したい変数の影響を，あらかじめ平均的に考慮することに相当する．なるほど，腑に落ちた．&lt;/li&gt;
-  &lt;li&gt;定常過程と非定常過程．
-    &lt;ul&gt;
-      &lt;li&gt;強定常：確率過程の確率分布が時点&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;によらず一定．&lt;/li&gt;
-      &lt;li&gt;弱定常：確率過程の平均・分散・自己共分散・自己相関係数が時点&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;によらず一定．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;時系列分析ひとめぐり&quot;&gt;時系列分析ひとめぐり&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;五数要約：最小値・25%値・中央値・75%値・最大値．Rだと&lt;code class=&quot;highlighter-rouge&quot;&gt;summary()&lt;/code&gt;で，Python（pandas）だと&lt;code class=&quot;highlighter-rouge&quot;&gt;DataFrame.describe()&lt;/code&gt;で確認できる．&lt;/li&gt;
-  &lt;li&gt;自己相関係数．&lt;script type=&quot;math/tex&quot;&gt;\frac{\mathrm{Cov}[X_{t}, X_{t-k} ]}{\sqrt{\mathrm{Var}[X_t]}\sqrt{\mathrm{Var}[X_{t-k}]}}&lt;/script&gt;．&lt;/li&gt;
-  &lt;li&gt;時系列データの成分分解：レベル＋傾き＋周期．&lt;/li&gt;
-  &lt;li&gt;ホルト・ウィンタース法．指数加重型移動平均（EWMA：Exponentially Weighted Moving Average）の一種．Rでは，&lt;code class=&quot;highlighter-rouge&quot;&gt;HoltWinters()&lt;/code&gt;関数で実施できる．&lt;/li&gt;
-  &lt;li&gt;残差を確認して，モデルの妥当性を分析する．残差の自己相関により，周期性を上手く捉えられたか確認できる．&lt;/li&gt;
-  &lt;li&gt;状態空間モデルの解法の分類：
-    &lt;ul&gt;
-      &lt;li&gt;線形・ガウス型状態空間モデル：
-        &lt;ul&gt;
-          &lt;li&gt;一括型解法：ウィナーフィルタ．&lt;/li&gt;
-          &lt;li&gt;逐次型解法：カルマンフィルタ．&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;一般状態空間モデル：
-        &lt;ul&gt;
-          &lt;li&gt;一括型解法：MCMCを利用した解法．&lt;/li&gt;
-          &lt;li&gt;逐次型解法：粒子フィルタ．&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;状態空間モデル&quot;&gt;状態空間モデル&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;方程式による表現：
-    &lt;ul&gt;
-      &lt;li&gt;状態方程式&lt;sup id=&quot;fnref:state&quot;&gt;&lt;a href=&quot;#fn:state&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;：&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_t = f ( \mathbf{x}_{t-1}, \mathbf{w}_{t-1})&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;観測方程式：&lt;script type=&quot;math/tex&quot;&gt;y_t = h ( \mathbf{x}_{t}, v_{t})&lt;/script&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;確率分布による表現：
-    &lt;ul&gt;
-      &lt;li&gt;状態方程式に相当：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_t \mid \mathbf{x}_{0:t-1}, y_{0:t-1}) = p(\mathbf{x}_t \mid \mathbf{x}_{t-1})&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;観測方程式に相当：&lt;script type=&quot;math/tex&quot;&gt;p(y_t \mid \mathbf{x}_{0:t}, y_{0:t-1}) = p(y_t\mid \mathbf{x}_{t})&lt;/script&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;状態空間モデルの同時分布：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{0:T}, y_{0:T}) = p(\mathbf{x}_0) \prod_{t=1}^{T} p(y_t\mid \mathbf{x}_{t}) p(\mathbf{x}_t \mid \mathbf{x}_{t-1})&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;ARIMAモデルと状態空間モデルは密接な関係がある．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;状態空間モデルにおける状態の推定&quot;&gt;状態空間モデルにおける状態の推定&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;状態の周辺事後分布：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t'} \mid y_{1:t}) = \int p(\mathbf{x}_{0}, \mathbf{x}_{1}, \dots \mathbf{x}_{t'}, \dots \mid y_{1:t}) d\mathbf{x}_{t'以外}&lt;/script&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;t' = t&lt;/script&gt;：フィルタリング分布&lt;/li&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;t' &gt; t&lt;/script&gt;：予測分布&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;フィルタリング分布：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:t}) = p(\mathbf{x}_{t} \mid y_{1:t-1}) \frac{p(y_{t} \mid \mathbf{x}_{t})}{p(y_{t}) \mid p(y_{1:t-1})}&lt;/script&gt;
-    &lt;ul&gt;
-      &lt;li&gt;モデルの状態方程式&lt;script type=&quot;math/tex&quot;&gt;p(y_{t} \mid \mathbf{x}_{t})&lt;/script&gt;と，以下の一期先予測分布，一期先予測尤度からなる．&lt;/li&gt;
-      &lt;li&gt;一期先予測分布： &lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:t-1}) = \int p(\mathbf{x}_{t} \mid \mathbf{x}_{t-1}) p(\mathbf{x}_{t} \mid y_{1:t-1}) d\mathbf{x}_{t-1}&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;一期先予測尤度&lt;sup id=&quot;fnref:likelihood&quot;&gt;&lt;a href=&quot;#fn:likelihood&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;：&lt;script type=&quot;math/tex&quot;&gt;p(y_{t} \mid y_{1:t-1}) = \int p(y_t \mid \mathbf{x}_{t} ) p(\mathbf{x}_{t} \mid y_{1:t-1}) d\mathbf{x}_{t-1}&lt;/script&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;予測分布：
-    &lt;ul&gt;
-      &lt;li&gt;定式化：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t+k} \mid y_{1:t}) = \int p(\mathbf{x}_{t+k} \mid \mathbf{x}_{t+k-1}) p(\mathbf{x}_{t+k-1} \mid y_{1:t}) d\mathbf{x}_{t+k-1}&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;一期先予測分布をもとに，状態方程式に基いて時間順方向への遷移を&lt;script type=&quot;math/tex&quot;&gt;k-1&lt;/script&gt;解繰り返したもの．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;平滑化分布：
-    &lt;ul&gt;
-      &lt;li&gt;定式化：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:T}) = p(\mathbf{x}_{t} \mid y_{1:t}) \int \frac{p(\mathbf{x}_{t+1} \mid \mathbf{x}_{t})}{p(\mathbf{x}_{t+1} \mid y_{1:t})} p(\mathbf{x}_{t+1} \mid y_{1:T}) d \mathbf{x}_{t+1}&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;p(\mathbf{x}&lt;em&gt;{t} \mid y&lt;/em&gt;{1:t})はフィルタリング分布，p(\mathbf{x}&lt;em&gt;{t+1} \mid \mathbf{x}&lt;/em&gt;{t})は状態方程式，p(\mathbf{x}&lt;em&gt;{t+1} \mid y&lt;/em&gt;{1:t})は予測分布，p(\mathbf{x}&lt;em&gt;{t+1} \mid y&lt;/em&gt;{1:T}) は1時点先の平滑化分布．&lt;/li&gt;
-      &lt;li&gt;平滑化分布は，フィルタリング分布を再帰的に補正したもの．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;パラメータ集合を&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}&lt;/script&gt;とすると，対数尤度は&lt;script type=&quot;math/tex&quot;&gt;l(\mathbf{\theta}) = \sum_{t=1}^{T} \mathrm{log} p( y_t \mid y_{1:t-1} ; \mathbf{\theta})&lt;/script&gt;．
-    &lt;ul&gt;
-      &lt;li&gt;一期先予測尤度が含まれているため，特定のデータに基づきながら，過去の情報のみから見洗の値を当てる際の予測能力を踏まえた指標になっている．&lt;/li&gt;
-      &lt;li&gt;この式には状態が登場しないため，周辺尤度あるいは対数周辺尤度と呼ばれることがある．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;状態空間モデルにおけるパラメータの扱い．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}&lt;/script&gt;が確率変数でない：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{argmax}_{\mathbf{\theta}} l(\mathbf{\theta})&lt;/script&gt;を準ニュートン法やEMアルゴリズムで求める．&lt;/li&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}&lt;/script&gt;が確率変数：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{argmax}_{\mathbf{\theta}} p(\mathbf{\theta} \mid y_{1:t}) \propto \mathrm{argmax}_{\mathbf{\theta}} \{ p(y_{1:t} \mid \mathbf{\theta} ) +  p(\mathbf{\theta} ) \}&lt;/script&gt;をMAP推定で求める．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;パラメータを確率変数として扱う場合は，たとえもともと線形ガウス型の状態空間モデルであっても，一般状態空間モデルになる．つまり，ウィナーフィルタやカルマンフィルタでは直接解を求められない．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;線形ガウス型状態空間モデルの一括解法&quot;&gt;線形・ガウス型状態空間モデルの一括解法&lt;/h1&gt;
-
-&lt;h1 id=&quot;線形ガウス型状態空間モデルの逐次解法&quot;&gt;線形・ガウス型状態空間モデルの逐次解法&lt;/h1&gt;
-
-&lt;h1 id=&quot;一般状態空間モデルの一括解法&quot;&gt;一般状態空間モデルの一括解法&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;フィルタリング分布，予測分布，および平滑化分布には多次元の積分計算が含まれる．線形・ガウス型状態空間モデルの場合は，&lt;strong&gt;幸運にも&lt;/strong&gt; 解析的に解けたが，一般状態空間モデルの場合は必ずしも解析的に解けないため，工夫が必要：
-    &lt;ul&gt;
-      &lt;li&gt;グリッドフィルタ：数値積分を活用するアプローチ．&lt;/li&gt;
-      &lt;li&gt;重点サンプリング：ラプラス近似を利用して，一般状態空間モデルにおける分布を線形・ガウス型状態空間モデルにおける分布で近似するアプローチ．&lt;/li&gt;
-      &lt;li&gt;MCMC（マルコフ連鎖モンテカルロ法；Markov chain Monte Carlo）：求めたい分布からのサンプルを直接生成するアプローチ．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;一般状態空間モデルの逐次解法&quot;&gt;一般状態空間モデルの逐次解法&lt;/h1&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:state&quot;&gt;
-      &lt;p&gt;システム方程式とも呼ばれる． &lt;a href=&quot;#fnref:state&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:likelihood&quot;&gt;
-      &lt;p&gt;なぜ尤度と呼ぶんだろう．まだ腑に落ちてない． &lt;a href=&quot;#fnref:likelihood&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sun, 24 Jun 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/06/24/time-series</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/24/time-series</guid>
-        
-        
-        <category>statistics</category>
-        
-      </item>
     
       <item>
         <title>Light GBMを使うとOMPエラーでカーネルが死ぬ</title>
@@ -728,6 +583,135 @@ t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
         <pubDate>Thu, 31 May 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018/05/31/dmm-english</link>
         <guid isPermaLink="true">http://localhost:4000/2018/05/31/dmm-english</guid>
+        
+        
+        <category>english</category>
+        
+      </item>
+    
+      <item>
+        <title>DMM英会話受講メモ：2018年4月</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;の受講メモ．4月末は仕事がバタつき，なかなか時間を取れなかった．&lt;/p&gt;
+
+&lt;h1 id=&quot;20180402&quot;&gt;20180402&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/japans-endangered-languages/J0UC_DLIEeiOsKvrFGYOEA&quot;&gt;Japan’s Endangered Languages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;archipelago：a group of islands&lt;/li&gt;
+  &lt;li&gt;discount：to think or say that something is not important or true&lt;/li&gt;
+  &lt;li&gt;dialect：方言、国なまり、(特定の職業・階層の)通用語&lt;/li&gt;
+  &lt;li&gt;provincial：田舎者&lt;/li&gt;
+  &lt;li&gt;conform to：to think or behave in the same way as most people in a group or society&lt;/li&gt;
+  &lt;li&gt;フィリピンの停電でレッスン中断してしまった．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180403&quot;&gt;20180403&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/nasa-wants-to-send-your-name-to-the-sun/fa88yiunEeiw_Xser5ssDA&quot;&gt;NASA Wants to Send Your Name to the Sun&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;revolutionize：to completely change something&lt;/li&gt;
+  &lt;li&gt;etch：to cut something into a hard surface&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180405&quot;&gt;20180405&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/facebook-founder-we-made-a-mistake-in-trying-to-protect-user-data/LDgK2C3nEeiiQo_IqfkFRg&quot;&gt;Facebook Founder: We Made a Mistake in Trying to Protect User Data&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;forensic: relating to the scientific methods used to investigate crime&lt;/li&gt;
+  &lt;li&gt;audit: an official examination of a company’s records&lt;/li&gt;
+  &lt;li&gt;take a hit: to experience damage or loss&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180406&quot;&gt;20180406&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/canadian-brings-japanese-art-of-comic-storytelling-to-the-world/2JA5Wjg7Eei1ct8WYjNDtQ&quot;&gt;Canadian Brings Japanese Art of Comic Storytelling to the World&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;show the ropes: to teach or show someone how to do a particular job&lt;/li&gt;
+  &lt;li&gt;deceptively: appearing to be different than it actually is&lt;/li&gt;
+  &lt;li&gt;sermon: a speech given during a religious service&lt;/li&gt;
+  &lt;li&gt;kneel: ひざまずく&lt;/li&gt;
+  &lt;li&gt;cushion: クッション&lt;/li&gt;
+  &lt;li&gt;props: 小道具&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180408&quot;&gt;20180408&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/students-learn-real-skills-in-virtual-businesses/xBeIajHKEeiXratpL_tA0w&quot;&gt;Students Learn Real Skills in ‘Virtual’ Businesses&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;apprenticeship: a period of time spent working somewhere, usually for low pay, in order to learn a particular skill or job&lt;/li&gt;
+  &lt;li&gt;prosper: to develop and become successful&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180409&quot;&gt;20180409&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/scientists-stage-mars-mission-in-israeli-desert/HWXMFi6qEeiObjO1pmzNtA&quot;&gt;Scientists Stage Mars Mission in Israeli Desert&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;arid: extremely dry; lacking rain&lt;/li&gt;
+  &lt;li&gt;confined: (of a space or area) very small&lt;/li&gt;
+  &lt;li&gt;cactus: サボテン&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180411&quot;&gt;20180411&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/facebooks-business-model-built-on-absence-of-privacy/noYkaDwtEeiMmROk0uRkcw&quot;&gt;Facebook’s Business Model Built on Absence of Privacy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;malicious: intending to cause harm or damage&lt;/li&gt;
+  &lt;li&gt;exploitation: the act of treating someone or something unfairly for financial gain&lt;/li&gt;
+  &lt;li&gt;profile: to produce a description or analysis of someone that includes important information about them&lt;/li&gt;
+  &lt;li&gt;viable: that can work successfully; possible or achievable&lt;/li&gt;
+  &lt;li&gt;先生が授業をキャンセル．通信環境が悪いとのこと．とりあえず記事だけ読んでおいた．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180412&quot;&gt;20180412&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/independent-chefs-exchange-ideas/tp_DzjgdEeieZiOPHZWjDg&quot;&gt;Independent Chefs Exchange Ideas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;eatery: a restaurant&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180415&quot;&gt;20180415&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/argentinians-exchange-private-data-for-free-wifi/JRbnhD2pEeiSJp-axCgWEg&quot;&gt;Argentinians Exchange Private Data for “Free” WiFi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;consent: permission to do something&lt;/li&gt;
+  &lt;li&gt;disseminate: to make something, such as information or news, available to many people&lt;/li&gt;
+  &lt;li&gt;セルビアのジョージ先生．話がはずんで面白かった．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180416&quot;&gt;20180416&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/helping-the-planet-one-burger-at-a-time/DFtivDvbEeiemqe4TEoLMg&quot;&gt;Helping the Planet, One Burger at a Time&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;take a toll: to have a bad impact on somebody or something&lt;/li&gt;
+  &lt;li&gt;resource-intensive: needing a lot of resources, such as land, food, water, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180417&quot;&gt;20180417&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/spielberg-goes-into-future-with-ready-player-one-film/tsusNDjFEeipQJ_r7RQZ-g&quot;&gt;Spielberg Goes into Future with ‘Ready Player One’ Film&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;brainchild: a plan or idea that someone has developed&lt;/li&gt;
+  &lt;li&gt;escapist: (of an activity, form of entertainment, etc.) that provides distraction or relief from unpleasant or boring things&lt;/li&gt;
+  &lt;li&gt;run amok: to become out of control and usually violent&lt;/li&gt;
+  &lt;li&gt;envision: to imagine something that is a likely possibility in the future&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180418&quot;&gt;20180418&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/french-baker-fined-for-working-7-days-a-week/ExeyqD5rEei0DNcRyGZfTw&quot;&gt;French Baker Fined For Working 7 Days a Week&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;jaywalking: 横断歩道のないところを渡ること．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180424&quot;&gt;20180424&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/stem-education-too-hard-and-too-boring/Sfvf-j8HEeirdF8odRf_uQ&quot;&gt;STEM Education: Too Hard and Too Boring?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;久々のレッスン．&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 24 Apr 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/04/24/dmm-english</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/04/24/dmm-english</guid>
         
         
         <category>english</category>
