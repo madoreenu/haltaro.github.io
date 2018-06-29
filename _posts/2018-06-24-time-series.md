@@ -55,7 +55,7 @@ categories:
     - $$t' = t$$：フィルタリング分布
     - $$t' > t$$：予測分布
 - フィルタリング分布：$$p(\mathbf{x}_{t} \mid y_{1:t}) = p(\mathbf{x}_{t} \mid y_{1:t-1}) \frac{p(y_{t} \mid \mathbf{x}_{t})}{p(y_{t}) \mid p(y_{1:t-1})} $$
-    - モデルの状態方程式$$p(y_{t} \mid \mathbf{x}_{t})$$と，以下の一期先予測分布，一期先予測尤度からなる．
+    - モデルの状態方程式$$p(y_{t} \mid \mathbf{x}_{t})$$[^mislead]と，以下の一期先予測分布$$p(\mathbf{x}_{t} \mid y_{1:t-1})$$，一期先予測尤度$$p(y_{t} \mid y_{1:t-1})$$からなる．直感的には，一期先予測分布を状態方程式で補正して，一期先予測尤度で正規化したもの．
     - 一期先予測分布： $$p(\mathbf{x}_{t} \mid y_{1:t-1}) = \int p(\mathbf{x}_{t} \mid \mathbf{x}_{t-1}) p(\mathbf{x}_{t} \mid y_{1:t-1}) d\mathbf{x}_{t-1} $$
     - 一期先予測尤度[^likelihood]：$$p(y_{t} \mid y_{1:t-1}) = \int p(y_t \mid \mathbf{x}_{t} ) p(\mathbf{x}_{t} \mid y_{1:t-1}) d\mathbf{x}_{t-1} $$
 - 予測分布：
@@ -73,6 +73,8 @@ categories:
     - $$\mathbf{\theta}$$が確率変数：$$\mathrm{argmax}_{\mathbf{\theta}} p(\mathbf{\theta} \mid y_{1:t}) \propto \mathrm{argmax}_{\mathbf{\theta}} \{ p(y_{1:t} \mid \mathbf{\theta} ) +  p(\mathbf{\theta} ) \}$$をMAP推定で求める．
 - パラメータを確率変数として扱う場合は，たとえもともと線形ガウス型の状態空間モデルであっても，一般状態空間モデルになる．つまり，ウィナーフィルタやカルマンフィルタでは直接解を求められない．
 
+[^mislead]: 書籍中，$$p(y_t \mid \mathbf{x}_t)$$を尤度と呼ぶことがあり，一期先予測尤度と混同してハマった．
+
 # 線形・ガウス型状態空間モデルの一括解法
 
 - ウィナーフィルタは定常な時系列を前提としている．
@@ -86,7 +88,7 @@ $$，$$\mathbf{w}_t \sim \mathcal{N} (\mathbf{0}, \mathbf{W}_t)$$
   - 観測方程式：$$ y_t = \mathbf{F}_t \mathbf{x}_t + v_t$$，$$v_t \sim \mathcal{N} (0, V_t)$$
   - 初期状態：$$ \mathbf{x}_0 \sim \mathcal{N} (\mathbf{m}_0, \mathbf{C}_0)$$
   - パラメータ：$$ \mathbf{\theta} = \{\mathbf{G}_t, \mathbf{F}_t, \mathbf{W}_t, V_t, \mathbf{m}_0, \mathbf{C}_0 \} $$
-- 上記の前提でフィルタリング分布・予測分布・平滑化分布を計算すると，逐次更新式を得る．詳細は割愛．
+- 上記の前提でフィルタリング分布・予測分布・平滑化分布を計算すると，逐次更新式を得る．
 
 # 一般状態空間モデルの一括解法
 
@@ -112,12 +114,12 @@ $$，$$\mathbf{w}_t \sim \mathcal{N} (\mathbf{0}, \mathbf{W}_t)$$
   - $$p(x)$$からサンプリング可能な場合：$$ \mathrm{E}[ f(\mathbf{x})] \approx \frac{1}{N}\sum_{n=1}^{N} f (\mathbf{x}^{(n)})$$
   - $$p(x)$$の代わりに$$q(x)$$からサンプリングする場合：$$ \mathrm{E}[ f(\mathbf{x})] \approx \frac{1}{N}\sum_{n=1}^{N} w(\mathbf{x}^{(n)}) f (\mathbf{x}^{(n)})$$
   - ただし，$$w(\mathbf{x}^{(n)}) = \frac{p(\mathbf{x}^{(n)})}{q(\mathbf{x}^{(n)})}$$を満たし，重点関数と呼ばれる．
+- 粒子フィルタリング
 
 # メモ
 
-- (6.18)式とp221が整合しているらしいが，どうも納得できない．
 - リサンプリング後に$$w_t^{(n)}$$をリセットするのはなぜ？リサンプリングしたから不要ってことか？
-- PRMLの粒子フィルタのところをもう一度読む必要がある．
+- 最終的には，適当な株価データを落としてきて予測対象にしたい．
 
 [^state]: システム方程式とも呼ばれる．
 

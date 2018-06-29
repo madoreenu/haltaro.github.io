@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>JekyllにAlgoliaで全文検索機能を実装する</title>
-  <meta name="description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した．">
+  <title>DMM英会話受講メモ：2018年6月</title>
+  <meta name="description" content="DMM英会話の受講メモ．12回/30日なので，4割程度の実施率．仕事の忙しさを考えると，このあたりが現実的な数字かもしれない．">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,12 +51,12 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した．" />
+  <meta property="og:description" content="DMM英会話の受講メモ．12回/30日なので，4割程度の実施率．仕事の忙しさを考えると，このあたりが現実的な数字かもしれない．" />
   <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
-  <meta property="og:title" content="JekyllにAlgoliaで全文検索機能を実装する" />
+  <meta property="og:title" content="DMM英会話受講メモ：2018年6月" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://localhost:4000/assets/2018-06-16-algolia.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2017-08-03-english.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -65,9 +65,9 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="JekyllにAlgoliaで全文検索機能を実装する">
-  <meta name="twitter:description" content="本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した．">
-  <meta name="twitter:image" content="http://localhost:4000/assets/2018-06-16-algolia.jpg">
+  <meta name="twitter:title" content="DMM英会話受講メモ：2018年6月">
+  <meta name="twitter:description" content="DMM英会話の受講メモ．12回/30日なので，4割程度の実施率．仕事の忙しさを考えると，このあたりが現実的な数字かもしれない．">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2017-08-03-english.jpg">
   <meta name="twitter:url" content="http://localhost:4000">
   
 
@@ -75,7 +75,7 @@
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2018/06/16/jekyll-algolia">
+  <link rel="canonical" href="http://localhost:4000/2018/06/30/dmm-english">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -152,10 +152,10 @@
     <div class="page-content">
         <div class="post">
 
-<div class="post-header-container has-cover" style="background-image: url(/assets/2018-06-16-algolia.jpg);">
+<div class="post-header-container has-cover" style="background-image: url(/assets/2017-08-03-english.jpg);">
   <div class="scrim has-cover">
     <header class="post-header">
-      <h1 class="title">JekyllにAlgoliaで全文検索機能を実装する</h1>
+      <h1 class="title">DMM英会話受講メモ：2018年6月</h1>
       <!--<p class="info">by <strong></strong></p>-->
     </header>
   </div>
@@ -166,106 +166,142 @@
 
 
 <section class="post-meta">
-  <div class="post-date">June 16, 2018</div>
+  <div class="post-date">June 30, 2018</div>
   <div class="post-categories">
   in 
     
-    <a href="/categories/#jekyll">Jekyll</a>
+    <a href="/categories/#english">English</a>
     
   
   </div>
 </section>
 
 <article class="post-content">
-  <p>本サイトに待望の<a href="https://haltaro.github.io/search/">全文検索機能を実装</a>した．Algolia社の<a href="https://community.algolia.com/docsearch/">DocSearch</a>の審査に通らなかったので，同社の<a href="https://www.algolia.com/pricing">Free hacker plan</a>を利用した．</p>
+  <p><a href="http://eikaiwa.dmm.com/">DMM英会話</a>の受講メモ．12回/30日なので，4割程度の実施率．仕事の忙しさを考えると，このあたりが現実的な数字かもしれない．</p>
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/iBIoajzYWGE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-
-<h1 id="algolia">Algolia</h1>
-
-<p>Algoliaは，リアルタイム検索をSaaSで提供するサービス群．今回は，<a href="https://community.algolia.com/docsearch/">DocSearch</a>および<a href="https://www.algolia.com/pricing">Free hacker plan</a>の利用を検討した．</p>
-
-<h2 id="docsearch">DocSearch</h2>
-
-<p><a href="https://community.algolia.com/docsearch/">DocSearch申請用ページ</a>で登録したURLが審査に通ると，Algoliaのクローラが自動でインデックスファイルを構築し，検索用APIを公開してくれるという，ゆとりには嬉しいサービス．何を隠そう<a href="https://jekyllrb.com/">Jekyll</a>の検索システムもこれで実装されている．今回は残念ながら審査に通らなかった<sup id="fnref:japanese"><a href="#fn:japanese" class="footnote">1</a></sup>ので，<a href="https://www.algolia.com/pricing">Free hacker plan</a>を利用することにした．</p>
-
-<p><img src="/assets/2018-06-16-docsearch.png" alt="docsearch" /></p>
-
-<h2 id="free-hacker-plan">Free hacker plan</h2>
-
-<p>自力で作成したインデックスファイルをAlgoliaにアップロードし，検索用APIを利用するプラン．マスターデータは1万件まで登録でき，APIを月10万回まで利用できる．<a href="https://blog.leko.jp/post/implement-site-search-with-algolia/">Algoliaを利用してサイト内検索機能を実装する - WEB EGG</a>によると，上限をオーバーすると検索もコンテンツの追加もできなくなるみたい．月1万PV程度のブログでギリギリ足りない感じらしいので，本ウェブサイトなら余裕である<sup id="fnref:sad"><a href="#fn:sad" class="footnote">2</a></sup>．</p>
-
-<p><img src="/assets/2018-06-16-hacker.png" alt="hacker" /></p>
-
-<p>幸い，<a href="https://community.algolia.com/jekyll-algolia/">Jekyll向けのプラグイン</a>があるため，私でも簡単に実装できた．以下に手順を示す．</p>
-
-<h1 id="手順">手順</h1>
-
-<p>以下は基本的に<a href="https://community.algolia.com/jekyll-algolia/">Algolia for Jekyll - Algolia</a>および<a href="https://community.algolia.com/jekyll-algolia/blog.html">Blog search -  Algolia for Jekyll</a>に則っているが，ウェブサイトの一貫性を保つために一部のコードを修正している．</p>
-
-<h2 id="algoliaのユーザ登録">Algoliaのユーザ登録</h2>
-
-<p><a href="https://www.algolia.com/">Algolia</a>からサインアップする．以降の処理で，ダッシュボードの<code class="highlighter-rouge">Application ID</code>，<code class="highlighter-rouge">Search-Only API Key</code>，および<code class="highlighter-rouge">Admin API Key</code>が必要なのでメモしておく．</p>
-
-<h2 id="jekyll-algliaの設定"><code class="highlighter-rouge">jekyll-alglia</code>の設定</h2>
-
-<p><code class="highlighter-rouge">Gemfile</code>に以下を追記し，<code class="highlighter-rouge">$ bundle update</code>する．</p>
-
-<script src="https://gist.github.com/haltaro/bc3a34adff021f762373f452f2aad4e7.js"></script>
-
-<p><code class="highlighter-rouge">_config.yml</code>に<code class="highlighter-rouge">jekyll-algolia</code>の設定を追加する．</p>
-
-<script src="https://gist.github.com/haltaro/af5b24ac877c78a8d2230f903f429b8c.js"></script>
-
-<h2 id="インデックスの作成とアップロード">インデックスの作成とアップロード</h2>
-
-<p>シェルで以下を実行する．</p>
-
-<script src="https://gist.github.com/haltaro/7602fed4d47e0062ed2779fc5070e4f9.js"></script>
-
-<p>ここで，<code class="highlighter-rouge">Admin API Key</code>はローカルで保管する必要がある．間違ってGitHub等にアップしないように注意．以降は，検索窓の実装に入る．</p>
-
-<h2 id="_layoutssearchhtml"><code class="highlighter-rouge">_layouts/search.html</code></h2>
-
-<p><a href="https://community.algolia.com/jekyll-algolia/blog.html">Blog search -  Algolia for Jekyll</a>の<code class="highlighter-rouge">search.html</code>を参考にした．ただし，本ウェブサイトのベーステーマである<a href="https://github.com/bencentra/centrarium">Centrarium</a>と整合するよう，一部に手を加えた．</p>
-
-<script src="https://gist.github.com/haltaro/1c1f54a75dff0ce897373d2d6450310c.js"></script>
-
-<h2 id="_includesalgoliahtml"><code class="highlighter-rouge">_includes/algolia.html</code></h2>
-
-<p><a href="https://community.algolia.com/jekyll-algolia/blog.html">Blog search -  Algolia for Jekyll</a>の<code class="highlighter-rouge">algolia.html</code>を参考にした．</p>
-
-<script src="https://gist.github.com/haltaro/17c7d07fdd56f07c80735e0328ecfbe0.js"></script>
-
-<h2 id="searchmd"><code class="highlighter-rouge">search.md</code></h2>
-
-<p>全文検索用の<a href="https://haltaro.github.io/search/">Search</a>ページを作成するために，以下の<code class="highlighter-rouge">search.md</code>ファイルを作成した．</p>
-
-<script src="https://gist.github.com/haltaro/c30ebf72374a701767ebc55fe33a898a.js"></script>
-
-<h1 id="感想">感想</h1>
-
-<p>これで，本ウェブサイトに欲しかった機能はあらかた実装してしまった．結構書きたい（書かないと忘れてしまいそうな）ことが溜まってきたので，しばらくは統計・機械学習のノウハウや理論を書いていきたい．</p>
-
-<h1 id="参考">参考</h1>
+<h1 id="20180609">20180609</h1>
 
 <ul>
-  <li><a href="https://www.algolia.com/">Algolia - Algolia</a></li>
-  <li><a href="https://community.algolia.com/docsearch/">DocSearch - Algolia</a></li>
-  <li><a href="https://community.algolia.com/jekyll-algolia/">Algolia for Jekyll - Algolia</a></li>
-  <li><a href="https://blog.leko.jp/post/implement-site-search-with-algolia/">Algoliaを利用してサイト内検索機能を実装する - WEB EGG</a></li>
-  <li><a href="http://rs.luminousspice.com/hugo-site-search/">Hugo に全文検索を取り付けた - the Right Stuff</a></li>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/gamers-push-limits-of-scientific-research/m0I8AOPhEeeyorvShZ0_nQ">Gamers Push Limits of Scientific Research</a></li>
+  <li>tweak：a slight change to something in order to improve it</li>
+  <li>invaluable：extremely useful</li>
+  <li>outreach：the practice of providing help and advice to people before they have to ask for it</li>
+  <li>二週間ぶりの英会話．口が全然動かない．リハビリが必要．</li>
 </ul>
-<div class="footnotes">
-  <ol>
-    <li id="fn:japanese">
-      <p>Algolia社が定める”technical documentation site”ではないと，丁寧なお祈りメールが来た．そもそも日本語だと通りづらいんじゃないか． <a href="#fnref:japanese" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:sad">
-      <p>月1000PVくらい． <a href="#fnref:sad" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+
+<h1 id="20180610">20180610</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/things-your-dog-might-know/a0fAws5OEeeULl-V0Jfpkg">Things Your Dog Might Know</a></li>
+  <li>tilt: 傾き</li>
+  <li>magnetism: 磁気</li>
+  <li>breed: 品種</li>
+  <li>deductive: using information about things that are generally true in order to understand something specific</li>
+  <li>deception: the act of deliberately trying to trick someone</li>
+  <li>manipulate: to intentionally control or influence someone or something</li>
+  <li>domesticate: to purposefully breed wild animals so they can live with or be used by humans</li>
+  <li>口が回らないのはもちろん，単語も聞き取れなくなっている．前日の夜に予習，翌朝受講の習慣をつけよう．</li>
+</ul>
+
+<h1 id="20180611">20180611</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/ai-farm-robot-designed-to-reduce-herbicide-use/5HGEimVuEeikiEMkZY11HA">AI Farm Robot Designed to Reduce Herbicide Use</a></li>
+  <li>weed: a wild plant that grows where it is not wanted</li>
+  <li>herbicide: a chemical used to kill weeds</li>
+  <li>除草剤を自動で撒くAIの話．</li>
+</ul>
+
+<h1 id="20180613">20180613</h1>
+
+<ul>
+  <li>忙しかったので10分だけフリートークをしてもらった．</li>
+</ul>
+
+<h1 id="20180615">20180615</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/new-apple-software-helps-limit-smartphone-use/1Vx06mo9EeiIaU-1bPoGZA">New Apple Software Helps Limit Smartphone Use</a></li>
+  <li>cut back (on): to start doing less of something because it is bad for you</li>
+  <li>発音について，かなり丁寧に指導してもらった．
+    <ul>
+      <li>r，l，oの発音．特に<code class="highlighter-rouge">because</code>を発音するときに<code class="highlighter-rouge">/ow/</code>となってしまうくせがあるとのこと．気をつけないと．</li>
+      <li><code class="highlighter-rouge">the</code>を<code class="highlighter-rouge">/thee/</code>と読むときと<code class="highlighter-rouge">/thuh/</code>と読むときの違いについて．知識としては知っているけど，実際の会話になるとつい忘れてしまう．</li>
+    </ul>
+  </li>
+  <li>会話中に思いつかなかったフレーズ：
+    <ul>
+      <li>kill the time：時間を潰す．（It kills out time）</li>
+      <li>pass the time：時間を潰す．（It helps pass our time）</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="20180619">20180619</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/the-future-of-drones-is-flying-ahead/HOV57mi7EeiTlAvv42-rRA">The Future of Drones is Flying Ahead</a></li>
+  <li>parcel：小包</li>
+  <li>long-haul：長距離</li>
+  <li>bill：議案</li>
+  <li>shortage in labor：人手不足</li>
+  <li>発音をかなり丁寧に指摘してくれる人だった．やはり，/r/と/l/の発音が難しい．継続的な練習が必要．</li>
+</ul>
+
+<h1 id="20180622">20180622</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/google-bans-use-of-ai-technology-for-weapons/9R_BXm_LEeit56coaNijlw">Google Bans Use of AI Technology for Weapons</a></li>
+  <li>特に難しい単語はなかった．</li>
+  <li>先生めちゃくちゃいい人でとても楽しかった．</li>
+</ul>
+
+<h1 id="20180623">20180623</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/the-healing-power-of-pets/iv7WrmseEeip-ovbozMF5w">The Healing Power of Pets</a></li>
+  <li>unconditional: not having any conditions or limits</li>
+  <li>incorporate: to include something as a part of something else</li>
+  <li>schizophrenia: a long-term mental disorder of a type involving a breakdown in the relation between thought, emotion, and behavior, leading to faulty perception, inappropriate actions and feelings, withdrawal from reality and personal relationships into fantasy and delusion, and a sense of mental fragmentation.</li>
+  <li>bipolar disorder: (of psychiatric illness) characterized by both manic and depressive episodes, or manic ones only</li>
+  <li>好きな動物はなにかと聞かれて，柴犬と即答した．</li>
+</ul>
+
+<h1 id="20180624">20180624</h1>
+
+<ul>
+  <li>やる気が出なかったので，10分だけフリートークしてもらった．</li>
+</ul>
+
+<h1 id="20180625">20180625</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/sleeping-in-on-weekends-might-save-your-life/I5usOHEkEeiCFu9NSPuYbg">Sleeping In On Weekends Might Save Your Life</a></li>
+  <li>sleep in: to sleep until later in the morning than you usually do</li>
+  <li>deficit: the difference between the amount of something that someone has and the amount that they need</li>
+  <li>replenish: to make something full again</li>
+  <li>ritual: 儀式，習慣．</li>
+</ul>
+
+<h1 id="20180627">20180627</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/estonia-rolls-out-free-public-transport/TRDIUHEkEeiCX5eNi4SQLA">Estonia Rolls out Free Public Transport</a></li>
+  <li>roll out: to introduce something new</li>
+  <li>発音に関して結構コメントしてもらった：
+    <ul>
+      <li>situation：sit-wey-syun</li>
+      <li>introduce：/du/</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="20180630">20180630</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/pho-ramen-or-soba-googles-noodle-report/1AdepHhQEei-ZS8JoVIL8A">Pho, Ramen or Soba? Google’s ‘Noodle Report’</a></li>
+  <li>buckwheat: そば粉</li>
+</ul>
 
 </article>
 
