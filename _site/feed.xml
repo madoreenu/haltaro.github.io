@@ -5,8 +5,8 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Jun 2018 07:42:04 +0900</pubDate>
-    <lastBuildDate>Sat, 30 Jun 2018 07:42:04 +0900</lastBuildDate>
+    <pubDate>Sat, 07 Jul 2018 22:47:01 +0900</pubDate>
+    <lastBuildDate>Sat, 07 Jul 2018 22:47:01 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
@@ -143,6 +143,258 @@
         
         
         <category>english</category>
+        
+      </item>
+    
+      <item>
+        <title>萩原淳一郎，基礎からわかる時系列分析</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/bTrcjv0&quot;&gt;萩原淳一郎，基礎からわかる時系列分析 ―Rで実践するカルマンフィルタ・MCMC・粒子フィルター&lt;/a&gt;をざっと読んで状態空間モデルを勉強した．&lt;/p&gt;
+
+&lt;p&gt;線形・ガウス型の状態空間モデルの場合はカルマンフィルタで解析的に解けるが，一般状態空間モデルの場合は，フィルタリング分布・予測分布・平滑化分布の積分計算を必ずしも解析的に解けない．そこで，MCMCを用いた一括解法や，粒子フィルタによる逐次解法が提案されている．本書のレポジトリは，&lt;a href=&quot;https://github.com/hagijyun/tsbook&quot;&gt;hagijyun/tsbook - GitHub&lt;/a&gt;．&lt;/p&gt;
+
+&lt;p&gt;カルマンフィルタ，MCMC，粒子フィルタの関係を理解することができた．次は&lt;a href=&quot;http://amzn.asia/1Y3ckY8&quot;&gt;PRMLの下巻&lt;/a&gt;を読み返して，MCMCの理論的背景を押さえておきたい．&lt;/p&gt;
+
+&lt;h1 id=&quot;確率統計に関する基礎&quot;&gt;確率・統計に関する基礎&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;周辺化消去は，同時分布から外したい変数の影響を，あらかじめ平均的に考慮することに相当する．なるほど，腑に落ちた．&lt;/li&gt;
+  &lt;li&gt;定常過程と非定常過程．
+    &lt;ul&gt;
+      &lt;li&gt;強定常：確率過程の確率分布が時点&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;によらず一定．&lt;/li&gt;
+      &lt;li&gt;弱定常：確率過程の平均・分散・自己共分散・自己相関係数が時点&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;によらず一定．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;時系列分析ひとめぐり&quot;&gt;時系列分析ひとめぐり&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;五数要約：最小値・25%値・中央値・75%値・最大値．Rだと&lt;code class=&quot;highlighter-rouge&quot;&gt;summary()&lt;/code&gt;で，Python（pandas）だと&lt;code class=&quot;highlighter-rouge&quot;&gt;DataFrame.describe()&lt;/code&gt;で確認できる．&lt;/li&gt;
+  &lt;li&gt;自己相関係数．&lt;script type=&quot;math/tex&quot;&gt;\frac{\mathrm{Cov}[X_{t}, X_{t-k} ]}{\sqrt{\mathrm{Var}[X_t]}\sqrt{\mathrm{Var}[X_{t-k}]}}&lt;/script&gt;．&lt;/li&gt;
+  &lt;li&gt;時系列データの成分分解：レベル＋傾き＋周期．&lt;/li&gt;
+  &lt;li&gt;ホルト・ウィンタース法．指数加重型移動平均（EWMA：Exponentially Weighted Moving Average）の一種．Rでは，&lt;code class=&quot;highlighter-rouge&quot;&gt;HoltWinters()&lt;/code&gt;関数で実施できる．&lt;/li&gt;
+  &lt;li&gt;残差を確認して，モデルの妥当性を分析する．残差の自己相関により，周期性を上手く捉えられたか確認できる．&lt;/li&gt;
+  &lt;li&gt;状態空間モデルの解法の分類：
+    &lt;ul&gt;
+      &lt;li&gt;線形・ガウス型状態空間モデル：
+        &lt;ul&gt;
+          &lt;li&gt;一括型解法：ウィナーフィルタ．&lt;/li&gt;
+          &lt;li&gt;逐次型解法：カルマンフィルタ．&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;一般状態空間モデル：
+        &lt;ul&gt;
+          &lt;li&gt;一括型解法：MCMCを利用した解法．&lt;/li&gt;
+          &lt;li&gt;逐次型解法：粒子フィルタ．&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;状態空間モデル&quot;&gt;状態空間モデル&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;方程式による表現：
+    &lt;ul&gt;
+      &lt;li&gt;状態方程式&lt;sup id=&quot;fnref:state&quot;&gt;&lt;a href=&quot;#fn:state&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;：&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_t = f ( \mathbf{x}_{t-1}, \mathbf{w}_{t-1})&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;観測方程式：&lt;script type=&quot;math/tex&quot;&gt;y_t = h ( \mathbf{x}_{t}, v_{t})&lt;/script&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;確率分布による表現：
+    &lt;ul&gt;
+      &lt;li&gt;状態方程式に相当：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_t \mid \mathbf{x}_{0:t-1}, y_{0:t-1}) = p(\mathbf{x}_t \mid \mathbf{x}_{t-1})&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;観測方程式に相当：&lt;script type=&quot;math/tex&quot;&gt;p(y_t \mid \mathbf{x}_{0:t}, y_{0:t-1}) = p(y_t\mid \mathbf{x}_{t})&lt;/script&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;状態空間モデルの同時分布：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{0:T}, y_{0:T}) = p(\mathbf{x}_0) \prod_{t=1}^{T} p(y_t\mid \mathbf{x}_{t}) p(\mathbf{x}_t \mid \mathbf{x}_{t-1})&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;ARIMAモデルと状態空間モデルは密接な関係がある．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;状態空間モデルにおける状態の推定&quot;&gt;状態空間モデルにおける状態の推定&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;状態の周辺事後分布：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t'} \mid y_{1:t}) = \int p(\mathbf{x}_{0}, \mathbf{x}_{1}, \dots \mathbf{x}_{t'}, \dots \mid y_{1:t}) d\mathbf{x}_{t'以外}&lt;/script&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;t' = t&lt;/script&gt;：フィルタリング分布&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;t' &gt; t&lt;/script&gt;：予測分布&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;フィルタリング分布：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:t}) = p(\mathbf{x}_{t} \mid y_{1:t-1}) \frac{p(y_{t} \mid \mathbf{x}_{t})}{p(y_{t} \mid y_{1:t-1})}&lt;/script&gt;
+    &lt;ul&gt;
+      &lt;li&gt;モデルの状態方程式&lt;script type=&quot;math/tex&quot;&gt;p(y_{t} \mid \mathbf{x}_{t})&lt;/script&gt;&lt;sup id=&quot;fnref:mislead&quot;&gt;&lt;a href=&quot;#fn:mislead&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;と，以下の一期先予測分布&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:t-1})&lt;/script&gt;，一期先予測尤度&lt;script type=&quot;math/tex&quot;&gt;p(y_{t} \mid y_{1:t-1})&lt;/script&gt;からなる．直感的には，一期先予測分布を観測方程式で補正して，一期先予測尤度で正規化したもの．&lt;/li&gt;
+      &lt;li&gt;一期先予測分布： &lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:t-1}) = \int p(\mathbf{x}_{t} \mid \mathbf{x}_{t-1}) p(\mathbf{x}_{t} \mid y_{1:t-1}) d\mathbf{x}_{t-1}&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;一期先予測尤度&lt;sup id=&quot;fnref:likelihood&quot;&gt;&lt;a href=&quot;#fn:likelihood&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;：&lt;script type=&quot;math/tex&quot;&gt;p(y_{t} \mid y_{1:t-1}) = \int p(y_t \mid \mathbf{x}_{t} ) p(\mathbf{x}_{t} \mid y_{1:t-1}) d\mathbf{x}_{t-1}&lt;/script&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;予測分布：
+    &lt;ul&gt;
+      &lt;li&gt;定式化：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t+k} \mid y_{1:t}) = \int p(\mathbf{x}_{t+k} \mid \mathbf{x}_{t+k-1}) p(\mathbf{x}_{t+k-1} \mid y_{1:t}) d\mathbf{x}_{t+k-1}&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;一期先予測分布をもとに，状態方程式に基いて時間順方向への遷移を&lt;script type=&quot;math/tex&quot;&gt;k-1&lt;/script&gt;解繰り返したもの．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;平滑化分布：
+    &lt;ul&gt;
+      &lt;li&gt;定式化：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:T}) = p(\mathbf{x}_{t} \mid y_{1:t}) \int \frac{p(\mathbf{x}_{t+1} \mid \mathbf{x}_{t})}{p(\mathbf{x}_{t+1} \mid y_{1:t})} p(\mathbf{x}_{t+1} \mid y_{1:T}) d \mathbf{x}_{t+1}&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:t})&lt;/script&gt;はフィルタリング分布，&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t+1} \mid \mathbf{x}_{t})&lt;/script&gt;は状態方程式，&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t+1} \mid y_{1:t})&lt;/script&gt;は予測分布，&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t+1} \mid y_{1:T})&lt;/script&gt;は1時点先の平滑化分布．&lt;/li&gt;
+      &lt;li&gt;平滑化分布は，フィルタリング分布を再帰的に補正したもの．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;パラメータ集合を&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}&lt;/script&gt;とすると，対数尤度は&lt;script type=&quot;math/tex&quot;&gt;l(\mathbf{\theta}) = \sum_{t=1}^{T} \mathrm{log} p( y_t \mid y_{1:t-1} ; \mathbf{\theta})&lt;/script&gt;．
+    &lt;ul&gt;
+      &lt;li&gt;一期先予測尤度が含まれているため，特定のデータに基づきながら，過去の情報のみから見洗の値を当てる際の予測能力を踏まえた指標になっている．&lt;/li&gt;
+      &lt;li&gt;この式には状態が登場しないため，周辺尤度あるいは対数周辺尤度と呼ばれることがある．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;状態空間モデルにおけるパラメータの扱い．
+    &lt;ul&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}&lt;/script&gt;が確率変数でない：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{argmax}_{\mathbf{\theta}} l(\mathbf{\theta})&lt;/script&gt;を準ニュートン法やEMアルゴリズムで求める．&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}&lt;/script&gt;が確率変数：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{argmax}_{\mathbf{\theta}} p(\mathbf{\theta} \mid y_{1:t}) \propto \mathrm{argmax}_{\mathbf{\theta}} \{ p(y_{1:t} \mid \mathbf{\theta} ) +  p(\mathbf{\theta} ) \}&lt;/script&gt;をMAP推定で求める．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;パラメータを確率変数として扱う場合は，たとえもともと線形ガウス型の状態空間モデルであっても，一般状態空間モデルになる．つまり，ウィナーフィルタやカルマンフィルタでは直接解を求められない．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;線形ガウス型状態空間モデルの一括解法&quot;&gt;線形・ガウス型状態空間モデルの一括解法&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ウィナーフィルタは定常な時系列を前提としている．&lt;/li&gt;
+  &lt;li&gt;ウィナーフィルタはスペクトル分解を使って定式化できる．詳細は割愛する．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;線形ガウス型状態空間モデルの逐次解法&quot;&gt;線形・ガウス型状態空間モデルの逐次解法&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;カルマンフィルタは，推定すべきデータの真値と点推定値の間の平均二乗誤差を最小にする逐次推定法である．
+    &lt;ul&gt;
+      &lt;li&gt;状態方程式：&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_t = \mathbf{G}_t \mathbf{x}_{t-1} + \mathbf{w}_t&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;\mathbf{w}_t \sim \mathcal{N} (\mathbf{0}, \mathbf{W}_t)&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;観測方程式：&lt;script type=&quot;math/tex&quot;&gt;y_t = \mathbf{F}_t \mathbf{x}_t + v_t&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;v_t \sim \mathcal{N} (0, V_t)&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;初期状態：&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_0 \sim \mathcal{N} (\mathbf{m}_0, \mathbf{C}_0)&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;パラメータ：&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta} = \{\mathbf{G}_t, \mathbf{F}_t, \mathbf{W}_t, V_t, \mathbf{m}_0, \mathbf{C}_0 \}&lt;/script&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;上記の前提でフィルタリング分布・予測分布・平滑化分布を計算すると，逐次更新式を得る．詳細は割愛する．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;一般状態空間モデルの一括解法&quot;&gt;一般状態空間モデルの一括解法&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;フィルタリング分布，予測分布，および平滑化分布には多次元の積分計算が含まれる．線形・ガウス型状態空間モデルの場合は，&lt;strong&gt;幸運にも&lt;/strong&gt; 解析的に解けたが，一般状態空間モデルの場合は必ずしも解析的に解けないため，工夫が必要：
+    &lt;ul&gt;
+      &lt;li&gt;グリッドフィルタ：数値積分を活用するアプローチ．&lt;/li&gt;
+      &lt;li&gt;重点サンプリング：ラプラス近似を利用して，一般状態空間モデルにおける分布を線形・ガウス型状態空間モデルにおける分布で近似するアプローチ．&lt;/li&gt;
+      &lt;li&gt;MCMC（マルコフ連鎖モンテカルロ法；Markov chain Monte Carlo）：求めたい分布からのサンプルを直接生成するアプローチ．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ギブス法によるMCMC：
+    &lt;ol&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta^{(0)}}&lt;/script&gt;を初期化する．&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;FOR&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;i = \{1, \dots, I \}&lt;/script&gt;:
+        &lt;ol&gt;
+          &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;p ( \mathbf{x}_{0:T} \mid \mathbf{\theta} \! = \! \mathbf{\theta}^{(i-1)}, y_{1:T})&lt;/script&gt;から&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_{0:T}^{(i)}&lt;/script&gt;をサンプリングする．&lt;/li&gt;
+          &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;p ( \mathbf{\theta} \mid \mathbf{x}_{0:T} \! = \! \mathbf{x}_{0:T}^{(i)}, y_{1:T})&lt;/script&gt;から&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}^{(i)}&lt;/script&gt;をサンプリングする．&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1-1&lt;/code&gt;の試行において，線形・ガウス型状態空間モデルに従う場合は，FFBS（前向きフィルタ後ろ向きサンプリング；Forward Filtering Backward Sampling）で効率的にサンプリングできる．&lt;/li&gt;
+  &lt;li&gt;FFBSアルゴリズムは，時間順方向にカルマンフィルタをかけたあとで，時間逆方向にカルマン平滑化に基づいたサンプリングを行う．シミュレーション平滑化と呼ばれることもある．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;一般状態空間モデルの逐次解法&quot;&gt;一般状態空間モデルの逐次解法&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;カルマンフィルタの拡張：
+    &lt;ul&gt;
+      &lt;li&gt;拡張カルマンフィルタ&lt;/li&gt;
+      &lt;li&gt;アンセンテッドカルマンフィルタ&lt;/li&gt;
+      &lt;li&gt;アンサンブルカルマンフィルタ&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;粒子フィルタ&lt;/strong&gt;：本書で紹介する．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;重点サンプリング
+    &lt;ul&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;p(x)&lt;/script&gt;からサンプリング可能な場合：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{E}[ f(\mathbf{x})] \approx \frac{1}{N}\sum_{n=1}^{N} f (\mathbf{x}^{(n)})&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;p(x)&lt;/script&gt;の代わりに&lt;script type=&quot;math/tex&quot;&gt;q(x)&lt;/script&gt;からサンプリングする場合：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{E}[ f(\mathbf{x})] \approx \frac{1}{N}\sum_{n=1}^{N} w(\mathbf{x}^{(n)}) f (\mathbf{x}^{(n)})&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;ただし，&lt;script type=&quot;math/tex&quot;&gt;w(\mathbf{x}^{(n)}) = \frac{p(\mathbf{x}^{(n)})}{q(\mathbf{x}^{(n)})}&lt;/script&gt;を満たし，重点関数と呼ばれる．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;粒子フィルタリング：
+    &lt;ol&gt;
+      &lt;li&gt;時点&lt;script type=&quot;math/tex&quot;&gt;t-1&lt;/script&gt;のフィルタリング分布：&lt;script type=&quot;math/tex&quot;&gt;\{ \mathbf{x}_{t-1}^{(n)}, w_{t-1}^{(n)} \}_{n=1}^N&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;時点&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;において，&lt;strong&gt;FOR&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;n = \{1, \dots, N \}&lt;/script&gt;：
+        &lt;ol&gt;
+          &lt;li&gt;実現値を更新：&lt;script type=&quot;math/tex&quot;&gt;q \left( \mathbf{x}_{t} \mid \mathbf{x}_{0:t-1}^{(n)}, y_{1:t} \right)&lt;/script&gt;から&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_{t}^{(n)}&lt;/script&gt;をサンプリング．&lt;/li&gt;
+          &lt;li&gt;重みを更新：&lt;script type=&quot;math/tex&quot;&gt;w_t^{(n)} \leftarrow \frac{p\left(\mathbf{x}_t^{(n)} \mid \mathbf{x}_{t-1}^{(n)} \right) p \left( y_t \mid y_{1:t-1}, \mathbf{x}_t^{(n)} \right)}{q\left( \mathbf{x}_t^{(n)} \mid \mathbf{x}_{0:t-1}^{(n)}, y_{1:t} \right)}&lt;/script&gt;．&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;重みの規格化：&lt;script type=&quot;math/tex&quot;&gt;w_t^{(n)} \leftarrow \frac{w_t^{(n)}}{\sum_{n=1}^N w_{t}^{(n)}}&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;w_t^{(n)}&lt;/script&gt;大きさに応じて，&lt;script type=&quot;math/tex&quot;&gt;x_t^{(n)}&lt;/script&gt;を復元抽出．&lt;/li&gt;
+      &lt;li&gt;時点&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;のフィルタリング分布：&lt;script type=&quot;math/tex&quot;&gt;　\{ \mathbf{x}_t^{(n)}, w_{t}^{(n)} \}_{n=1}^{N}&lt;/script&gt;．&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;フィルタリング分布の一般式と，次のように対応している．
+    &lt;ul&gt;
+      &lt;li&gt;一期先予測分布：&lt;script type=&quot;math/tex&quot;&gt;w_{t-1}^{(n)} p \left(\mathbf{x}_t^{(n)} \mid \mathbf{x}_{t-1}^{(n)} \right)&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;一期先予測尤度：重みの規格化．&lt;/li&gt;
+      &lt;li&gt;フィルタリング分布：一期先予測分布&lt;script type=&quot;math/tex&quot;&gt;w_{t-1}^{(n)} p \left(\mathbf{x}_t^{(n)} \mid \mathbf{x}_{t-1}^{(n)} \right)&lt;/script&gt;を&lt;script type=&quot;math/tex&quot;&gt;p\left( y_t \mid y_{1:t-1}, \mathbf{x}_{t}^{(n)} \right)&lt;/script&gt;で補正&lt;sup id=&quot;fnref:particle&quot;&gt;&lt;a href=&quot;#fn:particle&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;提案分布&lt;script type=&quot;math/tex&quot;&gt;q \left(\mathbf{x}_{t}^{(n)} \mid \mathbf{x}_{t-1}^{(n)} \right)&lt;/script&gt;として，状態方程式&lt;script type=&quot;math/tex&quot;&gt;p \left(\mathbf{x}_{t}^{(n)} \mid \mathbf{x}_{t-1}^{(n)} \right)&lt;/script&gt;を用いると，重みの更新式は非常に簡単になる．この条件の粒子フィルタをブートストラップフィルタ，あるいはモンテカルロフィルタと呼ぶ．&lt;/li&gt;
+  &lt;li&gt;粒子数が有限の場合，リサンプリングにより近似性能の劣化を防ぐことができる．&lt;/li&gt;
+  &lt;li&gt;粒子予測：重みを更新せず，実現値&lt;script type=&quot;math/tex&quot;&gt;x_{t+k}^{(n)}&lt;/script&gt;を状態方程式で逐次的に更新することで，未来の点を予測できる．これは，粒子フィルタリングにおいて観測値&lt;script type=&quot;math/tex&quot;&gt;y_{t+k}&lt;/script&gt;が存在しない（欠測）場合と等価．&lt;/li&gt;
+  &lt;li&gt;粒子平滑化：
+    &lt;ul&gt;
+      &lt;li&gt;北川アルゴリズム：過去の粒子に対して，現時点の規範でリサンプリングする．原理的には任意の過去の時点まで平滑化可能だが，リサンプリングによる粒子の退化が問題となる．SIR平滑化，固定ラグ平滑化，廉価版平滑化とも呼ばれる．&lt;/li&gt;
+      &lt;li&gt;前向きフィルタ後ろ向きシミュレーション（FFBS：Forward Filtering Backward Simulation）アルゴリズム：フィルタリング分布の&lt;script type=&quot;math/tex&quot;&gt;w_t^{(n)}&lt;/script&gt;を再帰的に補正する．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;推定精度向上のためのテクニック：
+    &lt;ul&gt;
+      &lt;li&gt;補助粒子フィルタ：現在の観測値の影響を考慮したリサンプリング処理が，実現値や重み更新より&lt;strong&gt;先に&lt;/strong&gt;行われる．&lt;/li&gt;
+      &lt;li&gt;リュウ・ウエストフィルタ：補助粒子フィルタの適用例．粒子フィルタを用いて，状態とパラメータをあわせて推定する．カーネル平滑化を用いて，パラメータの推定値の分散を増大させることなく実現値をリフレッシュする．&lt;/li&gt;
+      &lt;li&gt;ラオ・ブラックウェル化：一般化線形モデルにおいて，部分的に線形・ガウス型状態空間モデルが成り立っているとき，カルマンフィルタと粒子フィルタを組み合わせる手法．例えば，線形・ガウス型状態空間モデルのパラメータが未知の場合などがこれに該当する．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;一般状態空間モデルにおける応用的な分析例&quot;&gt;一般状態空間モデルにおける応用的な分析例&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;本章では，構造変化について扱う．
+    &lt;ul&gt;
+      &lt;li&gt;変化点が既知：カルマンフィルタ&lt;/li&gt;
+      &lt;li&gt;変化点が未知：粒子フィルタ，MCMC&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;未知の変化点を実時間で検出するために，粒子フィルタを用いる．状態雑音の分散に対する時変の倍率が特定の閾値を超えた際に，構造変化が発生したと考える．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:state&quot;&gt;
+      &lt;p&gt;システム方程式とも呼ばれる． &lt;a href=&quot;#fnref:state&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:mislead&quot;&gt;
+      &lt;p&gt;書籍中，&lt;script type=&quot;math/tex&quot;&gt;p(y_t \mid \mathbf{x}_t)&lt;/script&gt;を尤度と呼ぶことがあり，一期先予測尤度と混同してハマった． &lt;a href=&quot;#fnref:mislead&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:likelihood&quot;&gt;
+      &lt;p&gt;なぜ尤度と呼ぶんだろう．まだ腑に落ちてない． &lt;a href=&quot;#fnref:likelihood&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:particle&quot;&gt;
+      &lt;p&gt;一般的な状態空間モデルの定式化では&lt;strong&gt;一期先予測分布を観測方程式で補正&lt;/strong&gt;していた． &lt;a href=&quot;#fnref:particle&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 24 Jun 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/06/24/time-series</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/24/time-series</guid>
+        
+        
+        <category>statistics</category>
         
       </item>
     
@@ -485,7 +737,11 @@
         <description>&lt;p&gt;引越し先のマンションがUcomに契約していたので，壁付けのコンセントにLANケーブルを繋げばインターネットに接続できる．手持ちのAirMac Time Capsuleで無線LAN環境を構築したかったが，ネット上に情報が少なく，めちゃくちゃ苦戦した．試行錯誤の記録を残しておく．&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2018年6月19日追記&lt;/strong&gt;：接続がめちゃくちゃ不安定で，Skype英会話がまともにできない．おそらくNAT設定が原因だと思う．解決し次第，別記事でまとめる．&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;2018年6月19日追記&lt;/strong&gt;：接続がめちゃくちゃ不安定で，Skype英会話がまともにできない．おそらくNAT設定が原因だと思う．&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;2018年7月7日追記&lt;/strong&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;AirMacユーティリティ&lt;/code&gt;&amp;gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ネットワーク&lt;/code&gt;&amp;gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ルーターモード&lt;/code&gt;で&lt;code class=&quot;highlighter-rouge&quot;&gt;切（ブリッジモード&lt;/code&gt;に変更したら，すべての問題が解決した．ややこしいのは，最初にブリッジモードにしたときは複数台のデバイスを接続できなかったこと．&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
@@ -607,122 +863,6 @@
         
         
         <category>jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>DMM英会話受講メモ：2018年5月</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;の受講メモ．後半にかけて仕事が非常に忙しくなり，なかなか時間が取れなかった．英語力が日に日に落ちていくのを実感している．だんだん仕事にも慣れてきたので，6月以降はもっと時間が取れると思う．&lt;/p&gt;
-
-&lt;h1 id=&quot;20180501&quot;&gt;20180501&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/parking-shortage-plagues-macedonian-capital/Jz27dElbEeilcdOxPuMyZg&quot;&gt;Parking Shortage Plagues Macedonian Capital&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;plague: to cause serious problems for someone or something&lt;/li&gt;
-  &lt;li&gt;encroach: to intrude on something; to exceed the normal limits&lt;/li&gt;
-  &lt;li&gt;outcry: a strong expression of anger and disapproval about something&lt;/li&gt;
-  &lt;li&gt;inconsiderate: not thinking about other people’s feelings or needs&lt;/li&gt;
-  &lt;li&gt;pedestrian: 歩行者&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180502&quot;&gt;20180502&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/a-lifetime-of-exercise-slows-aging-process/QnT9DkeiEeimNN8sih9WnQ&quot;&gt;A Lifetime of Exercise Slows Aging Process&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;associated: connected with something else&lt;/li&gt;
-  &lt;li&gt;sedentary: doing or involving a lot of sitting&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180503&quot;&gt;20180503&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/new-treadmill-uses-virtual-reality-to-encourage-fitness/iQqmhDvfEeicOauE8rVwog&quot;&gt;New Treadmill Uses Virtual Reality to Encourage Fitness&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;cardiovascular: related to one’s heart and blood vessels&lt;/li&gt;
-  &lt;li&gt;steep: (of a price) very high&lt;/li&gt;
-  &lt;li&gt;queasy: feeling sick and dizzy; likely to throw up&lt;/li&gt;
-  &lt;li&gt;immersive: involving the whole body, not only sight and sound&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180505&quot;&gt;20180505&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/making-coffee-more-convenient-with-robot-baristas/pVS-wEkrEeiLtdtm-6218A&quot;&gt;Making Coffee More Convenient with Robot Baristas&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;be good to go: to be ready or prepared for something&lt;/li&gt;
-  &lt;li&gt;ready，experience，averateの発音を注意された．eの長音と短音を意識したほうが良いとのこと．ありがたいアドバイス．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180507&quot;&gt;20180507&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/new-invention-detects-cancer-in-seconds/xTZ9ZEItEei1Sd9cm5dlEw&quot;&gt;New Invention Detects Cancer in Seconds&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;tumor: an abnormal group of cells in the body, which may be cancerous&lt;/li&gt;
-  &lt;li&gt;invasive: (of medical procedures) involving cutting into the body&lt;/li&gt;
-  &lt;li&gt;molecule: the smallest part of an element; a group of atoms&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180508&quot;&gt;20180508&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/us-education-report-card-says-much-can-be-improved/gD-FCkLoEeijwGtudd-0tw&quot;&gt;US Education ‘Report Card’ Says Much Can Be Improved&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;assessment: the process of making a careful analysis&lt;/li&gt;
-  &lt;li&gt;solid&lt;sup id=&quot;fnref:solid&quot;&gt;&lt;a href=&quot;#fn:solid&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;: good, better than average&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180509&quot;&gt;20180509&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/japanese-bus-drivers-strike-by-refusing-to-collect-fares/MgXr5k7vEeizVrsjnTWdXA&quot;&gt;Japanese Bus Drivers Strike by Refusing to Collect Fares&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;comply with: a period of time when a group of employees stop working as a form of protest&lt;/li&gt;
-  &lt;li&gt;tactic: a strategy or method used to achieve something&lt;/li&gt;
-  &lt;li&gt;先生を予約し忘れていたので，一人で音読と質問回答だけやった．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180511&quot;&gt;20180511&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/life-may-exist-among-the-clouds-of-venus/reSOBDl7EeiulptgC8mmWQ&quot;&gt;Life May Exist Among the Clouds of Venus&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;extraterrestrial: existing outside the Earth&lt;/li&gt;
-  &lt;li&gt;harbor: to give home to&lt;/li&gt;
-  &lt;li&gt;microbial: relating to extremely small living things that can only be seen under a microscope&lt;/li&gt;
-  &lt;li&gt;めちゃくちゃ明るい先生だった．楽しかった．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180513&quot;&gt;20180513&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/elon-musks-tips-for-productivity/WyPuDEkNEeijw0tDiOVkhA&quot;&gt;Elon Musk’s Tips for Productivity&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;lofty: very high and impressive&lt;/li&gt;
-  &lt;li&gt;drop off: to suddenly disappear; to suddenly leave a conversation&lt;/li&gt;
-  &lt;li&gt;inhibit&lt;sup id=&quot;fnref:inhibit&quot;&gt;&lt;a href=&quot;#fn:inhibit&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;: 妨げる，抑制する．&lt;/li&gt;
-  &lt;li&gt;発音についてかなり丁寧にアドバイスをもらった．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;th&lt;/strong&gt;：舌を使って強調すること．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;w&lt;/strong&gt;：uとならないよう&lt;sup id=&quot;fnref:uandw&quot;&gt;&lt;a href=&quot;#fn:uandw&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;，ワ行の発音を意識すること．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;doubling&lt;/strong&gt;：日本語的にダブリングと発音すると「doboling」と聞こえるみたい．下唇をかんで「b」と「l」を一気に発音すること．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:solid&quot;&gt;
-      &lt;p&gt;名詞だと固体という意味になるので注意． &lt;a href=&quot;#fnref:solid&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:inhibit&quot;&gt;
-      &lt;p&gt;inhabit（住む）と勘違いした． &lt;a href=&quot;#fnref:inhibit&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:uandw&quot;&gt;
-      &lt;p&gt;uとwを比較して発音してもらったが，イマイチ違いがわかならかった． &lt;a href=&quot;#fnref:uandw&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 31 May 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/05/31/dmm-english</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/05/31/dmm-english</guid>
-        
-        
-        <category>english</category>
         
       </item>
     
