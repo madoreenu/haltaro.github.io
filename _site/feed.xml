@@ -5,144 +5,75 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 Jul 2018 22:47:01 +0900</pubDate>
-    <lastBuildDate>Sat, 07 Jul 2018 22:47:01 +0900</lastBuildDate>
+    <pubDate>Tue, 10 Jul 2018 18:42:12 +0900</pubDate>
+    <lastBuildDate>Tue, 10 Jul 2018 18:42:12 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
-        <title>DMM英会話受講メモ：2018年6月</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;の受講メモ．12回/30日なので，4割程度の実施率．仕事の忙しさを考えると，このあたりが現実的な数字かもしれない．&lt;/p&gt;
+        <title>Kaggle-apiを使ってKagglerの気分を味わう</title>
+        <description>&lt;p&gt;ものすごく今更ながら，Kagglerになってみることにした．公式APIである&lt;a href=&quot;https://github.com/Kaggle/kaggle-api&quot;&gt;kaggle-api&lt;/a&gt;が便利らしいので，MacBookに導入した．&lt;/p&gt;
 
-&lt;h1 id=&quot;20180609&quot;&gt;20180609&lt;/h1&gt;
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/gamers-push-limits-of-scientific-research/m0I8AOPhEeeyorvShZ0_nQ&quot;&gt;Gamers Push Limits of Scientific Research&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;tweak：a slight change to something in order to improve it&lt;/li&gt;
-  &lt;li&gt;invaluable：extremely useful&lt;/li&gt;
-  &lt;li&gt;outreach：the practice of providing help and advice to people before they have to ask for it&lt;/li&gt;
-  &lt;li&gt;二週間ぶりの英会話．口が全然動かない．リハビリが必要．&lt;/li&gt;
+  &lt;li&gt;macOS Sierra, 10.12.6&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;20180610&quot;&gt;20180610&lt;/h1&gt;
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.currypurin.com/entry/2018/kaggle-api&quot;&gt;kaggle-apiというKaggle公式のapiの使い方をまとめます - kaggleを全力でやります&lt;/a&gt;を参考にさせて頂いた．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/0d2cef54e6117e58f9dc978aac5c6fbc.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Kaggleの&lt;code class=&quot;highlighter-rouge&quot;&gt;user profile&lt;/code&gt;に移動し，&lt;code class=&quot;highlighter-rouge&quot;&gt;Create API Token&lt;/code&gt;をクリック．取得した&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle.json&lt;/code&gt;を，&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.kaggle/kaggle.json&lt;/code&gt;に移動．ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle.json&lt;/code&gt;の権限を変更する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/8db084788f6eebac7f91ab0e7696a16a.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;使い方&quot;&gt;使い方&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Kaggle/kaggle-api&quot;&gt;Kaggle/kaggle-api - GitHub&lt;/a&gt;を見るのが手っ取り早い．&lt;/p&gt;
+
+&lt;h2 id=&quot;ヘルプ&quot;&gt;ヘルプ&lt;/h2&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/0f20c2bdee7017c09c72aecda941c86f.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;コンペティション一覧を取得&quot;&gt;コンペティション一覧を取得&lt;/h2&gt;
+
+&lt;p&gt;2018年7月10日現在，次のような結果が出た．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/093d9f86000f25a0bbc7fb914ac83ba1.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;コンペティションのデータを一括ダウンロード&quot;&gt;コンペティションのデータを一括ダウンロード&lt;/h2&gt;
+
+&lt;p&gt;例えば，&lt;a href=&quot;https://www.kaggle.com/c/santander-value-prediction-challenge/data&quot;&gt;Santander Value Prediction Challenge&lt;/a&gt;のデータを一括ダウンロードしたい場合は，次のようにコマンドを打つ．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/4f78d053465087ec99d73d378daaaef6.js&quot;&gt;&lt;/script&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/things-your-dog-might-know/a0fAws5OEeeULl-V0Jfpkg&quot;&gt;Things Your Dog Might Know&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;tilt: 傾き&lt;/li&gt;
-  &lt;li&gt;magnetism: 磁気&lt;/li&gt;
-  &lt;li&gt;breed: 品種&lt;/li&gt;
-  &lt;li&gt;deductive: using information about things that are generally true in order to understand something specific&lt;/li&gt;
-  &lt;li&gt;deception: the act of deliberately trying to trick someone&lt;/li&gt;
-  &lt;li&gt;manipulate: to intentionally control or influence someone or something&lt;/li&gt;
-  &lt;li&gt;domesticate: to purposefully breed wild animals so they can live with or be used by humans&lt;/li&gt;
-  &lt;li&gt;口が回らないのはもちろん，単語も聞き取れなくなっている．前日の夜に予習，翌朝受講の習慣をつけよう．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-c&lt;/code&gt;：コンペティション名．&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle competitions list&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;列のものを使う．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-p&lt;/code&gt;：ダウンロード先のパス．デフォルトだと，&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.kaggle/competitions/&lt;/code&gt;．&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;20180611&quot;&gt;20180611&lt;/h1&gt;
+&lt;p&gt;他にもいろいろオプションがある．&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle competitions download -help&lt;/code&gt;で確認できる．&lt;/p&gt;
+
+&lt;h2 id=&quot;コンペティションに予測結果をアップロード&quot;&gt;コンペティションに予測結果をアップロード&lt;/h2&gt;
+
+&lt;p&gt;例えば，&lt;a href=&quot;https://www.kaggle.com/c/santander-value-prediction-challenge/data&quot;&gt;Santander Value Prediction Challenge&lt;/a&gt;に予測結果をアップロードしたい場合は，次のようにコマンドを打つ．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/ef6bbd733c1ffe1bda6ffb7c46026d2a.js&quot;&gt;&lt;/script&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/ai-farm-robot-designed-to-reduce-herbicide-use/5HGEimVuEeikiEMkZY11HA&quot;&gt;AI Farm Robot Designed to Reduce Herbicide Use&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;weed: a wild plant that grows where it is not wanted&lt;/li&gt;
-  &lt;li&gt;herbicide: a chemical used to kill weeds&lt;/li&gt;
-  &lt;li&gt;除草剤を自動で撒くAIの話．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180613&quot;&gt;20180613&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;忙しかったので10分だけフリートークをしてもらった．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180615&quot;&gt;20180615&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/new-apple-software-helps-limit-smartphone-use/1Vx06mo9EeiIaU-1bPoGZA&quot;&gt;New Apple Software Helps Limit Smartphone Use&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;cut back (on): to start doing less of something because it is bad for you&lt;/li&gt;
-  &lt;li&gt;発音について，かなり丁寧に指導してもらった．
-    &lt;ul&gt;
-      &lt;li&gt;r，l，oの発音．特に&lt;code class=&quot;highlighter-rouge&quot;&gt;because&lt;/code&gt;を発音するときに&lt;code class=&quot;highlighter-rouge&quot;&gt;/ow/&lt;/code&gt;となってしまうくせがあるとのこと．気をつけないと．&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;the&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;/thee/&lt;/code&gt;と読むときと&lt;code class=&quot;highlighter-rouge&quot;&gt;/thuh/&lt;/code&gt;と読むときの違いについて．知識としては知っているけど，実際の会話になるとつい忘れてしまう．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;会話中に思いつかなかったフレーズ：
-    &lt;ul&gt;
-      &lt;li&gt;kill the time：時間を潰す．（It kills out time）&lt;/li&gt;
-      &lt;li&gt;pass the time：時間を潰す．（It helps pass our time）&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180619&quot;&gt;20180619&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/the-future-of-drones-is-flying-ahead/HOV57mi7EeiTlAvv42-rRA&quot;&gt;The Future of Drones is Flying Ahead&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;parcel：小包&lt;/li&gt;
-  &lt;li&gt;long-haul：長距離&lt;/li&gt;
-  &lt;li&gt;bill：議案&lt;/li&gt;
-  &lt;li&gt;shortage in labor：人手不足&lt;/li&gt;
-  &lt;li&gt;発音をかなり丁寧に指摘してくれる人だった．やはり，/r/と/l/の発音が難しい．継続的な練習が必要．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180622&quot;&gt;20180622&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/google-bans-use-of-ai-technology-for-weapons/9R_BXm_LEeit56coaNijlw&quot;&gt;Google Bans Use of AI Technology for Weapons&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;特に難しい単語はなかった．&lt;/li&gt;
-  &lt;li&gt;先生めちゃくちゃいい人でとても楽しかった．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180623&quot;&gt;20180623&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/the-healing-power-of-pets/iv7WrmseEeip-ovbozMF5w&quot;&gt;The Healing Power of Pets&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;unconditional: not having any conditions or limits&lt;/li&gt;
-  &lt;li&gt;incorporate: to include something as a part of something else&lt;/li&gt;
-  &lt;li&gt;schizophrenia: a long-term mental disorder of a type involving a breakdown in the relation between thought, emotion, and behavior, leading to faulty perception, inappropriate actions and feelings, withdrawal from reality and personal relationships into fantasy and delusion, and a sense of mental fragmentation.&lt;/li&gt;
-  &lt;li&gt;bipolar disorder: (of psychiatric illness) characterized by both manic and depressive episodes, or manic ones only&lt;/li&gt;
-  &lt;li&gt;好きな動物はなにかと聞かれて，柴犬と即答した．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180624&quot;&gt;20180624&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;やる気が出なかったので，10分だけフリートークしてもらった．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180625&quot;&gt;20180625&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/sleeping-in-on-weekends-might-save-your-life/I5usOHEkEeiCFu9NSPuYbg&quot;&gt;Sleeping In On Weekends Might Save Your Life&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;sleep in: to sleep until later in the morning than you usually do&lt;/li&gt;
-  &lt;li&gt;deficit: the difference between the amount of something that someone has and the amount that they need&lt;/li&gt;
-  &lt;li&gt;replenish: to make something full again&lt;/li&gt;
-  &lt;li&gt;ritual: 儀式，習慣．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180627&quot;&gt;20180627&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/estonia-rolls-out-free-public-transport/TRDIUHEkEeiCX5eNi4SQLA&quot;&gt;Estonia Rolls out Free Public Transport&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;roll out: to introduce something new&lt;/li&gt;
-  &lt;li&gt;発音に関して結構コメントしてもらった：
-    &lt;ul&gt;
-      &lt;li&gt;situation：sit-wey-syun&lt;/li&gt;
-      &lt;li&gt;introduce：/du/&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;20180630&quot;&gt;20180630&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/pho-ramen-or-soba-googles-noodle-report/1AdepHhQEei-ZS8JoVIL8A&quot;&gt;Pho, Ramen or Soba? Google’s ‘Noodle Report’&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;buckwheat: そば粉&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-c&lt;/code&gt;：コンペティション名．&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle competitions list&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;列のものを使う．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt;：アップロードしたいファイル名．&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-m&lt;/code&gt;：アップロード時のメッセージ．&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 30 Jun 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/06/30/dmm-english</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/30/dmm-english</guid>
+        <pubDate>Tue, 10 Jul 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/07/10/kaggle-api</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/10/kaggle-api</guid>
         
         
-        <category>english</category>
+        <category>kaggle</category>
         
       </item>
     
@@ -389,12 +320,149 @@ t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Sun, 24 Jun 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/06/24/time-series</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/24/time-series</guid>
+        <pubDate>Sat, 07 Jul 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/07/07/time-series</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/07/time-series</guid>
         
         
         <category>statistics</category>
+        
+      </item>
+    
+      <item>
+        <title>DMM英会話受講メモ：2018年6月</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;の受講メモ．12回/30日なので，4割程度の実施率．仕事の忙しさを考えると，このあたりが現実的な数字かもしれない．&lt;/p&gt;
+
+&lt;h1 id=&quot;20180609&quot;&gt;20180609&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/gamers-push-limits-of-scientific-research/m0I8AOPhEeeyorvShZ0_nQ&quot;&gt;Gamers Push Limits of Scientific Research&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;tweak：a slight change to something in order to improve it&lt;/li&gt;
+  &lt;li&gt;invaluable：extremely useful&lt;/li&gt;
+  &lt;li&gt;outreach：the practice of providing help and advice to people before they have to ask for it&lt;/li&gt;
+  &lt;li&gt;二週間ぶりの英会話．口が全然動かない．リハビリが必要．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180610&quot;&gt;20180610&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/things-your-dog-might-know/a0fAws5OEeeULl-V0Jfpkg&quot;&gt;Things Your Dog Might Know&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;tilt: 傾き&lt;/li&gt;
+  &lt;li&gt;magnetism: 磁気&lt;/li&gt;
+  &lt;li&gt;breed: 品種&lt;/li&gt;
+  &lt;li&gt;deductive: using information about things that are generally true in order to understand something specific&lt;/li&gt;
+  &lt;li&gt;deception: the act of deliberately trying to trick someone&lt;/li&gt;
+  &lt;li&gt;manipulate: to intentionally control or influence someone or something&lt;/li&gt;
+  &lt;li&gt;domesticate: to purposefully breed wild animals so they can live with or be used by humans&lt;/li&gt;
+  &lt;li&gt;口が回らないのはもちろん，単語も聞き取れなくなっている．前日の夜に予習，翌朝受講の習慣をつけよう．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180611&quot;&gt;20180611&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/ai-farm-robot-designed-to-reduce-herbicide-use/5HGEimVuEeikiEMkZY11HA&quot;&gt;AI Farm Robot Designed to Reduce Herbicide Use&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;weed: a wild plant that grows where it is not wanted&lt;/li&gt;
+  &lt;li&gt;herbicide: a chemical used to kill weeds&lt;/li&gt;
+  &lt;li&gt;除草剤を自動で撒くAIの話．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180613&quot;&gt;20180613&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;忙しかったので10分だけフリートークをしてもらった．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180615&quot;&gt;20180615&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/new-apple-software-helps-limit-smartphone-use/1Vx06mo9EeiIaU-1bPoGZA&quot;&gt;New Apple Software Helps Limit Smartphone Use&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;cut back (on): to start doing less of something because it is bad for you&lt;/li&gt;
+  &lt;li&gt;発音について，かなり丁寧に指導してもらった．
+    &lt;ul&gt;
+      &lt;li&gt;r，l，oの発音．特に&lt;code class=&quot;highlighter-rouge&quot;&gt;because&lt;/code&gt;を発音するときに&lt;code class=&quot;highlighter-rouge&quot;&gt;/ow/&lt;/code&gt;となってしまうくせがあるとのこと．気をつけないと．&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;the&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;/thee/&lt;/code&gt;と読むときと&lt;code class=&quot;highlighter-rouge&quot;&gt;/thuh/&lt;/code&gt;と読むときの違いについて．知識としては知っているけど，実際の会話になるとつい忘れてしまう．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;会話中に思いつかなかったフレーズ：
+    &lt;ul&gt;
+      &lt;li&gt;kill the time：時間を潰す．（It kills out time）&lt;/li&gt;
+      &lt;li&gt;pass the time：時間を潰す．（It helps pass our time）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180619&quot;&gt;20180619&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/the-future-of-drones-is-flying-ahead/HOV57mi7EeiTlAvv42-rRA&quot;&gt;The Future of Drones is Flying Ahead&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;parcel：小包&lt;/li&gt;
+  &lt;li&gt;long-haul：長距離&lt;/li&gt;
+  &lt;li&gt;bill：議案&lt;/li&gt;
+  &lt;li&gt;shortage in labor：人手不足&lt;/li&gt;
+  &lt;li&gt;発音をかなり丁寧に指摘してくれる人だった．やはり，/r/と/l/の発音が難しい．継続的な練習が必要．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180622&quot;&gt;20180622&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/google-bans-use-of-ai-technology-for-weapons/9R_BXm_LEeit56coaNijlw&quot;&gt;Google Bans Use of AI Technology for Weapons&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;特に難しい単語はなかった．&lt;/li&gt;
+  &lt;li&gt;先生めちゃくちゃいい人でとても楽しかった．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180623&quot;&gt;20180623&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/the-healing-power-of-pets/iv7WrmseEeip-ovbozMF5w&quot;&gt;The Healing Power of Pets&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;unconditional: not having any conditions or limits&lt;/li&gt;
+  &lt;li&gt;incorporate: to include something as a part of something else&lt;/li&gt;
+  &lt;li&gt;schizophrenia: a long-term mental disorder of a type involving a breakdown in the relation between thought, emotion, and behavior, leading to faulty perception, inappropriate actions and feelings, withdrawal from reality and personal relationships into fantasy and delusion, and a sense of mental fragmentation.&lt;/li&gt;
+  &lt;li&gt;bipolar disorder: (of psychiatric illness) characterized by both manic and depressive episodes, or manic ones only&lt;/li&gt;
+  &lt;li&gt;好きな動物はなにかと聞かれて，柴犬と即答した．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180624&quot;&gt;20180624&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;やる気が出なかったので，10分だけフリートークしてもらった．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180625&quot;&gt;20180625&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/sleeping-in-on-weekends-might-save-your-life/I5usOHEkEeiCFu9NSPuYbg&quot;&gt;Sleeping In On Weekends Might Save Your Life&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;sleep in: to sleep until later in the morning than you usually do&lt;/li&gt;
+  &lt;li&gt;deficit: the difference between the amount of something that someone has and the amount that they need&lt;/li&gt;
+  &lt;li&gt;replenish: to make something full again&lt;/li&gt;
+  &lt;li&gt;ritual: 儀式，習慣．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180627&quot;&gt;20180627&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/estonia-rolls-out-free-public-transport/TRDIUHEkEeiCX5eNi4SQLA&quot;&gt;Estonia Rolls out Free Public Transport&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;roll out: to introduce something new&lt;/li&gt;
+  &lt;li&gt;発音に関して結構コメントしてもらった：
+    &lt;ul&gt;
+      &lt;li&gt;situation：sit-wey-syun&lt;/li&gt;
+      &lt;li&gt;introduce：/du/&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180630&quot;&gt;20180630&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/pho-ramen-or-soba-googles-noodle-report/1AdepHhQEei-ZS8JoVIL8A&quot;&gt;Pho, Ramen or Soba? Google’s ‘Noodle Report’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;buckwheat: そば粉&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 30 Jun 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/06/30/dmm-english</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/30/dmm-english</guid>
+        
+        
+        <category>english</category>
         
       </item>
     
@@ -813,56 +881,6 @@ t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
         
         
         <category>network</category>
-        
-      </item>
-    
-      <item>
-        <title>Jekyll-CentrariumにDisqusを導入する</title>
-        <description>&lt;p&gt;このウェブサイトに&lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;でコメント機能を追加した．&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;の作り込みが素晴らしいので，Disqus上の登録と，&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の変更だけで実現できた．&lt;/p&gt;
-
-&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Jekyll theme：&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;disqusの設定&quot;&gt;Disqusの設定&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;でユーザ登録し，&lt;code class=&quot;highlighter-rouge&quot;&gt;Install on Site&lt;/code&gt;を選択する．以下に適当に情報を埋めていく．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-setting.png&quot; alt=&quot;setting&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Planを選択する．広告を出したくなかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;Plus&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;free&lt;/code&gt;を選択した．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-plan.png&quot; alt=&quot;plan&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;詳細設定を行う．とりあえずわかるところだけ埋めた．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-06-10-configure.png&quot; alt=&quot;configure&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;_configymlの変更&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の変更&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;bencentra/centrarium - GitHub&lt;/a&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt;を読むと，どうやら&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;disqus_shortname&lt;/code&gt;に登録名を設定するだけで良いことがわかった．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/f877f8fb889ee7e4cc2cdfebd6d4772b.js&quot;&gt;&lt;/script&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;めちゃくちゃ簡単にできた．&lt;/p&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://takezoe.hatenablog.com/entry/2016/06/05/030805&quot;&gt;JekyllにDisqusのコメントフォームをつけてみる - たけぞう瀕死ブログ&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;bencentra/centrarium - GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 10 Jun 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/06/10/disqus</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/10/disqus</guid>
-        
-        
-        <category>jekyll</category>
         
       </item>
     
