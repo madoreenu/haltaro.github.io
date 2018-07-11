@@ -5,6 +5,7 @@ updated: 2017-10-15 17:00
 cover: "/assets/2017-08-06-blog.jpg"
 categories:
  - jekyll
+ - windows
 ---
 
 船便でアメリカから送ったため，2ヶ月ほどLinuxが使えなくなった．そこで，手元のWindowsノートPC（Windows 7 Professional, Service Pack 1, 64 bit）に[Jekyll](https://jekyllrb-ja.github.io/)+[GitHub Pages](https://pages.github.com/)環境を構築した．

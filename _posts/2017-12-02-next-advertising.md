@@ -5,6 +5,7 @@ updated: 2017-12-02 16:00
 cover:  "/assets/2017-11-18-marketing.jpg"
 categories:
  - marketing
+ - books
 ---
 
 [佐藤達郎，「これからの広告」の教科書](http://amzn.asia/5fzKuNu)を読んだ．[Courcera，Marketing in a digital world：2. Promotion](https://haltaro.github.io/2017/11/25/digital-marketing-2)でも触れたように，近年の技術革新により，市場のパワーバランスが大きく消費者側に傾き始めた．本書では，具体例を用いてわかりやすく，新たな広告手法を学ぶことができた．

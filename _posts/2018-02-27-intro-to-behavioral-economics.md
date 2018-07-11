@@ -6,6 +6,7 @@ cover: "/assets/2018-02-27-birds.jpg"
 #published: false
 categories:
  - economics
+ - books
 ---
 
 <i class="fa fa-spinner"></i> **更新中**：[多田洋介，行動経済学入門](http://amzn.asia/46XW33f)を読んだ．心理学の発想を経済活動や経済減少の分析に活かす，行動経済学の基本を学ぶことができた．

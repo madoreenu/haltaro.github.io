@@ -5,6 +5,7 @@ updated: 2018-02-18 13:00
 cover: "/assets/2018-02-17-effective-python.jpg"
 categories:
  - python
+ - books
 ---
 
 <i class="fa fa-spinner"></i> **更新中**：[Brett Slatkin，Effective Python ―Pythonプログラムを改良する59項目](http://amzn.asia/gDvdj6b)を読む．[Python](https://www.python.org/)を効率的に書くための59のヒントが紹介されている．

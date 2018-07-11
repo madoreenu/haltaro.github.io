@@ -5,6 +5,7 @@ updated: 2018-02-17 10:00
 cover: "/assets/2018-02-17-jupyter-r.jpg"
 categories:
  - marketing
+ - books
 ---
 
 [マーク・ジェフリー，データ・ドリブン・マーケティング - 最低限知っておくべき15の指標](http://amzn.asia/6WKHTCO)を読んだ．[どうやら原著は2010年1月に発刊されたらしく](http://marketing-base.jp/books/6204)，古さを感じる部分があるが，勉強のとっかかりとして基本を押さえるには良いと思った．

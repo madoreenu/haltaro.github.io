@@ -5,6 +5,7 @@ updated: 2018-06-17
 cover:  "/assets/2017-10-22-python.jpg"
 categories:
  - machine learning
+ - python
 ---
 
 知り合いから「プログラミングしたことないけどLight GBMを使ってみたい．2時間くらいで教えてくれ」と言われた．2時間だと理論面をカバーするのは難しいので，とりあえず触ってみることを目標に，Pythonおよび関連ライブラリの基礎（のさらにごく一部）でさくっと遊ぶ[Notebook](https://github.com/haltaro/intro-to-lightgbm)を作った．勉強会当日は一緒に動かしながらレクチャーする予定．

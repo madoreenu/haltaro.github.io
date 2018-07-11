@@ -5,6 +5,7 @@ updated: 2017-08-07 18:00
 cover:  "/assets/2017-11-18-marketing.jpg"
 categories:
  - marketing
+ - machine learning
 ---
 
 アドテク（Advertising Technology）とは，広告配信の高度化に関する技術を指す．目的は，広告に関わる全プレーヤー（広告主，メディア，消費者）をwin-winの関係にすること．特にReal time bidding（RTB）市場は成長中であり，例えば機械学習で入札額を最適化する技術などが研究されている．

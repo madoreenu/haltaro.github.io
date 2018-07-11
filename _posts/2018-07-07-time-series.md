@@ -6,6 +6,7 @@ cover:  "/assets/2018-06-24-berries.jpg"
 #published: false
 categories:
  - statistics
+ - books
 ---
 
 [萩原淳一郎，基礎からわかる時系列分析 ―Rで実践するカルマンフィルタ・MCMC・粒子フィルター](http://amzn.asia/bTrcjv0)をざっと読んで状態空間モデルを勉強した．

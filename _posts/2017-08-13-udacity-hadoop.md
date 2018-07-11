@@ -5,6 +5,7 @@ updated: 2017-08-12 16:00
 cover: "/assets/2017-08-13-data.jpg"
 categories:
  - data science
+ - moocs
 ---
 
 <i class="fa fa-spinner"></i> **更新中**： [Udacity, Intro to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)の受講メモ．6部構成の無料講座．全ての動画に日本語訳があり，とても助かる．

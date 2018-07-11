@@ -5,6 +5,7 @@ updated: 2017-08-10 18:00
 cover: "/assets/2017-08-13-data.jpg"
 categories:
  - data science
+ - moocs
 ---
 
 <i class="fa fa-spinner"></i> **更新中**：[Udacity, Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)の受講メモ．5部構成の無料講座．

@@ -5,6 +5,7 @@ updated: 2018-04-14
 cover: "/assets/2018-04-15-statistics.jpg"
 categories:
  - statistics
+ - books
 ---
 
 [東京大学教養学部統計学教室編，統計学入門](http://amzn.asia/8f1AQFC)を読んだ．統計学の基礎知識を復習できた．

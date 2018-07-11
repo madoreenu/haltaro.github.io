@@ -5,6 +5,7 @@ updated: 2017-11-13 22:00
 cover:  "/assets/2017-11-18-marketing.jpg"
 categories:
  - marketing
+ - books
 ---
 
 [古川一郎，他，マーケティング・サイエンス入門－市場対応の科学的マネジメント](http://amzn.asia/1QZt1OR)を読んだ．マーケティング・サイエンス全体を俯瞰できる良書．ただし，2011年のものなので，最新技術はカバーできていないので，[courcera](https://haltaro.github.io/2017/11/08/digital-marketing-1)でカバー予定．

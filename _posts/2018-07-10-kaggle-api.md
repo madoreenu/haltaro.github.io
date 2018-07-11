@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kaggle-apiを使ってKagglerの気分を味わう
+title: MacでKaggle-apiを使う
 updated: 2018-07-10
 cover:  "/assets/2018-07-10-kaggle.jpg"
 #published: false
@@ -8,7 +8,7 @@ categories:
  - kaggle
 ---
 
-ものすごく今更ながら，Kagglerになってみることにした．公式APIである[kaggle-api](https://github.com/Kaggle/kaggle-api)が便利らしいので，MacBookに導入した．
+ものすごく今更ながら，[kaggle-api](https://github.com/Kaggle/kaggle-api)をMacBookで使ってみた．簡単だった．
 
 # 環境
 

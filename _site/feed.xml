@@ -5,13 +5,13 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Jul 2018 18:42:12 +0900</pubDate>
-    <lastBuildDate>Tue, 10 Jul 2018 18:42:12 +0900</lastBuildDate>
+    <pubDate>Wed, 11 Jul 2018 17:32:10 +0900</pubDate>
+    <lastBuildDate>Wed, 11 Jul 2018 17:32:10 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
-        <title>Kaggle-apiを使ってKagglerの気分を味わう</title>
-        <description>&lt;p&gt;ものすごく今更ながら，Kagglerになってみることにした．公式APIである&lt;a href=&quot;https://github.com/Kaggle/kaggle-api&quot;&gt;kaggle-api&lt;/a&gt;が便利らしいので，MacBookに導入した．&lt;/p&gt;
+        <title>MacでKaggle-apiを使う</title>
+        <description>&lt;p&gt;ものすごく今更ながら，&lt;a href=&quot;https://github.com/Kaggle/kaggle-api&quot;&gt;kaggle-api&lt;/a&gt;をMacBookで使ってみた．簡単だった．&lt;/p&gt;
 
 &lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
@@ -327,6 +327,8 @@ t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
         
         <category>statistics</category>
         
+        <category>books</category>
+        
       </item>
     
       <item>
@@ -577,6 +579,8 @@ t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
         
         
         <category>machine learning</category>
+        
+        <category>python</category>
         
       </item>
     
