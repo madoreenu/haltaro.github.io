@@ -166,6 +166,31 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/06/22/dead-kernel-lgbm">Light GBMを使うとOMPエラーでカーネルが死ぬ</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>業務でも趣味でもよくLight GBMにお世話になっているが，この前手元のMacで使おうとしたらDead kernelエラーが発生した．condaで入れたLight GBMを一旦アンインストールして，Installation Guide - LightGBMに従って再インストールしたら解決した． 環境 macOS Sierra：10.12.6 Python：3.6.5 lightgbm：2.1.0 症状 解決策 公式のインストールガイドに従わず，$ conda install -c conda-forge lightgbmで落としたのが原因っぽい．一旦$ conda uninstall lightgbmして，Installation Guide - LightGBMに従ってインストールした． なお，Installation Guide - LightGBMではexport CXX=g++-7 CC=gcc-7だが，手元の環境に合わせてバージョンを変更する必要があることに注意． 参考 OMP: Error #15: Initializing libiomp5.dylib, but found libiomp5.dylib already initialized. #1715 - GitHub Installation Guide - LightGBM...</p>-->
+      <p><p>業務でも趣味でもよく<a href="https://github.com/Microsoft/LightGBM">Light GBM</a>にお世話になっているが，この前手元のMacで使おうとしたら<code class="highlighter-rouge">Dead kernel</code>エラーが発生した．<code class="highlighter-rouge">conda</code>で入れたLight GBMを一旦アンインストールして，<a href="https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html">Installation Guide - LightGBM</a>に従って再インストールしたら解決した．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">June 22, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#machine learning">Machine learning</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/06/17/intro-to-lightgbm">PythonとLight GBMで遊ぶNotebookを作った</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -335,52 +360,6 @@ _layouts/post.html
 
 </p>-->
       <p><p>近々，全文検索機能を実装し，現在の<code class="highlighter-rouge">Posts</code>ページに配置しようと考えている．とは言え，現在の<code class="highlighter-rouge">Posts</code>ページの<code class="highlighter-rouge">categories</code>一覧は便利なので，できれば残したい．そこで，一旦<code class="highlighter-rouge">Posts</code>ページを<code class="highlighter-rouge">Categories</code>ページとしてリネームして退避することにした．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">June 15, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#jekyll">Jekyll</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/06/15/jekyll-archives">Centrariumのjekyll-archives問題を回避する</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>このウェブサイトのベーステーマであるCentrariumは，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，内部で利用されているjekyll-archivesがまともに動作せず，各ポストのカテゴリリンク先が正しく貼れていなかった．いろいろ試した結果，_config.ymlでjekyll-archivesを無効化したら，すべての問題が解決したのでメモしておく．
-
-環境
-
-Gemfileは以下のような感じ．
-
-
-
-手順
-
-_config.ymlにおける，jekyll-archives関連のすべての設定をコメントアウトする．
-
-
-
-これだけでOK．各ポストのカテゴリリンク先は，/posts/#に向けて貼られるようになる．これは，index.htmlや_layouts/post.htmlにおいて次のようにリンク先を指定しているため．
-
-
-
-感想
-
-カテゴリごとに独立したページを作成したいわけではないので，この対応で十分．
-</p>-->
-      <p><p>このウェブサイトのベーステーマである<a href="https://github.com/bencentra/centrarium">Centrarium</a>は，非常に完成度が高く，使い勝手が良いテーマである．しかし，私の力不足のため，<a href="https://haltaro.github.io/2018/02/11/theme-change">内部で利用されているjekyll-archivesがまともに動作せず</a>，各ポストのカテゴリリンク先が正しく貼れていなかった．いろいろ試した結果，<code class="highlighter-rouge">_config.yml</code>で<code class="highlighter-rouge">jekyll-archives</code>を無効化したら，すべての問題が解決したのでメモしておく．</p>
 
 </p>
     </section>
