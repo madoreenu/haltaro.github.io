@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JekyllにBokehのインタラクティブなグラフを埋め込む
+title: JekyllにBokehのグラフを埋め込む
 updated: 2018-07-12
 cover:  "/assets/2018-06-24-berries.jpg"
 categories:
