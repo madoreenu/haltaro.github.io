@@ -5,13 +5,81 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Jul 2018 14:41:50 +0900</pubDate>
-    <lastBuildDate>Sun, 15 Jul 2018 14:41:50 +0900</lastBuildDate>
+    <pubDate>Sun, 15 Jul 2018 15:13:54 +0900</pubDate>
+    <lastBuildDate>Sun, 15 Jul 2018 15:13:54 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
         <title>EC2にS3をマウントする</title>
-        <description>
+        <description>&lt;p&gt;AWS（Amazon Web Services）のEC2に，S3をマウントする手順をメモしておく．前提として，EC2インスタンスに対して，SSH接続済みとする．&lt;/p&gt;
+
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ubuntu Server 16.04 LTS (HVM), SSD Volume Type&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;h2 id=&quot;s3-bucketを準備する&quot;&gt;S3 bucketを準備する&lt;/h2&gt;
+
+&lt;p&gt;マウントしたいEC2インスタンスと同じリージョンを選択すること．&lt;/p&gt;
+
+&lt;h2 id=&quot;iamロールの準備&quot;&gt;IAMロールの準備&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;信頼関係：
+    &lt;ul&gt;
+      &lt;li&gt;ロールを利用するサービス：EC2&lt;/li&gt;
+      &lt;li&gt;ユースケースの選択：EC2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;アクセス権限
+    &lt;ul&gt;
+      &lt;li&gt;ポリシー名：AmazonS3FullAccess&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;作成したロールをEC2インスタンスに割り当てる．&lt;/p&gt;
+
+&lt;h2 id=&quot;s3fs-fuseのインストール&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;s3fs-fuse&lt;/code&gt;のインストール&lt;/h2&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/041eeaab46a6ed5d111ba8b4da742759.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;以下のコマンドでS3をマウントできる．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/fb68727dfc45c7a9ca45cc2373e180b5.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;なお，&lt;code class=&quot;highlighter-rouge&quot;&gt;uid&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;gid&lt;/code&gt;は&lt;code class=&quot;highlighter-rouge&quot;&gt;id ubuntu&lt;/code&gt;で確認した値を設定すること．&lt;/p&gt;
+
+&lt;h2 id=&quot;マウントの自動化&quot;&gt;マウントの自動化&lt;/h2&gt;
+
+&lt;p&gt;ここで結構ハマった．&lt;code class=&quot;highlighter-rouge&quot;&gt;rc.local&lt;/code&gt;で設定する方法で実現したかったが，どうしてもうまくいかなかったので，&lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;で設定した．参考のため，以下に試行錯誤の記録を残す．&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://qiita.com/shicky1121/items/e19b50308c79e5a6081e&quot;&gt;Qiita，EC2インスタンスにS3をマウントする&lt;/a&gt;を参考に，&lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/rc.local&lt;/code&gt;に以下を追記した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/d0d44e135b154d3a33ff0369d9d20deb.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Ubuntu 16.04だと，上記の方法では起動時に実行されないようだ．&lt;a href=&quot;https://qiita.com/msrks/items/5201ae15d0e1f8de5946&quot;&gt;Ubuntu16.04でスクリプトを起動時に自動実行する&lt;/a&gt;を参考にサービスファイルを作成したが，何故かうまく動作しなかった．&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://askubuntu.com/questions/765120/after-upgrade-to-16-04-lts-rc-local-is-not-executing-a-command&quot;&gt;After upgrade to 16.04 LTS rc.local is not executing a command - StackExchange&lt;/a&gt;を参考に，以下のように変更してみた．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/47b8ef513273903bddd0e4f4a378eac2.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;そして，&lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/rc.local&lt;/code&gt;の一行目を&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh -e&lt;/span&gt;&lt;/code&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;&lt;/code&gt;に変更する．上記でもうまくいかないので，&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt;に以下を追記した．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/339ab269a4d200247137a6635e0f26c2.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;うまくいった．bashを起動するたびにマウントされちゃうので，あまり良くない気がする．&lt;/p&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/shicky1121/items/e19b50308c79e5a6081e&quot;&gt;EC2インスタンスにS3をマウントする - Qiita&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/msrks/items/5201ae15d0e1f8de5946&quot;&gt;Ubuntu16.04でスクリプトを起動時に自動実行する - Qiita&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://askubuntu.com/questions/765120/after-upgrade-to-16-04-lts-rc-local-is-not-executing-a-command&quot;&gt;After upgrade to 16.04 LTS rc.local is not executing a command - StackExchange&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sun, 15 Jul 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018/07/15/ec2-s3</link>
@@ -19,6 +87,8 @@
         
         
         <category>aws</category>
+        
+        <category>linux</category>
         
       </item>
     
