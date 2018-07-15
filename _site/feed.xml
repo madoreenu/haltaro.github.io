@@ -5,13 +5,84 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Jul 2018 15:15:40 +0900</pubDate>
-    <lastBuildDate>Sun, 15 Jul 2018 15:15:40 +0900</lastBuildDate>
+    <pubDate>Sun, 15 Jul 2018 15:58:54 +0900</pubDate>
+    <lastBuildDate>Sun, 15 Jul 2018 15:58:54 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
+        <title>EC2にJupyter環境を構築する</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/jp/&quot;&gt;AWS&lt;/a&gt;のEC2（Ubuntu 16.04 LTS）に，&lt;a href=&quot;http://jupyter.org/&quot;&gt;Jupyter notebook&lt;/a&gt;の環境を構築する手順をメモしておく．前提として，EC2インスタンスに対してSSH接続済みであり，Jupyterもインストール済みとする．EC2に限らず，リモートサーバ一般に共通する手順だと思う．&lt;/p&gt;
+
+&lt;h1 id=&quot;リモート表示設定&quot;&gt;リモート表示設定&lt;/h1&gt;
+
+&lt;p&gt;EC2上で立ち上げたJupyter notebookをブラウザ経由で使えるようにする．なお，以下の方法を使うと毎回パスワードの入力を求められるようになるので注意．&lt;/p&gt;
+
+&lt;p&gt;まずは，&lt;code class=&quot;highlighter-rouge&quot;&gt;jupyter notebook --generate-config&lt;/code&gt;で設定ファイルを作成する．次に，&lt;code class=&quot;highlighter-rouge&quot;&gt;ipython&lt;/code&gt;を起動して，パスワードを設定する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/f8096cc121c138e6596734221707ef81.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.jupyter/jupyter_notebook_config.py&lt;/code&gt;を開いて，以下のように設定する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/85d1e38eb1a24bb9bcae0b1d0cc3a2dd.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;jupyter-notebook-extension&quot;&gt;Jupyter notebook extension&lt;/h1&gt;
+
+&lt;p&gt;これはリモートサーバに限った作業ではないが，Jupyterの拡張機能をインストールする．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/f3e4403b4497a84819e84bed966caea4.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;jupyter起動後によく使うスクリプト&quot;&gt;Jupyter起動後によく使うスクリプト&lt;/h1&gt;
+
+&lt;p&gt;ついでに，Jupyter起動後によく使うスクリプトをメモしておく．&lt;/p&gt;
+
+&lt;h2 id=&quot;notebookの初期設定&quot;&gt;Notebookの初期設定&lt;/h2&gt;
+
+&lt;p&gt;グラフ表示および&lt;code class=&quot;highlighter-rouge&quot;&gt;warning&lt;/code&gt;表示について設定変更する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/bd31358c4beef563d3fddbeba1d16085.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;よく使うモジュールのインポート&quot;&gt;よく使うモジュールのインポート&lt;/h2&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/72d7a2279f6e54a9bd007c86eef50829.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;フォントの設定&quot;&gt;フォントの設定&lt;/h2&gt;
+
+&lt;p&gt;デフォルトのフォント設定だと，&lt;a href=&quot;https://matplotlib.org/&quot;&gt;matplotlib&lt;/a&gt;で日本語を表示できない．以下のようにフォント設定を変更する．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/6be570e6dee89957a8ffdf149f782048.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;なお，上記はUbuntu用の設定である．他のOSについては，別途対応されたい．&lt;/p&gt;
+
+&lt;h2 id=&quot;bokehの設定&quot;&gt;Bokehの設定&lt;/h2&gt;
+
+&lt;p&gt;デフォルト設定で日本語を表示できるし，ホバー表示がイイ感なので，最近は&lt;a href=&quot;https://bokeh.pydata.org/en/latest/&quot;&gt;Bokeh&lt;/a&gt;を使うことも多い．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/13a47550e6370419dac842206c2cd769.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/syo_cream/items/05553b41277523a131fd&quot;&gt;リモートサーバでjupyter notebookを起動させローカル環境で使う - Qiita&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/sasaki77/items/30a19d2be7d94116b237&quot;&gt;extensionを追加してもっと快適なJupyter環境を構築する - Qiita&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ipython-contrib/jupyter_contrib_nbextensions&quot;&gt;Jupyter notebook extensions - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 15 Jul 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/07/15/jupyter-ec2</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/15/jupyter-ec2</guid>
+        
+        
+        <category>aws</category>
+        
+        <category>python</category>
+        
+        <category>linux</category>
+        
+      </item>
+    
+      <item>
         <title>EC2にS3をマウントする</title>
-        <description>&lt;p&gt;AWS（Amazon Web Services）のEC2に，S3をマウントする手順をメモしておく．前提として，EC2インスタンスに対して，SSH接続済みとする．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/jp/&quot;&gt;AWS&lt;/a&gt;のEC2（Ubuntu 16.04 LTS）に，S3をマウントする手順をメモしておく．前提として，EC2インスタンスに対して，SSH接続済みとする．&lt;/p&gt;
 
 &lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
@@ -1310,107 +1381,6 @@ t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
         
         
         <category>ruby</category>
-        
-      </item>
-    
-      <item>
-        <title>JekyllにAlgoliaで全文検索機能を実装する</title>
-        <description>&lt;p&gt;本サイトに待望の&lt;a href=&quot;https://haltaro.github.io/search/&quot;&gt;全文検索機能を実装&lt;/a&gt;した．Algolia社の&lt;a href=&quot;https://community.algolia.com/docsearch/&quot;&gt;DocSearch&lt;/a&gt;の審査に通らなかったので，同社の&lt;a href=&quot;https://www.algolia.com/pricing&quot;&gt;Free hacker plan&lt;/a&gt;を利用した．&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/iBIoajzYWGE?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&quot;algolia&quot;&gt;Algolia&lt;/h1&gt;
-
-&lt;p&gt;Algoliaは，リアルタイム検索をSaaSで提供するサービス群．今回は，&lt;a href=&quot;https://community.algolia.com/docsearch/&quot;&gt;DocSearch&lt;/a&gt;および&lt;a href=&quot;https://www.algolia.com/pricing&quot;&gt;Free hacker plan&lt;/a&gt;の利用を検討した．&lt;/p&gt;
-
-&lt;h2 id=&quot;docsearch&quot;&gt;DocSearch&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://community.algolia.com/docsearch/&quot;&gt;DocSearch申請用ページ&lt;/a&gt;で登録したURLが審査に通ると，Algoliaのクローラが自動でインデックスファイルを構築し，検索用APIを公開してくれるという，ゆとりには嬉しいサービス．何を隠そう&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;の検索システムもこれで実装されている．今回は残念ながら審査に通らなかった&lt;sup id=&quot;fnref:japanese&quot;&gt;&lt;a href=&quot;#fn:japanese&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;ので，&lt;a href=&quot;https://www.algolia.com/pricing&quot;&gt;Free hacker plan&lt;/a&gt;を利用することにした．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-06-16-docsearch.png&quot; alt=&quot;docsearch&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;free-hacker-plan&quot;&gt;Free hacker plan&lt;/h2&gt;
-
-&lt;p&gt;自力で作成したインデックスファイルをAlgoliaにアップロードし，検索用APIを利用するプラン．マスターデータは1万件まで登録でき，APIを月10万回まで利用できる．&lt;a href=&quot;https://blog.leko.jp/post/implement-site-search-with-algolia/&quot;&gt;Algoliaを利用してサイト内検索機能を実装する - WEB EGG&lt;/a&gt;によると，上限をオーバーすると検索もコンテンツの追加もできなくなるみたい．月1万PV程度のブログでギリギリ足りない感じらしいので，本ウェブサイトなら余裕である&lt;sup id=&quot;fnref:sad&quot;&gt;&lt;a href=&quot;#fn:sad&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-06-16-hacker.png&quot; alt=&quot;hacker&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;幸い，&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/&quot;&gt;Jekyll向けのプラグイン&lt;/a&gt;があるため，私でも簡単に実装できた．以下に手順を示す．&lt;/p&gt;
-
-&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
-
-&lt;p&gt;以下は基本的に&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/&quot;&gt;Algolia for Jekyll - Algolia&lt;/a&gt;および&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/blog.html&quot;&gt;Blog search -  Algolia for Jekyll&lt;/a&gt;に則っているが，ウェブサイトの一貫性を保つために一部のコードを修正している．&lt;/p&gt;
-
-&lt;h2 id=&quot;algoliaのユーザ登録&quot;&gt;Algoliaのユーザ登録&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.algolia.com/&quot;&gt;Algolia&lt;/a&gt;からサインアップする．以降の処理で，ダッシュボードの&lt;code class=&quot;highlighter-rouge&quot;&gt;Application ID&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Search-Only API Key&lt;/code&gt;，および&lt;code class=&quot;highlighter-rouge&quot;&gt;Admin API Key&lt;/code&gt;が必要なのでメモしておく．&lt;/p&gt;
-
-&lt;h2 id=&quot;jekyll-algliaの設定&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-alglia&lt;/code&gt;の設定&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;に以下を追記し，&lt;code class=&quot;highlighter-rouge&quot;&gt;$ bundle update&lt;/code&gt;する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/bc3a34adff021f762373f452f2aad4e7.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-algolia&lt;/code&gt;の設定を追加する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/af5b24ac877c78a8d2230f903f429b8c.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;インデックスの作成とアップロード&quot;&gt;インデックスの作成とアップロード&lt;/h2&gt;
-
-&lt;p&gt;シェルで以下を実行する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/7602fed4d47e0062ed2779fc5070e4f9.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;Admin API Key&lt;/code&gt;はローカルで保管する必要がある．間違ってGitHub等にアップしないように注意．以降は，検索窓の実装に入る．&lt;/p&gt;
-
-&lt;h2 id=&quot;_layoutssearchhtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/search.html&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/blog.html&quot;&gt;Blog search -  Algolia for Jekyll&lt;/a&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;search.html&lt;/code&gt;を参考にした．ただし，本ウェブサイトのベーステーマである&lt;a href=&quot;https://github.com/bencentra/centrarium&quot;&gt;Centrarium&lt;/a&gt;と整合するよう，一部に手を加えた．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/1c1f54a75dff0ce897373d2d6450310c.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;_includesalgoliahtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/algolia.html&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/blog.html&quot;&gt;Blog search -  Algolia for Jekyll&lt;/a&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;algolia.html&lt;/code&gt;を参考にした．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/17c7d07fdd56f07c80735e0328ecfbe0.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;searchmd&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;search.md&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;全文検索用の&lt;a href=&quot;https://haltaro.github.io/search/&quot;&gt;Search&lt;/a&gt;ページを作成するために，以下の&lt;code class=&quot;highlighter-rouge&quot;&gt;search.md&lt;/code&gt;ファイルを作成した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/c30ebf72374a701767ebc55fe33a898a.js&quot;&gt;&lt;/script&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;これで，本ウェブサイトに欲しかった機能はあらかた実装してしまった．結構書きたい（書かないと忘れてしまいそうな）ことが溜まってきたので，しばらくは統計・機械学習のノウハウや理論を書いていきたい．&lt;/p&gt;
-
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.algolia.com/&quot;&gt;Algolia - Algolia&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://community.algolia.com/docsearch/&quot;&gt;DocSearch - Algolia&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://community.algolia.com/jekyll-algolia/&quot;&gt;Algolia for Jekyll - Algolia&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.leko.jp/post/implement-site-search-with-algolia/&quot;&gt;Algoliaを利用してサイト内検索機能を実装する - WEB EGG&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://rs.luminousspice.com/hugo-site-search/&quot;&gt;Hugo に全文検索を取り付けた - the Right Stuff&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:japanese&quot;&gt;
-      &lt;p&gt;Algolia社が定める”technical documentation site”ではないと，丁寧なお祈りメールが来た．そもそも日本語だと通りづらいんじゃないか． &lt;a href=&quot;#fnref:japanese&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:sad&quot;&gt;
-      &lt;p&gt;月1000PVくらい． &lt;a href=&quot;#fnref:sad&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 16 Jun 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/06/16/jekyll-algolia</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/16/jekyll-algolia</guid>
-        
-        
-        <category>jekyll</category>
         
       </item>
     

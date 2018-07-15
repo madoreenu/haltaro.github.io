@@ -168,11 +168,99 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/07/15/jupyter-ec2">EC2にJupyter環境を構築する</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>AWSのEC2（Ubuntu 16.04 LTS）に，Jupyter notebookの環境を構築する手順をメモしておく．前提として，EC2インスタンスに対してSSH接続済みであり，Jupyterもインストール済みとする．EC2に限らず，リモートサーバ一般に共通する手順だと思う．
+
+リモート表示設定
+
+EC2上で立ち上げたJupyter notebookをブラウザ経由で使えるようにする．なお，以下の方法を使うと毎回パスワードの入力を求められるようになるので注意．
+
+まずは，jupyter notebook --generate-configで設定ファイルを作成する．次に，ipythonを起動して，パスワードを設定する．
+
+
+
+~/.jupyter/jupyter_notebook_config.pyを開いて，以下のように設定する．
+
+
+
+Jupyter notebook extension
+
+これはリモートサーバに限った作業ではないが，Jupyterの拡張機能をインストールする．
+
+
+
+Jupyter起動後によく使うスクリプト
+
+ついでに，Jupyter起動後によく使うスクリプトをメモしておく．
+
+Notebookの初期設定
+
+グラフ表示およびwarning表示について設定変更する．
+
+
+
+よく使うモジュールのインポート
+
+
+
+フォントの設定
+
+デフォルトのフォント設定だと，matplotlibで日本語を表示できない．以下のようにフォント設定を変更する．
+
+
+
+なお，上記はUbuntu用の設定である．他のOSについては，別途対応されたい．
+
+Bokehの設定
+
+デフォルト設定で日本語を表示できるし，ホバー表示がイイ感なので，最近はBokehを使うことも多い．
+
+
+
+参考
+
+
+  リモートサーバでjupyter notebookを起動させローカル環境で使う - Qiita
+  extensionを追加してもっと快適なJupyter環境を構築する - Qiita
+  Jupyter notebook extensions - GitHub
+
+</p>-->
+      <p><p><a href="https://aws.amazon.com/jp/">AWS</a>のEC2（Ubuntu 16.04 LTS）に，<a href="http://jupyter.org/">Jupyter notebook</a>の環境を構築する手順をメモしておく．前提として，EC2インスタンスに対してSSH接続済みであり，Jupyterもインストール済みとする．EC2に限らず，リモートサーバ一般に共通する手順だと思う．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">July 15, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#aws">Aws</a>, 
+        
+      
+        
+        <a href="/categories/#python">Python</a>, 
+        
+      
+        
+        <a href="/categories/#linux">Linux</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/07/15/ec2-s3">EC2にS3をマウントする</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <!--<p>AWS（Amazon Web Services）のEC2に，S3をマウントする手順をメモしておく．前提として，EC2インスタンスに対して，SSH接続済みとする． 環境 Ubuntu Server 16.04 LTS (HVM), SSD Volume Type 手順 S3 bucketを準備する マウントしたいEC2インスタンスと同じリージョンを選択すること． IAMロールの準備 信頼関係： ロールを利用するサービス：EC2 ユースケースの選択：EC2 アクセス権限 ポリシー名：AmazonS3FullAccess 作成したロールをEC2インスタンスに割り当てる． s3fs-fuseのインストール 以下のコマンドでS3をマウントできる． なお，uidとgidはid ubuntuで確認した値を設定すること． マウントの自動化 ここで結構ハマった．rc.localで設定する方法で実現したかったが，どうしてもうまくいかなかったので，.bashrcで設定した．参考のため，以下に試行錯誤の記録を残す． EC2インスタンスにS3をマウントする - Qiitaを参考に，/etc/rc.localに以下を追記した． Ubuntu 16.04だと，上記の方法では起動時に実行されないようだ．Ubuntu16.04でスクリプトを起動時に自動実行する - Qiitaを参考にサービスファイルを作成したが，何故かうまく動作しなかった． After upgrade to 16.04 LTS rc.local is not executing a command - StackExchangeを参考に，以下のように変更してみた． そして，/etc/rc.localの一行目を#!/bin/sh...</p>-->
-      <p><p>AWS（Amazon Web Services）のEC2に，S3をマウントする手順をメモしておく．前提として，EC2インスタンスに対して，SSH接続済みとする．</p>
+      <!--<p>AWSのEC2（Ubuntu 16.04 LTS）に，S3をマウントする手順をメモしておく．前提として，EC2インスタンスに対して，SSH接続済みとする． 環境 Ubuntu Server 16.04 LTS (HVM), SSD Volume Type 手順 S3 bucketを準備する マウントしたいEC2インスタンスと同じリージョンを選択すること． IAMロールの準備 信頼関係： ロールを利用するサービス：EC2 ユースケースの選択：EC2 アクセス権限 ポリシー名：AmazonS3FullAccess 作成したロールをEC2インスタンスに割り当てる． s3fs-fuseのインストール 以下のコマンドでS3をマウントできる． なお，uidとgidはid ubuntuで確認した値を設定すること． マウントの自動化 ここで結構ハマった．rc.localで設定する方法で実現したかったが，どうしてもうまくいかなかったので，.bashrcで設定した．参考のため，以下に試行錯誤の記録を残す． EC2インスタンスにS3をマウントする - Qiitaを参考に，/etc/rc.localに以下を追記した． Ubuntu 16.04だと，上記の方法では起動時に実行されないようだ．Ubuntu16.04でスクリプトを起動時に自動実行する - Qiitaを参考にサービスファイルを作成したが，何故かうまく動作しなかった． After upgrade to 16.04 LTS rc.local is not executing a command - StackExchangeを参考に，以下のように変更してみた． そして，/etc/rc.localの一行目を#!/bin/sh...</p>-->
+      <p><p><a href="https://aws.amazon.com/jp/">AWS</a>のEC2（Ubuntu 16.04 LTS）に，S3をマウントする手順をメモしておく．前提として，EC2インスタンスに対して，SSH接続済みとする．</p>
 
 </p>
     </section>
@@ -421,35 +509,6 @@ Kaggle/kaggle-api - GitHubを見るのが手っ取り早い．
       in 
         
         <a href="/categories/#kaggle">Kaggle</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/07/07/time-series">萩原淳一郎，基礎からわかる時系列分析</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>萩原淳一郎，基礎からわかる時系列分析 ―Rで実践するカルマンフィルタ・MCMC・粒子フィルターをざっと読んで状態空間モデルを勉強した． 線形・ガウス型の状態空間モデルの場合はカルマンフィルタで解析的に解けるが，一般状態空間モデルの場合は，フィルタリング分布・予測分布・平滑化分布の積分計算を必ずしも解析的に解けない．そこで，MCMCを用いた一括解法や，粒子フィルタによる逐次解法が提案されている．本書のレポジトリは，hagijyun/tsbook - GitHub． カルマンフィルタ，MCMC，粒子フィルタの関係を理解することができた．次はPRMLの下巻を読み返して，MCMCの理論的背景を押さえておきたい． 確率・統計に関する基礎 周辺化消去は，同時分布から外したい変数の影響を，あらかじめ平均的に考慮することに相当する．なるほど，腑に落ちた． 定常過程と非定常過程． 強定常：確率過程の確率分布が時点によらず一定． 弱定常：確率過程の平均・分散・自己共分散・自己相関係数が時点によらず一定． 時系列分析ひとめぐり 五数要約：最小値・25%値・中央値・75%値・最大値．Rだとsummary()で，Python（pandas）だとDataFrame.describe()で確認できる． 自己相関係数．． 時系列データの成分分解：レベル＋傾き＋周期． ホルト・ウィンタース法．指数加重型移動平均（EWMA：Exponentially Weighted Moving Average）の一種．Rでは，HoltWinters()関数で実施できる． 残差を確認して，モデルの妥当性を分析する．残差の自己相関により，周期性を上手く捉えられたか確認できる． 状態空間モデルの解法の分類： 線形・ガウス型状態空間モデル： 一括型解法：ウィナーフィルタ． 逐次型解法：カルマンフィルタ． 一般状態空間モデル： 一括型解法：MCMCを利用した解法． 逐次型解法：粒子フィルタ． 状態空間モデル 方程式による表現： 状態方程式1： 観測方程式： 確率分布による表現： 状態方程式に相当： 観測方程式に相当： 状態空間モデルの同時分布： ARIMAモデルと状態空間モデルは密接な関係がある． 状態空間モデルにおける状態の推定 状態の周辺事後分布： ：平滑化分布 ：フィルタリング分布 ：予測分布 フィルタリング分布： モデルの状態方程式2と，以下の一期先予測分布，一期先予測尤度からなる．直感的には，一期先予測分布を観測方程式で補正して，一期先予測尤度で正規化したもの． 一期先予測分布： 一期先予測尤度3： 予測分布： 定式化： 一期先予測分布をもとに，状態方程式に基いて時間順方向への遷移を解繰り返したもの． 平滑化分布： 定式化：...</p>-->
-      <p><p><a href="http://amzn.asia/bTrcjv0">萩原淳一郎，基礎からわかる時系列分析 ―Rで実践するカルマンフィルタ・MCMC・粒子フィルター</a>をざっと読んで状態空間モデルを勉強した．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">July 7, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#statistics">Statistics</a>, 
-        
-      
-        
-        <a href="/categories/#books">Books</a>
         
       
       </div>
