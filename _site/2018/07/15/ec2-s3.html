@@ -229,11 +229,11 @@
 
 <p>ここで結構ハマった．<code class="highlighter-rouge">rc.local</code>で設定する方法で実現したかったが，どうしてもうまくいかなかったので，<code class="highlighter-rouge">.bashrc</code>で設定した．参考のため，以下に試行錯誤の記録を残す．</p>
 
-<p><a href="https://qiita.com/shicky1121/items/e19b50308c79e5a6081e">Qiita，EC2インスタンスにS3をマウントする</a>を参考に，<code class="highlighter-rouge">/etc/rc.local</code>に以下を追記した．</p>
+<p><a href="https://qiita.com/shicky1121/items/e19b50308c79e5a6081e">EC2インスタンスにS3をマウントする - Qiita</a>を参考に，<code class="highlighter-rouge">/etc/rc.local</code>に以下を追記した．</p>
 
 <script src="https://gist.github.com/haltaro/d0d44e135b154d3a33ff0369d9d20deb.js"></script>
 
-<p>Ubuntu 16.04だと，上記の方法では起動時に実行されないようだ．<a href="https://qiita.com/msrks/items/5201ae15d0e1f8de5946">Ubuntu16.04でスクリプトを起動時に自動実行する</a>を参考にサービスファイルを作成したが，何故かうまく動作しなかった．</p>
+<p>Ubuntu 16.04だと，上記の方法では起動時に実行されないようだ．<a href="https://qiita.com/msrks/items/5201ae15d0e1f8de5946">Ubuntu16.04でスクリプトを起動時に自動実行する - Qiita</a>を参考にサービスファイルを作成したが，何故かうまく動作しなかった．</p>
 
 <p><a href="https://askubuntu.com/questions/765120/after-upgrade-to-16-04-lts-rc-local-is-not-executing-a-command">After upgrade to 16.04 LTS rc.local is not executing a command - StackExchange</a>を参考に，以下のように変更してみた．</p>
 
