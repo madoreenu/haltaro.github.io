@@ -5,13 +5,26 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Jul 2018 22:21:58 +0900</pubDate>
-    <lastBuildDate>Sat, 14 Jul 2018 22:21:58 +0900</lastBuildDate>
+    <pubDate>Sun, 15 Jul 2018 14:41:50 +0900</pubDate>
+    <lastBuildDate>Sun, 15 Jul 2018 14:41:50 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
+        <title>EC2にS3をマウントする</title>
+        <description>
+</description>
+        <pubDate>Sun, 15 Jul 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/07/15/ec2-s3</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/15/ec2-s3</guid>
+        
+        
+        <category>aws</category>
+        
+      </item>
+    
+      <item>
         <title>ns-3でTCPの輻輳制御を観察する</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.nsnam.org/&quot;&gt;ns-3&lt;/a&gt;でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．&lt;a href=&quot;https://qiita.com/haltaro/items/d479538345357f08c595&quot;&gt;2017年2月20日にQiitaに投稿した記事&lt;/a&gt;を，本サイト向けに再構築したもの．&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.nsnam.org/&quot;&gt;ns-3&lt;/a&gt;でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．本記事は，&lt;a href=&quot;https://qiita.com/haltaro/items/d479538345357f08c595&quot;&gt;2017年2月20日にQiitaに投稿した記事&lt;/a&gt;を，本サイト向けに再構成したもの．&lt;/p&gt;
 
 &lt;h1 id=&quot;はじめに&quot;&gt;はじめに&lt;/h1&gt;
 
@@ -233,8 +246,9 @@
 
 &lt;p&gt;コールバック関数として，上記&lt;code class=&quot;highlighter-rouge&quot;&gt;InFlightTracer()&lt;/code&gt;のような関数がよく使われます．&lt;code class=&quot;highlighter-rouge&quot;&gt;InFlightTracer()&lt;/code&gt;は，現在時刻（&lt;code class=&quot;highlighter-rouge&quot;&gt;Simulator::Now ().GetSeconds ()&lt;/code&gt;）と，更新後の値（&lt;code class=&quot;highlighter-rouge&quot;&gt;inFlight&lt;/code&gt;）を，都度出力する関数です．&lt;/p&gt;
 
-&lt;p&gt;トレース対象とコールバック関数の紐付け時には，上記&lt;code class=&quot;highlighter-rouge&quot;&gt;TraceInFlight()&lt;/code&gt;にあるように，&lt;code class=&quot;highlighter-rouge&quot;&gt;Config::ConnectWithoutContext(variable, MakeCallback(&amp;amp;func))&lt;/code&gt;という構文を使うことができます．ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;variable&lt;/code&gt;は，トレース対象のObjectのパスを記載する必要があります．&lt;code class=&quot;highlighter-rouge&quot;&gt;/NodeList/1/$$ns3::TcpL4Protocol/SocketList/0/BytesInFlight&lt;/code&gt;は，&lt;code class=&quot;highlighter-rouge&quot;&gt;NodeList&lt;/code&gt;1番のノードにぶら下がる，&lt;code class=&quot;highlighter-rouge&quot;&gt;SocketList&lt;/code&gt;0番のソケットの，変数&lt;code class=&quot;highlighter-rouge&quot;&gt;BytesInFlight&lt;/code&gt;を意味します．
-　ns-3におけるトレース方法の詳細は，&lt;a href=&quot;https://www.nsnam.org/docs/release/3.26/manual/ns-3-manual.pdf&quot;&gt;公式マニュアル&lt;/a&gt;の1.10節をご参照ください．&lt;/p&gt;
+&lt;p&gt;トレース対象とコールバック関数の紐付け時には，上記&lt;code class=&quot;highlighter-rouge&quot;&gt;TraceInFlight()&lt;/code&gt;にあるように，&lt;code class=&quot;highlighter-rouge&quot;&gt;Config::ConnectWithoutContext(variable, MakeCallback(&amp;amp;func))&lt;/code&gt;という構文を使うことができます．ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;variable&lt;/code&gt;は，トレース対象のObjectのパスを記載する必要があります．&lt;code class=&quot;highlighter-rouge&quot;&gt;/NodeList/1/$$ns3::TcpL4Protocol/SocketList/0/BytesInFlight&lt;/code&gt;は，&lt;code class=&quot;highlighter-rouge&quot;&gt;NodeList&lt;/code&gt;1番のノードにぶら下がる，&lt;code class=&quot;highlighter-rouge&quot;&gt;SocketList&lt;/code&gt;0番のソケットの，変数&lt;code class=&quot;highlighter-rouge&quot;&gt;BytesInFlight&lt;/code&gt;を意味します．&lt;/p&gt;
+
+&lt;p&gt;ns-3におけるトレース方法の詳細は，&lt;a href=&quot;https://www.nsnam.org/docs/release/3.26/manual/ns-3-manual.pdf&quot;&gt;公式マニュアル&lt;/a&gt;の1.10節をご参照ください．&lt;/p&gt;
 
 &lt;h3 id=&quot;ネットワーク構成&quot;&gt;ネットワーク構成&lt;/h3&gt;
 
@@ -431,7 +445,7 @@
       </item>
     
       <item>
-        <title>JekyllにBokehのインタラクティブなグラフを埋め込む</title>
+        <title>JekyllにBokehのグラフを埋め込む</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://bokeh.pydata.org/en/latest/&quot;&gt;Bokeh&lt;/a&gt;で作成したインタラクティブなグラフを，&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot;&gt;Jekyll&lt;/a&gt;に埋め込みたくなった．&lt;a href=&quot;https://p-mckenzie.github.io/python/2017/12/01/embedding-bokeh-with-github-pages/&quot;&gt;Embedding Bokeh Plots with Github Pages -
 Paige McKenzie&lt;/a&gt;を参考にしたら，簡単にできた．日本語もちゃんと表示されている．&lt;/p&gt;
 
@@ -1324,41 +1338,6 @@ t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
         <pubDate>Sat, 16 Jun 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018/06/16/jekyll-algolia</link>
         <guid isPermaLink="true">http://localhost:4000/2018/06/16/jekyll-algolia</guid>
-        
-        
-        <category>jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>CentrariumのPostsをCategoriesにリネームする</title>
-        <description>&lt;p&gt;近々，全文検索機能を実装し，現在の&lt;code class=&quot;highlighter-rouge&quot;&gt;Posts&lt;/code&gt;ページに配置しようと考えている．とは言え，現在の&lt;code class=&quot;highlighter-rouge&quot;&gt;Posts&lt;/code&gt;ページの&lt;code class=&quot;highlighter-rouge&quot;&gt;categories&lt;/code&gt;一覧は便利なので，できれば残したい．そこで，一旦&lt;code class=&quot;highlighter-rouge&quot;&gt;Posts&lt;/code&gt;ページを&lt;code class=&quot;highlighter-rouge&quot;&gt;Categories&lt;/code&gt;ページとしてリネームして退避することにした．&lt;/p&gt;
-
-&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
-
-&lt;h2 id=&quot;postshtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;posts.html&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;まず，&lt;code class=&quot;highlighter-rouge&quot;&gt;posts.html&lt;/code&gt;を&lt;code class=&quot;highlighter-rouge&quot;&gt;categories.html&lt;/code&gt;にリネームする．フロントマターを次のように変更する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/e2141c3a1062d73eb53588fba394ac8d.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;indexhtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;で列挙される，各ポストのカテゴリへのリンク先を，&lt;code class=&quot;highlighter-rouge&quot;&gt;/posts/#&lt;/code&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;/categories/#&lt;/code&gt;に変更する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/59920969396317c8f64d86bbdf020105.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;_layoutsposthtml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt;
-の各カテゴリへのリンク先を，&lt;code class=&quot;highlighter-rouge&quot;&gt;/posts/#&lt;/code&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;/categories/#&lt;/code&gt;に変更する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/9d53778f905f71f938592957a3efaae8.js&quot;&gt;&lt;/script&gt;
-
-</description>
-        <pubDate>Fri, 15 Jun 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/06/15/rename-permalinks</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/15/rename-permalinks</guid>
         
         
         <category>jekyll</category>

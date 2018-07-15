@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>ns-3でTCPの輻輳制御を観察する</title>
-  <meta name="description" content="ns-3でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．2017年2月20日にQiitaに投稿した記事を，本サイト向けに再構築したもの．">
+  <meta name="description" content="ns-3でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．本記事は，2017年2月20日にQiitaに投稿した記事を，本サイト向けに再構成したもの．">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,7 +51,7 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="ns-3でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．2017年2月20日にQiitaに投稿した記事を，本サイト向けに再構築したもの．" />
+  <meta property="og:description" content="ns-3でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．本記事は，2017年2月20日にQiitaに投稿した記事を，本サイト向けに再構成したもの．" />
   <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="ns-3でTCPの輻輳制御を観察する" />
@@ -66,7 +66,7 @@
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="ns-3でTCPの輻輳制御を観察する">
-  <meta name="twitter:description" content="ns-3でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．2017年2月20日にQiitaに投稿した記事を，本サイト向けに再構築したもの．">
+  <meta name="twitter:description" content="ns-3でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．本記事は，2017年2月20日にQiitaに投稿した記事を，本サイト向けに再構成したもの．">
   <meta name="twitter:image" content="http://localhost:4000/assets/2018-07-13-flow.jpg">
   <meta name="twitter:url" content="http://localhost:4000">
   
@@ -115,6 +115,8 @@
         
           
           <li class="nav-link"><a href="/search/">Search</a>
+          
+        
           
         
           
@@ -193,7 +195,7 @@
 </section>
 
 <article class="post-content">
-  <p><a href="https://www.nsnam.org/">ns-3</a>でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．<a href="https://qiita.com/haltaro/items/d479538345357f08c595">2017年2月20日にQiitaに投稿した記事</a>を，本サイト向けに再構築したもの．</p>
+  <p><a href="https://www.nsnam.org/">ns-3</a>でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．本記事は，<a href="https://qiita.com/haltaro/items/d479538345357f08c595">2017年2月20日にQiitaに投稿した記事</a>を，本サイト向けに再構成したもの．</p>
 
 <h1 id="はじめに">はじめに</h1>
 
@@ -415,8 +417,9 @@
 
 <p>コールバック関数として，上記<code class="highlighter-rouge">InFlightTracer()</code>のような関数がよく使われます．<code class="highlighter-rouge">InFlightTracer()</code>は，現在時刻（<code class="highlighter-rouge">Simulator::Now ().GetSeconds ()</code>）と，更新後の値（<code class="highlighter-rouge">inFlight</code>）を，都度出力する関数です．</p>
 
-<p>トレース対象とコールバック関数の紐付け時には，上記<code class="highlighter-rouge">TraceInFlight()</code>にあるように，<code class="highlighter-rouge">Config::ConnectWithoutContext(variable, MakeCallback(&amp;func))</code>という構文を使うことができます．ここで，<code class="highlighter-rouge">variable</code>は，トレース対象のObjectのパスを記載する必要があります．<code class="highlighter-rouge">/NodeList/1/$$ns3::TcpL4Protocol/SocketList/0/BytesInFlight</code>は，<code class="highlighter-rouge">NodeList</code>1番のノードにぶら下がる，<code class="highlighter-rouge">SocketList</code>0番のソケットの，変数<code class="highlighter-rouge">BytesInFlight</code>を意味します．
-　ns-3におけるトレース方法の詳細は，<a href="https://www.nsnam.org/docs/release/3.26/manual/ns-3-manual.pdf">公式マニュアル</a>の1.10節をご参照ください．</p>
+<p>トレース対象とコールバック関数の紐付け時には，上記<code class="highlighter-rouge">TraceInFlight()</code>にあるように，<code class="highlighter-rouge">Config::ConnectWithoutContext(variable, MakeCallback(&amp;func))</code>という構文を使うことができます．ここで，<code class="highlighter-rouge">variable</code>は，トレース対象のObjectのパスを記載する必要があります．<code class="highlighter-rouge">/NodeList/1/$$ns3::TcpL4Protocol/SocketList/0/BytesInFlight</code>は，<code class="highlighter-rouge">NodeList</code>1番のノードにぶら下がる，<code class="highlighter-rouge">SocketList</code>0番のソケットの，変数<code class="highlighter-rouge">BytesInFlight</code>を意味します．</p>
+
+<p>ns-3におけるトレース方法の詳細は，<a href="https://www.nsnam.org/docs/release/3.26/manual/ns-3-manual.pdf">公式マニュアル</a>の1.10節をご参照ください．</p>
 
 <h3 id="ネットワーク構成">ネットワーク構成</h3>
 
@@ -695,6 +698,8 @@
         
         
           <li class="nav-link"><a href="/search/">Search</a>
+        
+        
         
         
         
