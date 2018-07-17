@@ -5,9 +5,94 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Jul 2018 15:58:54 +0900</pubDate>
-    <lastBuildDate>Sun, 15 Jul 2018 15:58:54 +0900</lastBuildDate>
+    <pubDate>Wed, 18 Jul 2018 00:00:38 +0900</pubDate>
+    <lastBuildDate>Wed, 18 Jul 2018 00:00:38 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>7年もののMacBook ProがUbuntu 16.04に生まれ変わった</title>
+        <description>&lt;p&gt;MacBook Pro（13-inch Early 2011）の動作が怪しくなってきた．かれこれ7年以上使っているので，そろそろ寿命なのかもしれない．&lt;a href=&quot;https://www.ubuntu.com/&quot;&gt;Ubuntu 16.04&lt;/a&gt;&lt;sup id=&quot;fnref:lts&quot;&gt;&lt;a href=&quot;#fn:lts&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;をインストールして，第二の人生を歩んでもらうことにした．&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.virment.com/making-installusb-ubuntu-mac/&quot;&gt;MacでubuntuのインストールUSBを作成する方法と手順 - virtualiment&lt;/a&gt;で作成したところ，おそらくフォーマッティングに問題があったため，私の環境ではUSBメモリでブートできなかった．結局，&lt;a href=&quot;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0&quot;&gt;Ubuntu公式チュートリアル&lt;/a&gt;を参考に作業したらうまくいった．&lt;/p&gt;
+
+&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;MacBook Pro（13-inch Early 2011）
+    &lt;ul&gt;
+      &lt;li&gt;プロセッサ：2.7 GHz Intel Core i7&lt;/li&gt;
+      &lt;li&gt;メモリ：8 GB 1333 MHz DDR3&lt;/li&gt;
+      &lt;li&gt;グラフィックス：Intel HD Graphics 3000 512 MB&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;USBメモリ：2GB&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
+
+&lt;h2 id=&quot;usbメモリの準備&quot;&gt;USBメモリの準備&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ディスクユーティリティ&lt;/code&gt;で，当該USBメモリを初期化する．&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;フォーマット：MS-DOS (FAT)&lt;/li&gt;
+  &lt;li&gt;方式：GUIDパーティションマップ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-07-15-disk-utility.png&quot; alt=&quot;disk-utility&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;isoファイルのダウンロード&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;iso&lt;/code&gt;ファイルのダウンロード&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ubuntulinux.jp/News/ubuntu1604-ja-remix&quot;&gt;Ubuntu 16.04 LTS 日本語 Remix リリース - ubuntu japanese team&lt;/a&gt;より，&lt;code class=&quot;highlighter-rouge&quot;&gt;ubuntu-ja-16.04-desktop-amd64.iso&lt;/code&gt;をダウンロード．&lt;/p&gt;
+
+&lt;h2 id=&quot;etcherによる書き込み&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Etcher&lt;/code&gt;による書き込み&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://etcher.io/&quot;&gt;Etcher&lt;/a&gt;をインストールして，起動する．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-07-15-etcher.png&quot; alt=&quot;etcher&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Select image&lt;/code&gt;で&lt;code class=&quot;highlighter-rouge&quot;&gt;ubuntu-ja-16.04-desktop-amd64.iso&lt;/code&gt;を，&lt;code class=&quot;highlighter-rouge&quot;&gt;Select drive&lt;/code&gt;で当該USBメモリを選択肢，&lt;code class=&quot;highlighter-rouge&quot;&gt;Flash!&lt;/code&gt;を押下．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-07-15-etcher-config.png&quot; alt=&quot;etcher-config&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ブート&quot;&gt;ブート&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;option&lt;/code&gt;キーを押しながらMacを起動するが，なぜかUSBメモリが表示されなかった．&lt;a href=&quot;https://support.apple.com/ja-jp/ht202796&quot;&gt;別の起動ディスクを選択する方法 - Apple support&lt;/a&gt;を参考に，以下を実行すて再起動すると，無事表示された．&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/haltaro/3a9637266e9105c5302d88bd99a1e7c8.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;あとは，当該USBメモリを選択し，画面上の指示に従えばUbuntuのインストールが完了した．&lt;/p&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;なんだかんだで，&lt;a href=&quot;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0&quot;&gt;公式チュートリアル&lt;/a&gt;を見るのが一番早かった．&lt;/p&gt;
+
+&lt;p&gt;実は，無線LANに繋がらないという重大な問題が残っているが，これは以前投稿した&lt;a href=&quot;https://haltaro.github.io/2018/06/10/ucom-airmac&quot;&gt;UCOMとAirMacの問題&lt;/a&gt;と絡んでおり根が深い．解決したら改めて記事にする．&lt;/p&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.virment.com/making-installusb-ubuntu-mac/&quot;&gt;MacでubuntuのインストールUSBを作成する方法と手順 - virtualiment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0&quot;&gt;Create a bootable USB stick on macOS - Ubuntu tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:lts&quot;&gt;
+      &lt;p&gt;2018年7月15日時点で，&lt;a href=&quot;https://www.ubuntulinux.jp/News/ubuntu1804-ja-remix&quot;&gt;Ubuntu 18.04 LTS&lt;/a&gt;がリリースされているが，&lt;a href=&quot;https://linuxfan.info/ubuntu-18-04-issues&quot;&gt;まだ結構不具合がある&lt;/a&gt;みたいなので，使い慣れている16.04にした． &lt;a href=&quot;#fnref:lts&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 18 Jul 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/07/18/macos-to-ubuntu</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/18/macos-to-ubuntu</guid>
+        
+        
+        <category>mac</category>
+        
+        <category>linux</category>
+        
+      </item>
     
       <item>
         <title>EC2にJupyter環境を構築する</title>
@@ -1330,57 +1415,6 @@ t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
         <category>machine learning</category>
         
         <category>python</category>
-        
-      </item>
-    
-      <item>
-        <title>OpenSSLが古すぎてbundle updateできない</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://haltaro.github.io/2018/06/16/jekyll-algolia&quot;&gt;Algoliaで全文検索機能を実装&lt;/a&gt;するために&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;を書き換えて&lt;code class=&quot;highlighter-rouge&quot;&gt;$ bundle update&lt;/code&gt;したところ，&lt;code class=&quot;highlighter-rouge&quot;&gt;OpenSSL&lt;/code&gt;が古すぎると叱られた．&lt;a href=&quot;https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions&quot;&gt;How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs&lt;/a&gt;を参考に対応したら解決した．&lt;/p&gt;
-
-&lt;h1 id=&quot;症状&quot;&gt;症状&lt;/h1&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt;したら，次のようなエラーが出た．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/659ab18c1adf3992c6d77d017bd7e370.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;よく見たら，冒頭に以下のような警告が．&lt;code class=&quot;highlighter-rouge&quot;&gt;OpenSSL&lt;/code&gt;のバージョンが古すぎるのが原因らしい．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/553c23ad838f043c81d208afd84b10ab.js&quot;&gt;&lt;/script&gt;
-
-&lt;h1 id=&quot;対応記録&quot;&gt;対応記録&lt;/h1&gt;
-
-&lt;p&gt;ほぼ原因はわかっていたが，念の為&lt;a href=&quot;https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions&quot;&gt;How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs&lt;/a&gt;を参考に以下のテストを実行した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/e337be914ab33cde81fb2313f14e382d.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;すると，案の定，&lt;code class=&quot;highlighter-rouge&quot;&gt;OpenSSL&lt;/code&gt;のバージョンが古いことがわかった．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/a2c798d8d1a2429cb1b42ac81dad3458.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/30741367/ruby-using-wrong-version-of-openssl?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;Ruby using wrong version of openssl&lt;/a&gt;を参考に以下を実行した．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/e9be5079025e1c04f5bd9af81a8cba9b.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;すると&lt;code class=&quot;highlighter-rouge&quot;&gt;brew reinstall openssl&lt;/code&gt;しろと怒られた．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/ffe682173c1cc3c8ae980157bfd73427.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;これで再度&lt;code class=&quot;highlighter-rouge&quot;&gt;$ ruby -ropen-uri -e 'eval open(&quot;https://git.io/vQhWq&quot;).read'&lt;/code&gt;にトライしたが，解決せず．&lt;a href=&quot;https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions&quot;&gt;How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs&lt;/a&gt;のThe Solutionsに記載されている他のコマンドを試してみた．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/98c4a5495aa8acea2232cfab11af960a.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;解決した．&lt;/p&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;Ruby力が低いため，具体的にどのコマンドが解決の鍵だったのかよくわからなかった．ただ，この機会に&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;の違いを理解できたので良かった．&lt;/p&gt;
-</description>
-        <pubDate>Sat, 16 Jun 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/06/16/too-old-openssl</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/16/too-old-openssl</guid>
-        
-        
-        <category>ruby</category>
         
       </item>
     
