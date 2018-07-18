@@ -8,9 +8,7 @@ categories:
  - linux
 ---
 
-MacBook Pro（13-inch Early 2011）の動作が怪しくなってきた．かれこれ7年以上使っているので，そろそろ寿命なのかもしれない．[Ubuntu 16.04](https://www.ubuntu.com/)[^lts]をインストールして，第二の人生を歩んでもらうことにした．
-
-[^lts]: 2018年7月15日時点で，[Ubuntu 18.04 LTS](https://www.ubuntulinux.jp/News/ubuntu1804-ja-remix)がリリースされているが，[まだ結構不具合がある](https://linuxfan.info/ubuntu-18-04-issues)みたいなので，使い慣れている16.04にした．
+MacBook Pro（13-inch Early 2011）の動作が怪しくなってきた．かれこれ7年以上使っているので，そろそろ寿命なのかもしれない．[Ubuntu 16.04](https://www.ubuntu.com/)をインストールして，第二の人生を歩んでもらうことにした．
 
 [MacでubuntuのインストールUSBを作成する方法と手順 - virtualiment](https://www.virment.com/making-installusb-ubuntu-mac/)で作成したところ，おそらくフォーマッティングに問題があったため，私の環境ではUSBメモリでブートできなかった．結局，[Ubuntu公式チュートリアル](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0)を参考に作業したらうまくいった．
 
@@ -35,7 +33,9 @@ MacBook Pro（13-inch Early 2011）の動作が怪しくなってきた．かれ
 
 ## `iso`ファイルのダウンロード
 
-[Ubuntu 16.04 LTS 日本語 Remix リリース - ubuntu japanese team](https://www.ubuntulinux.jp/News/ubuntu1604-ja-remix)より，`ubuntu-ja-16.04-desktop-amd64.iso`をダウンロード．
+[Ubuntu 16.04 LTS 日本語 Remix リリース - ubuntu japanese team](https://www.ubuntulinux.jp/News/ubuntu1604-ja-remix)[^lts]より，`ubuntu-ja-16.04-desktop-amd64.iso`をダウンロード．
+
+[^lts]: 2018年7月15日時点で，[Ubuntu 18.04 LTS](https://www.ubuntulinux.jp/News/ubuntu1804-ja-remix)がリリースされているが，[まだ結構不具合がある](https://linuxfan.info/ubuntu-18-04-issues)みたいなので，使い慣れている16.04にした．
 
 ## `Etcher`による書き込み
 

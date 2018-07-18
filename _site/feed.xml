@@ -5,13 +5,13 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jul 2018 00:00:38 +0900</pubDate>
-    <lastBuildDate>Wed, 18 Jul 2018 00:00:38 +0900</lastBuildDate>
+    <pubDate>Wed, 18 Jul 2018 22:48:09 +0900</pubDate>
+    <lastBuildDate>Wed, 18 Jul 2018 22:48:09 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
         <title>7年もののMacBook ProがUbuntu 16.04に生まれ変わった</title>
-        <description>&lt;p&gt;MacBook Pro（13-inch Early 2011）の動作が怪しくなってきた．かれこれ7年以上使っているので，そろそろ寿命なのかもしれない．&lt;a href=&quot;https://www.ubuntu.com/&quot;&gt;Ubuntu 16.04&lt;/a&gt;&lt;sup id=&quot;fnref:lts&quot;&gt;&lt;a href=&quot;#fn:lts&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;をインストールして，第二の人生を歩んでもらうことにした．&lt;/p&gt;
+        <description>&lt;p&gt;MacBook Pro（13-inch Early 2011）の動作が怪しくなってきた．かれこれ7年以上使っているので，そろそろ寿命なのかもしれない．&lt;a href=&quot;https://www.ubuntu.com/&quot;&gt;Ubuntu 16.04&lt;/a&gt;をインストールして，第二の人生を歩んでもらうことにした．&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.virment.com/making-installusb-ubuntu-mac/&quot;&gt;MacでubuntuのインストールUSBを作成する方法と手順 - virtualiment&lt;/a&gt;で作成したところ，おそらくフォーマッティングに問題があったため，私の環境ではUSBメモリでブートできなかった．結局，&lt;a href=&quot;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0&quot;&gt;Ubuntu公式チュートリアル&lt;/a&gt;を参考に作業したらうまくいった．&lt;/p&gt;
 
@@ -43,7 +43,7 @@
 
 &lt;h2 id=&quot;isoファイルのダウンロード&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;iso&lt;/code&gt;ファイルのダウンロード&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.ubuntulinux.jp/News/ubuntu1604-ja-remix&quot;&gt;Ubuntu 16.04 LTS 日本語 Remix リリース - ubuntu japanese team&lt;/a&gt;より，&lt;code class=&quot;highlighter-rouge&quot;&gt;ubuntu-ja-16.04-desktop-amd64.iso&lt;/code&gt;をダウンロード．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.ubuntulinux.jp/News/ubuntu1604-ja-remix&quot;&gt;Ubuntu 16.04 LTS 日本語 Remix リリース - ubuntu japanese team&lt;/a&gt;&lt;sup id=&quot;fnref:lts&quot;&gt;&lt;a href=&quot;#fn:lts&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;より，&lt;code class=&quot;highlighter-rouge&quot;&gt;ubuntu-ja-16.04-desktop-amd64.iso&lt;/code&gt;をダウンロード．&lt;/p&gt;
 
 &lt;h2 id=&quot;etcherによる書き込み&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Etcher&lt;/code&gt;による書き込み&lt;/h2&gt;
 
