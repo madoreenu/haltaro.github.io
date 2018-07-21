@@ -5,9 +5,117 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jul 2018 22:48:09 +0900</pubDate>
-    <lastBuildDate>Wed, 18 Jul 2018 22:48:09 +0900</lastBuildDate>
+    <pubDate>Sat, 21 Jul 2018 22:37:50 +0900</pubDate>
+    <lastBuildDate>Sat, 21 Jul 2018 22:37:50 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>Trevor Hastie，統計的学習の基礎：2章，教師あり学習の基礎</title>
+        <description>&lt;p&gt;夏休みの宿題として，&lt;a href=&quot;http://amzn.asia/ay0yxvo&quot;&gt;Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―&lt;/a&gt;を勉強している．以下は，&lt;strong&gt;第2章：教師あり学習の概要&lt;/strong&gt; のメモ．&lt;/p&gt;
+
+&lt;h1 id=&quot;変数の種類と用語&quot;&gt;変数の種類と用語&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;順序付きカテゴリカル変数：値の順序のみに意味があり，計量としての意味がない変数．&lt;/li&gt;
+  &lt;li&gt;記法：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;：入力変数．&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;：量的な出力．&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt;：質的な出力．&lt;/li&gt;
+      &lt;li&gt;変数そのものを指す場合は大文字（&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;），観測値を指す場合は小文字（&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;）．&lt;/li&gt;
+      &lt;li&gt;行列を指す場合は太字の大文字（&lt;script type=&quot;math/tex&quot;&gt;\mathbf{X}&lt;/script&gt;），ベクトルを指す場合は，単なる大文字（&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;）．&lt;/li&gt;
+      &lt;li&gt;ベクトル&lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;番目の要素の&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;個の観測値をまとめてベクトルで表す場合は，太字で表す（&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_i&lt;/script&gt;）．&lt;/li&gt;
+      &lt;li&gt;予測値を指す場合は，ハットを用いる（&lt;script type=&quot;math/tex&quot;&gt;\hat{Y}&lt;/script&gt;）．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;予測のための二つの簡単なアプローチ最近傍法&quot;&gt;予測のための二つの簡単なアプローチ：最近傍法&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;データ数が&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;の&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt;最近傍法において，有効パラメータ数は&lt;script type=&quot;math/tex&quot;&gt;N/k&lt;/script&gt;．&lt;/li&gt;
+  &lt;li&gt;最近傍法の拡張：
+    &lt;ul&gt;
+      &lt;li&gt;最近傍法では各点の重みを&lt;script type=&quot;math/tex&quot;&gt;\{0, 1\}&lt;/script&gt;で表すが，カーネル平滑化では滑らかな連続変数で表す．&lt;/li&gt;
+      &lt;li&gt;高次元データの場合，距離尺度を特徴づけるカーネルに修正を加える．&lt;/li&gt;
+      &lt;li&gt;最近傍法では近傍領域を定数モデルで表すが，局所重み付け最小二乗法を用いた局所線形モデルでは線形モデルで表す．&lt;/li&gt;
+      &lt;li&gt;入力変数を基底展開して線形モデルを構築すると任意の複雑なモデルを構築できる．&lt;/li&gt;
+      &lt;li&gt;射影追跡法やニューラルネットワークは，非線形変換と線形モデルを構築したもの．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;統計的決定理論&quot;&gt;統計的決定理論&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;期待予測誤差（Expected Prediction Error）：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{EPE}(f) = \int \left(y - f(x) \right)^2 \mathrm{Pr} (dx, dy)&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;EPEを最小化するのは，条件付き期待値：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{E}(Y \mid X=x)&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;条件付け：同時分布を&lt;script type=&quot;math/tex&quot;&gt;\mathrm{Pr}(X, Y) = \mathrm{Pr}(Y \mid X)\mathrm{Pr}(X)&lt;/script&gt;のように分解すること．&lt;/li&gt;
+  &lt;li&gt;十分な大きさの訓練データが得られれば，&lt;script type=&quot;math/tex&quot;&gt;\hat{f}(x) \rightarrow \mathrm{E}(Y \mid X=x)&lt;/script&gt;となり，万能な近似モデルとなる．&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathrm{card}(\mathcal{G})&lt;/script&gt;は，集合&lt;script type=&quot;math/tex&quot;&gt;\mathcal{G}&lt;/script&gt;の要素数を表す．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;高次元での局所的手法&quot;&gt;高次元での局所的手法&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;バイアス-分散分解．平均二乗誤差（MSE）を分解すると，次のようになる．&lt;script type=&quot;math/tex&quot;&gt;\mathrm{MSE}(x_0) = \mathrm{E}_{\tau}[f(x_0)-\hat{y}_0]^2 = \mathrm{Var}_{\tau}(\hat{y}_0) + \mathrm{Bias}^2(\hat{y}_0)&lt;/script&gt;．ここで，&lt;script type=&quot;math/tex&quot;&gt;\tau&lt;/script&gt;は訓練データ集合を表す．&lt;/li&gt;
+  &lt;li&gt;制限の強い仮定に基づく線形モデルと，柔軟な最近傍法は両極端な性質を持つ．以降，これらの中間的な性質を持つ方法を学ぶ．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;統計モデル教師あり学習関数近似&quot;&gt;統計モデル，教師あり学習，関数近似&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;線形基底展開：&lt;script type=&quot;math/tex&quot;&gt;f_{\theta}(x) = \sum_{k=1}^{K}h_k (x) \theta_k&lt;/script&gt;．
+    &lt;ul&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;h_k&lt;/script&gt;は入力ベクトル&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;に関する関数や変換を表す．&lt;/li&gt;
+      &lt;li&gt;ニューラルネットワークはこの一種であり，&lt;script type=&quot;math/tex&quot;&gt;h_k(x) = \frac{1}{1 + \mathrm{exp}(-x^{T}\beta_k)}&lt;/script&gt;．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;残差二乗和（RSS; Sum of Squared Residuals）：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{RSS}(\theta) = \sum_{i=1}^N (y_i - f_{\theta}(x_i))^2&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;最尤推定：対数尤度関数を最大化するパラメータ&lt;script type=&quot;math/tex&quot;&gt;\theta&lt;/script&gt;を採用する．
+    &lt;ul&gt;
+      &lt;li&gt;量的出力：&lt;script type=&quot;math/tex&quot;&gt;L(\theta) = \sum_{i=1}^N \mathrm{log} \mathrm{Pr}_{\theta} (y_i)&lt;/script&gt;を最小化する．ここで，&lt;script type=&quot;math/tex&quot;&gt;\mathrm{Pr}_{\theta}(y_i)&lt;/script&gt;は，パラメータ&lt;script type=&quot;math/tex&quot;&gt;\theta&lt;/script&gt;で特徴づけられた&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;の確率密度関数．加法的誤差モデル（&lt;script type=&quot;math/tex&quot;&gt;Y = f_{\theta} (X) + \epsilon&lt;/script&gt;）において，&lt;script type=&quot;math/tex&quot;&gt;\epsilon \sim \mathcal{N}(0, \sigma^2)&lt;/script&gt;ならば，最尤推定は最小二乗法と等価になる．&lt;/li&gt;
+      &lt;li&gt;質的出力：&lt;script type=&quot;math/tex&quot;&gt;L(\theta) = \sum_{i=1}^N \mathrm{log} p_{g_i, \theta} (x_i)&lt;/script&gt;を最小化する．ここで，&lt;script type=&quot;math/tex&quot;&gt;p_{k, \theta} (x) = \mathrm{Pr}(G=\mathcal{G}_k \mid X=x)&lt;/script&gt;．交差エントロピーとも呼ぶ．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;構造化回帰モデル&quot;&gt;構造化回帰モデル&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;残差二乗和&lt;script type=&quot;math/tex&quot;&gt;\mathrm{RSS}(f) = \sum_{i=1}^N (y_i - f(x_i))^2&lt;/script&gt;に基づいて関数&lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;を推定するとする．&lt;/li&gt;
+  &lt;li&gt;データ数&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;が有限の場合，関数&lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;を一意に求めるために，学習に対して制約を設ける．
+    &lt;ul&gt;
+      &lt;li&gt;制約の強さ：近傍領域の大きさ．&lt;/li&gt;
+      &lt;li&gt;制約の複雑さ：近傍領域で想定する規則性．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;等方性の小さい領域を近傍とする局所的な方法は，どのようなものであっても高次元データにうまく適用できない．&lt;/li&gt;
+  &lt;li&gt;ノンパラメトリックな推定のためには，大きく分けて３つの方法がある．
+    &lt;ul&gt;
+      &lt;li&gt;粗度に対する罰則：残差二乗和にペナルティ項を追加する．&lt;script type=&quot;math/tex&quot;&gt;\mathrm{PRSS}(f; \lambda) = \mathrm{RSS}(f) + \lambda J(f)&lt;/script&gt;．射影追跡回帰や正則化など．ベイジアンの枠組みで理解することができる．&lt;/li&gt;
+      &lt;li&gt;カーネル関数による局所関数近似：近傍領域をカーネル関数で表現し，明示的に回帰関数や条件付き期待値を推定する．&lt;/li&gt;
+      &lt;li&gt;Dictionary method：基底関数を用いて関数を表現する．&lt;script type=&quot;math/tex&quot;&gt;f_{\theta}(x) = \sum_{m=1}^M \theta_m h_m (x)&lt;/script&gt;．&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;モデル選択とバイアスと分散のトレードオフ&quot;&gt;モデル選択と，バイアスと分散のトレードオフ&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;モデルの複雑度が増すと分散が増え，複雑度が減るとバイアスが増える．&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 20 Jul 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/07/20/esl-02</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/20/esl-02</guid>
+        
+        
+        <category>machine learning</category>
+        
+        <category>statistics</category>
+        
+      </item>
     
       <item>
         <title>7年もののMacBook ProがUbuntu 16.04に生まれ変わった</title>
@@ -1339,82 +1447,6 @@ t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
         
         
         <category>machine learning</category>
-        
-      </item>
-    
-      <item>
-        <title>PythonとLight GBMで遊ぶNotebookを作った</title>
-        <description>&lt;p&gt;知り合いから「プログラミングしたことないけどLight GBMを使ってみたい．2時間くらいで教えてくれ」と言われた．2時間だと理論面をカバーするのは難しいので，とりあえず触ってみることを目標に，Pythonおよび関連ライブラリの基礎（のさらにごく一部）でさくっと遊ぶ&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm&quot;&gt;Notebook&lt;/a&gt;を作った．勉強会当日は一緒に動かしながらレクチャーする予定．&lt;/p&gt;
-
-&lt;h1 id=&quot;対象者&quot;&gt;対象者&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;統計的な専門用語（平均，分散，相関係数，平均二乗誤差，等々）に馴染みがある．&lt;/li&gt;
-  &lt;li&gt;Excelでデータ分析をしたことがある．&lt;/li&gt;
-  &lt;li&gt;Pythonどころか，プログラミング自体の経験がない．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;初学者を対象とするため，用語の厳密さよりもわかりやすさを重視した．&lt;/p&gt;
-
-&lt;h1 id=&quot;レポジトリ&quot;&gt;レポジトリ&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm&quot;&gt;haltaro/intro-to-lightgbm - GitHub&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;make_dataipynb&quot;&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm/blob/master/20180616.make_data.ipynb&quot;&gt;make_data.ipynb&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;データ加工を行う自分用のNotebook．Bostonデータは，&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;から直接ダウンロードできるが，より実務に近い使い方をしてもらうため，一旦csvファイルに加工した．また，回帰問題だけでなく識別問題にも触れてもらいたいということで&lt;code class=&quot;highlighter-rouge&quot;&gt;seaborn&lt;/code&gt;から&lt;code class=&quot;highlighter-rouge&quot;&gt;titanic&lt;/code&gt;をcsvファイルとして保存した．カテゴリカル変数は，その対応方法も体験して欲しかったので敢えてそのまま残している&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
-
-&lt;h1 id=&quot;intro_to_pythonipynb&quot;&gt;&lt;a href=&quot;https://github.com/haltaro/intro-to-lightgbm/blob/master/20180617.intro_to_python.ipynb&quot;&gt;intro_to_python.ipynb&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;Pythonの基本の基本から，&lt;code class=&quot;highlighter-rouge&quot;&gt;numpy&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;pandas&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;，そして&lt;code class=&quot;highlighter-rouge&quot;&gt;lightgbm&lt;/code&gt;で遊べる構成にした．以下はその詳細である．&lt;/p&gt;
-
-&lt;h2 id=&quot;jupyter-notebook&quot;&gt;Jupyter notebook&lt;/h2&gt;
-
-&lt;p&gt;そもそもJupyter notebookに馴染みがないと思うので，簡単に操作方法を記載した．&lt;/p&gt;
-
-&lt;h2 id=&quot;python基本の基本&quot;&gt;Python：基本の基本&lt;/h2&gt;
-
-&lt;p&gt;時間に限りがあるので，データ分析に特化して，四則演算，変数への代入，リスト操作，ループ，条件分岐について記載した．これでなんとなくわかった気になってほしい．&lt;/p&gt;
-
-&lt;h2 id=&quot;numpy&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;numpy&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;ベクトル，行列，および統計量の計算方法を記載した．&lt;/p&gt;
-
-&lt;h2 id=&quot;matplotlib&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;折れ線グラフ，散布図，棒グラフ，ヒストグラムの表示方法を記載した．&lt;/p&gt;
-
-&lt;h2 id=&quot;pandas&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pandas&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;データの読み込み，統計量の計算，ソート，フィルタリング，&lt;code class=&quot;highlighter-rouge&quot;&gt;numpy.array&lt;/code&gt;への変換方法等を記載した．&lt;/p&gt;
-
-&lt;h2 id=&quot;sklearn&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;線形回帰モデル&lt;code class=&quot;highlighter-rouge&quot;&gt;LinearRegressor&lt;/code&gt;や平均絶対誤差の計算方法を記載した．&lt;/p&gt;
-
-&lt;h2 id=&quot;lightgbm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lightgbm&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;学習方法，ハイパーパラメータのチューニング方法などを記載した．&lt;/p&gt;
-
-&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
-
-&lt;p&gt;これで十分だとは全く思っていないが，なんとなく雰囲気を掴む程度のものはできたと思う．これをきっかけに興味を持ってくれたら嬉しい．勉強会でフィードバックがあったらNotebookを修正したい．&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;結局，時間切れで&lt;code class=&quot;highlighter-rouge&quot;&gt;titanic&lt;/code&gt;データで遊ぶ部分は作れなかった． &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sun, 17 Jun 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/06/17/intro-to-lightgbm</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/17/intro-to-lightgbm</guid>
-        
-        
-        <category>machine learning</category>
-        
-        <category>python</category>
         
       </item>
     
