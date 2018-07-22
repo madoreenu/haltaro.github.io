@@ -117,7 +117,7 @@ Downloadフォルダの`data.csv`を年代ごとに改名し，`data/raw/`以下
 
 ![scatter_ave]({{site.baseurl}}/assets/2018-07-22-scatter_ave.png)
 
-直近150年間で平均気温がじわじわ上がっていく様子がわかる．Prophetでより詳細に分析する．
+140年間で平均気温がじわじわ上がっていく様子がわかる．Prophetでより詳細に分析する．
 
 <script src="https://gist.github.com/haltaro/8db481c9a3d67d30a03c4d5291f49848.js"></script>
 
@@ -132,7 +132,7 @@ Prophetで時系列解析を行うためには，以下のカラムを持つ`pan
 
 <script src="https://gist.github.com/haltaro/efab9762d4911e1d6115e960cb1064f4.js"></script>
 
-予測結果を`m.plot()`でプロットする．約150年分プロットするとわけがわからないので，直近1年分のみを表示するようにする．
+予測結果を`m.plot()`でプロットする．約140年分プロットするとわけがわからないので，直近1年分のみを表示するようにする．
 
 <script src="https://gist.github.com/haltaro/f1f726cd4f0b2e0013e1cab948cd5029.js"></script>
 
