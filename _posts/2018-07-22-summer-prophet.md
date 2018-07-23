@@ -27,7 +27,7 @@ $$
 y(t) = g(t) + s(t) + h(t) + \epsilon(t)
 $$
 
-ここで，$$y(t)$$は時刻$$t$$における予測値，$$g(t)$$は時刻$$t$$におけるトレンド成分，$$s(t)$$は時刻$$t$$における周期成分，$$h(t)$$は時刻$$t$$における週末などのイレギュラーな成分，そして$$\epsilon(t)$$は誤差を表す．各成分のパラメーを[Stan](http://mc-stan.org/)で推定し，モデルを学習する．詳細なモデルは，原論文（[Sean J. Taylor and Benjamin Letham, Forecasting at Scale](https://peerj.com/preprints/3190.pdf)）を参照されたい．
+ここで，$$y(t)$$は時点$$t$$における予測値，$$g(t)$$は時点$$t$$におけるトレンド成分，$$s(t)$$は時点$$t$$における周期成分，$$h(t)$$は時点$$t$$における週末などのイレギュラーな成分，そして$$\epsilon(t)$$は時点$$t$$における誤差を表す．各成分のパラメータを[Stan](http://mc-stan.org/)で推定し，モデルを学習する．詳細なモデルは，原論文（[Sean J. Taylor and Benjamin Letham, Forecasting at Scale](https://peerj.com/preprints/3190.pdf)）を参照されたい．
 
 Prophetに関する日本語の記事としては，以下のようなものがある．とても参考になる．
 
