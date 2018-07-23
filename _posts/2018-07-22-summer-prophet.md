@@ -7,7 +7,7 @@ categories:
  - statistics
 ---
 
-2018年7月22日，東京の最高気温は36.5度で，今年最高を更新した．あまりに暑くてムシャクシャしたので，[気象庁](http://www.data.jma.go.jp/gmd/risk/obsdl/index.php)から約140年分（1872年1月1日-2018年7月21日）の東京の気温データを入手し，[Prophet](https://facebook.github.io/prophet/)で分析した．平均・最高・最低気温の全てに関して，1920年付近から上昇し続けており，そのトレンドを考慮してもなお，ここ数日は特に暑いことを確認できた．
+2018年7月22日，東京の最高気温は36.5度となり，今年最高を更新した．あまりに暑くてムシャクシャしたので，[気象庁](http://www.data.jma.go.jp/gmd/risk/obsdl/index.php)から約140年分（1872年1月1日-2018年7月21日）の東京の気温データを入手し，[Prophet](https://facebook.github.io/prophet/)で分析した．平均・最高・最低気温の全てに関して，1920年付近から上昇し続けており，そのトレンドを考慮してもなお，ここ数日は特に暑いことを確認できた．
 
 なお，分析に用いたNotebookは[こちら](https://github.com/haltaro/summer-prophet)．
 
@@ -21,21 +21,31 @@ categories:
 
 ## 特徴
 
-[Prophet](https://facebook.github.io/prophet/)とは，Facebookが開発したオープンソースの時系列解析ライブラリである．詳細は以下が詳しい．
+[Prophet](https://facebook.github.io/prophet/)とは，Facebookが開発したオープンソースの時系列解析ライブラリ．Prophetで想定するモデルを以下に示す：
+
+$$
+y(t) = g(t) + s(t) + h(t) + \epsilon(t)
+$$
+
+ここで，$$y(t)$$は時刻$$t$$における予測値，$$g(t)$$は時刻$$t$$におけるトレンド成分，$$s(t)$$は時刻$$t$$における周期成分，$$h(t)$$は時刻$$t$$における週末などのイレギュラーな成分，そして$$\epsilon(t)$$は誤差を表す．各成分のパラメーを[Stan](http://mc-stan.org/)で推定し，モデルを学習する．詳細なモデルは，原論文（[Sean J. Taylor and Benjamin Letham, Forecasting at Scale](https://peerj.com/preprints/3190.pdf)）を参照されたい．
+
+Prophetに関する日本語の記事としては，以下のようなものがある．とても参考になる．
 
 - [Prophet: forecasting at scale - Facebook](https://facebook.github.io/prophet/)
 - [Prophet入門【Python編】Facebookの時系列予測ツール - SlideShare](https://www.slideshare.net/hoxo_m/prophet-facebook-76285278)
 - [Facebookの予測ライブラリProphetを用いたトレンド抽出と変化点検知 - Gunosyデータ分析ブログ](https://data.gunosy.io/entry/change-point-detection-prophet)
 
-Prophetの良いところは，前提知識がなくても，誰でも簡単に時系列解析ができること．
+Prophetの特徴は，時系列解析の前提知識がなくても，誰でも簡単に一定水準の分析をできること．
 
 ## インストール
 
 今回はPythonからProphetを使う．[pip](https://pypi.org/project/pip/)でインストールする場合は，`pip install fbprophet`，[conda](https://conda.readthedocs.io/en/latest/)でインストールする場合は，`conda install -c conda-forge fbprophet`．
 
-# データの入手
+# 準備
 
-[過去の気象データ・ダウンロード - 気象庁](https://www.data.jma.go.jp/gmd/risk/obsdl/index.php#)からcsvデータをダウンロードした．
+## データの入手
+
+[過去の気象データ・ダウンロード - 気象庁](https://www.data.jma.go.jp/gmd/risk/obsdl/index.php#)からcsvデータをダウンロードする．
 
 - 地点：東京
 - 項目：
@@ -43,7 +53,7 @@ Prophetの良いところは，前提知識がなくても，誰でも簡単に�
   + 気温（平均気温，最高気温，最低気温）
 - 期間：1872年1月1日 - 2018年7月21日（53528日）
 
-以下，詳細である．まず，以下の画面で都道府県および地区を選択する．
+まず，以下の画面で都道府県および地区を選択する．
 
 ![area]({{site.baseurl}}/assets/2018-07-22-area.png)
 
@@ -73,21 +83,21 @@ Downloadフォルダの`data.csv`を年代ごとに改名し，`data/raw/`以下
 - `data_2000.csv`
 - `data_2010.csv`
 
-# モジュールのインポート
+## モジュールのインポート
 
 <script src="https://gist.github.com/haltaro/d5a8585a393c0c03a8958c5cb57e88e4.js"></script>
 
-# データの前処理
+## データの前処理
 
 <script src="https://gist.github.com/haltaro/914eb08e9cfaa0ec4efeb6761329f292.js"></script>
 
 以下で，詳細を補足する．
 
-## `codecs.open`
+### `codecs.open`
 
 `Shift-JIS`で作成されているため，普通に`pandas.read_csv()`でファイルを読み込めない．[pandasでread_csv時にUnicodeDecodeErrorが起きた時の対処 (pd.read_table()) - Qiita](https://qiita.com/niwaringo/items/d2a30e04e08da8eaa643)を参考に，`codecs.open()`を利用する．
 
-## 不要な行・列を除外
+### 不要な行・列を除外
 
 元データをそのまま読み込むと，以下のように不要な行・列が含まれてしまう．
 
@@ -95,7 +105,7 @@ Downloadフォルダの`data.csv`を年代ごとに改名し，`data/raw/`以下
 
 そこで，[`pandas.read_table()`](https://pandas.pydata.org/pandas-docs/version/0.23/generated/pandas.read_table.html)のパラメータ`skiprows`と`usecols`を用いて，分析に必要な部分のみ抽出する．
 
-## すべて`np.nan`の行は削除
+### すべて`np.nan`の行は削除
 
 気象庁のサイト上では1872年1月1日から指定可能だったが，最初の数年分はデータが含まれていなかった．`pandas.DataFrame.dropna(how='all')`で，すべての値が`np.nan`の行を削除する．これにより全体の約2%にあたる1272日分のデータが除外された．
 
@@ -174,7 +184,7 @@ Prophetで時系列解析を行うためには，以下のカラムを持つ`pan
 
 # 感想
 
-地学の知識が中学理科で止まっている私でも，比較的簡単に地球温暖化を確認することができた[^donbiki]．Prophetすごい．
+地学の知識が中学理科で止まっている私でも，比較的簡単に地球温暖化の様子を確認することができた[^donbiki]．Prophetすごい．
 
 あと，この記事を書き終わるころ，東洋経済さんの素晴らしい記事を見つけた（[東京の夏が｢昔より断然暑い｣決定的な裏づけ: 過去140年の最高気温をビジュアル化 - 東洋経済オンライン](https://toyokeizai.net/articles/-/229965)）[^trend]．こんなにわかりやすいヒートマップを初めて見た．いつかこんなビジュアライゼーションをしてみたい．
 

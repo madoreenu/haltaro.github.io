@@ -5,15 +5,15 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Jul 2018 21:59:56 +0900</pubDate>
-    <lastBuildDate>Sun, 22 Jul 2018 21:59:56 +0900</lastBuildDate>
+    <pubDate>Mon, 23 Jul 2018 11:17:29 +0900</pubDate>
+    <lastBuildDate>Mon, 23 Jul 2018 11:17:29 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
         <title>あまりに暑いのでProphetで140年分の気温を分析した</title>
-        <description>&lt;p&gt;2018年7月22日，東京の最高気温は36.5度で，今年最高を更新した．あまりに暑くてムシャクシャしたので，&lt;a href=&quot;http://www.data.jma.go.jp/gmd/risk/obsdl/index.php&quot;&gt;気象庁&lt;/a&gt;から約140年分（1872年1月1日-2018年7月21日）の東京の気温データを入手し，&lt;a href=&quot;https://facebook.github.io/prophet/&quot;&gt;Prophet&lt;/a&gt;で分析した．平均・最高・最低気温の全てに関して，1920年付近から上昇し続けており，そのトレンドを考慮してもなお，ここ数日は特に暑いことを確認できた．&lt;/p&gt;
+        <description>&lt;p&gt;2018年7月22日，東京の最高気温は36.5度となり，今年最高を更新した．あまりに暑くてムシャクシャしたので，&lt;a href=&quot;http://www.data.jma.go.jp/gmd/risk/obsdl/index.php&quot;&gt;気象庁&lt;/a&gt;から約140年分（1872年1月1日-2018年7月21日）の東京の気温データを入手し，&lt;a href=&quot;https://facebook.github.io/prophet/&quot;&gt;Prophet&lt;/a&gt;で分析した．平均・最高・最低気温の全てに関して，1920年付近から上昇し続けており，そのトレンドを考慮してもなお，ここ数日は特に暑いことを確認できた．&lt;/p&gt;
 
-&lt;p&gt;なお，分析に用いたNotebookは&lt;a href=&quot;&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
+&lt;p&gt;なお，分析に用いたNotebookは&lt;a href=&quot;https://github.com/haltaro/summer-prophet&quot;&gt;こちら&lt;/a&gt;．&lt;/p&gt;
 
 &lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
 
@@ -27,7 +27,13 @@
 
 &lt;h2 id=&quot;特徴&quot;&gt;特徴&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://facebook.github.io/prophet/&quot;&gt;Prophet&lt;/a&gt;とは，Facebookが開発したオープンソースの時系列解析ライブラリである．詳細は以下が詳しい．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://facebook.github.io/prophet/&quot;&gt;Prophet&lt;/a&gt;とは，Facebookが開発したオープンソースの時系列解析ライブラリ．Prophetで想定するモデルを以下に示す：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y(t) = g(t) + s(t) + h(t) + \epsilon(t)&lt;/script&gt;
+
+&lt;p&gt;ここで，&lt;script type=&quot;math/tex&quot;&gt;y(t)&lt;/script&gt;は時刻&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;における予測値，&lt;script type=&quot;math/tex&quot;&gt;g(t)&lt;/script&gt;は時刻&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;におけるトレンド成分，&lt;script type=&quot;math/tex&quot;&gt;s(t)&lt;/script&gt;は時刻&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;における周期成分，&lt;script type=&quot;math/tex&quot;&gt;h(t)&lt;/script&gt;は時刻&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;における週末などのイレギュラーな成分，そして&lt;script type=&quot;math/tex&quot;&gt;\epsilon(t)&lt;/script&gt;は誤差を表す．各成分のパラメーを&lt;a href=&quot;http://mc-stan.org/&quot;&gt;Stan&lt;/a&gt;で推定し，モデルを学習する．詳細なモデルは，原論文（&lt;a href=&quot;https://peerj.com/preprints/3190.pdf&quot;&gt;Sean J. Taylor and Benjamin Letham, Forecasting at Scale&lt;/a&gt;）を参照されたい．&lt;/p&gt;
+
+&lt;p&gt;Prophetに関する日本語の記事としては，以下のようなものがある．とても参考になる．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://facebook.github.io/prophet/&quot;&gt;Prophet: forecasting at scale - Facebook&lt;/a&gt;&lt;/li&gt;
@@ -35,15 +41,17 @@
   &lt;li&gt;&lt;a href=&quot;https://data.gunosy.io/entry/change-point-detection-prophet&quot;&gt;Facebookの予測ライブラリProphetを用いたトレンド抽出と変化点検知 - Gunosyデータ分析ブログ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Prophetの良いところは，前提知識がなくても，誰でも簡単に時系列解析ができること．&lt;/p&gt;
+&lt;p&gt;Prophetの特徴は，時系列解析の前提知識がなくても，誰でも簡単に一定水準の分析をできること．&lt;/p&gt;
 
 &lt;h2 id=&quot;インストール&quot;&gt;インストール&lt;/h2&gt;
 
 &lt;p&gt;今回はPythonからProphetを使う．&lt;a href=&quot;https://pypi.org/project/pip/&quot;&gt;pip&lt;/a&gt;でインストールする場合は，&lt;code class=&quot;highlighter-rouge&quot;&gt;pip install fbprophet&lt;/code&gt;，&lt;a href=&quot;https://conda.readthedocs.io/en/latest/&quot;&gt;conda&lt;/a&gt;でインストールする場合は，&lt;code class=&quot;highlighter-rouge&quot;&gt;conda install -c conda-forge fbprophet&lt;/code&gt;．&lt;/p&gt;
 
-&lt;h1 id=&quot;データの入手&quot;&gt;データの入手&lt;/h1&gt;
+&lt;h1 id=&quot;準備&quot;&gt;準備&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.data.jma.go.jp/gmd/risk/obsdl/index.php#&quot;&gt;過去の気象データ・ダウンロード - 気象庁&lt;/a&gt;からcsvデータをダウンロードした．&lt;/p&gt;
+&lt;h2 id=&quot;データの入手&quot;&gt;データの入手&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.data.jma.go.jp/gmd/risk/obsdl/index.php#&quot;&gt;過去の気象データ・ダウンロード - 気象庁&lt;/a&gt;からcsvデータをダウンロードする．&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;地点：東京&lt;/li&gt;
@@ -56,7 +64,7 @@
   &lt;li&gt;期間：1872年1月1日 - 2018年7月21日（53528日）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;以下，詳細である．まず，以下の画面で都道府県および地区を選択する．&lt;/p&gt;
+&lt;p&gt;まず，以下の画面で都道府県および地区を選択する．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/2018-07-22-area.png&quot; alt=&quot;area&quot; /&gt;&lt;/p&gt;
 
@@ -88,21 +96,21 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;data_2010.csv&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;モジュールのインポート&quot;&gt;モジュールのインポート&lt;/h1&gt;
+&lt;h2 id=&quot;モジュールのインポート&quot;&gt;モジュールのインポート&lt;/h2&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/d5a8585a393c0c03a8958c5cb57e88e4.js&quot;&gt;&lt;/script&gt;
 
-&lt;h1 id=&quot;データの前処理&quot;&gt;データの前処理&lt;/h1&gt;
+&lt;h2 id=&quot;データの前処理&quot;&gt;データの前処理&lt;/h2&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/914eb08e9cfaa0ec4efeb6761329f292.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;以下で，詳細を補足する．&lt;/p&gt;
 
-&lt;h2 id=&quot;codecsopen&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;codecs.open&lt;/code&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;codecsopen&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;codecs.open&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Shift-JIS&lt;/code&gt;で作成されているため，普通に&lt;code class=&quot;highlighter-rouge&quot;&gt;pandas.read_csv()&lt;/code&gt;でファイルを読み込めない．&lt;a href=&quot;https://qiita.com/niwaringo/items/d2a30e04e08da8eaa643&quot;&gt;pandasでread_csv時にUnicodeDecodeErrorが起きた時の対処 (pd.read_table()) - Qiita&lt;/a&gt;を参考に，&lt;code class=&quot;highlighter-rouge&quot;&gt;codecs.open()&lt;/code&gt;を利用する．&lt;/p&gt;
 
-&lt;h2 id=&quot;不要な行列を除外&quot;&gt;不要な行・列を除外&lt;/h2&gt;
+&lt;h3 id=&quot;不要な行列を除外&quot;&gt;不要な行・列を除外&lt;/h3&gt;
 
 &lt;p&gt;元データをそのまま読み込むと，以下のように不要な行・列が含まれてしまう．&lt;/p&gt;
 
@@ -110,7 +118,7 @@
 
 &lt;p&gt;そこで，&lt;a href=&quot;https://pandas.pydata.org/pandas-docs/version/0.23/generated/pandas.read_table.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pandas.read_table()&lt;/code&gt;&lt;/a&gt;のパラメータ&lt;code class=&quot;highlighter-rouge&quot;&gt;skiprows&lt;/code&gt;と&lt;code class=&quot;highlighter-rouge&quot;&gt;usecols&lt;/code&gt;を用いて，分析に必要な部分のみ抽出する．&lt;/p&gt;
 
-&lt;h2 id=&quot;すべてnpnanの行は削除&quot;&gt;すべて&lt;code class=&quot;highlighter-rouge&quot;&gt;np.nan&lt;/code&gt;の行は削除&lt;/h2&gt;
+&lt;h3 id=&quot;すべてnpnanの行は削除&quot;&gt;すべて&lt;code class=&quot;highlighter-rouge&quot;&gt;np.nan&lt;/code&gt;の行は削除&lt;/h3&gt;
 
 &lt;p&gt;気象庁のサイト上では1872年1月1日から指定可能だったが，最初の数年分はデータが含まれていなかった．&lt;code class=&quot;highlighter-rouge&quot;&gt;pandas.DataFrame.dropna(how='all')&lt;/code&gt;で，すべての値が&lt;code class=&quot;highlighter-rouge&quot;&gt;np.nan&lt;/code&gt;の行を削除する．これにより全体の約2%にあたる1272日分のデータが除外された．&lt;/p&gt;
 
@@ -137,7 +145,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/2018-07-22-scatter_ave.png&quot; alt=&quot;scatter_ave&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;直近150年間で平均気温がじわじわ上がっていく様子がわかる．Prophetでより詳細に分析する．&lt;/p&gt;
+&lt;p&gt;140年間で平均気温がじわじわ上がっていく様子がわかる．Prophetでより詳細に分析する．&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/8db481c9a3d67d30a03c4d5291f49848.js&quot;&gt;&lt;/script&gt;
 
@@ -154,7 +162,7 @@
 
 &lt;script src=&quot;https://gist.github.com/haltaro/efab9762d4911e1d6115e960cb1064f4.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;予測結果を&lt;code class=&quot;highlighter-rouge&quot;&gt;m.plot()&lt;/code&gt;でプロットする．約150年分プロットするとわけがわからないので，直近1年分のみを表示するようにする．&lt;/p&gt;
+&lt;p&gt;予測結果を&lt;code class=&quot;highlighter-rouge&quot;&gt;m.plot()&lt;/code&gt;でプロットする．約140年分プロットするとわけがわからないので，直近1年分のみを表示するようにする．&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/haltaro/f1f726cd4f0b2e0013e1cab948cd5029.js&quot;&gt;&lt;/script&gt;
 
@@ -192,7 +200,7 @@
 
 &lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
 
-&lt;p&gt;地学の知識が中学理科で止まっている私でも，比較的簡単に地球温暖化を確認することができた&lt;sup id=&quot;fnref:donbiki&quot;&gt;&lt;a href=&quot;#fn:donbiki&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;．Prophetすごい．&lt;/p&gt;
+&lt;p&gt;地学の知識が中学理科で止まっている私でも，比較的簡単に地球温暖化の様子を確認することができた&lt;sup id=&quot;fnref:donbiki&quot;&gt;&lt;a href=&quot;#fn:donbiki&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;．Prophetすごい．&lt;/p&gt;
 
 &lt;p&gt;あと，この記事を書き終わるころ，東洋経済さんの素晴らしい記事を見つけた（&lt;a href=&quot;https://toyokeizai.net/articles/-/229965&quot;&gt;東京の夏が｢昔より断然暑い｣決定的な裏づけ: 過去140年の最高気温をビジュアル化 - 東洋経済オンライン&lt;/a&gt;）&lt;sup id=&quot;fnref:trend&quot;&gt;&lt;a href=&quot;#fn:trend&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;．こんなにわかりやすいヒートマップを初めて見た．いつかこんなビジュアライゼーションをしてみたい．&lt;/p&gt;
 
