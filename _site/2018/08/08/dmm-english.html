@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTTPS+トークンで複数のGitHubアカウントを制御する</title>
-  <meta name="description" content="複数のGitHubアカウントを制御したい．SSHの秘密鍵を複数管理する方法もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，HTTPSとトークンを使用する方法が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．">
+  <title>DMM英会話受講メモ：2018年7月</title>
+  <meta name="description" content="DMM英会話の受講メモ．9回/31日なので，1/3以下．もう少し頑張りたいところ．">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,12 +51,12 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="複数のGitHubアカウントを制御したい．SSHの秘密鍵を複数管理する方法もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，HTTPSとトークンを使用する方法が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．" />
+  <meta property="og:description" content="DMM英会話の受講メモ．9回/31日なので，1/3以下．もう少し頑張りたいところ．" />
   <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
-  <meta property="og:title" content="HTTPS+トークンで複数のGitHubアカウントを制御する" />
+  <meta property="og:title" content="DMM英会話受講メモ：2018年7月" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://localhost:4000/assets/2018-02-24-woods.jpg" />
+  <meta property="og:image" content="http://localhost:4000/assets/2017-08-03-english.jpg" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -65,9 +65,9 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="HTTPS+トークンで複数のGitHubアカウントを制御する">
-  <meta name="twitter:description" content="複数のGitHubアカウントを制御したい．SSHの秘密鍵を複数管理する方法もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，HTTPSとトークンを使用する方法が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．">
-  <meta name="twitter:image" content="http://localhost:4000/assets/2018-02-24-woods.jpg">
+  <meta name="twitter:title" content="DMM英会話受講メモ：2018年7月">
+  <meta name="twitter:description" content="DMM英会話の受講メモ．9回/31日なので，1/3以下．もう少し頑張りたいところ．">
+  <meta name="twitter:image" content="http://localhost:4000/assets/2017-08-03-english.jpg">
   <meta name="twitter:url" content="http://localhost:4000">
   
 
@@ -75,7 +75,7 @@
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2018/02/24/github-token">
+  <link rel="canonical" href="http://localhost:4000/2018/08/08/dmm-english">
   <link rel="alternate" type="application/rss+xml" title="Memotaro" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -156,10 +156,10 @@
     <div class="page-content">
         <div class="post">
 
-<div class="post-header-container has-cover" style="background-image: url(/assets/2018-02-24-woods.jpg);">
+<div class="post-header-container has-cover" style="background-image: url(/assets/2017-08-03-english.jpg);">
   <div class="scrim has-cover">
     <header class="post-header">
-      <h1 class="title">HTTPS+トークンで複数のGitHubアカウントを制御する</h1>
+      <h1 class="title">DMM英会話受講メモ：2018年7月</h1>
       <!--<p class="info">by <strong></strong></p>-->
     </header>
   </div>
@@ -170,60 +170,95 @@
 
 
 <section class="post-meta">
-  <div class="post-date">February 24, 2018</div>
+  <div class="post-date">August 8, 2018</div>
   <div class="post-categories">
   in 
     
-    <a href="/categories/#github">Github</a>
+    <a href="/categories/#english">English</a>
     
   
   </div>
 </section>
 
 <article class="post-content">
-  <p>複数のGitHubアカウントを制御したい．<a href="https://dev.classmethod.jp/tool/github-ssh-sub-account-setting/">SSHの秘密鍵を複数管理する方法</a>もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，<a href="https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139">HTTPSとトークンを使用する方法</a>が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．</p>
+  <p><a href="http://eikaiwa.dmm.com/">DMM英会話</a>の受講メモ．9回/31日なので，1/3以下．もう少し頑張りたいところ．</p>
 
-<h1 id="手順">手順</h1>
-
-<p>全面的に<a href="https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139">https+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiita</a>に従う．</p>
-
-<h2 id="githubアクセストークンの作成">GitHubアクセストークンの作成</h2>
-
-<p>所望のGitHubアカウントにログインし，<a href="https://github.com/settings/developers"><code class="highlighter-rouge">Settings &gt; Developer settings</code></a>から<code class="highlighter-rouge">Personal access tokens</code>を選択する．</p>
-
-<p><img src="/assets/2018-02-24-github-token.png" alt="github" /></p>
-
-<p><code class="highlighter-rouge">Generate new token</code>を押す．</p>
-
-<p><img src="/assets/2018-02-24-github-options.png" alt="github" /></p>
-
-<p><code class="highlighter-rouge">Token description</code>に，用途がわかるような名前をつける．<code class="highlighter-rouge">Select scopes</code>で，アクセス権を指定できる．とりあえず<code class="highlighter-rouge">repo</code>にチェックしとけば良さそう<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>．私の場合，Gistをウェブサイトに埋め込むことがあるので，<code class="highlighter-rouge">gist</code>にもチェックを入れる．これでページ下部の<code class="highlighter-rouge">Generate token</code>を押す．表示されるトークンをクリップボードにコピーする．</p>
-
-<h2 id="リポジトリをクローン">リポジトリをクローン</h2>
-
-<p>次のフォーマットで，リポジトリをクローンする．</p>
-
-<script src="https://gist.github.com/haltaro/82a7e2f6628df832e0ba78aca62a9865.js"></script>
-
-<p>アカウント名を使い分ける場合は，以下の設定を忘れずに．</p>
-
-<script src="https://gist.github.com/haltaro/b23267dfbd159ace2178f805380e48ad.js"></script>
-
-<p>あとは，何も考えずに<code class="highlighter-rouge">git</code>を使えば良い．</p>
-
-<h1 id="参考">参考</h1>
+<h1 id="20180702">20180702</h1>
 
 <ul>
-  <li><a href="https://dev.classmethod.jp/tool/github-ssh-sub-account-setting/">【メモ】githubの複数アカウントにSSH接続するための設定手順 - Developers.IO</a>：SSHを使った方法</li>
-  <li><a href="https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139">https+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiita</a>：HTTPS＋トークンを使った方法</li>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/first-ever-live-computer-human-debate-who-won/pQlh5HVWEeisU3utWASHDw">First Ever Live Computer-Human Debate: Who Won?</a></li>
+  <li>outsmart: to defeat someone by being more clever</li>
+  <li>persuasive: able to make people believe in what you say</li>
+  <li>ネット接続が不安定すぎて，全然会話が続かない．そろそろ本気でルーターの設定を見直すべき．</li>
 </ul>
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>他のはよくわからない． <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+
+<h1 id="20180705">20180705</h1>
+
+<ul>
+  <li>忙しかったので，10分だけフリートークしてもらった．</li>
+</ul>
+
+<h1 id="20180707">20180707</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/artificial-intelligence-used-to-track-worlds-wildlife/6JmNqnqpEeipU5OB2yBDmA">Artificial Intelligence Used to Track World’s Wildlife</a></li>
+  <li>mate: to breed and produce young</li>
+  <li>breeding ground: a place where animals go to produce young</li>
+  <li>range: the area in which an animal lives, hunts, or travels</li>
+  <li>めちゃくちゃ優しい先生で，楽しかった．</li>
+</ul>
+
+<h1 id="20180708">20180708</h1>
+
+<ul>
+  <li>接続が悪くて，10分くらいしか授業を受けられなかった．とりあえずフリートークしてもらった．</li>
+</ul>
+
+<h1 id="20180713">20180713</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/longest-lunar-eclipse-of-century-to-occur-in-july/cgirtn9fEeimg2ubzO6URA">Longest Lunar Eclipse of Century to Occur in July</a></li>
+  <li>astronomical: relating to the sun, moon, and stars</li>
+  <li>reddish: 赤らんだ</li>
+  <li>glow: （赤い）光，輝き</li>
+  <li>PCを変えたら，問題なくスカイプできた．</li>
+</ul>
+
+<h1 id="20180715">20180715</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/how-to-make-money-playing-video-games/XS8xaHEkEei427cG-Yiqeg">How to Make Money Playing Video Games</a></li>
+  <li>fanbase: the fans of a particular person, group, team, etc.</li>
+  <li>raw talent: natural ability</li>
+  <li>no-brainer: something that requires very little thought</li>
+  <li>distinction: a difference or contrast between two things</li>
+  <li>頭の回転が速い先生で，とても楽しかった．</li>
+</ul>
+
+<h1 id="20180721">20180721</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/scientists-find-possible-meteorite-pieces-in-ocean/O8xMVoRLEeiDMbNa2zYUwg">Scientists Find Possible Meteorite Pieces in Ocean</a></li>
+  <li>meteorite：a piece of rock from space that has landed on earth</li>
+  <li>submarine：潜水艦</li>
+  <li>一週間ぶりの英会話．</li>
+</ul>
+
+<h1 id="20180727">20180727</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/scientists-say-early-risers-live-longer-but-why/k8pqoouXEeiDzf_NESPayw">Scientists Say Early Risers Live Longer, but Why?</a></li>
+  <li>lady’s fingers: オクラ</li>
+  <li>一週間ぶりの英会話（再び）．</li>
+</ul>
+
+<h1 id="20180729">20180729</h1>
+
+<ul>
+  <li><a href="https://app.eikaiwa.dmm.com/daily-news/article/us-man-wins-right-to-post-3-d-printed-gun-plans-online/7-L0NIwGEeiPPQ9dUUFRvg">U.S. Man Wins Right to Post 3-D Printed Gun Plans Online</a></li>
+  <li>traficking: the buying and selling of illegal goods</li>
+  <li>なぜ日本で一般市民が銃を保有するのが違法なのか，という問いに，論理的に答えられなかった．日本語でも難しい．</li>
+</ul>
 
 </article>
 
