@@ -170,6 +170,103 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/02/24/github-token">HTTPS+トークンで複数のGitHubアカウントを制御する</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>複数のGitHubアカウントを制御したい．SSHの秘密鍵を複数管理する方法もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，HTTPSとトークンを使用する方法が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．
+
+手順
+
+全面的にhttps+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiitaに従う．
+
+GitHubアクセストークンの作成
+
+所望のGitHubアカウントにログインし，Settings &gt; Developer settingsからPersonal access tokensを選択する．
+
+
+
+Generate new tokenを押す．
+
+
+
+Token descriptionに，用途がわかるような名前をつける．Select scopesで，アクセス権を指定できる．とりあえずrepoにチェックしとけば良さそう1．私の場合，Gistをウェブサイトに埋め込むことがあるので，gistにもチェックを入れる．これでページ下部のGenerate tokenを押す．表示されるトークンをクリップボードにコピーする．
+
+リポジトリをクローン
+
+次のフォーマットで，リポジトリをクローンする．
+
+
+
+アカウント名を使い分ける場合は，以下の設定を忘れずに．
+
+
+
+あとは，何も考えずにgitを使えば良い．
+
+参考
+
+
+  【メモ】githubの複数アカウントにSSH接続するための設定手順 - Developers.IO：SSHを使った方法
+  https+アクセストークンを使ってGitHubのアカウントを使い分ける - Qiita：HTTPS＋トークンを使った方法
+
+
+  
+    
+      他のはよくわからない． &#8617;
+    
+  
+
+</p>-->
+      <p><p>複数のGitHubアカウントを制御したい．<a href="https://dev.classmethod.jp/tool/github-ssh-sub-account-setting/">SSHの秘密鍵を複数管理する方法</a>もあるが，設定が結構大変で私には荷が重い．いろいろ調べた結果，<a href="https://qiita.com/tq_jappy/items/6e2f81f372e4abaa5139">HTTPSとトークンを使用する方法</a>が手軽で良さそう．毎回検索するのが面倒なので，メモしておく．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">February 24, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#github">Github</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/02/18/effective-python">Brett Slatkin，Effective Python</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>更新中：Brett Slatkin，Effective Python ―Pythonプログラムを改良する59項目を読む．Pythonを効率的に書くための59のヒントが紹介されている． 特に心に残った項目を以下にまとめる．Jupyter notebookはこちら． 1章．Pythonic thinking リスト内包表記には，3つ以上の式を避ける リスト内包表記に毒されすぎて，もとの表記の何がわかりづらいのか，また修正された表記でわかりやすくなったのかピンとこない．気をつけないと． 大きな内包表記にはジェネレータ式を考える イテレータとジェネレータについては，Pythonのイテレータとジェネレータ - Qiitaがわかりやすい． try/except/else/finallyの各ブロックを活用する except：エラーが補足された場合の処理． else：エラーが捕捉されなかった場合の処理． finally：エラーの捕捉にかかわらず，最後に実行される処理． 2章．関数 Noneを返すよりは例外を選ぶ Noneと，0や空白文字などの他の値がすべて条件式においてFalseと評価されるため，エラーを引き起こしやすい．それはそうと，raise from構文がよくわからない．あとで確認しよう． クロージャが変数スコープとどう関わるか知っておく クロージャとは，関数内の変数の名前解決が，その関数が宣言されたときのスコープで行われるもの．Python Tips： Python でクロージャを使いたい - Life with pythonがとてもわかりやすい． ちなみにここで登場した特殊メソッド__call__(self)は，クラスのインスタンスを関数っぽく呼び出したときに動作するもの．Pythonのクラスにおける__call__メソッドの使い方 - Qiitaがわかりやすい． リストを返さずにジェネレータを返すことを考える これはやってしまいがち．例えばtext中の単語のインデックスを返す関数は次のように定義できる．su ジェネレータを使うと，リストで返すよりもコードが明確になる．また，作業メモリに全ての入出力を保持する必要がないので，どのような長さの入力に対しても出力シーケンスを生成できる． 引数に対してイテレータを使うときには確実さを尊ぶ StopIteration例外が起きたあとのジェネレータをもう一度反復した場合，難の例外も発生しない．つまり，出力のないイテレータと，出力があったが尽きてしまったイテレータを区別できない． よって，関数にイテレータを渡した場合，奇妙な振る舞いや欠損値を生む可能性がある．コンテナとイテレータを区別する方法として，組み込み関数iter()に二度突っ込んで同じ結果が出るか確認する方法がある． イテレータとジェネレータとコンテナの関係については，Python: ジェネレータをイテレータから理解する - CUBE SUGAR CONTAINERがわかりやすい． 可変長引数を使って，見た目をすっきりさせる def function(*arg)と定義すると，引数は可変長であり，内部でタプルとして処理される．またdef function(**arg)と定義すると，やはり引数は可変長であり，内部で辞書型として処理される．pythonの引数にある*hogeとか**mapとか...</p>-->
+      <p><p><i class="fa fa-spinner"></i> <strong>更新中</strong>：<a href="http://amzn.asia/gDvdj6b">Brett Slatkin，Effective Python ―Pythonプログラムを改良する59項目</a>を読む．<a href="https://www.python.org/">Python</a>を効率的に書くための59のヒントが紹介されている．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">February 18, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#python">Python</a>, 
+        
+      
+        
+        <a href="/categories/#books">Books</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/02/17/fish">Ubuntu 16.04にFish環境を構築する</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -242,134 +339,6 @@
       in 
         
         <a href="/categories/#jekyll">Jekyll</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/02/04/chatbot">チャットボットを作ろう：3．CSS修正</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>BotUIを本サイトのAboutページに埋め込んだが，会話が長くなると二重にスライドバーが表示されて使いづらい．そこで，BotUIのCSSを修正することにした．
-
-
-  2018/02/11追記：このあと，本サイトのJekyll themeをEasyBookからCentrariumに変更した．詳細はJekyll themeをCentrariumに変更する - Memotaroを参照されたい．
-
-
-以下は修正前の動作．他に何か質問ありますかあたりから，二重にスライドバーが表示されてしまう．
-
-
-以下は修正後の動作．他に何か質問ありますか以降もスライドバーが出現することはない．
-
-
-
-関連記事はこちら：
-
-
-  チャットボットを作ろう：1．調査
-  チャットボットを作ろう：2．JekyllサイトでBotUI
-  チャットボットを作ろう：3．CSS修正
-
-
-環境
-
-
-  Easybook：本サイトで利用しているJekyllのテーマ．
-  BotUI：JavaScriptだけで動くチャットボットライブラリ．
-
-
-手順
-
-BotUIのCSSとJavaScriptをローカルに保存
-
-ローカルでBotUIを実行するのに必要なファイルをGitHubからダウンロードする．公式ドキュメントによると，botui.min.cssとbotui-theme-default.cssとbotui.min.jsがあれば良さそう1．Easybookのディレクトリ構造を鑑み，それぞれcss/およびjs/配下に保存する．
-
-botui.min.cssを修正
-
-.botui-app-containerのheight:500pxをコメントアウトし，高さ制限をなくす．
-
-
-
-_include/head.htmlを修正
-
-CDNではなく，ローカルのbotui.min.cssとbotui-theme-default.cssを参照する．
-
-
-
-_layouts/bot.htmlを修正
-
-CDNではなく，ローカルのbotui.jsを参照する．
-
-
-
-結果
-
-こんな感じになった．
-
-
-
-参考
-
-
-  BotUIインストールガイド
-
-
-  
-    
-      試行錯誤の結果，botui.min.cssをいじるだけで問題は解決できることが判明したので，全てをダウンロードする必要はなかった． &#8617;
-    
-  
-
-</p>-->
-      <p><p><a href="https://github.com/botui/botui">BotUI</a>を本サイトの<a href="https://haltaro.github.io/about/">Aboutページ</a>に埋め込んだが，会話が長くなると二重にスライドバーが表示されて使いづらい．そこで，BotUIのCSSを修正することにした．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">February 4, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#javascript">Javascript</a>, 
-        
-      
-        
-        <a href="/categories/#css">Css</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/01/07/digital-marketing-retire">CourceraのDigital marketing講座を退会した</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>2017年10月頃から，Courcera，Marketing in a digital worldを受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は11,000円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている． 背景 2018年1月から広告業界に転職することが決まったため，マーケティングの基礎について，ほそぼそと書籍で勉強することにした．2017年12月末まで前の会社で働いていたので，退職準備を進めつつ，通勤中や土日に時間を作った． 武井由紀子，ユーザ中心ウェブビジネス戦略 コトラー，アームストロング，恩藏のマーケティング原理 古川一郎，マーケティング・サイエンス入門 佐藤達郎，「これからの広告」の教科書 本田哲也，田端信太郎，広告やメディアで人を動かそうとするのは、もう諦めなさい。 書籍を斜め読みしてわかったことは，技術の移り変わりがとても速い業界である，ということ．マーケティングの大家であるコトラー氏は，内容が陳腐化しているため，自分の古い著書にサインを求められても応じない，という逸話があるくらい．最先端の動向をキャッチアップするためには，書籍だけでなく，MOOC（Massive Open Online Course）等のオンライン講座も併用した方が良いと判断した． マーケティングに関するMOOCを検索したところ，CourceraのMarketing in a digital worldの評判が良いことがわかった．月額約5,500円の有料講座だが，週8時間ほど勉強すれば，4週間で終わるらしい．5,500円であれば技術書を買うのと変わらないので，2017年10月頃受講を開始した． 今から考えると，退職準備や中途入社準備を進めながら，週8時間確保できるという読みが甘すぎた．結局2ヶ月かけても修了できず，入社日を迎えて時間切れとなった． 講義 受講記録は以下： Courcera，Marketing in a digital world：1. Product Courcera，Marketing in a digital world：2. Promotion Courcera, Marketing in a digital world：3. Placement Courcera, Marketing in a digital world：4. Price...</p>-->
-      <p><p>2017年10月頃から，<a href="https://www.coursera.org/learn/marketing-digital">Courcera，Marketing in a digital world</a>を受講していたが，退会することにした．転職先の業界の予習のために始めた講座だった．週10時間確保できれば1ヶ月で修了できる予定だったが，転職関連の手続きもあり，60%程度の進捗で時間切れとなった．受講料は11,000円ほどだったが，まだ書籍化されていないような，業界の最新動向の一端を知ることができたため，受講してよかったと思っている．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">January 7, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#marketing">Marketing</a>, 
-        
-      
-        
-        <a href="/categories/#moocs">Moocs</a>
         
       
       </div>

@@ -5,9 +5,235 @@
     <description>I'm haltaro, a data scientist at an advertising agency in Tokyo, Japan. I love machine learning, marketing science, network engineering and shiba-inu:)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Aug 2018 18:14:04 +0900</pubDate>
-    <lastBuildDate>Wed, 08 Aug 2018 18:14:04 +0900</lastBuildDate>
+    <pubDate>Mon, 17 Sep 2018 20:46:26 +0900</pubDate>
+    <lastBuildDate>Mon, 17 Sep 2018 20:46:26 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>時間制約付き巡回セールスマン問題について調査した</title>
+        <description>&lt;p&gt;時間制約付き巡回セールスマン問題（TSP-TW: Traveling Salesman Problem with Time Window constraint）について調査した．TSP-TWは，各点の訪問時間に制約のある巡回セールスマン問題（TSP: Traveling Salesman Problem）で，NP困難に属する．時間帯指定のある宅配業者の経路最適化など，実応用が期待される研究分野である．&lt;/p&gt;
+
+&lt;p&gt;近似解法としては，アントコロニー法を始めとするメタヒューリスティクスが提案されている．厳密解法としては，整数線形計画問題による定式化が提案されている．&lt;/p&gt;
+
+&lt;h1 id=&quot;巡回セールスマン問題&quot;&gt;巡回セールスマン問題&lt;/h1&gt;
+
+&lt;p&gt;まず，TSP-TWのベースとなる，TSPについてまとめる．&lt;/p&gt;
+
+&lt;h2 id=&quot;定義&quot;&gt;定義&lt;/h2&gt;
+
+&lt;p&gt;TSPは，&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;個のノードを一度ずつ訪れて最初のノードに戻ってくる&lt;sup id=&quot;fnref:open&quot;&gt;&lt;a href=&quot;#fn:open&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;，最短の巡回路を求める問題である．対称TSP（任意の二ノード間の距離が対称）の場合，巡回路の総数は&lt;script type=&quot;math/tex&quot;&gt;\frac{(n-1)!}{2}&lt;/script&gt;であり，ノード数が30以上になると最適解を求めるのは現実的に困難である．&lt;/p&gt;
+
+&lt;h2 id=&quot;厳密解法&quot;&gt;厳密解法&lt;/h2&gt;
+
+&lt;p&gt;TSPを整数計画問題として定式化すれば，小規模な問題であれば厳密解を求められる．定式化のバリエーションとして，以下の三種類を見つけた&lt;sup id=&quot;fnref:formulation&quot;&gt;&lt;a href=&quot;#fn:formulation&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;ので，それぞれ紹介する．なお，以下では簡単のため無向グラフ&lt;script type=&quot;math/tex&quot;&gt;G=(V, E)&lt;/script&gt;，つまり対称TSPを想定するが，それぞれ容易に非対称TSPに拡張可能である．&lt;/p&gt;
+
+&lt;h3 id=&quot;接続行列を用いた定式化&quot;&gt;接続行列を用いた定式化&lt;/h3&gt;
+
+&lt;p&gt;まずは，&lt;a href=&quot;http://amzn.asia/d/am1lVUK&quot;&gt;参考文献[1]&lt;/a&gt;で紹介されていたもの．&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+\mathrm{Minimize:} &amp; \mathbf{c}^{T}\mathbf{x} &amp; \tag{1.1}\\
+\mathrm{Subject~to:} &amp; \mathbf{A}\mathbf{x} = \mathbf{2} &amp; \tag{1.2}\\
+&amp; \sum_{e \in E(W)} x(e) \leq |W| - 1, &amp;W \subset V, W \neq \emptyset \tag{1.3}\\
+&amp; x(e) = \{0, 1\}, &amp;e \in E \tag{1.4}
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;ただし，&lt;script type=&quot;math/tex&quot;&gt;e \in E&lt;/script&gt;はエッジ，&lt;script type=&quot;math/tex&quot;&gt;\mathbf{c} \in \mathbb{R}^{\mid E \mid}&lt;/script&gt;は各要素&lt;script type=&quot;math/tex&quot;&gt;c(e)&lt;/script&gt;がエッジ&lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt;の距離に対応する所与のベクトル，&lt;script type=&quot;math/tex&quot;&gt;\mathbf{A} \in \mathbb{R}^{\mid V \mid \times \mid E \mid}&lt;/script&gt;は所与の接続行列である．ここで接続行列&lt;script type=&quot;math/tex&quot;&gt;\mathbf{A}&lt;/script&gt;の各行はノード&lt;script type=&quot;math/tex&quot;&gt;v \in V&lt;/script&gt;に，各列はエッジ&lt;script type=&quot;math/tex&quot;&gt;e \in E&lt;/script&gt;に対応しており，ノード&lt;script type=&quot;math/tex&quot;&gt;v&lt;/script&gt;がエッジ&lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt;の端点なら&lt;script type=&quot;math/tex&quot;&gt;A_{ve}=1&lt;/script&gt;，そうでなければ&lt;script type=&quot;math/tex&quot;&gt;A_{ve}=0&lt;/script&gt;となる．&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x} \in \mathbb{R}^{\mid E \mid}&lt;/script&gt;は各要素&lt;script type=&quot;math/tex&quot;&gt;x(e)&lt;/script&gt;がエッジ&lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt;が巡回路に含まれるかどうかを表す変数であり，TSPではこれを最適化する．&lt;/p&gt;
+
+&lt;p&gt;式(1.3)は部分巡回路除去制約と呼ばれ，全点を通らない部分的な巡回路を防ぐためのものである．&lt;/p&gt;
+
+&lt;h3 id=&quot;距離行列を用いた定式化&quot;&gt;距離行列を用いた定式化&lt;/h3&gt;
+
+&lt;p&gt;次に，&lt;a href=&quot;https://qiita.com/panchovie/items/6509fb54e3d53f4766aa&quot;&gt;参考文献[2]&lt;/a&gt;で紹介されていたもの．&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+\mathrm{Minimize:} &amp; \sum_{ij}c_{ij}x_{ij} &amp; \tag{2.1}\\
+\mathrm{Subject~to:} &amp; \sum_{j}x_{ij} = 1, &amp; i \in V \tag{2.2}\\
+&amp; \sum_{i}x_{ij} = 1, &amp; j \in V \tag{2.3}\\
+&amp; u_i + 1 - M (1 - x_{ij}) \leq u_j, &amp; i, j \in V \tag{2.4}\\
+&amp; 1 \leq u_i \leq |V| -1, &amp; i \in V \tag{2.5}\\
+&amp; x_{ij} \in \{0, 1\}, &amp; i, j \in V \tag{2.6}
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;ただし，&lt;script type=&quot;math/tex&quot;&gt;i, j \in V&lt;/script&gt;はノード，&lt;script type=&quot;math/tex&quot;&gt;c_{ij} \in \mathbb{R}&lt;/script&gt;はノード&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;-&lt;script type=&quot;math/tex&quot;&gt;j&lt;/script&gt;間の所与の距離，&lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt;は十分大きな数であれば何でも良い．また，&lt;script type=&quot;math/tex&quot;&gt;x_{ij} \in \mathbb{R}&lt;/script&gt;はノード&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;-&lt;script type=&quot;math/tex&quot;&gt;j&lt;/script&gt;間を結ぶエッジが巡回路に含まれるかどうかを表す変数，&lt;script type=&quot;math/tex&quot;&gt;u_{i} \in \mathbb{R}&lt;/script&gt;はノード&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;の訪問順序を表す変数であり，TSPではこれらを最適化する．&lt;/p&gt;
+
+&lt;p&gt;式(2.4)は，式(1.3)と同様に部分巡回路を除去するための制約式であり，ポテンシャル制約と呼ばれる．&lt;/p&gt;
+
+&lt;h3 id=&quot;到着時刻を用いた定式化&quot;&gt;到着時刻を用いた定式化&lt;/h3&gt;
+
+&lt;p&gt;最後に，&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S2212567115009260&quot;&gt;参考文献[3]&lt;/a&gt;で提案されていた，TSP-TW向けの定式化から，時間帯制約を抜いて単純化したもの&lt;sup id=&quot;fnref:revise&quot;&gt;&lt;a href=&quot;#fn:revise&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+\mathrm{Minimize:~} &amp; x_{n+1} \tag{3.1}\\
+\mathrm{Subject~to:~} &amp; x_{i} \geq t_{0i}, &amp; i \in \{1, 2, \dots , n\} \tag{3.2} \\
+&amp; x_{n+1} - x_{i} \geq t_{i0}, &amp; i \in \{1, 2, \dots , n\} \tag{3.3} \\
+&amp; x_{i} - x_{j} \geq t_{ij} - My_{ij}, &amp; i,j \in \{1, 2, \dots , n\} \tag{3.4} \\
+&amp; x_{j} - x_{i} \geq t_{ij} - M(1-y_{ij}), &amp; i,j \in \{1, 2, \dots , n\} \tag{3.5} \\
+&amp; y_{ij} \in \{0, 1 \}, &amp; i,j \in \{1, 2, \dots , n\} \tag{3.6} \\
+
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;ここで，&lt;script type=&quot;math/tex&quot;&gt;i, j \in V&lt;/script&gt;はノードのインデックス，&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;は始点と終点を除いたノード数，&lt;script type=&quot;math/tex&quot;&gt;t_{ij} \in \mathbb{R}&lt;/script&gt;はノード&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;-&lt;script type=&quot;math/tex&quot;&gt;j&lt;/script&gt;間の所与の移動時間，&lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt;は十分大きな数であれば何でも良い．また，&lt;script type=&quot;math/tex&quot;&gt;x_{i} \in \mathbb{R}&lt;/script&gt;はノード&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;への到着時刻を表す変数，&lt;script type=&quot;math/tex&quot;&gt;y_{ij} \in \mathbb{R}&lt;/script&gt;はダミー変数であり，TSPではこれらを最適化する．&lt;/p&gt;
+
+&lt;p&gt;式(3.4)および式(3.5)は，以下の非線形制約条件を無理やり線形化したものである．&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\left| x_{i} - x_{j} \right| \geq t_{ij}, ~~ i \in \{2, 3, \dots , n\}, 1 \leq j &lt; j %]]&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;近似解法&quot;&gt;近似解法&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://amzn.asia/d/am1lVUK&quot;&gt;参考文献[1]&lt;/a&gt;によると，切除平面法で一旦TSPをLPに緩和し，次に変数が整数条件を満たすように，有効な一次不等式を加えていくらしい．&lt;/p&gt;
+
+&lt;p&gt;メタヒューリスティクスとしては，遺伝的アルゴリズムや量子アニーリングなどが使われているみたい．必要があれば，別途記事にするかもしれない．&lt;/p&gt;
+
+&lt;h1 id=&quot;時間制約付き巡回セールスマン問題&quot;&gt;時間制約付き巡回セールスマン問題&lt;/h1&gt;
+
+&lt;h2 id=&quot;定義-1&quot;&gt;定義&lt;/h2&gt;
+
+&lt;p&gt;TSP-TWは，TSPの各ノードに到着時刻の制約を付けて拡張したものである．&lt;/p&gt;
+
+&lt;h2 id=&quot;厳密解法-1&quot;&gt;厳密解法&lt;/h2&gt;
+
+&lt;p&gt;線形な定式化は，私の調べたところ，&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S2212567115009260&quot;&gt;参考文献[3]&lt;/a&gt;しか見つからなかった．&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+\mathrm{Minimize:~} &amp; x_{n+1} \tag{4.1}\\
+\mathrm{Subject~to:~} &amp; x_{i} \geq t_{0i}, &amp; i \in \{1, 2, \dots , n\} \tag{4.2} \\
+&amp; x_{n+1} - x_{i} \geq t_{i0}, &amp; i \in \{1, 2, \dots , n\} \tag{4.3} \\
+&amp; x_{i} \geq a_{i}, &amp; i \in \{1, 2, \dots , n\} \tag{4.4} \\
+&amp; x_{i} \leq b_{i}, &amp; i \in \{1, 2, \dots , n\} \tag{4.5} \\
+&amp; x_{i} - x_{j} \geq t_{ij} - My_{ij}, &amp; i,j \in \{1, 2, \dots , n\} \tag{4.6} \\
+&amp; x_{j} - x_{i} \geq t_{ij} - M(1-y_{ij}), &amp; i,j \in \{1, 2, \dots , n\} \tag{4.7} \\
+&amp; y_{ij} \in \{0, 1 \}, &amp; i,j \in \{1, 2, \dots , n\} \tag{4.8} \\
+
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;ここで，&lt;script type=&quot;math/tex&quot;&gt;i, j \in V&lt;/script&gt;はノードのインデックス，&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;は始点と終点を除いたノード数，&lt;script type=&quot;math/tex&quot;&gt;t_{ij} \in \mathbb{R}&lt;/script&gt;はノード&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;-&lt;script type=&quot;math/tex&quot;&gt;j&lt;/script&gt;間の所与の移動時間，&lt;script type=&quot;math/tex&quot;&gt;a_{i} \in \mathbb{R}&lt;/script&gt;はノード&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;の所与の訪問可能開始時刻，&lt;script type=&quot;math/tex&quot;&gt;b_{i} \in \mathbb{R}&lt;/script&gt;はノード&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;の所与の訪問可能終了時刻，&lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt;は十分大きな数であれば何でも良い．また，&lt;script type=&quot;math/tex&quot;&gt;x_{i} \in \mathbb{R}&lt;/script&gt;はノード&lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;への到着時刻を表す変数，&lt;script type=&quot;math/tex&quot;&gt;y_{ij} \in \mathbb{R}&lt;/script&gt;はダミー変数であり，TSPではこれらを最適化する．&lt;/p&gt;
+
+&lt;p&gt;式(3.1)-(3.6)との違いは，時間帯制約を表す式(4.4)および式(4.5)である．&lt;/p&gt;
+
+&lt;h2 id=&quot;近似解法-1&quot;&gt;近似解法&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.semanticscholar.org/paper/A-Review-of-Traveling-Salesman-Problem-with-Time-Kona-Burde/008e3540e9a6c80f38794be3384b106ee8579194&quot;&gt;参考文献[4]&lt;/a&gt;によると，主に動的計画法（&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0969601600000216&quot;&gt;参考文献[5]&lt;/a&gt;，&lt;a href=&quot;https://pubsonline.informs.org/doi/abs/10.1287/ijoc.1110.0456&quot;&gt;[8]&lt;/a&gt;，&lt;a href=&quot;https://www.semanticscholar.org/paper/A-Bi-directional-Resource-bounded-Dynamic-Approach-Li/8638fda3fefb9b2e103ad0b6d8acd1e4d14121bd&quot;&gt;[10]&lt;/a&gt;），Compressed annealing法（&lt;a href=&quot;https://pubsonline.informs.org/doi/abs/10.1287/ijoc.1050.0145?journalCode=ijoc&quot;&gt;参考文献[6]&lt;/a&gt;，&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S1568494613001658&quot;&gt;[9]&lt;/a&gt;），Ant colony法（&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0895717707000507&quot;&gt;参考文献[7]&lt;/a&gt;，&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S1568494613001658&quot;&gt;[9]&lt;/a&gt;）などを使ったアプローチが提案されているようだ．&lt;/p&gt;
+
+&lt;h1 id=&quot;感想&quot;&gt;感想&lt;/h1&gt;
+
+&lt;p&gt;実用上，非常に面白い問題だが，意外と論文数は多くなかった&lt;sup id=&quot;fnref:search&quot;&gt;&lt;a href=&quot;#fn:search&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
+
+&lt;h1 id=&quot;参考文献&quot;&gt;参考文献&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.asia/d/am1lVUK&quot;&gt;藤澤克樹，他，応用に役立つ50の最適化問題，2009&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/panchovie/items/6509fb54e3d53f4766aa&quot;&gt;Qiita，巡回セールスマン問題から始まる数理最適化&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S2212567115009260&quot;&gt;I. Kara and T. Derya, Formulations for minimizing tour duration fo the traveling salesman problem with time windows, Procedia Economics and Finance 26 (2015) 1026 -1034, 2015&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.semanticscholar.org/paper/A-Review-of-Traveling-Salesman-Problem-with-Time-Kona-Burde/008e3540e9a6c80f38794be3384b106ee8579194&quot;&gt;H. Kona, A review of traveling salesman problem with time window constraint, IJIRST Volume 2, Issue 01, 2015&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0969601600000216&quot;&gt;K. Fagerholt and M. Christiansen, A traveling salesman problem with allocation, time window and precedence constraints-an application to ship scheduling, International Transactions in Operational Research, Vol 7, Issue 3, pp 231-244, 2000&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pubsonline.informs.org/doi/abs/10.1287/ijoc.1050.0145?journalCode=ijoc&quot;&gt;J. W. Ohlmann and B. W. Thomas, Compressed-annealing heuristic for the traveling salesman problem with time windows, Informs Journal on Computing, vol 19, Issue 1, 2007&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0895717707000507&quot;&gt;C.-B. Cheng and C.-P. Mao, A modified ant colony system for solving the travelling salesman problem with time windows, Mathematical and Computer Modeling, Vol 46, Issue 9-10, pp. 1225-1235, 2007&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pubsonline.informs.org/doi/abs/10.1287/ijoc.1110.0456&quot;&gt;R. Baldacci, et al., New state-space relaxations for solving the traveling salesman problem with time windows, Informs Journal on Computing, Vol 24, Issue 3, 2011&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S1568494613001658&quot;&gt;M. L.-Ibanez, et al., The travelling salesman problem with time windows: adapting algorithms from travel-time to makespan optimization, Applied Soft Computing, Vol 13, Issue 9, pp. 3806-3815, 2013&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.semanticscholar.org/paper/A-Bi-directional-Resource-bounded-Dynamic-Approach-Li/8638fda3fefb9b2e103ad0b6d8acd1e4d14121bd&quot;&gt;J.-Q. Li, A bi-directional resource-bounded dynamic programming approach for the traveling salesman problem with time windows, 2009&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:open&quot;&gt;
+      &lt;p&gt;最初のノードと最後のノードが異なるパターンのTSPも研究されている． &lt;a href=&quot;#fnref:open&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:formulation&quot;&gt;
+      &lt;p&gt;多分他にもある． &lt;a href=&quot;#fnref:formulation&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:revise&quot;&gt;
+      &lt;p&gt;時間帯制約の除外に加え，&lt;script type=&quot;math/tex&quot;&gt;t_{i}&lt;/script&gt;を&lt;script type=&quot;math/tex&quot;&gt;x_{i}&lt;/script&gt;に変更したり，&lt;script type=&quot;math/tex&quot;&gt;x_{0}&lt;/script&gt;を式中から削除したり，（個人的な）わかりやすさのために一部修正した． &lt;a href=&quot;#fnref:revise&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:search&quot;&gt;
+      &lt;p&gt;私の検索スキルが足りないだけかもしれないが． &lt;a href=&quot;#fnref:search&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 07 Sep 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/09/07/tsptw</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/07/tsptw</guid>
+        
+        
+        <category>mathematics</category>
+        
+        <category>optimization</category>
+        
+      </item>
+    
+      <item>
+        <title>DMM英会話受講メモ：2018年8月</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://eikaiwa.dmm.com/&quot;&gt;DMM英会話&lt;/a&gt;の受講メモ．7回/31日なので，1/4以下．先月よりさらに頻度が下がったが，後半は本当に忙しかったのでしょうがない．&lt;/p&gt;
+
+&lt;h1 id=&quot;20180802&quot;&gt;20180802&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/some-colleges-now-offer-scholarships-to-gamers/0JgKKI6vEei-yNNbrcDC_g&quot;&gt;Some Colleges Now Offer Scholarships to Gamers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;slacker: a person who is lazy and has no desire to be successful&lt;/li&gt;
+  &lt;li&gt;glued to (something): to focus on something and not pay attention to anything else&lt;/li&gt;
+  &lt;li&gt;unwind: to relax&lt;/li&gt;
+  &lt;li&gt;on board with: to agree with or support something&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180807&quot;&gt;20180807&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/the-most-and-least-educated-cities-in-the-us/PqKpiJDqEeiXbXfIMsHxTA&quot;&gt;The Most and Least Educated Cities in the US&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;diploma: 免状，卒業証書&lt;/li&gt;
+  &lt;li&gt;最近バタバタしてなかなか授業を取れなかった．一週間以上空いてしまった．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180808&quot;&gt;20180808&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/homeless-find-employment-in-silicon-valley/G7VIDJVqEei2shdvfjyj6Q&quot;&gt;Homeless Find Employment in Silicon Valley&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;displacement: a situation when people are forced to leave their jobs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180814&quot;&gt;20180814&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/print-yourself-a-house/vtv-IplcEei95iu2jRxArA&quot;&gt;Print Yourself a House&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;sewage: waste water from toilets and drains that is carried away by pipes&lt;/li&gt;
+  &lt;li&gt;off the grid: not connected to public supplies of electricity, water, etc.&lt;/li&gt;
+  &lt;li&gt;久しぶりの英語．思ったよりもまともに話せた気がする．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180815&quot;&gt;20180815&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/apples-stock-value-reaches-1-trillion-total/9yKMQpbwEeixf2saqcg-vQ&quot;&gt;Apple’s Stock Value Reaches $1 Trillion Total&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;skyrocket: to suddenly or quickly increase&lt;/li&gt;
+  &lt;li&gt;fuel: to make something stronger&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180818&quot;&gt;20180818&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/google-celebrates-first-native-american-woman-engineer/HLepzJ5fEeircdPtlDMDzQ&quot;&gt;Google Celebrates First Native American Woman Engineer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;久々のレッスン．先生がとても優しかった．&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;20180823&quot;&gt;20180823&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.eikaiwa.dmm.com/daily-news/article/earthquake-safety-are-you-prepared/iB6LPqFPEei-GA_fQQLyFA&quot;&gt;Earthquake Safety: Are You Prepared?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;地震の準備についての記事．先生がとても親切だった．&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 31 Aug 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/08/31/dmm-english</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/08/31/dmm-english</guid>
+        
+        
+        <category>english</category>
+        
+      </item>
     
       <item>
         <title>DMM英会話受講メモ：2018年7月</title>
@@ -1261,328 +1487,6 @@ Paige McKenzie&lt;/a&gt;を参考にすれば良い．&lt;/p&gt;
         <category>jekyll</category>
         
         <category>visualization</category>
-        
-      </item>
-    
-      <item>
-        <title>MacでKaggle-apiを使う</title>
-        <description>&lt;p&gt;ものすごく今更ながら，&lt;a href=&quot;https://github.com/Kaggle/kaggle-api&quot;&gt;kaggle-api&lt;/a&gt;をMacBookで使ってみた．簡単だった．&lt;/p&gt;
-
-&lt;h1 id=&quot;環境&quot;&gt;環境&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;macOS Sierra, 10.12.6&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;手順&quot;&gt;手順&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.currypurin.com/entry/2018/kaggle-api&quot;&gt;kaggle-apiというKaggle公式のapiの使い方をまとめます - kaggleを全力でやります&lt;/a&gt;を参考にさせて頂いた．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/0d2cef54e6117e58f9dc978aac5c6fbc.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;Kaggleの&lt;code class=&quot;highlighter-rouge&quot;&gt;user profile&lt;/code&gt;に移動し，&lt;code class=&quot;highlighter-rouge&quot;&gt;Create API Token&lt;/code&gt;をクリック．取得した&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle.json&lt;/code&gt;を，&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.kaggle/kaggle.json&lt;/code&gt;に移動．ここで，&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle.json&lt;/code&gt;の権限を変更する．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/8db084788f6eebac7f91ab0e7696a16a.js&quot;&gt;&lt;/script&gt;
-
-&lt;h1 id=&quot;使い方&quot;&gt;使い方&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Kaggle/kaggle-api&quot;&gt;Kaggle/kaggle-api - GitHub&lt;/a&gt;を見るのが手っ取り早い．&lt;/p&gt;
-
-&lt;h2 id=&quot;ヘルプ&quot;&gt;ヘルプ&lt;/h2&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/0f20c2bdee7017c09c72aecda941c86f.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;コンペティション一覧を取得&quot;&gt;コンペティション一覧を取得&lt;/h2&gt;
-
-&lt;p&gt;2018年7月10日現在，次のような結果が出た．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/093d9f86000f25a0bbc7fb914ac83ba1.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;コンペティションのデータを一括ダウンロード&quot;&gt;コンペティションのデータを一括ダウンロード&lt;/h2&gt;
-
-&lt;p&gt;例えば，&lt;a href=&quot;https://www.kaggle.com/c/santander-value-prediction-challenge/data&quot;&gt;Santander Value Prediction Challenge&lt;/a&gt;のデータを一括ダウンロードしたい場合は，次のようにコマンドを打つ．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/4f78d053465087ec99d73d378daaaef6.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-c&lt;/code&gt;：コンペティション名．&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle competitions list&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;列のものを使う．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-p&lt;/code&gt;：ダウンロード先のパス．デフォルトだと，&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.kaggle/competitions/&lt;/code&gt;．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;他にもいろいろオプションがある．&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle competitions download -help&lt;/code&gt;で確認できる．&lt;/p&gt;
-
-&lt;h2 id=&quot;コンペティションに予測結果をアップロード&quot;&gt;コンペティションに予測結果をアップロード&lt;/h2&gt;
-
-&lt;p&gt;例えば，&lt;a href=&quot;https://www.kaggle.com/c/santander-value-prediction-challenge/data&quot;&gt;Santander Value Prediction Challenge&lt;/a&gt;に予測結果をアップロードしたい場合は，次のようにコマンドを打つ．&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/haltaro/ef6bbd733c1ffe1bda6ffb7c46026d2a.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-c&lt;/code&gt;：コンペティション名．&lt;code class=&quot;highlighter-rouge&quot;&gt;kaggle competitions list&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;列のものを使う．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt;：アップロードしたいファイル名．&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-m&lt;/code&gt;：アップロード時のメッセージ．&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 10 Jul 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/07/10/kaggle-api</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/10/kaggle-api</guid>
-        
-        
-        <category>kaggle</category>
-        
-      </item>
-    
-      <item>
-        <title>萩原淳一郎，基礎からわかる時系列分析</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://amzn.asia/bTrcjv0&quot;&gt;萩原淳一郎，基礎からわかる時系列分析 ―Rで実践するカルマンフィルタ・MCMC・粒子フィルター&lt;/a&gt;をざっと読んで状態空間モデルを勉強した．&lt;/p&gt;
-
-&lt;p&gt;線形・ガウス型の状態空間モデルの場合はカルマンフィルタで解析的に解けるが，一般状態空間モデルの場合は，フィルタリング分布・予測分布・平滑化分布の積分計算を必ずしも解析的に解けない．そこで，MCMCを用いた一括解法や，粒子フィルタによる逐次解法が提案されている．本書のレポジトリは，&lt;a href=&quot;https://github.com/hagijyun/tsbook&quot;&gt;hagijyun/tsbook - GitHub&lt;/a&gt;．&lt;/p&gt;
-
-&lt;p&gt;カルマンフィルタ，MCMC，粒子フィルタの関係を理解することができた．次は&lt;a href=&quot;http://amzn.asia/1Y3ckY8&quot;&gt;PRMLの下巻&lt;/a&gt;を読み返して，MCMCの理論的背景を押さえておきたい．&lt;/p&gt;
-
-&lt;h1 id=&quot;確率統計に関する基礎&quot;&gt;確率・統計に関する基礎&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;周辺化消去は，同時分布から外したい変数の影響を，あらかじめ平均的に考慮することに相当する．なるほど，腑に落ちた．&lt;/li&gt;
-  &lt;li&gt;定常過程と非定常過程．
-    &lt;ul&gt;
-      &lt;li&gt;強定常：確率過程の確率分布が時点&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;によらず一定．&lt;/li&gt;
-      &lt;li&gt;弱定常：確率過程の平均・分散・自己共分散・自己相関係数が時点&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;によらず一定．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;時系列分析ひとめぐり&quot;&gt;時系列分析ひとめぐり&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;五数要約：最小値・25%値・中央値・75%値・最大値．Rだと&lt;code class=&quot;highlighter-rouge&quot;&gt;summary()&lt;/code&gt;で，Python（pandas）だと&lt;code class=&quot;highlighter-rouge&quot;&gt;DataFrame.describe()&lt;/code&gt;で確認できる．&lt;/li&gt;
-  &lt;li&gt;自己相関係数．&lt;script type=&quot;math/tex&quot;&gt;\frac{\mathrm{Cov}[X_{t}, X_{t-k} ]}{\sqrt{\mathrm{Var}[X_t]}\sqrt{\mathrm{Var}[X_{t-k}]}}&lt;/script&gt;．&lt;/li&gt;
-  &lt;li&gt;時系列データの成分分解：レベル＋傾き＋周期．&lt;/li&gt;
-  &lt;li&gt;ホルト・ウィンタース法．指数加重型移動平均（EWMA：Exponentially Weighted Moving Average）の一種．Rでは，&lt;code class=&quot;highlighter-rouge&quot;&gt;HoltWinters()&lt;/code&gt;関数で実施できる．&lt;/li&gt;
-  &lt;li&gt;残差を確認して，モデルの妥当性を分析する．残差の自己相関により，周期性を上手く捉えられたか確認できる．&lt;/li&gt;
-  &lt;li&gt;状態空間モデルの解法の分類：
-    &lt;ul&gt;
-      &lt;li&gt;線形・ガウス型状態空間モデル：
-        &lt;ul&gt;
-          &lt;li&gt;一括型解法：ウィナーフィルタ．&lt;/li&gt;
-          &lt;li&gt;逐次型解法：カルマンフィルタ．&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;一般状態空間モデル：
-        &lt;ul&gt;
-          &lt;li&gt;一括型解法：MCMCを利用した解法．&lt;/li&gt;
-          &lt;li&gt;逐次型解法：粒子フィルタ．&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;状態空間モデル&quot;&gt;状態空間モデル&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;方程式による表現：
-    &lt;ul&gt;
-      &lt;li&gt;状態方程式&lt;sup id=&quot;fnref:state&quot;&gt;&lt;a href=&quot;#fn:state&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;：&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_t = f ( \mathbf{x}_{t-1}, \mathbf{w}_{t-1})&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;観測方程式：&lt;script type=&quot;math/tex&quot;&gt;y_t = h ( \mathbf{x}_{t}, v_{t})&lt;/script&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;確率分布による表現：
-    &lt;ul&gt;
-      &lt;li&gt;状態方程式に相当：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_t \mid \mathbf{x}_{0:t-1}, y_{0:t-1}) = p(\mathbf{x}_t \mid \mathbf{x}_{t-1})&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;観測方程式に相当：&lt;script type=&quot;math/tex&quot;&gt;p(y_t \mid \mathbf{x}_{0:t}, y_{0:t-1}) = p(y_t\mid \mathbf{x}_{t})&lt;/script&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;状態空間モデルの同時分布：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{0:T}, y_{0:T}) = p(\mathbf{x}_0) \prod_{t=1}^{T} p(y_t\mid \mathbf{x}_{t}) p(\mathbf{x}_t \mid \mathbf{x}_{t-1})&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;ARIMAモデルと状態空間モデルは密接な関係がある．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;状態空間モデルにおける状態の推定&quot;&gt;状態空間モデルにおける状態の推定&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;状態の周辺事後分布：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t'} \mid y_{1:t}) = \int p(\mathbf{x}_{0}, \mathbf{x}_{1}, \dots \mathbf{x}_{t'}, \dots \mid y_{1:t}) d\mathbf{x}_{t'以外}&lt;/script&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-t' &lt; t %]]&gt;&lt;/script&gt;：平滑化分布&lt;/li&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;t' = t&lt;/script&gt;：フィルタリング分布&lt;/li&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;t' &gt; t&lt;/script&gt;：予測分布&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;フィルタリング分布：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:t}) = p(\mathbf{x}_{t} \mid y_{1:t-1}) \frac{p(y_{t} \mid \mathbf{x}_{t})}{p(y_{t} \mid y_{1:t-1})}&lt;/script&gt;
-    &lt;ul&gt;
-      &lt;li&gt;モデルの状態方程式&lt;script type=&quot;math/tex&quot;&gt;p(y_{t} \mid \mathbf{x}_{t})&lt;/script&gt;&lt;sup id=&quot;fnref:mislead&quot;&gt;&lt;a href=&quot;#fn:mislead&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;と，以下の一期先予測分布&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:t-1})&lt;/script&gt;，一期先予測尤度&lt;script type=&quot;math/tex&quot;&gt;p(y_{t} \mid y_{1:t-1})&lt;/script&gt;からなる．直感的には，一期先予測分布を観測方程式で補正して，一期先予測尤度で正規化したもの．&lt;/li&gt;
-      &lt;li&gt;一期先予測分布： &lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:t-1}) = \int p(\mathbf{x}_{t} \mid \mathbf{x}_{t-1}) p(\mathbf{x}_{t} \mid y_{1:t-1}) d\mathbf{x}_{t-1}&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;一期先予測尤度&lt;sup id=&quot;fnref:likelihood&quot;&gt;&lt;a href=&quot;#fn:likelihood&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;：&lt;script type=&quot;math/tex&quot;&gt;p(y_{t} \mid y_{1:t-1}) = \int p(y_t \mid \mathbf{x}_{t} ) p(\mathbf{x}_{t} \mid y_{1:t-1}) d\mathbf{x}_{t-1}&lt;/script&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;予測分布：
-    &lt;ul&gt;
-      &lt;li&gt;定式化：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t+k} \mid y_{1:t}) = \int p(\mathbf{x}_{t+k} \mid \mathbf{x}_{t+k-1}) p(\mathbf{x}_{t+k-1} \mid y_{1:t}) d\mathbf{x}_{t+k-1}&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;一期先予測分布をもとに，状態方程式に基いて時間順方向への遷移を&lt;script type=&quot;math/tex&quot;&gt;k-1&lt;/script&gt;解繰り返したもの．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;平滑化分布：
-    &lt;ul&gt;
-      &lt;li&gt;定式化：&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:T}) = p(\mathbf{x}_{t} \mid y_{1:t}) \int \frac{p(\mathbf{x}_{t+1} \mid \mathbf{x}_{t})}{p(\mathbf{x}_{t+1} \mid y_{1:t})} p(\mathbf{x}_{t+1} \mid y_{1:T}) d \mathbf{x}_{t+1}&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t} \mid y_{1:t})&lt;/script&gt;はフィルタリング分布，&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t+1} \mid \mathbf{x}_{t})&lt;/script&gt;は状態方程式，&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t+1} \mid y_{1:t})&lt;/script&gt;は予測分布，&lt;script type=&quot;math/tex&quot;&gt;p(\mathbf{x}_{t+1} \mid y_{1:T})&lt;/script&gt;は1時点先の平滑化分布．&lt;/li&gt;
-      &lt;li&gt;平滑化分布は，フィルタリング分布を再帰的に補正したもの．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;パラメータ集合を&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}&lt;/script&gt;とすると，対数尤度は&lt;script type=&quot;math/tex&quot;&gt;l(\mathbf{\theta}) = \sum_{t=1}^{T} \mathrm{log} p( y_t \mid y_{1:t-1} ; \mathbf{\theta})&lt;/script&gt;．
-    &lt;ul&gt;
-      &lt;li&gt;一期先予測尤度が含まれているため，特定のデータに基づきながら，過去の情報のみから見洗の値を当てる際の予測能力を踏まえた指標になっている．&lt;/li&gt;
-      &lt;li&gt;この式には状態が登場しないため，周辺尤度あるいは対数周辺尤度と呼ばれることがある．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;状態空間モデルにおけるパラメータの扱い．
-    &lt;ul&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}&lt;/script&gt;が確率変数でない：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{argmax}_{\mathbf{\theta}} l(\mathbf{\theta})&lt;/script&gt;を準ニュートン法やEMアルゴリズムで求める．&lt;/li&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}&lt;/script&gt;が確率変数：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{argmax}_{\mathbf{\theta}} p(\mathbf{\theta} \mid y_{1:t}) \propto \mathrm{argmax}_{\mathbf{\theta}} \{ p(y_{1:t} \mid \mathbf{\theta} ) +  p(\mathbf{\theta} ) \}&lt;/script&gt;をMAP推定で求める．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;パラメータを確率変数として扱う場合は，たとえもともと線形ガウス型の状態空間モデルであっても，一般状態空間モデルになる．つまり，ウィナーフィルタやカルマンフィルタでは直接解を求められない．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;線形ガウス型状態空間モデルの一括解法&quot;&gt;線形・ガウス型状態空間モデルの一括解法&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ウィナーフィルタは定常な時系列を前提としている．&lt;/li&gt;
-  &lt;li&gt;ウィナーフィルタはスペクトル分解を使って定式化できる．詳細は割愛する．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;線形ガウス型状態空間モデルの逐次解法&quot;&gt;線形・ガウス型状態空間モデルの逐次解法&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;カルマンフィルタは，推定すべきデータの真値と点推定値の間の平均二乗誤差を最小にする逐次推定法である．
-    &lt;ul&gt;
-      &lt;li&gt;状態方程式：&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_t = \mathbf{G}_t \mathbf{x}_{t-1} + \mathbf{w}_t&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;\mathbf{w}_t \sim \mathcal{N} (\mathbf{0}, \mathbf{W}_t)&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;観測方程式：&lt;script type=&quot;math/tex&quot;&gt;y_t = \mathbf{F}_t \mathbf{x}_t + v_t&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;v_t \sim \mathcal{N} (0, V_t)&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;初期状態：&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_0 \sim \mathcal{N} (\mathbf{m}_0, \mathbf{C}_0)&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;パラメータ：&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta} = \{\mathbf{G}_t, \mathbf{F}_t, \mathbf{W}_t, V_t, \mathbf{m}_0, \mathbf{C}_0 \}&lt;/script&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;上記の前提でフィルタリング分布・予測分布・平滑化分布を計算すると，逐次更新式を得る．詳細は割愛する．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;一般状態空間モデルの一括解法&quot;&gt;一般状態空間モデルの一括解法&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;フィルタリング分布，予測分布，および平滑化分布には多次元の積分計算が含まれる．線形・ガウス型状態空間モデルの場合は，&lt;strong&gt;幸運にも&lt;/strong&gt; 解析的に解けたが，一般状態空間モデルの場合は必ずしも解析的に解けないため，工夫が必要：
-    &lt;ul&gt;
-      &lt;li&gt;グリッドフィルタ：数値積分を活用するアプローチ．&lt;/li&gt;
-      &lt;li&gt;重点サンプリング：ラプラス近似を利用して，一般状態空間モデルにおける分布を線形・ガウス型状態空間モデルにおける分布で近似するアプローチ．&lt;/li&gt;
-      &lt;li&gt;MCMC（マルコフ連鎖モンテカルロ法；Markov chain Monte Carlo）：求めたい分布からのサンプルを直接生成するアプローチ．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;ギブス法によるMCMC：
-    &lt;ol&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta^{(0)}}&lt;/script&gt;を初期化する．&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;FOR&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;i = \{1, \dots, I \}&lt;/script&gt;:
-        &lt;ol&gt;
-          &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;p ( \mathbf{x}_{0:T} \mid \mathbf{\theta} \! = \! \mathbf{\theta}^{(i-1)}, y_{1:T})&lt;/script&gt;から&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_{0:T}^{(i)}&lt;/script&gt;をサンプリングする．&lt;/li&gt;
-          &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;p ( \mathbf{\theta} \mid \mathbf{x}_{0:T} \! = \! \mathbf{x}_{0:T}^{(i)}, y_{1:T})&lt;/script&gt;から&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\theta}^{(i)}&lt;/script&gt;をサンプリングする．&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1-1&lt;/code&gt;の試行において，線形・ガウス型状態空間モデルに従う場合は，FFBS（前向きフィルタ後ろ向きサンプリング；Forward Filtering Backward Sampling）で効率的にサンプリングできる．&lt;/li&gt;
-  &lt;li&gt;FFBSアルゴリズムは，時間順方向にカルマンフィルタをかけたあとで，時間逆方向にカルマン平滑化に基づいたサンプリングを行う．シミュレーション平滑化と呼ばれることもある．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;一般状態空間モデルの逐次解法&quot;&gt;一般状態空間モデルの逐次解法&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;カルマンフィルタの拡張：
-    &lt;ul&gt;
-      &lt;li&gt;拡張カルマンフィルタ&lt;/li&gt;
-      &lt;li&gt;アンセンテッドカルマンフィルタ&lt;/li&gt;
-      &lt;li&gt;アンサンブルカルマンフィルタ&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;粒子フィルタ&lt;/strong&gt;：本書で紹介する．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;重点サンプリング
-    &lt;ul&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;p(x)&lt;/script&gt;からサンプリング可能な場合：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{E}[ f(\mathbf{x})] \approx \frac{1}{N}\sum_{n=1}^{N} f (\mathbf{x}^{(n)})&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;p(x)&lt;/script&gt;の代わりに&lt;script type=&quot;math/tex&quot;&gt;q(x)&lt;/script&gt;からサンプリングする場合：&lt;script type=&quot;math/tex&quot;&gt;\mathrm{E}[ f(\mathbf{x})] \approx \frac{1}{N}\sum_{n=1}^{N} w(\mathbf{x}^{(n)}) f (\mathbf{x}^{(n)})&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;ただし，&lt;script type=&quot;math/tex&quot;&gt;w(\mathbf{x}^{(n)}) = \frac{p(\mathbf{x}^{(n)})}{q(\mathbf{x}^{(n)})}&lt;/script&gt;を満たし，重点関数と呼ばれる．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;粒子フィルタリング：
-    &lt;ol&gt;
-      &lt;li&gt;時点&lt;script type=&quot;math/tex&quot;&gt;t-1&lt;/script&gt;のフィルタリング分布：&lt;script type=&quot;math/tex&quot;&gt;\{ \mathbf{x}_{t-1}^{(n)}, w_{t-1}^{(n)} \}_{n=1}^N&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;時点&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;において，&lt;strong&gt;FOR&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;n = \{1, \dots, N \}&lt;/script&gt;：
-        &lt;ol&gt;
-          &lt;li&gt;実現値を更新：&lt;script type=&quot;math/tex&quot;&gt;q \left( \mathbf{x}_{t} \mid \mathbf{x}_{0:t-1}^{(n)}, y_{1:t} \right)&lt;/script&gt;から&lt;script type=&quot;math/tex&quot;&gt;\mathbf{x}_{t}^{(n)}&lt;/script&gt;をサンプリング．&lt;/li&gt;
-          &lt;li&gt;重みを更新：&lt;script type=&quot;math/tex&quot;&gt;w_t^{(n)} \leftarrow \frac{p\left(\mathbf{x}_t^{(n)} \mid \mathbf{x}_{t-1}^{(n)} \right) p \left( y_t \mid y_{1:t-1}, \mathbf{x}_t^{(n)} \right)}{q\left( \mathbf{x}_t^{(n)} \mid \mathbf{x}_{0:t-1}^{(n)}, y_{1:t} \right)}&lt;/script&gt;．&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;重みの規格化：&lt;script type=&quot;math/tex&quot;&gt;w_t^{(n)} \leftarrow \frac{w_t^{(n)}}{\sum_{n=1}^N w_{t}^{(n)}}&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;w_t^{(n)}&lt;/script&gt;大きさに応じて，&lt;script type=&quot;math/tex&quot;&gt;x_t^{(n)}&lt;/script&gt;を復元抽出．&lt;/li&gt;
-      &lt;li&gt;時点&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;のフィルタリング分布：&lt;script type=&quot;math/tex&quot;&gt;　\{ \mathbf{x}_t^{(n)}, w_{t}^{(n)} \}_{n=1}^{N}&lt;/script&gt;．&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;フィルタリング分布の一般式と，次のように対応している．
-    &lt;ul&gt;
-      &lt;li&gt;一期先予測分布：&lt;script type=&quot;math/tex&quot;&gt;w_{t-1}^{(n)} p \left(\mathbf{x}_t^{(n)} \mid \mathbf{x}_{t-1}^{(n)} \right)&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;一期先予測尤度：重みの規格化．&lt;/li&gt;
-      &lt;li&gt;フィルタリング分布：一期先予測分布&lt;script type=&quot;math/tex&quot;&gt;w_{t-1}^{(n)} p \left(\mathbf{x}_t^{(n)} \mid \mathbf{x}_{t-1}^{(n)} \right)&lt;/script&gt;を&lt;script type=&quot;math/tex&quot;&gt;p\left( y_t \mid y_{1:t-1}, \mathbf{x}_{t}^{(n)} \right)&lt;/script&gt;で補正&lt;sup id=&quot;fnref:particle&quot;&gt;&lt;a href=&quot;#fn:particle&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;提案分布&lt;script type=&quot;math/tex&quot;&gt;q \left(\mathbf{x}_{t}^{(n)} \mid \mathbf{x}_{t-1}^{(n)} \right)&lt;/script&gt;として，状態方程式&lt;script type=&quot;math/tex&quot;&gt;p \left(\mathbf{x}_{t}^{(n)} \mid \mathbf{x}_{t-1}^{(n)} \right)&lt;/script&gt;を用いると，重みの更新式は非常に簡単になる．この条件の粒子フィルタをブートストラップフィルタ，あるいはモンテカルロフィルタと呼ぶ．&lt;/li&gt;
-  &lt;li&gt;粒子数が有限の場合，リサンプリングにより近似性能の劣化を防ぐことができる．&lt;/li&gt;
-  &lt;li&gt;粒子予測：重みを更新せず，実現値&lt;script type=&quot;math/tex&quot;&gt;x_{t+k}^{(n)}&lt;/script&gt;を状態方程式で逐次的に更新することで，未来の点を予測できる．これは，粒子フィルタリングにおいて観測値&lt;script type=&quot;math/tex&quot;&gt;y_{t+k}&lt;/script&gt;が存在しない（欠測）場合と等価．&lt;/li&gt;
-  &lt;li&gt;粒子平滑化：
-    &lt;ul&gt;
-      &lt;li&gt;北川アルゴリズム：過去の粒子に対して，現時点の規範でリサンプリングする．原理的には任意の過去の時点まで平滑化可能だが，リサンプリングによる粒子の退化が問題となる．SIR平滑化，固定ラグ平滑化，廉価版平滑化とも呼ばれる．&lt;/li&gt;
-      &lt;li&gt;前向きフィルタ後ろ向きシミュレーション（FFBS：Forward Filtering Backward Simulation）アルゴリズム：フィルタリング分布の&lt;script type=&quot;math/tex&quot;&gt;w_t^{(n)}&lt;/script&gt;を再帰的に補正する．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;推定精度向上のためのテクニック：
-    &lt;ul&gt;
-      &lt;li&gt;補助粒子フィルタ：現在の観測値の影響を考慮したリサンプリング処理が，実現値や重み更新より&lt;strong&gt;先に&lt;/strong&gt;行われる．&lt;/li&gt;
-      &lt;li&gt;リュウ・ウエストフィルタ：補助粒子フィルタの適用例．粒子フィルタを用いて，状態とパラメータをあわせて推定する．カーネル平滑化を用いて，パラメータの推定値の分散を増大させることなく実現値をリフレッシュする．&lt;/li&gt;
-      &lt;li&gt;ラオ・ブラックウェル化：一般化線形モデルにおいて，部分的に線形・ガウス型状態空間モデルが成り立っているとき，カルマンフィルタと粒子フィルタを組み合わせる手法．例えば，線形・ガウス型状態空間モデルのパラメータが未知の場合などがこれに該当する．&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;一般状態空間モデルにおける応用的な分析例&quot;&gt;一般状態空間モデルにおける応用的な分析例&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;本章では，構造変化について扱う．
-    &lt;ul&gt;
-      &lt;li&gt;変化点が既知：カルマンフィルタ&lt;/li&gt;
-      &lt;li&gt;変化点が未知：粒子フィルタ，MCMC&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;未知の変化点を実時間で検出するために，粒子フィルタを用いる．状態雑音の分散に対する時変の倍率が特定の閾値を超えた際に，構造変化が発生したと考える．&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:state&quot;&gt;
-      &lt;p&gt;システム方程式とも呼ばれる． &lt;a href=&quot;#fnref:state&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:mislead&quot;&gt;
-      &lt;p&gt;書籍中，&lt;script type=&quot;math/tex&quot;&gt;p(y_t \mid \mathbf{x}_t)&lt;/script&gt;を尤度と呼ぶことがあり，一期先予測尤度と混同してハマった． &lt;a href=&quot;#fnref:mislead&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:likelihood&quot;&gt;
-      &lt;p&gt;なぜ尤度と呼ぶんだろう．まだ腑に落ちてない． &lt;a href=&quot;#fnref:likelihood&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:particle&quot;&gt;
-      &lt;p&gt;一般的な状態空間モデルの定式化では&lt;strong&gt;一期先予測分布を観測方程式で補正&lt;/strong&gt;していた． &lt;a href=&quot;#fnref:particle&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 07 Jul 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/07/07/time-series</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/07/time-series</guid>
-        
-        
-        <category>statistics</category>
-        
-        <category>books</category>
         
       </item>
     

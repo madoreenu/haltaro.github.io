@@ -170,6 +170,60 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/09/07/tsptw">時間制約付き巡回セールスマン問題について調査した</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>時間制約付き巡回セールスマン問題（TSP-TW: Traveling Salesman Problem with Time Window constraint）について調査した．TSP-TWは，各点の訪問時間に制約のある巡回セールスマン問題（TSP: Traveling Salesman Problem）で，NP困難に属する．時間帯指定のある宅配業者の経路最適化など，実応用が期待される研究分野である． 近似解法としては，アントコロニー法を始めとするメタヒューリスティクスが提案されている．厳密解法としては，整数線形計画問題による定式化が提案されている． 巡回セールスマン問題 まず，TSP-TWのベースとなる，TSPについてまとめる． 定義 TSPは，個のノードを一度ずつ訪れて最初のノードに戻ってくる1，最短の巡回路を求める問題である．対称TSP（任意の二ノード間の距離が対称）の場合，巡回路の総数はであり，ノード数が30以上になると最適解を求めるのは現実的に困難である． 厳密解法 TSPを整数計画問題として定式化すれば，小規模な問題であれば厳密解を求められる．定式化のバリエーションとして，以下の三種類を見つけた2ので，それぞれ紹介する．なお，以下では簡単のため無向グラフ，つまり対称TSPを想定するが，それぞれ容易に非対称TSPに拡張可能である． 接続行列を用いた定式化 まずは，参考文献[1]で紹介されていたもの． ただし，はエッジ，は各要素がエッジの距離に対応する所与のベクトル，は所与の接続行列である．ここで接続行列の各行はノードに，各列はエッジに対応しており，ノードがエッジの端点なら，そうでなければとなる．は各要素がエッジが巡回路に含まれるかどうかを表す変数であり，TSPではこれを最適化する． 式(1.3)は部分巡回路除去制約と呼ばれ，全点を通らない部分的な巡回路を防ぐためのものである． 距離行列を用いた定式化 次に，参考文献[2]で紹介されていたもの． ただし，はノード，はノード-間の所与の距離，は十分大きな数であれば何でも良い．また，はノード-間を結ぶエッジが巡回路に含まれるかどうかを表す変数，はノードの訪問順序を表す変数であり，TSPではこれらを最適化する． 式(2.4)は，式(1.3)と同様に部分巡回路を除去するための制約式であり，ポテンシャル制約と呼ばれる． 到着時刻を用いた定式化 最後に，参考文献[3]で提案されていた，TSP-TW向けの定式化から，時間帯制約を抜いて単純化したもの3． ここで，はノードのインデックス，は始点と終点を除いたノード数，はノード-間の所与の移動時間，は十分大きな数であれば何でも良い．また，はノードへの到着時刻を表す変数，はダミー変数であり，TSPではこれらを最適化する． 式(3.4)および式(3.5)は，以下の非線形制約条件を無理やり線形化したものである． 近似解法 参考文献[1]によると，切除平面法で一旦TSPをLPに緩和し，次に変数が整数条件を満たすように，有効な一次不等式を加えていくらしい． メタヒューリスティクスとしては，遺伝的アルゴリズムや量子アニーリングなどが使われているみたい．必要があれば，別途記事にするかもしれない． 時間制約付き巡回セールスマン問題 定義 TSP-TWは，TSPの各ノードに到着時刻の制約を付けて拡張したものである． 厳密解法 線形な定式化は，私の調べたところ，参考文献[3]しか見つからなかった． ここで，はノードのインデックス，は始点と終点を除いたノード数，はノード-間の所与の移動時間，はノードの所与の訪問可能開始時刻，はノードの所与の訪問可能終了時刻，は十分大きな数であれば何でも良い．また，はノードへの到着時刻を表す変数，はダミー変数であり，TSPではこれらを最適化する． 式(3.1)-(3.6)との違いは，時間帯制約を表す式(4.4)および式(4.5)である． 近似解法 参考文献[4]によると，主に動的計画法（参考文献[5]，[8]，[10]），Compressed annealing法（参考文献[6]，[9]），Ant colony法（参考文献[7]，[9]）などを使ったアプローチが提案されているようだ． 感想 実用上，非常に面白い問題だが，意外と論文数は多くなかった4． 参考文献 藤澤克樹，他，応用に役立つ50の最適化問題，2009 Qiita，巡回セールスマン問題から始まる数理最適化 I....</p>-->
+      <p><p>時間制約付き巡回セールスマン問題（TSP-TW: Traveling Salesman Problem with Time Window constraint）について調査した．TSP-TWは，各点の訪問時間に制約のある巡回セールスマン問題（TSP: Traveling Salesman Problem）で，NP困難に属する．時間帯指定のある宅配業者の経路最適化など，実応用が期待される研究分野である．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">September 7, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#mathematics">Mathematics</a>, 
+        
+      
+        
+        <a href="/categories/#optimization">Optimization</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/08/31/dmm-english">DMM英会話受講メモ：2018年8月</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>DMM英会話の受講メモ．7回/31日なので，1/4以下．先月よりさらに頻度が下がったが，後半は本当に忙しかったのでしょうがない． 20180802 Some Colleges Now Offer Scholarships to Gamers slacker: a person who is lazy and has no desire to be successful glued to (something): to focus on something and not pay attention to anything else unwind: to relax on board with: to agree with or support something 20180807 The...</p>-->
+      <p><p><a href="http://eikaiwa.dmm.com/">DMM英会話</a>の受講メモ．7回/31日なので，1/4以下．先月よりさらに頻度が下がったが，後半は本当に忙しかったのでしょうがない．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">August 31, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#english">English</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/08/08/dmm-english">DMM英会話受講メモ：2018年7月</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -242,123 +296,6 @@
       
         
         <a href="/categories/#books">Books</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/07/18/macos-to-ubuntu">7年もののMacBook ProがUbuntu 16.04に生まれ変わった</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>MacBook Pro（13-inch Early 2011）の動作が怪しくなってきた．かれこれ7年以上使っているので，そろそろ寿命なのかもしれない．Ubuntu 16.04をインストールして，第二の人生を歩んでもらうことにした． MacでubuntuのインストールUSBを作成する方法と手順 - virtualimentで作成したところ，おそらくフォーマッティングに問題があったため，私の環境ではUSBメモリでブートできなかった．結局，Ubuntu公式チュートリアルを参考に作業したらうまくいった． 環境 MacBook Pro（13-inch Early 2011） プロセッサ：2.7 GHz Intel Core i7 メモリ：8 GB 1333 MHz DDR3 グラフィックス：Intel HD Graphics 3000 512 MB USBメモリ：2GB 手順 USBメモリの準備 ディスクユーティリティで，当該USBメモリを初期化する． フォーマット：MS-DOS (FAT) 方式：GUIDパーティションマップ isoファイルのダウンロード Ubuntu 16.04 LTS 日本語 Remix リリース - ubuntu japanese team1より，ubuntu-ja-16.04-desktop-amd64.isoをダウンロード． Etcherによる書き込み Etcherをインストールして，起動する． Select...</p>-->
-      <p><p>MacBook Pro（13-inch Early 2011）の動作が怪しくなってきた．かれこれ7年以上使っているので，そろそろ寿命なのかもしれない．<a href="https://www.ubuntu.com/">Ubuntu 16.04</a>をインストールして，第二の人生を歩んでもらうことにした．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">July 18, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#mac">Mac</a>, 
-        
-      
-        
-        <a href="/categories/#linux">Linux</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/07/15/jupyter-ec2">EC2にJupyter環境を構築する</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>AWSのEC2（Ubuntu 16.04 LTS）に，Jupyter notebookの環境を構築する手順をメモしておく．前提として，EC2インスタンスに対してSSH接続済みであり，Jupyterもインストール済みとする．EC2に限らず，リモートサーバ一般に共通する手順だと思う．
-
-リモート表示設定
-
-EC2上で立ち上げたJupyter notebookをブラウザ経由で使えるようにする．なお，以下の方法を使うと毎回パスワードの入力を求められるようになるので注意．
-
-まずは，jupyter notebook --generate-configで設定ファイルを作成する．次に，ipythonを起動して，パスワードを設定する．
-
-
-
-~/.jupyter/jupyter_notebook_config.pyを開いて，以下のように設定する．
-
-
-
-Jupyter notebook extension
-
-これはリモートサーバに限った作業ではないが，Jupyterの拡張機能をインストールする．
-
-
-
-Jupyter起動後によく使うスクリプト
-
-ついでに，Jupyter起動後によく使うスクリプトをメモしておく．
-
-Notebookの初期設定
-
-グラフ表示およびwarning表示について設定変更する．
-
-
-
-よく使うモジュールのインポート
-
-
-
-フォントの設定
-
-デフォルトのフォント設定だと，matplotlibで日本語を表示できない．以下のようにフォント設定を変更する．
-
-
-
-なお，上記はUbuntu用の設定である．他のOSについては，別途対応されたい．
-
-Bokehの設定
-
-デフォルト設定で日本語を表示できるし，ホバー表示がイイ感なので，最近はBokehを使うことも多い．
-
-
-
-参考
-
-
-  リモートサーバでjupyter notebookを起動させローカル環境で使う - Qiita
-  extensionを追加してもっと快適なJupyter環境を構築する - Qiita
-  Jupyter notebook extensions - GitHub
-
-</p>-->
-      <p><p><a href="https://aws.amazon.com/jp/">AWS</a>のEC2（Ubuntu 16.04 LTS）に，<a href="http://jupyter.org/">Jupyter notebook</a>の環境を構築する手順をメモしておく．前提として，EC2インスタンスに対してSSH接続済みであり，Jupyterもインストール済みとする．EC2に限らず，リモートサーバ一般に共通する手順だと思う．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">July 15, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#aws">Aws</a>, 
-        
-      
-        
-        <a href="/categories/#python">Python</a>, 
-        
-      
-        
-        <a href="/categories/#linux">Linux</a>
         
       
       </div>

@@ -170,6 +170,116 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/07/10/kaggle-api">MacでKaggle-apiを使う</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>ものすごく今更ながら，kaggle-apiをMacBookで使ってみた．簡単だった．
+
+環境
+
+
+  macOS Sierra, 10.12.6
+
+
+手順
+
+kaggle-apiというKaggle公式のapiの使い方をまとめます - kaggleを全力でやりますを参考にさせて頂いた．
+
+
+
+Kaggleのuser profileに移動し，Create API Tokenをクリック．取得したkaggle.jsonを，~/.kaggle/kaggle.jsonに移動．ここで，kaggle.jsonの権限を変更する．
+
+
+
+使い方
+
+Kaggle/kaggle-api - GitHubを見るのが手っ取り早い．
+
+ヘルプ
+
+
+
+コンペティション一覧を取得
+
+2018年7月10日現在，次のような結果が出た．
+
+
+
+コンペティションのデータを一括ダウンロード
+
+例えば，Santander Value Prediction Challengeのデータを一括ダウンロードしたい場合は，次のようにコマンドを打つ．
+
+
+
+
+  -c：コンペティション名．kaggle competitions listのref列のものを使う．
+  -p：ダウンロード先のパス．デフォルトだと，~/.kaggle/competitions/．
+
+
+他にもいろいろオプションがある．kaggle competitions download -helpで確認できる．
+
+コンペティションに予測結果をアップロード
+
+例えば，Santander Value Prediction Challengeに予測結果をアップロードしたい場合は，次のようにコマンドを打つ．
+
+
+
+
+  -c：コンペティション名．kaggle competitions listのref列のものを使う．
+  -f：アップロードしたいファイル名．
+  -m：アップロード時のメッセージ．
+
+</p>-->
+      <p><p>ものすごく今更ながら，<a href="https://github.com/Kaggle/kaggle-api">kaggle-api</a>をMacBookで使ってみた．簡単だった．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">July 10, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#kaggle">Kaggle</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/07/07/time-series">萩原淳一郎，基礎からわかる時系列分析</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>萩原淳一郎，基礎からわかる時系列分析 ―Rで実践するカルマンフィルタ・MCMC・粒子フィルターをざっと読んで状態空間モデルを勉強した． 線形・ガウス型の状態空間モデルの場合はカルマンフィルタで解析的に解けるが，一般状態空間モデルの場合は，フィルタリング分布・予測分布・平滑化分布の積分計算を必ずしも解析的に解けない．そこで，MCMCを用いた一括解法や，粒子フィルタによる逐次解法が提案されている．本書のレポジトリは，hagijyun/tsbook - GitHub． カルマンフィルタ，MCMC，粒子フィルタの関係を理解することができた．次はPRMLの下巻を読み返して，MCMCの理論的背景を押さえておきたい． 確率・統計に関する基礎 周辺化消去は，同時分布から外したい変数の影響を，あらかじめ平均的に考慮することに相当する．なるほど，腑に落ちた． 定常過程と非定常過程． 強定常：確率過程の確率分布が時点によらず一定． 弱定常：確率過程の平均・分散・自己共分散・自己相関係数が時点によらず一定． 時系列分析ひとめぐり 五数要約：最小値・25%値・中央値・75%値・最大値．Rだとsummary()で，Python（pandas）だとDataFrame.describe()で確認できる． 自己相関係数．． 時系列データの成分分解：レベル＋傾き＋周期． ホルト・ウィンタース法．指数加重型移動平均（EWMA：Exponentially Weighted Moving Average）の一種．Rでは，HoltWinters()関数で実施できる． 残差を確認して，モデルの妥当性を分析する．残差の自己相関により，周期性を上手く捉えられたか確認できる． 状態空間モデルの解法の分類： 線形・ガウス型状態空間モデル： 一括型解法：ウィナーフィルタ． 逐次型解法：カルマンフィルタ． 一般状態空間モデル： 一括型解法：MCMCを利用した解法． 逐次型解法：粒子フィルタ． 状態空間モデル 方程式による表現： 状態方程式1： 観測方程式： 確率分布による表現： 状態方程式に相当： 観測方程式に相当： 状態空間モデルの同時分布： ARIMAモデルと状態空間モデルは密接な関係がある． 状態空間モデルにおける状態の推定 状態の周辺事後分布： ：平滑化分布 ：フィルタリング分布 ：予測分布 フィルタリング分布： モデルの状態方程式2と，以下の一期先予測分布，一期先予測尤度からなる．直感的には，一期先予測分布を観測方程式で補正して，一期先予測尤度で正規化したもの． 一期先予測分布： 一期先予測尤度3： 予測分布： 定式化： 一期先予測分布をもとに，状態方程式に基いて時間順方向への遷移を解繰り返したもの． 平滑化分布： 定式化：...</p>-->
+      <p><p><a href="http://amzn.asia/bTrcjv0">萩原淳一郎，基礎からわかる時系列分析 ―Rで実践するカルマンフィルタ・MCMC・粒子フィルター</a>をざっと読んで状態空間モデルを勉強した．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">July 7, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#statistics">Statistics</a>, 
+        
+      
+        
+        <a href="/categories/#books">Books</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/06/30/dmm-english">DMM英会話受講メモ：2018年6月</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -300,56 +410,6 @@ lightgbm
       
         
         <a href="/categories/#python">Python</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/06/16/too-old-openssl">OpenSSLが古すぎてbundle updateできない</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>Algoliaで全文検索機能を実装するためにGemfileを書き換えて$ bundle updateしたところ，OpenSSLが古すぎると叱られた．How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に対応したら解決した． 症状 bundle updateしたら，次のようなエラーが出た． よく見たら，冒頭に以下のような警告が．OpenSSLのバージョンが古すぎるのが原因らしい． 対応記録 ほぼ原因はわかっていたが，念の為How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に以下のテストを実行した． すると，案の定，OpenSSLのバージョンが古いことがわかった． Ruby using wrong version of opensslを参考に以下を実行した． するとbrew reinstall opensslしろと怒られた． これで再度$ ruby -ropen-uri -e 'eval open("https://git.io/vQhWq").read'にトライしたが，解決せず．How to troubleshoot RubyGems and Bundler...</p>-->
-      <p><p><a href="https://haltaro.github.io/2018/06/16/jekyll-algolia">Algoliaで全文検索機能を実装</a>するために<code class="highlighter-rouge">Gemfile</code>を書き換えて<code class="highlighter-rouge">$ bundle update</code>したところ，<code class="highlighter-rouge">OpenSSL</code>が古すぎると叱られた．<a href="https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions">How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs</a>を参考に対応したら解決した．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">June 16, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#ruby">Ruby</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/06/16/jekyll-algolia">JekyllにAlgoliaで全文検索機能を実装する</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した． Algolia Algoliaは，リアルタイム検索をSaaSで提供するサービス群．今回は，DocSearchおよびFree hacker planの利用を検討した． DocSearch DocSearch申請用ページで登録したURLが審査に通ると，Algoliaのクローラが自動でインデックスファイルを構築し，検索用APIを公開してくれるという，ゆとりには嬉しいサービス．何を隠そうJekyllの検索システムもこれで実装されている．今回は残念ながら審査に通らなかった1ので，Free hacker planを利用することにした． Free hacker plan 自力で作成したインデックスファイルをAlgoliaにアップロードし，検索用APIを利用するプラン．マスターデータは1万件まで登録でき，APIを月10万回まで利用できる．Algoliaを利用してサイト内検索機能を実装する - WEB EGGによると，上限をオーバーすると検索もコンテンツの追加もできなくなるみたい．月1万PV程度のブログでギリギリ足りない感じらしいので，本ウェブサイトなら余裕である2． 幸い，Jekyll向けのプラグインがあるため，私でも簡単に実装できた．以下に手順を示す． 手順 以下は基本的にAlgolia for Jekyll - AlgoliaおよびBlog search - Algolia for Jekyllに則っているが，ウェブサイトの一貫性を保つために一部のコードを修正している． Algoliaのユーザ登録 Algoliaからサインアップする．以降の処理で，ダッシュボードのApplication ID，Search-Only API Key，およびAdmin API Keyが必要なのでメモしておく． jekyll-algliaの設定 Gemfileに以下を追記し，$ bundle updateする． _config.ymlにjekyll-algoliaの設定を追加する． インデックスの作成とアップロード シェルで以下を実行する． ここで，Admin API Keyはローカルで保管する必要がある．間違ってGitHub等にアップしないように注意．以降は，検索窓の実装に入る． _layouts/search.html Blog search...</p>-->
-      <p><p>本サイトに待望の<a href="https://haltaro.github.io/search/">全文検索機能を実装</a>した．Algolia社の<a href="https://community.algolia.com/docsearch/">DocSearch</a>の審査に通らなかったので，同社の<a href="https://www.algolia.com/pricing">Free hacker plan</a>を利用した．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">June 16, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#jekyll">Jekyll</a>
         
       
       </div>
