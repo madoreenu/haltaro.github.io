@@ -170,6 +170,35 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/09/22/airbnb-dynamic-pricing">Customized Regression Model for Airbnb Dynamic Pricingを読んだ</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>Peng Ye, et al., Customized Regression Model for Airbnb Dynamic Pricing, KDD2018を読んだ． Abstract Airbnbの製品は基本的に過去にない唯一のもの．よって，過去の実績をもとに需要曲線を予測するのが非常に難しい． Airbnbが提案するシステムは３つのモデルで構成される． 特定の日にちの予約確率を予測するモデル． 特定の日にちの最適な売値を予測するモデル． 二番目の予測値を，さらにパーソナライズして売値をサジェストするモデル． 本論文では，二番目の売値予測モデルについて述べる．このモデルは，Price TipsとSmart Pricing toolとして実際にAirbnbのシステムに組み込まれている．A/Bテストでこのモデルの効果を確認した． Introduction プラットフォーマーとして，Airbnbは，ホストが設定する価格を直接的に制御していないが，ツールを使って適正値をアドバイスしている． Price Tips：暦情報をもとに，適正価格をサジェストする機能． Smart Pricing：ユーザが設定した希望価格の下限と上限をもとに，自動的に適正価格を計算する機能． 適正価格は機械学習で算出されており，モデルは日々更新されている． Related works Airbnbの値付けに関して，いくつかの論文が公開されている[8, 9, 11, 16]． Dynamic pricing at airbnb AirbnbでDynamic Pricingするにあたり，大きく２つの課題がある． Demand Estimation 従来は，大量生産品に対するDemand estimationが研究されてきた．この領域では，需要曲線を予測することが最大の目的である．ここで，は価格．近年では，機械学習を用いてを予測するモデルも提案されている[2, 15]．一方で，Airbnbにおける需要曲線は価格だけでなく，時間や個別の物件に依存すると考えられる． 需要曲線が時間に依存する原因として，季節性とリードタイムがある． 需要曲線が物件に依存する原因として，Airbnbが扱う物件の特殊性と，人気の格差がある． 以上から，需要曲線を予測するのは非常に難しい． また，我々が提示した価格を，ホストが必ずしも採用しないことも，問題の複雑さを一層増す原因となっている．...</p>-->
+      <p><p><a href="http://www.kdd.org/kdd2018/accepted-papers/view/customized-regression-model-for-airbnb-dynamic-pricing">Peng Ye, et al., Customized Regression Model for Airbnb Dynamic Pricing, KDD2018</a>を読んだ．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">September 22, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#machine learning">Machine learning</a>, 
+        
+      
+        
+        <a href="/categories/#paper">Paper</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/09/17/tsptw">時間制約付き巡回セールスマン問題について調査した</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -187,7 +216,11 @@
         
       
         
-        <a href="/categories/#optimization">Optimization</a>
+        <a href="/categories/#optimization">Optimization</a>, 
+        
+      
+        
+        <a href="/categories/#paper">Paper</a>
         
       
       </div>
@@ -300,31 +333,6 @@
       in 
         
         <a href="/categories/#english">English</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/07/22/summer-prophet">あまりに暑いのでProphetで140年分の気温を分析した</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>2018年7月22日，東京の最高気温は36.5度となり，今年最高を更新した．あまりに暑くてムシャクシャしたので，気象庁から約140年分（1872年1月1日-2018年7月21日）の東京の気温データを入手し，Prophetで分析した．平均・最高・最低気温の全てに関して，1920年付近から上昇し続けており，そのトレンドを考慮してもなお，ここ数日は特に暑いことを確認できた． なお，分析に用いたNotebookはこちら． 環境 macOS Sierra, 10.12.6 Python, 3.6.6 Prophet, 0.3 Prophet 特徴 Prophetとは，Facebookが開発したオープンソースの時系列解析ライブラリ．Prophetで想定するモデルを以下に示す： ここで，は時点における予測値，は時点におけるトレンド成分，は時点における周期成分，は時点における週末などのイレギュラーな成分，そしては時点における誤差を表す．各成分のパラメータをStanで推定し，モデルを学習する．詳細なモデルは，原論文（Sean J. Taylor and Benjamin Letham, Forecasting at Scale）を参照されたい． Prophetに関する日本語の記事としては，以下のようなものがある．とても参考になる． Prophet: forecasting at scale - Facebook Prophet入門【Python編】Facebookの時系列予測ツール - SlideShare Facebookの予測ライブラリProphetを用いたトレンド抽出と変化点検知 - Gunosyデータ分析ブログ Prophetの特徴は，時系列解析の前提知識がなくても，誰でも簡単に一定水準の分析をできること． インストール 今回はPythonからProphetを使う．pipでインストールする場合は，pip install fbprophet，condaでインストールする場合は，conda install -c conda-forge fbprophet． 準備 データの入手 過去の気象データ・ダウンロード - 気象庁からcsvデータをダウンロードする． 地点：東京...</p>-->
-      <p><p>2018年7月22日，東京の最高気温は36.5度となり，今年最高を更新した．あまりに暑くてムシャクシャしたので，<a href="http://www.data.jma.go.jp/gmd/risk/obsdl/index.php">気象庁</a>から約140年分（1872年1月1日-2018年7月21日）の東京の気温データを入手し，<a href="https://facebook.github.io/prophet/">Prophet</a>で分析した．平均・最高・最低気温の全てに関して，1920年付近から上昇し続けており，そのトレンドを考慮してもなお，ここ数日は特に暑いことを確認できた．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">July 22, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#statistics">Statistics</a>
         
       
       </div>
