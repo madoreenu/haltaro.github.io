@@ -6,18 +6,23 @@ cover:  "/assets/2018-10-03-blocks.jpg"
 categories:
  - jekyll
  - python
-#published: false
+published: false
 ---
 
-[red-data-tools/jekyll-jupyter-notebook - GitHub](https://github.com/red-data-tools/jekyll-jupyter-notebook)を使って，JekyllサイトにJupyter notebookを埋め込んでみた．
+[red-data-tools/jekyll-jupyter-notebook - GitHub](https://github.com/red-data-tools/jekyll-jupyter-notebook)を使って，JekyllサイトにJupyter notebookを埋め込んだ．パス設定に手間取った．
 
 {::nomarkdown}
 {% jupyter_notebook "/notebooks/2018-10-03-sample.ipynb" %}
 {:/nomarkdown}
 
+# 環境
 
-だめだ．どうやってもうまく表示されない．他の方法を試して見たほうが良いかもしれない．
+# 手法
 
-このあたりを参考にするとか．
+## Gist
 
-http://www.leeclemmer.com/2017/07/04/how-to-publish-jupyter-notebooks-to-your-jekyll-static-website.html
+## [jekyll-jupyter-notebook](https://github.com/red-data-tools/jekyll-jupyter-notebook)
+
+# 手順
+
+# 感想
