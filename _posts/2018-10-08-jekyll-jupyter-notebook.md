@@ -6,10 +6,13 @@ cover:  "/assets/2018-10-03-blocks.jpg"
 categories:
  - jekyll
  - python
-#published: false
+published: false
 ---
 
 [red-data-tools/jekyll-jupyter-notebook - GitHub](https://github.com/red-data-tools/jekyll-jupyter-notebook)を使って，[Jekyll](https://jekyllrb-ja.github.io/)サイトに[Jupyter notebook](http://jupyter.org/)を埋め込んだ．[Gist](https://gist.github.com/)を使った方法と違い，埋め込みサイズが固定でないし，ローカルで作業が完結するのでとても良い．
+
+> 追記
+> GitHub Pagesがこのプラグインに対応して無かった…．
 
 # 環境
 

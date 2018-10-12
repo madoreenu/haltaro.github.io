@@ -172,102 +172,6 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/2018/10/08/jekyll-jupyter-notebook">JekyllにJupyter notebookを埋め込む</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>red-data-tools/jekyll-jupyter-notebook - GitHubを使って，JekyllサイトにJupyter notebookを埋め込んだ．Gistを使った方法と違い，埋め込みサイズが固定でないし，ローカルで作業が完結するのでとても良い．
-
-環境
-
-
-  Ruby 2.5.1p57
-  Jekyll 3.7.3
-  Jupyter 4.4.0
-
-
-従来手法と課題
-
-これまで私は，Gistを使って，Jupyter notebookをJekyllサイトに貼り付けてきた．具体的な手順は以下．
-
-
-  GistのNew gistで，アップロードしたいNotebookをドロップする．
-  Embedから埋め込みスクリプトをコピーして，貼り付ける．
-
-
-
-
-簡単にそれっぽく実装できるが，以下の二点が不満だった．
-
-
-  埋め込みサイズが固定されているため，長めのNotebookになるとウインドウ内でスクロールが必要になる．
-  ローカルマシンで作業を完結できず，更新のたびにGistにアップロードしないといけない．
-
-
-いろいろ探した結果，red-data-tools/jekyll-jupyter-notebook - GitHubなるものを発見した．
-
-jekyll-jupyter-notebook
-
-そもそも，NotebookのDownload asからHTMLを選択すればHTMLファイルに変換できるが，更新のたびにポチポチ作業するのは面倒くさい．そこで，red-data-tools/jekyll-jupyter-notebook - GitHub1を使い，jekyll sを実行する度，自動でNotebookをHTMLに変換し，記事中の任意の場所に埋め込めるようにした．
-
-インストール
-
-本家を参考にすれば，問題なくインストールできた．まず，Gemfileに以下を追記し，bundle installする．
-
-
-
-次に，_config.ymlに以下を追記すれば完了．
-
-
-
-埋め込み
-
-例えば，/notebooks/に保管してある2018-10-08-sample.ipynbを埋め込みたい場合，以下のスクリプトを記事中に書き込めば良い．
-
-
-
-
-  
-    
-  
-
-
-
-感想
-
-業務でも趣味でもNotebookを使うことが多いため，簡単にJekyllに埋め込めるようになるとかなり助かる．
-
-  
-    
-      素晴らしいツールです！ありがとうございます！ &#8617;
-    
-  
-
-</p>-->
-      <p><p><a href="https://github.com/red-data-tools/jekyll-jupyter-notebook">red-data-tools/jekyll-jupyter-notebook - GitHub</a>を使って，<a href="https://jekyllrb-ja.github.io/">Jekyll</a>サイトに<a href="http://jupyter.org/">Jupyter notebook</a>を埋め込んだ．<a href="https://gist.github.com/">Gist</a>を使った方法と違い，埋め込みサイズが固定でないし，ローカルで作業が完結するのでとても良い．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">October 8, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#jekyll">Jekyll</a>, 
-        
-      
-        
-        <a href="/categories/#python">Python</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
       <a class="post-link" href="/2018/09/17/tsptw">時間制約付き巡回セールスマン問題について調査した</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -402,6 +306,31 @@ jekyll-jupyter-notebook
       in 
         
         <a href="/categories/#english">English</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/07/22/summer-prophet">あまりに暑いのでProphetで140年分の気温を分析した</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>2018年7月22日，東京の最高気温は36.5度となり，今年最高を更新した．あまりに暑くてムシャクシャしたので，気象庁から約140年分（1872年1月1日-2018年7月21日）の東京の気温データを入手し，Prophetで分析した．平均・最高・最低気温の全てに関して，1920年付近から上昇し続けており，そのトレンドを考慮してもなお，ここ数日は特に暑いことを確認できた． なお，分析に用いたNotebookはこちら． 環境 macOS Sierra, 10.12.6 Python, 3.6.6 Prophet, 0.3 Prophet 特徴 Prophetとは，Facebookが開発したオープンソースの時系列解析ライブラリ．Prophetで想定するモデルを以下に示す： ここで，は時点における予測値，は時点におけるトレンド成分，は時点における周期成分，は時点における週末などのイレギュラーな成分，そしては時点における誤差を表す．各成分のパラメータをStanで推定し，モデルを学習する．詳細なモデルは，原論文（Sean J. Taylor and Benjamin Letham, Forecasting at Scale）を参照されたい． Prophetに関する日本語の記事としては，以下のようなものがある．とても参考になる． Prophet: forecasting at scale - Facebook Prophet入門【Python編】Facebookの時系列予測ツール - SlideShare Facebookの予測ライブラリProphetを用いたトレンド抽出と変化点検知 - Gunosyデータ分析ブログ Prophetの特徴は，時系列解析の前提知識がなくても，誰でも簡単に一定水準の分析をできること． インストール 今回はPythonからProphetを使う．pipでインストールする場合は，pip install fbprophet，condaでインストールする場合は，conda install -c conda-forge fbprophet． 準備 データの入手 過去の気象データ・ダウンロード - 気象庁からcsvデータをダウンロードする． 地点：東京...</p>-->
+      <p><p>2018年7月22日，東京の最高気温は36.5度となり，今年最高を更新した．あまりに暑くてムシャクシャしたので，<a href="http://www.data.jma.go.jp/gmd/risk/obsdl/index.php">気象庁</a>から約140年分（1872年1月1日-2018年7月21日）の東京の気温データを入手し，<a href="https://facebook.github.io/prophet/">Prophet</a>で分析した．平均・最高・最低気温の全てに関して，1920年付近から上昇し続けており，そのトレンドを考慮してもなお，ここ数日は特に暑いことを確認できた．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">July 22, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#statistics">Statistics</a>
         
       
       </div>
