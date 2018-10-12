@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customized Regression Model for Airbnb Dynamic Pricingを読んだ
-updated: 2018-09-22
+updated: 2018-10-13
 cover:  "/assets/2018-09-22-room.jpg"
 categories:
  - machine learning
@@ -83,10 +83,19 @@ published: false
   + **Price Increase Recall (PIR)** ：実際に予約されたデータのうち，予約されると予測された（設定価格が推奨価格より小さい）データの割合．
   $$PDR = \frac{a}{a+c}$$
   + **Price Increase Precision (PIP)** ：予約されると予測された（設定価格が推奨価格より小さい）データのうち，実際に予約されたデータの割合．$$PDR = \frac{a}{a+b}$$
+  + **Booking Regret (BR)**：$$BR = median_{bookings}(max(0, \frac{P-P_{sug}}{P}))$$[^br]
+- ビジネス的な指標と相関が高かったのは，PDRとBRだった．
+  + PDRが高いほど，ホストはより市場競争力の高い値付けをしていることになるため，成約率が高まると考えられる．
+  + BRが小さいほど，成約価格と推奨価格が近いことになるため，ホストからより大きな信頼を勝ち取るれると考えられる．
+  + 両者はトレードオフの関係にあるため，同時に最適化する必要がある．一般に推奨価格を下げれば下げるほど，PDRが改善するが，BRが悪化する．
 
+# Strategy model
 
-[^precision-recall]: いつもPrecision（精度）とRecall（再現率）が，どっちがどっちか忘れてしまう．Precisionは，正と予測したデータのうち，実際に正であるデータの割合．一方Recallは，実際に正であるデータのうち，正と予測したデータの割合．[F値 (F-measure) - 朱鷺の杜Wiki](http://ibisforest.org/index.php?F%E5%80%A4)を参考にさせて頂いた．
+続きはここから．
+
+[^precision-recall]: いつもPrecision（精度）とRecall（再現率）を忘れてしまう．Precisionは，正と予測したデータのうち，実際に正であるデータの割合．一方Recallは，実際に正であるデータのうち，正と予測したデータの割合．[F値 (F-measure) - 朱鷺の杜Wiki](http://ibisforest.org/index.php?F%E5%80%A4)を参考にさせて頂いた．
 [^complicated]: ややこしい．推奨価格は，予約されうる最大の価格と考えると理解できる．設定価格が推奨価格より大きい場合，Airbnbの予測としては「予約されない」となる．逆に，設定価格が推奨価格より小さい場合，Airbnbの予測としては「予約される」となる．
+[^br]: BRについては，何を表しているかよくわからなかった．
 
 # References
 

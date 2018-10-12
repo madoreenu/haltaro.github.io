@@ -4,7 +4,7 @@ plugins:
 #  - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-jupyter-notebook
+#  - jekyll-jupyter-notebook
 
 exclude:
   - "/vendor/"
