@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Pythonでディレクトリの有無を確認して自動作成する</title>
-  <meta name="description" content="Cross validationでフォールドごとにデータを分けるときなど，よく使うスクリプト．">
+  <meta name="description" content="Pythonでディレクトリの有無を確認して，自動生成するスクリプトをメモしておく．例えばCross validationでフォールドごとにデータを分けるときなどに使う．">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,7 +51,7 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="Cross validationでフォールドごとにデータを分けるときなど，よく使うスクリプト．" />
+  <meta property="og:description" content="Pythonでディレクトリの有無を確認して，自動生成するスクリプトをメモしておく．例えばCross validationでフォールドごとにデータを分けるときなどに使う．" />
   <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="Pythonでディレクトリの有無を確認して自動作成する" />
@@ -66,7 +66,7 @@
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Pythonでディレクトリの有無を確認して自動作成する">
-  <meta name="twitter:description" content="Cross validationでフォールドごとにデータを分けるときなど，よく使うスクリプト．">
+  <meta name="twitter:description" content="Pythonでディレクトリの有無を確認して，自動生成するスクリプトをメモしておく．例えばCross validationでフォールドごとにデータを分けるときなどに使う．">
   <meta name="twitter:image" content="http://localhost:4000/assets/2018-10-03-blocks.jpg">
   <meta name="twitter:url" content="http://localhost:4000">
   
@@ -181,7 +181,11 @@
 </section>
 
 <article class="post-content">
-  <p>Cross validationでフォールドごとにデータを分けるときなど，よく使うスクリプト．</p>
+  <p>Pythonでディレクトリの有無を確認して，自動生成するスクリプトをメモしておく．例えばCross validationでフォールドごとにデータを分けるときなどに使う．</p>
+
+<script src="https://gist.github.com/haltaro/0af917fa66c2f07a7375829b43e66bee.js"></script>
+
+<p><code class="highlighter-rouge">os.path.exists(path)</code>で<code class="highlighter-rouge">path</code>の有無を確認し，無い場合は<code class="highlighter-rouge">os.mkdir(path)</code>で作成する．</p>
 
 </article>
 
