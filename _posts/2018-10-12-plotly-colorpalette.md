@@ -8,7 +8,7 @@ categories:
  - visualization
 ---
 
-[Plotly](https://plot.ly/feed/#/)はとても便利だが，[Seaborn](https://seaborn.pydata.org/)の[color_palette](https://seaborn.pydata.org/generated/seaborn.color_palette.html)のように柔軟に色指定ができない．そこで，Seabornの`color`引数として使用可能なRGB値を，Seabornの`color_palette`から取得するラッパー関数を作成した．
+[Plotly](https://plot.ly/feed/#/)はとても便利だが，[Seaborn](https://seaborn.pydata.org/)の[color_palette](https://seaborn.pydata.org/generated/seaborn.color_palette.html)のように柔軟に色指定ができない．そこで，Plotlyの`color`引数として使用可能なRGB値を，Seabornの`color_palette`から取得するラッパー関数を作成した．
 
 
 # Plotly
