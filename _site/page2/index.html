@@ -170,6 +170,31 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/07/22/summer-prophet">あまりに暑いのでProphetで140年分の気温を分析した</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>2018年7月22日，東京の最高気温は36.5度となり，今年最高を更新した．あまりに暑くてムシャクシャしたので，気象庁から約140年分（1872年1月1日-2018年7月21日）の東京の気温データを入手し，Prophetで分析した．平均・最高・最低気温の全てに関して，1920年付近から上昇し続けており，そのトレンドを考慮してもなお，ここ数日は特に暑いことを確認できた． なお，分析に用いたNotebookはこちら． 環境 macOS Sierra, 10.12.6 Python, 3.6.6 Prophet, 0.3 Prophet 特徴 Prophetとは，Facebookが開発したオープンソースの時系列解析ライブラリ．Prophetで想定するモデルを以下に示す： ここで，は時点における予測値，は時点におけるトレンド成分，は時点における周期成分，は時点における週末などのイレギュラーな成分，そしては時点における誤差を表す．各成分のパラメータをStanで推定し，モデルを学習する．詳細なモデルは，原論文（Sean J. Taylor and Benjamin Letham, Forecasting at Scale）を参照されたい． Prophetに関する日本語の記事としては，以下のようなものがある．とても参考になる． Prophet: forecasting at scale - Facebook Prophet入門【Python編】Facebookの時系列予測ツール - SlideShare Facebookの予測ライブラリProphetを用いたトレンド抽出と変化点検知 - Gunosyデータ分析ブログ Prophetの特徴は，時系列解析の前提知識がなくても，誰でも簡単に一定水準の分析をできること． インストール 今回はPythonからProphetを使う．pipでインストールする場合は，pip install fbprophet，condaでインストールする場合は，conda install -c conda-forge fbprophet． 準備 データの入手 過去の気象データ・ダウンロード - 気象庁からcsvデータをダウンロードする． 地点：東京...</p>-->
+      <p><p>2018年7月22日，東京の最高気温は36.5度となり，今年最高を更新した．あまりに暑くてムシャクシャしたので，<a href="http://www.data.jma.go.jp/gmd/risk/obsdl/index.php">気象庁</a>から約140年分（1872年1月1日-2018年7月21日）の東京の気温データを入手し，<a href="https://facebook.github.io/prophet/">Prophet</a>で分析した．平均・最高・最低気温の全てに関して，1920年付近から上昇し続けており，そのトレンドを考慮してもなお，ここ数日は特に暑いことを確認できた．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">July 22, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#statistics">Statistics</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/07/20/esl-02">Trevor Hastie，統計的学習の基礎：2章，教師あり学習の基礎</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -334,47 +359,6 @@ Bokehの設定
       in 
         
         <a href="/categories/#aws">Aws</a>, 
-        
-      
-        
-        <a href="/categories/#linux">Linux</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/07/13/tcp-ns3">ns-3でTCPの輻輳制御を観察する</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>ns-3でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．本記事は，2017年2月20日にQiitaに投稿した記事を，本サイト向けに再構成したもの． はじめに インターネット上のほとんどのトラフィックは，TCP（Transmission Control Protocol）によって制御されていると言われています．TCPの特徴の一つとして，送信ノードが各々輻輳1制御アルゴリズム（Congestion control algorithm）に基づき，一度に送信するデータ量を調整する，という点があります．本記事では，ns-3で各アルゴリズムの動作をシミュレートし，NumPy + matplotlibで視覚化します． TCPの輻輳制御アルゴリズムを比較するために，ns-3にはtcp-variants-comparison.ccというサンプルシナリオが用意されています．しかし，このシナリオスクリプトをそのまま使うと，本記事で注目するいくつかの変数をモニタ（ns-3では，トレースと呼びます）できない，という課題がありました．そこで，本記事では，シナリオスクリプトに任意のトレース情報を追加する方法を紹介します． なお，本記事のソースコードは，全てGithubに置いてあります． 環境構築 ns-3 (Network Simulator 3) ns-3は，オープンソースの離散事象ネットワークシミュレータです．研究や教育用途での使用を目的に開発されています．本記事では，下記の記事で構築した環境及びディレクトリ構成を前提とします． ns-3.26で始めるネットワークシミュレーション python 本記事では，データ処理にNumPy，グラフ描画にmatplotlibを利用します．下記の環境で動作を確認しました． Python 2.7.11 NumPy 1.10.4 matplotlib 1.5.1 TCPにおける輻輳制御 概要 下図は，本記事で想定するTCP輻輳制御のイメージです．TCPの送信ノード（TCP Sender）は，受信ノード（TCP Receiver）からの確認応答（Acknowledgement，ACK）23や信号往復時間（Round Trip Time，RTT）に応じて，データ量（DATA）を調整します． 厳密には，データ量の調整は，という式で表現できます．ここで，はTCP SenderがACK無しに送信可能なDATA数の上限値であり，はTCP Senderが自律的に調整するウインドウサイズ（Congestion window）であり，はTCP Receiverから告知されるウインドウサイズ（Advertised window）です．上式の単位はセグメントと呼ばれ，1セグメントの大きさはTCP SenderとReceiverのネゴシエーションで決まります．は非常に大きい値に設定されることが多いため，簡単のため，本記事ではのみに注目します． が大きいほど，たくさんのデータを一度に送ることができます．TCP Senderは，ACKやRTTから，Receiverとの間のネットワークの混み具合を予測して，自律的にの大きさを調整します．の調整戦略を，本記事では輻輳制御と呼びます． 輻輳制御は，輻輳状態4（Congestion state）と，アルゴリズム（Congestion control algorithm）という２つの要素によって決まります．輻輳状態は，OPEN，DISORDER，RECOVER，LOSS等，ネットワークの混雑状態を表します．アルゴリズムは，各輻輳状態におけるの更新方法を表します． 輻輳状態（Congestion state） 　本記事では，ns-3の実装（~/ns-3.26/source/ns-3.26/src/internet/model/tcp-socket-base.cc）に基づき，以下の4種類の輻輳状態を想定します． OPEN：いわゆる正常な状態です．アルゴリズムによっては，Slow...</p>-->
-      <p><p><a href="https://www.nsnam.org/">ns-3</a>でTCPの輻輳制御アルゴリズムをシミュレートし，その動作をmatplotlibで可視化した．本記事は，<a href="https://qiita.com/haltaro/items/d479538345357f08c595">2017年2月20日にQiitaに投稿した記事</a>を，本サイト向けに再構成したもの．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">July 13, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#network">Network</a>, 
-        
-      
-        
-        <a href="/categories/#ns3">Ns3</a>, 
-        
-      
-        
-        <a href="/categories/#c++">C++</a>, 
-        
-      
-        
-        <a href="/categories/#visualization">Visualization</a>, 
         
       
         
