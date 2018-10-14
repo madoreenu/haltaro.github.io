@@ -147,6 +147,8 @@
         
           
         
+          
+        
       </ul>
     </nav>
   </div>
@@ -189,6 +191,126 @@ os.path.exists(path)でpathの有無を確認し，無い場合はos.mkdir(path)
       in 
         
         <a href="/categories/#python">Python</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/2018/10/12/plotly-colorpalette">PlotlyでSeabornライクに色指定する</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>Plotlyはとても便利だが，Seabornのcolor_paletteのように柔軟に色指定ができない．そこで，Seabornのcolor引数として使用可能なRGB値を，Seabornのcolor_paletteから取得するラッパー関数を作成した．
+
+Plotly
+
+Plotlyはインタラクティブで美麗なグラフ描画に強みを持つライブラリ．Python，R，あるいはJavaScriptから呼び出して使える．業務上，Jupyter Notebook上で作図したグラフをグリグリ動かしてドヤることが多いので，この記事ではPythonからの利用を前提とする1．
+
+pipでインストールする場合はpip install plotly．Condaでインストールする場合はconda install -c plotly plotly．
+
+Seaborn
+
+Seabornは，matplotlibをベースとしたグラフ描画ライブラリ．color_palette(palette, n_colors)で，特定のpaletteのn_colors個の色リストを直感的に取得できる．Plotlyでこれを使いたい．
+
+
+
+pipでインストールする場合はpip install seaborn．Condaでインストールする場合はconda install -c anaconda seaborn．
+
+Plotlyにおける色指定
+
+Plotlyでは，非常に色指定をし辛い23．colorlover - GitHubを使ってカラーパレット的なものを使うチュートリアルが公開されているが，パレットの種類が少ないし，interpで任意のスケールに拡張したときにムラが出たり，エラーがでたりする場合がある．あるいは，markerのcolorscaleでパレットを指定するチュートリアルも公開されているが，colorでサンプルごとにスケール値を指定する必要があり，凡例ごとに色を塗り分けるときなど，直感的なコーディングがしづらそう．
+
+
+
+
+そこで，Seabornライクに色を指定するための関数を作成した．
+
+作成した関数
+
+
+
+関数の内部でsns.color_paletteを呼び出し，RGB値を取得している．ただし，Plotly用のフォーマットrgb({}, {}, {})に変換している．
+
+実験
+
+こちらのJupyter notebookで実験してみた．15パターンの凡例を折れ線グラフで表示する．
+
+ライブラリのインポート
+
+
+
+データセット生成
+
+15種類のランダムな100点からなるサンプルを作成する．
+
+
+
+Plotlyで素直にプロット
+
+
+
+
+
+11種類以上の判例になると，色が衝突しているのがわかる．
+
+PlotlyでSeabornライクにプロット
+
+まずはhlsでプロットしてみる．
+
+
+
+
+
+次はviridisでプロットしてみる．
+
+
+
+
+
+最後にinfernoでプロットしてみる．
+
+
+
+
+
+jet以外のMatplotlibのColormapを利用できる．
+
+感想
+
+これで，単なる折れ線グラフでもドヤれる．
+
+  
+    
+      RやJavaScriptから使ったことがない． &#8617;
+    
+    
+      単純に私のPlotly力が足りないという説もある．「こうすればできるよ」的なTipsがあれば是非ご教授ください． &#8617;
+    
+    
+      公式チュートリアルで，カラーコードを直接指定しているのを見てドン引きした人も多いはず． &#8617;
+    
+  
+
+</p>-->
+      <p><p><a href="https://plot.ly/feed/#/">Plotly</a>はとても便利だが，<a href="https://seaborn.pydata.org/">Seaborn</a>の<a href="https://seaborn.pydata.org/generated/seaborn.color_palette.html">color_palette</a>のように柔軟に色指定ができない．そこで，Seabornの<code class="highlighter-rouge">color</code>引数として使用可能なRGB値を，Seabornの<code class="highlighter-rouge">color_palette</code>から取得するラッパー関数を作成した．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">October 12, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#python">Python</a>, 
+        
+      
+        
+        <a href="/categories/#visualization">Visualization</a>
         
       
       </div>
@@ -315,31 +437,6 @@ os.path.exists(path)でpathの有無を確認し，無い場合はos.mkdir(path)
     </section>
   </li>
   
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/08/08/dmm-english">DMM英会話受講メモ：2018年7月</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>DMM英会話の受講メモ．9回/31日なので，1/3以下．もう少し頑張りたいところ． 20180702 First Ever Live Computer-Human Debate: Who Won? outsmart: to defeat someone by being more clever persuasive: able to make people believe in what you say ネット接続が不安定すぎて，全然会話が続かない．そろそろ本気でルーターの設定を見直すべき． 20180705 忙しかったので，10分だけフリートークしてもらった． 20180707 Artificial Intelligence Used to Track World’s Wildlife mate: to breed and produce young breeding ground: a place where animals...</p>-->
-      <p><p><a href="http://eikaiwa.dmm.com/">DMM英会話</a>の受講メモ．9回/31日なので，1/3以下．もう少し頑張りたいところ．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">August 8, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#english">English</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
   
 </ul>
 
@@ -351,7 +448,7 @@ os.path.exists(path)でpathの有無を確認し，無い場合はos.mkdir(path)
       <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
     </span>
 		
-		<span class="page-number">Page 1 of 14</span>
+		<span class="page-number">Page 1 of 15</span>
 		
 		<a class="newer-posts" href="/page2">
       <span class="fa-stack fa-lg">
@@ -399,6 +496,8 @@ os.path.exists(path)でpathの有無を確認し，無い場合はos.mkdir(path)
         
         
           <li class="nav-link"><a href="/search/">Search</a>
+        
+        
         
         
         
