@@ -11,7 +11,7 @@ categories:
 
 [Peng Ye, et al., Customized Regression Model for Airbnb Dynamic Pricing, KDD2018](http://www.kdd.org/kdd2018/accepted-papers/view/customized-regression-model-for-airbnb-dynamic-pricing)を読んだ．[Airbnb](https://www.airbnb.jp/)で実際に使われている価格推奨モデルについて，非常にわかりやすくまとめられている．
 
-転職して初めて読んだ論文．時間はかかったが，読み通すことができた．実装しろと言われてすぐ実装できるとは言えないが，大筋は理解できたと思う．心理的なハードルは下がったので，他の論文もどんどん読んでいきたい．
+この分野で初めて読んだ論文．時間はかかったが，読み通すことができた．実装しろと言われてすぐ実装できるとは言えないが，大筋は理解できたと思う．心理的なハードルは下がったので，他の論文もどんどん読んでいきたい．
 
 # Abstract
 
