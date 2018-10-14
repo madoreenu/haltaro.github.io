@@ -13,7 +13,7 @@ categories:
 
 # Plotly
 
-[Plotly](https://plot.ly/feed/#/)はインタラクティブで美麗なグラフ描画に強みを持つライブラリ．[Python](https://www.python.org/)，[R](https://www.r-project.org/)，あるいは[JavaScript](https://developer.mozilla.org/ja/docs/Web/JavaScript)から呼び出して使える．業務上，[Jupyter Notebook](http://jupyter.org/)上で作図したグラフをグリグリ動かしてドヤることが多いので，この記事ではPythonからの利用を前提とする[^python]．
+[Plotly](https://plot.ly/feed/#/)はインタラクティブで美麗なグラフ描画に強みを持つライブラリ．[Python](https://www.python.org/)，[R](https://www.r-project.org/)，あるいは[JavaScript](https://developer.mozilla.org/ja/docs/Web/JavaScript)から呼び出して使える．私は[Jupyter Notebook](http://jupyter.org/)上で作図したグラフをグリグリ動かしてドヤることが多いので，この記事ではPythonからの利用を前提とする[^python]．
 
 [^python]: RやJavaScriptから使ったことがない．
 
