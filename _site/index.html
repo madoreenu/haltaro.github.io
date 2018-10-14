@@ -202,6 +202,35 @@ os.path.exists(path)でpathの有無を確認し，無い場合はos.mkdir(path)
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/10/14/airbnb-dynamic-pricing">Customized Regression Model for Airbnb Dynamic Pricingを読んだ</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>Peng Ye, et al., Customized Regression Model for Airbnb Dynamic Pricing, KDD2018を読んだ．Airbnbで実際に使われている価格推奨モデルについて，非常にわかりやすくまとめられている． 転職して初めて読んだ論文．時間はかかったが，読み通すことができた．実装しろと言われてすぐ実装できるとは言えないが，大筋は理解できたと思う．心理的なハードルは下がったので，他の論文もどんどん読んでいきたい． Abstract Airbnbの商品は基本的に過去にない唯一のもの．よって，過去の実績をもとに需要曲線を予測するのが非常に難しい． Airbnbが提案するシステムは３つのモデルで構成される． 特定の日にちの予約確率を予測するモデル． 特定の日にちの最適な売値を予測するモデル． 二番目の予測値を，さらにパーソナライズして売値をサジェストするモデル． 本論文では，二番目の売値予測モデルについて述べる．このモデルは，Price TipsとSmart Pricing toolとして実際にAirbnbのシステムに組み込まれている．A/Bテストでこのモデルの効果を確認した． Introduction プラットフォーマーとして，Airbnbは，ホストが設定する価格を直接的に制御していないが，ツールを使って適正値をアドバイスしている． Price Tips：暦情報をもとに，適正価格をサジェストする機能． Smart Pricing：ユーザが設定した希望価格の下限と上限をもとに，自動的に適正価格を計算する機能． 適正価格は機械学習で算出されており，モデルは日々更新されている． Related works Airbnbの値付けに関して，いくつかの論文が公開されている[8, 9, 11, 16]． Dynamic pricing at airbnb AirbnbでDynamic Pricingするにあたり，大きく２つの課題がある． Demand Estimation 従来は，大量生産品に対するDemand estimationが研究されてきた．この領域では，需要曲線を予測することが最大の目的である．ここで，は価格．近年では，機械学習を用いてを予測するモデルも提案されている[2, 15]．一方で，Airbnbにおける需要曲線は価格だけでなく，時間や個別の物件に依存すると考えられる． 需要曲線が時間に依存する原因として，季節性とリードタイムがある． 需要曲線が物件に依存する原因として，Airbnbが扱う物件の特殊性と，人気の格差がある． 以上から，需要曲線を予測するのは非常に難しい．...</p>-->
+      <p><p><a href="http://www.kdd.org/kdd2018/accepted-papers/view/customized-regression-model-for-airbnb-dynamic-pricing">Peng Ye, et al., Customized Regression Model for Airbnb Dynamic Pricing, KDD2018</a>を読んだ．<a href="https://www.airbnb.jp/">Airbnb</a>で実際に使われている価格推奨モデルについて，非常にわかりやすくまとめられている．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">October 14, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#machine learning">Machine learning</a>, 
+        
+      
+        
+        <a href="/categories/#paper">Paper</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/10/12/plotly-colorpalette">PlotlyでSeabornライクに色指定する</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -406,31 +435,6 @@ jet以外のMatplotlibのColormapを利用できる．
       in 
         
         <a href="/categories/#life">Life</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/08/31/dmm-english">DMM英会話受講メモ：2018年8月</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>DMM英会話の受講メモ．7回/31日なので，1/4以下．先月よりさらに頻度が下がったが，後半は本当に忙しかったのでしょうがない． 20180802 Some Colleges Now Offer Scholarships to Gamers slacker: a person who is lazy and has no desire to be successful glued to (something): to focus on something and not pay attention to anything else unwind: to relax on board with: to agree with or support something 20180807 The...</p>-->
-      <p><p><a href="http://eikaiwa.dmm.com/">DMM英会話</a>の受講メモ．7回/31日なので，1/4以下．先月よりさらに頻度が下がったが，後半は本当に忙しかったのでしょうがない．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">August 31, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#english">English</a>
         
       
       </div>

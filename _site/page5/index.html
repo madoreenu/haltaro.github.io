@@ -172,6 +172,31 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/06/16/jekyll-algolia">JekyllにAlgoliaで全文検索機能を実装する</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>本サイトに待望の全文検索機能を実装した．Algolia社のDocSearchの審査に通らなかったので，同社のFree hacker planを利用した． Algolia Algoliaは，リアルタイム検索をSaaSで提供するサービス群．今回は，DocSearchおよびFree hacker planの利用を検討した． DocSearch DocSearch申請用ページで登録したURLが審査に通ると，Algoliaのクローラが自動でインデックスファイルを構築し，検索用APIを公開してくれるという，ゆとりには嬉しいサービス．何を隠そうJekyllの検索システムもこれで実装されている．今回は残念ながら審査に通らなかった1ので，Free hacker planを利用することにした． Free hacker plan 自力で作成したインデックスファイルをAlgoliaにアップロードし，検索用APIを利用するプラン．マスターデータは1万件まで登録でき，APIを月10万回まで利用できる．Algoliaを利用してサイト内検索機能を実装する - WEB EGGによると，上限をオーバーすると検索もコンテンツの追加もできなくなるみたい．月1万PV程度のブログでギリギリ足りない感じらしいので，本ウェブサイトなら余裕である2． 幸い，Jekyll向けのプラグインがあるため，私でも簡単に実装できた．以下に手順を示す． 手順 以下は基本的にAlgolia for Jekyll - AlgoliaおよびBlog search - Algolia for Jekyllに則っているが，ウェブサイトの一貫性を保つために一部のコードを修正している． Algoliaのユーザ登録 Algoliaからサインアップする．以降の処理で，ダッシュボードのApplication ID，Search-Only API Key，およびAdmin API Keyが必要なのでメモしておく． jekyll-algliaの設定 Gemfileに以下を追記し，$ bundle updateする． _config.ymlにjekyll-algoliaの設定を追加する． インデックスの作成とアップロード シェルで以下を実行する． ここで，Admin API Keyはローカルで保管する必要がある．間違ってGitHub等にアップしないように注意．以降は，検索窓の実装に入る． _layouts/search.html Blog search...</p>-->
+      <p><p>本サイトに待望の<a href="https://haltaro.github.io/search/">全文検索機能を実装</a>した．Algolia社の<a href="https://community.algolia.com/docsearch/">DocSearch</a>の審査に通らなかったので，同社の<a href="https://www.algolia.com/pricing">Free hacker plan</a>を利用した．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">June 16, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#jekyll">Jekyll</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/06/15/rename-permalinks">CentrariumのPostsをCategoriesにリネームする</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -343,31 +368,6 @@ bencentra/centrarium - GitHubのREADME.mdを読むと，どうやら_config.yml�
       in 
         
         <a href="/categories/#jekyll">Jekyll</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/05/31/dmm-english">DMM英会話受講メモ：2018年5月</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>DMM英会話の受講メモ．後半にかけて仕事が非常に忙しくなり，なかなか時間が取れなかった．英語力が日に日に落ちていくのを実感している．だんだん仕事にも慣れてきたので，6月以降はもっと時間が取れると思う． 20180501 Parking Shortage Plagues Macedonian Capital plague: to cause serious problems for someone or something encroach: to intrude on something; to exceed the normal limits outcry: a strong expression of anger and disapproval about something inconsiderate: not thinking about other people’s feelings or needs pedestrian: 歩行者 20180502 A Lifetime...</p>-->
-      <p><p><a href="http://eikaiwa.dmm.com/">DMM英会話</a>の受講メモ．後半にかけて仕事が非常に忙しくなり，なかなか時間が取れなかった．英語力が日に日に落ちていくのを実感している．だんだん仕事にも慣れてきたので，6月以降はもっと時間が取れると思う．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">May 31, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#english">English</a>
         
       
       </div>
