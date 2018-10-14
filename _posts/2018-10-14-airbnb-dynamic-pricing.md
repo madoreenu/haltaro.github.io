@@ -5,7 +5,7 @@ updated: 2018-10-14
 cover:  "/assets/2018-09-22-room.jpg"
 categories:
  - machine learning
- - paper
+ - papers
 #published: false
 ---
 
