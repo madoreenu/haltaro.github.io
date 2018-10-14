@@ -23,7 +23,7 @@ categories:
 
 [Seaborn](https://seaborn.pydata.org/)は，[matplotlib](https://matplotlib.org/)をベースとしたグラフ描画ライブラリ．`color_palette(palette, n_colors)`で，特定の`palette`の`n_colors`個の色リストを直感的に取得できる．Plotlyでこれを使いたい．
 
-![seaborn]({{site.baseurl}}/assets/2018-10-14-seaborn.PNG)
+![seaborn]({{site.baseurl}}/assets/2018-10-14-seaborn.png)
 
 [pip](https://pypi.org/project/pip/)でインストールする場合は`pip install seaborn`．[Conda](https://conda.io/docs/)でインストールする場合は`conda install -c anaconda seaborn`．
 
@@ -35,8 +35,8 @@ Plotlyでは，非常に色指定をし辛い[^plotly][^tutorial]．[colorlover 
 [^plotly]: 単純に私のPlotly力が足りないという説もある．「こうすればできるよ」的なTipsがあれば是非ご教授ください．
 [^tutorial]: [公式チュートリアル](https://plot.ly/python/ipython-notebook-tutorial/)で，カラーコードを直接指定しているのを見てドン引きした人も多いはず．
 
-![input]({{site.baseurl}}/assets/2018-10-14-input.PNG)
-![output]({{site.baseurl}}/assets/2018-10-14-output.PNG)
+![input]({{site.baseurl}}/assets/2018-10-14-input.png)
+![output]({{site.baseurl}}/assets/2018-10-14-output.png)
 
 そこで，[Seaborn](https://seaborn.pydata.org/)ライクに色を指定するための関数を作成した．
 
