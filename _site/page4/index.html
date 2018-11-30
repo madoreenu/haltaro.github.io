@@ -172,6 +172,87 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/07/10/kaggle-api">MacでKaggle-apiを使う</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>ものすごく今更ながら，kaggle-apiをMacBookで使ってみた．簡単だった．
+
+環境
+
+
+  macOS Sierra, 10.12.6
+
+
+手順
+
+kaggle-apiというKaggle公式のapiの使い方をまとめます - kaggleを全力でやりますを参考にさせて頂いた．
+
+
+
+Kaggleのuser profileに移動し，Create API Tokenをクリック．取得したkaggle.jsonを，~/.kaggle/kaggle.jsonに移動．ここで，kaggle.jsonの権限を変更する．
+
+
+
+使い方
+
+Kaggle/kaggle-api - GitHubを見るのが手っ取り早い．
+
+ヘルプ
+
+
+
+コンペティション一覧を取得
+
+2018年7月10日現在，次のような結果が出た．
+
+
+
+コンペティションのデータを一括ダウンロード
+
+例えば，Santander Value Prediction Challengeのデータを一括ダウンロードしたい場合は，次のようにコマンドを打つ．
+
+
+
+
+  -c：コンペティション名．kaggle competitions listのref列のものを使う．
+  -p：ダウンロード先のパス．デフォルトだと，~/.kaggle/competitions/．
+
+
+他にもいろいろオプションがある．kaggle competitions download -helpで確認できる．
+
+コンペティションに予測結果をアップロード
+
+例えば，Santander Value Prediction Challengeに予測結果をアップロードしたい場合は，次のようにコマンドを打つ．
+
+
+
+
+  -c：コンペティション名．kaggle competitions listのref列のものを使う．
+  -f：アップロードしたいファイル名．
+  -m：アップロード時のメッセージ．
+
+</p>-->
+      <p><p>ものすごく今更ながら，<a href="https://github.com/Kaggle/kaggle-api">kaggle-api</a>をMacBookで使ってみた．簡単だった．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">July 10, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#kaggle">Kaggle</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/07/07/time-series">萩原淳一郎，基礎からわかる時系列分析</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -331,31 +412,6 @@ lightgbm
       
         
         <a href="/categories/#python">Python</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/06/16/too-old-openssl">OpenSSLが古すぎてbundle updateできない</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>Algoliaで全文検索機能を実装するためにGemfileを書き換えて$ bundle updateしたところ，OpenSSLが古すぎると叱られた．How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に対応したら解決した． 症状 bundle updateしたら，次のようなエラーが出た． よく見たら，冒頭に以下のような警告が．OpenSSLのバージョンが古すぎるのが原因らしい． 対応記録 ほぼ原因はわかっていたが，念の為How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に以下のテストを実行した． すると，案の定，OpenSSLのバージョンが古いことがわかった． Ruby using wrong version of opensslを参考に以下を実行した． するとbrew reinstall opensslしろと怒られた． これで再度$ ruby -ropen-uri -e 'eval open("https://git.io/vQhWq").read'にトライしたが，解決せず．How to troubleshoot RubyGems and Bundler...</p>-->
-      <p><p><a href="https://haltaro.github.io/2018/06/16/jekyll-algolia">Algoliaで全文検索機能を実装</a>するために<code class="highlighter-rouge">Gemfile</code>を書き換えて<code class="highlighter-rouge">$ bundle update</code>したところ，<code class="highlighter-rouge">OpenSSL</code>が古すぎると叱られた．<a href="https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions">How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs</a>を参考に対応したら解決した．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">June 16, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#ruby">Ruby</a>
         
       
       </div>

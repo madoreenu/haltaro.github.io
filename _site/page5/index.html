@@ -172,6 +172,31 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/06/16/too-old-openssl">OpenSSLが古すぎてbundle updateできない</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>Algoliaで全文検索機能を実装するためにGemfileを書き換えて$ bundle updateしたところ，OpenSSLが古すぎると叱られた．How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に対応したら解決した． 症状 bundle updateしたら，次のようなエラーが出た． よく見たら，冒頭に以下のような警告が．OpenSSLのバージョンが古すぎるのが原因らしい． 対応記録 ほぼ原因はわかっていたが，念の為How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docsを参考に以下のテストを実行した． すると，案の定，OpenSSLのバージョンが古いことがわかった． Ruby using wrong version of opensslを参考に以下を実行した． するとbrew reinstall opensslしろと怒られた． これで再度$ ruby -ropen-uri -e 'eval open("https://git.io/vQhWq").read'にトライしたが，解決せず．How to troubleshoot RubyGems and Bundler...</p>-->
+      <p><p><a href="https://haltaro.github.io/2018/06/16/jekyll-algolia">Algoliaで全文検索機能を実装</a>するために<code class="highlighter-rouge">Gemfile</code>を書き換えて<code class="highlighter-rouge">$ bundle update</code>したところ，<code class="highlighter-rouge">OpenSSL</code>が古すぎると叱られた．<a href="https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#the-solutions">How to troubleshoot RubyGems and Bundler TLS/SSL Issues - Bundler Docs</a>を参考に対応したら解決した．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">June 16, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#ruby">Ruby</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/06/16/jekyll-algolia">JekyllにAlgoliaで全文検索機能を実装する</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -305,69 +330,6 @@ _config.ymlにおける，jekyll-archives関連のすべての設定をコメン
       in 
         
         <a href="/categories/#network">Network</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/06/10/disqus">Jekyll-CentrariumにDisqusを導入する</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>このウェブサイトにDisqusでコメント機能を追加した．Centrariumの作り込みが素晴らしいので，Disqus上の登録と，_config.ymlの変更だけで実現できた．
-
-環境
-
-
-  Jekyll theme：Centrarium
-
-
-Disqusの設定
-
-Disqusでユーザ登録し，Install on Siteを選択する．以下に適当に情報を埋めていく．
-
-
-
-Planを選択する．広告を出したくなかったので，Plusのfreeを選択した．
-
-
-
-詳細設定を行う．とりあえずわかるところだけ埋めた．
-
-
-
-_config.ymlの変更
-
-bencentra/centrarium - GitHubのREADME.mdを読むと，どうやら_config.ymlのdisqus_shortnameに登録名を設定するだけで良いことがわかった．
-
-
-
-感想
-
-めちゃくちゃ簡単にできた．
-
-参考
-
-
-  JekyllにDisqusのコメントフォームをつけてみる - たけぞう瀕死ブログ
-  bencentra/centrarium - GitHub
-
-</p>-->
-      <p><p>このウェブサイトに<a href="https://disqus.com/">Disqus</a>でコメント機能を追加した．<a href="https://github.com/bencentra/centrarium">Centrarium</a>の作り込みが素晴らしいので，Disqus上の登録と，<code class="highlighter-rouge">_config.yml</code>の変更だけで実現できた．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">June 10, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#jekyll">Jekyll</a>
         
       
       </div>
