@@ -61,8 +61,6 @@ $$swnd = \mathrm{min}(cwnd, rwnd) - acked$$
 
 ここでは，ns-3.27でデフォルト実装されているものに絞っているが，`ns-3.27/src/internet/model`にソースコードを格納すれば，自由にアルゴリズムを追加可能である[^future]．例えば，Linux2.6.19以降で標準搭載されている[CUBIC](http://www4.ncsu.edu/~rhee/export/bitcp/cubic-paper.pdf)は，[こちら](http://web.cs.wpi.edu/~claypool/papers/tcp-cubic/)からソースコードを入手できる．
 
-なお，ほとんどのアルゴリズムでパケットロス時やタイムアウト時の動作は共通しているため，本記事では通常状態（パケットロスやタイムアウトがない状態）における動作の違いに焦点をあてる．
-
 ## NewReno
 
 最もメジャーなアルゴリズムの一つ．$$cwnd$$が$$ssthresh$$より小さい場合はSlow startフェイズ，大きい場合はCongestion avoidanceフェイズに移り，それぞれ以下の更新式を用いる．
@@ -81,107 +79,50 @@ $$
 
 ## HighSpeed
 
-大容量のチャネル向けに提案された輻輳制御アルゴリズム．
+大容量のチャネル向けに提案された輻輳制御アルゴリズム．このアルゴリズムは，Probe[^probing]時の$$cwnd$$の増加が大きく，また`recovery`フェイズにおける$$cwnd$$の回復が早い．このような特殊な動作は，$$cwnd$$が一定値より大きいときのみ実行されるため，輻輳時にHighSpeedはNewRenoの送信データ量を一方的に専有したりしない（TCP friendly）．
 
-$$
-\begin{align}
-&\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
-\end{align}
-$$
+
+[^probing]: $$cwnd=0$$のときにパケットロスが生じると，送信ノードも受信ノードも何も送信できなくなり，デッドロック状態になる．これを避けるため，送信ノードは一定間隔でペイロード長0のパケットを送ってACKを促す．これをWindow probeと呼ぶ．
 
 詳細は，[S. Floyd, et al., "HighSpeed TCP for Large Congestion Windows," Request for Comments: 3649, 2003](https://tools.ietf.org/html/rfc3649)を参照されたい．
 
 ## Westwood
 
-$$
-\begin{align}
-&\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
-\end{align}
-$$
+Westwoodは，AIAD（Additive Increase/ Adaptive Decrease）方式を採用している．輻輳イベントが発生したとき，$$cwnd$$を半分にする代わりに，ネットワークの帯域を予測し，それをもとに$$cwnd$$を更新する．
+
+詳細は，[Saverio Mascolo, et al, "TCP Westwood: Bandwidth Estimation for Enhanced Transport over Wireless Links," Proceedings of the 7th annual international conference on Mobile computing and networking. ACM, 2001.](https://dl.acm.org/citation.cfm?id=381704)を参照されたい．
 
 ## Vegas
 
-$$
-\begin{align}
-&\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
-\end{align}
-$$
+詳細は，[Lawrence S. Brakmo, and Larry L. Peterson, "TCP Vegas: End to End Congestion Avoidance on a Global Internet," IEEE Journal on selected Areas in communications 13.8, pp.1465-1480, 1995](https://ieeexplore.ieee.org/abstract/document/464716)を参照されたい．
 
 ## Scalable
 
-$$
-\begin{align}
-&\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
-\end{align}
-$$
+詳細は，[Tom Kelly, "Scalable TCP: Improving Performance in Highspeed Wide Area Networks," ACM SIGCOMM computer communication Review 33.2 pp.83-91, 2003](https://dl.acm.org/citation.cfm?id=956989)を参照されたい．
 
 ## Veno
 
-$$
-\begin{align}
-&\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
-\end{align}
-$$
+詳細は，[Cheng Peng Fu, and Soung C. Liew, "TCP Veno: TCP Enhancement for Transmission Over Wireless Access Networks," IEEE Journal on selected areas in communications 21.2 pp.216-228, 2003](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.2.1469&rep=rep1&type=pdf)を参照されたい．
 
 ## Bic
 
-$$
-\begin{align}
-&\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
-\end{align}
-$$
+詳細は，["Binary Increase Congestion Control (BIC) for Fast Long-Distance Networks," INFOCOM 2004. Twenty-third AnnualJoint Conference of the IEEE Computer and Communications Societies. Vol. 4. IEEE, 2004.](https://ieeexplore.ieee.org/abstract/document/1354672)を参照されたい．
 
 ## YeAH
 
-$$
-\begin{align}
-&\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
-\end{align}
-$$
+詳細は，[]()を参照されたい．
 
 ## Illinois
 
-$$
-\begin{align}
-&\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
-\end{align}
-$$
+詳細は，[]()を参照されたい．
 
 ## H-TCP
 
-$$
-\begin{align}
-&\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
-\end{align}
-$$
+詳細は，[]()を参照されたい．
 
 ## LEDBAT
 
-$$
-\begin{align}
-&\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
-\end{align}
-$$
+詳細は，[]()を参照されたい．
 
 # 感想
 
