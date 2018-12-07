@@ -75,54 +75,71 @@ $$
 
 ここで，上式は**ACKを受信するたび**に更新されることに注意されたい．また，上式の単位はセグメントである．Slow startフェイズ（二行目）においては，ACKを受信するたびに$$cwnd$$が一つずつ増加し，その結果受信することになるACKも一つ増えるため，$$cwnd$$は指数的に増加する．一方でCongestion avoidanceフェイズ（三行目）においては，$$cwnd$$は線形に増加する．
 
-詳細は，[T. Henderson, et al., "The NewReno Modification to TCP’s Fast Recovery Algorithm," Request for Comments: 6582, 2012.](https://tools.ietf.org/html/rfc6582)を参照されたい．
+詳細は，[Floyd, Sally, Tom Henderson, and Andrei Gurtov. The NewReno modification to TCP's fast recovery algorithm. No. RFC 3782. 2004.](https://tools.ietf.org/html/rfc6582)を参照されたい．
 
 ## HighSpeed
 
-大容量のチャネル向けに提案された輻輳制御アルゴリズム．このアルゴリズムは，Probe[^probing]時の$$cwnd$$の増加が大きく，また`recovery`フェイズにおける$$cwnd$$の回復が早い．このような特殊な動作は，$$cwnd$$が一定値より大きいときのみ実行されるため，輻輳時にHighSpeedはNewRenoの送信データ量を一方的に専有したりしない（TCP friendly）．
+大容量のチャネル向けに提案された輻輳制御アルゴリズム．このアルゴリズムは，Probe[^probing]時の$$cwnd$$の増加が大きく，また`recovery`フェイズにおける$$cwnd$$の回復が早い．このような特殊な動作は，$$cwnd$$が一定値より大きいときのみ実行されるため，輻輳時にHighSpeedはNewRenoとネットワークを共有した時に，帯域を一方的に専有することはない（このような性質をTCP friendlyと呼ぶ）．
 
+[^probing]: $$cwnd=0$$のときにパケットロスが生じると，送信ノードも受信ノードも何も送信できなくなり，デッドロック状態になる．これを避けるため，送信ノードは一定間隔でペイロード長0のパケットを送ってACKを促す．これをWindow probeと呼ぶ
 
-[^probing]: $$cwnd=0$$のときにパケットロスが生じると，送信ノードも受信ノードも何も送信できなくなり，デッドロック状態になる．これを避けるため，送信ノードは一定間隔でペイロード長0のパケットを送ってACKを促す．これをWindow probeと呼ぶ．
-
-詳細は，[S. Floyd, et al., "HighSpeed TCP for Large Congestion Windows," Request for Comments: 3649, 2003](https://tools.ietf.org/html/rfc3649)を参照されたい．
+詳細は，[Floyd, Sally. HighSpeed TCP for large congestion windows. No. RFC 3649. 2003.](https://tools.ietf.org/html/rfc3649)を参照されたい．
 
 ## Westwood
 
 Westwoodは，AIAD（Additive Increase/ Adaptive Decrease）方式を採用している．輻輳イベントが発生したとき，$$cwnd$$を半分にする代わりに，ネットワークの帯域を予測し，それをもとに$$cwnd$$を更新する．
 
-詳細は，[Saverio Mascolo, et al, "TCP Westwood: Bandwidth Estimation for Enhanced Transport over Wireless Links," Proceedings of the 7th annual international conference on Mobile computing and networking. ACM, 2001.](https://dl.acm.org/citation.cfm?id=381704)を参照されたい．
+詳細は，[Mascolo, Saverio, et al. "TCP westwood: Bandwidth estimation for enhanced transport over wireless links." Proceedings of the 7th annual international conference on Mobile computing and networking. ACM, 2001.](https://dl.acm.org/citation.cfm?id=381704)を参照されたい．
 
 ## Vegas
 
-詳細は，[Lawrence S. Brakmo, and Larry L. Peterson, "TCP Vegas: End to End Congestion Avoidance on a Global Internet," IEEE Journal on selected Areas in communications 13.8, pp.1465-1480, 1995](https://ieeexplore.ieee.org/abstract/document/464716)を参照されたい．
+VegasはDelay-basedの輻輳制御アルゴリズムである．Vegasは継続的に取得したRTTから計算したスループットと，理想状態のスループットの差から，ボトルネックにスタックされているパケット量を推測する．輻輳を避けるため，上記のパケット量が$$\alpha$$と$$\beta$$の間になるよう$$cwnd$$を調整する．Slow startフェイズから，上記の$$cwnd$$調整フェイズに変更する閾値$$\gamma$$も，別途設定する必要がある．なお，Linuxにおける実装では，$$\alpha=2$$，$$\beta=4$$，$$\gamma=1$$が採用されている．
+
+詳細は，[Brakmo, Lawrence S., and Larry L. Peterson. "TCP Vegas: End to end congestion avoidance on a global Internet." IEEE Journal on selected Areas in communications 13.8 (1995): 1465-1480.](https://ieeexplore.ieee.org/abstract/document/464716)を参照されたい．
 
 ## Scalable
 
-詳細は，[Tom Kelly, "Scalable TCP: Improving Performance in Highspeed Wide Area Networks," ACM SIGCOMM computer communication Review 33.2 pp.83-91, 2003](https://dl.acm.org/citation.cfm?id=956989)を参照されたい．
+Scalableは，大容量チャネルにおいて，より多くのデータを送信できるようNewRenoを改良した輻輳制御アルゴリズムである．輻輳イベントが検知しないとき，ACKを受信するたびに下式で$$cwnd$$を更新する．
+
+$$ cwnd \leftarrow cwnd + 0.01 $$
+
+輻輳イベントを検知したとき，Vegasは下式で$$cwnd$$を更新する．
+
+$$ cwnd \leftarrow cwnd - \mathrm{ceil}\left(0.125 \cdot cwnd \right) $$
+
+詳細は，[Kelly, Tom. "Scalable TCP: Improving performance in highspeed wide area networks." ACM SIGCOMM computer communication Review 33.2 (2003): 83-91.](https://dl.acm.org/citation.cfm?id=956989)を参照されたい．
 
 ## Veno
 
-詳細は，[Cheng Peng Fu, and Soung C. Liew, "TCP Veno: TCP Enhancement for Transmission Over Wireless Access Networks," IEEE Journal on selected areas in communications 21.2 pp.216-228, 2003](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.2.1469&rep=rep1&type=pdf)を参照されたい．
+Venoは，無線通信におけるランダムなパケットロスに対応できるよう，NewRenoを改良した輻輳制御アルゴリズムである．ボトルネックにスタックされているパケット量（Backlogと呼ぶ）を推定し，輻輳しているか否かを判別する．
+
+Backlog量$$N$$は下式で計算される．
+
+$$ N = Actual \cdot (RTT - BaseRTT) $$
+
+Venoは，$$N$$が閾値$$\beta$$より大きいか否かで，更新式を変更する．例えば，$$N$$が$$\beta$$より小さい時，
+
+詳細は，[Fu, Cheng Peng, and Soung C. Liew. "TCP Veno: TCP enhancement for transmission over wireless access networks." IEEE Journal on selected areas in communications 21.2 (2003): 216-228.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.2.1469&rep=rep1&type=pdf)を参照されたい．
 
 ## Bic
 
-詳細は，["Binary Increase Congestion Control (BIC) for Fast Long-Distance Networks," INFOCOM 2004. Twenty-third AnnualJoint Conference of the IEEE Computer and Communications Societies. Vol. 4. IEEE, 2004.](https://ieeexplore.ieee.org/abstract/document/1354672)を参照されたい．
+詳細は，[Xu, Lisong, Khaled Harfoush, and Injong Rhee. "Binary increase congestion control (BIC) for fast long-distance networks." INFOCOM 2004. Twenty-third AnnualJoint Conference of the IEEE Computer and Communications Societies. Vol. 4. IEEE, 2004.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.91.1019&rep=rep1&type=pdf)を参照されたい．
 
 ## YeAH
 
-詳細は，[]()を参照されたい．
+詳細は，[Baiocchi, Andrea, Angelo P. Castellani, and Francesco Vacirca. "YeAH-TCP: yet another highspeed TCP." Proc. PFLDnet. Vol. 7. 2007.](https://www.researchgate.net/profile/Andrea_Baiocchi/publication/228561173_YeAH-TCP_Yet_another_highspeed_TCP/links/00b7d51ac57e095e39000000/YeAH-TCP-Yet-another-highspeed-TCP.pdf)を参照されたい．
 
 ## Illinois
 
-詳細は，[]()を参照されたい．
+詳細は，[Liu, Shao, Tamer Başar, and Ravi Srikant. "TCP-Illinois: A loss-and delay-based congestion control algorithm for high-speed networks." Performance Evaluation 65.6-7 (2008): 417-440.](http://tamerbasar.csl.illinois.edu/LiuBasarSrikantPerfEvalArtJun2008.pdf)を参照されたい．
 
 ## H-TCP
 
-詳細は，[]()を参照されたい．
+詳細は，[Leith, Douglas, and Robert Shorten. "H-TCP: TCP for high-speed and long-distance networks." Proceedings of PFLDnet. Vol. 2004. 2004.](https://www.scss.tcd.ie/Doug.Leith/pubs/htcp3.pdf)を参照されたい．
 
 ## LEDBAT
 
-詳細は，[]()を参照されたい．
+詳細は，[Shalunov, Sea, et al. Low extra delay background transport (LEDBAT). No. RFC 6817. 2012.](https://tools.ietf.org/html/rfc6817)を参照されたい．
 
 # 感想
 
