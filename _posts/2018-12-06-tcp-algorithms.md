@@ -6,9 +6,12 @@ cover:  "/assets/2018-11-30-mist.jpg"
 published: false
 categories:
  - network
+ - ns3
 ---
 
-[Network engineering Advent Calendar 2018](https://qiita.com/advent-calendar/2018/network-engineering)の四日目の記事．諸事情によりns-3.27でTCPの輻輳制御アルゴリズムを調査する必要があったので，調査結果をまとめておく．
+[Network engineering Advent Calendar 2018](https://qiita.com/advent-calendar/2018/network-engineering)の四日目の記事[^apology]．諸事情によりns-3.27でTCPの輻輳制御アルゴリズムを調査する必要があったので，調査結果をまとめておく．
+
+[^apology]: 言い出しっぺの癖にめちゃくちゃ遅れてしまって申し訳ありません．
 
 もしご興味のある方は，以下の記事を参考に実験すると楽しいかもしれない．
 
