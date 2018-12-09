@@ -172,6 +172,39 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/07/20/esl-02">Trevor Hastie，統計的学習の基礎：2章，教師あり学習の基礎</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>夏休みの宿題として，Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―を勉強している．以下は，第2章：教師あり学習の概要 のメモ． 変数の種類と用語 順序付きカテゴリカル変数：値の順序のみに意味があり，計量としての意味がない変数． 記法： ：入力変数． ：量的な出力． ：質的な出力． 変数そのものを指す場合は大文字（），観測値を指す場合は小文字（）． 行列を指す場合は太字の大文字（），ベクトルを指す場合は，単なる大文字（）． ベクトルの番目の要素の個の観測値をまとめてベクトルで表す場合は，太字で表す（）． 予測値を指す場合は，ハットを用いる（）． 予測のための二つの簡単なアプローチ：最近傍法 データ数がの最近傍法において，有効パラメータ数は． 最近傍法の拡張： 最近傍法では各点の重みをで表すが，カーネル平滑化では滑らかな連続変数で表す． 高次元データの場合，距離尺度を特徴づけるカーネルに修正を加える． 最近傍法では近傍領域を定数モデルで表すが，局所重み付け最小二乗法を用いた局所線形モデルでは線形モデルで表す． 入力変数を基底展開して線形モデルを構築すると任意の複雑なモデルを構築できる． 射影追跡法やニューラルネットワークは，非線形変換と線形モデルを構築したもの． 統計的決定理論 期待予測誤差（Expected Prediction Error）： EPEを最小化するのは，条件付き期待値： 条件付け：同時分布をのように分解すること． 十分な大きさの訓練データが得られれば，となり，万能な近似モデルとなる． は，集合の要素数を表す． 高次元での局所的手法 バイアス-分散分解．平均二乗誤差（MSE）を分解すると，次のようになる．．ここで，は訓練データ集合を表す． 制限の強い仮定に基づく線形モデルと，柔軟な最近傍法は両極端な性質を持つ．以降，これらの中間的な性質を持つ方法を学ぶ． 統計モデル，教師あり学習，関数近似 線形基底展開：． は入力ベクトルに関する関数や変換を表す． ニューラルネットワークはこの一種であり，． 残差二乗和（RSS; Sum of Squared Residuals）： 最尤推定：対数尤度関数を最大化するパラメータを採用する． 量的出力：を最小化する．ここで，は，パラメータで特徴づけられたの確率密度関数．加法的誤差モデル（）において，ならば，最尤推定は最小二乗法と等価になる． 質的出力：を最小化する．ここで，．交差エントロピーとも呼ぶ． 構造化回帰モデル 残差二乗和に基づいて関数を推定するとする． データ数が有限の場合，関数を一意に求めるために，学習に対して制約を設ける． 制約の強さ：近傍領域の大きさ． 制約の複雑さ：近傍領域で想定する規則性．...</p>-->
+      <p><p>夏休みの宿題として，<a href="http://amzn.asia/ay0yxvo">Trevor Hastie，統計的学習の基礎 ―データマイニング・推論・予測―</a>を勉強している．以下は，<strong>第2章：教師あり学習の概要</strong> のメモ．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">July 20, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#machine learning">Machine learning</a>, 
+        
+      
+        
+        <a href="/categories/#statistics">Statistics</a>, 
+        
+      
+        
+        <a href="/categories/#books">Books</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/07/18/macos-to-ubuntu">7年もののMacBook ProがUbuntu 16.04に生まれ変わった</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -348,119 +381,6 @@ Bokehの設定
       
         
         <a href="/categories/#linux">Linux</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/07/12/bokeh-jekyll">JekyllにBokehのグラフを埋め込む</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>Bokehで作成したインタラクティブなグラフを，Jekyllに埋め込みたくなった．Embedding Bokeh Plots with Github Pages -
-Paige McKenzieを参考にしたら，簡単にできた．日本語もちゃんと表示されている．
-
-
-    
-        
-        Bokeh Plot
-
-
-
-
-
-    
-    
-
-        
-            
-        
-
-        
-        
-    
-
-
-環境
-
-
-  macOS Sierra, 10.12.6
-  Ruby 2.5.1p57
-  Jekyll 3.7.3
-  Python 3.6.5
-  Bokeh 0.12.15
-
-
-手順
-
-Embedding Bokeh Plots with Github Pages -
-Paige McKenzieを参考にすれば良い．
-
-htmlファイルの生成
-
-以下を実行して，2018-07-12-flowers.htmlを生成する．
-
-
-
-ポイントはoutput_file()で出力すること．この直後にshow(p)するとグラフを確認できる．
-
-htmlファイルの配置
-
-上記で生成した2018-07-12-flowers.htmlを，_includes以下の任意の場所に保存する．本ウェブサイトでは，_includes/bokeh/ディレクトリ配下に保存した．ただし，2018-07-12-flowers.html冒頭の&lt;!DOCTYPE html&gt;を削除しないと，そのまま表示されてしまうので注意．
-
-Markdownからの呼び出し
-
-以下を記載すれば，任意の場所にグラフを配置できる．
-
-
-
-
-    
-        
-        Bokeh Plot
-
-
-
-
-
-    
-    
-
-        
-            
-        
-
-        
-        
-    
-
-
-感想
-
-思ったよりずっと簡単にできた．これで，Projectsページのグラフをいい感じにできる．
-
-将来的には，週間少年ジャンプの掲載順を定期的に文化庁メディア情報データベースから取得して，インタラクティブにグラフ表示するようにしたい．無料で実現するためには，Herokuとか使えばいいのかしら．
-</p>-->
-      <p><p><a href="https://bokeh.pydata.org/en/latest/">Bokeh</a>で作成したインタラクティブなグラフを，<a href="https://jekyllrb-ja.github.io/">Jekyll</a>に埋め込みたくなった．<a href="https://p-mckenzie.github.io/python/2017/12/01/embedding-bokeh-with-github-pages/">Embedding Bokeh Plots with Github Pages -
-Paige McKenzie</a>を参考にしたら，簡単にできた．日本語もちゃんと表示されている．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">July 12, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#jekyll">Jekyll</a>, 
-        
-      
-        
-        <a href="/categories/#visualization">Visualization</a>
         
       
       </div>

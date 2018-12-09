@@ -172,6 +172,97 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/2018/06/17/intro-to-lightgbm">PythonとLight GBMで遊ぶNotebookを作った</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <!--<p>知り合いから「プログラミングしたことないけどLight GBMを使ってみたい．2時間くらいで教えてくれ」と言われた．2時間だと理論面をカバーするのは難しいので，とりあえず触ってみることを目標に，Pythonおよび関連ライブラリの基礎（のさらにごく一部）でさくっと遊ぶNotebookを作った．勉強会当日は一緒に動かしながらレクチャーする予定．
+
+対象者
+
+
+  統計的な専門用語（平均，分散，相関係数，平均二乗誤差，等々）に馴染みがある．
+  Excelでデータ分析をしたことがある．
+  Pythonどころか，プログラミング自体の経験がない．
+
+
+初学者を対象とするため，用語の厳密さよりもわかりやすさを重視した．
+
+レポジトリ
+
+haltaro/intro-to-lightgbm - GitHub
+
+make_data.ipynb
+
+データ加工を行う自分用のNotebook．Bostonデータは，sklearnから直接ダウンロードできるが，より実務に近い使い方をしてもらうため，一旦csvファイルに加工した．また，回帰問題だけでなく識別問題にも触れてもらいたいということでseabornからtitanicをcsvファイルとして保存した．カテゴリカル変数は，その対応方法も体験して欲しかったので敢えてそのまま残している1．
+
+intro_to_python.ipynb
+
+Pythonの基本の基本から，numpy，matplotlib，pandas，sklearn，そしてlightgbmで遊べる構成にした．以下はその詳細である．
+
+Jupyter notebook
+
+そもそもJupyter notebookに馴染みがないと思うので，簡単に操作方法を記載した．
+
+Python：基本の基本
+
+時間に限りがあるので，データ分析に特化して，四則演算，変数への代入，リスト操作，ループ，条件分岐について記載した．これでなんとなくわかった気になってほしい．
+
+numpy
+
+ベクトル，行列，および統計量の計算方法を記載した．
+
+matplotlib
+
+折れ線グラフ，散布図，棒グラフ，ヒストグラムの表示方法を記載した．
+
+pandas
+
+データの読み込み，統計量の計算，ソート，フィルタリング，numpy.arrayへの変換方法等を記載した．
+
+sklearn
+
+線形回帰モデルLinearRegressorや平均絶対誤差の計算方法を記載した．
+
+lightgbm
+
+学習方法，ハイパーパラメータのチューニング方法などを記載した．
+
+感想
+
+これで十分だとは全く思っていないが，なんとなく雰囲気を掴む程度のものはできたと思う．これをきっかけに興味を持ってくれたら嬉しい．勉強会でフィードバックがあったらNotebookを修正したい．
+
+  
+    
+      結局，時間切れでtitanicデータで遊ぶ部分は作れなかった． &#8617;
+    
+  
+
+</p>-->
+      <p><p>知り合いから「プログラミングしたことないけどLight GBMを使ってみたい．2時間くらいで教えてくれ」と言われた．2時間だと理論面をカバーするのは難しいので，とりあえず触ってみることを目標に，Pythonおよび関連ライブラリの基礎（のさらにごく一部）でさくっと遊ぶ<a href="https://github.com/haltaro/intro-to-lightgbm">Notebook</a>を作った．勉強会当日は一緒に動かしながらレクチャーする予定．</p>
+
+</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">June 17, 2018</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/categories/#machine learning">Machine learning</a>, 
+        
+      
+        
+        <a href="/categories/#python">Python</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/2018/06/16/too-old-openssl">OpenSSLが古すぎてbundle updateできない</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -305,31 +396,6 @@ _config.ymlにおける，jekyll-archives関連のすべての設定をコメン
       in 
         
         <a href="/categories/#jekyll">Jekyll</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/2018/06/10/ucom-airmac">UCOMにAirMacを接続してWifi環境を構築する</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <!--<p>引越し先のマンションがUcomに契約していたので，壁付けのコンセントにLANケーブルを繋げばインターネットに接続できる．手持ちのAirMac Time Capsuleで無線LAN環境を構築したかったが，ネット上に情報が少なく，めちゃくちゃ苦戦した．試行錯誤の記録を残しておく． 2018年6月19日追記：接続がめちゃくちゃ不安定で，Skype英会話がまともにできない．おそらくNAT設定が原因だと思う． 2018年7月7日追記：AirMacユーティリティ&gt;ネットワーク&gt;ルーターモードで切（ブリッジモードに変更したら，すべての問題が解決した．ややこしいのは，最初にブリッジモードにしたときは複数台のデバイスを接続できなかったこと． 環境 UCOM光レジデンス LAN配線方式 AirMac Time Capsule 7.6.9 MacBook Pro，macOS Sierra（10.12.6） 設定 AirMacユーティリティ &gt; AirMac Time Capsule &gt; 編集を押す． インターネットタブを選択して，インターネット接続の設定 - UCOMをもとに最寄りのDNSサーバアドレスを設定する． ワイヤレスタブを選択して，設定を確認する．私の場合は，特に設定を変更する必要は無かった． ネットワークタブを選択して，ルーターモードとしてDHCPとNATを選択する． UCOM 光 レジデンス ご利用の手引き- UCOM等によると，ブリッジモードでないとうまく接続できないとのことだったが，これだと設定用のMacBookと他の端末（iPhone）を同時に接続できなかった． 一台しか接続できない - Apple コミュニティによると，MacBookがグローバルIPアドレスを専有してるのが原因っぽい．ネットワークが不安定なるリスクがあった1が，今回はDHCPとNATを選択した． これでアップデートを押す．システム環境設定 &gt; ネットワークでは，「Wi-Fiに自己割り当てIPアドレス...が設定されているためインターネットに接続できません。」と叱られるが，MacBookもiPhoneも同時に接続できている．もう疲れたので無視することにした． それでも繋がらないときは 実際，以上の設定を行っても一発では繋がらなかった．以下をいろいろ試すうちにいつの間にか繋がったので，ご参考までに． AirMacを再起動する． LANの接続口を変更する．どうやら，口ごとにIPアドレスが割り振られているっぽい．上位NW装置でどのような制御が行われているか不明だが，口を変えると一発で認証が通ることがあった． 参考 一台しか接続できない - Apple コミュニティ “Wi-Fi”に自己割り当てのIP...</p>-->
-      <p><p>引越し先のマンションがUcomに契約していたので，壁付けのコンセントにLANケーブルを繋げばインターネットに接続できる．手持ちのAirMac Time Capsuleで無線LAN環境を構築したかったが，ネット上に情報が少なく，めちゃくちゃ苦戦した．試行錯誤の記録を残しておく．</p>
-
-</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">June 10, 2018</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/categories/#network">Network</a>
         
       
       </div>

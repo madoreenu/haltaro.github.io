@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>VirtualBox+Vagrantでns-3.27環境を構築する</title>
-  <meta name="description" content="Network engineering Advent Calendar 2018の一日目の記事．一年以上前にQiitaでns-3.26の環境構築に関する記事を書いた．この一年で私も少しだけ成長して，Vagrantを使えるようになった1ので，コマンド一発でns-3.27の環境を構築できるよう，Vagrantfile...">
+  <meta name="description" content="Network engineering Advent Calendar 2018の1日目の記事．一年以上前にQiitaでns-3.26の環境構築に関する記事を書いた．この一年で私も少しだけ成長して，Vagrantを使えるようになった1ので，コマンド一発でns-3.27の環境を構築できるよう，Vagrantfile...">
   
   <meta name="author" content="haltaro">
   <meta name="copyright" content="&copy; haltaro 2018">
@@ -51,7 +51,7 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="Network engineering Advent Calendar 2018の一日目の記事．一年以上前にQiitaでns-3.26の環境構築に関する記事を書いた．この一年で私も少しだけ成長して，Vagrantを使えるようになった1ので，コマンド一発でns-3.27の環境を構築できるよう，Vagrantfile..." />
+  <meta property="og:description" content="Network engineering Advent Calendar 2018の1日目の記事．一年以上前にQiitaでns-3.26の環境構築に関する記事を書いた．この一年で私も少しだけ成長して，Vagrantを使えるようになった1ので，コマンド一発でns-3.27の環境を構築できるよう，Vagrantfile..." />
   <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Memotaro" />
   <meta property="og:title" content="VirtualBox+Vagrantでns-3.27環境を構築する" />
@@ -66,7 +66,7 @@
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="VirtualBox+Vagrantでns-3.27環境を構築する">
-  <meta name="twitter:description" content="Network engineering Advent Calendar 2018の一日目の記事．一年以上前にQiitaでns-3.26の環境構築に関する記事を書いた．この一年で私も少しだけ成長して，Vagrantを使えるようになった1ので，コマンド一発でns-3.27の環境を構築できるよう，Vagrantfile...">
+  <meta name="twitter:description" content="Network engineering Advent Calendar 2018の1日目の記事．一年以上前にQiitaでns-3.26の環境構築に関する記事を書いた．この一年で私も少しだけ成長して，Vagrantを使えるようになった1ので，コマンド一発でns-3.27の環境を構築できるよう，Vagrantfile...">
   <meta name="twitter:image" content="http://localhost:4000/assets/2018-11-30-mist.jpg">
   <meta name="twitter:url" content="http://localhost:4000">
   
@@ -176,18 +176,26 @@
   <div class="post-categories">
   in 
     
-    <a href="/categories/#network">Network</a>
+    <a href="/categories/#network">Network</a>, 
+    
+  
+    
+    <a href="/categories/#ns3">Ns3</a>, 
+    
+  
+    
+    <a href="/categories/#vagrant">Vagrant</a>
     
   
   </div>
 </section>
 
 <article class="post-content">
-  <p><a href="https://qiita.com/advent-calendar/2018/network-engineering">Network engineering Advent Calendar 2018</a>の一日目の記事．一年以上前にQiitaで<a href="https://qiita.com/haltaro/items/b474d924f63692c155c8">ns-3.26の環境構築に関する記事</a>を書いた．この一年で私も少しだけ成長して，<a href="https://www.vagrantup.com/">Vagrant</a>を使えるようになった<sup id="fnref:toolate"><a href="#fn:toolate" class="footnote">1</a></sup>ので，コマンド一発でns-3.27の環境を構築できるよう，Vagrantfileを作成した．これからns3で遊びたいという方のお役に立てれば幸い．</p>
+  <p><a href="https://qiita.com/advent-calendar/2018/network-engineering">Network engineering Advent Calendar 2018</a>の1日目の記事．一年以上前にQiitaで<a href="https://qiita.com/haltaro/items/b474d924f63692c155c8">ns-3.26の環境構築に関する記事</a>を書いた．この一年で私も少しだけ成長して，<a href="https://www.vagrantup.com/">Vagrant</a>を使えるようになった<sup id="fnref:toolate"><a href="#fn:toolate" class="footnote">1</a></sup>ので，コマンド一発でns-3.27の環境を構築できるよう，Vagrantfileを作成した．これからns3で遊びたいという方のお役に立てれば幸い．</p>
 
 <p>なお，<a href="https://github.com/diogomg/vagrant-ns-3-setup">diogomg/vagrant-ns-3-setup - GitHub</a>を大いに参考にさせて頂いた．</p>
 
-<h1 id="前提知識">前提知識</h1>
+<h1 id="前提">前提</h1>
 
 <h2 id="ns-3">ns-3</h2>
 
@@ -216,20 +224,20 @@
   <li><a href="https://www.vagrantup.com/">Vagrant</a></li>
 </ul>
 
-<h1 id="遊んでみる">遊んでみる</h1>
+<h1 id="実験">実験</h1>
 
 <h2 id="環境構築">環境構築</h2>
 
-<p><a href="https://github.com/haltaro/ns3-vagrant">GitHubレポジトリ</a>からVagrantfileを任意のディレクトリにダウンロードして，コマンドを打てば，依存パッケージのインストールからns-3のテストまで全部やってくれる．便利すぎる．私の環境だと，ns-3のテストが完了するまでに1時間ほどかかった．</p>
+<p><a href="https://github.com/haltaro/ns3-vagrant">私のGitHubレポジトリ</a>からVagrantfileを任意のディレクトリにダウンロードして，以下のコマンドを打てば，依存パッケージのインストールからns-3のテストまで全部やってくれる．便利すぎる．私の環境だと，ns-3のテストが完了するまでに1時間ほどかかった．</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant up
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
 </code></pre></div></div>
 
 <h2 id="ssh">ssh</h2>
 
 <p>Vagrantなら，仮想マシンへのSSH接続も簡単．</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant ssh
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant ssh
 </code></pre></div></div>
 
 <p>ちなみに，デフォルトで<code class="highlighter-rouge">vagrant</code>ユーザ（パスワードはユーザ名と同じ）でログインする形になる．root化（<code class="highlighter-rouge">su</code>）する際にパスワードは不要．</p>

@@ -9,7 +9,7 @@ categories:
  - ns3
 ---
 
-[Network engineering Advent Calendar 2018](https://qiita.com/advent-calendar/2018/network-engineering)の四日目の記事[^apology]．諸事情によりns-3.27でTCPの輻輳制御アルゴリズムを調査する必要があったので，調査結果をまとめておく．
+[Network engineering Advent Calendar 2018](https://qiita.com/advent-calendar/2018/network-engineering)の4日目の記事[^apology]．諸事情によりns-3.27でTCPの輻輳制御アルゴリズムを調査する必要があったので，調査結果をまとめておく．
 
 [^apology]: 言い出しっぺの癖にめちゃくちゃ遅れてしまって申し訳ありません．
 
@@ -18,7 +18,7 @@ categories:
 - 環境構築：[VirtualBox+Vagrantでns-3.27環境を構築する - Memotaro](https://haltaro.github.io/2018/11/30/ns3-vagrant#undefined)
 - 比較実験（ns-3.26）：[ns-3でTCPの輻輳制御を観察する - Memotaro](https://haltaro.github.io/2018/07/13/tcp-ns3#ns-3-network-simulator-3)
 
-# 前提知識
+# 前提
 
 ## ns-3
 
