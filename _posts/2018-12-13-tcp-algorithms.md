@@ -88,7 +88,7 @@ ns-3やLinuxの実装（`include/net/tcp.h`）に則り，本記事では以下�
 
 ## NewReno
 
-最もメジャーなアルゴリズムの一つ．`Open`状態においては，$$cwnd$$が$$ssthresh$$より小さい場合はSlow startフェイズ，大きい場合はCongestion avoidanceフェイズに移り，それぞれ以下の更新式を用いる．
+最もメジャーなアルゴリズムの一つ．Loss-based．`Open`状態においては，$$cwnd$$が$$ssthresh$$より小さい場合はSlow startフェイズ，大きい場合はCongestion avoidanceフェイズに移り，それぞれ以下の更新式を用いる．
 
 $$
 \begin{align}
@@ -142,7 +142,7 @@ $$
 
 ## HighSpeed
 
-大容量のパス向けに提案された輻輳制御アルゴリズム．このアルゴリズムは，Congestion avoidanceフェイズにおける$$cwnd$$の増加が大きく，また`Recovery`フェイズにおける$$cwnd$$の回復が早い．このような特殊な動作は，$$cwnd$$が一定値$$W$$より大きいか，パケットロス率$$p$$が一定値$$P$$より小さいときのみ実行されるため，HighSpeedとNewRenoが共存するネットワークで輻輳が発生したときに，HighSpeedが帯域を一方的に専有することはない（このような性質をTCP friendlyと呼ぶ）．
+大容量のネットワーク向けに提案されたLoss-basedの輻輳制御アルゴリズム．このアルゴリズムは，Congestion avoidanceフェイズにおける$$cwnd$$の増加が大きく，また`Recovery`フェイズにおける$$cwnd$$の回復が早い．このような特殊な動作は，$$cwnd$$が一定値$$W$$より大きいか，パケットロス率$$p$$が一定値$$P$$より小さいときのみ実行されるため，HighSpeedとNewRenoが共存するネットワークで輻輳が発生したときに，HighSpeedが帯域を一方的に専有することはない（このような性質をTCP friendlyと呼ぶ）．
 
 $$
 \begin{align}
@@ -164,7 +164,7 @@ $$
 
 $$
 \begin{align}
-b(cwnd) &= (B-0.5) \frac
+b(cwnd) &= (b(W_1)-0.5) \frac
   {\mathrm{log}(cwnd) - \mathrm{log}(W)}
   {\mathrm{log}(W_1) - \mathrm{log}(W)} + 0.5 \\
 a(cwnd) &= \frac{2 \cdot cwnd^2 \cdot b(cwnd) \cdot p(cwnd)}
@@ -211,7 +211,7 @@ VegasはDelay-basedの輻輳制御アルゴリズムである．Vegasは継続�
 
 ## Scalable
 
-Scalableは，大容量パスにおいて，より多くのデータを送信できるようNewRenoを改良した輻輳制御アルゴリズムである．輻輳イベントが検知しないとき，ACKを受信するたびに下式で$$cwnd$$を更新する．
+Scalableは，大容量のネットワークにおいて，より多くのデータを送信できるようNewRenoを改良した輻輳制御アルゴリズムである．輻輳イベントが検知しないとき，ACKを受信するたびに下式で$$cwnd$$を更新する．
 
 $$ cwnd \leftarrow cwnd + 0.01 $$
 
@@ -265,7 +265,7 @@ Renoと公平に帯域を分け合うために，Renoフローが存在するか
 
 ## Illinois
 
-Illinoisは，高速パス向けに提案された，ハイブリッドな輻輳制御アルゴリズム．IllinoisはConcave AIMDアルゴリズムを採用しており，パケットロスにより$$cwnd$$の増減を決定し，待ち行列遅延により変化量を決定する．
+Illinoisは，大容量のネットワーク向けに提案された，Loss-basedとDelay-basedのハイブリッドな輻輳制御アルゴリズム．**続きを書くこと**．
 
 AIMDで用いるパラメータ$$\alpha$$および$$\beta$$は，下式で計算される．
 
@@ -291,7 +291,7 @@ H-TCPは，BDPの大きい，つまり大容量遠距離パス向けに提案さ
 
 ## LEDBAT
 
-Low Extra Delay Background Transport（LEDBAT）は，End-to-endのパスで，パス中の待ち行列遅延が大きくならないよう配慮しつつ，帯域利用効率を高めることを目的とした，実験的な輻輳制御アルゴリズム．LEDBATが特徴的なのは，RTTではなく，片道遅延をもとに$$cwnd$$を計算する点である．
+Low Extra Delay Background Transport（LEDBAT）は，End-to-endで，待ち行列遅延が大きくならないよう配慮しつつ，帯域利用効率を高めることを目的とした，実験的な輻輳制御アルゴリズム．LEDBATが特徴的なのは，RTTではなく，片道遅延をもとに$$cwnd$$を計算する点である．
 
 RFC 6817によると，
 
