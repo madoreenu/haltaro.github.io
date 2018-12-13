@@ -148,7 +148,7 @@ $$
 \begin{align}
 &\mathbf{If}~ cwnd \leq ssthresh\\
 &~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{a(cwnd)}{cwnd}
+&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{\alpha(cwnd)}{cwnd}
 \end{align}
 $$
 
@@ -156,19 +156,19 @@ $$
 
 $$
 \begin{align}
-cwnd \leftarrow cwnd - b(cwnd) \cdot cwnd
+cwnd \leftarrow cwnd - \beta(cwnd) \cdot cwnd
 \end{align}
 $$
 
-ここで，$$a(cwnd)$$および$$b(cwnd)$$は下式で計算する．
+ここで，$$\alpha(cwnd)$$および$$\beta(cwnd)$$は下式で計算する．
 
 $$
 \begin{align}
-b(cwnd) &= (b(W_1)-0.5) \frac
+\beta(cwnd) &= (\beta(W_1)-0.5) \frac
   {\mathrm{log}(cwnd) - \mathrm{log}(W)}
   {\mathrm{log}(W_1) - \mathrm{log}(W)} + 0.5 \\
-a(cwnd) &= \frac{2 \cdot cwnd^2 \cdot b(cwnd) \cdot p(cwnd)}
-  {2 - b(cwnd)}
+\alpha(cwnd) &= \frac{2 \cdot cwnd^2 \cdot \beta(cwnd) \cdot p(cwnd)}
+  {2 - \beta(cwnd)}
 \end{align}
 $$
 
@@ -265,13 +265,76 @@ Renoと公平に帯域を分け合うために，Renoフローが存在するか
 
 ## Illinois
 
-Illinoisは，大容量のネットワーク向けに提案された，Loss-basedとDelay-basedのハイブリッドな輻輳制御アルゴリズム．**続きを書くこと**．
+Illinoisは，大容量のネットワーク向けに提案された，Loss-basedとDelay-basedのハイブリッドな輻輳制御アルゴリズム．AIMDのパラメータ$$\alpha$$および$$\beta$$を，LossではなくDelayの関数として計算することに特徴がある．
 
-AIMDで用いるパラメータ$$\alpha$$および$$\beta$$は，下式で計算される．
+原論文では，従来のAIMDの課題は$$cwnd$$の推移が下に凸になることだと指摘し，上に凸なAIMD（Concave-AIMD）になるよう$$\alpha$$および$$\beta$$を選べば良いとしている．具体的には，平均待ち行列遅延$$d_a$$に対して$$\alpha(d_a)$$が減少関数であり，$$\beta(d_a)$$が増加関数であれば良い．その一例として，以下のような関数を提案している．
 
-パラメータ$$k_1$$，$$k_2$$，$$k_3$$および$$k_4$$は，下式で計算される．
+`Open`状態において，以下のように$$cwnd$$を更新する．
 
-Illinoisは，$$cwnd$$が$$winThresh$$を超えた場合のみ，$$\alpha$$と$$\beta$$を調整する．
+$$
+\begin{align}
+&\mathbf{If}~ cwnd \leq ssthresh\\
+&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
+&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{\alpha(d_a)}{cwnd}
+\end{align}
+$$
+
+`Recovery`状態に遷移したとき，以下のように$$cwnd$$を更新する．
+
+$$
+\begin{align}
+cwnd \leftarrow cwnd - \beta(d_a) \cdot cwnd
+\end{align}
+$$
+
+ここで，$$\alpha(d_a)$$および$$\beta(d_a)$$は以下で計算される．
+
+$$
+\begin{align}
+\alpha(d_a) &=
+  \begin{cases}
+    \alpha_{max},~~&\mathbf{if}~d_a \leq d_1\\
+    \frac{\kappa_1}{\kappa_2 + d_a}, ~~&\mathbf{otherwise}
+  \end{cases}\\
+\beta(d_a) &=
+  \begin{cases}
+    \beta_{min}~~&\mathbf{if}~d_a \leq d_2 \\
+    \kappa_3 + \kappa_4 d_a ~~&\mathbf{if}~d_2 \leq d_a \leq d_3 \\
+    \beta_{max}~~&\mathbf{otherwise}
+  \end{cases}
+\end{align}
+$$
+
+パラメータ$$kappa_1$$，$$kappa_2$$，$$kappa_3$$および$$kappa_4$$は，下式で計算される．
+
+$$
+\begin{align}
+\kappa_1 &=
+  \frac{(d_m - d_1) \alpha_{min}\alpha_{max}}
+       {\alpha_{max} - \alpha_{min}} \\
+\kappa_2 &=
+  \frac{(d_m - d_1) \alpha_{min}}
+       {\alpha_{max} - \alpha_{min}} - d_1 \\
+\kappa_3 &=
+  \frac{\beta_{min}d_3 - \beta_{min}d_2}
+       {d_3 - d_2} \\
+\kappa_4 &=
+  \frac{\beta_{max} - \beta_{min}}
+       {d_3 - d_2}
+\end{align}
+$$
+
+ここで，各パラメータの定義は以下である．
+
+- $$d_1$$：関数$$\alpha(d_a)$$における閾値．
+- $$d_2$$：関数$$\beta(d_a)$$における閾値．
+- $$d_3$$：関数$$\beta(d_a)$$における閾値．
+- $$d_a$$：平均待ち行列遅延．
+- $$d_m$$：平均待ち行列遅延の最大値．
+- $$\alpha_{min}$$：関数$$\alpha(d_a)$$の最大値．
+- $$\alpha_{max}$$：関数$$\alpha(d_a)$$の最小値．
+- $$\beta_{min}$$：関数$$\beta(d_a)$$の最大値．
+- $$\beta_{max}$$：関数$$\beta(d_a)$$の最小値．．
 
 詳細は以下を参照されたい．
 
