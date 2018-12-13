@@ -142,7 +142,7 @@ $$
 
 ## HighSpeed
 
-大容量のパス向けに提案された輻輳制御アルゴリズム．このアルゴリズムは，Congestion avoidanceフェイズにおける$$cwnd$$の増加が大きく，また`Recovery`フェイズにおける$$cwnd$$の回復が早い．このような特殊な動作は，$$cwnd$$が一定値より大きいときのみ実行されるため，HighSpeedとNewRenoが共存するネットワークで輻輳が発生したときに，HighSpeedが帯域を一方的に専有することはない（このような性質をTCP friendlyと呼ぶ）．
+大容量のパス向けに提案された輻輳制御アルゴリズム．このアルゴリズムは，Congestion avoidanceフェイズにおける$$cwnd$$の増加が大きく，また`Recovery`フェイズにおける$$cwnd$$の回復が早い．このような特殊な動作は，$$cwnd$$が一定値$$W$$より大きいか，パケットロス率$$p$$が一定値$$P$$より小さいときのみ実行されるため，HighSpeedとNewRenoが共存するネットワークで輻輳が発生したときに，HighSpeedが帯域を一方的に専有することはない（このような性質をTCP friendlyと呼ぶ）．
 
 $$
 \begin{align}
@@ -172,7 +172,20 @@ a(cwnd) &= \frac{2 \cdot cwnd^2 \cdot b(cwnd) \cdot p(cwnd)}
 \end{align}
 $$
 
-ここで，**TODO：各パラメータの定義を書くこと**
+なお$$p(cwnd)$$は下式を満たす．
+
+$$
+\mathrm{log}(p(cwnd)) = \left(\mathrm{log}(P_1) - \mathrm{log}(P) \right)
+  \frac{\mathrm{log}(cwnd) - \mathrm{log}(W)}
+    {\mathrm(log(W_1) - \mathrm{log}(W)} + \mathrm{log}(P)
+$$
+
+各パラメータの定義は以下である．
+
+- $$P$$：パケットロス率の閾値．
+- $$W$$：$$cwnd$$の閾値．
+- $$P_1$$：パケットロス率の目標値．通常，$$P_1 < P$$を満たす．
+- $$W_1$$：$$cwnd$$の目標値．通常，$$W_1 > W$$を満たす．
 
 詳細は以下を参照されたい．
 - [Floyd, Sally. HighSpeed TCP for large congestion windows. No. RFC 3649. 2003.](https://tools.ietf.org/html/rfc3649)
@@ -189,6 +202,8 @@ Westwoodは，AIAD（Additive Increase/ Adaptive Decrease）方式を採用し�
 ## Vegas
 
 VegasはDelay-basedの輻輳制御アルゴリズムである．Vegasは継続的に取得したRTTから計算したスループットと，理想状態のスループットの差から，ボトルネックにスタックされているパケット量を推測する．輻輳を避けるため，上記のパケット量が$$\alpha$$と$$\beta$$の間になるよう$$cwnd$$を調整する．Slow startフェイズから，上記の$$cwnd$$調整フェイズに変更する閾値$$\gamma$$も，別途設定する必要がある．なお，Linuxにおける実装では，$$\alpha=2$$，$$\beta=4$$，$$\gamma=1$$が採用されている．
+
+**論文の3章を読めば良い**
 
 詳細は以下を参照されたい．
 
