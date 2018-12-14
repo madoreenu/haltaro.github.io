@@ -2,7 +2,7 @@
 layout: post
 title: ns-3.27で使えるTCP輻輳制御アルゴリズム
 updated: 2018-12-15
-cover:  "/assets/2018-11-30-mist.jpg"
+cover:  "/assets/2018-12-14-leaves.jpg"
 published: False
 categories:
  - network
@@ -305,7 +305,7 @@ $$
 \end{align}
 $$
 
-パラメータ$$kappa_1$$，$$kappa_2$$，$$kappa_3$$および$$kappa_4$$は，下式で計算される．
+パラメータ$$\kappa_1$$，$$\kappa_2$$，$$\kappa_3$$および$$\kappa_4$$は，下式で計算される．
 
 $$
 \begin{align}
