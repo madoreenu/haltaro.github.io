@@ -2,27 +2,27 @@
 
   var botui = new BotUI('self-intro');
 
-  //初期メッセージ．
+  // Initial message
   botui.message.add({
-    content: 'こんにちは！haltaroです！'
+    content: "Hi! I'm haltaro!"
   }).then(showQuestions);
 
 
-  // 質問の選択肢を提示する関数．
+  // Show choices
   function showQuestions() {
     botui.message.add({
       delay:1500,
-      content: '何について，お話ししましょうか？'
+      content: "What shall I tell you about me?"
     }).then(function() {
 
-      // ボタンを提示する．
+      // Show bottun 
       return botui.action.button({
         autoHide: false,
         delay: 1500,
         action: [
-          {icon: 'user-o', text: '来歴', value: 'carrier'},
-          {icon: 'rocket', text: '趣味', value: 'hobby'},
-          {icon: 'pencil', text: 'サイト', value: 'memotaro'}]
+          {icon: 'user-o', text: 'Carrier', value: 'carrier'},
+          {icon: 'rocket', text: 'Hobbies', value: 'hobby'},
+          {icon: 'pencil', text: 'This', value: 'memotaro'}]
       });
     }).then(function(res) {
       botui.action.hide();
@@ -35,103 +35,103 @@
     });
   }
 
-  // 来歴について説明する関数．
+  // Describe my carrier 
   function showCarrier() {
     botui.message.add({
       delay: 1500,
-      content: '大学院では，工学修士（航空宇宙工学）を修了しました．主に，GPS衛星の異常検知について研究しました．'
+      content: "I received a master's degree in aerospace engineering. I proposed a new anormaly detection algorithm for GPS satellites based on machine learning and orbital mechanics."
     }).then(function() {
       return botui.message.add({
         delay: 2500,
-        content: '新卒で約5年間，通信会社の研究所で働きました．主に，通信制御アルゴリズムについて研究しました．'
+        content: 'After graduation, I worked at a telecom laboratories. I mainly focused on traffic engineering.'
       });
     }).then(function() {
       return botui.message.add({
         delay: 2500,
-        content: '最後の1年間は，アメリカの外資系研究所に出向しました．これまでの研究生活で，最も幸せな一年間でした．'
+        content: 'The last year in the labs, I was seconded to another laborories located in NJ, USA. It was one of the most valuable experiences in my carrier.'
       });
     }).then(function() {
       return botui.message.add({
         delay: 2500,
-        content: '現在は，広告会社でデータ分析をしています．'
+        content: "Now I'm working as a data scientist at an advertising agency in Japan."
       });
     }).then(askEnd);
   }
 
-  // 趣味について説明する関数．
+  // Describe my hobbies.
   function showHobby() {
     botui.message.add({
       delay: 1500,
-      content: '趣味はジョギングです．今年の目標は，ハーフマラソンに出場することです．'
+      content: "My hobby is running. I'd like to fully run 42km this year."
     }).then(function() {
       return botui.message.add({
         delay: 2500,
-        content: 'また，日曜プログラマとして，C++，Python，JavaScript，Rなどで遊んでいます．'
+        content: "Plus, I enjoy coding with C++, Python, JavaScript, and R." 
       });
     }).then(function() {
       return botui.message.add({
         delay: 2500,
-        content: 'Machine learningや，Marketing scienceや，Network engineeringに興味があります．詳細はProjectsをご参照ください．'
+        content: "I'm interested in Machine learning, Marketing science, and Network engineering. Please refer to Projects page." 
       });
     }).then(askEnd);
   }
 
-  // 本ウェブサイトについて説明する関数．
+  // Introduce the website pages
   function showMemotaro() {
     botui.message.add({
       delay: 1500,
-      content: 'このウェブサイトには，日記以上かつQiita未満な技術的メモを書く予定です．'
+      content: "This website mainly includes my technical memorandoms."
     }).then(function(){
       return botui.message.add({
         delay: 2000,
-        content: '想定読者は私自身です．'
+        content: "The implied reader is myself."
       });
     }).then(function(){
       return botui.message.add({
         delay: 2000,
-        content: 'Categoriesには，各記事をカテゴリごとにまとめています．'
+        content: "Categories includes articles list grouped by categories."
       });
     }).then(function(){
       return botui.message.add({
         delay: 2000,
-        content: 'Projectsには，これまで作成したプロジェクトをまとめています．'
+        content: "Projects includes the projects I engaged in so far."
       });
     }).then(function(){
       return botui.message.add({
         delay: 2000,
-        content: 'なお，本ウェブサイトの内容を，予告なく変更・削除する場合があります．何卒ご理解のほど，よろしくお願い致します．'
+        content: "Note that the contents on the website may change without prior notice."
       });
     }).then(askEnd);
   }
 
-  // プログラムを終了するか聞く関数．
+  // Ask whether end the session or not.
   function askEnd(){
     botui.message.add({
       delay:2000,
-      content: '他に質問がありますか？'
+      content: 'Do you have any other questions?'
     }).then(function() {
 
-      // ボタンを提示する．
+      // Show button.
       return botui.action.button({
         delay: 1500,
         action: [
-          {icon: 'circle-o', text: 'はい', value: true},
-          {icon: 'close', text: 'いいえ', value: false}]
+          {icon: 'circle-o', text: 'Yes', value: true},
+          {icon: 'close', text: 'No', value: false}]
       });
     }).then(function(res) {
       res.value ? showQuestions() : end();
       });
   }
 
-  //プログラムを終了する関数．
+  // End the session.
   function end() {
     botui.message.add({
       delay: 1500,
-      content: 'お時間頂き，ありがとうございました．'
+      content: 'Thank you for talking with me.'
     }).then(function(){
       return botui.message.add({
         delay: 1500,
-        content: 'それでは，引き続きよろしくお願いします！'
+        content: 'See you next time!'
       });
     });
   }

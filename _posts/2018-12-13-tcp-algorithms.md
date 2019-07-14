@@ -93,32 +93,34 @@ ns-3やLinuxの実装（`include/net/tcp.h`）に則り，本記事では以下�
 $$
 \begin{align}
 &\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
-&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{1}{cwnd}
+&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + mss \\
+&~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{mss}{cwnd}
 \end{align}
 $$
 
-ここで，上式は**ACKを受信するたび**に更新されることに注意されたい．また，上式の単位はセグメントである．Slow startフェイズ（二行目）においては，ACKを受信するたびに$$cwnd$$が一つずつ増加し，その結果受信することになるACKも一つ増えるため，$$cwnd$$は指数的に増加する．一方でCongestion avoidanceフェイズ（三行目）においては，$$cwnd$$は線形に増加する．
+ここで，上式は**ACKを受信するたび**に更新されることに注意されたい．また，上式の単位はバイトである．Slow startフェイズ（二行目）においては，ACKを受信するたびに$$cwnd$$が$$mss$$ずつ増加し，その結果受信することになるACKも一つ増えるため，$$cwnd$$は指数的に増加する．一方でCongestion avoidanceフェイズ（三行目）においては，$$cwnd$$は線形に増加する．
 
 `Recovery`状態に遷移したとき，すなわち三度同じACKを受信したとき，以下のように$$cwnd$$と$$ssthresh$$を更新する．
 
 $$
 \begin{align}
 &ssthresh \leftarrow \frac{cwnd}{2} \\
-&cwnd \leftarrow ssthresh + 3
+&cwnd \leftarrow ssthresh + mss
 \end{align}
 $$
 
-`Recovery`状態で新しいACKを受信すると`Open`状態（Congestion avoidance）に遷移し，$$cwnd$$を以下のように更新する．これをFast recoveryと呼ぶ．
+`Recovery`状態で新しいACKを受信すると`Open`状態（Congestion avoidance）に遷移し，$$ssthresh$$および$$cwnd$$を以下のように更新する．これをFast recoveryと呼ぶ．
 
 $$
-cwnd \leftarrow ssthresh
+\begin{align}
+&cwnd \leftarrow ssthresh
+\end{align}
 $$
 
 また，`Recovery`状態で更に重複ACKを受信した場合，$$cwnd$$を以下のように更新する．
 
 $$
-cwnd \leftarrow cwnd + 1
+cwnd \leftarrow cwnd + mss
 $$
 
 `Loss`状態や`CWR`状態に遷移したとき，すなわちECNを受信したりタイムアウトしたとき，以下のように$$cwnd$$と$$ssthresh$$を更新する．このとき，重複ACKのカウントはリセットする．
@@ -126,13 +128,13 @@ $$
 $$
 \begin{align}
 &ssthresh \leftarrow \frac{cwnd}{2} \\
-&cwnd \leftarrow 1
+&cwnd \leftarrow mss
 \end{align}
 $$
 
 `Loss`状態や`CWR`状態でACKを受信したとき，`Open`状態（Slow startフェイズ）に遷移する．
 
-多くの輻輳制御アルゴリズムは，NewRenoの`Open`状態の挙動を改良したものとなっている．そこで以降では，特に断らない限り，`CWR`，`Recovery`，`Loss`状態の更新式はNewRenoと同様とする．
+多くの輻輳制御アルゴリズムは，NewRenoの`Open`状態の挙動を改良したものとなっている．そこで以降では，特に断らない限り，`CWR`，`Recovery`，`Loss`状態における更新式はNewRenoと同様とする．
 
 詳細は以下を参照されたい．
 
@@ -147,7 +149,7 @@ $$
 $$
 \begin{align}
 &\mathbf{If}~ cwnd \leq ssthresh\\
-&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + 1 \\
+&~~~~\mathbf{then}~ cwnd \leftarrow cwnd + mss \\
 &~~~~\mathbf{else}~ cwnd \leftarrow cwnd + \frac{\alpha(cwnd)}{cwnd}
 \end{align}
 $$

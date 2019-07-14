@@ -135,6 +135,13 @@ social:
     desc: Follow me on Kaggle
     share: false
 
+  - name: AtCoder
+    icon: horse-head
+    username: atcoder.jp/users/haltaro
+    url: https://atcoder.jp/users/haltaro
+    desc: Compete with me on AtCoder
+    share: false
+
 #  - name: LinkedIn
 #    icon: linkedin
 #    username: Ben Centra
