@@ -10,8 +10,6 @@ categories:
 
 [Network engineering Advent Calendar 2018](https://qiita.com/advent-calendar/2018/network-engineering)の8日目の記事．諸事情により[Vagrant](https://www.vagrantup.com/)で立てたUbuntu 16.04上で[WireShark](https://www.wireshark.org/)を操作する必要があったため，環境設定をまとめておく．
 
-なお，4日目の記事については，想定よりはるかに大変で，現在作成中です．申し訳ありません…．
-
 # 前提
 
 ## Virtualbox
